@@ -60,10 +60,10 @@ export default function AboutSection() {
             <div className="mt-8 border-s-4 border-secondary bg-accent p-6">
               <p className="text-xl font-bold leading-relaxed text-primary">
                 <span className="ar-content">
-                  الهندسة والمحاكاة هما أعمق خبراتنا الحالية — ومنهما نأخذ الانضباط الذي نطبقه عند بناء الوكلاء لأي عمل متخصص.
+                  الهندسة والمحاكاة هما أعمق خبراتنا — ومنهما نأخذ الانضباط الذي نطبقه عند بناء الوكلاء لأي عمل متخصص.
                 </span>
                 <span className="en-content">
-                  Engineering and simulation are our deepest current expertise — and the source of the rigor we bring to agents for other specialized work.
+                  Engineering and simulation are our deepest expertise — and the source of the rigor we bring to agents for other specialized work.
                 </span>
               </p>
             </div>

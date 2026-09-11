@@ -119,15 +119,15 @@ export default function CapabilitiesSection() {
         </div>
 
         <div className="mt-10 grid gap-4 rounded-2xl border border-primary/10 bg-white p-6 sm:grid-cols-3 sm:p-8">
-          <div className="flex items-center gap-3">
+          <div className="flex items-center gap-3 sm:justify-center">
             <Network className="h-5 w-5 shrink-0 text-primary" />
             <span className="text-lg font-bold text-foreground/75"><span className="ar-content">تكامل مع الأنظمة القائمة</span><span className="en-content">Integration with existing systems</span></span>
           </div>
-          <div className="flex items-center gap-3">
+          <div className="flex items-center gap-3 sm:justify-center">
             <ScanSearch className="h-5 w-5 shrink-0 text-primary" />
             <span className="text-lg font-bold text-foreground/75"><span className="ar-content">قياس قبل التوسع</span><span className="en-content">Measured before scaling</span></span>
           </div>
-          <div className="flex items-center gap-3">
+          <div className="flex items-center gap-3 sm:justify-center">
             <ChartNoAxesCombined className="h-5 w-5 shrink-0 text-primary" />
             <span className="text-lg font-bold text-foreground/75"><span className="ar-content">نتائج تدعم القرار</span><span className="en-content">Results that support decisions</span></span>
           </div>

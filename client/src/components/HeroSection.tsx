@@ -143,7 +143,7 @@ export default function HeroSection() {
                 <div className="min-w-0 flex-1">
                   <p className="flow-kicker">03</p>
                   <p className="flow-title">
-                    <span className="ar-content">مخرج موثق يراجعه المختص</span>
+                    <span className="ar-content">مُخرج موثق يراجعه المختص</span>
                     <span className="en-content">A documented, expert-reviewed output</span>
                   </p>
                 </div>

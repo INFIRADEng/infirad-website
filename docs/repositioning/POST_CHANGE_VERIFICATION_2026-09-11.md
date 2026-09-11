@@ -53,3 +53,9 @@ The production build retains the repository's pre-existing warnings for undefine
 ## Release state
 
 The implementation is local only. It has not been pushed, merged, deployed, or published. The live domain and LinkedIn page remain unchanged pending review and approval.
+
+## Reviewed copy and alignment refinements
+
+- Removed “current” / “الحالية” from the engineering-depth statement in both languages so the wording does not imply a temporary limit on INFIRAD's expertise.
+- Added the requested Arabic diacritic to “مُخرج موثق يراجعه المختص”.
+- Centered the three supporting-result groups beneath their corresponding service cards on tablet and desktop, including “نتائج تدعم القرار”.
