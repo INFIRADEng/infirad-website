@@ -1,166 +1,170 @@
-import { MessageCircle, Mail, ArrowDown } from 'lucide-react';
+import {
+  ArrowDown,
+  ArrowLeft,
+  ArrowRight,
+  BookOpenText,
+  Bot,
+  FileCheck2,
+  MessageCircle,
+  ShieldCheck,
+  Wrench,
+} from 'lucide-react';
 import { Button } from '@/components/ui/button';
-import { toast } from 'sonner';
+import { useLanguage } from '@/contexts/LanguageContext';
 
 export default function HeroSection() {
-  const scrollToNext = () => {
-    const aboutSection = document.getElementById('about');
-    if (aboutSection) {
-      aboutSection.scrollIntoView({ behavior: 'smooth' });
-    }
-  };
+  const { isArabic } = useLanguage();
+  const Arrow = isArabic ? ArrowLeft : ArrowRight;
 
-  const handleEmailClick = async () => {
-    const email = 'info@infiradeng.com';
-    try {
-      await navigator.clipboard.writeText(email);
-      toast.success('Email copied to clipboard!', {
-        description: 'You can now paste it into your email client.',
-        duration: 4000,
-      });
-    } catch (err) {
-      console.error('Failed to copy:', err);
-      toast.error('Failed to copy email', {
-        description: 'Please copy manually: info@infiradeng.com',
-      });
-    }
+  const scrollToPaths = () => {
+    document.getElementById('capabilities')?.scrollIntoView({ behavior: 'smooth' });
   };
 
   return (
-    <section className="relative min-h-screen flex items-center pt-20 overflow-hidden bg-primary">
-      {/* Technical Background */}
-      <div 
-        className="absolute inset-0 z-0 opacity-40"
-        style={{
-          backgroundImage: `url('https://private-us-east-1.manuscdn.com/sessionFile/qY57DoIOhiWxBJmMIzGMkz/sandbox/wnevn9Ag6ZWuReI4sWnw1z-img-1_1770272572000_na1fn_aGVyby10ZWNobmljYWwtYmFja2dyb3VuZA.png?x-oss-process=image/resize,w_1920,h_1920/format,webp/quality,q_80&Expires=1798761600&Policy=eyJTdGF0ZW1lbnQiOlt7IlJlc291cmNlIjoiaHR0cHM6Ly9wcml2YXRlLXVzLWVhc3QtMS5tYW51c2Nkbi5jb20vc2Vzc2lvbkZpbGUvcVk1N0RvSU9oaVd4QkptTUl6R01rei9zYW5kYm94L3duZXZuOUFnNlpXdVJlSTRzV253MXotaW1nLTFfMTc3MDI3MjU3MjAwMF9uYTFmbl9hR1Z5YnkxMFpXTm9ibWxqWVd3dFltRmphMmR5YjNWdVpBLnBuZz94LW9zcy1wcm9jZXNzPWltYWdlL3Jlc2l6ZSx3XzE5MjAsaF8xOTIwL2Zvcm1hdCx3ZWJwL3F1YWxpdHkscV84MCIsIkNvbmRpdGlvbiI6eyJEYXRlTGVzc1RoYW4iOnsiQVdTOkVwb2NoVGltZSI6MTc5ODc2MTYwMH19fV19&Key-Pair-Id=K2HSFNDJXOU9YS&Signature=tKOUl7iaAa9yNPXNRlXVlsn8P1gacnbBrt-io4FDfdD~ERFWbc-jzlGiBAYKf47SUklxDjbcMcnzF8Dz0uUxKERYjRDj1lVT7U3AjmjyiKjOmcdG7CYWHhFl0Jbx2jNrL-BobLP2n0BxkBV1WDM7Vy0FlRJxmOLOvyUv8AhM4uqZ9ZeQuz5ov3yt1nkMoc7iosdfZ~QKhjCDWTEsKEWdy7~PCFTzQHGM-uG5uEq7UKo-FXWwA2W9t8xvogXnhSEStht~RitMPmUiqXW9btpJYSLINqpVyGjGEEF3gFacuuU6KuqVnaODA3MtFyHny~T~8podqJ38qnnyZVtDgBCoBg__')`,
-          backgroundSize: 'cover',
-          backgroundPosition: 'center',
-        }}
-      />
-      
-      {/* Grid Overlay */}
-      <div className="absolute inset-0 z-0 technical-grid opacity-30" />
-      
-      {/* Gradient Accent */}
-      <div className="absolute bottom-1/4 -right-20 w-96 h-96 bg-secondary/20 rounded-full blur-[120px] z-0" />
+    <section className="hero-shell relative min-h-screen overflow-hidden bg-primary pt-24 text-white">
+      <div className="technical-grid absolute inset-0 opacity-20" />
+      <div className="hero-orbit hero-orbit-one" />
+      <div className="hero-orbit hero-orbit-two" />
 
-      <div className="container mx-auto px-6 relative z-10 grid lg:grid-cols-2 gap-16 items-center">
-        {/* Content */}
-        <div className="space-y-8 animate-fade-in-up">
-          {/* Badge */}
-          <div className="flex items-center gap-2 px-4 py-4 rounded-md bg-primary/50 border-2 border-secondary/30 text-secondary backdrop-blur-sm w-full sm:w-auto min-h-[80px] sm:min-h-0">
-            <span className="ar-content text-sm sm:text-base md:text-lg lg:text-2xl font-bold tracking-normal uppercase font-display leading-relaxed break-words">
-              انفِراد - شريك هندسي استراتيجي لتطوير المشاريع
-            </span>
-            <span className="en-content text-sm sm:text-base md:text-lg lg:text-2xl font-bold tracking-normal uppercase font-display leading-relaxed break-words">
-              INFIRAD - Strategic Venture-Engineering Partner
-            </span>
+      <div className="container relative z-10 mx-auto grid min-h-[calc(100vh-6rem)] items-center gap-12 px-6 py-16 lg:grid-cols-[1.02fr_0.98fr] lg:gap-20 lg:py-20">
+        <div className="max-w-3xl space-y-8 animate-fade-in-up">
+          <div className="eyebrow border-white/20 bg-white/7 text-white">
+            <span className="eyebrow-dot" />
+            <span className="ar-content">ذكاء اصطناعي تطبيقي للعمل المتخصص</span>
+            <span className="en-content">Applied AI for specialized work</span>
           </div>
-          
-          {/* Main Headline */}
-          <h1 className="text-5xl lg:text-7xl font-bold leading-tight text-white font-display">
-            <span className="ar-content">
-              من الفكرة إلى <span className="text-secondary">اليقين</span>
-            </span>
-            <span className="en-content">
-              From Idea to <span className="text-secondary">Certainty</span>
-            </span>
-          </h1>
-          
-          {/* Description */}
-          <p className="text-2xl md:text-3xl text-white max-w-xl leading-relaxed font-medium">
-            <span className="ar-content">
-              شركة تطوير مشاريع تعمل كشريك تقني لتحويل الأفكار النوعية إلى مشاريع قابلة للتنفيذ وجاهزة للاستثمار.
-            </span>
-            <span className="en-content">
-              A project development company operating as a strategic technical partner to transform flagship ideas into executable, investment-ready projects.
-            </span>
-          </p>
-          
-          {/* CTA Buttons */}
+
+          <div className="space-y-6">
+            <h1 className="max-w-4xl text-5xl font-bold leading-[1.12] tracking-tight sm:text-6xl lg:text-7xl">
+              <span className="ar-content">
+                ذكاء اصطناعي يعمل <span className="text-secondary">داخل التخصص.</span>
+              </span>
+              <span className="en-content">
+                AI that works <span className="text-secondary">inside the discipline.</span>
+              </span>
+            </h1>
+
+            <p className="max-w-2xl text-xl font-medium leading-relaxed text-white/80 md:text-2xl">
+              <span className="ar-content">
+                نبني وكلاء متخصصين وأنظمة عمل ذكية تنفّذ المهام المهنية والتقنية المعقدة — بمصادر الجهة وأدواتها ومنهجيتها، وتحت إشراف المختص.
+              </span>
+              <span className="en-content">
+                We build specialized agents and intelligent work systems for complex professional and technical tasks — grounded in the organization&apos;s sources, tools, and methods, with expert oversight.
+              </span>
+            </p>
+          </div>
+
           <div className="flex flex-wrap gap-4">
-            <Button 
-              asChild
-              size="lg"
-              className="bg-secondary hover:bg-white text-primary font-bold transition-brutal hover-lift shadow-lg"
-            >
-              <a href="https://wa.me/966530151525" target="_blank" rel="noopener noreferrer" className="flex items-center gap-3 text-xl">
-                <MessageCircle className="w-7 h-7" />
-                <span className="ar-content">واتساب</span>
-                <span className="en-content">WhatsApp</span>
-              </a>
-            </Button>
             <Button
+              size="lg"
+              onClick={scrollToPaths}
+              className="min-h-14 gap-3 bg-white px-6 text-lg font-bold text-primary shadow-xl transition-brutal hover:bg-secondary"
+            >
+              <span className="ar-content">استكشف مسارات العمل</span>
+              <span className="en-content">Explore our work</span>
+              <Arrow className="h-5 w-5" />
+            </Button>
+
+            <Button
+              asChild
               variant="outline"
               size="lg"
-              className="bg-transparent border-2 border-secondary/30 hover:bg-white/5 text-white font-bold transition-brutal hover-lift flex items-center gap-3 text-xl"
-              onClick={handleEmailClick}
+              className="min-h-14 gap-3 border-2 border-white/25 bg-white/5 px-6 text-lg font-bold text-white backdrop-blur-sm transition-brutal hover:bg-white hover:text-primary"
             >
-              <Mail className="w-7 h-7 text-secondary" />
-              <span className="ar-content">البريد الإلكتروني</span>
-              <span className="en-content">Email Us</span>
+              <a href="https://wa.me/966530151525" target="_blank" rel="noopener noreferrer">
+                <MessageCircle className="h-5 w-5" />
+                <span className="ar-content">ناقش مهمة</span>
+                <span className="en-content">Discuss a task</span>
+              </a>
             </Button>
           </div>
+
+          <div className="flex flex-wrap gap-x-7 gap-y-3 border-t border-white/15 pt-6 text-sm font-bold text-white/60 sm:text-base">
+            <span className="ar-content">وكلاء متخصصون</span>
+            <span className="en-content">Specialized agents</span>
+            <span aria-hidden="true" className="text-secondary">/</span>
+            <span className="ar-content">هندسة ومحاكاة</span>
+            <span className="en-content">Engineering &amp; simulation</span>
+            <span aria-hidden="true" className="text-secondary">/</span>
+            <span className="ar-content">مخرجات قابلة للمراجعة</span>
+            <span className="en-content">Reviewable outputs</span>
+          </div>
         </div>
-        
-        {/* Visual Element */}
-        <div className="hidden lg:block relative animate-fade-in">
-          <div className="relative bg-primary/30 ring-2 ring-secondary/20 rounded-2xl p-8 shadow-2xl overflow-hidden backdrop-blur-sm">
-            <div className="aspect-square bg-primary/50 rounded-lg flex flex-col items-center justify-center overflow-hidden border-2 border-secondary/10 relative">
-              <div className="ar-content absolute top-8 text-secondary text-lg font-bold tracking-[0.2em] uppercase font-display">
-                المحاكاة والتحليل البياني
+
+        <div className="relative mx-auto w-full max-w-xl animate-fade-in lg:mx-0">
+          <div className="agent-console relative overflow-hidden rounded-[2rem] border border-white/15 bg-[#071f31]/90 p-5 shadow-2xl backdrop-blur-xl sm:p-7">
+            <div className="mb-7 flex items-center justify-between border-b border-white/10 pb-5">
+              <div>
+                <p className="text-xs font-bold uppercase tracking-[0.2em] text-secondary">
+                  <span className="ar-content">من المعرفة إلى التنفيذ</span>
+                  <span className="en-content">From knowledge to execution</span>
+                </p>
+                <p className="mt-2 text-lg font-bold text-white">
+                  <span className="ar-content">نظام عمل مهني قابل للتتبع</span>
+                  <span className="en-content">A traceable professional workflow</span>
+                </p>
               </div>
-              <div className="en-content absolute top-8 text-secondary text-lg font-bold tracking-[0.2em] uppercase font-display">
-                Simulation & Analytics
+              <div className="flex h-11 w-11 items-center justify-center rounded-full border border-secondary/30 bg-secondary/10">
+                <ShieldCheck className="h-5 w-5 text-secondary" />
+              </div>
+            </div>
+
+            <div className="space-y-3">
+              <div className="flow-node">
+                <div className="flow-icon"><BookOpenText /></div>
+                <div className="min-w-0 flex-1">
+                  <p className="flow-kicker">01</p>
+                  <p className="flow-title">
+                    <span className="ar-content">مصادر الجهة ومنهجيتها</span>
+                    <span className="en-content">Organization sources &amp; methods</span>
+                  </p>
+                </div>
+                <FileCheck2 className="h-5 w-5 text-white/35" />
               </div>
 
-              {/* Technical Visualization */}
-              <svg viewBox="0 0 200 200" className="w-3/4 h-3/4 text-secondary/30">
-                <defs>
-                  <linearGradient id="lineGradient" x1="0%" y1="0%" x2="100%" y2="0%">
-                    <stop offset="0%" stopColor="white" stopOpacity="0.3" />
-                    <stop offset="50%" stopColor="white" stopOpacity="1" />
-                    <stop offset="100%" stopColor="white" stopOpacity="0.3" />
-                  </linearGradient>
-                </defs>
-                <path d="M40 40 H160 M40 70 H160 M40 100 H160 M40 130 H160 M40 160 H160" stroke="currentColor" strokeWidth="0.5" />
-                <path d="M40 40 V160 M70 40 V160 M100 40 V160 M130 40 V160 M160 40 V160" stroke="currentColor" strokeWidth="0.5" />
-                <path 
-                  d="M40 140 Q 70 60, 100 110 T 160 80" 
-                  fill="none" 
-                  stroke="url(#lineGradient)" 
-                  strokeWidth="3" 
-                  strokeLinecap="round"
-                  className="graph-line"
-                  style={{
-                    strokeDasharray: '300',
-                    strokeDashoffset: '300',
-                    animation: 'drawLine 2s ease-out forwards, waveLine 3s ease-in-out 2s infinite'
-                  }}
-                />
-                <circle cx="70" cy="85" r="4" fill="currentColor" className="animate-pulse" style={{ animationDelay: '2s' }} />
-                <circle cx="100" cy="110" r="4" fill="currentColor" className="animate-pulse" style={{ animationDelay: '2.2s' }} />
-                <circle cx="130" cy="95" r="4" fill="currentColor" className="animate-pulse" style={{ animationDelay: '2.4s' }} />
-              </svg>
+              <div className="flow-connector" />
 
-              <div className="ar-content absolute bottom-8 px-5 py-2 border-2 border-secondary/30 rounded text-secondary text-base md:text-lg font-bold uppercase font-display">
-                النمذجة الرقمية
+              <div className="flow-node flow-node-active">
+                <div className="flow-icon"><Bot /></div>
+                <div className="min-w-0 flex-1">
+                  <p className="flow-kicker">02</p>
+                  <p className="flow-title">
+                    <span className="ar-content">وكيل متخصص يستخدم الأدوات</span>
+                    <span className="en-content">A specialist agent using real tools</span>
+                  </p>
+                </div>
+                <Wrench className="h-5 w-5 text-secondary" />
               </div>
-              <div className="en-content absolute bottom-8 px-5 py-2 border-2 border-secondary/30 rounded text-secondary text-base md:text-lg font-bold uppercase font-display">
-                Digital Twin
+
+              <div className="flow-connector" />
+
+              <div className="flow-node">
+                <div className="flow-icon"><FileCheck2 /></div>
+                <div className="min-w-0 flex-1">
+                  <p className="flow-kicker">03</p>
+                  <p className="flow-title">
+                    <span className="ar-content">مخرج موثق يراجعه المختص</span>
+                    <span className="en-content">A documented, expert-reviewed output</span>
+                  </p>
+                </div>
+                <ShieldCheck className="h-5 w-5 text-white/35" />
               </div>
+            </div>
+
+            <div className="mt-6 rounded-xl border border-white/10 bg-white/5 px-4 py-3 text-sm leading-relaxed text-white/60">
+              <span className="ar-content">الذكاء الاصطناعي ينفّذ ويوثّق. المسؤولية المهنية تبقى لدى أهل الاختصاص.</span>
+              <span className="en-content">AI executes and documents. Professional responsibility remains with qualified experts.</span>
             </div>
           </div>
         </div>
       </div>
 
-      {/* Scroll Indicator */}
-      <button 
-        onClick={scrollToNext}
-        className="absolute bottom-8 left-1/2 transform -translate-x-1/2 text-secondary hover:text-white transition-colors animate-bounce z-10"
-        aria-label="Scroll to next section"
+      <button
+        onClick={scrollToPaths}
+        className="absolute bottom-5 left-1/2 z-10 -translate-x-1/2 rounded-full p-2 text-white/50 transition-colors hover:text-white"
+        aria-label={isArabic ? 'انتقل إلى مسارات العمل' : 'Go to work paths'}
       >
-        <ArrowDown className="w-6 h-6" />
+        <ArrowDown className="h-6 w-6 animate-bounce" />
       </button>
     </section>
   );

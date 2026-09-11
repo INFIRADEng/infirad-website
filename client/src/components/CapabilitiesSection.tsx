@@ -1,93 +1,135 @@
-import { Cog, Cpu, Briefcase, GraduationCap } from 'lucide-react';
+import { Bot, ChartNoAxesCombined, Cog, Network, Route, ScanSearch } from 'lucide-react';
+
+const paths = [
+  {
+    number: '01',
+    icon: Bot,
+    arEyebrow: 'الوكلاء المتخصصون والأتمتة',
+    enEyebrow: 'Specialized agents & automation',
+    arTitle: 'أنظمة ذكية تعمل داخل المهنة',
+    enTitle: 'Intelligent systems that work inside the profession',
+    arText: 'نحوّل المعرفة والإجراءات والأدوات المتفرقة إلى وكلاء ينفّذون مهاماً مركبة، ويوثقون ما فعلوه، ويعملون ضمن صلاحيات واضحة.',
+    enText: 'We turn fragmented knowledge, procedures, and tools into agents that execute complex tasks, document their work, and operate within clear permissions.',
+    arItems: ['بحث ومراجعة موثّقان', 'أتمتة سير العمل', 'فرق متعددة الوكلاء', 'تقارير وتحليلات دورية'],
+    enItems: ['Referenced research & review', 'Workflow automation', 'Multi-agent teams', 'Recurring reports & analysis'],
+    arStart: 'نقطة البداية: مهمة واحدة متكررة أو معقدة.',
+    enStart: 'Start with one repetitive or complex task.',
+    featured: true,
+  },
+  {
+    number: '02',
+    icon: Cog,
+    arEyebrow: 'الهندسة والمحاكاة والبحث والتطوير',
+    enEyebrow: 'Engineering, simulation & R&D',
+    arTitle: 'عمق هندسي يختبر القرار قبل التنفيذ',
+    enTitle: 'Engineering depth that tests the decision before execution',
+    arText: 'نحوّل السؤال الفني إلى نموذج قابل للفحص، نقارن البدائل، ونغلق الدراسة باستنتاج واضح يدعم التطوير أو إعادة التصميم.',
+    enText: 'We turn the technical question into an examinable model, compare alternatives, and close the study with a clear conclusion for development or redesign.',
+    arItems: ['تصميم العمليات', 'محاكاة الأنظمة', 'CFD والتحليل الحراري', 'مراجعة وتحسين مستقلان'],
+    enItems: ['Process design', 'System simulation', 'CFD & thermal analysis', 'Independent review & optimization'],
+    arStart: 'نقطة البداية: سؤال فني يجب إغلاقه.',
+    enStart: 'Start with a technical question that must be closed.',
+  },
+  {
+    number: '03',
+    icon: Route,
+    arEyebrow: 'انسياب لمحاكاة الحركة المرورية',
+    enEyebrow: 'INSYAB traffic simulation',
+    arTitle: 'قرار مروري يُختبر قبل أن يُنفّذ',
+    enTitle: 'A traffic decision tested before it is built',
+    arText: 'نمثل الشبكة كما تعمل اليوم، نختبر أثر المشروع أو الإغلاق أو التحويلة عليها، ثم نقارن البدائل بالمقاييس نفسها.',
+    enText: 'We model the network as it works today, test the impact of a project, closure, or diversion, and compare alternatives on the same measures.',
+    arItems: ['الطرق والتقاطعات', 'الإغلاقات والتحويلات', 'تشخيص الاختناقات', 'أثر المشروع على الشبكة'],
+    enItems: ['Roads & intersections', 'Closures & diversions', 'Bottleneck diagnosis', 'Network-wide project impact'],
+    arStart: 'نقطة البداية: قرار مروري قبل التنفيذ.',
+    enStart: 'Start with a traffic decision before implementation.',
+  },
+];
 
 export default function CapabilitiesSection() {
   return (
-    <section id="capabilities" className="py-24 bg-accent relative overflow-hidden">
-      {/* Background Image */}
-      <div 
-        className="absolute inset-0 opacity-5"
-        style={{
-          backgroundImage: `url('https://private-us-east-1.manuscdn.com/sessionFile/qY57DoIOhiWxBJmMIzGMkz/sandbox/wnevn9Ag6ZWuReI4sWnw1z-img-3_1770272573000_na1fn_Y2FwYWJpbGl0aWVzLWFic3RyYWN0.png?x-oss-process=image/resize,w_1920,h_1920/format,webp/quality,q_80&Expires=1798761600&Policy=eyJTdGF0ZW1lbnQiOlt7IlJlc291cmNlIjoiaHR0cHM6Ly9wcml2YXRlLXVzLWVhc3QtMS5tYW51c2Nkbi5jb20vc2Vzc2lvbkZpbGUvcVk1N0RvSU9oaVd4QkptTUl6R01rei9zYW5kYm94L3duZXZuOUFnNlpXdVJlSTRzV253MXotaW1nLTNfMTc3MDI3MjU3MzAwMF9uYTFmbl9ZMkZ3WVdKcGJHbDBhV1Z6TFdGaWMzUnlZV04wLnBuZz94LW9zcy1wcm9jZXNzPWltYWdlL3Jlc2l6ZSx3XzE5MjAsaF8xOTIwL2Zvcm1hdCx3ZWJwL3F1YWxpdHkscV84MCIsIkNvbmRpdGlvbiI6eyJEYXRlTGVzc1RoYW4iOnsiQVdTOkVwb2NoVGltZSI6MTc5ODc2MTYwMH19fV19&Key-Pair-Id=K2HSFNDJXOU9YS&Signature=fkaVWZ6-XOgefkAim~8Hb6wSyjy3iMIHWAxjyqrTTMjlUTdJkWsVBcdq8OlNqDfZCc2951FpJxC96Zy~OI~bTOiqWDsn3dt2NneCt7xB4H1mfSaO6P5ps7Pj4UGXbxBmwfTSSlvxeOGDibv-i0NtqiG9UZrJK6sMsIrEl5JtR0l~YVOLq8zf45turOTJ5qhYMjfLNkCEaTSfq6IXDk8jJduMBIDVCo-eN3wYI3hKUMVAjexqf0vW8YEKy7~~zYVNN1W20FlAeoeetKC5aFXP0HCXAp9j4MYklbe141fndkF207tDdxQt~nTaDgCCvWNEByT6fK9P~4OKuZ0RU8cvlg__')`,
-          backgroundSize: 'cover',
-          backgroundPosition: 'center',
-        }}
-      />
-      
-      <div className="container mx-auto px-6 relative z-10">
-        {/* Header */}
-        <h2 className="text-4xl lg:text-5xl font-bold text-center mb-16 text-foreground font-display animate-fade-in-up">
-          <span className="ar-content">منظومة القدرات المتكاملة</span>
-          <span className="en-content">Integrated Capability Stack</span>
-        </h2>
+    <section id="capabilities" className="relative overflow-hidden bg-accent py-24 lg:py-32">
+      <div className="technical-grid absolute inset-0 opacity-40" />
+      <div className="container relative z-10 mx-auto px-6">
+        <div className="mx-auto max-w-4xl text-center">
+          <div className="eyebrow mx-auto border-primary/15 bg-white text-primary">
+            <span className="eyebrow-dot" />
+            <span className="ar-content">مجالات العمل</span>
+            <span className="en-content">Where we work</span>
+          </div>
+          <h2 className="mt-6 text-4xl font-bold leading-tight text-foreground sm:text-5xl lg:text-6xl">
+            <span className="ar-content">ثلاثة مسارات مستقلة. منهج واحد منضبط.</span>
+            <span className="en-content">Three independent paths. One disciplined method.</span>
+          </h2>
+          <p className="mx-auto mt-6 max-w-3xl text-xl leading-relaxed text-foreground/65">
+            <span className="ar-content">كل مسار يُقدّم كخدمة مستقلة بحسب مشكلة العميل، وتجمعها قدرة انفِراد على تحويل التعقيد إلى عمل قابل للفحص.</span>
+            <span className="en-content">Each path is offered independently around the client&apos;s problem. They share INFIRAD&apos;s ability to turn complexity into examinable work.</span>
+          </p>
+        </div>
 
-        {/* Capabilities Grid */}
-        <div className="grid lg:grid-cols-4 md:grid-cols-2 gap-6">
-          {/* Engineering */}
-          <div className="p-8 bg-white rounded-2xl border-2 border-border hover-lift transition-brutal shadow-sm hover:shadow-lg group">
-            <Cog className="w-8 h-8 text-primary mb-6 group-hover:rotate-90 transition-transform duration-500" />
-            <h3 className="text-2xl md:text-3xl font-bold text-foreground mb-4 font-display">
-              <span className="ar-content">الهندسة</span>
-              <span className="en-content">Engineering</span>
-            </h3>
-            <p className="text-secondary text-lg leading-relaxed font-semibold">
-              <span className="ar-content">
-                التصميم الأساسي (BFD/PFD)، مراجعة P&ID، والمحاكاة الديناميكية للعمليات.
-              </span>
-              <span className="en-content">
-                Front-end design (BFD/PFD), P&ID review, and dynamic process simulation.
-              </span>
-            </p>
+        <div className="mt-16 grid gap-6 lg:grid-cols-3">
+          {paths.map((path) => {
+            const Icon = path.icon;
+            return (
+              <article
+                key={path.number}
+                className={`service-path flex h-full flex-col overflow-hidden rounded-[1.75rem] border p-7 sm:p-8 ${
+                  path.featured
+                    ? 'border-primary bg-primary text-white shadow-2xl'
+                    : 'border-primary/10 bg-white text-foreground shadow-sm'
+                }`}
+              >
+                <div className="flex items-center justify-between">
+                  <div className={`flex h-12 w-12 items-center justify-center rounded-xl ${path.featured ? 'bg-white text-primary' : 'bg-primary text-white'}`}>
+                    <Icon className="h-6 w-6" />
+                  </div>
+                  <span className={`text-sm font-bold tracking-[0.2em] ${path.featured ? 'text-secondary' : 'text-primary/45'}`}>{path.number}</span>
+                </div>
+
+                <p className={`mt-8 text-sm font-bold leading-relaxed ${path.featured ? 'text-secondary' : 'text-primary/55'}`}>
+                  <span className="ar-content">{path.arEyebrow}</span>
+                  <span className="en-content">{path.enEyebrow}</span>
+                </p>
+                <h3 className="mt-3 text-2xl font-bold leading-snug sm:text-3xl">
+                  <span className="ar-content">{path.arTitle}</span>
+                  <span className="en-content">{path.enTitle}</span>
+                </h3>
+                <p className={`mt-5 text-lg leading-relaxed ${path.featured ? 'text-white/70' : 'text-foreground/65'}`}>
+                  <span className="ar-content">{path.arText}</span>
+                  <span className="en-content">{path.enText}</span>
+                </p>
+
+                <ul className="mt-7 grid gap-3 border-t border-current/10 pt-6">
+                  {path.arItems.map((item, itemIndex) => (
+                    <li key={path.enItems[itemIndex]} className="flex items-start gap-3 text-base font-bold leading-relaxed">
+                      <span className={`mt-2 h-1.5 w-1.5 shrink-0 rounded-full ${path.featured ? 'bg-secondary' : 'bg-primary'}`} />
+                      <span className="ar-content">{item}</span>
+                      <span className="en-content">{path.enItems[itemIndex]}</span>
+                    </li>
+                  ))}
+                </ul>
+
+                <div className={`mt-auto pt-8 text-sm font-bold leading-relaxed ${path.featured ? 'text-secondary' : 'text-primary'}`}>
+                  <span className="ar-content">{path.arStart}</span>
+                  <span className="en-content">{path.enStart}</span>
+                </div>
+              </article>
+            );
+          })}
+        </div>
+
+        <div className="mt-10 grid gap-4 rounded-2xl border border-primary/10 bg-white p-6 sm:grid-cols-3 sm:p-8">
+          <div className="flex items-center gap-3">
+            <Network className="h-5 w-5 shrink-0 text-primary" />
+            <span className="text-base font-bold text-foreground/75"><span className="ar-content">تكامل مع الأنظمة القائمة</span><span className="en-content">Integration with existing systems</span></span>
           </div>
-          
-          {/* Tech & AI */}
-          <div className="p-8 bg-white rounded-2xl border-2 border-border hover-lift transition-brutal shadow-sm hover:shadow-lg group">
-            <Cpu className="w-8 h-8 text-primary mb-6 group-hover:scale-110 transition-transform duration-300" />
-            <h3 className="text-2xl md:text-3xl font-bold text-foreground mb-4 font-display">
-              <span className="ar-content">التقنية والذكاء الاصطناعي</span>
-              <span className="en-content">Tech & AI</span>
-            </h3>
-            <p className="text-secondary text-lg leading-relaxed font-semibold">
-              <span className="ar-content">
-                وكلاء ذكاء اصطناعي لدعم اتخاذ القرارات الهندسية، وتحليل البيانات لرفع الكفاءة.
-              </span>
-              <span className="en-content">
-                AI agents for engineering decision support and data analytics for performance.
-              </span>
-            </p>
+          <div className="flex items-center gap-3">
+            <ScanSearch className="h-5 w-5 shrink-0 text-primary" />
+            <span className="text-base font-bold text-foreground/75"><span className="ar-content">قياس قبل التوسع</span><span className="en-content">Measured before scaling</span></span>
           </div>
-          
-          {/* Venture Dev */}
-          <div className="p-8 bg-white rounded-2xl border-2 border-border hover-lift transition-brutal shadow-sm hover:shadow-lg group">
-            <Briefcase className="w-8 h-8 text-primary mb-6 group-hover:scale-110 transition-transform duration-300" />
-            <h3 className="text-2xl md:text-3xl font-bold text-foreground mb-4 font-display">
-              <span className="ar-content">تطوير الأعمال</span>
-              <span className="en-content">Venture Dev</span>
-            </h3>
-            <p className="text-secondary text-lg leading-relaxed font-semibold">
-              <span className="ar-content">
-                هيكلة المشاريع، الحوكمة، ورفع الجاهزية الاستثمارية للأفكار المعقدة.
-              </span>
-              <span className="en-content">
-                Venture structuring, governance, and investment readiness for complex ideas.
-              </span>
-            </p>
-          </div>
-          
-          {/* Education */}
-          <div className="p-8 bg-white rounded-2xl border-2 border-border hover-lift transition-brutal shadow-sm hover:shadow-lg group">
-            <GraduationCap className="w-8 h-8 text-primary mb-6 group-hover:scale-110 transition-transform duration-300" />
-            <h3 className="text-2xl md:text-3xl font-bold text-foreground mb-4 font-display">
-              <span className="ar-content">التعليم ونقل المعرفة</span>
-              <span className="en-content">Education & Training</span>
-            </h3>
-            <p className="text-secondary text-lg leading-relaxed font-semibold">
-              <span className="ar-content">
-                بناء الكفاءات الوطنية المتخصصة وتطوير المهارات التقنية في المجالات الهندسية المتقدمة.
-              </span>
-              <span className="en-content">
-                Building specialized national competencies and developing skills in advanced engineering.
-              </span>
-            </p>
+          <div className="flex items-center gap-3">
+            <ChartNoAxesCombined className="h-5 w-5 shrink-0 text-primary" />
+            <span className="text-base font-bold text-foreground/75"><span className="ar-content">نتائج تدعم القرار</span><span className="en-content">Results that support decisions</span></span>
           </div>
         </div>
       </div>

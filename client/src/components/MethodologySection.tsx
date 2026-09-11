@@ -1,83 +1,69 @@
+const phases = [
+  {
+    number: '01',
+    arTitle: 'نفهم العمل',
+    enTitle: 'Understand the work',
+    arText: 'نرسم المدخلات والخطوات ونقاط القرار، ونحدد أين توجد الخبرة وأين يتكرر الجهد.',
+    enText: 'We map inputs, steps, and decision points, identifying where expertise sits and effort repeats.',
+  },
+  {
+    number: '02',
+    arTitle: 'نبني ونربط',
+    enTitle: 'Build and connect',
+    arText: 'نحوّل المنهج إلى تدفق قابل للتنفيذ، ونربطه بالمصادر والأدوات والأنظمة اللازمة.',
+    enText: 'We turn the method into an executable flow connected to the required sources, tools, and systems.',
+  },
+  {
+    number: '03',
+    arTitle: 'نختبر ونقيس',
+    enTitle: 'Test and measure',
+    arText: 'نختبر الحالات الصحيحة والحرجة، ونقيس جودة المخرجات قبل منح النظام نطاقاً أوسع.',
+    enText: 'We test normal and critical cases, measuring output quality before widening the system’s scope.',
+  },
+  {
+    number: '04',
+    arTitle: 'نشغّل ونحسّن',
+    enTitle: 'Operate and improve',
+    arText: 'نراقب الأداء وسجل القرارات، ثم نطوّر النظام بناءً على الاستخدام الفعلي والأدلة.',
+    enText: 'We monitor performance and decision records, then improve the system from real use and evidence.',
+  },
+];
+
 export default function MethodologySection() {
   return (
-    <section id="methodology" className="py-24 bg-white relative overflow-hidden">
-      {/* Background Image */}
-      <div 
-        className="absolute inset-0 opacity-5"
-        style={{
-          backgroundImage: `url('https://private-us-east-1.manuscdn.com/sessionFile/qY57DoIOhiWxBJmMIzGMkz/sandbox/wnevn9Ag6ZWuReI4sWnw1z-img-2_1770272571000_na1fn_bWV0aG9kb2xvZ3ktdmlzdWFsaXphdGlvbg.png?x-oss-process=image/resize,w_1920,h_1920/format,webp/quality,q_80&Expires=1798761600&Policy=eyJTdGF0ZW1lbnQiOlt7IlJlc291cmNlIjoiaHR0cHM6Ly9wcml2YXRlLXVzLWVhc3QtMS5tYW51c2Nkbi5jb20vc2Vzc2lvbkZpbGUvcVk1N0RvSU9oaVd4QkptTUl6R01rei9zYW5kYm94L3duZXZuOUFnNlpXdVJlSTRzV253MXotaW1nLTJfMTc3MDI3MjU3MTAwMF9uYTFmbl9iV1YwYUc5a2IyeHZaM2t0ZG1semRXRnNhWHBoZEdsdmJnLnBuZz94LW9zcy1wcm9jZXNzPWltYWdlL3Jlc2l6ZSx3XzE5MjAsaF8xOTIwL2Zvcm1hdCx3ZWJwL3F1YWxpdHkscV84MCIsIkNvbmRpdGlvbiI6eyJEYXRlTGVzc1RoYW4iOnsiQVdTOkVwb2NoVGltZSI6MTc5ODc2MTYwMH19fV19&Key-Pair-Id=K2HSFNDJXOU9YS&Signature=t-sYIhemGZH9o229j4Kq4wpJYV4~fyz~arnWAfA2OXuza6dnP8FiUKL2T2N28c~OyCBF-~Lc5dcEoOQmuKp12kElCU9jwyvlsqpm2~9dvbcrH01A9NTvEUCm981vo-V1lvhdqYz7~KffpxRQ7kMctvjo6yLJxdo2zjqa2vHe4BvJWBZZmtf-Mnmvsz4x6RzHJ2Wq8PAnSob~VmhktOxyFKJMiYY6FEVoaGTsp4Yrz4D2qh7oAuYGL0EqEL6mWStjW3om3iITmNacfWd23WZrWZFBoNoeQD709m9yFW4oFYPccNK-L9lNb4MyxWnjGkKVRsJM5ZpwAwmr-ypKI4~JqA__')`,
-          backgroundSize: 'cover',
-          backgroundPosition: 'center',
-        }}
-      />
-      
-      <div className="container mx-auto px-6 relative z-10">
-        {/* Header */}
-        <div className="text-center mb-16 animate-fade-in-up">
-          <h2 className="text-4xl lg:text-5xl font-bold text-foreground mb-4 font-display">
-            <span className="ar-content">منهجية انفِراد</span>
-            <span className="en-content">INFIRAD Methodology</span>
-          </h2>
-          <div className="w-24 h-1 bg-secondary mx-auto rounded-full" />
-        </div>
+    <section id="methodology" className="bg-white py-24 lg:py-32">
+      <div className="container mx-auto px-6">
+        <div className="grid gap-10 lg:grid-cols-[0.78fr_1.22fr] lg:gap-20">
+          <div>
+            <div className="eyebrow border-primary/15 bg-primary/5 text-primary">
+              <span className="eyebrow-dot" />
+              <span className="ar-content">منهجية انفِراد</span>
+              <span className="en-content">The INFIRAD method</span>
+            </div>
+            <h2 className="mt-6 text-4xl font-bold leading-tight text-foreground sm:text-5xl lg:text-6xl">
+              <span className="ar-content">من الخبرة المهنية إلى نظام يعمل.</span>
+              <span className="en-content">From professional knowledge to a working system.</span>
+            </h2>
+            <p className="mt-6 text-xl leading-relaxed text-foreground/65">
+              <span className="ar-content">لا يبدأ العمل باختيار نموذج ذكاء اصطناعي؛ بل بفهم المهمة التي يجب أن تُنجز والمعيار الذي يثبت جودتها.</span>
+              <span className="en-content">The work does not begin by choosing an AI model. It begins with the task to be completed and the standard that proves its quality.</span>
+            </p>
+          </div>
 
-        {/* Three-Phase Grid */}
-        <div className="grid md:grid-cols-3 gap-0 border-2 border-border rounded-3xl overflow-hidden shadow-xl">
-          {/* Phase 1 */}
-          <div className="p-10 bg-accent border-l-2 border-border group hover:bg-primary transition-all duration-300 hover-lift">
-            <span className="text-5xl font-bold text-secondary/30 block mb-6 group-hover:text-white/10 font-mono transition-colors">
-              01
-            </span>
-            <h3 className="text-2xl md:text-3xl font-bold text-foreground mb-4 group-hover:text-white transition-colors font-display">
-              <span className="ar-content">التصور والتحقق</span>
-              <span className="en-content">Validation</span>
-            </h3>
-            <p className="text-foreground/70 text-xl md:text-2xl leading-relaxed group-hover:text-secondary transition-colors">
-              <span className="ar-content">
-                تقييم السوق والجدوى، تعريف المفهوم الفني، وتحديد المخاطر المبكرة لضمان واقعية الفكرة.
-              </span>
-              <span className="en-content">
-                Market assessment, feasibility study, technical concept definition, and early risk identification.
-              </span>
-            </p>
-          </div>
-          
-          {/* Phase 2 */}
-          <div className="p-10 bg-accent border-l-2 border-border group hover:bg-primary transition-all duration-300 hover-lift">
-            <span className="text-5xl font-bold text-secondary/30 block mb-6 group-hover:text-white/10 font-mono transition-colors">
-              02
-            </span>
-            <h3 className="text-2xl md:text-3xl font-bold text-foreground mb-4 group-hover:text-white transition-colors font-display">
-              <span className="ar-content">المحاكاة والتحسين</span>
-              <span className="en-content">Simulation</span>
-            </h3>
-            <p className="text-foreground/70 text-xl md:text-2xl leading-relaxed group-hover:text-secondary transition-colors">
-              <span className="ar-content">
-                هندسة ونمذجة الأنظمة، اختبار السيناريوهات، وتحليل المفاضلات القائمة على البيانات.
-              </span>
-              <span className="en-content">
-                Engineering and system modeling, scenario testing, and data-driven trade-off analysis.
-              </span>
-            </p>
-          </div>
-          
-          {/* Phase 3 */}
-          <div className="p-10 bg-accent group hover:bg-primary transition-all duration-300 hover-lift">
-            <span className="text-5xl font-bold text-secondary/30 block mb-6 group-hover:text-white/10 font-mono transition-colors">
-              03
-            </span>
-            <h3 className="text-2xl md:text-3xl font-bold text-foreground mb-4 group-hover:text-white transition-colors font-display">
-              <span className="ar-content">التطوير والتجهيز</span>
-              <span className="en-content">Preparation</span>
-            </h3>
-            <p className="text-foreground/70 text-xl md:text-2xl leading-relaxed group-hover:text-secondary transition-colors">
-              <span className="ar-content">
-                تكامل التقنيات، إعداد خرائط طريق التنفيذ، وتجهيز الوثائق الجاهزة للاستثمار.
-              </span>
-              <span className="en-content">
-                Technology integration, implementation roadmaps, and creating investment-ready documentation.
-              </span>
-            </p>
+          <div className="grid gap-px overflow-hidden rounded-[1.75rem] border border-primary/10 bg-primary/10 sm:grid-cols-2">
+            {phases.map((phase) => (
+              <article key={phase.number} className="group bg-accent p-7 transition-colors duration-300 hover:bg-primary sm:p-8">
+                <span className="text-sm font-bold tracking-[0.2em] text-secondary">{phase.number}</span>
+                <h3 className="mt-8 text-2xl font-bold text-primary transition-colors group-hover:text-white">
+                  <span className="ar-content">{phase.arTitle}</span>
+                  <span className="en-content">{phase.enTitle}</span>
+                </h3>
+                <p className="mt-4 text-lg leading-relaxed text-foreground/65 transition-colors group-hover:text-white/70">
+                  <span className="ar-content">{phase.arText}</span>
+                  <span className="en-content">{phase.enText}</span>
+                </p>
+              </article>
+            ))}
           </div>
         </div>
       </div>
