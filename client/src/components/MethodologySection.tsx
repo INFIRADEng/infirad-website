@@ -40,11 +40,11 @@ export default function MethodologySection() {
               <span className="ar-content">منهجية انفِراد</span>
               <span className="en-content">The INFIRAD method</span>
             </div>
-            <h2 className="mt-6 text-4xl font-bold leading-tight text-foreground sm:text-5xl lg:text-6xl">
+            <h2 className="mt-7 text-5xl font-bold leading-tight text-foreground sm:text-6xl lg:text-7xl">
               <span className="ar-content">من الخبرة المهنية إلى نظام يعمل.</span>
               <span className="en-content">From professional knowledge to a working system.</span>
             </h2>
-            <p className="mt-6 text-xl leading-relaxed text-foreground/65">
+            <p className="mt-7 text-2xl leading-relaxed text-foreground/70">
               <span className="ar-content">لا يبدأ العمل باختيار نموذج ذكاء اصطناعي؛ بل بفهم المهمة التي يجب أن تُنجز والمعيار الذي يثبت جودتها.</span>
               <span className="en-content">The work does not begin by choosing an AI model. It begins with the task to be completed and the standard that proves its quality.</span>
             </p>
@@ -52,13 +52,13 @@ export default function MethodologySection() {
 
           <div className="grid gap-px overflow-hidden rounded-[1.75rem] border border-primary/10 bg-primary/10 sm:grid-cols-2">
             {phases.map((phase) => (
-              <article key={phase.number} className="group bg-accent p-7 transition-colors duration-300 hover:bg-primary sm:p-8">
-                <span className="text-base font-bold tracking-[0.2em] text-secondary">{phase.number}</span>
-                <h3 className="mt-8 text-2xl font-bold text-primary transition-colors group-hover:text-white">
+              <article key={phase.number} className="group bg-accent p-8 transition-colors duration-300 hover:bg-primary sm:p-10">
+                <span className="text-lg font-bold tracking-[0.2em] text-secondary">{phase.number}</span>
+                <h3 className="mt-8 text-3xl font-bold leading-snug text-primary transition-colors group-hover:text-white">
                   <span className="ar-content">{phase.arTitle}</span>
                   <span className="en-content">{phase.enTitle}</span>
                 </h3>
-                <p className="mt-4 text-xl leading-relaxed text-foreground/70 transition-colors group-hover:text-white/75">
+                <p className="mt-5 text-xl leading-relaxed text-foreground/75 transition-colors group-hover:text-white/80 sm:text-2xl">
                   <span className="ar-content">{phase.arText}</span>
                   <span className="en-content">{phase.enText}</span>
                 </p>

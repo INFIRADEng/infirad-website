@@ -10,11 +10,18 @@ The visible type was increased for the hero eyebrow, the complete specialist-age
 
 ## Scale applied
 
-- Repeated section labels and high-value metadata: 16 px or larger.
+- Repeated section labels and high-value metadata: 18 px on narrow screens and 20 px on wider screens.
 - Card descriptions, navigation, lists, start points, buttons, and footer details: 18 px or larger where space permits.
 - Primary explanatory copy inside cards and callouts: 20 px.
 - Line height and contrast were increased where the larger type required more breathing room.
-- Headline sizes were preserved to maintain hierarchy.
+- Other section headline sizes were preserved to maintain hierarchy.
+
+## Methodology-section refinement
+
+- The main methodology heading now scales from 48 px on mobile to 72 px on desktop.
+- The methodology introduction is 24 px.
+- Phase titles are 30 px and phase descriptions scale from 20 px to 24 px.
+- Phase numbers, card padding, line height, and contrast were increased with the text scale.
 
 ## Scope safeguards
 

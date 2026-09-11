@@ -212,19 +212,20 @@
   .eyebrow {
     display: inline-flex;
     width: fit-content;
+    max-width: 100%;
     align-items: center;
     gap: 0.7rem;
     border-width: 1px;
     border-radius: 999px;
-    padding: 0.55rem 0.9rem;
-    font-size: 1rem;
+    padding: 0.65rem 1.05rem;
+    font-size: clamp(1.125rem, 1rem + 0.5vw, 1.25rem);
     font-weight: 700;
-    line-height: 1.3;
+    line-height: 1.4;
   }
 
   .eyebrow-dot {
-    width: 0.45rem;
-    height: 0.45rem;
+    width: 0.55rem;
+    height: 0.55rem;
     flex: 0 0 auto;
     border-radius: 999px;
     background: var(--secondary);
