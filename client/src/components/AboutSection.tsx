@@ -58,7 +58,7 @@ export default function AboutSection() {
             </p>
 
             <div className="mt-8 border-s-4 border-secondary bg-accent p-6">
-              <p className="text-lg font-bold leading-relaxed text-primary">
+              <p className="text-xl font-bold leading-relaxed text-primary">
                 <span className="ar-content">
                   الهندسة والمحاكاة هما أعمق خبراتنا الحالية — ومنهما نأخذ الانضباط الذي نطبقه عند بناء الوكلاء لأي عمل متخصص.
                 </span>
@@ -78,13 +78,13 @@ export default function AboutSection() {
                     <div className="flex h-12 w-12 items-center justify-center rounded-xl bg-primary text-white transition-transform duration-300 group-hover:-translate-y-1">
                       <Icon className="h-6 w-6" />
                     </div>
-                    <span className="text-sm font-bold tracking-[0.2em] text-secondary">0{index + 1}</span>
+                    <span className="text-base font-bold tracking-[0.2em] text-secondary">0{index + 1}</span>
                   </div>
                   <h3 className="mt-8 text-2xl font-bold text-primary">
                     <span className="ar-content">{principle.arTitle}</span>
                     <span className="en-content">{principle.enTitle}</span>
                   </h3>
-                  <p className="mt-3 text-lg leading-relaxed text-foreground/65">
+                  <p className="mt-3 text-xl leading-relaxed text-foreground/70">
                     <span className="ar-content">{principle.arText}</span>
                     <span className="en-content">{principle.enText}</span>
                   </p>
@@ -96,7 +96,7 @@ export default function AboutSection() {
 
         <div className="mt-16 flex items-center gap-4 rounded-2xl border border-primary/10 bg-primary px-6 py-5 text-white sm:px-8">
           <CircleCheckBig className="h-6 w-6 shrink-0 text-secondary" />
-          <p className="text-base font-bold leading-relaxed sm:text-lg">
+          <p className="text-lg font-bold leading-relaxed sm:text-xl">
             <span className="ar-content">نبني ونختبر منهجنا داخل أعمال انفِراد نفسها قبل أن نوسّع تطبيقه.</span>
             <span className="en-content">We build and test our operating method inside INFIRAD before expanding its application.</span>
           </p>

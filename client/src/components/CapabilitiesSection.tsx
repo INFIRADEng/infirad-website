@@ -83,10 +83,10 @@ export default function CapabilitiesSection() {
                   <div className={`flex h-12 w-12 items-center justify-center rounded-xl ${path.featured ? 'bg-white text-primary' : 'bg-primary text-white'}`}>
                     <Icon className="h-6 w-6" />
                   </div>
-                  <span className={`text-sm font-bold tracking-[0.2em] ${path.featured ? 'text-secondary' : 'text-primary/45'}`}>{path.number}</span>
+                  <span className={`text-base font-bold tracking-[0.2em] ${path.featured ? 'text-secondary' : 'text-primary/55'}`}>{path.number}</span>
                 </div>
 
-                <p className={`mt-8 text-sm font-bold leading-relaxed ${path.featured ? 'text-secondary' : 'text-primary/55'}`}>
+                <p className={`mt-8 text-base font-bold leading-relaxed sm:text-lg ${path.featured ? 'text-secondary' : 'text-primary/65'}`}>
                   <span className="ar-content">{path.arEyebrow}</span>
                   <span className="en-content">{path.enEyebrow}</span>
                 </p>
@@ -94,14 +94,14 @@ export default function CapabilitiesSection() {
                   <span className="ar-content">{path.arTitle}</span>
                   <span className="en-content">{path.enTitle}</span>
                 </h3>
-                <p className={`mt-5 text-lg leading-relaxed ${path.featured ? 'text-white/70' : 'text-foreground/65'}`}>
+                <p className={`mt-5 text-xl leading-relaxed ${path.featured ? 'text-white/75' : 'text-foreground/70'}`}>
                   <span className="ar-content">{path.arText}</span>
                   <span className="en-content">{path.enText}</span>
                 </p>
 
                 <ul className="mt-7 grid gap-3 border-t border-current/10 pt-6">
                   {path.arItems.map((item, itemIndex) => (
-                    <li key={path.enItems[itemIndex]} className="flex items-start gap-3 text-base font-bold leading-relaxed">
+                    <li key={path.enItems[itemIndex]} className="flex items-start gap-3 text-lg font-bold leading-relaxed">
                       <span className={`mt-2 h-1.5 w-1.5 shrink-0 rounded-full ${path.featured ? 'bg-secondary' : 'bg-primary'}`} />
                       <span className="ar-content">{item}</span>
                       <span className="en-content">{path.enItems[itemIndex]}</span>
@@ -109,7 +109,7 @@ export default function CapabilitiesSection() {
                   ))}
                 </ul>
 
-                <div className={`mt-auto pt-8 text-sm font-bold leading-relaxed ${path.featured ? 'text-secondary' : 'text-primary'}`}>
+                <div className={`mt-auto pt-8 text-base font-bold leading-relaxed sm:text-lg ${path.featured ? 'text-secondary' : 'text-primary'}`}>
                   <span className="ar-content">{path.arStart}</span>
                   <span className="en-content">{path.enStart}</span>
                 </div>
@@ -121,15 +121,15 @@ export default function CapabilitiesSection() {
         <div className="mt-10 grid gap-4 rounded-2xl border border-primary/10 bg-white p-6 sm:grid-cols-3 sm:p-8">
           <div className="flex items-center gap-3">
             <Network className="h-5 w-5 shrink-0 text-primary" />
-            <span className="text-base font-bold text-foreground/75"><span className="ar-content">تكامل مع الأنظمة القائمة</span><span className="en-content">Integration with existing systems</span></span>
+            <span className="text-lg font-bold text-foreground/75"><span className="ar-content">تكامل مع الأنظمة القائمة</span><span className="en-content">Integration with existing systems</span></span>
           </div>
           <div className="flex items-center gap-3">
             <ScanSearch className="h-5 w-5 shrink-0 text-primary" />
-            <span className="text-base font-bold text-foreground/75"><span className="ar-content">قياس قبل التوسع</span><span className="en-content">Measured before scaling</span></span>
+            <span className="text-lg font-bold text-foreground/75"><span className="ar-content">قياس قبل التوسع</span><span className="en-content">Measured before scaling</span></span>
           </div>
           <div className="flex items-center gap-3">
             <ChartNoAxesCombined className="h-5 w-5 shrink-0 text-primary" />
-            <span className="text-base font-bold text-foreground/75"><span className="ar-content">نتائج تدعم القرار</span><span className="en-content">Results that support decisions</span></span>
+            <span className="text-lg font-bold text-foreground/75"><span className="ar-content">نتائج تدعم القرار</span><span className="en-content">Results that support decisions</span></span>
           </div>
         </div>
       </div>

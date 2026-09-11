@@ -79,7 +79,7 @@ export default function HeroSection() {
             </Button>
           </div>
 
-          <div className="flex flex-wrap gap-x-7 gap-y-3 border-t border-white/15 pt-6 text-sm font-bold text-white/60 sm:text-base">
+          <div className="flex flex-wrap gap-x-7 gap-y-3 border-t border-white/15 pt-6 text-base font-bold leading-relaxed text-white/70 sm:text-lg">
             <span className="ar-content">وكلاء متخصصون</span>
             <span className="en-content">Specialized agents</span>
             <span aria-hidden="true" className="text-secondary">/</span>
@@ -95,11 +95,11 @@ export default function HeroSection() {
           <div className="agent-console relative overflow-hidden rounded-[2rem] border border-white/15 bg-[#071f31]/90 p-5 shadow-2xl backdrop-blur-xl sm:p-7">
             <div className="mb-7 flex items-center justify-between border-b border-white/10 pb-5">
               <div>
-                <p className="text-xs font-bold uppercase tracking-[0.2em] text-secondary">
+                <p className="text-base font-bold uppercase tracking-[0.16em] text-secondary">
                   <span className="ar-content">من المعرفة إلى التنفيذ</span>
                   <span className="en-content">From knowledge to execution</span>
                 </p>
-                <p className="mt-2 text-lg font-bold text-white">
+                <p className="mt-2 text-xl font-bold leading-snug text-white">
                   <span className="ar-content">نظام عمل مهني قابل للتتبع</span>
                   <span className="en-content">A traceable professional workflow</span>
                 </p>
@@ -151,7 +151,7 @@ export default function HeroSection() {
               </div>
             </div>
 
-            <div className="mt-6 rounded-xl border border-white/10 bg-white/5 px-4 py-3 text-sm leading-relaxed text-white/60">
+            <div className="mt-6 rounded-xl border border-white/10 bg-white/5 px-4 py-4 text-base leading-relaxed text-white/70 sm:text-lg">
               <span className="ar-content">الذكاء الاصطناعي ينفّذ ويوثّق. المسؤولية المهنية تبقى لدى أهل الاختصاص.</span>
               <span className="en-content">AI executes and documents. Professional responsibility remains with qualified experts.</span>
             </div>

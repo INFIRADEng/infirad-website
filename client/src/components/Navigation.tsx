@@ -49,7 +49,7 @@ export default function Navigation() {
             <button
               key={item.id}
               onClick={() => scrollToSection(item.id)}
-              className={`text-base font-bold transition-colors ${
+              className={`text-lg font-bold transition-colors ${
                 isScrolled ? 'text-primary/75 hover:text-primary' : 'text-white/75 hover:text-white'
               }`}
             >
@@ -94,7 +94,7 @@ export default function Navigation() {
               <button
                 key={item.id}
                 onClick={() => scrollToSection(item.id)}
-                className="rounded-lg px-3 py-3 text-start text-base font-bold text-primary hover:bg-accent"
+                className="rounded-lg px-3 py-3 text-start text-lg font-bold text-primary hover:bg-accent"
               >
                 <span className="ar-content">{item.ar}</span>
                 <span className="en-content">{item.en}</span>

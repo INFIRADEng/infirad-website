@@ -53,12 +53,12 @@ export default function MethodologySection() {
           <div className="grid gap-px overflow-hidden rounded-[1.75rem] border border-primary/10 bg-primary/10 sm:grid-cols-2">
             {phases.map((phase) => (
               <article key={phase.number} className="group bg-accent p-7 transition-colors duration-300 hover:bg-primary sm:p-8">
-                <span className="text-sm font-bold tracking-[0.2em] text-secondary">{phase.number}</span>
+                <span className="text-base font-bold tracking-[0.2em] text-secondary">{phase.number}</span>
                 <h3 className="mt-8 text-2xl font-bold text-primary transition-colors group-hover:text-white">
                   <span className="ar-content">{phase.arTitle}</span>
                   <span className="en-content">{phase.enTitle}</span>
                 </h3>
-                <p className="mt-4 text-lg leading-relaxed text-foreground/65 transition-colors group-hover:text-white/70">
+                <p className="mt-4 text-xl leading-relaxed text-foreground/70 transition-colors group-hover:text-white/75">
                   <span className="ar-content">{phase.arText}</span>
                   <span className="en-content">{phase.enText}</span>
                 </p>

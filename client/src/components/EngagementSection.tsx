@@ -50,7 +50,7 @@ export default function EngagementSection() {
               <span className="en-content">An engagement may begin with a study, model, or bounded agent. Value is measured before the solution becomes a wider system.</span>
             </p>
 
-            <div className="mt-8 flex items-start gap-3 border-s-2 border-secondary ps-5 text-base font-bold leading-relaxed text-secondary sm:text-lg">
+            <div className="mt-8 flex items-start gap-3 border-s-2 border-secondary ps-5 text-lg font-bold leading-relaxed text-secondary sm:text-xl">
               <CheckCircle2 className="mt-1 h-5 w-5 shrink-0" />
               <span className="ar-content">الوكيل ينفّذ ويوثّق؛ القرار المهني والمسؤولية يبقيان لأهل الاختصاص.</span>
               <span className="en-content">The agent executes and documents; professional judgment and responsibility remain with qualified experts.</span>
@@ -60,13 +60,13 @@ export default function EngagementSection() {
           <div className="grid gap-4">
             {stages.map((stage) => (
               <article key={stage.number} className="group grid gap-4 rounded-2xl border border-white/12 bg-white/5 p-6 transition-colors hover:bg-white/9 sm:grid-cols-[auto_1fr_auto] sm:items-center sm:p-7">
-                <span className="text-sm font-bold tracking-[0.2em] text-secondary">{stage.number}</span>
+                <span className="text-base font-bold tracking-[0.2em] text-secondary">{stage.number}</span>
                 <div>
                   <h3 className="text-2xl font-bold">
                     <span className="ar-content">{stage.arTitle}</span>
                     <span className="en-content">{stage.enTitle}</span>
                   </h3>
-                  <p className="mt-2 text-base leading-relaxed text-white/60 sm:text-lg">
+                  <p className="mt-2 text-lg leading-relaxed text-white/70 sm:text-xl">
                     <span className="ar-content">{stage.arText}</span>
                     <span className="en-content">{stage.enText}</span>
                   </p>
@@ -79,7 +79,7 @@ export default function EngagementSection() {
 
         <div className="mt-16 flex flex-col items-start justify-between gap-8 rounded-[1.75rem] bg-white p-7 text-primary shadow-2xl sm:p-10 lg:flex-row lg:items-center">
           <div className="max-w-3xl">
-            <p className="text-sm font-bold uppercase tracking-[0.18em] text-secondary">
+            <p className="text-base font-bold uppercase tracking-[0.16em] text-secondary sm:text-lg">
               <span className="ar-content">من الفكرة إلى اليقين</span>
               <span className="en-content">From Idea to Certainty</span>
             </p>
@@ -89,14 +89,14 @@ export default function EngagementSection() {
             </h3>
           </div>
           <div className="flex w-full flex-wrap gap-3 lg:w-auto lg:justify-end">
-            <Button asChild size="lg" className="min-h-13 flex-1 gap-2 bg-primary px-5 text-base font-bold text-white hover:bg-primary/90 lg:flex-none">
+            <Button asChild size="lg" className="min-h-13 flex-1 gap-2 bg-primary px-5 text-lg font-bold text-white hover:bg-primary/90 lg:flex-none">
               <a href="https://wa.me/966530151525" target="_blank" rel="noopener noreferrer">
                 <MessageCircle className="h-5 w-5" />
                 <span className="ar-content">واتساب</span>
                 <span className="en-content">WhatsApp</span>
               </a>
             </Button>
-            <Button asChild variant="outline" size="lg" className="min-h-13 flex-1 gap-2 border-primary/20 px-5 text-base font-bold text-primary hover:bg-accent lg:flex-none">
+            <Button asChild variant="outline" size="lg" className="min-h-13 flex-1 gap-2 border-primary/20 px-5 text-lg font-bold text-primary hover:bg-accent lg:flex-none">
               <a href="mailto:info@infiradeng.com">
                 <Mail className="h-5 w-5" />
                 <span className="ar-content">البريد الإلكتروني</span>
