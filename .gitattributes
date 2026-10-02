@@ -7,3 +7,4 @@ site/**/*.xml text eol=lf
 site/**/*.txt text eol=lf
 site/CNAME text eol=lf
 site/**/*.png binary
+site/*.ico binary

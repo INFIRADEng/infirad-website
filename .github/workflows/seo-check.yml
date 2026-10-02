@@ -1,0 +1,23 @@
+name: SEO checks
+
+# Checks the technical search layer of site/ (canonical, hreflang, sitemap,
+# structured data, icons) on every pull request that touches it. It does not
+# gate the deploy workflow; a red check here is a signal on the pull request.
+on:
+  pull_request:
+    paths:
+      - "site/**"
+      - "scripts/check_seo.py"
+      - ".github/workflows/seo-check.yml"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Check site/
+        run: python3 scripts/check_seo.py
