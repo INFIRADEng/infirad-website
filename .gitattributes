@@ -1,0 +1,9 @@
+# The static site is served byte for byte by GitHub Pages; pin its text
+# files to LF so a Windows checkout cannot rewrite what gets published.
+site/**/*.html text eol=lf
+site/**/*.css text eol=lf
+site/**/*.js text eol=lf
+site/**/*.xml text eol=lf
+site/**/*.txt text eol=lf
+site/CNAME text eol=lf
+site/**/*.png binary
