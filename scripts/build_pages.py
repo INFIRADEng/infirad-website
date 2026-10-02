@@ -62,20 +62,20 @@ PAGES = {
     "engineering": {
         "kind": "service",
         "panel": "svc-eng",
-        "service_type": "Process design and independent engineering review",
+        "service_type": "Engineering service provider (ESP): process design and independent engineering review",
         "ar": {
             "slug": "engineering/",
             "crumb": "الهندسة",
-            "title": "تصميم العمليات ومراجعة P&ID والمراجعة الهندسية المستقلة | انفراد",
-            "h1": "الهندسة: تصميم العمليات ومراجعة هندسية مستقلة",
-            "description": "انفراد تصمّم العمليات من المفهوم حتى التعريف التقني، وتطوّر مخطّطات PFD وP&ID وتراجعها، وتقدّم مراجعة هندسية مستقلة ومهندس المالك. الرياض، المملكة العربية السعودية.",
+            "title": "مقدّم خدمات هندسية (ESP): تصميم العمليات ومراجعة P&ID | انفراد",
+            "h1": "الهندسة: مقدّم خدمات هندسية لتصميم العمليات والمراجعة المستقلة",
+            "description": "انفراد مقدّم خدمات هندسية (Engineering Service Provider) في الرياض: تصميم العمليات من المفهوم حتى التعريف التقني، وتطوير مخطّطات PFD وP&ID ومراجعتها، ومراجعة هندسية مستقلة ومهندس المالك.",
         },
         "en": {
             "slug": "engineering/",
             "crumb": "Engineering",
-            "title": "Process Design, P&ID Review and Independent Engineering Review | INFIRAD",
-            "h1": "Engineering: process design and independent engineering review",
-            "description": "INFIRAD designs processes from concept to technical definition, develops and reviews PFDs and P&IDs, and provides independent engineering review and owner's engineer support. Riyadh, Saudi Arabia.",
+            "title": "Engineering Service Provider (ESP): Process Design and P&ID Review | INFIRAD",
+            "h1": "Engineering: an engineering service provider for process design and independent review",
+            "description": "INFIRAD is an engineering service provider (ESP) in Riyadh, Saudi Arabia: process design from concept to technical definition, PFD and P&ID development and review, independent engineering review and owner's engineer support.",
         },
     },
     "simulation": {
