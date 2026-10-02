@@ -49,8 +49,9 @@ website/
   too.** The CEO chose them for readability, the WhatsApp number above all. Spec
   §6 asks for Arabic-Indic digits on Arabic output; this site overrides that by
   CEO decision of 2026-10-01.
-- **Type is set larger than a document scale** (body 19px, lead up to 24px) at the
-  CEO's request.
+- **Type is set large for reading on screen** (CEO, 2026-10-02): body 21px,
+  descriptions and list points 20px, lead up to 26px, short labels 17px. Measured on
+  the rendered page, no text is below 17px.
 - **Evidence shown:** selected work (its introduction says it was completed earlier
   by the engineers who deliver INFIRAD's services) and the two projects,
   نسمة شمس / SolarCool and انسياب / INSYAB. Credentials and the tool list are
