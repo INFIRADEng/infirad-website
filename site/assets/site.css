@@ -327,3 +327,17 @@ table.models { width: 100%; min-width: 560px; border-collapse: collapse; font-si
 
 .num { font-variant-numeric: tabular-nums; }
 @media (prefers-reduced-motion: reduce) { * { scroll-behavior: auto !important; } }
+
+/* Service and project pages (scripts/build_pages.py). Their bodies are the
+   home page's panels and cards; these rules only adapt them to a page of their own. */
+.page-hero { padding-block: clamp(40px, 6vw, 80px) clamp(32px, 4vw, 56px); }
+.crumbs { display: flex; flex-wrap: wrap; gap: 8px; }
+.crumbs a { text-decoration: underline; text-underline-offset: 4px; }
+.page-hero h1 { max-width: 22em; }
+.svc-panel .panel-head h2 { font-size: clamp(1.875rem, 1.3rem + 2vw, 3.25rem); }
+.page-body .svc-panel { border: 0; padding: 0; }
+.page-body .programs { grid-template-columns: minmax(0, 1fr); }
+.program h2 { font-size: 2rem; }
+.panel-more, .program-more, .related { font-size: var(--fs-small); font-weight: 700; }
+.panel-more a, .program-more a, .related a { text-decoration: underline; text-underline-offset: 4px; }
+.related { margin-block-start: 24px; color: var(--gray-blue); }

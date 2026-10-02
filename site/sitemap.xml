@@ -12,4 +12,24 @@
     <xhtml:link rel="alternate" hreflang="ar" href="https://infiradev.com/"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://infiradev.com/en/"/>
   </url>
+  <url>
+    <loc>https://infiradev.com/engineering/</loc>
+    <lastmod>2026-10-02</lastmod>
+  </url>
+  <url>
+    <loc>https://infiradev.com/simulation/</loc>
+    <lastmod>2026-10-02</lastmod>
+  </url>
+  <url>
+    <loc>https://infiradev.com/agents/</loc>
+    <lastmod>2026-10-02</lastmod>
+  </url>
+  <url>
+    <loc>https://infiradev.com/projects/nasma-shams/</loc>
+    <lastmod>2026-10-02</lastmod>
+  </url>
+  <url>
+    <loc>https://infiradev.com/projects/insiyab/</loc>
+    <lastmod>2026-10-02</lastmod>
+  </url>
 </urlset>

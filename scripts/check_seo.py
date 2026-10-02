@@ -28,7 +28,16 @@ ORG_ID = ORIGIN + "/#organization"
 # The spellings people actually type. A search for the Arabic brand name is
 # usually typed without diacritics, so the plain form must be declared.
 REQUIRED_ORG_NAMES = {"INFIRAD", "انفراد", "انفِراد"}
-PAGES = {"site/index.html": ORIGIN + "/", "site/en/index.html": ORIGIN + "/en/"}
+HOMES = {ORIGIN + "/", ORIGIN + "/en/"}
+
+
+def sitemap_pages() -> dict:
+    """Every page the sitemap lists, mapped to its file in site/."""
+    sm = (SITE / "sitemap.xml").read_text(encoding="utf-8")
+    return {f"site/{u[len(ORIGIN):].lstrip('/')}index.html": u for u in re.findall(r"<loc>(.*?)</loc>", sm)}
+
+
+PAGES = sitemap_pages()
 
 failures: list[str] = []
 passes: list[str] = []
@@ -110,10 +119,11 @@ def check_pages() -> dict:
         check(canon == [url], f"{rel}: one canonical, equal to {url} (found {canon})")
 
         alts = {l.get("hreflang"): l.get("href") for l in h.links if l.get("rel") == "alternate" and l.get("hreflang")}
-        hreflang_maps[url] = alts
-        check(alts.get(h.html_attrs.get("lang")) == url,
-              f"{rel}: hreflang for its own language ({h.html_attrs.get('lang')}) points to itself")
-        check("x-default" in alts, f"{rel}: has hreflang x-default")
+        if alts or url in HOMES:
+            hreflang_maps[url] = alts
+            check(alts.get(h.html_attrs.get("lang")) == url,
+                  f"{rel}: hreflang for its own language ({h.html_attrs.get('lang')}) points to itself")
+            check("x-default" in alts, f"{rel}: has hreflang x-default")
 
         title = re.search(r"<title>(.*?)</title>", text, re.S)
         check(bool(title and title.group(1).strip()), f"{rel}: has a <title>")
@@ -162,12 +172,22 @@ def check_pages() -> dict:
                 w, hgt = png_size(lf)
                 check(min(w, hgt) >= 112, f"{rel}: logo is at least 112px on each side ({w}x{hgt})")
             check(bool(o.get("sameAs")), f"{rel}: Organization has sameAs profiles")
-        sites = by_type.get("WebSite", [])
-        check(len(sites) == 1 and sites[0].get("url") == url,
-              f"{rel}: one WebSite node whose url is the page ({url})")
-        if sites:
-            check(sites[0].get("inLanguage") == h.html_attrs.get("lang"),
-                  f"{rel}: WebSite inLanguage matches <html lang>")
+        pages = by_type.get("WebPage", [])
+        check(len(pages) == 1 and pages[0].get("url") == url, f"{rel}: one WebPage node whose url is the page")
+        if url in HOMES:
+            sites = by_type.get("WebSite", [])
+            check(len(sites) == 1 and sites[0].get("url") == url,
+                  f"{rel}: one WebSite node whose url is the page ({url})")
+            if sites:
+                check(sites[0].get("inLanguage") == h.html_attrs.get("lang"),
+                      f"{rel}: WebSite inLanguage matches <html lang>")
+        else:
+            crumbs = by_type.get("BreadcrumbList", [])
+            items = crumbs[0].get("itemListElement", []) if crumbs else []
+            check(bool(items) and items[-1].get("item") == url and items[0].get("item") == ORIGIN + "/",
+                  f"{rel}: breadcrumb runs from the home page to this page")
+            h1 = re.findall(r"<h1[^>]*>", text)
+            check(len(h1) == 1, f"{rel}: exactly one <h1> ({len(h1)})")
 
     # The two pages must describe ONE company, or a search engine may see two.
     keys = ("@id", "name", "url", "alternateName", "logo", "telephone", "email", "sameAs")
@@ -187,12 +207,29 @@ def check_sitemap_and_robots(hreflang_maps: dict) -> None:
     check(not re.search(r"^\s*Disallow:\s*/\s*$", robots, re.M), "robots.txt does not disallow the whole site")
     sm = (SITE / "sitemap.xml").read_text(encoding="utf-8")
     locs = re.findall(r"<loc>(.*?)</loc>", sm)
-    check(sorted(locs) == sorted(PAGES.values()), f"sitemap lists exactly the canonical pages ({locs})")
+    check(all((SITE.parent / f).exists() for f in PAGES), "every sitemap URL has a page in site/")
     for loc in locs:
         block = sm[sm.index(f"<loc>{loc}</loc>"):].split("</url>")[0]
         alts = dict(re.findall(r'hreflang="([^"]+)" href="([^"]+)"', block))
+        if loc not in hreflang_maps:
+            check(not alts, f"sitemap declares no hreflang for {loc}, which declares none itself")
+            continue
         page_alts = {k: v for k, v in hreflang_maps.get(loc, {}).items() if k != "x-default"}
         check(alts == page_alts, f"sitemap hreflang for {loc} matches the page's <link> tags")
+
+
+def check_coverage_and_links() -> None:
+    on_disk = {str(p.relative_to(SITE.parent)) for p in SITE.rglob("index.html")}
+    check(on_disk == set(PAGES), f"sitemap covers every page on disk (missing {sorted(on_disk - set(PAGES))})")
+    for rel, url in PAGES.items():
+        text = (SITE.parent / rel).read_text(encoding="utf-8")
+        for href in re.findall(r'<a [^>]*href="([^"#]*)(?:#[^"]*)?"', text):
+            if not href or href.startswith(("http", "mailto:", "tel:")):
+                continue
+            target = resolve(url, href)
+            if target.is_dir() or not target.suffix:
+                target = target / "index.html"
+            check(target.exists(), f"{rel}: internal link {href} resolves")
 
 
 def fetch(url: str, follow: bool = True):
@@ -232,6 +269,7 @@ def check_live() -> None:
 def main() -> int:
     maps = check_pages()
     check_sitemap_and_robots(maps)
+    check_coverage_and_links()
     if "--live" in sys.argv:
         check_live()
     for p in passes:
