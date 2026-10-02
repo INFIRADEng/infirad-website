@@ -184,8 +184,9 @@ def check_pages() -> dict:
         else:
             crumbs = by_type.get("BreadcrumbList", [])
             items = crumbs[0].get("itemListElement", []) if crumbs else []
-            check(bool(items) and items[-1].get("item") == url and items[0].get("item") == ORIGIN + "/",
-                  f"{rel}: breadcrumb runs from the home page to this page")
+            check(bool(items) and items[-1].get("item") == url and items[0].get("item") in HOMES
+                  and (items[0]["item"] == ORIGIN + "/en/") == (h.html_attrs.get("lang") == "en"),
+                  f"{rel}: breadcrumb runs from its own language's home page to this page")
             h1 = re.findall(r"<h1[^>]*>", text)
             check(len(h1) == 1, f"{rel}: exactly one <h1> ({len(h1)})")
 
@@ -195,9 +196,13 @@ def check_pages() -> dict:
     check(len(vals) == len(PAGES) and all(v == vals[0] for v in vals),
           "Organization identity is identical on every page")
 
-    # hreflang must be reciprocal: every page lists every other page with the same codes.
-    maps = list(hreflang_maps.values())
-    check(all(m == maps[0] for m in maps), "hreflang sets are identical (reciprocal) on every page")
+    # hreflang must be reciprocal: every alternate a page names must name the same set back.
+    for url, alts in hreflang_maps.items():
+        for code, href in alts.items():
+            if code == "x-default":
+                continue
+            check(hreflang_maps.get(href) == alts,
+                  f"hreflang on {url} is returned identically by its {code} alternate {href}")
     return hreflang_maps
 
 
@@ -230,6 +235,11 @@ def check_coverage_and_links() -> None:
             if target.is_dir() or not target.suffix:
                 target = target / "index.html"
             check(target.exists(), f"{rel}: internal link {href} resolves")
+        for img in re.findall(r"<img [^>]*>", text):
+            src = re.search(r'src="([^"]+)"', img).group(1)
+            alt = re.search(r'alt="([^"]*)"', img)
+            check(bool(alt and alt.group(1).strip()), f"{rel}: image {src} has alt text")
+            check(resolve(url, src).exists(), f"{rel}: image {src} exists")
 
 
 def fetch(url: str, follow: bool = True):

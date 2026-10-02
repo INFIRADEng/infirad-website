@@ -341,3 +341,15 @@ table.models { width: 100%; min-width: 560px; border-collapse: collapse; font-si
 .panel-more, .program-more, .related { font-size: var(--fs-small); font-weight: 700; }
 .panel-more a, .program-more a, .related a { text-decoration: underline; text-underline-offset: 4px; }
 .related { margin-block-start: 24px; color: var(--gray-blue); }
+
+/* Project pages: the card beside a line illustration. The side alternates
+   between the two projects (figure-end / figure-start); logical order means
+   Arabic and English mirror each other. */
+.project-layout { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); gap: clamp(24px, 4vw, 56px); align-items: center; }
+.project-layout.figure-start .project-figure { order: -1; }
+.project-figure { margin: 0; }
+.project-figure img { display: block; width: 100%; height: auto; }
+@media (max-width: 860px) {
+  .project-layout { grid-template-columns: minmax(0, 1fr); }
+  .project-layout.figure-start .project-figure { order: 0; }
+}
