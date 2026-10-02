@@ -235,6 +235,11 @@ def check_coverage_and_links() -> None:
             if target.is_dir() or not target.suffix:
                 target = target / "index.html"
             check(target.exists(), f"{rel}: internal link {href} resolves")
+        for img in re.findall(r"<img [^>]*>", text):
+            src = re.search(r'src="([^"]+)"', img).group(1)
+            alt = re.search(r'alt="([^"]*)"', img)
+            check(bool(alt and alt.group(1).strip()), f"{rel}: image {src} has alt text")
+            check(resolve(url, src).exists(), f"{rel}: image {src} exists")
 
 
 def fetch(url: str, follow: bool = True):

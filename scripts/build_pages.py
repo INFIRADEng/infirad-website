@@ -119,9 +119,15 @@ PAGES = {
     "solar-cooling": {
         "kind": "project",
         "related": "simulation",
+        # Line illustrations, not photographs: the project is at the simulation
+        # stage, and a photo of real panels would read as INFIRAD's own system.
+        "figure": {"src": "/assets/illustration-solar-thermal.svg", "side": "end",
+                   "ar": "رسم توضيحي: ألواح تجميع حراري شمسي",
+                   "en": "Illustration: solar thermal collector panels"},
         "ar": {
             "slug": "projects/nasma-shams/",
             "card": "نسمة شمس",
+            "related_text": "خدمة المحاكاة",
             "crumb": "نسمة شمس",
             "title": "نسمة شمس: تبريد بالامتزاز بالطاقة الشمسية الحرارية | انفراد",
             "h1": "نسمة شمس: تبريد بالامتزاز بالطاقة الشمسية الحرارية",
@@ -130,6 +136,7 @@ PAGES = {
         "en": {
             "slug": "projects/solarcool/",
             "card": "SolarCool",
+            "related_text": "Simulation service",
             "crumb": "SolarCool",
             "title": "SolarCool: Solar-Thermal Adsorption Cooling | INFIRAD",
             "h1": "SolarCool: solar-thermal adsorption cooling",
@@ -139,9 +146,13 @@ PAGES = {
     "traffic": {
         "kind": "project",
         "related": "simulation",
+        "figure": {"src": "/assets/illustration-road-network.svg", "side": "start",
+                   "ar": "رسم توضيحي: شبكة طرق بتقاطعات ودوّار",
+                   "en": "Illustration: a road network with junctions and a roundabout"},
         "ar": {
             "slug": "projects/insiyab/",
             "card": "انسياب",
+            "related_text": "خدمة المحاكاة",
             "crumb": "انسياب",
             "title": "انسياب: محاكاة مرورية لاختبار القرارات قبل التنفيذ | انفراد",
             "h1": "انسياب: محاكاة مرورية لاختبار القرارات قبل التنفيذ",
@@ -150,6 +161,7 @@ PAGES = {
         "en": {
             "slug": "projects/insyab/",
             "card": "INSYAB",
+            "related_text": "Simulation service",
             "crumb": "INSYAB",
             "title": "INSYAB: Traffic Simulation to Test Decisions Before They Are Built | INFIRAD",
             "h1": "INSYAB: traffic simulation to test decisions before they are built",
@@ -294,10 +306,14 @@ def build_page(key: str, lang: str, homes: dict) -> str:
         )
     else:
         rel = PAGES[entry["related"]][lang]
+        fig = entry["figure"]
         body = (
-            '  <section class="section on-navy page-body">\n    <div class="wrap">\n      <div class="programs">\n'
+            '  <section class="section on-navy page-body">\n    <div class="wrap">\n'
+            f'      <div class="project-layout figure-{fig["side"]}">\n      <div class="programs">\n'
             f'        {program_card(home, cfg["card"], lang)}\n      </div>\n'
-            f'      <p class="related">{L["related"]} <a href="{path_of(lang, rel["slug"])}">{html.escape(rel["crumb"], quote=False)}</a></p>\n'
+            f'      <figure class="project-figure"><img src="{fig["src"]}" alt="{html.escape(fig[lang])}" width="480" height="360" loading="lazy"></figure>\n'
+            '      </div>\n'
+            f'      <p class="related">{L["related"]} <a href="{path_of(lang, rel["slug"])}">{html.escape(cfg["related_text"], quote=False)}</a></p>\n'
             '    </div>\n  </section>\n'
         )
     page = (page_head(home, lang, url, alternates, cfg, graph) + "<body>\n"
