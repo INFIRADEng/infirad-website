@@ -1,13 +1,19 @@
 #!/usr/bin/env python3
-"""Build the Arabic service and project pages from the home page.
+"""Build the service and project pages, in Arabic and English, from the home pages.
 
     python3 scripts/build_pages.py
 
-Every page body is taken from site/index.html: a service page is its panel, a
-project page is its card. A service or project is therefore described in ONE
-place, and its page cannot drift from the home page. Edit the home page, then
-re-run this script. Only the page title, meta description and H1, which
-search engines read first, are defined here, in PAGES below.
+Every page body is taken from its language's home page (site/index.html,
+site/en/index.html): a service page is its panel, a project page is its card.
+A service or project is therefore described in ONE place per language, and its
+page cannot drift from the home page. Edit the home page, then re-run this
+script. Only the page title, meta description and H1, which search engines read
+first, are defined here, in PAGES below.
+
+Each Arabic page and its English counterpart declare each other with hreflang,
+and the language link in the header goes to the counterpart page. The script
+also rewrites sitemap.xml from the full page list, so a page cannot be built
+without being listed.
 
 The output is committed. GitHub Pages publishes site/ as it is, with no build
 step.
@@ -23,59 +29,134 @@ ROOT = Path(__file__).resolve().parent.parent
 SITE = ROOT / "site"
 ORIGIN = "https://infiradev.com"
 ORG_ID = ORIGIN + "/#organization"
+LASTMOD = "2026-10-02"
 
-# slug -> where the body comes from on the home page, and what search reads first.
-PAGES = {
-    "engineering/": {
-        "source": ("panel", "svc-eng"),
-        "kind": "service",
-        "crumb": "الهندسة",
-        "title": "تصميم العمليات ومراجعة P&ID والمراجعة الهندسية المستقلة | انفراد",
-        "h1": "الهندسة: تصميم العمليات ومراجعة هندسية مستقلة",
-        "description": "انفراد تصمّم العمليات من المفهوم حتى التعريف التقني، وتطوّر مخطّطات PFD وP&ID وتراجعها، وتقدّم مراجعة هندسية مستقلة ومهندس المالك. الرياض، المملكة العربية السعودية.",
-        "service_type": "Process design and independent engineering review",
+LANGS = {
+    "ar": {
+        "home_file": "index.html",
+        "prefix": "/",
+        "home": "الرئيسية",
+        "projects": "المشاريع",
+        "crumbs_label": "مسار الصفحة",
+        "related": "ذو صلة:",
+        "service_link": "الصفحة الكاملة للخدمة",
+        "project_link": "صفحة المشروع",
+        "lang_href": 'href="en/"',
     },
-    "simulation/": {
-        "source": ("panel", "svc-sim"),
-        "kind": "service",
-        "crumb": "المحاكاة",
-        "title": "محاكاة العمليات وديناميكا الموائع الحاسوبية CFD والتحليل الحراري | انفراد",
-        "h1": "المحاكاة: محاكاة العمليات وديناميكا الموائع الحاسوبية (CFD)",
-        "description": "انفراد تنمذج العمليات والأنظمة لتقيس الأداء والتكلفة وتقارن البدائل: محاكاة العمليات، وتكامل الحرارة، وديناميكا الموائع الحاسوبية CFD، والتحليل الحراري. الرياض، المملكة العربية السعودية.",
-        "service_type": "Process simulation, CFD and thermal analysis",
-    },
-    "agents/": {
-        "source": ("panel", "svc-agents"),
-        "kind": "service",
-        "crumb": "وكلاء الذكاء الاصطناعي",
-        "title": "وكلاء ذكاء اصطناعي متخصصون للشركات والجهات المهنية | انفراد",
-        "h1": "وكلاء ذكاء اصطناعي متخصصون لمجال عملك",
-        "description": "انفراد تبني وكلاء ذكاء اصطناعي متخصصين للهندسة والمحاماة والمالية والبحث والعمليات، داخل بيئة عمل الجهة وعلى مصادرها، مع توثيق كل مُخرج وموافقة بشرية. الرياض، المملكة العربية السعودية.",
-        "service_type": "Specialized AI agents",
-    },
-    "projects/nasma-shams/": {
-        "source": ("program", "نسمة شمس"),
-        "kind": "project",
-        "crumb": "نسمة شمس",
-        "title": "نسمة شمس: تبريد بالامتزاز بالطاقة الشمسية الحرارية | انفراد",
-        "h1": "نسمة شمس: تبريد بالامتزاز بالطاقة الشمسية الحرارية",
-        "description": "نسمة شمس مشروع من انفراد: منظومة تبريد تستخدم مُدخلاً شمسياً حرارياً لتشغيل دورة امتزاز، لتطبيقات يكون فيها الطلب الكهربائي وذروة الحمل القيدَ الحاكم.",
-        "related": ("simulation/", "خدمة المحاكاة"),
-    },
-    "projects/insiyab/": {
-        "source": ("program", "انسياب"),
-        "kind": "project",
-        "crumb": "انسياب",
-        "title": "انسياب: محاكاة مرورية لاختبار القرارات قبل التنفيذ | انفراد",
-        "h1": "انسياب: محاكاة مرورية لاختبار القرارات قبل التنفيذ",
-        "description": "انسياب مشروع من انفراد ينمذج الشبكة المرورية ويعايرها على السلوك المرصود، ثم يحاكي التعديل المقترح ويقيس أثره ويقارن البدائل قبل التنفيذ.",
-        "related": ("simulation/", "خدمة المحاكاة"),
+    "en": {
+        "home_file": "en/index.html",
+        "prefix": "/en/",
+        "home": "Home",
+        "projects": "Projects",
+        "crumbs_label": "Breadcrumb",
+        "related": "Related:",
+        "service_link": "Full service page",
+        "project_link": "Project page",
+        "lang_href": 'href="../"',
     },
 }
 
-# Text the home page needs so that a reader (and a crawler) can reach each page.
-SERVICE_LINK_TEXT = "الصفحة الكاملة للخدمة"
-PROJECT_LINK_TEXT = "صفحة المشروع"
+# One entry per page pair. "source" is the panel id (service) or the card's
+# heading per language (project); "related" names another entry by key.
+PAGES = {
+    "engineering": {
+        "kind": "service",
+        "panel": "svc-eng",
+        "service_type": "Process design and independent engineering review",
+        "ar": {
+            "slug": "engineering/",
+            "crumb": "الهندسة",
+            "title": "تصميم العمليات ومراجعة P&ID والمراجعة الهندسية المستقلة | انفراد",
+            "h1": "الهندسة: تصميم العمليات ومراجعة هندسية مستقلة",
+            "description": "انفراد تصمّم العمليات من المفهوم حتى التعريف التقني، وتطوّر مخطّطات PFD وP&ID وتراجعها، وتقدّم مراجعة هندسية مستقلة ومهندس المالك. الرياض، المملكة العربية السعودية.",
+        },
+        "en": {
+            "slug": "engineering/",
+            "crumb": "Engineering",
+            "title": "Process Design, P&ID Review and Independent Engineering Review | INFIRAD",
+            "h1": "Engineering: process design and independent engineering review",
+            "description": "INFIRAD designs processes from concept to technical definition, develops and reviews PFDs and P&IDs, and provides independent engineering review and owner's engineer support. Riyadh, Saudi Arabia.",
+        },
+    },
+    "simulation": {
+        "kind": "service",
+        "panel": "svc-sim",
+        "service_type": "Process simulation, CFD and thermal analysis",
+        "ar": {
+            "slug": "simulation/",
+            "crumb": "المحاكاة",
+            "title": "محاكاة العمليات وديناميكا الموائع الحاسوبية CFD والتحليل الحراري | انفراد",
+            "h1": "المحاكاة: محاكاة العمليات وديناميكا الموائع الحاسوبية (CFD)",
+            "description": "انفراد تنمذج العمليات والأنظمة لتقيس الأداء والتكلفة وتقارن البدائل: محاكاة العمليات، وتكامل الحرارة، وديناميكا الموائع الحاسوبية CFD، والتحليل الحراري. الرياض، المملكة العربية السعودية.",
+        },
+        "en": {
+            "slug": "simulation/",
+            "crumb": "Simulation",
+            "title": "Process Simulation, Computational Fluid Dynamics (CFD) and Thermal Analysis | INFIRAD",
+            "h1": "Simulation: process simulation and computational fluid dynamics (CFD)",
+            "description": "INFIRAD models processes and systems to measure performance and cost and compare alternatives: process simulation, heat integration, computational fluid dynamics (CFD) and thermal analysis. Riyadh, Saudi Arabia.",
+        },
+    },
+    "agents": {
+        "kind": "service",
+        "panel": "svc-agents",
+        "service_type": "Specialized AI agents",
+        "ar": {
+            "slug": "agents/",
+            "crumb": "وكلاء الذكاء الاصطناعي",
+            "title": "وكلاء ذكاء اصطناعي متخصصون للشركات والجهات المهنية | انفراد",
+            "h1": "وكلاء ذكاء اصطناعي متخصصون لمجال عملك",
+            "description": "انفراد تبني وكلاء ذكاء اصطناعي متخصصين للهندسة والمحاماة والمالية والبحث والعمليات، داخل بيئة عمل الجهة وعلى مصادرها، مع توثيق كل مُخرج وموافقة بشرية. الرياض، المملكة العربية السعودية.",
+        },
+        "en": {
+            "slug": "agents/",
+            "crumb": "AI agents",
+            "title": "Specialized AI Agents for Companies and Professional Organizations | INFIRAD",
+            "h1": "AI agents specialized in your field of work",
+            "description": "INFIRAD builds AI agents specialized for engineering, law, finance, research and operations, inside the organization's working environment and on its own sources, with every output documented and human approval. Riyadh, Saudi Arabia.",
+        },
+    },
+    "solar-cooling": {
+        "kind": "project",
+        "related": "simulation",
+        "ar": {
+            "slug": "projects/nasma-shams/",
+            "card": "نسمة شمس",
+            "crumb": "نسمة شمس",
+            "title": "نسمة شمس: تبريد بالامتزاز بالطاقة الشمسية الحرارية | انفراد",
+            "h1": "نسمة شمس: تبريد بالامتزاز بالطاقة الشمسية الحرارية",
+            "description": "نسمة شمس مشروع من انفراد: منظومة تبريد تستخدم مُدخلاً شمسياً حرارياً لتشغيل دورة امتزاز، لتطبيقات يكون فيها الطلب الكهربائي وذروة الحمل القيدَ الحاكم.",
+        },
+        "en": {
+            "slug": "projects/solarcool/",
+            "card": "SolarCool",
+            "crumb": "SolarCool",
+            "title": "SolarCool: Solar-Thermal Adsorption Cooling | INFIRAD",
+            "h1": "SolarCool: solar-thermal adsorption cooling",
+            "description": "SolarCool is an INFIRAD project: a cooling system that uses solar thermal input to drive an adsorption cycle, for applications where electrical demand and peak load are the governing constraint.",
+        },
+    },
+    "traffic": {
+        "kind": "project",
+        "related": "simulation",
+        "ar": {
+            "slug": "projects/insiyab/",
+            "card": "انسياب",
+            "crumb": "انسياب",
+            "title": "انسياب: محاكاة مرورية لاختبار القرارات قبل التنفيذ | انفراد",
+            "h1": "انسياب: محاكاة مرورية لاختبار القرارات قبل التنفيذ",
+            "description": "انسياب مشروع من انفراد ينمذج الشبكة المرورية ويعايرها على السلوك المرصود، ثم يحاكي التعديل المقترح ويقيس أثره ويقارن البدائل قبل التنفيذ.",
+        },
+        "en": {
+            "slug": "projects/insyab/",
+            "card": "INSYAB",
+            "crumb": "INSYAB",
+            "title": "INSYAB: Traffic Simulation to Test Decisions Before They Are Built | INFIRAD",
+            "h1": "INSYAB: traffic simulation to test decisions before they are built",
+            "description": "INSYAB is an INFIRAD project that models the traffic network, calibrates it to observed behavior, then simulates a proposed change, measures its effect and compares alternatives before construction.",
+        },
+    },
+}
 
 
 def read(p: Path) -> str:
@@ -87,66 +168,83 @@ def write(p: Path, s: str) -> None:
     p.write_text(s, encoding="utf-8", newline="\n")
 
 
-def panel_inner(home: str, panel_id: str) -> str:
+def url_of(lang: str, slug: str = "") -> str:
+    return ORIGIN + LANGS[lang]["prefix"] + slug
+
+
+def path_of(lang: str, slug: str = "") -> str:
+    return LANGS[lang]["prefix"] + slug
+
+
+def root_assets(s: str) -> str:
+    """Root-relative asset paths work at any depth."""
+    return re.sub(r'(href|src)="(?:\.\./)?assets/', r'\1="/assets/', s)
+
+
+def panel_inner(home: str, panel_id: str, lang: str) -> str:
     m = re.search(rf'<section class="svc-panel" id="{panel_id}"[^>]*>(.*?)\n        </section>', home, re.S)
     if not m:
-        raise SystemExit(f"panel {panel_id} not found in site/index.html")
+        raise SystemExit(f"panel {panel_id} not found in the {lang} home page")
     inner = m.group(1)
-    # The panel's own link back to the home page, if the home page carries one, is not repeated.
+    # The panel's link to this very page is not repeated on it.
     inner = re.sub(r'\s*<p class="panel-more">.*?</p>', "", inner, flags=re.S)
     # One H1 per page: the panel's lead heading becomes the page's first H2.
     inner = inner.replace("<h3>", "<h2>", 1).replace("</h3>", "</h2>", 1)
-    inner = inner.replace('href="#programs">انسياب</a>', 'href="/projects/insiyab/">انسياب</a>')
+    # An in-page link to a project card points at the project's own page.
+    for key, cfg in PAGES.items():
+        if cfg["kind"] == "project":
+            p = cfg[lang]
+            inner = inner.replace(f'href="#programs">{p["card"]}</a>', f'href="{path_of(lang, p["slug"])}">{p["card"]}</a>')
     return inner
 
 
-def program_card(home: str, name: str) -> str:
+def program_card(home: str, name: str, lang: str) -> str:
     for art in re.findall(r'<article class="program">.*?</article>', home, re.S):
         if f"<h3>{name}</h3>" in art:
             art = re.sub(r'\s*<p class="program-more">.*?</p>', "", art, flags=re.S)
             # One H1 per page: the card's heading becomes the page's first H2.
             return art.replace("<h3>", "<h2>").replace("</h3>", "</h2>")
-    raise SystemExit(f"program {name} not found in site/index.html")
+    raise SystemExit(f"project card {name} not found in the {lang} home page")
 
 
-def head_and_header(home: str) -> tuple[str, str]:
+def page_head(home: str, lang: str, url: str, alternates: dict, cfg: dict, graph: list) -> str:
     head = home[: home.index("</head>")]
-    header = re.search(r'<header class="site-header">.*?</header>', home, re.S).group(0)
-    return head, header
-
-
-def page_head(home: str, url: str, cfg: dict, graph: list) -> str:
-    head, _ = head_and_header(home)
     head = re.sub(r"<title>.*?</title>", f"<title>{html.escape(cfg['title'], quote=False)}</title>", head)
     head = re.sub(r'<meta name="description" content="[^"]*">',
                   f'<meta name="description" content="{html.escape(cfg["description"])}">', head)
     head = re.sub(r'<link rel="canonical" href="[^"]*">', f'<link rel="canonical" href="{url}">', head)
-    # The service and project pages exist in Arabic only for now, so they declare no language alternates.
     head = re.sub(r'<link rel="alternate" hreflang="[^"]*" href="[^"]*">\n', "", head)
+    alt_links = "".join(f'<link rel="alternate" hreflang="{code}" href="{href}">\n' for code, href in alternates.items())
+    head = head.replace(f'<link rel="canonical" href="{url}">\n', f'<link rel="canonical" href="{url}">\n{alt_links}')
     head = re.sub(r'<meta property="og:url" content="[^"]*">', f'<meta property="og:url" content="{url}">', head)
     head = re.sub(r'<meta property="og:title" content="[^"]*">',
                   f'<meta property="og:title" content="{html.escape(cfg["title"])}">', head)
     head = re.sub(r'<meta property="og:description" content="[^"]*">',
                   f'<meta property="og:description" content="{html.escape(cfg["description"])}">', head)
-    # Root-relative asset paths work at any depth.
-    head = head.replace('href="assets/', 'href="/assets/')
+    head = root_assets(head)
     ld = json.dumps({"@context": "https://schema.org", "@graph": graph}, ensure_ascii=False, separators=(",", ":"))
     head = re.sub(r'(<script type="application/ld\+json">\n).*?(\n</script>)', lambda m: m.group(1) + ld + m.group(2), head, flags=re.S)
     return head + "</head>\n"
 
 
-def page_header(home: str) -> str:
-    _, header = head_and_header(home)
-    header = header.replace('href="./"', 'href="/"').replace('src="assets/', 'src="/assets/')
-    for anchor, page in (("#svc-eng", "/engineering/"), ("#svc-sim", "/simulation/"), ("#svc-agents", "/agents/"),
-                         ("#programs", "/#programs"), ("#contact", "/#contact")):
-        header = header.replace(f'href="{anchor}"', f'href="{page}"')
-    return header.replace('href="en/"', 'href="/en/"')
+def page_header(home: str, lang: str, counterpart: str) -> str:
+    header = re.search(r'<header class="site-header">.*?</header>', home, re.S).group(0)
+    header = root_assets(header).replace('href="./"', f'href="{path_of(lang)}"')
+    targets = {"#svc-eng": "engineering", "#svc-sim": "simulation", "#svc-agents": "agents"}
+    for anchor, key in targets.items():
+        header = header.replace(f'href="{anchor}"', f'href="{path_of(lang, PAGES[key][lang]["slug"])}"')
+    for anchor in ("#programs", "#contact"):
+        header = header.replace(f'href="{anchor}"', f'href="{path_of(lang)}{anchor}"')
+    # The language link goes to this page in the other language, not to the other home page.
+    return header.replace(LANGS[lang]["lang_href"], f'href="{counterpart}"')
 
 
 def footer(home: str) -> str:
-    f = re.search(r'<footer class="site-footer">.*?</footer>', home, re.S).group(0)
-    return f.replace('src="assets/', 'src="/assets/')
+    return root_assets(re.search(r'<footer class="site-footer">.*?</footer>', home, re.S).group(0))
+
+
+def skip_link(home: str) -> str:
+    return re.search(r'<a class="skip"[^>]*>.*?</a>', home).group(0)
 
 
 def org_node(home: str) -> dict:
@@ -154,92 +252,100 @@ def org_node(home: str) -> dict:
     return next(n for n in ld["@graph"] if n.get("@type") == "Organization")
 
 
-def build() -> list[str]:
-    home = read(SITE / "index.html")
-    org = org_node(home)
-    built = []
-    for slug, cfg in PAGES.items():
-        url = f"{ORIGIN}/{slug}"
-        crumbs = [("الرئيسية", f"{ORIGIN}/")]
-        if cfg["kind"] == "project":
-            crumbs.append(("المشاريع", f"{ORIGIN}/#programs"))
-        crumbs.append((cfg["crumb"], url))
-        graph = [
-            org,
-            {"@type": "WebPage", "@id": url + "#webpage", "url": url, "name": cfg["title"], "inLanguage": "ar",
-             "isPartOf": {"@id": f"{ORIGIN}/#website"}, "about": {"@id": ORG_ID},
-             "breadcrumb": {"@id": url + "#breadcrumb"}},
-            {"@type": "BreadcrumbList", "@id": url + "#breadcrumb", "itemListElement": [
-                {"@type": "ListItem", "position": i + 1, "name": n, "item": u} for i, (n, u) in enumerate(crumbs)]},
-        ]
-        if cfg["kind"] == "service":
-            graph.append({"@type": "Service", "@id": url + "#service", "name": cfg["h1"], "serviceType": cfg["service_type"],
-                          "description": cfg["description"], "url": url, "provider": {"@id": ORG_ID}})
-        crumb_html = " <span aria-hidden=\"true\">‹</span> ".join(
-            f'<a href="{u[len(ORIGIN):]}">{n}</a>' if i < len(crumbs) - 1 else f'<span aria-current="page">{n}</span>'
-            for i, (n, u) in enumerate(crumbs))
-        # No lead line under the H1: the home page's one-line summary repeats the H1 almost word for word.
-        lead = ""
-        hero = (
-            '  <section class="hero page-hero" aria-labelledby="page-title">\n    <div class="wrap">\n'
-            f'      <nav class="crumbs label" aria-label="مسار الصفحة">{crumb_html}</nav>\n'
-            f'      <h1 id="page-title">{html.escape(cfg["h1"], quote=False)}</h1>{lead}\n'
+def build_page(key: str, lang: str, homes: dict) -> str:
+    entry, cfg, L = PAGES[key], PAGES[key][lang], LANGS[lang]
+    home = homes[lang]
+    other = "en" if lang == "ar" else "ar"
+    url = url_of(lang, cfg["slug"])
+    alternates = {"ar": url_of("ar", entry["ar"]["slug"]), "en": url_of("en", entry["en"]["slug"]),
+                  "x-default": url_of("ar", entry["ar"]["slug"])}
+    crumbs = [(L["home"], url_of(lang))]
+    if entry["kind"] == "project":
+        crumbs.append((L["projects"], url_of(lang) + "#programs"))
+    crumbs.append((cfg["crumb"], url))
+    graph = [
+        org_node(home),
+        {"@type": "WebPage", "@id": url + "#webpage", "url": url, "name": cfg["title"], "inLanguage": lang,
+         "isPartOf": {"@id": url_of(lang) + "#website"}, "about": {"@id": ORG_ID},
+         "breadcrumb": {"@id": url + "#breadcrumb"}},
+        {"@type": "BreadcrumbList", "@id": url + "#breadcrumb", "itemListElement": [
+            {"@type": "ListItem", "position": i + 1, "name": n, "item": u} for i, (n, u) in enumerate(crumbs)]},
+    ]
+    if entry["kind"] == "service":
+        graph.append({"@type": "Service", "@id": url + "#service", "name": cfg["h1"], "serviceType": entry["service_type"],
+                      "description": cfg["description"], "url": url, "provider": {"@id": ORG_ID}})
+    sep = ' <span aria-hidden="true">‹</span> ' if lang == "ar" else ' <span aria-hidden="true">›</span> '
+    crumb_html = sep.join(
+        f'<a href="{u[len(ORIGIN):]}">{html.escape(n, quote=False)}</a>' if i < len(crumbs) - 1
+        else f'<span aria-current="page">{html.escape(n, quote=False)}</span>'
+        for i, (n, u) in enumerate(crumbs))
+    # No lead line under the H1: the home page's one-line summary repeats the H1 almost word for word.
+    hero = (
+        '  <section class="hero page-hero" aria-labelledby="page-title">\n    <div class="wrap">\n'
+        f'      <nav class="crumbs label" aria-label="{L["crumbs_label"]}">{crumb_html}</nav>\n'
+        f'      <h1 id="page-title">{html.escape(cfg["h1"], quote=False)}</h1>\n'
+        '    </div>\n  </section>\n'
+    )
+    if entry["kind"] == "service":
+        body = (
+            '  <section class="section page-body">\n    <div class="wrap">\n'
+            f'      <div class="svc-panel">{panel_inner(home, entry["panel"], lang)}\n      </div>\n'
             '    </div>\n  </section>\n'
         )
-        if cfg["kind"] == "service":
-            body = (
-                '  <section class="section page-body">\n    <div class="wrap">\n'
-                f'      <div class="svc-panel">{panel_inner(home, cfg["source"][1])}\n      </div>\n'
-                '    </div>\n  </section>\n'
-            )
-        else:
-            rel_slug, rel_name = cfg["related"]
-            body = (
-                '  <section class="section on-navy page-body">\n    <div class="wrap">\n      <div class="programs">\n'
-                f'        {program_card(home, cfg["source"][1])}\n      </div>\n'
-                f'      <p class="related">ذو صلة: <a href="/{rel_slug}">{rel_name}</a></p>\n'
-                '    </div>\n  </section>\n'
-            )
-        page = (page_head(home, url, cfg, graph) + "<body>\n"
-                '<a class="skip" href="#main">انتقل إلى المحتوى</a>\n\n'
-                + page_header(home) + '\n\n<main id="main">\n\n' + hero + "\n" + body + "\n</main>\n\n"
-                + footer(home) + "\n</body>\n</html>\n")
-        write(SITE / slug / "index.html", page)
-        built.append(url)
-    return built
+    else:
+        rel = PAGES[entry["related"]][lang]
+        body = (
+            '  <section class="section on-navy page-body">\n    <div class="wrap">\n      <div class="programs">\n'
+            f'        {program_card(home, cfg["card"], lang)}\n      </div>\n'
+            f'      <p class="related">{L["related"]} <a href="{path_of(lang, rel["slug"])}">{html.escape(rel["crumb"], quote=False)}</a></p>\n'
+            '    </div>\n  </section>\n'
+        )
+    page = (page_head(home, lang, url, alternates, cfg, graph) + "<body>\n"
+            + skip_link(home) + "\n\n"
+            + page_header(home, lang, path_of(other, entry[other]["slug"])) + '\n\n<main id="main">\n\n'
+            + hero + "\n" + body + "\n</main>\n\n" + footer(home) + "\n</body>\n</html>\n")
+    write(SITE / L["prefix"].lstrip("/") / cfg["slug"] / "index.html", page)
+    return url
 
 
-def link_home_to_pages() -> None:
-    """Give each panel and project card on the home page a link to its page (idempotent)."""
-    path = SITE / "index.html"
+def link_home_to_pages(lang: str) -> None:
+    """Give each panel and project card on a home page a link to its page (idempotent)."""
+    path = SITE / LANGS[lang]["home_file"]
     home = read(path)
-    for slug, cfg in PAGES.items():
-        kind, key = cfg["source"]
-        if kind == "panel":
-            m = re.search(rf'(<section class="svc-panel" id="{key}".*?)(\n          <div class="panel-foot">)', home, re.S)
+    for key, entry in PAGES.items():
+        cfg = entry[lang]
+        if entry["kind"] == "service":
+            m = re.search(rf'(<section class="svc-panel" id="{entry["panel"]}".*?)(\n          <div class="panel-foot">)', home, re.S)
             if 'class="panel-more"' not in m.group(1)[-400:]:
-                link = f'\n          <p class="panel-more"><a href="{slug}">{SERVICE_LINK_TEXT}</a></p>'
+                link = f'\n          <p class="panel-more"><a href="{cfg["slug"]}">{LANGS[lang]["service_link"]}</a></p>'
                 home = home[: m.end(1)] + link + home[m.end(1):]
         else:
-            m = re.search(rf'(<article class="program">\s*<span class="status">[^<]*</span>\s*<h3>{key}</h3>.*?)(\n        </article>)', home, re.S)
+            m = re.search(rf'(<article class="program">\s*<span class="status">[^<]*</span>\s*<h3>{re.escape(cfg["card"])}</h3>.*?)(\n        </article>)', home, re.S)
             if 'class="program-more"' not in m.group(1):
-                link = f'\n          <p class="program-more"><a href="{slug}">{PROJECT_LINK_TEXT}</a></p>'
+                link = f'\n          <p class="program-more"><a href="{cfg["slug"]}">{LANGS[lang]["project_link"]}</a></p>'
                 home = home[: m.end(1)] + link + home[m.end(1):]
     write(path, home)
 
 
-def update_sitemap(urls: list[str]) -> None:
-    path = SITE / "sitemap.xml"
-    sm = read(path)
-    lastmod = re.search(r"<lastmod>(.*?)</lastmod>", sm).group(1)
-    for url in urls:
-        if f"<loc>{url}</loc>" not in sm:
-            sm = sm.replace("</urlset>", f"  <url>\n    <loc>{url}</loc>\n    <lastmod>{lastmod}</lastmod>\n  </url>\n</urlset>")
-    write(path, sm)
+def write_sitemap() -> None:
+    """The sitemap is generated from the page list, so every built page is listed with its alternates."""
+    groups = [{"ar": url_of("ar"), "en": url_of("en")}]
+    groups += [{"ar": url_of("ar", e["ar"]["slug"]), "en": url_of("en", e["en"]["slug"])} for e in PAGES.values()]
+    out = ['<?xml version="1.0" encoding="UTF-8"?>',
+           '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">']
+    for g in groups:
+        for lang in ("ar", "en"):
+            out += ["  <url>", f"    <loc>{g[lang]}</loc>", f"    <lastmod>{LASTMOD}</lastmod>"]
+            out += [f'    <xhtml:link rel="alternate" hreflang="{c}" href="{g[c]}"/>' for c in ("ar", "en")]
+            out.append("  </url>")
+    out.append("</urlset>")
+    write(SITE / "sitemap.xml", "\n".join(out) + "\n")
 
 
 if __name__ == "__main__":
-    link_home_to_pages()
-    urls = build()
-    update_sitemap(urls)
-    print("\n".join(urls))
+    for lang in LANGS:
+        link_home_to_pages(lang)
+    homes = {lang: read(SITE / LANGS[lang]["home_file"]) for lang in LANGS}
+    built = [build_page(key, lang, homes) for key in PAGES for lang in LANGS]
+    write_sitemap()
+    print("\n".join(built))
