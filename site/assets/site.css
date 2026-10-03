@@ -353,3 +353,9 @@ table.models { width: 100%; min-width: 560px; border-collapse: collapse; font-si
   .project-layout { grid-template-columns: minmax(0, 1fr); }
   .project-layout.figure-start .project-figure { order: 0; }
 }
+
+/* A label beside a service page's H1 (PAGES[...]["tag"] in scripts/build_pages.py).
+   Same outline-pill language as the project status label; navy on white. */
+.page-tag { display: inline-block; margin-block-start: 4px; border: 1.5px solid var(--navy); color: var(--navy); border-radius: 999px; padding: 6px 18px; font-size: var(--fs-small); font-weight: 700; }
+/* One line on phones: the label is 35 characters and wrapped badly at 390px. */
+@media (max-width: 560px) { .page-tag { font-size: clamp(0.875rem, 4.2vw, 1rem); padding: 6px 14px; white-space: nowrap; } }

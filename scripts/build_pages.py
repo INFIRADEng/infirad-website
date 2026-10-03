@@ -62,20 +62,22 @@ PAGES = {
     "engineering": {
         "kind": "service",
         "panel": "svc-eng",
-        "service_type": "Engineering service provider (ESP): process design and independent engineering review",
+        "service_type": "Engineering Services Provider (ESP): process design and independent engineering review",
+        # Shown on the page itself, beside the H1, in both languages (CEO, 2026-10-03).
+        "tag": "Engineering Services Provider (ESP)",
         "ar": {
             "slug": "engineering/",
             "crumb": "الهندسة",
             "title": "مقدّم خدمات هندسية (ESP): تصميم العمليات ومراجعة P&ID | انفراد",
             "h1": "الهندسة: مقدّم خدمات هندسية لتصميم العمليات والمراجعة المستقلة",
-            "description": "انفراد مقدّم خدمات هندسية (Engineering Service Provider) في الرياض: تصميم العمليات من المفهوم حتى التعريف التقني، وتطوير مخطّطات PFD وP&ID ومراجعتها، ومراجعة هندسية مستقلة ومهندس المالك.",
+            "description": "انفراد مقدّم خدمات هندسية (Engineering Services Provider – ESP) في الرياض: تصميم العمليات من المفهوم حتى التعريف التقني، وتطوير مخطّطات PFD وP&ID ومراجعتها، ومراجعة هندسية مستقلة ومهندس المالك.",
         },
         "en": {
             "slug": "engineering/",
             "crumb": "Engineering",
-            "title": "Engineering Service Provider (ESP): Process Design and P&ID Review | INFIRAD",
-            "h1": "Engineering: an engineering service provider for process design and independent review",
-            "description": "INFIRAD is an engineering service provider (ESP) in Riyadh, Saudi Arabia: process design from concept to technical definition, PFD and P&ID development and review, independent engineering review and owner's engineer support.",
+            "title": "Engineering Services Provider (ESP): Process Design and P&ID Review | INFIRAD",
+            "h1": "Engineering: an engineering services provider for process design and independent review",
+            "description": "INFIRAD is an engineering services provider (ESP) in Riyadh, Saudi Arabia: process design from concept to technical definition, PFD and P&ID development and review, independent engineering review and owner's engineer support.",
         },
     },
     "simulation": {
@@ -292,10 +294,14 @@ def build_page(key: str, lang: str, homes: dict) -> str:
         else f'<span aria-current="page">{html.escape(n, quote=False)}</span>'
         for i, (n, u) in enumerate(crumbs))
     # No lead line under the H1: the home page's one-line summary repeats the H1 almost word for word.
+    # A service may carry a label shown beside its H1, in English on both pages.
+    tag = (f'      <p class="page-tag" lang="en" dir="ltr">{html.escape(entry["tag"], quote=False)}</p>\n'
+           if entry.get("tag") else "")
     hero = (
         '  <section class="hero page-hero" aria-labelledby="page-title">\n    <div class="wrap">\n'
         f'      <nav class="crumbs label" aria-label="{L["crumbs_label"]}">{crumb_html}</nav>\n'
         f'      <h1 id="page-title">{html.escape(cfg["h1"], quote=False)}</h1>\n'
+        f'{tag}'
         '    </div>\n  </section>\n'
     )
     if entry["kind"] == "service":
