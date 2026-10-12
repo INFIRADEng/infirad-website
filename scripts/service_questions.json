@@ -1,0 +1,40 @@
+{
+  "ar": {
+    "heading": "قبل أن تبدأ مشروعك مع انفِراد",
+    "coverage": "مقر انفِراد في الرياض. نستهدف خدمة الشركات والجهات المهنية في السعودية ودول الخليج، خصوصاً الرياض والدوحة. تُحدّد طريقة التعاون عن بُعد أو متطلبات الحضور، ونطاق العمل والمخرجات، لكل مشروع عند الاتفاق.",
+    "engineering": [
+      ["ما المعلومات المطلوبة لطلب تصميم عمليات أو مراجعة هندسية؟", "ابدأ بوصف العملية والهدف من الدراسة، والطاقة الإنتاجية وظروف التشغيل المتاحة. للمراجعة، أرفق مخططات PFD وP&ID وحِزم المورّدين المتاحة. نحدد البيانات الناقصة والافتراضات قبل اعتماد نطاق العمل."],
+      ["ما الفرق بين تصميم العمليات والتصميم الميكانيكي التفصيلي؟", "تصميم العمليات يحدد موازين المادة والطاقة، والتيّارات والمعدات وأساس التحجيم ونيّة التحكم. التصميم الميكانيكي التفصيلي ومخرجات EPC ليست ضمن النطاق الافتراضي؛ تُذكر أي متطلبات إضافية صراحةً في الاتفاق."],
+      ["كيف تستخدم الشركة المراجعة الهندسية المستقلة؟", "تساعد المراجعة على فحص التصميم والافتراضات وحِزم المورّدين قبل اتخاذ القرار. يحدد الاتفاق الوثائق المشمولة والمخرجات المطلوبة وحدود المراجعة، ويظل اعتماد التنفيذ لدى الجهة المسؤولة."]
+    ],
+    "simulation": [
+      ["متى أحتاج محاكاة عمليات، ومتى أحتاج CFD أو تحليلاً حرارياً؟", "محاكاة العمليات مناسبة لموازين المادة والطاقة وتفاعل الوحدات ومقارنة حالات التشغيل. CFD والتحليل الحراري يدرسان السريان وانتقال الحرارة بتفصيل مكاني. نختار نوع النموذج بناءً على السؤال والبيانات والقرار المطلوب."],
+      ["ما البيانات المطلوبة لبدء المحاكاة؟", "وصف النظام وظروف التشغيل وخصائص المواد وحدود المسألة، والمخططات أو الأبعاد عند الحاجة. شارك القياسات المتاحة للمقارنة؛ نوضح الافتراضات وحدود النموذج والفجوات في البيانات قبل بناء الدراسة."],
+      ["هل نتيجة المحاكاة تثبت أداء المعدة في الواقع؟", "النتيجة تقدير مبني على النموذج ومدخلاته وافتراضاته. لا تُعد قياساً ميدانياً أو اعتماداً تجريبياً؛ نوضح حدود الاستنتاج والحاجة إلى بيانات تحقق أو اختبار عند استخدامها لاتخاذ القرار."]
+    ],
+    "agents": [
+      ["ما الفرق بين أتمتة إجراءات العمل ووكيل ذكاء اصطناعي؟", "الأتمتة تنفذ خطوات وقواعد محددة. الوكيل مناسب لمهام تحتاج تفسير معلومات واستخدام مصادر وأدوات ضمن ضوابط. نحدد المسار المناسب للمهمة؛ وقد يجمع الحل بين الأتمتة والوكيل مع نقاط مراجعة بشرية."],
+      ["كيف تبدأ الشركة مشروع وكيل متخصص؟", "اختر مهمة متكررة، وحدد مدخلاتها ومخرجاتها ومصادرها وأنظمتها، وأمثلة على العمل الصحيح والحالات الحرجة. نبدأ بنطاق محدود ومعايير قبول واضحة، ونقيس الجودة قبل التوسع."],
+      ["كيف تُحدد صلاحيات الوكيل وحماية بيانات الشركة؟", "تُحدد المصادر والصلاحيات وبيئة التشغيل ومتطلبات السرية والمراجعة البشرية قبل الربط. تختلف التفاصيل حسب أنظمة الجهة ونطاق المشروع؛ ولا يُفهم عرض الخدمة على أنه شهادة امتثال أو ضمان أمني شامل."]
+    ]
+  },
+  "en": {
+    "heading": "Before starting your project with INFIRAD",
+    "coverage": "INFIRAD is based in Riyadh. We target companies and professional organizations in Saudi Arabia and the Gulf, especially Riyadh and Doha. Remote collaboration or attendance requirements, scope and deliverables are agreed for each project.",
+    "engineering": [
+      ["What is needed for a process design or engineering review request?", "Start with the process, study objective, capacity and available operating conditions. For a review, provide available PFDs, P&IDs and vendor packages. Missing data and assumptions are identified before agreeing the scope."],
+      ["How does process design differ from detailed mechanical design?", "Process design defines mass and energy balances, streams, equipment, sizing basis and control intent. Detailed mechanical design and EPC deliverables are outside the default scope; additional requirements must be explicitly agreed."],
+      ["How can a company use an independent engineering review?", "A review supports examination of the design, assumptions and vendor packages before a decision. The agreement defines the documents, deliverables and review limits. Execution approval remains with the responsible organization."]
+    ],
+    "simulation": [
+      ["When do I need process simulation, CFD or thermal analysis?", "Process simulation addresses mass and energy balances, unit interactions and operating scenarios. CFD and thermal analysis examine flow and heat transfer in spatial detail. Model selection follows the question, available data and decision required."],
+      ["What inputs are needed to start a simulation?", "System description, operating conditions, material properties and boundary conditions, with diagrams or dimensions where needed. Provide measurements available for comparison. Assumptions, model limits and data gaps are identified before the study."],
+      ["Does a simulation prove real equipment performance?", "A simulation is an estimate based on a model, inputs and assumptions. It is not a field measurement or experimental validation. Conclusions include their limits and any need for validation data or testing before a decision."]
+    ],
+    "agents": [
+      ["How does workflow automation differ from an AI agent?", "Automation executes defined steps and rules. An agent suits tasks requiring interpretation and controlled use of sources and tools. The task determines the approach; a solution may combine automation and agents with human review points."],
+      ["How does a company start a specialized AI agent project?", "Choose a recurring task and identify inputs, outputs, sources, systems and examples of correct work and critical cases. Start with a limited scope and clear acceptance criteria, measuring quality before expansion."],
+      ["How are agent permissions and company data requirements defined?", "Sources, permissions, deployment environment, confidentiality and human review requirements are defined before integration. Details depend on the organization's systems and project scope. The service description is not a compliance certification or comprehensive security guarantee."]
+    ]
+  }
+}

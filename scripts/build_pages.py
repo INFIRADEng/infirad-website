@@ -30,6 +30,8 @@ SITE = ROOT / "site"
 ORIGIN = "https://infiradev.com"
 ORG_ID = ORIGIN + "/#organization"
 LASTMOD = "2026-10-02"
+SERVICE_LASTMOD = "2026-10-12"
+QUESTIONS = json.loads((ROOT / "scripts/service_questions.json").read_text(encoding="utf-8"))
 
 LANGS = {
     "ar": {
@@ -268,6 +270,10 @@ def org_node(home: str) -> dict:
 
 def build_page(key: str, lang: str, homes: dict) -> str:
     entry, cfg, L = PAGES[key], PAGES[key][lang], LANGS[lang]
+    cfg = dict(cfg)
+    if entry["kind"] == "service":
+        cfg["description"] += (" للشركات في السعودية والخليج، خصوصاً الرياض والدوحة." if lang == "ar"
+                               else " For companies in Saudi Arabia and the Gulf, especially Riyadh and Doha.")
     home = homes[lang]
     other = "en" if lang == "ar" else "ar"
     url = url_of(lang, cfg["slug"])
@@ -287,7 +293,9 @@ def build_page(key: str, lang: str, homes: dict) -> str:
     ]
     if entry["kind"] == "service":
         graph.append({"@type": "Service", "@id": url + "#service", "name": cfg["h1"], "serviceType": entry["service_type"],
-                      "description": cfg["description"], "url": url, "provider": {"@id": ORG_ID}})
+                      "description": cfg["description"], "url": url, "provider": {"@id": ORG_ID},
+                      "areaServed": [{"@type": "Country", "name": "Saudi Arabia"},
+                                     {"@type": "Country", "name": "Qatar"}]})
     sep = ' <span aria-hidden="true">‹</span> ' if lang == "ar" else ' <span aria-hidden="true">›</span> '
     crumb_html = sep.join(
         f'<a href="{u[len(ORIGIN):]}">{html.escape(n, quote=False)}</a>' if i < len(crumbs) - 1
@@ -305,9 +313,18 @@ def build_page(key: str, lang: str, homes: dict) -> str:
         '    </div>\n  </section>\n'
     )
     if entry["kind"] == "service":
+        q = QUESTIONS[lang]
+        questions = "\n".join(
+            f'        <div><h3>{html.escape(question)}</h3><p>{html.escape(answer)}</p></div>'
+            for question, answer in q[key])
         body = (
             '  <section class="section page-body">\n    <div class="wrap">\n'
             f'      <div class="svc-panel">{panel_inner(home, entry["panel"], lang)}\n      </div>\n'
+            '    </div>\n  </section>\n'
+            '  <section class="section service-questions" aria-labelledby="questions-title">\n    <div class="wrap">\n'
+            f'      <h2 id="questions-title">{html.escape(q["heading"])}</h2>\n'
+            f'      <p>{html.escape(q["coverage"])}</p>\n'
+            f'      <div class="questions-list">\n{questions}\n      </div>\n'
             '    </div>\n  </section>\n'
         )
     else:
@@ -355,9 +372,10 @@ def write_sitemap() -> None:
     groups += [{"ar": url_of("ar", e["ar"]["slug"]), "en": url_of("en", e["en"]["slug"])} for e in PAGES.values()]
     out = ['<?xml version="1.0" encoding="UTF-8"?>',
            '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">']
-    for g in groups:
+    for i, g in enumerate(groups):
+        modified = SERVICE_LASTMOD if i and list(PAGES.values())[i - 1]["kind"] == "service" else LASTMOD
         for lang in ("ar", "en"):
-            out += ["  <url>", f"    <loc>{g[lang]}</loc>", f"    <lastmod>{LASTMOD}</lastmod>"]
+            out += ["  <url>", f"    <loc>{g[lang]}</loc>", f"    <lastmod>{modified}</lastmod>"]
             out += [f'    <xhtml:link rel="alternate" hreflang="{c}" href="{g[c]}"/>' for c in ("ar", "en")]
             out.append("  </url>")
     out.append("</urlset>")

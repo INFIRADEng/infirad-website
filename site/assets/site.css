@@ -326,6 +326,10 @@ table.models { width: 100%; min-width: 560px; border-collapse: collapse; font-si
 .site-footer small { color: var(--muted); font-size: var(--fs-label); }
 
 .num { font-variant-numeric: tabular-nums; }
+.service-questions h2 { margin-block-end: 24px; }
+.questions-list { display: grid; gap: 32px; margin-block-start: 32px; }
+.questions-list > div { padding-block-start: 24px; border-block-start: 1px solid var(--border); }
+.questions-list h3 { font-size: var(--fs-body); margin-block-end: 12px; }
 @media (prefers-reduced-motion: reduce) { * { scroll-behavior: auto !important; } }
 
 /* Service and project pages (scripts/build_pages.py). Their bodies are the

@@ -8,6 +8,8 @@ on:
     paths:
       - "site/**"
       - "scripts/check_seo.py"
+      - "scripts/build_pages.py"
+      - "scripts/service_questions.json"
       - ".github/workflows/seo-check.yml"
   workflow_dispatch:
 
