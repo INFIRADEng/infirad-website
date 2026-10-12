@@ -22,6 +22,9 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
 
+      - name: Validate search metadata before publication
+        run: python3 scripts/check_seo.py
+
       # The site is static HTML/CSS with one small script: there is nothing to
       # build. site/ is published exactly as committed. The previous React/Vite
       # app is still in client/ and server/; to return to it, restore the

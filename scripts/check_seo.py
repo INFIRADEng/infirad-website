@@ -224,7 +224,7 @@ def check_sitemap_and_robots(hreflang_maps: dict) -> None:
 
 
 def check_coverage_and_links() -> None:
-    on_disk = {str(p.relative_to(SITE.parent)) for p in SITE.rglob("index.html")}
+    on_disk = {p.relative_to(SITE.parent).as_posix() for p in SITE.rglob("index.html")}
     check(on_disk == set(PAGES), f"sitemap covers every page on disk (missing {sorted(on_disk - set(PAGES))})")
     for rel, url in PAGES.items():
         text = (SITE.parent / rel).read_text(encoding="utf-8")
