@@ -1,0 +1,2 @@
+# Engineering AI scope, 2026-11-06
+Owner approved the Arabic and English positioning for the site, company profile and LinkedIn. Reviewed production baseline 68f0a0f, Pages publishes site/ with the SEO gate. Scope: bilingual homepage and AI service pages, including search metadata and WhatsApp inquiry wording. Keep standalone engineering, simulation, independent review and INSYAB material intact. No redesign or contact changes. Preserve the older local checkout and its untracked verification file. Rollback is a revert of this bounded change.
