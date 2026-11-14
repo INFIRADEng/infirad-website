@@ -1,5 +1,15 @@
 // بحث فوري في صفحة المصطلحات — بلا تبعيات، ويعمل بلا JS أيضًا (نموذج GET)
 (function () {
+  var back = document.querySelector("[data-back]");
+  if (!back || !document.referrer || window.history.length < 2) return;
+  back.addEventListener("click", function (event) {
+    if (event.button !== 0 || event.metaKey || event.ctrlKey || event.shiftKey || event.altKey) return;
+    event.preventDefault();
+    window.history.back();
+  });
+})();
+
+(function () {
   var input = document.getElementById("q");
   var grid = document.getElementById("terms-grid");
   if (!input || !grid) return;

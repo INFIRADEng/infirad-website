@@ -15,36 +15,67 @@
   <script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"Organization","@id":"https://infiradev.com/#organization","name":"INFIRAD","alternateName":["انفِراد","انفراد"],"url":"https://infiradev.com/","logo":{"@type":"ImageObject","url":"https://infiradev.com/assets/logo-bilingual.png","width":990,"height":320},"slogan":"من الفكرة إلى اليقين","foundingDate":"2025","email":"info@infiradeng.com","telephone":"+966530151525","address":{"@type":"PostalAddress","addressLocality":"Riyadh","addressCountry":"SA"},"sameAs":["https://www.linkedin.com/company/infirad/"],"knowsAbout":["Engineering services","Engineering Services Provider (ESP)","Process design","Process simulation","Computational fluid dynamics","Thermal analysis","Independent engineering review","Specialized AI agents","Workflow automation","Traffic simulation"]},{"@type":"WebPage","@id":"https://infiradev.com/diwan/lab/#webpage","url":"https://infiradev.com/diwan/lab/","name":"المعمل الافتراضي — ديوان المعرفة","description":"تجارب تفاعلية تعمل في المتصفح.","inLanguage":"ar","isPartOf":{"@id":"https://infiradev.com/#website"},"about":{"@id":"https://infiradev.com/#organization"}},{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"انفراد","item":"https://infiradev.com/"},{"@type":"ListItem","position":2,"name":"ديوان المعرفة","item":"https://infiradev.com/diwan/"},{"@type":"ListItem","position":3,"name":"المعمل الافتراضي — ديوان المعرفة","item":"https://infiradev.com/diwan/lab/"}]}]}</script>
 </head>
 <body>
+<a class="skip" href="#main">انتقل إلى المحتوى</a>
 <header class="site-head">
   <div class="wrap head-in">
-    <a class="brand" href="../">
-      <img src="../assets/img/mark.png" alt="ديوان المعرفة" width="34" height="34" />
-      <span class="brand-txt"><b>ديوان المعرفة</b><i>انفراد</i></span>
-    </a>
-    <nav class="nav" aria-label="التنقل"><a href="../terms/">المصطلحات</a><a href="../domains/">المجالات</a><a href="../films/">الأفلام</a><a href="../lab/" aria-current="page">المعمل</a><a href="../about.html">عن الديوان</a></nav>
+    <div class="brand-lockup">
+      <a class="brand" href="https://infiradev.com/" aria-label="انفراد، الموقع الرئيسي">
+        <img src="https://infiradev.com/assets/logo-bilingual.png" alt="انفراد · INFIRAD" width="990" height="320" />
+      </a>
+      <a class="diwan-name" href="../">ديوان المعرفة</a>
+    </div>
+    <nav class="nav" aria-label="أقسام ديوان المعرفة"><a href="../terms/">المصطلحات</a><a href="../domains/">المجالات</a><a href="../lab/" aria-current="page">المعمل</a><a href="../about.html">عن الديوان</a></nav>
+    <nav class="head-actions" aria-label="الرجوع والموقع الرئيسي">
+      <a href="../" data-back><span aria-hidden="true">→</span> رجوع</a>
+      <a href="https://infiradev.com/">موقع انفراد الرئيسي</a>
+    </nav>
   </div>
 </header>
 
 <main id="main">
 <section class="wrap section">
   <h1 class="page-h">المعمل الافتراضي</h1>
-  <p class="lede">تجربة واحدة مكتملة أفضل من عشر تجارب نصف مبنية — هذا مبدأ المعمل.</p>
-  <div class="empty">
-  <b>لا تجربة منشورة بعد</b>
-  <p class="muted">المعمل يُبنى في مستودع diwan_lab ويُربط هنا عند اكتمال تجربة واحدة موثّقة.</p>
-</div>
+  <p class="lede">غيّر المدخلات، وتابع النتيجة، وقارنها بما تتوقعه من المعادلة.</p>
+  <section class="lab-panel" id="heat-capacity" aria-labelledby="heat-title">
+    <h2 id="heat-title">كيف تؤثر الكتلة في تسخين الماء؟</h2>
+    <p>عند إضافة كمية الحرارة نفسها إلى كتلتين من الماء، أيهما ترتفع حرارته أكثر؟ جرّب مضاعفة الكتلة مع إبقاء الطاقة ثابتة.</p>
+    <div class="lab-controls">
+      <label for="lab-mass">كتلة الماء <output id="lab-mass-value" for="lab-mass" dir="ltr">1.0 kg</output>
+        <input id="lab-mass" type="range" min="0.5" max="2" step="0.1" value="1" dir="ltr" />
+      </label>
+      <label for="lab-energy">الحرارة المضافة <output id="lab-energy-value" for="lab-energy" dir="ltr">20 kJ</output>
+        <input id="lab-energy" type="range" min="0" max="50" step="1" value="20" dir="ltr" />
+      </label>
+    </div>
+    <p class="lab-equation" dir="ltr">ΔT = Q / (m c)</p>
+    <div class="lab-readout">
+      <div>ارتفاع الحرارة <output id="lab-delta" aria-live="polite" dir="ltr">4.78 °C</output></div>
+      <div>درجة الحرارة النهائية <output id="lab-final" dir="ltr">24.78 °C</output></div>
+    </div>
+    <label for="lab-meter">درجة الحرارة على مقياس من 20 إلى 45 درجة مئوية</label>
+    <meter id="lab-meter" min="20" max="45" value="24.78"></meter>
+    <p><button class="lab-cta" type="button" id="lab-reset">إعادة الضبط</button></p>
+    <details>
+      <summary>افتراضات النموذج والمصدر</summary>
+      <p>يبدأ الماء من 20 °C. نحسب حرارة الماء فقط، مع سعة حرارية نوعية ثابتة قدرها <bdi>4,186 J/(kg·K)</bdi>، ومن دون فقد للوسط أو تغير في الطور. النتيجة حساب تعليمي لميزان الطاقة.</p>
+      <p><a href="https://openstax.org/books/college-physics/pages/14-2-temperature-change-and-heat-capacity">OpenStax — تغيّر درجة الحرارة والسعة الحرارية، القسم 14.2</a></p>
+    </details>
+    <noscript>فعّل JavaScript لتحريك المدخلات وحساب النتائج.</noscript>
+  </section>
+  <script type="module" src="../assets/js/heat-lab.mjs"></script>
+  
 </section>
 </main>
 <footer class="site-foot">
   <div class="wrap foot-in">
     <div>
-      <b>ديوان المعرفة</b> — معرفة علمية عربية، كل جملة لها مصدر
+      <b>ديوان المعرفة</b> — من المفهوم إلى التجربة
       <div class="muted small">قسم علمي داخل انفراد · <a href="https://infiradev.com">infiradev.com</a> · <a href="mailto:info@infiradev.com">info@infiradev.com</a></div>
     </div>
     <div class="muted small">
       <a href="../about.html">سياسة التحرير والمصادر</a> ·
       <a href="../terms/">المصطلحات</a> ·
-      <a href="../domains/">المجالات</a>
+      <a href="../lab/">المعمل الافتراضي</a>
     </div>
   </div>
 </footer>
