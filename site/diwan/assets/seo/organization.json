@@ -1,0 +1,40 @@
+{
+ "@type": "Organization",
+ "@id": "https://infiradev.com/#organization",
+ "name": "INFIRAD",
+ "alternateName": [
+  "انفِراد",
+  "انفراد"
+ ],
+ "url": "https://infiradev.com/",
+ "logo": {
+  "@type": "ImageObject",
+  "url": "https://infiradev.com/assets/logo-bilingual.png",
+  "width": 990,
+  "height": 320
+ },
+ "slogan": "من الفكرة إلى اليقين",
+ "foundingDate": "2025",
+ "email": "info@infiradeng.com",
+ "telephone": "+966530151525",
+ "address": {
+  "@type": "PostalAddress",
+  "addressLocality": "Riyadh",
+  "addressCountry": "SA"
+ },
+ "sameAs": [
+  "https://www.linkedin.com/company/infirad/"
+ ],
+ "knowsAbout": [
+  "Engineering services",
+  "Engineering Services Provider (ESP)",
+  "Process design",
+  "Process simulation",
+  "Computational fluid dynamics",
+  "Thermal analysis",
+  "Independent engineering review",
+  "Specialized AI agents",
+  "Workflow automation",
+  "Traffic simulation"
+ ]
+}
