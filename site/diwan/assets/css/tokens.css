@@ -1,0 +1,40 @@
+/* ==========================================================================
+   رموز هوية انفراد — مقتطف من brand_system_v2/project/colors_and_type.css
+   المصدر الوحيد للحقيقة هو ملف الهوية؛ أي تغيير هنا يتبعه تحديث هناك.
+   لا خطوط مضمَّنة في المستودع: Arial من النظام (ترخيصها لا يسمح بالتوزيع).
+   ========================================================================== */
+
+:root {
+  --infirad-navy: #0a2463;
+  --infirad-gray-blue: #8d99ae;
+  --infirad-white: #ffffff;
+  --infirad-surface: #f7f9fc;
+  --infirad-border: #e0e5f0;
+  --infirad-text-muted: #5a6a8a;
+  --infirad-navy-800: #1a3a7a;
+  --infirad-navy-600: #1a4a8a;
+  --infirad-navy-400: #2e6fa3;
+  --infirad-navy-200: #3a85b8;
+  --infirad-navy-100: #4a9acc;
+
+  --bg: var(--infirad-white);
+  --bg-surface: var(--infirad-surface);
+  --fg: var(--infirad-navy);
+  --fg-muted: var(--infirad-text-muted);
+  --border: var(--infirad-border);
+
+  --font-family: "Arial", "Liberation Sans", "Segoe UI", Helvetica, sans-serif;
+  --font-display: "Arial Black", "Arial", "Liberation Sans", sans-serif;
+
+  --sp-1: 4px;
+  --sp-2: 8px;
+  --sp-3: 12px;
+  --sp-4: 16px;
+  --sp-6: 24px;
+  --sp-8: 32px;
+  --sp-12: 48px;
+  --sp-16: 64px;
+
+  --wrap: 1120px;
+  --radius: 2px;
+}

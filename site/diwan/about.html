@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="robots" content="noindex" />
+  <title>عن الديوان — ديوان المعرفة</title>
+  <meta name="description" content="قسم علمي داخل موقع انفراد: تعريفات ومصطلحات وأفلام قصيرة وتجارب تفاعلية، يحرّرها فريق بحث وتحرير، ولا يُنشر فيها نص بلا مصدر موثّق." />
+  <link rel="stylesheet" href="./assets/css/tokens.css" />
+  <link rel="stylesheet" href="./assets/css/site.css" />
+</head>
+<body>
+<header class="site-head">
+  <div class="wrap head-in">
+    <a class="brand" href="./">
+      <img src="./assets/img/mark.png" alt="" width="34" height="34" />
+      <span class="brand-txt"><b>ديوان المعرفة</b><i>انفراد</i></span>
+    </a>
+    <nav class="nav" aria-label="التنقل"><a href="./terms/">المصطلحات</a><a href="./domains/">المجالات</a><a href="./films/">الأفلام</a><a href="./lab/">المعمل</a><a href="./about.html" aria-current="page">عن الديوان</a></nav>
+  </div>
+</header>
+<span class="badge-preview">نسخة معاينة — المحتوى قيد التحقق</span>
+<main id="main">
+<section class="wrap article">
+  <h1 class="page-h">عن الديوان</h1>
+  <p class="definition">قسم علمي داخل موقع انفراد: تعريفات ومصطلحات وأفلام قصيرة وتجارب تفاعلية، يحرّرها فريق بحث وتحرير، ولا يُنشر فيها نص بلا مصدر موثّق.</p>
+  <h2>سياسة المصادر</h2>
+  <p>المصدر يُذكر باسم الناشر وسنته ورابطه وتاريخ الاطلاع؛ والقيمة الرقمية تُسنَد إلى مصدرها بترتيب الفهرس.</p>
+  <h3>تُقدَّم المصادر بهذا الترتيب</h3>
+  <ol><li>هيئات المعايير والمصادر الأولية (IUPAC · NIST · BIPM · ISO · IAEA · NASA · WHO)</li><li>مراجع موسوعية محرَّرة (Britannica · Encyclopedia of Life)</li><li>مراجعات علمية محكّمة (DOI مفضّل)</li></ol>
+  <h3>لا يُستند إليها وحدها</h3>
+  <ul><li>ويكيبيديا</li><li>مدونات</li><li>مواقع تجارية</li><li>منتديات</li><li>محتوى مولَّد بلا مصدر</li></ul>
+  <h2>كيف يُنشر نص</h2>
+  <ol>
+    <li>باحث يكتب الملف في <code dir="ltr">content/terms/&lt;id&gt;.json</code> بحالة <code dir="ltr">draft</code>.</li>
+    <li>يذكر المصادر والأرقام المسنَدة إليها، ثم يرفع الحالة إلى <code dir="ltr">review</code>.</li>
+    <li>المراجعة تُدقّق المصدر نفسه لا الصياغة فقط، ثم تُرفع الحالة إلى <code dir="ltr">published</code> مع <code dir="ltr">reviewed_by</code> و<code dir="ltr">reviewed_on</code>.</li>
+    <li>البوابة الآلية ترفض أي منشور بلا مصدر أو برقم بلا إسناد — البناء لا يمرّ.</li>
+  </ol>
+  <p class="muted small">هذه النسخة معاينة داخلية: <code dir="ltr">site.config.json → status</code> يتحول إلى <code dir="ltr">live</code> عند الاعتماد.</p>
+</section>
+</main>
+<footer class="site-foot">
+  <div class="wrap foot-in">
+    <div>
+      <b>ديوان المعرفة</b> — معرفة علمية عربية، كل جملة لها مصدر
+      <div class="muted small">قسم علمي داخل انفراد · <a href="https://infiradeng.com">infiradeng.com</a> · <a href="mailto:info@infiradeng.com">info@infiradeng.com</a></div>
+    </div>
+    <div class="muted small">
+      <a href="./about.html">سياسة التحرير والمصادر</a> ·
+      <a href="./terms/">المصطلحات</a> ·
+      <a href="./domains/">المجالات</a>
+    </div>
+  </div>
+</footer>
+<script src="./assets/js/site.js" defer></script>
+</body>
+</html>
