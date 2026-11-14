@@ -285,3 +285,33 @@ code { font-family: ui-monospace, "Cascadia Mono", Consolas, monospace; font-siz
 @media (max-width: 420px) {
   .lab-controls, .lab-readout { grid-template-columns: 1fr; }
 }
+
+/* إحصاء البطل — يُقاس من المحتوى، ويروي حجم الديوان قبل أي وعد */
+.hero-stats { display: flex; flex-wrap: wrap; gap: 8px 28px; margin: 0 0 var(--sp-6); padding: 0; list-style: none; }
+.hero-stats li { display: flex; flex-direction: column; gap: 2px; border-inline-start: 2px solid var(--border); padding-inline-start: 12px; }
+.hero-stats b { font-size: 1.15rem; line-height: 1.2; }
+.hero-stats span { color: var(--fg-muted); font-size: 0.78rem; }
+.hero-stats .stamp b { font-size: 0.95rem; font-variant-numeric: tabular-nums; }
+
+/* مجال بلا مادة: يقول حاله ولا يعلن صفرًا */
+.domain-card.is-drafting { border-style: dashed; }
+.src-count.drafting { color: var(--fg-muted); font-style: normal; letter-spacing: 0.01em; }
+
+/* كتلة الاستشهاد */
+.cite-block { margin-block: var(--sp-8); border: 1px solid var(--border); border-radius: var(--radius); background: var(--bg-surface); padding: clamp(16px, 3vw, 28px); }
+.cite-block h2 { margin: 0 0 6px; font-size: 1.05rem; }
+.cite-row { display: grid; grid-template-columns: 68px minmax(0, 1fr) auto; gap: 10px; align-items: start; margin-block-start: 12px; }
+.cite-label { font-size: 0.72rem; letter-spacing: 0.06em; color: var(--fg-muted); text-transform: uppercase; padding-block-start: 8px; }
+.cite-text { margin: 0; background: #fff; border: 1px solid var(--border); border-radius: var(--radius); padding: 8px 12px; font-size: 0.8rem; line-height: 1.6; white-space: pre-wrap; word-break: break-word; text-align: left; }
+.cite-copy { border: 1px solid var(--fg); border-radius: var(--radius); background: #fff; color: var(--fg); font: inherit; font-size: 0.8rem; padding: 6px 14px; cursor: pointer; }
+.cite-copy:hover { background: var(--bg-surface); }
+.cite-copy.copied { background: var(--fg); color: #fff; }
+
+/* مصطلحات في المجال نفسه */
+.related { margin-block: var(--sp-8) 0; }
+.related .section-h { font-size: 1.05rem; }
+
+@media (max-width: 620px) {
+  .cite-row { grid-template-columns: minmax(0, 1fr) auto; }
+  .cite-label { grid-column: 1 / -1; padding-block-start: 0; }
+}

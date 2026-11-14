@@ -48,3 +48,43 @@
   input.addEventListener("input", apply);
   apply();
 })();
+
+// نسخ الاستشهاد (APA/BibTeX): navigator.clipboard مع سقوط إلى selection.
+(function () {
+  var buttons = document.querySelectorAll("[data-copy]");
+  if (!buttons.length) return;
+  function fallback(text, done) {
+    var ta = document.createElement("textarea");
+    ta.value = text;
+    ta.setAttribute("readonly", "");
+    ta.style.position = "fixed";
+    ta.style.opacity = "0";
+    document.body.appendChild(ta);
+    ta.select();
+    var ok = false;
+    try { ok = document.execCommand("copy"); } catch (e) { ok = false; }
+    document.body.removeChild(ta);
+    done(ok);
+  }
+  Array.prototype.forEach.call(buttons, function (btn) {
+    btn.addEventListener("click", function () {
+      var node = document.getElementById(btn.getAttribute("data-copy"));
+      if (!node) return;
+      var text = node.textContent;
+      function mark(ok) {
+        btn.textContent = ok ? "نُسخ" : "تعذّر النسخ";
+        btn.classList.toggle("copied", ok);
+        setTimeout(function () {
+          btn.textContent = "نسخ";
+          btn.classList.remove("copied");
+        }, 2200);
+      }
+      if (navigator.clipboard && navigator.clipboard.writeText) {
+        navigator.clipboard.writeText(text).then(function () { mark(true); },
+          function () { fallback(text, mark); });
+      } else {
+        fallback(text, mark);
+      }
+    });
+  });
+})();
