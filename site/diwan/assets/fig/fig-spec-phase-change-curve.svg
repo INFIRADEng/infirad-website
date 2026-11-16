@@ -1,0 +1,50 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="760" height="514" viewBox="0 0 760 514" role="img" aria-labelledby="t">
+<title id="t">منحنى تسخين كيلوغرام ماء من −20 إلى 140 °م</title>
+<rect width="760" height="514" fill="#ffffff"/>
+<g font-family="'Segoe UI', 'Noto Naskh Arabic', system-ui, sans-serif" direction="rtl">
+<text x="380" y="34" font-size="18" font-weight="700" fill="#1b2a2f" text-anchor="middle">منحنى تسخين كيلوغرام ماء من −20 إلى 140 °م</text>
+<text x="380" y="60" font-size="17" font-weight="400" fill="#5d7079" text-anchor="middle">هضبتان: انصهار 334 كيلوجول وتبخير 2,257 كيلوجول</text>
+<text x="380" y="84" font-size="17" font-weight="400" fill="#5d7079" text-anchor="middle">المجموع 3,131 كيلوجول/كيلوغرام</text>
+<line x1="96" y1="130" x2="96" y2="400" stroke="#cbd5d9" stroke-width="1" stroke-opacity="0.6"/>
+<text x="96" y="426" font-size="17" font-weight="400" fill="#5d7079" text-anchor="middle">0</text>
+<line x1="166.3" y1="130" x2="166.3" y2="400" stroke="#cbd5d9" stroke-width="1" stroke-opacity="0.6"/>
+<text x="166.3" y="426" font-size="17" font-weight="400" fill="#5d7079" text-anchor="middle">400</text>
+<line x1="236.5" y1="130" x2="236.5" y2="400" stroke="#cbd5d9" stroke-width="1" stroke-opacity="0.6"/>
+<text x="236.5" y="426" font-size="17" font-weight="400" fill="#5d7079" text-anchor="middle">800</text>
+<line x1="306.8" y1="130" x2="306.8" y2="400" stroke="#cbd5d9" stroke-width="1" stroke-opacity="0.6"/>
+<text x="306.8" y="426" font-size="17" font-weight="400" fill="#5d7079" text-anchor="middle">1200</text>
+<line x1="377" y1="130" x2="377" y2="400" stroke="#cbd5d9" stroke-width="1" stroke-opacity="0.6"/>
+<text x="377" y="426" font-size="17" font-weight="400" fill="#5d7079" text-anchor="middle">1600</text>
+<line x1="447.3" y1="130" x2="447.3" y2="400" stroke="#cbd5d9" stroke-width="1" stroke-opacity="0.6"/>
+<text x="447.3" y="426" font-size="17" font-weight="400" fill="#5d7079" text-anchor="middle">2000</text>
+<line x1="517.5" y1="130" x2="517.5" y2="400" stroke="#cbd5d9" stroke-width="1" stroke-opacity="0.6"/>
+<text x="517.5" y="426" font-size="17" font-weight="400" fill="#5d7079" text-anchor="middle">2400</text>
+<line x1="587.8" y1="130" x2="587.8" y2="400" stroke="#cbd5d9" stroke-width="1" stroke-opacity="0.6"/>
+<text x="587.8" y="426" font-size="17" font-weight="400" fill="#5d7079" text-anchor="middle">2800</text>
+<line x1="658" y1="130" x2="658" y2="400" stroke="#cbd5d9" stroke-width="1" stroke-opacity="0.6"/>
+<text x="658" y="426" font-size="17" font-weight="400" fill="#5d7079" text-anchor="middle">3200</text>
+<line x1="96" y1="400" x2="658" y2="400" stroke="#cbd5d9" stroke-width="1" stroke-opacity="0.6"/>
+<text x="670" y="406" font-size="17" font-weight="400" fill="#5d7079" text-anchor="start">-30</text>
+<line x1="96" y1="355" x2="658" y2="355" stroke="#cbd5d9" stroke-width="1" stroke-opacity="0.6"/>
+<text x="670" y="361" font-size="17" font-weight="400" fill="#5d7079" text-anchor="start">0</text>
+<line x1="96" y1="310" x2="658" y2="310" stroke="#cbd5d9" stroke-width="1" stroke-opacity="0.6"/>
+<text x="670" y="316" font-size="17" font-weight="400" fill="#5d7079" text-anchor="start">30</text>
+<line x1="96" y1="265" x2="658" y2="265" stroke="#cbd5d9" stroke-width="1" stroke-opacity="0.6"/>
+<text x="670" y="271" font-size="17" font-weight="400" fill="#5d7079" text-anchor="start">60</text>
+<line x1="96" y1="220" x2="658" y2="220" stroke="#cbd5d9" stroke-width="1" stroke-opacity="0.6"/>
+<text x="670" y="226" font-size="17" font-weight="400" fill="#5d7079" text-anchor="start">90</text>
+<line x1="96" y1="175" x2="658" y2="175" stroke="#cbd5d9" stroke-width="1" stroke-opacity="0.6"/>
+<text x="670" y="181" font-size="17" font-weight="400" fill="#5d7079" text-anchor="start">120</text>
+<line x1="96" y1="130" x2="658" y2="130" stroke="#cbd5d9" stroke-width="1" stroke-opacity="0.6"/>
+<text x="670" y="136" font-size="17" font-weight="400" fill="#5d7079" text-anchor="start">150</text>
+<line x1="96" y1="130" x2="96" y2="400" stroke="#1b2a2f" stroke-width="1.5"/>
+<line x1="96" y1="400" x2="658" y2="400" stroke="#1b2a2f" stroke-width="1.5"/>
+<path d="M96,385 L103.3,355 L162,355 L235.5,205 L631.9,205 L646,145" fill="none" stroke="#c2410c" stroke-width="2.5" stroke-linejoin="round"/>
+<circle cx="103.3" cy="355" r="5" fill="#1b2a2f"/>
+<text x="103.3" y="341" font-size="17" font-weight="700" fill="#1b2a2f" text-anchor="middle" stroke="#ffffff" stroke-width="4" stroke-linejoin="round" paint-order="stroke">0 °م</text>
+<circle cx="631.9" cy="205" r="5" fill="#1b2a2f"/>
+<text x="631.9" y="191" font-size="17" font-weight="700" fill="#1b2a2f" text-anchor="middle" stroke="#ffffff" stroke-width="4" stroke-linejoin="round" paint-order="stroke">100 °م</text>
+<text x="377" y="454" font-size="17" font-weight="400" fill="#5d7079" text-anchor="middle">الطاقة المضافة (كيلوجول)</text>
+<text x="90" y="108" font-size="17" font-weight="400" fill="#5d7079" text-anchor="start">درجة الحرارة (°مئوية)</text>
+<text x="380" y="488" font-size="17" font-weight="400" fill="#5d7079" text-anchor="middle">طول الهضبة = الحرارة الكامنة × الكتلة، لا ارتفاع الحرارة</text>
+</g></svg>

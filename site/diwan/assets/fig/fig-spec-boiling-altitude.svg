@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="760" height="514" viewBox="0 0 760 514" role="img" aria-labelledby="t">
+<title id="t">درجة غليان الماء مقابل الضغط الجوي</title>
+<rect width="760" height="514" fill="#ffffff"/>
+<g font-family="'Segoe UI', 'Noto Naskh Arabic', system-ui, sans-serif" direction="rtl">
+<text x="380" y="34" font-size="18" font-weight="700" fill="#1b2a2f" text-anchor="middle">درجة غليان الماء مقابل الضغط الجوي</text>
+<line x1="96" y1="130" x2="96" y2="400" stroke="#cbd5d9" stroke-width="1" stroke-opacity="0.6"/>
+<text x="96" y="426" font-size="17" font-weight="400" fill="#5d7079" text-anchor="middle">50</text>
+<line x1="205.6" y1="130" x2="205.6" y2="400" stroke="#cbd5d9" stroke-width="1" stroke-opacity="0.6"/>
+<text x="205.6" y="426" font-size="17" font-weight="400" fill="#5d7079" text-anchor="middle">60</text>
+<line x1="315.1" y1="130" x2="315.1" y2="400" stroke="#cbd5d9" stroke-width="1" stroke-opacity="0.6"/>
+<text x="315.1" y="426" font-size="17" font-weight="400" fill="#5d7079" text-anchor="middle">70</text>
+<line x1="424.7" y1="130" x2="424.7" y2="400" stroke="#cbd5d9" stroke-width="1" stroke-opacity="0.6"/>
+<text x="424.7" y="426" font-size="17" font-weight="400" fill="#5d7079" text-anchor="middle">80</text>
+<line x1="534.2" y1="130" x2="534.2" y2="400" stroke="#cbd5d9" stroke-width="1" stroke-opacity="0.6"/>
+<text x="534.2" y="426" font-size="17" font-weight="400" fill="#5d7079" text-anchor="middle">90</text>
+<line x1="643.8" y1="130" x2="643.8" y2="400" stroke="#cbd5d9" stroke-width="1" stroke-opacity="0.6"/>
+<text x="643.8" y="426" font-size="17" font-weight="400" fill="#5d7079" text-anchor="middle">100</text>
+<line x1="96" y1="400" x2="658" y2="400" stroke="#cbd5d9" stroke-width="1" stroke-opacity="0.6"/>
+<text x="670" y="406" font-size="17" font-weight="400" fill="#5d7079" text-anchor="start">80</text>
+<line x1="96" y1="338.6" x2="658" y2="338.6" stroke="#cbd5d9" stroke-width="1" stroke-opacity="0.6"/>
+<text x="670" y="344.6" font-size="17" font-weight="400" fill="#5d7079" text-anchor="start">85</text>
+<line x1="96" y1="277.3" x2="658" y2="277.3" stroke="#cbd5d9" stroke-width="1" stroke-opacity="0.6"/>
+<text x="670" y="283.3" font-size="17" font-weight="400" fill="#5d7079" text-anchor="start">90</text>
+<line x1="96" y1="215.9" x2="658" y2="215.9" stroke="#cbd5d9" stroke-width="1" stroke-opacity="0.6"/>
+<text x="670" y="221.9" font-size="17" font-weight="400" fill="#5d7079" text-anchor="start">95</text>
+<line x1="96" y1="154.5" x2="658" y2="154.5" stroke="#cbd5d9" stroke-width="1" stroke-opacity="0.6"/>
+<text x="670" y="160.5" font-size="17" font-weight="400" fill="#5d7079" text-anchor="start">100</text>
+<line x1="96" y1="130" x2="96" y2="400" stroke="#1b2a2f" stroke-width="1.5"/>
+<line x1="96" y1="400" x2="658" y2="400" stroke="#1b2a2f" stroke-width="1.5"/>
+<path d="M96,382.9 L205.6,326.5 L315.1,277.4 L424.7,233.9 L479.4,213.8 L534.2,194.8 L589,176.5 L658,154.7" fill="none" stroke="#c2410c" stroke-width="2.5" stroke-linejoin="round"/>
+<circle cx="543" cy="191.9" r="5" fill="#1b2a2f"/>
+<text x="543" y="177.9" font-size="17" font-weight="700" fill="#1b2a2f" text-anchor="middle" stroke="#ffffff" stroke-width="4" stroke-linejoin="round" paint-order="stroke">الرياض ← 96.7 °م</text>
+<text x="377" y="454" font-size="17" font-weight="400" fill="#5d7079" text-anchor="middle">الضغط الجوي (ك.ب)</text>
+<text x="90" y="108" font-size="17" font-weight="400" fill="#5d7079" text-anchor="start">درجة الغليان (°م)</text>
+<text x="380" y="488" font-size="17" font-weight="400" fill="#5d7079" text-anchor="middle">كل 10 كيلوباسكال نقصًا في الضغط تخفض الغليان نحو 4.5 درجات.</text>
+</g></svg>

@@ -72,35 +72,28 @@
     <xhtml:link rel="alternate" hreflang="ar" href="https://infiradev.com/projects/insiyab/"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://infiradev.com/en/projects/insyab/"/>
   </url>
-
   <url>
     <loc>https://infiradev.com/diwan/</loc>
-    <lastmod>2026-11-14</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
+    <lastmod>2026-11-16</lastmod>
+  </url>
+  <url>
+    <loc>https://infiradev.com/diwan/articles/</loc>
+    <lastmod>2026-11-16</lastmod>
   </url>
   <url>
     <loc>https://infiradev.com/diwan/domains/</loc>
-    <lastmod>2026-11-14</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
+    <lastmod>2026-11-16</lastmod>
   </url>
   <url>
     <loc>https://infiradev.com/diwan/films/</loc>
-    <lastmod>2026-11-14</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
+    <lastmod>2026-11-16</lastmod>
   </url>
   <url>
     <loc>https://infiradev.com/diwan/lab/</loc>
-    <lastmod>2026-11-14</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
+    <lastmod>2026-11-16</lastmod>
   </url>
   <url>
     <loc>https://infiradev.com/diwan/terms/</loc>
-    <lastmod>2026-11-14</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
+    <lastmod>2026-11-16</lastmod>
   </url>
 </urlset>

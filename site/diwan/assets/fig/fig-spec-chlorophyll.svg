@@ -1,0 +1,52 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="760" height="514" viewBox="0 0 760 514" role="img" aria-labelledby="t">
+<title id="t">طيف امتصاص اليخضور a وb</title>
+<rect width="760" height="514" fill="#ffffff"/>
+<g font-family="'Segoe UI', 'Noto Naskh Arabic', system-ui, sans-serif" direction="rtl">
+<text x="380" y="34" font-size="18" font-weight="700" fill="#1b2a2f" text-anchor="middle">طيف امتصاص اليخضور a وb</text>
+<text x="380" y="60" font-size="17" font-weight="400" fill="#5d7079" text-anchor="middle">ذروتان في الأزرق والأحمر وهبوط في الأخضر</text>
+<line x1="96" y1="130" x2="96" y2="400" stroke="#cbd5d9" stroke-width="1" stroke-opacity="0.6"/>
+<text x="96" y="426" font-size="17" font-weight="400" fill="#5d7079" text-anchor="middle">400</text>
+<line x1="189.7" y1="130" x2="189.7" y2="400" stroke="#cbd5d9" stroke-width="1" stroke-opacity="0.6"/>
+<text x="189.7" y="426" font-size="17" font-weight="400" fill="#5d7079" text-anchor="middle">450</text>
+<line x1="283.3" y1="130" x2="283.3" y2="400" stroke="#cbd5d9" stroke-width="1" stroke-opacity="0.6"/>
+<text x="283.3" y="426" font-size="17" font-weight="400" fill="#5d7079" text-anchor="middle">500</text>
+<line x1="377" y1="130" x2="377" y2="400" stroke="#cbd5d9" stroke-width="1" stroke-opacity="0.6"/>
+<text x="377" y="426" font-size="17" font-weight="400" fill="#5d7079" text-anchor="middle">550</text>
+<line x1="470.7" y1="130" x2="470.7" y2="400" stroke="#cbd5d9" stroke-width="1" stroke-opacity="0.6"/>
+<text x="470.7" y="426" font-size="17" font-weight="400" fill="#5d7079" text-anchor="middle">600</text>
+<line x1="564.3" y1="130" x2="564.3" y2="400" stroke="#cbd5d9" stroke-width="1" stroke-opacity="0.6"/>
+<text x="564.3" y="426" font-size="17" font-weight="400" fill="#5d7079" text-anchor="middle">650</text>
+<line x1="658" y1="130" x2="658" y2="400" stroke="#cbd5d9" stroke-width="1" stroke-opacity="0.6"/>
+<text x="658" y="426" font-size="17" font-weight="400" fill="#5d7079" text-anchor="middle">700</text>
+<line x1="96" y1="400" x2="658" y2="400" stroke="#cbd5d9" stroke-width="1" stroke-opacity="0.6"/>
+<text x="670" y="406" font-size="17" font-weight="400" fill="#5d7079" text-anchor="start">0</text>
+<line x1="96" y1="361.4" x2="658" y2="361.4" stroke="#cbd5d9" stroke-width="1" stroke-opacity="0.6"/>
+<text x="670" y="367.4" font-size="17" font-weight="400" fill="#5d7079" text-anchor="start">0.2</text>
+<line x1="96" y1="322.9" x2="658" y2="322.9" stroke="#cbd5d9" stroke-width="1" stroke-opacity="0.6"/>
+<text x="670" y="328.9" font-size="17" font-weight="400" fill="#5d7079" text-anchor="start">0.4</text>
+<line x1="96" y1="284.3" x2="658" y2="284.3" stroke="#cbd5d9" stroke-width="1" stroke-opacity="0.6"/>
+<text x="670" y="290.3" font-size="17" font-weight="400" fill="#5d7079" text-anchor="start">0.6</text>
+<line x1="96" y1="245.7" x2="658" y2="245.7" stroke="#cbd5d9" stroke-width="1" stroke-opacity="0.6"/>
+<text x="670" y="251.7" font-size="17" font-weight="400" fill="#5d7079" text-anchor="start">0.8</text>
+<line x1="96" y1="207.1" x2="658" y2="207.1" stroke="#cbd5d9" stroke-width="1" stroke-opacity="0.6"/>
+<text x="670" y="213.1" font-size="17" font-weight="400" fill="#5d7079" text-anchor="start">1</text>
+<line x1="96" y1="168.6" x2="658" y2="168.6" stroke="#cbd5d9" stroke-width="1" stroke-opacity="0.6"/>
+<text x="670" y="174.6" font-size="17" font-weight="400" fill="#5d7079" text-anchor="start">1.2</text>
+<line x1="96" y1="130" x2="658" y2="130" stroke="#cbd5d9" stroke-width="1" stroke-opacity="0.6"/>
+<text x="670" y="136" font-size="17" font-weight="400" fill="#5d7079" text-anchor="start">1.4</text>
+<line x1="96" y1="130" x2="96" y2="400" stroke="#1b2a2f" stroke-width="1.5"/>
+<line x1="96" y1="400" x2="658" y2="400" stroke="#1b2a2f" stroke-width="1.5"/>
+<path d="M96,293.9 L133.5,236.1 L152.2,207.1 L189.7,261.1 L245.9,346 L320.8,380.7 L377,388.4 L470.7,390.4 L508.1,376.9 L545.6,332.5 L586.8,207.1 L620.5,261.1 L658,365.3" fill="none" stroke="#c2410c" stroke-width="2.5" stroke-linejoin="round"/>
+<line x1="106" y1="174" x2="142" y2="174" stroke="#c2410c" stroke-width="2.5"/>
+<text x="150" y="180" font-size="17" font-weight="600" fill="#c2410c" text-anchor="start" stroke="#ffffff" stroke-width="4" stroke-linejoin="round" paint-order="stroke">اليخضور a</text>
+<path d="M96,319 L152.2,293.9 L195.3,216.8 L227.1,245.7 L283.3,351.8 L377,390.4 L470.7,388.4 L508.1,361.4 L549.3,230.3 L583.1,293.9 L658,376.9" fill="none" stroke="#0e7490" stroke-width="2.5" stroke-linejoin="round"/>
+<line x1="106" y1="198" x2="142" y2="198" stroke="#0e7490" stroke-width="2.5"/>
+<text x="150" y="204" font-size="17" font-weight="600" fill="#0e7490" text-anchor="start" stroke="#ffffff" stroke-width="4" stroke-linejoin="round" paint-order="stroke">اليخضور b</text>
+<circle cx="152.2" cy="207.1" r="5" fill="#1b2a2f"/>
+<text x="152.2" y="193.1" font-size="17" font-weight="700" fill="#1b2a2f" text-anchor="middle" stroke="#ffffff" stroke-width="4" stroke-linejoin="round" paint-order="stroke">430 نانومتر</text>
+<circle cx="377" cy="388.4" r="5" fill="#1b2a2f"/>
+<text x="377" y="374.4" font-size="17" font-weight="700" fill="#1b2a2f" text-anchor="middle" stroke="#ffffff" stroke-width="4" stroke-linejoin="round" paint-order="stroke">الفجوة الخضراء</text>
+<text x="377" y="454" font-size="17" font-weight="400" fill="#5d7079" text-anchor="middle">طول الموجة (نانومتر)</text>
+<text x="90" y="108" font-size="17" font-weight="400" fill="#5d7079" text-anchor="start">الامتصاص</text>
+<text x="380" y="488" font-size="17" font-weight="400" fill="#5d7079" text-anchor="middle">القياس في مذيب عضوي · داخل الورقة تزحف ذروة الأحمر إلى 680 نانومتر</text>
+</g></svg>

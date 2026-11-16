@@ -1,0 +1,54 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="760" height="514" viewBox="0 0 760 514" role="img" aria-labelledby="t">
+<title id="t">طاقة المكثف تتزايد بمربع الجهد</title>
+<rect width="760" height="514" fill="#ffffff"/>
+<g font-family="'Segoe UI', 'Noto Naskh Arabic', system-ui, sans-serif" direction="rtl">
+<text x="380" y="34" font-size="18" font-weight="700" fill="#1b2a2f" text-anchor="middle">طاقة المكثف تتزايد بمربع الجهد</text>
+<text x="380" y="60" font-size="17" font-weight="400" fill="#5d7079" text-anchor="middle">C = 4,700 µF ثابتة، وE = ½·C·V²</text>
+<text x="380" y="84" font-size="17" font-weight="400" fill="#5d7079" text-anchor="middle">مضاعفة الجهد تضاعف الطاقة أربع مرات</text>
+<line x1="96" y1="130" x2="96" y2="400" stroke="#cbd5d9" stroke-width="1" stroke-opacity="0.6"/>
+<text x="96" y="426" font-size="17" font-weight="400" fill="#5d7079" text-anchor="middle">0</text>
+<line x1="166.3" y1="130" x2="166.3" y2="400" stroke="#cbd5d9" stroke-width="1" stroke-opacity="0.6"/>
+<text x="166.3" y="426" font-size="17" font-weight="400" fill="#5d7079" text-anchor="middle">50</text>
+<line x1="236.5" y1="130" x2="236.5" y2="400" stroke="#cbd5d9" stroke-width="1" stroke-opacity="0.6"/>
+<text x="236.5" y="426" font-size="17" font-weight="400" fill="#5d7079" text-anchor="middle">100</text>
+<line x1="306.8" y1="130" x2="306.8" y2="400" stroke="#cbd5d9" stroke-width="1" stroke-opacity="0.6"/>
+<text x="306.8" y="426" font-size="17" font-weight="400" fill="#5d7079" text-anchor="middle">150</text>
+<line x1="377" y1="130" x2="377" y2="400" stroke="#cbd5d9" stroke-width="1" stroke-opacity="0.6"/>
+<text x="377" y="426" font-size="17" font-weight="400" fill="#5d7079" text-anchor="middle">200</text>
+<line x1="447.3" y1="130" x2="447.3" y2="400" stroke="#cbd5d9" stroke-width="1" stroke-opacity="0.6"/>
+<text x="447.3" y="426" font-size="17" font-weight="400" fill="#5d7079" text-anchor="middle">250</text>
+<line x1="517.5" y1="130" x2="517.5" y2="400" stroke="#cbd5d9" stroke-width="1" stroke-opacity="0.6"/>
+<text x="517.5" y="426" font-size="17" font-weight="400" fill="#5d7079" text-anchor="middle">300</text>
+<line x1="587.8" y1="130" x2="587.8" y2="400" stroke="#cbd5d9" stroke-width="1" stroke-opacity="0.6"/>
+<text x="587.8" y="426" font-size="17" font-weight="400" fill="#5d7079" text-anchor="middle">350</text>
+<line x1="658" y1="130" x2="658" y2="400" stroke="#cbd5d9" stroke-width="1" stroke-opacity="0.6"/>
+<text x="658" y="426" font-size="17" font-weight="400" fill="#5d7079" text-anchor="middle">400</text>
+<line x1="96" y1="400" x2="658" y2="400" stroke="#cbd5d9" stroke-width="1" stroke-opacity="0.6"/>
+<text x="670" y="406" font-size="17" font-weight="400" fill="#5d7079" text-anchor="start">0</text>
+<line x1="96" y1="366.3" x2="658" y2="366.3" stroke="#cbd5d9" stroke-width="1" stroke-opacity="0.6"/>
+<text x="670" y="372.3" font-size="17" font-weight="400" fill="#5d7079" text-anchor="start">50</text>
+<line x1="96" y1="332.5" x2="658" y2="332.5" stroke="#cbd5d9" stroke-width="1" stroke-opacity="0.6"/>
+<text x="670" y="338.5" font-size="17" font-weight="400" fill="#5d7079" text-anchor="start">100</text>
+<line x1="96" y1="298.8" x2="658" y2="298.8" stroke="#cbd5d9" stroke-width="1" stroke-opacity="0.6"/>
+<text x="670" y="304.8" font-size="17" font-weight="400" fill="#5d7079" text-anchor="start">150</text>
+<line x1="96" y1="265" x2="658" y2="265" stroke="#cbd5d9" stroke-width="1" stroke-opacity="0.6"/>
+<text x="670" y="271" font-size="17" font-weight="400" fill="#5d7079" text-anchor="start">200</text>
+<line x1="96" y1="231.3" x2="658" y2="231.3" stroke="#cbd5d9" stroke-width="1" stroke-opacity="0.6"/>
+<text x="670" y="237.3" font-size="17" font-weight="400" fill="#5d7079" text-anchor="start">250</text>
+<line x1="96" y1="197.5" x2="658" y2="197.5" stroke="#cbd5d9" stroke-width="1" stroke-opacity="0.6"/>
+<text x="670" y="203.5" font-size="17" font-weight="400" fill="#5d7079" text-anchor="start">300</text>
+<line x1="96" y1="163.8" x2="658" y2="163.8" stroke="#cbd5d9" stroke-width="1" stroke-opacity="0.6"/>
+<text x="670" y="169.8" font-size="17" font-weight="400" fill="#5d7079" text-anchor="start">350</text>
+<line x1="96" y1="130" x2="658" y2="130" stroke="#cbd5d9" stroke-width="1" stroke-opacity="0.6"/>
+<text x="670" y="136" font-size="17" font-weight="400" fill="#5d7079" text-anchor="start">400</text>
+<line x1="96" y1="130" x2="96" y2="400" stroke="#1b2a2f" stroke-width="1.5"/>
+<line x1="96" y1="400" x2="658" y2="400" stroke="#1b2a2f" stroke-width="1.5"/>
+<path d="M96,400 L166.3,396 L236.5,384.1 L306.8,364.3 L377,336.6 L447.3,300.8 L517.5,257.2 L587.8,205.7 L658,146.2" fill="none" stroke="#c2410c" stroke-width="2.5" stroke-linejoin="round"/>
+<circle cx="377" cy="336.6" r="5" fill="#1b2a2f"/>
+<text x="377" y="322.6" font-size="17" font-weight="700" fill="#1b2a2f" text-anchor="middle" stroke="#ffffff" stroke-width="4" stroke-linejoin="round" paint-order="stroke">94 J</text>
+<circle cx="517.5" cy="257.2" r="5" fill="#1b2a2f"/>
+<text x="517.5" y="243.2" font-size="17" font-weight="700" fill="#1b2a2f" text-anchor="middle" stroke="#ffffff" stroke-width="4" stroke-linejoin="round" paint-order="stroke">211 J</text>
+<text x="377" y="454" font-size="17" font-weight="400" fill="#5d7079" text-anchor="middle">الجهد بين اللوحين (فولت)</text>
+<text x="90" y="108" font-size="17" font-weight="400" fill="#5d7079" text-anchor="start">الطاقة المخزنة (جول)</text>
+<text x="380" y="488" font-size="17" font-weight="400" fill="#5d7079" text-anchor="middle">النقط محسوبة من E = ½·C·V² عند سعة 4,700 ميكروفراد</text>
+</g></svg>

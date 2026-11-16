@@ -1,0 +1,130 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>لماذا تكون حرارة الأرض −18 درجة حسابيًّا؟ — ديوان المعرفة</title>
+  <meta name="description" content="الأرض تمتص من الشمس ما يعادل 240 واط لكل متر مربع، وتشعّ المثل بالحرارة؛ الحساب يعطي 255 كلفن، والفارق 33 درجة هو أثر الغلاف الجوي." />
+  <link rel="stylesheet" href="../assets/css/tokens.css" />
+  <link rel="stylesheet" href="../assets/css/site.css" />
+
+  <link rel="canonical" href="https://infiradev.com/diwan/lab/radiation-equilibrium.html" />
+  <link rel="icon" href="https://infiradev.com/favicon.ico" sizes="48x48" />
+  <link rel="icon" type="image/png" sizes="192x192" href="https://infiradev.com/assets/favicon-192.png" />
+  <link rel="apple-touch-icon" href="https://infiradev.com/assets/apple-touch-icon.png" />
+  <script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"Organization","@id":"https://infiradev.com/#organization","name":"INFIRAD","alternateName":["انفِراد","انفراد"],"url":"https://infiradev.com/","logo":{"@type":"ImageObject","url":"https://infiradev.com/assets/logo-bilingual.png","width":990,"height":320},"slogan":"من الفكرة إلى اليقين","foundingDate":"2025","email":"info@infiradeng.com","telephone":"+966557748982","address":{"@type":"PostalAddress","addressLocality":"Riyadh","addressCountry":"SA"},"sameAs":["https://www.linkedin.com/company/infirad/"],"knowsAbout":["Engineering services","Engineering Services Provider (ESP)","Process design","Process simulation","Computational fluid dynamics","Thermal analysis","Independent engineering review","Specialized AI agents","Workflow automation","Traffic simulation"]},{"@type":"WebPage","@id":"https://infiradev.com/diwan/lab/radiation-equilibrium.html#webpage","url":"https://infiradev.com/diwan/lab/radiation-equilibrium.html","name":"لماذا تكون حرارة الأرض −18 درجة حسابيًّا؟ — ديوان المعرفة","description":"الأرض تمتص من الشمس ما يعادل 240 واط لكل متر مربع، وتشعّ المثل بالحرارة؛ الحساب يعطي 255 كلفن، والفارق 33 درجة هو أثر الغلاف الجوي.","inLanguage":"ar","isPartOf":{"@id":"https://infiradev.com/#website"},"about":{"@id":"https://infiradev.com/#organization"}},{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"انفراد","item":"https://infiradev.com/"},{"@type":"ListItem","position":2,"name":"ديوان المعرفة","item":"https://infiradev.com/diwan/"},{"@type":"ListItem","position":3,"name":"لماذا تكون حرارة الأرض −18 درجة حسابيًّا؟ — ديوان المعرفة","item":"https://infiradev.com/diwan/lab/radiation-equilibrium.html"}]}]}</script>
+</head>
+<body>
+<a class="skip" href="#main">انتقل إلى المحتوى</a>
+<header class="site-head">
+  <div class="wrap head-in">
+    <div class="brand-lockup">
+      <a class="brand" href="https://infiradev.com/" aria-label="انفراد، الموقع الرئيسي">
+        <img src="https://infiradev.com/assets/logo-bilingual.png" alt="انفراد · INFIRAD" width="990" height="320" />
+      </a>
+      <a class="diwan-name" href="../">ديوان المعرفة</a>
+    </div>
+    <nav class="nav" aria-label="أقسام ديوان المعرفة"><a href="../terms/">المصطلحات</a><a href="../articles/">مقالات</a><a href="../domains/">المجالات</a><a href="../lab/" aria-current="page">المعمل</a><a href="../about.html">عن الديوان</a></nav>
+    <nav class="head-actions" aria-label="الرجوع والموقع الرئيسي">
+      <a href="../" data-back><span aria-hidden="true">→</span> رجوع</a>
+      <a href="https://infiradev.com/">موقع انفراد الرئيسي</a>
+    </nav>
+  </div>
+</header>
+
+<main id="main">
+<article class="wrap article">
+  <nav class="crumbs" aria-label="المسار"><a href="../lab/">المعمل</a> · <a href="../domains/physics.html">الفيزياء</a></nav>
+  <h1 class="page-h">لماذا تكون حرارة الأرض −18 درجة حسابيًّا؟</h1>
+  <section class="lab-panel">
+  <p class="lede">غيّر نسبة الانعكاس والانبعاثية، وتابع حرارة التوازن بالكلفن والمئوية.</p>
+  <div id="lab-root"></div>
+  <p class="lab-equation" dir="ltr">T = [S(1−a)/(4σε)]^¼</p>
+  <div class="lab-readout" id="lab-outputs"></div>
+  <div class="lab-gauge" id="lab-gauge"></div>
+  <p><button class="lab-cta" type="button" id="lab-reset">إعادة الضبط</button></p>
+  <p class="muted small" id="lab-note">المقياس يبدأ عند حالة الأرض (انعكاس 0.30) = 255 كلفن.</p>
+  <details>
+    <summary>افتراضات النموذج والمصدر</summary>
+    <p>جسم كروي صفري الأبعاد بلا غلاف جوي</p><p>ثابت شمسي 1361 W/m²</p><p>انبعاثية سطحية محلّية</p><p>لا انتقال حرارة بين خطوط العرض</p><p><a href="https://earthobservatory.nasa.gov/features/EnergyBalance">Solar constant and total solar irradiance — NASA</a></p><p><a href="https://openstax.org/books/college-physics/pages/14-7-radiation">Stefan-Boltzmann law and planetary energy balance — OpenStax</a></p>
+  </details>
+  <noscript>فعّل JavaScript لتحريك المدخلات وحساب النتائج.</noscript>
+  <script type="application/json" id="lab-spec">{"controls":[{"id":"albedo","label_ar":"نسبة الانعكاس","step":0.01,"value":0.3,"unit":"","from":0.1,"to":0.8},{"id":"emissivity","label_ar":"الانبعاثية","step":0.01,"value":1,"unit":"","from":0.6,"to":1}],"outputs":[{"id":"kelvin","label_ar":"حرارة التوازن","unit":"ك","decimals":1},{"id":"celsius","label_ar":"بالدرجة المئوية","unit":"°م","decimals":1}],"gauge":{"id":"kelvin","min":180,"max":310,"start":255,"unit":"ك","decimals":1,"bind":"kelvin","label":"حرارة التوازن — المقياس من 180 إلى 310 كلفن"},"note_ar":"المقياس يبدأ عند حالة الأرض (انعكاس 0.30) = 255 كلفن."}</script>
+  <script type="module" src="../assets/js/labs/radiation-equilibrium.mjs"></script>
+</section>
+  <div class="prose"><p>الأرض تكتسب طاقة من الشمس وتفقدها بالإشعاع. التوازن يحدث عند الحرارة التي يتساوى فيها الاثنان. لكن الكسب يُوزّع على سطح الكرة كلها، فيكون ربع القيمة المباشرة — لأن قرص الاستقبال أربعة أمثال مساحة سطح الكرة.</p><p>باختصار: (1361 × 0.70) ÷ 4 ≈ 238 واط لكل متر مربع. والحرارة التي يشعّ بها سطح بهذا المعدل هي 255 كلفن، أي −18 °م. الحرارة المقيسة 15 °م، والفرق 33 درجة يعود إلى أن الغلاف الجوي يعيد إشعاع جزء من الطاقة إلى السطح.</p></div>
+  <div class="depth" aria-label="شرح معمّق"><section class="depth-sec">
+    <h2>الآلية</h2>
+    <p class="depth-hint muted small">كيف يحدث الأمر على مستوى الجسيمات أو المتغيّرات المباشرة</p>
+    <p>الجسم الذي يمتص إشعاعًا يجب أن يشعّ ما يعادله وإلا ارتفعت حرارته بلا حد. انبعاثية الجسم تعتمد على حرارته بالأسّ الرابع: مضاعفة الحرارة المطلقة ترفع الإشعاع 16 مرة. هذا الأسّ الحاد هو الذي يجعل النظام يستقرّ عند حرارة محدودة بدل أن ينفلت.</p>
+  </section><section class="depth-sec">
+    <h2>الأرقام والوحدات</h2>
+    <p class="depth-hint muted small">العلاقات والوحدات والنطاقات العددية التي تسند الشرح</p>
+    <p>T = [S(1−a)/(4σε)]^¼. بالقيم S=1361 W/m² وa=0.30 وε=1 يكون T = [1361×0.70/(4×5.67×10⁻⁸)]^0.25 = 255 ك، أي −18 °م. ولو انخفض الانعكاس إلى 0.10 لارتفعت إلى 271 ك، ولو صار 0.80 لهبطت إلى 234 ك.</p>
+  </section><section class="depth-sec">
+    <h2>الفرق الدقيق</h2>
+    <p class="depth-hint muted small">المفهوم الملتبس الذي يُخلَط به، وأين ينفصلان</p>
+    <p>يُخلط بين حرارة التوازن الإشعاعي وبين حرارة السطح الفعلية: الأولى حساب بلا غلاف جوي، والثانية تشمل الاحتباس. ويُخلط بين الانعكاس والإشعاع الطويل: الأول يعكس الضوء المرئي القادم، والثاني يشعّ طاقة تحت الحمراء من السطح نفسه.</p>
+  </section><section class="depth-sec">
+    <h2>حدود التعريف</h2>
+    <p class="depth-hint muted small">أين ينكسر التعريف أو النموذج وما الذي لا يفسّره</p>
+    <p>النموذج صفري الأبعاد: يفترض سطحًا واحدًا متساوي الحرارة ولا يعرف الفصول ولا الليل ولا المحيطات. كما يفترض انبعاثية مثالية، ويغفل السحب والهباء والجليد وانتقال الحرارة من المناطق الحارة للباردة. لذلك يُستعمل تقديرًا أوليًّا يتبعه نماذج مناخية كاملة.</p>
+  </section></div>
+  <section class="figures" aria-label="الرسوم التوضيحية">
+  <figure class="fig" id="fig-1">
+    <img class="fig-img" src="../assets/fig/fig-spec-radiation-equilibrium.svg" alt="منحنى هابط من 271 كلفن عند انعكاس 0.1 إلى 234 كلفن عند 0.8، وعليه علامة عند 0.3 بقيمة 255 كلفن." loading="lazy" />
+    <figcaption><b>الشكل 1.</b> حرارة التوازن مقابل نسبة الانعكاس: الجليد يرفع الانعكاس فيبرد، والمحيط الداكن يخفضه فيدفأ.
+      <span class="credit muted small">· من عمل انفراد — منحنى محسوب من قانون ستيفان–بولتزمان</span>
+    </figcaption>
+  </figure>
+</section>
+  <table class="facts">
+  <caption>أرقام مسنَدة إلى مصادرها</caption>
+  <thead><tr><th scope="col">الكمية</th><th scope="col">القيمة</th><th scope="col">المصدر</th></tr></thead>
+  <tbody><tr>
+      <th scope="row">الثابت الشمسي</th>
+      <td>1361 <span class="unit">W/m²</span></td>
+      <td><a class="ref" href="#src-1">[1]</a></td>
+    </tr><tr>
+      <th scope="row">متوسط انعكاس الأرض</th>
+      <td>0.30</td>
+      <td><a class="ref" href="#src-2">[2]</a></td>
+    </tr><tr>
+      <th scope="row">حرارة التوازن الإشعاعي للأرض</th>
+      <td>255 <span class="unit">ك</span></td>
+      <td><a class="ref" href="#src-2">[2]</a></td>
+    </tr></tbody>
+</table>
+  <section class="sources" aria-labelledby="src-h">
+  <h2 id="src-h">المصادر</h2>
+  <ol class="src-list"><li id="src-1">
+      <span class="src-num">1</span>
+      <span>Solar constant and total solar irradiance — NASA.
+      <a href="https://earthobservatory.nasa.gov/features/EnergyBalance" rel="noopener nofollow" target="_blank">earthobservatory.nasa.gov/features/EnergyBalance</a>
+      <span class="muted small">· اطُّلع عليه 2026-11-16</span></span>
+    </li><li id="src-2">
+      <span class="src-num">2</span>
+      <span>Stefan-Boltzmann law and planetary energy balance — OpenStax.
+      <a href="https://openstax.org/books/college-physics/pages/14-7-radiation" rel="noopener nofollow" target="_blank">openstax.org/books/college-physics/pages/14-7-radiation</a>
+      <span class="muted small">· اطُّلع عليه 2026-11-16</span></span>
+    </li></ol>
+</section>
+  <p class="reviewline muted small">راجعه: مراجعة آلية — بوابة الديوان (فحص بنيوي وأرقام) 2026-11-16 · 2026-11-16 · آخر تحديث 2026-11-16</p>
+</article>
+</main>
+<footer class="site-foot">
+  <div class="wrap foot-in">
+    <div>
+      <b>ديوان المعرفة</b> — من المفهوم إلى التجربة
+      <div class="muted small">قسم علمي داخل انفراد · <a href="https://infiradev.com">infiradev.com</a> · <a href="mailto:info@infiradev.com">info@infiradev.com</a></div>
+    </div>
+    <div class="muted small">
+      <a href="../about.html">سياسة التحرير والمصادر</a> ·
+      <a href="../terms/">المصطلحات</a> ·
+      <a href="../lab/">المعمل الافتراضي</a>
+    </div>
+  </div>
+</footer>
+<script src="../assets/js/site.js" defer></script>
+</body>
+</html>

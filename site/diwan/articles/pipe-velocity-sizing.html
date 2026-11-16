@@ -1,0 +1,125 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>لماذا لا يقاس حجم الأنبوب بالتدفق بل بالسرعة؟ — ديوان المعرفة</title>
+  <meta name="description" content="أنبوب يحمل 10 أمتار مكعبة في الساعة لا يحدّده التدفق وحده: نفس التدفق يمرّ في ماسورة 25 مم بسرعة 5 م/ث (تآكل وضجيج) وفي 80 مم بنصف متر في الثانية (كلفة زائدة). سرعة الماء هي القرار الحقيقي." />
+  <link rel="stylesheet" href="../assets/css/tokens.css" />
+  <link rel="stylesheet" href="../assets/css/site.css" />
+
+  <link rel="canonical" href="https://infiradev.com/diwan/articles/pipe-velocity-sizing.html" />
+  <link rel="icon" href="https://infiradev.com/favicon.ico" sizes="48x48" />
+  <link rel="icon" type="image/png" sizes="192x192" href="https://infiradev.com/assets/favicon-192.png" />
+  <link rel="apple-touch-icon" href="https://infiradev.com/assets/apple-touch-icon.png" />
+  <script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"Organization","@id":"https://infiradev.com/#organization","name":"INFIRAD","alternateName":["انفِراد","انفراد"],"url":"https://infiradev.com/","logo":{"@type":"ImageObject","url":"https://infiradev.com/assets/logo-bilingual.png","width":990,"height":320},"slogan":"من الفكرة إلى اليقين","foundingDate":"2025","email":"info@infiradeng.com","telephone":"+966557748982","address":{"@type":"PostalAddress","addressLocality":"Riyadh","addressCountry":"SA"},"sameAs":["https://www.linkedin.com/company/infirad/"],"knowsAbout":["Engineering services","Engineering Services Provider (ESP)","Process design","Process simulation","Computational fluid dynamics","Thermal analysis","Independent engineering review","Specialized AI agents","Workflow automation","Traffic simulation"]},{"@type":"WebPage","@id":"https://infiradev.com/diwan/articles/pipe-velocity-sizing.html#webpage","url":"https://infiradev.com/diwan/articles/pipe-velocity-sizing.html","name":"لماذا لا يقاس حجم الأنبوب بالتدفق بل بالسرعة؟ — ديوان المعرفة","description":"أنبوب يحمل 10 أمتار مكعبة في الساعة لا يحدّده التدفق وحده: نفس التدفق يمرّ في ماسورة 25 مم بسرعة 5 م/ث (تآكل وضجيج) وفي 80 مم بنصف متر في الثانية (كلفة زائدة). سرعة الماء هي القرار الحقيقي.","inLanguage":"ar","isPartOf":{"@id":"https://infiradev.com/#website"},"about":{"@id":"https://infiradev.com/#organization"}},{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"انفراد","item":"https://infiradev.com/"},{"@type":"ListItem","position":2,"name":"ديوان المعرفة","item":"https://infiradev.com/diwan/"},{"@type":"ListItem","position":3,"name":"لماذا لا يقاس حجم الأنبوب بالتدفق بل بالسرعة؟ — ديوان المعرفة","item":"https://infiradev.com/diwan/articles/pipe-velocity-sizing.html"}]}]}</script>
+</head>
+<body>
+<a class="skip" href="#main">انتقل إلى المحتوى</a>
+<header class="site-head">
+  <div class="wrap head-in">
+    <div class="brand-lockup">
+      <a class="brand" href="https://infiradev.com/" aria-label="انفراد، الموقع الرئيسي">
+        <img src="https://infiradev.com/assets/logo-bilingual.png" alt="انفراد · INFIRAD" width="990" height="320" />
+      </a>
+      <a class="diwan-name" href="../">ديوان المعرفة</a>
+    </div>
+    <nav class="nav" aria-label="أقسام ديوان المعرفة"><a href="../terms/">المصطلحات</a><a href="../articles/" aria-current="page">مقالات</a><a href="../domains/">المجالات</a><a href="../lab/">المعمل</a><a href="../about.html">عن الديوان</a></nav>
+    <nav class="head-actions" aria-label="الرجوع والموقع الرئيسي">
+      <a href="../" data-back><span aria-hidden="true">→</span> رجوع</a>
+      <a href="https://infiradev.com/">موقع انفراد الرئيسي</a>
+    </nav>
+  </div>
+</header>
+
+<main id="main">
+<article class="wrap article">
+  <nav class="crumbs" aria-label="المسار"><a href="../articles/">مقالات</a> · <a href="../domains/engineering.html">الهندسة</a></nav>
+  <h1 class="page-h">لماذا لا يقاس حجم الأنبوب بالتدفق بل بالسرعة؟</h1>
+  <p class="term-en" dir="ltr">Pipe sizing is a velocity decision</p>
+  <p class="definition">أنبوب يحمل 10 أمتار مكعبة في الساعة لا يحدّده التدفق وحده: نفس التدفق يمرّ في ماسورة 25 مم بسرعة 5 م/ث (تآكل وضجيج) وفي 80 مم بنصف متر في الثانية (كلفة زائدة). سرعة الماء هي القرار الحقيقي.</p>
+  <div class="prose"><p>المصمّم يختار الأنبوب بين ضغطين متعاكسين: أنبوب ضيق أرخص في المعدن لكنه يرفع السرعة، والسرعة ترفع فقد الاحتكاك بنسبة تربيعية تقريبًا وتضيف تآكلًا وضجيجًا ومطرقة مائية عند الإغلاق. الأنبوب الواسع يخفض كل ذلك لكنه يضاعف الكلفة والمساحة. النطاق العملي للماء في المباني بين 1 و2 متر في الثانية، وفوقه يبدأ الضجيج في الشبكات الصغيرة.</p></div>
+  <div class="depth" aria-label="شرح معمّق"><section class="depth-sec">
+    <h2>الآلية</h2>
+    <p class="depth-hint muted small">كيف يحدث الأمر على مستوى الجسيمات أو المتغيّرات المباشرة</p>
+    <p>التدفق الحجمي ثابت عبر المقطع، فالسرعة هي التدفق مقسومًا على المساحة. المساحة تتناسب مع مربع القطر، لذا تنصيف القطر يضاعف السرعة أربع مرات. وفقد الاحتكاك في دارسي يناسب السرعة تربيعيًا، فيصير تنصيف القطر ضغطًا مفقودًا ستة عشر ضعفًا تقريبًا — ولهذا يُشعر بخطأ التصغير في فاتورة المضخة لا في الرسم.</p>
+  </section><section class="depth-sec">
+    <h2>الأرقام والوحدات</h2>
+    <p class="depth-hint muted small">العلاقات والوحدات والنطاقات العددية التي تسند الشرح</p>
+    <p>عند 10 م³/ساعة: ماسورة 25 مم تعطي 5.0 م/ث، و32 مم 2.9، و40 مم 2.1، و50 مم 1.3، و80 مم 0.6. الحد المقبول 1.5 م/ث يقع بين 40 و50 مم في هذا المثال، والقرار الاقتصادي عادةً يختار 50 مم لأنه يترك هامشًا للتوسّع دون تغيير الشبكة.</p>
+  </section><section class="depth-sec">
+    <h2>الفرق الدقيق</h2>
+    <p class="depth-hint muted small">المفهوم الملتبس الذي يُخلَط به، وأين ينفصلان</p>
+    <p>قطر الأنبوب الاسمي ليس القطر الداخلي: الجدول يقاس بالسماكة، فالفرق بين 40 مم اسمي و40 مم داخلي قد يبلغ ميليمترات تحرّك السرعة نسبة محسوبة. التصميم يستخدم القطر الداخلي دائمًا، والتسمية التجارية لا تصلح للحساب.</p>
+  </section><section class="depth-sec">
+    <h2>حدود التعريف</h2>
+    <p class="depth-hint muted small">أين ينكسر التعريف أو النموذج وما الذي لا يفسّره</p>
+    <p>النطاق 1–2 م/ث قاعدة إرشادية لا حدًّا فيزيائيًا: خطوط الشفط تُخفَّض لتفادي التكهّف، وخطوط الإطفاء تُرفع لضمان الرشّ، وأنابيب الطين تحتمل سرعة أعلى للتخلص من الترسيب. والحساب هنا لمائع واحد وقطر واحد، ولا يشمل فقد الرأس الكلي.</p>
+  </section></div>
+  <section class="figures" aria-label="الرسوم التوضيحية">
+  <figure class="fig" id="fig-1">
+    <img class="fig-img" src="../assets/fig/fig-spec-pipe-velocity-sizing.svg" alt="أعمدة متناقصة: 5.0 م/ث عند 25 مم، 2.87 عند 32، 2.11 عند 40، 1.28 عند 50، 0.58 عند 80." loading="lazy" />
+    <figcaption><b>الشكل 1.</b> نفس التدفق، خمسة أنابيب: المساحة تنقص بمربع القطر والسرعة ترتفع بالمقلوب.
+      <span class="credit muted small">· من عمل انفراد — رسم مولَّد من أرقام المصدر</span>
+    </figcaption>
+  </figure>
+</section>
+  <table class="facts">
+  <caption>أرقام مسنَدة إلى مصادرها</caption>
+  <thead><tr><th scope="col">الكمية</th><th scope="col">القيمة</th><th scope="col">المصدر</th></tr></thead>
+  <tbody><tr>
+      <th scope="row">سرعة الماء في ماسورة 25 مم عند 10 م³/ساعة</th>
+      <td>5.0 <span class="unit">m/s</span></td>
+      <td><a class="ref" href="#src-1">[1]</a></td>
+    </tr><tr>
+      <th scope="row">السرعة في ماسورة 50 مم بنفس التدفق</th>
+      <td>1.28 <span class="unit">m/s</span></td>
+      <td><a class="ref" href="#src-1">[1]</a></td>
+    </tr><tr>
+      <th scope="row">السرعة في ماسورة 80 مم بنفس التدفق</th>
+      <td>0.58 <span class="unit">m/s</span></td>
+      <td><a class="ref" href="#src-1">[1]</a></td>
+    </tr><tr>
+      <th scope="row">نسبة الزيادة في فقد الاحتكاك عند تنصيف القطر</th>
+      <td>16 <span class="unit">مرة</span></td>
+      <td><a class="ref" href="#src-2">[2]</a></td>
+    </tr></tbody>
+</table>
+  <section class="sources" aria-labelledby="src-h">
+  <h2 id="src-h">المصادر</h2>
+  <ol class="src-list"><li id="src-1">
+      <span class="src-num">1</span>
+      <span>Engineering ToolBox — Flow Velocity in Water Pipes — Engineering ToolBox.
+      <a href="https://www.engineeringtoolbox.com/flow-velocity-water-pipes-d_385.html" rel="noopener nofollow" target="_blank">www.engineeringtoolbox.com/flow-velocity-water-pipes-d_385.html</a>
+      <span class="muted small">· اطُّلع عليه 2026-11-16</span></span>
+    </li><li id="src-2">
+      <span class="src-num">2</span>
+      <span>OpenStax, College Physics 2e — Flow Rate and Its Relation to Velocity — OpenStax.
+      <a href="https://openstax.org/books/college-physics-2e/pages/12-1-flow-rate-and-its-relation-to-velocity" rel="noopener nofollow" target="_blank">openstax.org/books/college-physics-2e/pages/12-1-flow-rate-and-its-relation-to-velocity</a>
+      <span class="muted small">· اطُّلع عليه 2026-11-16</span></span>
+    </li><li id="src-3">
+      <span class="src-num">3</span>
+      <span>OpenStax, College Physics 2e — Viscosity and Laminar Flow; Poiseuille's Law — OpenStax.
+      <a href="https://openstax.org/books/college-physics-2e/pages/12-4-viscosity-and-laminar-flow-poiseuilles-law" rel="noopener nofollow" target="_blank">openstax.org/books/college-physics-2e/pages/12-4-viscosity-and-laminar-flow-poiseuilles-law</a>
+      <span class="muted small">· اطُّلع عليه 2026-11-16</span></span>
+    </li></ol>
+</section>
+  <p class="reviewline muted small">راجعه: مراجعة آلية — ديوان المعرفة (أرقام محسوبة + مصادر متحققة) 2026-11-16 · 2026-11-16 · آخر تحديث 2026-11-16</p>
+</article>
+</main>
+<footer class="site-foot">
+  <div class="wrap foot-in">
+    <div>
+      <b>ديوان المعرفة</b> — من المفهوم إلى التجربة
+      <div class="muted small">قسم علمي داخل انفراد · <a href="https://infiradev.com">infiradev.com</a> · <a href="mailto:info@infiradev.com">info@infiradev.com</a></div>
+    </div>
+    <div class="muted small">
+      <a href="../about.html">سياسة التحرير والمصادر</a> ·
+      <a href="../terms/">المصطلحات</a> ·
+      <a href="../lab/">المعمل الافتراضي</a>
+    </div>
+  </div>
+</footer>
+<script src="../assets/js/site.js" defer></script>
+</body>
+</html>

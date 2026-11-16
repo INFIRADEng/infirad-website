@@ -1,0 +1,46 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="760" height="446" viewBox="0 0 760 446" role="img" aria-labelledby="t">
+<title id="t">سلّم التركيز المولاري</title>
+<rect width="760" height="446" fill="#ffffff"/>
+<g font-family="'Segoe UI', 'Noto Naskh Arabic', system-ui, sans-serif" direction="rtl">
+<text x="380" y="34" font-size="18" font-weight="700" fill="#1b2a2f" text-anchor="middle">سلّم التركيز المولاري</text>
+<text x="380" y="60" font-size="17" font-weight="400" fill="#5d7079" text-anchor="middle">من محلول ملحي فسيولوجي 0.154 مول/لتر إلى حمض كبريتيك مركّز 18.4</text>
+<text x="380" y="84" font-size="17" font-weight="400" fill="#5d7079" text-anchor="middle">الماء النقي نفسه 55.35 مول/لتر عند 25 °م، وهو خارج هذا السلّم</text>
+<rect x="120" y="212" width="145" height="118" fill="#0e7490" fill-opacity="0.16"/>
+<line x1="120" y1="212" x2="120" y2="330" stroke="#0e7490" stroke-width="1" stroke-opacity="0.5"/>
+<text x="192.5" y="242" font-size="17" font-weight="700" fill="#0e7490" text-anchor="middle">مخفَّف</text>
+<rect x="265" y="212" width="203" height="118" fill="#a16207" fill-opacity="0.16"/>
+<line x1="265" y1="212" x2="265" y2="330" stroke="#a16207" stroke-width="1" stroke-opacity="0.5"/>
+<text x="366.5" y="242" font-size="17" font-weight="700" fill="#a16207" text-anchor="middle">مختبري</text>
+<rect x="468" y="212" width="232" height="118" fill="#c2410c" fill-opacity="0.16"/>
+<line x1="468" y1="212" x2="468" y2="330" stroke="#c2410c" stroke-width="1" stroke-opacity="0.5"/>
+<text x="584" y="242" font-size="17" font-weight="700" fill="#c2410c" text-anchor="middle">مركّز</text>
+<line x1="120" y1="330" x2="700" y2="330" stroke="#1b2a2f" stroke-width="2"/>
+<line x1="120" y1="330" x2="120" y2="338" stroke="#1b2a2f" stroke-width="1.5"/>
+<text x="120" y="360" font-size="17" font-weight="400" fill="#5d7079" text-anchor="end">0</text>
+<line x1="178" y1="330" x2="178" y2="338" stroke="#1b2a2f" stroke-width="1.5"/>
+<text x="178" y="360" font-size="17" font-weight="400" fill="#5d7079" text-anchor="middle">2</text>
+<line x1="236" y1="330" x2="236" y2="338" stroke="#1b2a2f" stroke-width="1.5"/>
+<text x="236" y="360" font-size="17" font-weight="400" fill="#5d7079" text-anchor="middle">4</text>
+<line x1="294" y1="330" x2="294" y2="338" stroke="#1b2a2f" stroke-width="1.5"/>
+<text x="294" y="360" font-size="17" font-weight="400" fill="#5d7079" text-anchor="middle">6</text>
+<line x1="352" y1="330" x2="352" y2="338" stroke="#1b2a2f" stroke-width="1.5"/>
+<text x="352" y="360" font-size="17" font-weight="400" fill="#5d7079" text-anchor="middle">8</text>
+<line x1="410" y1="330" x2="410" y2="338" stroke="#1b2a2f" stroke-width="1.5"/>
+<text x="410" y="360" font-size="17" font-weight="400" fill="#5d7079" text-anchor="middle">10</text>
+<line x1="468" y1="330" x2="468" y2="338" stroke="#1b2a2f" stroke-width="1.5"/>
+<text x="468" y="360" font-size="17" font-weight="400" fill="#5d7079" text-anchor="middle">12</text>
+<line x1="526" y1="330" x2="526" y2="338" stroke="#1b2a2f" stroke-width="1.5"/>
+<text x="526" y="360" font-size="17" font-weight="400" fill="#5d7079" text-anchor="middle">14</text>
+<line x1="584" y1="330" x2="584" y2="338" stroke="#1b2a2f" stroke-width="1.5"/>
+<text x="584" y="360" font-size="17" font-weight="400" fill="#5d7079" text-anchor="middle">16</text>
+<line x1="642" y1="330" x2="642" y2="338" stroke="#1b2a2f" stroke-width="1.5"/>
+<text x="642" y="360" font-size="17" font-weight="400" fill="#5d7079" text-anchor="middle">18</text>
+<line x1="700" y1="330" x2="700" y2="338" stroke="#1b2a2f" stroke-width="1.5"/>
+<text x="700" y="360" font-size="17" font-weight="400" fill="#5d7079" text-anchor="middle">20</text>
+<text x="410" y="386" font-size="17" font-weight="400" fill="#5d7079" text-anchor="middle">التركيز المولاري (مول/لتر)</text>
+<line x1="124.5" y1="210" x2="124.5" y2="330" stroke="#0a7a4a" stroke-width="2" stroke-dasharray="4 3"/>
+<text x="124.5" y="202" font-size="17" font-weight="700" fill="#0a7a4a" text-anchor="middle">ملحي فسيولوجي</text>
+<line x1="653.6" y1="210" x2="653.6" y2="330" stroke="#9a3412" stroke-width="2" stroke-dasharray="4 3"/>
+<text x="653.6" y="202" font-size="17" font-weight="700" fill="#9a3412" text-anchor="middle">حمض مركّز</text>
+<text x="380" y="420" font-size="17" font-weight="400" fill="#5d7079" text-anchor="middle">الحجم يتمدد بالحرارة فينخفض التركيز من 55.35 إلى 53.20 مول/لتر بين 25 و100 °م.</text>
+</g></svg>

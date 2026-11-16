@@ -1,0 +1,49 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="760" height="514" viewBox="0 0 760 514" role="img" aria-labelledby="t">
+<title id="t">الفيض الإشعاعي مقابل حرارة السطح</title>
+<rect width="760" height="514" fill="#ffffff"/>
+<g font-family="'Segoe UI', 'Noto Naskh Arabic', system-ui, sans-serif" direction="rtl">
+<text x="380" y="34" font-size="18" font-weight="700" fill="#1b2a2f" text-anchor="middle">الفيض الإشعاعي مقابل حرارة السطح</text>
+<text x="380" y="60" font-size="17" font-weight="400" fill="#5d7079" text-anchor="middle">E = σT⁴ للجسم الأسود · صافٍ = εσ(T⁴ − T_m⁴)</text>
+<text x="380" y="84" font-size="17" font-weight="400" fill="#5d7079" text-anchor="middle">المحيط 290 كلفن · ε = 0.9</text>
+<line x1="96" y1="130" x2="96" y2="400" stroke="#cbd5d9" stroke-width="1" stroke-opacity="0.6"/>
+<text x="96" y="426" font-size="17" font-weight="400" fill="#5d7079" text-anchor="middle">250</text>
+<line x1="189.7" y1="130" x2="189.7" y2="400" stroke="#cbd5d9" stroke-width="1" stroke-opacity="0.6"/>
+<text x="189.7" y="426" font-size="17" font-weight="400" fill="#5d7079" text-anchor="middle">275</text>
+<line x1="283.3" y1="130" x2="283.3" y2="400" stroke="#cbd5d9" stroke-width="1" stroke-opacity="0.6"/>
+<text x="283.3" y="426" font-size="17" font-weight="400" fill="#5d7079" text-anchor="middle">300</text>
+<line x1="377" y1="130" x2="377" y2="400" stroke="#cbd5d9" stroke-width="1" stroke-opacity="0.6"/>
+<text x="377" y="426" font-size="17" font-weight="400" fill="#5d7079" text-anchor="middle">325</text>
+<line x1="470.7" y1="130" x2="470.7" y2="400" stroke="#cbd5d9" stroke-width="1" stroke-opacity="0.6"/>
+<text x="470.7" y="426" font-size="17" font-weight="400" fill="#5d7079" text-anchor="middle">350</text>
+<line x1="564.3" y1="130" x2="564.3" y2="400" stroke="#cbd5d9" stroke-width="1" stroke-opacity="0.6"/>
+<text x="564.3" y="426" font-size="17" font-weight="400" fill="#5d7079" text-anchor="middle">375</text>
+<line x1="658" y1="130" x2="658" y2="400" stroke="#cbd5d9" stroke-width="1" stroke-opacity="0.6"/>
+<text x="658" y="426" font-size="17" font-weight="400" fill="#5d7079" text-anchor="middle">400</text>
+<line x1="96" y1="400" x2="658" y2="400" stroke="#cbd5d9" stroke-width="1" stroke-opacity="0.6"/>
+<text x="670" y="406" font-size="17" font-weight="400" fill="#5d7079" text-anchor="start">0</text>
+<line x1="96" y1="355" x2="658" y2="355" stroke="#cbd5d9" stroke-width="1" stroke-opacity="0.6"/>
+<text x="670" y="361" font-size="17" font-weight="400" fill="#5d7079" text-anchor="start">250</text>
+<line x1="96" y1="310" x2="658" y2="310" stroke="#cbd5d9" stroke-width="1" stroke-opacity="0.6"/>
+<text x="670" y="316" font-size="17" font-weight="400" fill="#5d7079" text-anchor="start">500</text>
+<line x1="96" y1="265" x2="658" y2="265" stroke="#cbd5d9" stroke-width="1" stroke-opacity="0.6"/>
+<text x="670" y="271" font-size="17" font-weight="400" fill="#5d7079" text-anchor="start">750</text>
+<line x1="96" y1="220" x2="658" y2="220" stroke="#cbd5d9" stroke-width="1" stroke-opacity="0.6"/>
+<text x="670" y="226" font-size="17" font-weight="400" fill="#5d7079" text-anchor="start">1000</text>
+<line x1="96" y1="175" x2="658" y2="175" stroke="#cbd5d9" stroke-width="1" stroke-opacity="0.6"/>
+<text x="670" y="181" font-size="17" font-weight="400" fill="#5d7079" text-anchor="start">1250</text>
+<line x1="96" y1="130" x2="658" y2="130" stroke="#cbd5d9" stroke-width="1" stroke-opacity="0.6"/>
+<text x="670" y="136" font-size="17" font-weight="400" fill="#5d7079" text-anchor="start">1500</text>
+<line x1="96" y1="130" x2="96" y2="400" stroke="#1b2a2f" stroke-width="1.5"/>
+<line x1="96" y1="400" x2="658" y2="400" stroke="#1b2a2f" stroke-width="1.5"/>
+<path d="M96,360.1 L189.7,341.6 L283.3,317.3 L377,286.1 L470.7,246.8 L564.3,198.2 L658,138.7" fill="none" stroke="#c2410c" stroke-width="2.5" stroke-linejoin="round"/>
+<line x1="106" y1="174" x2="142" y2="174" stroke="#c2410c" stroke-width="2.5"/>
+<text x="150" y="180" font-size="17" font-weight="600" fill="#c2410c" text-anchor="start" stroke="#ffffff" stroke-width="4" stroke-linejoin="round" paint-order="stroke">جسم أسود</text>
+<path d="M245.9,400 L339.5,374.5 L433.2,342.2 L526.9,301.9 L620.5,252.5" fill="none" stroke="#0e7490" stroke-width="2.5" stroke-linejoin="round"/>
+<line x1="106" y1="198" x2="142" y2="198" stroke="#0e7490" stroke-width="2.5"/>
+<text x="150" y="204" font-size="17" font-weight="600" fill="#0e7490" text-anchor="start" stroke="#ffffff" stroke-width="4" stroke-linejoin="round" paint-order="stroke">صافٍ مقابل 290 K</text>
+<circle cx="283.3" cy="317.3" r="5" fill="#1b2a2f"/>
+<text x="283.3" y="303.3" font-size="17" font-weight="700" fill="#1b2a2f" text-anchor="middle" stroke="#ffffff" stroke-width="4" stroke-linejoin="round" paint-order="stroke">300 K → 459</text>
+<text x="377" y="454" font-size="17" font-weight="400" fill="#5d7079" text-anchor="middle">حرارة السطح (كلفن)</text>
+<text x="90" y="108" font-size="17" font-weight="400" fill="#5d7079" text-anchor="start">الفيض الإشعاعي (W/m²)</text>
+<text x="380" y="488" font-size="17" font-weight="400" fill="#5d7079" text-anchor="middle">مضاعفة الحرارة المطلقة تضاعف الإشعاع 16 مرة · الصافي يقترب من الصفر عند التقارب</text>
+</g></svg>

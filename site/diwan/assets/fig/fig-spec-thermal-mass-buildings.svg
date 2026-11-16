@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="760" height="394" viewBox="0 0 760 394" role="img" aria-labelledby="t">
+<title id="t">ثلاثة جدران وثلاث سعات: 20 و170 و405 كيلوجول/م²·كلفن</title>
+<rect width="760" height="394" fill="#ffffff"/>
+<g font-family="'Segoe UI', 'Noto Naskh Arabic', system-ui, sans-serif" direction="rtl">
+<text x="380" y="34" font-size="18" font-weight="700" fill="#1b2a2f" text-anchor="middle">ثلاثة جدران وثلاث سعات: 20 و170 و405 كيلوجول/م²·كلفن</text>
+<text x="740" y="138" font-size="17" font-weight="600" fill="#1b2a2f" text-anchor="start">جدار جبس خفيف 0.02 م</text>
+<rect x="716.8" y="146" width="23.2" height="14" fill="#c2410c" fill-opacity="0.85" rx="6"/>
+<text x="708.8" y="158" font-size="17" font-weight="700" fill="#c2410c" text-anchor="end">20 kJ لكل م² لكل كلفن</text>
+<text x="740" y="196" font-size="17" font-weight="600" fill="#1b2a2f" text-anchor="start">جدار طوب 0.1 م</text>
+<rect x="542.7" y="204" width="197.3" height="14" fill="#0e7490" fill-opacity="0.85" rx="6"/>
+<text x="534.7" y="216" font-size="17" font-weight="700" fill="#0e7490" text-anchor="end">170 kJ لكل م² لكل كلفن</text>
+<text x="740" y="254" font-size="17" font-weight="600" fill="#1b2a2f" text-anchor="start">جدار خرساني 0.2 م</text>
+<rect x="270" y="262" width="470" height="14" fill="#a16207" fill-opacity="0.85" rx="6"/>
+<text x="262" y="274" font-size="17" font-weight="700" fill="#a16207" text-anchor="end">405 kJ لكل م² لكل كلفن</text>
+<line x1="740" y1="308" x2="270" y2="308" stroke="#cbd5d9" stroke-width="1"/>
+<text x="740" y="332" font-size="17" font-weight="400" fill="#5d7079" text-anchor="start">0</text>
+<text x="505" y="332" font-size="17" font-weight="400" fill="#5d7079" text-anchor="middle">202.5</text>
+<text x="270" y="332" font-size="17" font-weight="400" fill="#5d7079" text-anchor="end">405</text>
+<text x="380" y="368" font-size="17" font-weight="400" fill="#5d7079" text-anchor="middle">ρ·c للخرسانة 2.02، للطوب 1.7، للجبس 1.0 MJ/m³·K؛ الحساب في هذا الملف.</text>
+</g></svg>

@@ -1,0 +1,45 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="760" height="446" viewBox="0 0 760 446" role="img" aria-labelledby="t">
+<title id="t">سلّم بوفورت لسرعة الرياح</title>
+<rect width="760" height="446" fill="#ffffff"/>
+<g font-family="'Segoe UI', 'Noto Naskh Arabic', system-ui, sans-serif" direction="rtl">
+<text x="380" y="34" font-size="18" font-weight="700" fill="#1b2a2f" text-anchor="middle">سلّم بوفورت لسرعة الرياح</text>
+<text x="380" y="60" font-size="17" font-weight="400" fill="#5d7079" text-anchor="middle">كل درجة أعلى تعني أثرًا مادّيًّا مختلفًا: من دخان يصعد مستقيمًا إلى سطح يتقشّر</text>
+<rect x="120" y="212" width="48.3" height="118" fill="#0e7490" fill-opacity="0.16"/>
+<line x1="120" y1="212" x2="120" y2="330" stroke="#0e7490" stroke-width="1" stroke-opacity="0.5"/>
+<text x="144.2" y="242" font-size="17" font-weight="700" fill="#0e7490" text-anchor="middle">هادئ</text>
+<rect x="216.7" y="212" width="96.7" height="118" fill="#0a7a4a" fill-opacity="0.16"/>
+<line x1="216.7" y1="212" x2="216.7" y2="330" stroke="#0a7a4a" stroke-width="1" stroke-opacity="0.5"/>
+<text x="265" y="242" font-size="17" font-weight="700" fill="#0a7a4a" text-anchor="middle">نسيم خفيف</text>
+<rect x="361.7" y="212" width="48.3" height="118" fill="#a16207" fill-opacity="0.16"/>
+<line x1="361.7" y1="212" x2="361.7" y2="330" stroke="#a16207" stroke-width="1" stroke-opacity="0.5"/>
+<text x="385.8" y="242" font-size="17" font-weight="700" fill="#a16207" text-anchor="middle">نسيم معتدل</text>
+<rect x="458.3" y="212" width="96.7" height="118" fill="#c2410c" fill-opacity="0.16"/>
+<line x1="458.3" y1="212" x2="458.3" y2="330" stroke="#c2410c" stroke-width="1" stroke-opacity="0.5"/>
+<text x="506.7" y="242" font-size="17" font-weight="700" fill="#c2410c" text-anchor="middle">ريح قوية</text>
+<rect x="603.3" y="212" width="96.7" height="118" fill="#9a3412" fill-opacity="0.16"/>
+<line x1="603.3" y1="212" x2="603.3" y2="330" stroke="#9a3412" stroke-width="1" stroke-opacity="0.5"/>
+<text x="651.7" y="242" font-size="17" font-weight="700" fill="#9a3412" text-anchor="middle">عاصفة</text>
+<line x1="120" y1="330" x2="700" y2="330" stroke="#1b2a2f" stroke-width="2"/>
+<line x1="120" y1="330" x2="120" y2="338" stroke="#1b2a2f" stroke-width="1.5"/>
+<text x="120" y="360" font-size="17" font-weight="400" fill="#5d7079" text-anchor="end">0</text>
+<line x1="216.7" y1="330" x2="216.7" y2="338" stroke="#1b2a2f" stroke-width="1.5"/>
+<text x="216.7" y="360" font-size="17" font-weight="400" fill="#5d7079" text-anchor="middle">2</text>
+<line x1="313.3" y1="330" x2="313.3" y2="338" stroke="#1b2a2f" stroke-width="1.5"/>
+<text x="313.3" y="360" font-size="17" font-weight="400" fill="#5d7079" text-anchor="middle">4</text>
+<line x1="410" y1="330" x2="410" y2="338" stroke="#1b2a2f" stroke-width="1.5"/>
+<text x="410" y="360" font-size="17" font-weight="400" fill="#5d7079" text-anchor="middle">6</text>
+<line x1="506.7" y1="330" x2="506.7" y2="338" stroke="#1b2a2f" stroke-width="1.5"/>
+<text x="506.7" y="360" font-size="17" font-weight="400" fill="#5d7079" text-anchor="middle">8</text>
+<line x1="603.3" y1="330" x2="603.3" y2="338" stroke="#1b2a2f" stroke-width="1.5"/>
+<text x="603.3" y="360" font-size="17" font-weight="400" fill="#5d7079" text-anchor="middle">10</text>
+<line x1="700" y1="330" x2="700" y2="338" stroke="#1b2a2f" stroke-width="1.5"/>
+<text x="700" y="360" font-size="17" font-weight="400" fill="#5d7079" text-anchor="middle">12</text>
+<text x="410" y="386" font-size="17" font-weight="400" fill="#5d7079" text-anchor="middle">درجة بوفورت</text>
+<line x1="265" y1="210" x2="265" y2="330" stroke="#0a7a4a" stroke-width="2" stroke-dasharray="4 3"/>
+<text x="265" y="202" font-size="17" font-weight="700" fill="#0a7a4a" text-anchor="middle">أوراق تتحرك</text>
+<line x1="410" y1="210" x2="410" y2="330" stroke="#a16207" stroke-width="2" stroke-dasharray="4 3"/>
+<text x="410" y="202" font-size="17" font-weight="700" fill="#a16207" text-anchor="middle">مظلة تُستخدم بصعوبة</text>
+<line x1="555" y1="210" x2="555" y2="330" stroke="#c2410c" stroke-width="2" stroke-dasharray="4 3"/>
+<text x="555" y="202" font-size="17" font-weight="700" fill="#c2410c" text-anchor="middle">أفرع تتكسّر</text>
+<text x="380" y="420" font-size="17" font-weight="400" fill="#5d7079" text-anchor="middle">الدرجة 5 = 29–38 كم/س · الدرجة 9 = 75–88 كم/س · الدرجة 12 = 118 كم/س وأكثر</text>
+</g></svg>

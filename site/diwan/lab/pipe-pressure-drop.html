@@ -1,0 +1,130 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>ما كلفة الاحتكاك داخل أنبوب؟ — ديوان المعرفة</title>
+  <meta name="description" content="هبوط الضغط في الأنبوب يتناسب مع مربع السرعة ومع الطول، وعكسيًّا مع القطر — لذا يكفي تقليل السرعة أو تكبير القطر لتوفير طاقة الضخ." />
+  <link rel="stylesheet" href="../assets/css/tokens.css" />
+  <link rel="stylesheet" href="../assets/css/site.css" />
+
+  <link rel="canonical" href="https://infiradev.com/diwan/lab/pipe-pressure-drop.html" />
+  <link rel="icon" href="https://infiradev.com/favicon.ico" sizes="48x48" />
+  <link rel="icon" type="image/png" sizes="192x192" href="https://infiradev.com/assets/favicon-192.png" />
+  <link rel="apple-touch-icon" href="https://infiradev.com/assets/apple-touch-icon.png" />
+  <script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"Organization","@id":"https://infiradev.com/#organization","name":"INFIRAD","alternateName":["انفِراد","انفراد"],"url":"https://infiradev.com/","logo":{"@type":"ImageObject","url":"https://infiradev.com/assets/logo-bilingual.png","width":990,"height":320},"slogan":"من الفكرة إلى اليقين","foundingDate":"2025","email":"info@infiradeng.com","telephone":"+966557748982","address":{"@type":"PostalAddress","addressLocality":"Riyadh","addressCountry":"SA"},"sameAs":["https://www.linkedin.com/company/infirad/"],"knowsAbout":["Engineering services","Engineering Services Provider (ESP)","Process design","Process simulation","Computational fluid dynamics","Thermal analysis","Independent engineering review","Specialized AI agents","Workflow automation","Traffic simulation"]},{"@type":"WebPage","@id":"https://infiradev.com/diwan/lab/pipe-pressure-drop.html#webpage","url":"https://infiradev.com/diwan/lab/pipe-pressure-drop.html","name":"ما كلفة الاحتكاك داخل أنبوب؟ — ديوان المعرفة","description":"هبوط الضغط في الأنبوب يتناسب مع مربع السرعة ومع الطول، وعكسيًّا مع القطر — لذا يكفي تقليل السرعة أو تكبير القطر لتوفير طاقة الضخ.","inLanguage":"ar","isPartOf":{"@id":"https://infiradev.com/#website"},"about":{"@id":"https://infiradev.com/#organization"}},{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"انفراد","item":"https://infiradev.com/"},{"@type":"ListItem","position":2,"name":"ديوان المعرفة","item":"https://infiradev.com/diwan/"},{"@type":"ListItem","position":3,"name":"ما كلفة الاحتكاك داخل أنبوب؟ — ديوان المعرفة","item":"https://infiradev.com/diwan/lab/pipe-pressure-drop.html"}]}]}</script>
+</head>
+<body>
+<a class="skip" href="#main">انتقل إلى المحتوى</a>
+<header class="site-head">
+  <div class="wrap head-in">
+    <div class="brand-lockup">
+      <a class="brand" href="https://infiradev.com/" aria-label="انفراد، الموقع الرئيسي">
+        <img src="https://infiradev.com/assets/logo-bilingual.png" alt="انفراد · INFIRAD" width="990" height="320" />
+      </a>
+      <a class="diwan-name" href="../">ديوان المعرفة</a>
+    </div>
+    <nav class="nav" aria-label="أقسام ديوان المعرفة"><a href="../terms/">المصطلحات</a><a href="../articles/">مقالات</a><a href="../domains/">المجالات</a><a href="../lab/" aria-current="page">المعمل</a><a href="../about.html">عن الديوان</a></nav>
+    <nav class="head-actions" aria-label="الرجوع والموقع الرئيسي">
+      <a href="../" data-back><span aria-hidden="true">→</span> رجوع</a>
+      <a href="https://infiradev.com/">موقع انفراد الرئيسي</a>
+    </nav>
+  </div>
+</header>
+
+<main id="main">
+<article class="wrap article">
+  <nav class="crumbs" aria-label="المسار"><a href="../lab/">المعمل</a> · <a href="../domains/engineering.html">الهندسة</a></nav>
+  <h1 class="page-h">ما كلفة الاحتكاك داخل أنبوب؟</h1>
+  <section class="lab-panel">
+  <p class="lede">غيّر القطر والتصريف والطول، وتابع هبوط الضغط على المقياس.</p>
+  <div id="lab-root"></div>
+  <p class="lab-equation" dir="ltr">Δp = f · (L/D) · ρv²/2</p>
+  <div class="lab-readout" id="lab-outputs"></div>
+  <div class="lab-gauge" id="lab-gauge"></div>
+  <p><button class="lab-cta" type="button" id="lab-reset">إعادة الضبط</button></p>
+  <p class="muted small" id="lab-note">المقياس يبدأ عند الحالة الافتراضية (100 مم · 25 لتر/ث · 100 م) = 99 ك.ب.</p>
+  <details>
+    <summary>افتراضات النموذج والمصدر</summary>
+    <p>ماء عند 20 °م: كثافة 998 kg/m³ ولزوجة 1.002 mPa·s</p><p>خشونة الفولاذ التجاري 0.045 مم</p><p>أنبوب أفقي مستقيم بلا قطع أو انحناءات</p><p>لا تفاعل كيميائي ولا ترسّب</p><p><a href="https://www.engineeringtoolbox.com/water-dynamic-kinematic-viscosity-d_596.html">Water density and dynamic viscosity — Engineering ToolBox</a></p><p><a href="https://www.engineeringtoolbox.com/darcy-weisbach-equation-d_646.html">Darcy-Weisbach equation and friction factor — Engineering ToolBox</a></p>
+  </details>
+  <noscript>فعّل JavaScript لتحريك المدخلات وحساب النتائج.</noscript>
+  <script type="application/json" id="lab-spec">{"controls":[{"id":"diameter","label_ar":"القطر الداخلي","step":5,"value":100,"unit":"مم","from":80,"to":300},{"id":"flow","label_ar":"التصريف","step":0.5,"value":25,"unit":"لتر/ث","from":2,"to":25},{"id":"length","label_ar":"طول الأنبوب","step":10,"value":100,"unit":"م","from":20,"to":300}],"outputs":[{"id":"velocity","label_ar":"السرعة","unit":"م/ث","decimals":2},{"id":"reynolds","label_ar":"رقم رينولدز","unit":"","decimals":0},{"id":"drop","label_ar":"هبوط الضغط","unit":"ك.ب","decimals":1}],"gauge":{"id":"drop","min":0,"max":900,"start":90.8,"unit":"ك.ب","decimals":1,"bind":"drop","label":"هبوط الضغط — المقياس من 0 إلى 900 كيلوباسكال"},"note_ar":"المقياس يبدأ عند الحالة الافتراضية (100 مم · 25 لتر/ث · 100 م) = 99 ك.ب."}</script>
+  <script type="module" src="../assets/js/labs/pipe-pressure-drop.mjs"></script>
+</section>
+  <div class="prose"><p>الماء لا يجري في الأنبوب مجانًا: الاحتكاك بجدار الأنبوب يأكل جزءًا من الضغط، والمضخة تعيد ما أكلته. الحساب يجري بمعادلة دارسي–فايسباخ، وفيها ثلاثة عوامل: الطول، ونسبة القطر، ومربع السرعة.</p><p>اللوحة تريك أثر كل عامل. انتبه إلى القطر وحده: مضاعفته تقلّل الهبوط إلى الربع تقريبًا عند التصريف نفسه، لأن السرعة تنزل إلى الربع. ولهذا يقيس المهندس الأنابيب بالسرعة لا بالتصريف.</p></div>
+  <div class="depth" aria-label="شرح معمّق"><section class="depth-sec">
+    <h2>الآلية</h2>
+    <p class="depth-hint muted small">كيف يحدث الأمر على مستوى الجسيمات أو المتغيّرات المباشرة</p>
+    <p>الطبقة الملامسة للجدار ساكنة، والطبقات التالية تتحرك بسرعات متزايدة. اللزوجة تنقل الزخم بينها فينشأ إجهاد قصّ على الجدار. في الجريان المضطرب تُضاف خسارة الاضطرابات الدوامية، وهي تتناسب مع مربع السرعة لأن الطاقة الحركية المفقودة في كل دوامة تتناسب مع v².</p>
+  </section><section class="depth-sec">
+    <h2>الأرقام والوحدات</h2>
+    <p class="depth-hint muted small">العلاقات والوحدات والنطاقات العددية التي تسند الشرح</p>
+    <p>Δp = f·(L/D)·ρv²/2، ومعامل الاحتكاك f من سوامي–جاين: f=0.25/[log₁₀(ε/3.7D+5.74/Re^0.9)]². لأنبوب 100 مم وطول 100 م وتصريف 25 لتر/ث تكون السرعة 3.18 م/ث وRe=317 ألفًا وf=0.0148، فيهبط الضغط 99 كيلوباسكال — أي قرابة ضغط جوي كامل.</p>
+  </section><section class="depth-sec">
+    <h2>الفرق الدقيق</h2>
+    <p class="depth-hint muted small">المفهوم الملتبس الذي يُخلَط به، وأين ينفصلان</p>
+    <p>يُخلط بين هبوط الضغط الناتج عن الاحتكاك وبين فرق المناسيب: ارتفاع العمود المائي يستهلك ضغطًا أيضًا لكنه قابل للاستعادة، أما الاحتكاك فطاقة تُبدَّد حرارة إلى الأبد. ويُخلط بين القطر الداخلي والخارجي، والفرق بينهما هو سُمك الجدار الذي يغيّر الحساب كله.</p>
+  </section><section class="depth-sec">
+    <h2>حدود التعريف</h2>
+    <p class="depth-hint muted small">أين ينكسر التعريف أو النموذج وما الذي لا يفسّره</p>
+    <p>معادلة سوامي–جاين تقريبية وتصلح لأنابيب تجارية خشونة نسبية بين 0.00001 و0.01، وتخطئ عند الأطوال القصيرة حيث تتغلب القطع والانحناءات على احتكاك القشرة. وتفشل في الموائع غير النيوتنية أو عند الجريان المتموج بين 2300 و4000.</p>
+  </section></div>
+  <section class="figures" aria-label="الرسوم التوضيحية">
+  <figure class="fig" id="fig-1">
+    <img class="fig-img" src="../assets/fig/fig-spec-pipe-drop.svg" alt="منحنى صاعد بشدّة من 0.5 كيلوباسكال عند لتر واحد في الثانية إلى 332 كيلوباسكال عند خمسين لترًا في الثانية، وعليه علامة عند 25 لترًا بقيمة 99 كيلوباسكال." loading="lazy" />
+    <figcaption><b>الشكل 1.</b> هبوط الضغط في مئة متر من أنبوب قطره 100 مم: النموذج التربيعي يجعل الهبوط يقفز أربع مرات عند مضاعفة التصريف.
+      <span class="credit muted small">· من عمل انفراد — منحنى محسوب من دارسي–فايسباخ وسوامي–جاين</span>
+    </figcaption>
+  </figure>
+</section>
+  <table class="facts">
+  <caption>أرقام مسنَدة إلى مصادرها</caption>
+  <thead><tr><th scope="col">الكمية</th><th scope="col">القيمة</th><th scope="col">المصدر</th></tr></thead>
+  <tbody><tr>
+      <th scope="row">كثافة الماء عند 20 °م</th>
+      <td>998 <span class="unit">kg/m³</span></td>
+      <td><a class="ref" href="#src-1">[1]</a></td>
+    </tr><tr>
+      <th scope="row">لزوجة الماء عند 20 °م</th>
+      <td>1.002 <span class="unit">mPa·s</span></td>
+      <td><a class="ref" href="#src-1">[1]</a></td>
+    </tr><tr>
+      <th scope="row">هبوط الضغط عند 100 مم و25 لتر/ث و100 م</th>
+      <td>99 <span class="unit">ك.ب</span></td>
+      <td><a class="ref" href="#src-2">[2]</a></td>
+    </tr></tbody>
+</table>
+  <section class="sources" aria-labelledby="src-h">
+  <h2 id="src-h">المصادر</h2>
+  <ol class="src-list"><li id="src-1">
+      <span class="src-num">1</span>
+      <span>Water density and dynamic viscosity — Engineering ToolBox.
+      <a href="https://www.engineeringtoolbox.com/water-dynamic-kinematic-viscosity-d_596.html" rel="noopener nofollow" target="_blank">www.engineeringtoolbox.com/water-dynamic-kinematic-viscosity-d_596.html</a>
+      <span class="muted small">· اطُّلع عليه 2026-11-16</span></span>
+    </li><li id="src-2">
+      <span class="src-num">2</span>
+      <span>Darcy-Weisbach equation and friction factor — Engineering ToolBox.
+      <a href="https://www.engineeringtoolbox.com/darcy-weisbach-equation-d_646.html" rel="noopener nofollow" target="_blank">www.engineeringtoolbox.com/darcy-weisbach-equation-d_646.html</a>
+      <span class="muted small">· اطُّلع عليه 2026-11-16</span></span>
+    </li></ol>
+</section>
+  <p class="reviewline muted small">راجعه: مراجعة آلية — بوابة الديوان (فحص بنيوي وأرقام) 2026-11-16 · 2026-11-16 · آخر تحديث 2026-11-16</p>
+</article>
+</main>
+<footer class="site-foot">
+  <div class="wrap foot-in">
+    <div>
+      <b>ديوان المعرفة</b> — من المفهوم إلى التجربة
+      <div class="muted small">قسم علمي داخل انفراد · <a href="https://infiradev.com">infiradev.com</a> · <a href="mailto:info@infiradev.com">info@infiradev.com</a></div>
+    </div>
+    <div class="muted small">
+      <a href="../about.html">سياسة التحرير والمصادر</a> ·
+      <a href="../terms/">المصطلحات</a> ·
+      <a href="../lab/">المعمل الافتراضي</a>
+    </div>
+  </div>
+</footer>
+<script src="../assets/js/site.js" defer></script>
+</body>
+</html>

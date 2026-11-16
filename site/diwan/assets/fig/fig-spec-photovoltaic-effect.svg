@@ -1,0 +1,48 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="760" height="514" viewBox="0 0 760 514" role="img" aria-labelledby="t">
+<title id="t">كل فوتون يهبط فائضه حرارةً فوق فجوة السيليكون</title>
+<rect width="760" height="514" fill="#ffffff"/>
+<g font-family="'Segoe UI', 'Noto Naskh Arabic', system-ui, sans-serif" direction="rtl">
+<text x="380" y="34" font-size="18" font-weight="700" fill="#1b2a2f" text-anchor="middle">كل فوتون يهبط فائضه حرارةً فوق فجوة السيليكون</text>
+<text x="380" y="60" font-size="17" font-weight="400" fill="#5d7079" text-anchor="middle">E_g = 1.12 eV عند 300 K، وطاقة الفوتون 1240 ÷ λ</text>
+<text x="380" y="84" font-size="17" font-weight="400" fill="#5d7079" text-anchor="middle">الفوتون الأقصر موجةً يهدر حصة أكبر</text>
+<line x1="96" y1="130" x2="96" y2="400" stroke="#cbd5d9" stroke-width="1" stroke-opacity="0.6"/>
+<text x="96" y="426" font-size="17" font-weight="400" fill="#5d7079" text-anchor="middle">400</text>
+<line x1="176.3" y1="130" x2="176.3" y2="400" stroke="#cbd5d9" stroke-width="1" stroke-opacity="0.6"/>
+<text x="176.3" y="426" font-size="17" font-weight="400" fill="#5d7079" text-anchor="middle">500</text>
+<line x1="256.6" y1="130" x2="256.6" y2="400" stroke="#cbd5d9" stroke-width="1" stroke-opacity="0.6"/>
+<text x="256.6" y="426" font-size="17" font-weight="400" fill="#5d7079" text-anchor="middle">600</text>
+<line x1="336.9" y1="130" x2="336.9" y2="400" stroke="#cbd5d9" stroke-width="1" stroke-opacity="0.6"/>
+<text x="336.9" y="426" font-size="17" font-weight="400" fill="#5d7079" text-anchor="middle">700</text>
+<line x1="417.1" y1="130" x2="417.1" y2="400" stroke="#cbd5d9" stroke-width="1" stroke-opacity="0.6"/>
+<text x="417.1" y="426" font-size="17" font-weight="400" fill="#5d7079" text-anchor="middle">800</text>
+<line x1="497.4" y1="130" x2="497.4" y2="400" stroke="#cbd5d9" stroke-width="1" stroke-opacity="0.6"/>
+<text x="497.4" y="426" font-size="17" font-weight="400" fill="#5d7079" text-anchor="middle">900</text>
+<line x1="577.7" y1="130" x2="577.7" y2="400" stroke="#cbd5d9" stroke-width="1" stroke-opacity="0.6"/>
+<text x="577.7" y="426" font-size="17" font-weight="400" fill="#5d7079" text-anchor="middle">1000</text>
+<line x1="658" y1="130" x2="658" y2="400" stroke="#cbd5d9" stroke-width="1" stroke-opacity="0.6"/>
+<text x="658" y="426" font-size="17" font-weight="400" fill="#5d7079" text-anchor="middle">1100</text>
+<line x1="96" y1="400" x2="658" y2="400" stroke="#cbd5d9" stroke-width="1" stroke-opacity="0.6"/>
+<text x="670" y="406" font-size="17" font-weight="400" fill="#5d7079" text-anchor="start">0</text>
+<line x1="96" y1="361.4" x2="658" y2="361.4" stroke="#cbd5d9" stroke-width="1" stroke-opacity="0.6"/>
+<text x="670" y="367.4" font-size="17" font-weight="400" fill="#5d7079" text-anchor="start">10</text>
+<line x1="96" y1="322.9" x2="658" y2="322.9" stroke="#cbd5d9" stroke-width="1" stroke-opacity="0.6"/>
+<text x="670" y="328.9" font-size="17" font-weight="400" fill="#5d7079" text-anchor="start">20</text>
+<line x1="96" y1="284.3" x2="658" y2="284.3" stroke="#cbd5d9" stroke-width="1" stroke-opacity="0.6"/>
+<text x="670" y="290.3" font-size="17" font-weight="400" fill="#5d7079" text-anchor="start">30</text>
+<line x1="96" y1="245.7" x2="658" y2="245.7" stroke="#cbd5d9" stroke-width="1" stroke-opacity="0.6"/>
+<text x="670" y="251.7" font-size="17" font-weight="400" fill="#5d7079" text-anchor="start">40</text>
+<line x1="96" y1="207.1" x2="658" y2="207.1" stroke="#cbd5d9" stroke-width="1" stroke-opacity="0.6"/>
+<text x="670" y="213.1" font-size="17" font-weight="400" fill="#5d7079" text-anchor="start">50</text>
+<line x1="96" y1="168.6" x2="658" y2="168.6" stroke="#cbd5d9" stroke-width="1" stroke-opacity="0.6"/>
+<text x="670" y="174.6" font-size="17" font-weight="400" fill="#5d7079" text-anchor="start">60</text>
+<line x1="96" y1="130" x2="658" y2="130" stroke="#cbd5d9" stroke-width="1" stroke-opacity="0.6"/>
+<text x="670" y="136" font-size="17" font-weight="400" fill="#5d7079" text-anchor="start">70</text>
+<line x1="96" y1="130" x2="96" y2="400" stroke="#1b2a2f" stroke-width="1.5"/>
+<line x1="96" y1="400" x2="658" y2="400" stroke="#1b2a2f" stroke-width="1.5"/>
+<path d="M96,153.5 L176.3,188.6 L256.6,223.3 L336.9,258.1 L417.1,293.2 L497.4,327.9 L577.7,362.6 L658,397.7" fill="none" stroke="#c2410c" stroke-width="2.5" stroke-linejoin="round"/>
+<circle cx="417.1" cy="293.2" r="5" fill="#1b2a2f"/>
+<text x="417.1" y="279.2" font-size="17" font-weight="700" fill="#1b2a2f" text-anchor="middle" stroke="#ffffff" stroke-width="4" stroke-linejoin="round" paint-order="stroke">28%</text>
+<text x="377" y="454" font-size="17" font-weight="400" fill="#5d7079" text-anchor="middle">طول موجة الفوتون (نانومتر)</text>
+<text x="90" y="108" font-size="17" font-weight="400" fill="#5d7079" text-anchor="start">الطاقة المهدورة حرارةً (%)</text>
+<text x="380" y="488" font-size="17" font-weight="400" fill="#5d7079" text-anchor="middle">الفوتون الأطول من 1,107 نانومتر لا يرفع إلكترونًا فوق الفجوة، فيمرّ دون استيعاب</text>
+</g></svg>

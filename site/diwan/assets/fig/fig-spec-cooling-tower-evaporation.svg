@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="760" height="476" viewBox="0 0 760 476" role="img" aria-labelledby="t">
+<title id="t">ماء التبخّر عند 500 م³/ساعة حسب المدى الحراري</title>
+<rect width="760" height="476" fill="#ffffff"/>
+<g font-family="'Segoe UI', 'Noto Naskh Arabic', system-ui, sans-serif" direction="rtl">
+<text x="380" y="34" font-size="18" font-weight="700" fill="#1b2a2f" text-anchor="middle">ماء التبخّر عند 500 م³/ساعة حسب المدى الحراري</text>
+<text x="740" y="138" font-size="17" font-weight="600" fill="#1b2a2f" text-anchor="start">مدى 4 كلفن</text>
+<rect x="550.9" y="146" width="189.1" height="14" fill="#c2410c" fill-opacity="0.85" rx="6"/>
+<text x="542.9" y="158" font-size="17" font-weight="700" fill="#c2410c" text-anchor="end">3.5 m³/h</text>
+<text x="740" y="196" font-size="17" font-weight="600" fill="#1b2a2f" text-anchor="start">مدى 6 كلفن</text>
+<rect x="459.1" y="204" width="280.9" height="14" fill="#0e7490" fill-opacity="0.85" rx="6"/>
+<text x="451.1" y="216" font-size="17" font-weight="700" fill="#0e7490" text-anchor="end">5.2 m³/h</text>
+<text x="740" y="254" font-size="17" font-weight="600" fill="#1b2a2f" text-anchor="start">مدى 8 كلفن</text>
+<rect x="361.8" y="262" width="378.2" height="14" fill="#a16207" fill-opacity="0.85" rx="6"/>
+<text x="353.8" y="274" font-size="17" font-weight="700" fill="#a16207" text-anchor="end">7 m³/h</text>
+<text x="740" y="312" font-size="17" font-weight="600" fill="#1b2a2f" text-anchor="start">مدى 10 كلفن</text>
+<rect x="270" y="320" width="470" height="14" fill="#1e3a5f" fill-opacity="0.85" rx="6"/>
+<text x="262" y="332" font-size="17" font-weight="700" fill="#1e3a5f" text-anchor="end">8.7 m³/h</text>
+<line x1="740" y1="366" x2="270" y2="366" stroke="#cbd5d9" stroke-width="1"/>
+<text x="740" y="390" font-size="17" font-weight="400" fill="#5d7079" text-anchor="start">0</text>
+<text x="505" y="390" font-size="17" font-weight="400" fill="#5d7079" text-anchor="middle">4.35</text>
+<text x="270" y="390" font-size="17" font-weight="400" fill="#5d7079" text-anchor="end">8.7</text>
+<text x="505" y="416" font-size="17" font-weight="400" fill="#5d7079" text-anchor="middle">الماء المتبخّر (متر مكعب لكل ساعة)</text>
+<text x="380" y="450" font-size="17" font-weight="400" fill="#5d7079" text-anchor="middle">الحرارة الكامنة 2,400 ميجاجول/طن تقريب عملي عند حرارة البرج.</text>
+</g></svg>

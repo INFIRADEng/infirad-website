@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="760" height="476" viewBox="0 0 760 476" role="img" aria-labelledby="t">
+<title id="t">النضج بعد أسبوع واحد عند أربع حرارات</title>
+<rect width="760" height="476" fill="#ffffff"/>
+<g font-family="'Segoe UI', 'Noto Naskh Arabic', system-ui, sans-serif" direction="rtl">
+<text x="380" y="34" font-size="18" font-weight="700" fill="#1b2a2f" text-anchor="middle">النضج بعد أسبوع واحد عند أربع حرارات</text>
+<text x="740" y="138" font-size="17" font-weight="600" fill="#1b2a2f" text-anchor="start">10 مئوية</text>
+<rect x="552" y="146" width="188" height="14" fill="#c2410c" fill-opacity="0.85" rx="6"/>
+<text x="544" y="158" font-size="17" font-weight="700" fill="#c2410c" text-anchor="end">3360 °C·h</text>
+<text x="740" y="196" font-size="17" font-weight="600" fill="#1b2a2f" text-anchor="start">20 مئوية</text>
+<rect x="458" y="204" width="282" height="14" fill="#0e7490" fill-opacity="0.85" rx="6"/>
+<text x="450" y="216" font-size="17" font-weight="700" fill="#0e7490" text-anchor="end">5040 °C·h</text>
+<text x="740" y="254" font-size="17" font-weight="600" fill="#1b2a2f" text-anchor="start">30 مئوية</text>
+<rect x="364" y="262" width="376" height="14" fill="#a16207" fill-opacity="0.85" rx="6"/>
+<text x="356" y="274" font-size="17" font-weight="700" fill="#a16207" text-anchor="end">6720 °C·h</text>
+<text x="740" y="312" font-size="17" font-weight="600" fill="#1b2a2f" text-anchor="start">40 مئوية</text>
+<rect x="270" y="320" width="470" height="14" fill="#1e3a5f" fill-opacity="0.85" rx="6"/>
+<text x="262" y="332" font-size="17" font-weight="700" fill="#1e3a5f" text-anchor="end">8400 °C·h</text>
+<line x1="740" y1="366" x2="270" y2="366" stroke="#cbd5d9" stroke-width="1"/>
+<text x="740" y="390" font-size="17" font-weight="400" fill="#5d7079" text-anchor="start">0</text>
+<text x="505" y="390" font-size="17" font-weight="400" fill="#5d7079" text-anchor="middle">4200</text>
+<text x="270" y="390" font-size="17" font-weight="400" fill="#5d7079" text-anchor="end">8400</text>
+<text x="505" y="416" font-size="17" font-weight="400" fill="#5d7079" text-anchor="middle">النضج بعد 168 ساعة (درجة·ساعة)</text>
+<text x="380" y="450" font-size="17" font-weight="400" fill="#5d7079" text-anchor="middle">M = (T − T₀)·Δt عند T₀ = −10 مئوية و168 ساعة.</text>
+</g></svg>

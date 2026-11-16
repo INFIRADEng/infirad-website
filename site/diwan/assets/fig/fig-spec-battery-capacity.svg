@@ -1,0 +1,47 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="760" height="446" viewBox="0 0 760 446" role="img" aria-labelledby="t">
+<title id="t">معدلات الشحن والتفريغ بمضاعف C</title>
+<rect width="760" height="446" fill="#ffffff"/>
+<g font-family="'Segoe UI', 'Noto Naskh Arabic', system-ui, sans-serif" direction="rtl">
+<text x="380" y="34" font-size="18" font-weight="700" fill="#1b2a2f" text-anchor="middle">معدلات الشحن والتفريغ بمضاعف C</text>
+<text x="380" y="60" font-size="17" font-weight="400" fill="#5d7079" text-anchor="middle">أزرق حتى 1C، وأصفر من 1 إلى 2C، وأحمر فوق 2C</text>
+<text x="380" y="84" font-size="17" font-weight="400" fill="#5d7079" text-anchor="middle">حزمة 75 kWh: 11 kW عند 0.15C و150 kW عند 2C</text>
+<rect x="120" y="212" width="116" height="118" fill="#0e7490" fill-opacity="0.16"/>
+<line x1="120" y1="212" x2="120" y2="330" stroke="#0e7490" stroke-width="1" stroke-opacity="0.5"/>
+<rect x="236" y="212" width="116" height="118" fill="#a16207" fill-opacity="0.16"/>
+<line x1="236" y1="212" x2="236" y2="330" stroke="#a16207" stroke-width="1" stroke-opacity="0.5"/>
+<rect x="352" y="212" width="348" height="118" fill="#c2410c" fill-opacity="0.16"/>
+<line x1="352" y1="212" x2="352" y2="330" stroke="#c2410c" stroke-width="1" stroke-opacity="0.5"/>
+<line x1="120" y1="330" x2="700" y2="330" stroke="#1b2a2f" stroke-width="2"/>
+<line x1="120" y1="330" x2="120" y2="338" stroke="#1b2a2f" stroke-width="1.5"/>
+<text x="120" y="360" font-size="17" font-weight="400" fill="#5d7079" text-anchor="end">0</text>
+<line x1="178" y1="330" x2="178" y2="338" stroke="#1b2a2f" stroke-width="1.5"/>
+<text x="178" y="360" font-size="17" font-weight="400" fill="#5d7079" text-anchor="middle">0.5</text>
+<line x1="236" y1="330" x2="236" y2="338" stroke="#1b2a2f" stroke-width="1.5"/>
+<text x="236" y="360" font-size="17" font-weight="400" fill="#5d7079" text-anchor="middle">1</text>
+<line x1="294" y1="330" x2="294" y2="338" stroke="#1b2a2f" stroke-width="1.5"/>
+<text x="294" y="360" font-size="17" font-weight="400" fill="#5d7079" text-anchor="middle">1.5</text>
+<line x1="352" y1="330" x2="352" y2="338" stroke="#1b2a2f" stroke-width="1.5"/>
+<text x="352" y="360" font-size="17" font-weight="400" fill="#5d7079" text-anchor="middle">2</text>
+<line x1="410" y1="330" x2="410" y2="338" stroke="#1b2a2f" stroke-width="1.5"/>
+<text x="410" y="360" font-size="17" font-weight="400" fill="#5d7079" text-anchor="middle">2.5</text>
+<line x1="468" y1="330" x2="468" y2="338" stroke="#1b2a2f" stroke-width="1.5"/>
+<text x="468" y="360" font-size="17" font-weight="400" fill="#5d7079" text-anchor="middle">3</text>
+<line x1="526" y1="330" x2="526" y2="338" stroke="#1b2a2f" stroke-width="1.5"/>
+<text x="526" y="360" font-size="17" font-weight="400" fill="#5d7079" text-anchor="middle">3.5</text>
+<line x1="584" y1="330" x2="584" y2="338" stroke="#1b2a2f" stroke-width="1.5"/>
+<text x="584" y="360" font-size="17" font-weight="400" fill="#5d7079" text-anchor="middle">4</text>
+<line x1="642" y1="330" x2="642" y2="338" stroke="#1b2a2f" stroke-width="1.5"/>
+<text x="642" y="360" font-size="17" font-weight="400" fill="#5d7079" text-anchor="middle">4.5</text>
+<line x1="700" y1="330" x2="700" y2="338" stroke="#1b2a2f" stroke-width="1.5"/>
+<text x="700" y="360" font-size="17" font-weight="400" fill="#5d7079" text-anchor="middle">5</text>
+<text x="410" y="386" font-size="17" font-weight="400" fill="#5d7079" text-anchor="middle">معدل C (سعة/ساعة)</text>
+<line x1="137.4" y1="210" x2="137.4" y2="330" stroke="#0e7490" stroke-width="2" stroke-dasharray="4 3"/>
+<text x="137.4" y="202" font-size="17" font-weight="700" fill="#0e7490" text-anchor="middle">11 kW</text>
+<line x1="236" y1="210" x2="236" y2="330" stroke="#0a7a4a" stroke-width="2" stroke-dasharray="4 3"/>
+<text x="236" y="202" font-size="17" font-weight="700" fill="#0a7a4a" text-anchor="middle">سعة كاملة</text>
+<line x1="352" y1="210" x2="352" y2="330" stroke="#c2410c" stroke-width="2" stroke-dasharray="4 3"/>
+<text x="352" y="202" font-size="17" font-weight="700" fill="#c2410c" text-anchor="middle">150 kW</text>
+<line x1="700" y1="210" x2="700" y2="330" stroke="#c2410c" stroke-width="2" stroke-dasharray="4 3"/>
+<text x="700" y="202" font-size="17" font-weight="700" fill="#c2410c" text-anchor="middle">حدّ حراري</text>
+<text x="380" y="420" font-size="17" font-weight="400" fill="#5d7079" text-anchor="middle">السعة المتاحة تنقص عند المعدلات العالية لأن الاستقطاب يبلغ جهد القطع قبل استنفاد الشحنة</text>
+</g></svg>

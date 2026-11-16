@@ -1,0 +1,44 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="760" height="514" viewBox="0 0 760 514" role="img" aria-labelledby="t">
+<title id="t">كثافة الهواء من مستوى البحر إلى 4000 متر</title>
+<rect width="760" height="514" fill="#ffffff"/>
+<g font-family="'Segoe UI', 'Noto Naskh Arabic', system-ui, sans-serif" direction="rtl">
+<text x="380" y="34" font-size="18" font-weight="700" fill="#1b2a2f" text-anchor="middle">كثافة الهواء من مستوى البحر إلى 4000 متر</text>
+<line x1="96" y1="130" x2="96" y2="400" stroke="#cbd5d9" stroke-width="1" stroke-opacity="0.6"/>
+<text x="96" y="426" font-size="17" font-weight="400" fill="#5d7079" text-anchor="middle">0</text>
+<line x1="166.3" y1="130" x2="166.3" y2="400" stroke="#cbd5d9" stroke-width="1" stroke-opacity="0.6"/>
+<text x="166.3" y="426" font-size="17" font-weight="400" fill="#5d7079" text-anchor="middle">500</text>
+<line x1="236.5" y1="130" x2="236.5" y2="400" stroke="#cbd5d9" stroke-width="1" stroke-opacity="0.6"/>
+<text x="236.5" y="426" font-size="17" font-weight="400" fill="#5d7079" text-anchor="middle">1000</text>
+<line x1="306.8" y1="130" x2="306.8" y2="400" stroke="#cbd5d9" stroke-width="1" stroke-opacity="0.6"/>
+<text x="306.8" y="426" font-size="17" font-weight="400" fill="#5d7079" text-anchor="middle">1500</text>
+<line x1="377" y1="130" x2="377" y2="400" stroke="#cbd5d9" stroke-width="1" stroke-opacity="0.6"/>
+<text x="377" y="426" font-size="17" font-weight="400" fill="#5d7079" text-anchor="middle">2000</text>
+<line x1="447.3" y1="130" x2="447.3" y2="400" stroke="#cbd5d9" stroke-width="1" stroke-opacity="0.6"/>
+<text x="447.3" y="426" font-size="17" font-weight="400" fill="#5d7079" text-anchor="middle">2500</text>
+<line x1="517.5" y1="130" x2="517.5" y2="400" stroke="#cbd5d9" stroke-width="1" stroke-opacity="0.6"/>
+<text x="517.5" y="426" font-size="17" font-weight="400" fill="#5d7079" text-anchor="middle">3000</text>
+<line x1="587.8" y1="130" x2="587.8" y2="400" stroke="#cbd5d9" stroke-width="1" stroke-opacity="0.6"/>
+<text x="587.8" y="426" font-size="17" font-weight="400" fill="#5d7079" text-anchor="middle">3500</text>
+<line x1="658" y1="130" x2="658" y2="400" stroke="#cbd5d9" stroke-width="1" stroke-opacity="0.6"/>
+<text x="658" y="426" font-size="17" font-weight="400" fill="#5d7079" text-anchor="middle">4000</text>
+<line x1="96" y1="400" x2="658" y2="400" stroke="#cbd5d9" stroke-width="1" stroke-opacity="0.6"/>
+<text x="670" y="406" font-size="17" font-weight="400" fill="#5d7079" text-anchor="start">0.75</text>
+<line x1="96" y1="350.9" x2="658" y2="350.9" stroke="#cbd5d9" stroke-width="1" stroke-opacity="0.6"/>
+<text x="670" y="356.9" font-size="17" font-weight="400" fill="#5d7079" text-anchor="start">0.85</text>
+<line x1="96" y1="301.8" x2="658" y2="301.8" stroke="#cbd5d9" stroke-width="1" stroke-opacity="0.6"/>
+<text x="670" y="307.8" font-size="17" font-weight="400" fill="#5d7079" text-anchor="start">0.95</text>
+<line x1="96" y1="252.7" x2="658" y2="252.7" stroke="#cbd5d9" stroke-width="1" stroke-opacity="0.6"/>
+<text x="670" y="258.7" font-size="17" font-weight="400" fill="#5d7079" text-anchor="start">1.05</text>
+<line x1="96" y1="203.6" x2="658" y2="203.6" stroke="#cbd5d9" stroke-width="1" stroke-opacity="0.6"/>
+<text x="670" y="209.6" font-size="17" font-weight="400" fill="#5d7079" text-anchor="start">1.15</text>
+<line x1="96" y1="154.5" x2="658" y2="154.5" stroke="#cbd5d9" stroke-width="1" stroke-opacity="0.6"/>
+<text x="670" y="160.5" font-size="17" font-weight="400" fill="#5d7079" text-anchor="start">1.25</text>
+<line x1="96" y1="130" x2="96" y2="400" stroke="#1b2a2f" stroke-width="1.5"/>
+<line x1="96" y1="400" x2="658" y2="400" stroke="#1b2a2f" stroke-width="1.5"/>
+<path d="M96,166.8 L166.3,195.3 L236.5,222.3 L306.8,248.8 L377,274.3 L447.3,298.4 L517.5,321.9 L587.8,344.5 L658,366.1" fill="none" stroke="#c2410c" stroke-width="2.5" stroke-linejoin="round"/>
+<circle cx="517.5" cy="321.9" r="5" fill="#1b2a2f"/>
+<text x="517.5" y="307.9" font-size="17" font-weight="700" fill="#1b2a2f" text-anchor="middle" stroke="#ffffff" stroke-width="4" stroke-linejoin="round" paint-order="stroke">انخفاض 26%</text>
+<text x="377" y="454" font-size="17" font-weight="400" fill="#5d7079" text-anchor="middle">الارتفاع (متر)</text>
+<text x="90" y="108" font-size="17" font-weight="400" fill="#5d7079" text-anchor="start">كثافة الهواء (كغ/م³)</text>
+<text x="380" y="488" font-size="17" font-weight="400" fill="#5d7079" text-anchor="middle">الجو القياسي الدولي: انحدار 6.5 كلفن/كم وضغط 101.325 كيلوباسكال عند البحر.</text>
+</g></svg>

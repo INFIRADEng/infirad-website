@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="760" height="378" viewBox="0 0 760 378" role="img" aria-labelledby="t">
+<title id="t">الإنثالبي = الطاقة الداخلية + حدّ الضغط والحجم</title>
+<rect width="760" height="378" fill="#ffffff"/>
+<g font-family="'Segoe UI', 'Noto Naskh Arabic', system-ui, sans-serif" direction="rtl">
+<text x="380" y="34" font-size="18" font-weight="700" fill="#1b2a2f" text-anchor="middle">الإنثالبي = الطاقة الداخلية + حدّ الضغط والحجم</text>
+<text x="380" y="60" font-size="17" font-weight="400" fill="#5d7079" text-anchor="middle">هواء عند 298.15 كلفن</text>
+<text x="380" y="84" font-size="17" font-weight="400" fill="#5d7079" text-anchor="middle">الحدّ الحجمي 29% من الإنثالبي</text>
+<rect x="80" y="140" width="600" height="50" fill="#c2410c" fill-opacity="0.14" stroke="#c2410c" stroke-opacity="0.45"/>
+<text x="664" y="169" font-size="17" font-weight="700" fill="#1b2a2f" text-anchor="start">الطاقة الداخلية u</text>
+<text x="96" y="169" font-size="17" font-weight="600" fill="#c2410c" text-anchor="end">⁨213.8 كيلوجول/كيلوغرام⁩</text>
+<rect x="80" y="196" width="600" height="50" fill="#0e7490" fill-opacity="0.14" stroke="#0e7490" stroke-opacity="0.45"/>
+<text x="664" y="225" font-size="17" font-weight="700" fill="#1b2a2f" text-anchor="start">حدّ الضغط والحجم P·v</text>
+<text x="96" y="225" font-size="17" font-weight="600" fill="#0e7490" text-anchor="end">⁨85.6 كيلوجول/كيلوغرام⁩</text>
+<rect x="80" y="252" width="600" height="50" fill="#a16207" fill-opacity="0.14" stroke="#a16207" stroke-opacity="0.45"/>
+<text x="664" y="281" font-size="17" font-weight="700" fill="#1b2a2f" text-anchor="start">الإنثالبي h</text>
+<text x="96" y="281" font-size="17" font-weight="600" fill="#a16207" text-anchor="end">⁨299.4 كيلوجول/كيلوغرام⁩</text>
+<text x="380" y="352" font-size="17" font-weight="400" fill="#5d7079" text-anchor="middle">في الماء السائل يكون الحدّ 0.10 كيلوجول/كيلوغرام فقط</text>
+</g></svg>

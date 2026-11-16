@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="760" height="418" viewBox="0 0 760 418" role="img" aria-labelledby="t">
+<title id="t">أين تذهب الطاقة: تسخين مقابل تبخير</title>
+<rect width="760" height="418" fill="#ffffff"/>
+<g font-family="'Segoe UI', 'Noto Naskh Arabic', system-ui, sans-serif" direction="rtl">
+<text x="380" y="34" font-size="18" font-weight="700" fill="#1b2a2f" text-anchor="middle">أين تذهب الطاقة: تسخين مقابل تبخير</text>
+<text x="740" y="138" font-size="17" font-weight="600" fill="#1b2a2f" text-anchor="start">تسخين 20→60</text>
+<rect x="705.1" y="146" width="34.9" height="14" fill="#c2410c" fill-opacity="0.85" rx="6"/>
+<text x="697.1" y="158" font-size="17" font-weight="700" fill="#c2410c" text-anchor="end">167.4 kJ</text>
+<text x="740" y="196" font-size="17" font-weight="600" fill="#1b2a2f" text-anchor="start">تسخين 20→100</text>
+<rect x="670.3" y="204" width="69.7" height="14" fill="#0e7490" fill-opacity="0.85" rx="6"/>
+<text x="662.3" y="216" font-size="17" font-weight="700" fill="#0e7490" text-anchor="end">334.9 kJ</text>
+<text x="740" y="254" font-size="17" font-weight="600" fill="#1b2a2f" text-anchor="start">تبخير كامل</text>
+<rect x="270" y="262" width="470" height="14" fill="#a16207" fill-opacity="0.85" rx="6"/>
+<text x="262" y="274" font-size="17" font-weight="700" fill="#a16207" text-anchor="end">2257 kJ</text>
+<line x1="740" y1="308" x2="270" y2="308" stroke="#cbd5d9" stroke-width="1"/>
+<text x="740" y="332" font-size="17" font-weight="400" fill="#5d7079" text-anchor="start">0</text>
+<text x="505" y="332" font-size="17" font-weight="400" fill="#5d7079" text-anchor="middle">1128.5</text>
+<text x="270" y="332" font-size="17" font-weight="400" fill="#5d7079" text-anchor="end">2257</text>
+<text x="505" y="358" font-size="17" font-weight="400" fill="#5d7079" text-anchor="middle">الطاقة اللازمة لكيلوغرام ماء (كيلوجول)</text>
+<text x="380" y="392" font-size="17" font-weight="400" fill="#5d7079" text-anchor="middle">c = 4.186 كيلوجول/(كغ·كلفن) وh = 2257 كيلوجول/كغ عند الضغط الجوي.</text>
+</g></svg>

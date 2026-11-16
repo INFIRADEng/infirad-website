@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="760" height="534" viewBox="0 0 760 534" role="img" aria-labelledby="t">
+<title id="t">لزوجة الماء الديناميكية مقابل الحرارة</title>
+<rect width="760" height="534" fill="#ffffff"/>
+<g font-family="'Segoe UI', 'Noto Naskh Arabic', system-ui, sans-serif" direction="rtl">
+<text x="380" y="34" font-size="18" font-weight="700" fill="#1b2a2f" text-anchor="middle">لزوجة الماء الديناميكية مقابل الحرارة</text>
+<text x="380" y="60" font-size="17" font-weight="400" fill="#5d7079" text-anchor="middle">الماء عند ضغط جوي · الوحدة mPa·s</text>
+<text x="380" y="84" font-size="17" font-weight="400" fill="#5d7079" text-anchor="middle">الهبوط 3.6 مرة بين 20 و100 °م</text>
+<text x="740" y="138" font-size="17" font-weight="600" fill="#1b2a2f" text-anchor="start">20 °م</text>
+<rect x="311.9" y="146" width="428.1" height="14" fill="#c2410c" fill-opacity="0.85" rx="6"/>
+<text x="303.9" y="158" font-size="17" font-weight="700" fill="#c2410c" text-anchor="end">1002 µPa·s</text>
+<text x="740" y="196" font-size="17" font-weight="600" fill="#1b2a2f" text-anchor="start">40 °م</text>
+<rect x="461" y="204" width="279" height="14" fill="#0e7490" fill-opacity="0.85" rx="6"/>
+<text x="453" y="216" font-size="17" font-weight="700" fill="#0e7490" text-anchor="end">653 µPa·s</text>
+<text x="740" y="254" font-size="17" font-weight="600" fill="#1b2a2f" text-anchor="start">60 °م</text>
+<rect x="539.6" y="262" width="200.4" height="14" fill="#a16207" fill-opacity="0.85" rx="6"/>
+<text x="531.6" y="274" font-size="17" font-weight="700" fill="#a16207" text-anchor="end">469 µPa·s</text>
+<text x="740" y="312" font-size="17" font-weight="600" fill="#1b2a2f" text-anchor="start">80 °م</text>
+<rect x="588.3" y="320" width="151.7" height="14" fill="#1e3a5f" fill-opacity="0.85" rx="6"/>
+<text x="580.3" y="332" font-size="17" font-weight="700" fill="#1e3a5f" text-anchor="end">355 µPa·s</text>
+<text x="740" y="370" font-size="17" font-weight="600" fill="#1b2a2f" text-anchor="start">100 °م</text>
+<rect x="619.5" y="378" width="120.5" height="14" fill="#0a7a4a" fill-opacity="0.85" rx="6"/>
+<text x="611.5" y="390" font-size="17" font-weight="700" fill="#0a7a4a" text-anchor="end">282 µPa·s</text>
+<line x1="740" y1="424" x2="270" y2="424" stroke="#cbd5d9" stroke-width="1"/>
+<text x="740" y="448" font-size="17" font-weight="400" fill="#5d7079" text-anchor="start">0</text>
+<text x="505" y="448" font-size="17" font-weight="400" fill="#5d7079" text-anchor="middle">550</text>
+<text x="270" y="448" font-size="17" font-weight="400" fill="#5d7079" text-anchor="end">1100</text>
+<text x="505" y="474" font-size="17" font-weight="400" fill="#5d7079" text-anchor="middle">اللزوجة الديناميكية (µPa·s)</text>
+<text x="380" y="508" font-size="17" font-weight="400" fill="#5d7079" text-anchor="middle">1 mPa·s = 1000 µPa·s · الماء عند 20 °م = 1.002 mPa·s</text>
+</g></svg>

@@ -1,0 +1,141 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>كيف تنتج حرارة 85 درجة برودةً بلا ضاغط؟ — ديوان المعرفة</title>
+  <meta name="description" content="المبرد الامتزازي يستبدل الضاغط بحرارة: الماء يتبخّر في فراغ فيبرد، والسيليكا جل تلتقطه، ثم تُطرده بحرارة 85 °م." />
+  <link rel="stylesheet" href="../assets/css/tokens.css" />
+  <link rel="stylesheet" href="../assets/css/site.css" />
+
+  <link rel="canonical" href="https://infiradev.com/diwan/lab/adsorption-chiller-cop.html" />
+  <link rel="icon" href="https://infiradev.com/favicon.ico" sizes="48x48" />
+  <link rel="icon" type="image/png" sizes="192x192" href="https://infiradev.com/assets/favicon-192.png" />
+  <link rel="apple-touch-icon" href="https://infiradev.com/assets/apple-touch-icon.png" />
+  <script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"Organization","@id":"https://infiradev.com/#organization","name":"INFIRAD","alternateName":["انفِراد","انفراد"],"url":"https://infiradev.com/","logo":{"@type":"ImageObject","url":"https://infiradev.com/assets/logo-bilingual.png","width":990,"height":320},"slogan":"من الفكرة إلى اليقين","foundingDate":"2025","email":"info@infiradeng.com","telephone":"+966557748982","address":{"@type":"PostalAddress","addressLocality":"Riyadh","addressCountry":"SA"},"sameAs":["https://www.linkedin.com/company/infirad/"],"knowsAbout":["Engineering services","Engineering Services Provider (ESP)","Process design","Process simulation","Computational fluid dynamics","Thermal analysis","Independent engineering review","Specialized AI agents","Workflow automation","Traffic simulation"]},{"@type":"WebPage","@id":"https://infiradev.com/diwan/lab/adsorption-chiller-cop.html#webpage","url":"https://infiradev.com/diwan/lab/adsorption-chiller-cop.html","name":"كيف تنتج حرارة 85 درجة برودةً بلا ضاغط؟ — ديوان المعرفة","description":"المبرد الامتزازي يستبدل الضاغط بحرارة: الماء يتبخّر في فراغ فيبرد، والسيليكا جل تلتقطه، ثم تُطرده بحرارة 85 °م.","inLanguage":"ar","isPartOf":{"@id":"https://infiradev.com/#website"},"about":{"@id":"https://infiradev.com/#organization"}},{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"انفراد","item":"https://infiradev.com/"},{"@type":"ListItem","position":2,"name":"ديوان المعرفة","item":"https://infiradev.com/diwan/"},{"@type":"ListItem","position":3,"name":"كيف تنتج حرارة 85 درجة برودةً بلا ضاغط؟ — ديوان المعرفة","item":"https://infiradev.com/diwan/lab/adsorption-chiller-cop.html"}]}]}</script>
+</head>
+<body>
+<a class="skip" href="#main">انتقل إلى المحتوى</a>
+<header class="site-head">
+  <div class="wrap head-in">
+    <div class="brand-lockup">
+      <a class="brand" href="https://infiradev.com/" aria-label="انفراد، الموقع الرئيسي">
+        <img src="https://infiradev.com/assets/logo-bilingual.png" alt="انفراد · INFIRAD" width="990" height="320" />
+      </a>
+      <a class="diwan-name" href="../">ديوان المعرفة</a>
+    </div>
+    <nav class="nav" aria-label="أقسام ديوان المعرفة"><a href="../terms/">المصطلحات</a><a href="../articles/">مقالات</a><a href="../domains/">المجالات</a><a href="../lab/" aria-current="page">المعمل</a><a href="../about.html">عن الديوان</a></nav>
+    <nav class="head-actions" aria-label="الرجوع والموقع الرئيسي">
+      <a href="../" data-back><span aria-hidden="true">→</span> رجوع</a>
+      <a href="https://infiradev.com/">موقع انفراد الرئيسي</a>
+    </nav>
+  </div>
+</header>
+
+<main id="main">
+<article class="wrap article">
+  <nav class="crumbs" aria-label="المسار"><a href="../lab/">المعمل</a> · <a href="../domains/energy.html">الطاقة</a></nav>
+  <h1 class="page-h">كيف تنتج حرارة 85 درجة برودةً بلا ضاغط؟</h1>
+  <section class="lab-panel">
+  <p class="lede">غيّر سعة الامتزاز وحرارة التحرير، وتابع معامل الأداء والبرودة المنتجة.</p>
+  <div id="lab-root"></div>
+  <p class="lab-equation" dir="ltr">COP = (m·h_fg) / (m·h_ads + C_bed·ΔT)</p>
+  <div class="lab-readout" id="lab-outputs"></div>
+  <div class="lab-gauge" id="lab-gauge"></div>
+  <p><button class="lab-cta" type="button" id="lab-reset">إعادة الضبط</button></p>
+  <p class="muted small" id="lab-note">COP المعروض حدّ أعلى نظري؛ الأداء المقيس في الوحدات الحقيقية أقل منه بنحو 10 إلى 20%.</p>
+  <details>
+    <summary>افتراضات النموذج والمصدر</summary>
+    <p>دورة مثالية بلا فقد حراري</p><p>المادة سيليكا جل–ماء بحرارة امتزاز 3200 kJ/kg</p><p>تبخّر عند 5 °م وتكثيف عند 35 °م</p><p>لا استهلاك كهربائي للمضخات</p><p><a href="https://www.engineeringtoolbox.com/water-vapor-saturation-pressure-d_599.html">Latent heat of vaporization of water — Engineering ToolBox</a></p><p><a href="https://www.sciencedirect.com/topics/engineering/adsorption-chiller">Adsorption cooling — silica gel/water working pair — ScienceDirect Topics</a></p><p><a href="https://www.iea-shc.org/">Solar adsorption cooling review — IEA Solar Heating &amp; Cooling Programme</a></p>
+  </details>
+  <noscript>فعّل JavaScript لتحريك المدخلات وحساب النتائج.</noscript>
+  <script type="application/json" id="lab-spec">{"controls":[{"id":"loading","label_ar":"سعة الامتزاز","step":0.01,"value":0.15,"unit":"كجم/كجم","from":0.05,"to":0.25},{"id":"desorb","label_ar":"حرارة التحرير","step":1,"value":85,"unit":"°م","from":70,"to":95}],"outputs":[{"id":"cop","label_ar":"معامل الأداء الحراري","unit":"","decimals":2},{"id":"cooling","label_ar":"برودة لكل كجم مادة","unit":"kJ/kg","decimals":0}],"gauge":{"id":"cop","min":0.5,"max":0.8,"start":0.71,"unit":"","decimals":3,"bind":"cop","label":"معامل الأداء — المقياس من 0.5 إلى 0.8"},"note_ar":"COP المعروض حدّ أعلى نظري؛ الأداء المقيس في الوحدات الحقيقية أقل منه بنحو 10 إلى 20%."}</script>
+  <script type="module" src="../assets/js/labs/adsorption-chiller-cop.mjs"></script>
+</section>
+  <div class="prose"><p>في المبرد الكهربائي يرفع الضاغط ضغط البخار. في المبرد الامتزازي يقوم عازل صلب — السيليكا جل — بالمهمة: يلتقط بخار الماء فيخفض الضغط في المبطّخ، فيتبخّر الماء عند 5 °م ويسحب الحرارة من الماء المُبرَّد.</p><p>بعد التشبّع تُسخَّن المادة إلى 85 °م، فيتحرر البخار ويتكاثف خارجًا، وتعود المادة للعمل. كل الطاقة الداخلة حرارة، لا كهرباء إلا لمضخات صغيرة — فيمكن تشغيل الوحدة بحرارة شمسية أو حرارة عادمة من مصنع.</p></div>
+  <div class="depth" aria-label="شرح معمّق"><section class="depth-sec">
+    <h2>الآلية</h2>
+    <p class="depth-hint muted small">كيف يحدث الأمر على مستوى الجسيمات أو المتغيّرات المباشرة</p>
+    <p>التبخّر يحتاج حرارة كامنة تُؤخذ من الماء المحيط، فينخفض حرارته. إزالة البخار باستمرار تحفظ الضغط منخفضًا فيستمر التبخّر. المادة المازّة تعمل كمضخة بخار كيميائية: تلتقط الجزيئات على سطحها المسامي الضخم، ثم يُطرد الماء بالتسخين لأن الامتزاز ناشر للحرارة.</p>
+  </section><section class="depth-sec">
+    <h2>الأرقام والوحدات</h2>
+    <p class="depth-hint muted small">العلاقات والوحدات والنطاقات العددية التي تسند الشرح</p>
+    <p>الأداء يُقاس أولًّا بقانون الطاقة: COP = Q_التبخير ÷ Q_الدخل، حيث Q_التبخير = m·2489 kJ/kg عند 5 °م، وQ_الدخل = m·3200 + حرارة تسخين السرير. بسعة امتزاز 0.15 كجم ماء لكل كجم مادة وحرارة تحرير 85 °م يكون COP نحو 0.60؛ والقيم المقيسة في الوحدات التجارية 0.5–0.7.</p>
+  </section><section class="depth-sec">
+    <h2>الفرق الدقيق</h2>
+    <p class="depth-hint muted small">المفهوم الملتبس الذي يُخلَط به، وأين ينفصلان</p>
+    <p>يُخلط بين الامتزاز (adsorption، على سطح صلب) والامتصاص (absorption، داخل سائل كبروميد الليثيوم). ويُخلط بين COP الحراري وCOP الكهربائي: هذا يقيس البرودة المنتجة لكل وحدة حرارة، وذاك لكل وحدة كهرباء — ولا يُقارنان مباشرة بلا تحويل بكفاءة توليد الكهرباء.</p>
+  </section><section class="depth-sec">
+    <h2>حدود التعريف</h2>
+    <p class="depth-hint muted small">أين ينكسر التعريف أو النموذج وما الذي لا يفسّره</p>
+    <p>COP الحراري المنخفض (0.6) يعني حاجة إلى مصدر حرارة وفير ورخيص، وإلا صار غير اقتصادي. ويعتمد الأداء على حرارة التبريد المتاحة: كل ارتفاع في حرارة التكثيف يخفض السعة. وتتدهور المادة بالشوائب والغبار بعد دورات كثيرة.</p>
+  </section></div>
+  <section class="figures" aria-label="الرسوم التوضيحية">
+  <figure class="fig" id="fig-1">
+    <img class="fig-img" src="../assets/fig/fig-spec-adsorption-chiller-flow.svg" alt="مخطط بأربعة صناديق متصلة بأسهم: تبخير 5، امتزاز على السيليكا 35، تسخين وتحرير 85، تكثيف 35 درجة مئوية." loading="lazy" />
+    <figcaption><b>الشكل 1.</b> الدورة في أربع خطوات: تبخّر عند 5 درجات، امتزاز، تحرير بحرارة 85 درجة، ثم تكثيف عند 35.
+      <span class="credit muted small">· من عمل انفراد — مخطط مبني من قيم الدورة</span>
+    </figcaption>
+  </figure>
+  <figure class="fig" id="fig-2">
+    <img class="fig-img" src="../assets/fig/fig-spec-chiller-cop.svg" alt="ثلاثة أعمدة لمعامل الأداء عند 70 و80 و90 درجة مئوية: 0.58 و0.59 و0.60 تقريبًا، مع حاشية عن المدى المقيس 0.5 إلى 0.7." loading="lazy" />
+    <figcaption><b>الشكل 2.</b> معامل الأداء مقابل حرارة التحرير: الفرق بين 70 و90 درجة كبير رغم أن الطاقة الداخلة حرارة مجانية.
+      <span class="credit muted small">· من عمل انفراد — أعمدة محسوبة من قانون الطاقة الأول</span>
+    </figcaption>
+  </figure>
+</section>
+  <table class="facts">
+  <caption>أرقام مسنَدة إلى مصادرها</caption>
+  <thead><tr><th scope="col">الكمية</th><th scope="col">القيمة</th><th scope="col">المصدر</th></tr></thead>
+  <tbody><tr>
+      <th scope="row">حرارة التبخّر عند 5 °م</th>
+      <td>2489 <span class="unit">kJ/kg</span></td>
+      <td><a class="ref" href="#src-1">[1]</a></td>
+    </tr><tr>
+      <th scope="row">حرارة الامتزاز العكسية على السيليكا جل</th>
+      <td>3200 <span class="unit">kJ/kg</span></td>
+      <td><a class="ref" href="#src-2">[2]</a></td>
+    </tr><tr>
+      <th scope="row">المدى المقيس لمعامل الأداء الحراري</th>
+      <td>0.5–0.7</td>
+      <td><a class="ref" href="#src-3">[3]</a></td>
+    </tr></tbody>
+</table>
+  <section class="sources" aria-labelledby="src-h">
+  <h2 id="src-h">المصادر</h2>
+  <ol class="src-list"><li id="src-1">
+      <span class="src-num">1</span>
+      <span>Latent heat of vaporization of water — Engineering ToolBox.
+      <a href="https://www.engineeringtoolbox.com/water-vapor-saturation-pressure-d_599.html" rel="noopener nofollow" target="_blank">www.engineeringtoolbox.com/water-vapor-saturation-pressure-d_599.html</a>
+      <span class="muted small">· اطُّلع عليه 2026-11-16</span></span>
+    </li><li id="src-2">
+      <span class="src-num">2</span>
+      <span>Adsorption cooling — silica gel/water working pair — ScienceDirect Topics.
+      <a href="https://www.sciencedirect.com/topics/engineering/adsorption-chiller" rel="noopener nofollow" target="_blank">www.sciencedirect.com/topics/engineering/adsorption-chiller</a>
+      <span class="muted small">· اطُّلع عليه 2026-11-16</span></span>
+    </li><li id="src-3">
+      <span class="src-num">3</span>
+      <span>Solar adsorption cooling review — IEA Solar Heating &amp; Cooling Programme.
+      <a href="https://www.iea-shc.org/" rel="noopener nofollow" target="_blank">www.iea-shc.org/</a>
+      <span class="muted small">· اطُّلع عليه 2026-11-16</span></span>
+    </li></ol>
+</section>
+  <p class="reviewline muted small">راجعه: مراجعة آلية — بوابة الديوان (فحص بنيوي وأرقام) 2026-11-16 · 2026-11-16 · آخر تحديث 2026-11-16</p>
+</article>
+</main>
+<footer class="site-foot">
+  <div class="wrap foot-in">
+    <div>
+      <b>ديوان المعرفة</b> — من المفهوم إلى التجربة
+      <div class="muted small">قسم علمي داخل انفراد · <a href="https://infiradev.com">infiradev.com</a> · <a href="mailto:info@infiradev.com">info@infiradev.com</a></div>
+    </div>
+    <div class="muted small">
+      <a href="../about.html">سياسة التحرير والمصادر</a> ·
+      <a href="../terms/">المصطلحات</a> ·
+      <a href="../lab/">المعمل الافتراضي</a>
+    </div>
+  </div>
+</footer>
+<script src="../assets/js/site.js" defer></script>
+</body>
+</html>

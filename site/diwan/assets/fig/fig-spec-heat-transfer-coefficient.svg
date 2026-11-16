@@ -1,0 +1,46 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="760" height="514" viewBox="0 0 760 514" role="img" aria-labelledby="t">
+<title id="t">h مقابل سرعة الماء في أنبوب 20 مم</title>
+<rect width="760" height="514" fill="#ffffff"/>
+<g font-family="'Segoe UI', 'Noto Naskh Arabic', system-ui, sans-serif" direction="rtl">
+<text x="380" y="34" font-size="18" font-weight="700" fill="#1b2a2f" text-anchor="middle">h مقابل سرعة الماء في أنبوب 20 مم</text>
+<text x="380" y="60" font-size="17" font-weight="400" fill="#5d7079" text-anchor="middle">ديتوس–بولتر: Nu = 0.023 Re^0.8 Pr^0.4</text>
+<text x="380" y="84" font-size="17" font-weight="400" fill="#5d7079" text-anchor="middle">ماء 20 °م · k = 0.60 · Pr = 7</text>
+<line x1="96" y1="130" x2="96" y2="400" stroke="#cbd5d9" stroke-width="1" stroke-opacity="0.6"/>
+<text x="96" y="426" font-size="17" font-weight="400" fill="#5d7079" text-anchor="middle">1</text>
+<line x1="189.7" y1="130" x2="189.7" y2="400" stroke="#cbd5d9" stroke-width="1" stroke-opacity="0.6"/>
+<text x="189.7" y="426" font-size="17" font-weight="400" fill="#5d7079" text-anchor="middle">1.5</text>
+<line x1="283.3" y1="130" x2="283.3" y2="400" stroke="#cbd5d9" stroke-width="1" stroke-opacity="0.6"/>
+<text x="283.3" y="426" font-size="17" font-weight="400" fill="#5d7079" text-anchor="middle">2</text>
+<line x1="377" y1="130" x2="377" y2="400" stroke="#cbd5d9" stroke-width="1" stroke-opacity="0.6"/>
+<text x="377" y="426" font-size="17" font-weight="400" fill="#5d7079" text-anchor="middle">2.5</text>
+<line x1="470.7" y1="130" x2="470.7" y2="400" stroke="#cbd5d9" stroke-width="1" stroke-opacity="0.6"/>
+<text x="470.7" y="426" font-size="17" font-weight="400" fill="#5d7079" text-anchor="middle">3</text>
+<line x1="564.3" y1="130" x2="564.3" y2="400" stroke="#cbd5d9" stroke-width="1" stroke-opacity="0.6"/>
+<text x="564.3" y="426" font-size="17" font-weight="400" fill="#5d7079" text-anchor="middle">3.5</text>
+<line x1="658" y1="130" x2="658" y2="400" stroke="#cbd5d9" stroke-width="1" stroke-opacity="0.6"/>
+<text x="658" y="426" font-size="17" font-weight="400" fill="#5d7079" text-anchor="middle">4</text>
+<line x1="96" y1="400" x2="658" y2="400" stroke="#cbd5d9" stroke-width="1" stroke-opacity="0.6"/>
+<text x="670" y="406" font-size="17" font-weight="400" fill="#5d7079" text-anchor="start">0</text>
+<line x1="96" y1="361.4" x2="658" y2="361.4" stroke="#cbd5d9" stroke-width="1" stroke-opacity="0.6"/>
+<text x="670" y="367.4" font-size="17" font-weight="400" fill="#5d7079" text-anchor="start">2000</text>
+<line x1="96" y1="322.9" x2="658" y2="322.9" stroke="#cbd5d9" stroke-width="1" stroke-opacity="0.6"/>
+<text x="670" y="328.9" font-size="17" font-weight="400" fill="#5d7079" text-anchor="start">4000</text>
+<line x1="96" y1="284.3" x2="658" y2="284.3" stroke="#cbd5d9" stroke-width="1" stroke-opacity="0.6"/>
+<text x="670" y="290.3" font-size="17" font-weight="400" fill="#5d7079" text-anchor="start">6000</text>
+<line x1="96" y1="245.7" x2="658" y2="245.7" stroke="#cbd5d9" stroke-width="1" stroke-opacity="0.6"/>
+<text x="670" y="251.7" font-size="17" font-weight="400" fill="#5d7079" text-anchor="start">8000</text>
+<line x1="96" y1="207.1" x2="658" y2="207.1" stroke="#cbd5d9" stroke-width="1" stroke-opacity="0.6"/>
+<text x="670" y="213.1" font-size="17" font-weight="400" fill="#5d7079" text-anchor="start">10000</text>
+<line x1="96" y1="168.6" x2="658" y2="168.6" stroke="#cbd5d9" stroke-width="1" stroke-opacity="0.6"/>
+<text x="670" y="174.6" font-size="17" font-weight="400" fill="#5d7079" text-anchor="start">12000</text>
+<line x1="96" y1="130" x2="658" y2="130" stroke="#cbd5d9" stroke-width="1" stroke-opacity="0.6"/>
+<text x="670" y="136" font-size="17" font-weight="400" fill="#5d7079" text-anchor="start">14000</text>
+<line x1="96" y1="130" x2="96" y2="400" stroke="#1b2a2f" stroke-width="1.5"/>
+<line x1="96" y1="400" x2="658" y2="400" stroke="#1b2a2f" stroke-width="1.5"/>
+<path d="M96,320.3 L189.7,289.7 L283.3,261.2 L377,234 L470.7,208 L564.3,183.1 L658,158.3" fill="none" stroke="#c2410c" stroke-width="2.5" stroke-linejoin="round"/>
+<circle cx="283.3" cy="261.2" r="5" fill="#1b2a2f"/>
+<text x="283.3" y="247.2" font-size="17" font-weight="700" fill="#1b2a2f" text-anchor="middle" stroke="#ffffff" stroke-width="4" stroke-linejoin="round" paint-order="stroke">2 م/ث → 7,200</text>
+<text x="377" y="454" font-size="17" font-weight="400" fill="#5d7079" text-anchor="middle">سرعة الماء (م/ث)</text>
+<text x="90" y="108" font-size="17" font-weight="400" fill="#5d7079" text-anchor="start">معامل انتقال الحرارة (W/m²·K)</text>
+<text x="380" y="488" font-size="17" font-weight="400" fill="#5d7079" text-anchor="middle">الأس 0.8 يجعل مضاعفة السرعة ترفع h نحو 1.74 مرة لا مرتين</text>
+</g></svg>

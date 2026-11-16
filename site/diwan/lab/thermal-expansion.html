@@ -1,0 +1,130 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>لماذا تحتاج الجسور فواصل تمدد؟ — ديوان المعرفة</title>
+  <meta name="description" content="كل متر من الفولاذ يطول 0.48 مم لكل 40 درجة؛ ومنع هذا التمدد يولّد إجهادًا يقارب ثلث مقاومة الخضوع." />
+  <link rel="stylesheet" href="../assets/css/tokens.css" />
+  <link rel="stylesheet" href="../assets/css/site.css" />
+
+  <link rel="canonical" href="https://infiradev.com/diwan/lab/thermal-expansion.html" />
+  <link rel="icon" href="https://infiradev.com/favicon.ico" sizes="48x48" />
+  <link rel="icon" type="image/png" sizes="192x192" href="https://infiradev.com/assets/favicon-192.png" />
+  <link rel="apple-touch-icon" href="https://infiradev.com/assets/apple-touch-icon.png" />
+  <script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"Organization","@id":"https://infiradev.com/#organization","name":"INFIRAD","alternateName":["انفِراد","انفراد"],"url":"https://infiradev.com/","logo":{"@type":"ImageObject","url":"https://infiradev.com/assets/logo-bilingual.png","width":990,"height":320},"slogan":"من الفكرة إلى اليقين","foundingDate":"2025","email":"info@infiradeng.com","telephone":"+966557748982","address":{"@type":"PostalAddress","addressLocality":"Riyadh","addressCountry":"SA"},"sameAs":["https://www.linkedin.com/company/infirad/"],"knowsAbout":["Engineering services","Engineering Services Provider (ESP)","Process design","Process simulation","Computational fluid dynamics","Thermal analysis","Independent engineering review","Specialized AI agents","Workflow automation","Traffic simulation"]},{"@type":"WebPage","@id":"https://infiradev.com/diwan/lab/thermal-expansion.html#webpage","url":"https://infiradev.com/diwan/lab/thermal-expansion.html","name":"لماذا تحتاج الجسور فواصل تمدد؟ — ديوان المعرفة","description":"كل متر من الفولاذ يطول 0.48 مم لكل 40 درجة؛ ومنع هذا التمدد يولّد إجهادًا يقارب ثلث مقاومة الخضوع.","inLanguage":"ar","isPartOf":{"@id":"https://infiradev.com/#website"},"about":{"@id":"https://infiradev.com/#organization"}},{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"انفراد","item":"https://infiradev.com/"},{"@type":"ListItem","position":2,"name":"ديوان المعرفة","item":"https://infiradev.com/diwan/"},{"@type":"ListItem","position":3,"name":"لماذا تحتاج الجسور فواصل تمدد؟ — ديوان المعرفة","item":"https://infiradev.com/diwan/lab/thermal-expansion.html"}]}]}</script>
+</head>
+<body>
+<a class="skip" href="#main">انتقل إلى المحتوى</a>
+<header class="site-head">
+  <div class="wrap head-in">
+    <div class="brand-lockup">
+      <a class="brand" href="https://infiradev.com/" aria-label="انفراد، الموقع الرئيسي">
+        <img src="https://infiradev.com/assets/logo-bilingual.png" alt="انفراد · INFIRAD" width="990" height="320" />
+      </a>
+      <a class="diwan-name" href="../">ديوان المعرفة</a>
+    </div>
+    <nav class="nav" aria-label="أقسام ديوان المعرفة"><a href="../terms/">المصطلحات</a><a href="../articles/">مقالات</a><a href="../domains/">المجالات</a><a href="../lab/" aria-current="page">المعمل</a><a href="../about.html">عن الديوان</a></nav>
+    <nav class="head-actions" aria-label="الرجوع والموقع الرئيسي">
+      <a href="../" data-back><span aria-hidden="true">→</span> رجوع</a>
+      <a href="https://infiradev.com/">موقع انفراد الرئيسي</a>
+    </nav>
+  </div>
+</header>
+
+<main id="main">
+<article class="wrap article">
+  <nav class="crumbs" aria-label="المسار"><a href="../lab/">المعمل</a> · <a href="../domains/engineering.html">الهندسة</a></nav>
+  <h1 class="page-h">لماذا تحتاج الجسور فواصل تمدد؟</h1>
+  <section class="lab-panel">
+  <p class="lede">اختر المادة والطول ومقدار ارتفاع الحرارة، وتابع الاستطالة والإجهاد لو مُنع التمدد.</p>
+  <div id="lab-root"></div>
+  <p class="lab-equation" dir="ltr">ΔL = α·L·ΔT</p>
+  <div class="lab-readout" id="lab-outputs"></div>
+  <div class="lab-gauge" id="lab-gauge"></div>
+  <p><button class="lab-cta" type="button" id="lab-reset">إعادة الضبط</button></p>
+  <p class="muted small" id="lab-note">الإجهاد المعروض هو ما ينشأ لو مُنع التمدد تمامًا؛ في المنشآت الحقيقية تُترك الفواصل لتخفيفه.</p>
+  <details>
+    <summary>افتراضات النموذج والمصدر</summary>
+    <p>معامل تمدد ثابت داخل نطاق الحرارة</p><p>مادة متناحية الخواص</p><p>بلا قيود ميكانيكية في حساب الاستطالة</p><p>الإجهاد محسوب عند منع التمدد كليًّا</p><p><a href="https://www.engineeringtoolbox.com/linear-expansion-coefficients-d_95.html">Coefficients of linear thermal expansion — Engineering ToolBox</a></p><p><a href="https://openstax.org/books/college-physics/pages/13-2-thermal-expansion-of-solids-and-liquids">Thermal expansion of solids — College Physics 13.2 — OpenStax</a></p>
+  </details>
+  <noscript>فعّل JavaScript لتحريك المدخلات وحساب النتائج.</noscript>
+  <script type="application/json" id="lab-spec">{"controls":[{"id":"material","label_ar":"المادة","options":[{"value":"steel","label_ar":"فولاذ"},{"value":"aluminium","label_ar":"ألمنيوم"},{"value":"concrete","label_ar":"خرسانة"}],"value":"steel","type":"select"},{"id":"length","label_ar":"الطول الأصلي","step":5,"value":100,"unit":"م","from":10,"to":200},{"id":"deltaT","label_ar":"ارتفاع الحرارة","step":1,"value":40,"unit":"ك","from":5,"to":60}],"outputs":[{"id":"elongation","label_ar":"الاستطالة","unit":"مم","decimals":1},{"id":"stress","label_ar":"الإجهاد لو مُنع التمدد","unit":"م.ب","decimals":1}],"gauge":{"id":"elongation","min":0,"max":300,"start":48,"unit":"مم","decimals":1,"bind":"elongation","label":"الاستطالة — المقياس من 0 إلى 300 مليمتر"},"note_ar":"الإجهاد المعروض هو ما ينشأ لو مُنع التمدد تمامًا؛ في المنشآت الحقيقية تُترك الفواصل لتخفيفه."}</script>
+  <script type="module" src="../assets/js/labs/thermal-expansion.mjs"></script>
+</section>
+  <div class="prose"><p>المواد الصلبة تتمدد بالحرارة لأن المسافة المتوسطة بين الذرات تزيد مع سعة اهتزازها. النسبة لكل درجة تُسمّى معامل التمدد α، وهي خاصية للمادة لا للحجم.</p><p>جسر من 100 متر فولاذي يتغيّر طوله 48 مم بين ليلة شتوية ونهار صيفي. أربعة سنتيمترات لا تُرى، لكنها لو مُنعت في جسر صلب لولّدت قوة تكفي لتشقق الخرسانة — ولهذا توجد فواصل التمدد في الجسور والخطوط والسكك.</p></div>
+  <div class="depth" aria-label="شرح معمّق"><section class="depth-sec">
+    <h2>الآلية</h2>
+    <p class="depth-hint muted small">كيف يحدث الأمر على مستوى الجسيمات أو المتغيّرات المباشرة</p>
+    <p>في الشبكة البلورية تهتز الذرات حول مواضع اتزانها، والجهد بينها غير متماثل: مقاومة التقارب أشد من مقاومة التباعد. رفع الحرارة يزيد سعة الاهتزاز فيتزحزح الموضع المتوسط إلى مسافة أكبر، فيطول الجسم في كل الاتجاهات بنسبة واحدة تقريبًا.</p>
+  </section><section class="depth-sec">
+    <h2>الأرقام والوحدات</h2>
+    <p class="depth-hint muted small">العلاقات والوحدات والنطاقات العددية التي تسند الشرح</p>
+    <p>ΔL = α·L·ΔT. عند L=100 م وΔT=40 ك: الفولاذ (α=12×10⁻⁶) يطول 48 مم، والألمنيوم (23×10⁻⁶) 92 مم، والخرسانة (10×10⁻⁶) 40 مم. وإذا مُنع التمدد نشأ إجهاد σ=E·α·ΔT، أي 200×10⁹×12×10⁻⁶×40 = 96 ميجاباسكال في الفولاذ.</p>
+  </section><section class="depth-sec">
+    <h2>الفرق الدقيق</h2>
+    <p class="depth-hint muted small">المفهوم الملتبس الذي يُخلَط به، وأين ينفصلان</p>
+    <p>يُخلط بين التمدد الحراري والانفعال الميكانيكي: الأول يحدث بلا قوة خارجية، والثاني نتيجة قوة. ويُخلط بين معامل التمدد الطولي والحجمي: الحجمي يقارب ثلاثة أضعاف الطولي في المواد المتناحية. كما أن α نفسه يتغيّر مع الحرارة في المواد الحقيقية.</p>
+  </section><section class="depth-sec">
+    <h2>حدود التعريف</h2>
+    <p class="depth-hint muted small">أين ينكسر التعريف أو النموذج وما الذي لا يفسّره</p>
+    <p>المعادلة خطية وتصلح في نطاقات حرارة معتدلة؛ عند الاقتراب من الانصهار يتغيّر α بقوة، وفي المواد متعددة البلورات يظهر تمدد غير متناحٍ. وفي الخرسانة المسلحة لا يمكن حساب الطول بالمعادلة وحدها لأن حديد التسليح يقاوم التمدد، فيلزم تحليل مركّب.</p>
+  </section></div>
+  <section class="figures" aria-label="الرسوم التوضيحية">
+  <figure class="fig" id="fig-1">
+    <img class="fig-img" src="../assets/fig/fig-spec-thermal-expansion.svg" alt="ثلاثة أعمدة: الفولاذ 48 مليمترًا، الألمنيوم 92 مليمترًا، والخرسانة 40 مليمترًا، مع حاشية عن الإجهاد لو مُنع التمدد." loading="lazy" />
+    <figcaption><b>الشكل 1.</b> استطالة 100 متر من ثلاث مواد عند ارتفاع 40 درجة: الألمنيوم يقارب ضعف الفولاذ.
+      <span class="credit muted small">· من عمل انفراد — أعمدة محسوبة من ΔL=αLΔT</span>
+    </figcaption>
+  </figure>
+</section>
+  <table class="facts">
+  <caption>أرقام مسنَدة إلى مصادرها</caption>
+  <thead><tr><th scope="col">الكمية</th><th scope="col">القيمة</th><th scope="col">المصدر</th></tr></thead>
+  <tbody><tr>
+      <th scope="row">معامل تمدد الفولاذ</th>
+      <td>12 <span class="unit">×10⁻⁶/ك</span></td>
+      <td><a class="ref" href="#src-1">[1]</a></td>
+    </tr><tr>
+      <th scope="row">معامل تمدد الألمنيوم</th>
+      <td>23 <span class="unit">×10⁻⁶/ك</span></td>
+      <td><a class="ref" href="#src-1">[1]</a></td>
+    </tr><tr>
+      <th scope="row">استطالة 100 م فولاذ عند 40 ك</th>
+      <td>48 <span class="unit">مم</span></td>
+      <td><a class="ref" href="#src-1">[1]</a></td>
+    </tr></tbody>
+</table>
+  <section class="sources" aria-labelledby="src-h">
+  <h2 id="src-h">المصادر</h2>
+  <ol class="src-list"><li id="src-1">
+      <span class="src-num">1</span>
+      <span>Coefficients of linear thermal expansion — Engineering ToolBox.
+      <a href="https://www.engineeringtoolbox.com/linear-expansion-coefficients-d_95.html" rel="noopener nofollow" target="_blank">www.engineeringtoolbox.com/linear-expansion-coefficients-d_95.html</a>
+      <span class="muted small">· اطُّلع عليه 2026-11-16</span></span>
+    </li><li id="src-2">
+      <span class="src-num">2</span>
+      <span>Thermal expansion of solids — College Physics 13.2 — OpenStax.
+      <a href="https://openstax.org/books/college-physics/pages/13-2-thermal-expansion-of-solids-and-liquids" rel="noopener nofollow" target="_blank">openstax.org/books/college-physics/pages/13-2-thermal-expansion-of-solids-and-liquids</a>
+      <span class="muted small">· اطُّلع عليه 2026-11-16</span></span>
+    </li></ol>
+</section>
+  <p class="reviewline muted small">راجعه: مراجعة آلية — بوابة الديوان (فحص بنيوي وأرقام) 2026-11-16 · 2026-11-16 · آخر تحديث 2026-11-16</p>
+</article>
+</main>
+<footer class="site-foot">
+  <div class="wrap foot-in">
+    <div>
+      <b>ديوان المعرفة</b> — من المفهوم إلى التجربة
+      <div class="muted small">قسم علمي داخل انفراد · <a href="https://infiradev.com">infiradev.com</a> · <a href="mailto:info@infiradev.com">info@infiradev.com</a></div>
+    </div>
+    <div class="muted small">
+      <a href="../about.html">سياسة التحرير والمصادر</a> ·
+      <a href="../terms/">المصطلحات</a> ·
+      <a href="../lab/">المعمل الافتراضي</a>
+    </div>
+  </div>
+</footer>
+<script src="../assets/js/site.js" defer></script>
+</body>
+</html>

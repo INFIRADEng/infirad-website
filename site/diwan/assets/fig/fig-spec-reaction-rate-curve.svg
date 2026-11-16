@@ -1,0 +1,44 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="760" height="514" viewBox="0 0 760 514" role="img" aria-labelledby="t">
+<title id="t">اختفاء المتفاعل في تفاعل من الرتبة الأولى</title>
+<rect width="760" height="514" fill="#ffffff"/>
+<g font-family="'Segoe UI', 'Noto Naskh Arabic', system-ui, sans-serif" direction="rtl">
+<text x="380" y="34" font-size="18" font-weight="700" fill="#1b2a2f" text-anchor="middle">اختفاء المتفاعل في تفاعل من الرتبة الأولى</text>
+<text x="380" y="60" font-size="17" font-weight="400" fill="#5d7079" text-anchor="middle">تركيز ابتدائي 1.0 مول/لتر، وثابت معدل 0.0231 لكل ثانية</text>
+<text x="380" y="84" font-size="17" font-weight="400" fill="#5d7079" text-anchor="middle">عمر النصف 30 ثانية، والتحويل 90% عند 100 ثانية</text>
+<line x1="96" y1="130" x2="96" y2="400" stroke="#cbd5d9" stroke-width="1" stroke-opacity="0.6"/>
+<text x="96" y="426" font-size="17" font-weight="400" fill="#5d7079" text-anchor="middle">0</text>
+<line x1="189.7" y1="130" x2="189.7" y2="400" stroke="#cbd5d9" stroke-width="1" stroke-opacity="0.6"/>
+<text x="189.7" y="426" font-size="17" font-weight="400" fill="#5d7079" text-anchor="middle">20</text>
+<line x1="283.3" y1="130" x2="283.3" y2="400" stroke="#cbd5d9" stroke-width="1" stroke-opacity="0.6"/>
+<text x="283.3" y="426" font-size="17" font-weight="400" fill="#5d7079" text-anchor="middle">40</text>
+<line x1="377" y1="130" x2="377" y2="400" stroke="#cbd5d9" stroke-width="1" stroke-opacity="0.6"/>
+<text x="377" y="426" font-size="17" font-weight="400" fill="#5d7079" text-anchor="middle">60</text>
+<line x1="470.7" y1="130" x2="470.7" y2="400" stroke="#cbd5d9" stroke-width="1" stroke-opacity="0.6"/>
+<text x="470.7" y="426" font-size="17" font-weight="400" fill="#5d7079" text-anchor="middle">80</text>
+<line x1="564.3" y1="130" x2="564.3" y2="400" stroke="#cbd5d9" stroke-width="1" stroke-opacity="0.6"/>
+<text x="564.3" y="426" font-size="17" font-weight="400" fill="#5d7079" text-anchor="middle">100</text>
+<line x1="658" y1="130" x2="658" y2="400" stroke="#cbd5d9" stroke-width="1" stroke-opacity="0.6"/>
+<text x="658" y="426" font-size="17" font-weight="400" fill="#5d7079" text-anchor="middle">120</text>
+<line x1="96" y1="400" x2="658" y2="400" stroke="#cbd5d9" stroke-width="1" stroke-opacity="0.6"/>
+<text x="670" y="406" font-size="17" font-weight="400" fill="#5d7079" text-anchor="start">0</text>
+<line x1="96" y1="346" x2="658" y2="346" stroke="#cbd5d9" stroke-width="1" stroke-opacity="0.6"/>
+<text x="670" y="352" font-size="17" font-weight="400" fill="#5d7079" text-anchor="start">0.2</text>
+<line x1="96" y1="292" x2="658" y2="292" stroke="#cbd5d9" stroke-width="1" stroke-opacity="0.6"/>
+<text x="670" y="298" font-size="17" font-weight="400" fill="#5d7079" text-anchor="start">0.4</text>
+<line x1="96" y1="238" x2="658" y2="238" stroke="#cbd5d9" stroke-width="1" stroke-opacity="0.6"/>
+<text x="670" y="244" font-size="17" font-weight="400" fill="#5d7079" text-anchor="start">0.6</text>
+<line x1="96" y1="184" x2="658" y2="184" stroke="#cbd5d9" stroke-width="1" stroke-opacity="0.6"/>
+<text x="670" y="190" font-size="17" font-weight="400" fill="#5d7079" text-anchor="start">0.8</text>
+<line x1="96" y1="130" x2="658" y2="130" stroke="#cbd5d9" stroke-width="1" stroke-opacity="0.6"/>
+<text x="670" y="136" font-size="17" font-weight="400" fill="#5d7079" text-anchor="start">1</text>
+<line x1="96" y1="130" x2="96" y2="400" stroke="#1b2a2f" stroke-width="1.5"/>
+<line x1="96" y1="400" x2="658" y2="400" stroke="#1b2a2f" stroke-width="1.5"/>
+<path d="M96,130 L142.8,185.7 L189.7,229.9 L236.5,265 L283.3,292.8 L330.2,314.9 L377,332.5 L423.8,346.4 L470.7,357.4 L517.5,366.2 L564.3,373.2 L611.2,378.7 L658,383.1" fill="none" stroke="#c2410c" stroke-width="2.5" stroke-linejoin="round"/>
+<circle cx="236.5" cy="265" r="5" fill="#1b2a2f"/>
+<text x="236.5" y="251" font-size="17" font-weight="700" fill="#1b2a2f" text-anchor="middle" stroke="#ffffff" stroke-width="4" stroke-linejoin="round" paint-order="stroke">نصف العمر عند 30 ثانية</text>
+<circle cx="564.3" cy="373.3" r="5" fill="#1b2a2f"/>
+<text x="564.3" y="359.3" font-size="17" font-weight="700" fill="#1b2a2f" text-anchor="middle" stroke="#ffffff" stroke-width="4" stroke-linejoin="round" paint-order="stroke">تسعون بالمئة عند 100</text>
+<text x="377" y="454" font-size="17" font-weight="400" fill="#5d7079" text-anchor="middle">الزمن (ثانية)</text>
+<text x="90" y="108" font-size="17" font-weight="400" fill="#5d7079" text-anchor="start">تركيز المتفاعل (مول/لتر)</text>
+<text x="380" y="488" font-size="17" font-weight="400" fill="#5d7079" text-anchor="middle">الزمن اللازم لبلوغ تحويل معيّن يتناسب عكسيًّا مع ثابت المعدل، ومضاعفة الثابت تنصّف الزمن.</text>
+</g></svg>

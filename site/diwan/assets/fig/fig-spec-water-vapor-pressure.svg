@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="760" height="514" viewBox="0 0 760 514" role="img" aria-labelledby="t">
+<title id="t">ضغط بخار الماء يصعد أُسّيًّا مع الحرارة</title>
+<rect width="760" height="514" fill="#ffffff"/>
+<g font-family="'Segoe UI', 'Noto Naskh Arabic', system-ui, sans-serif" direction="rtl">
+<text x="380" y="34" font-size="18" font-weight="700" fill="#1b2a2f" text-anchor="middle">ضغط بخار الماء يصعد أُسّيًّا مع الحرارة</text>
+<text x="380" y="60" font-size="17" font-weight="400" fill="#5d7079" text-anchor="middle">من 2.3 كيلوباسكال عند 20 °م إلى 101.3 عند 100 °م</text>
+<text x="380" y="84" font-size="17" font-weight="400" fill="#5d7079" text-anchor="middle">معادلة أنطوان: log₁₀P = 8.07131 − 1730.63/(233.426 + T)</text>
+<line x1="96" y1="130" x2="96" y2="400" stroke="#cbd5d9" stroke-width="1" stroke-opacity="0.6"/>
+<text x="96" y="426" font-size="17" font-weight="400" fill="#5d7079" text-anchor="middle">0</text>
+<line x1="208.4" y1="130" x2="208.4" y2="400" stroke="#cbd5d9" stroke-width="1" stroke-opacity="0.6"/>
+<text x="208.4" y="426" font-size="17" font-weight="400" fill="#5d7079" text-anchor="middle">20</text>
+<line x1="320.8" y1="130" x2="320.8" y2="400" stroke="#cbd5d9" stroke-width="1" stroke-opacity="0.6"/>
+<text x="320.8" y="426" font-size="17" font-weight="400" fill="#5d7079" text-anchor="middle">40</text>
+<line x1="433.2" y1="130" x2="433.2" y2="400" stroke="#cbd5d9" stroke-width="1" stroke-opacity="0.6"/>
+<text x="433.2" y="426" font-size="17" font-weight="400" fill="#5d7079" text-anchor="middle">60</text>
+<line x1="545.6" y1="130" x2="545.6" y2="400" stroke="#cbd5d9" stroke-width="1" stroke-opacity="0.6"/>
+<text x="545.6" y="426" font-size="17" font-weight="400" fill="#5d7079" text-anchor="middle">80</text>
+<line x1="658" y1="130" x2="658" y2="400" stroke="#cbd5d9" stroke-width="1" stroke-opacity="0.6"/>
+<text x="658" y="426" font-size="17" font-weight="400" fill="#5d7079" text-anchor="middle">100</text>
+<line x1="96" y1="400" x2="658" y2="400" stroke="#cbd5d9" stroke-width="1" stroke-opacity="0.6"/>
+<text x="670" y="406" font-size="17" font-weight="400" fill="#5d7079" text-anchor="start">0</text>
+<line x1="96" y1="350.9" x2="658" y2="350.9" stroke="#cbd5d9" stroke-width="1" stroke-opacity="0.6"/>
+<text x="670" y="356.9" font-size="17" font-weight="400" fill="#5d7079" text-anchor="start">20</text>
+<line x1="96" y1="301.8" x2="658" y2="301.8" stroke="#cbd5d9" stroke-width="1" stroke-opacity="0.6"/>
+<text x="670" y="307.8" font-size="17" font-weight="400" fill="#5d7079" text-anchor="start">40</text>
+<line x1="96" y1="252.7" x2="658" y2="252.7" stroke="#cbd5d9" stroke-width="1" stroke-opacity="0.6"/>
+<text x="670" y="258.7" font-size="17" font-weight="400" fill="#5d7079" text-anchor="start">60</text>
+<line x1="96" y1="203.6" x2="658" y2="203.6" stroke="#cbd5d9" stroke-width="1" stroke-opacity="0.6"/>
+<text x="670" y="209.6" font-size="17" font-weight="400" fill="#5d7079" text-anchor="start">80</text>
+<line x1="96" y1="154.5" x2="658" y2="154.5" stroke="#cbd5d9" stroke-width="1" stroke-opacity="0.6"/>
+<text x="670" y="160.5" font-size="17" font-weight="400" fill="#5d7079" text-anchor="start">100</text>
+<line x1="96" y1="130" x2="96" y2="400" stroke="#1b2a2f" stroke-width="1.5"/>
+<line x1="96" y1="400" x2="658" y2="400" stroke="#1b2a2f" stroke-width="1.5"/>
+<path d="M96,398.5 L152.2,397 L208.4,394.3 L264.6,389.6 L320.8,381.9 L377,369.7 L433.2,351.1 L489.4,323.4 L545.6,283.7 L601.8,227.7 L658,151.4" fill="none" stroke="#c2410c" stroke-width="2.5" stroke-linejoin="round"/>
+<circle cx="208.4" cy="394.3" r="5" fill="#1b2a2f"/>
+<text x="208.4" y="380.3" font-size="17" font-weight="700" fill="#1b2a2f" text-anchor="middle" stroke="#ffffff" stroke-width="4" stroke-linejoin="round" paint-order="stroke">20 °م → 2.34 kPa</text>
+<circle cx="658" cy="151.4" r="5" fill="#1b2a2f"/>
+<text x="658" y="137.4" font-size="17" font-weight="700" fill="#1b2a2f" text-anchor="middle" stroke="#ffffff" stroke-width="4" stroke-linejoin="round" paint-order="stroke">100 °م → 101.3 kPa</text>
+<text x="377" y="454" font-size="17" font-weight="400" fill="#5d7079" text-anchor="middle">درجة الحرارة (°مئوية)</text>
+<text x="90" y="108" font-size="17" font-weight="400" fill="#5d7079" text-anchor="start">ضغط البخار (كيلوباسكال)</text>
+<text x="380" y="488" font-size="17" font-weight="400" fill="#5d7079" text-anchor="middle">المضاعفة كل 10 درجات تقريبًا: الشرط الأول لتبخّر الماء من بشرة أو برج تبريد</text>
+</g></svg>

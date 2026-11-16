@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="760" height="534" viewBox="0 0 760 534" role="img" aria-labelledby="t">
+<title id="t">الإشعاع الصافي عند فرق 15 كلفن حسب الانبعاثية</title>
+<rect width="760" height="534" fill="#ffffff"/>
+<g font-family="'Segoe UI', 'Noto Naskh Arabic', system-ui, sans-serif" direction="rtl">
+<text x="380" y="34" font-size="18" font-weight="700" fill="#1b2a2f" text-anchor="middle">الإشعاع الصافي عند فرق 15 كلفن حسب الانبعاثية</text>
+<text x="740" y="138" font-size="17" font-weight="600" fill="#1b2a2f" text-anchor="start">معدن مصقول 0.1</text>
+<rect x="687.9" y="146" width="52.1" height="14" fill="#c2410c" fill-opacity="0.85" rx="6"/>
+<text x="679.9" y="158" font-size="17" font-weight="700" fill="#c2410c" text-anchor="end">9.7 W/m²</text>
+<text x="740" y="196" font-size="17" font-weight="600" fill="#1b2a2f" text-anchor="start">سطح 0.3</text>
+<rect x="583.2" y="204" width="156.8" height="14" fill="#0e7490" fill-opacity="0.85" rx="6"/>
+<text x="575.2" y="216" font-size="17" font-weight="700" fill="#0e7490" text-anchor="end">29.2 W/m²</text>
+<text x="740" y="254" font-size="17" font-weight="600" fill="#1b2a2f" text-anchor="start">سطح 0.5</text>
+<rect x="478.9" y="262" width="261.1" height="14" fill="#a16207" fill-opacity="0.85" rx="6"/>
+<text x="470.9" y="274" font-size="17" font-weight="700" fill="#a16207" text-anchor="end">48.6 W/m²</text>
+<text x="740" y="312" font-size="17" font-weight="600" fill="#1b2a2f" text-anchor="start">سطح 0.7</text>
+<rect x="374.7" y="320" width="365.3" height="14" fill="#1e3a5f" fill-opacity="0.85" rx="6"/>
+<text x="366.7" y="332" font-size="17" font-weight="700" fill="#1e3a5f" text-anchor="end">68 W/m²</text>
+<text x="740" y="370" font-size="17" font-weight="600" fill="#1b2a2f" text-anchor="start">دهان عادي 0.9</text>
+<rect x="270" y="378" width="470" height="14" fill="#0a7a4a" fill-opacity="0.85" rx="6"/>
+<text x="262" y="390" font-size="17" font-weight="700" fill="#0a7a4a" text-anchor="end">87.5 W/m²</text>
+<line x1="740" y1="424" x2="270" y2="424" stroke="#cbd5d9" stroke-width="1"/>
+<text x="740" y="448" font-size="17" font-weight="400" fill="#5d7079" text-anchor="start">0</text>
+<text x="505" y="448" font-size="17" font-weight="400" fill="#5d7079" text-anchor="middle">43.75</text>
+<text x="270" y="448" font-size="17" font-weight="400" fill="#5d7079" text-anchor="end">87.5</text>
+<text x="505" y="474" font-size="17" font-weight="400" fill="#5d7079" text-anchor="middle">الإشعاع الصافي (واط لكل متر مربع)</text>
+<text x="380" y="508" font-size="17" font-weight="400" fill="#5d7079" text-anchor="middle">سطح 313.15 كلفن داخل محيط 298.15 كلفن، تشتّت صافٍ بلا شمس.</text>
+</g></svg>
