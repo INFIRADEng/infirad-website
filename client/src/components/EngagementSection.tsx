@@ -90,7 +90,7 @@ export default function EngagementSection() {
           </div>
           <div className="flex w-full flex-wrap gap-3 lg:w-auto lg:justify-end">
             <Button asChild size="lg" className="min-h-13 flex-1 gap-2 bg-primary px-5 text-lg font-bold text-white hover:bg-primary/90 lg:flex-none">
-              <a href="https://wa.me/966530151525" target="_blank" rel="noopener noreferrer">
+              <a href="https://wa.me/966557748982" target="_blank" rel="noopener noreferrer">
                 <MessageCircle className="h-5 w-5" />
                 <span className="ar-content">واتساب</span>
                 <span className="en-content">WhatsApp</span>

@@ -63,7 +63,7 @@ website/
   logo in each page's footer.
 - **LinkedIn** is shown as the word «لينكدإن» / "LinkedIn" linking to the company
   page, not as a bare URL.
-- **Contact:** `+966 530 151 525` and `info@infiradeng.com`.
+- **Contact:** `+966 557 748 982` and `info@infiradeng.com`.
 
 Copy comes from `profile/INFIRAD_Capability_Statement_AR.md`,
 `profile/services/INFIRAD_EN_copy_deck.md` and the current site. Two statements

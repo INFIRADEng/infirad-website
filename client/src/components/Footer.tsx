@@ -16,7 +16,7 @@ export default function Footer() {
           <h2 className="text-lg font-bold text-primary"><span className="ar-content">تواصل</span><span className="en-content">Contact</span></h2>
           <div className="mt-5 grid gap-4 text-lg text-foreground/70">
             <a href="mailto:info@infiradeng.com" className="flex items-center gap-3 hover:text-primary"><Mail className="h-5 w-5" /> info@infiradeng.com</a>
-            <a href="https://wa.me/966530151525" target="_blank" rel="noopener noreferrer" className="flex items-center gap-3 hover:text-primary"><MessageCircle className="h-5 w-5" /><span className="phone-number">+966 530 151 525</span></a>
+            <a href="https://wa.me/966557748982" target="_blank" rel="noopener noreferrer" className="flex items-center gap-3 hover:text-primary"><MessageCircle className="h-5 w-5" /><span className="phone-number">+966 557 748 982</span></a>
             <a href="https://www.linkedin.com/company/infirad/" target="_blank" rel="noopener noreferrer" className="flex items-center gap-3 hover:text-primary"><Linkedin className="h-5 w-5" /> LinkedIn</a>
           </div>
         </div>

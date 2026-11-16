@@ -71,7 +71,7 @@ export default function HeroSection() {
               size="lg"
               className="min-h-14 gap-3 border-2 border-white/25 bg-white/5 px-6 text-lg font-bold text-white backdrop-blur-sm transition-brutal hover:bg-white hover:text-primary"
             >
-              <a href="https://wa.me/966530151525" target="_blank" rel="noopener noreferrer">
+              <a href="https://wa.me/966557748982" target="_blank" rel="noopener noreferrer">
                 <MessageCircle className="h-5 w-5" />
                 <span className="ar-content">ناقش مهمة</span>
                 <span className="en-content">Discuss a task</span>
