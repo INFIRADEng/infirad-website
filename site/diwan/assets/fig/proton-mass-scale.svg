@@ -1,23 +1,23 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="760" height="430" viewBox="0 0 760 430" role="img" aria-labelledby="t">
+<svg xmlns="http://www.w3.org/2000/svg" width="760" height="470" viewBox="0 0 760 470" role="img" aria-labelledby="t">
 <title id="t">كتلة البروتون على مقياس لوغاريتمي</title>
-<rect width="760" height="430" fill="#ffffff"/>
+<rect width="760" height="470" fill="#ffffff"/>
 <g font-family="'Segoe UI', 'Noto Naskh Arabic', system-ui, sans-serif">
-<text x="380" y="32" font-size="17" font-weight="700" fill="#1b2a2f" text-anchor="middle">كتلة البروتون على مقياس لوغاريتمي</text>
-<text x="380" y="56" font-size="12.5" fill="#5d7079" text-anchor="middle">الكتلة بالكيلوجرام — المسافة اللوغاريتمية تساوي نسبة الكتل</text>
-<text x="380" y="74" font-size="12" fill="#5d7079" text-anchor="middle">البروتون أثقل من الإلكترون 1836.15 مرة</text>
-<rect x="230" y="110" width="482" height="234" fill="#ffffff" stroke="#cbd5d9" stroke-width="1"/>
-<text x="216.0" y="152.0" font-size="12.5" font-weight="400" fill="#1b2a2f" text-anchor="end">إلكترون</text>
-<rect x="230" y="138.0" width="74.1" height="18" fill="#0e7490" fill-opacity="0.65"/>
-<text x="316.1" y="152.0" font-size="11.5" font-weight="400" fill="#5d7079" text-anchor="start">9.109 ×10⁻³¹</text>
-<text x="216.0" y="206.0" font-size="12.5" font-weight="400" fill="#1b2a2f" text-anchor="end">بروتون</text>
-<rect x="230" y="192.0" width="326.0" height="18" fill="#c2410c" fill-opacity="0.65"/>
-<text x="568.0" y="206.0" font-size="11.5" font-weight="400" fill="#5d7079" text-anchor="start">1.673 ×10⁻²⁷</text>
-<text x="216.0" y="260.0" font-size="12.5" font-weight="400" fill="#1b2a2f" text-anchor="end">نيوترون</text>
-<rect x="230" y="246.0" width="326.1" height="18" fill="#a16207" fill-opacity="0.65"/>
-<text x="568.1" y="260.0" font-size="11.5" font-weight="400" fill="#5d7079" text-anchor="start">1.675 ×10⁻²⁷</text>
-<text x="216.0" y="314.0" font-size="12.5" font-weight="400" fill="#1b2a2f" text-anchor="end">نواة الهيليوم</text>
-<rect x="230" y="300.0" width="372.3" height="18" fill="#5d7079" fill-opacity="0.65"/>
-<text x="614.3" y="314.0" font-size="11.5" font-weight="400" fill="#5d7079" text-anchor="start">6.645 ×10⁻²⁷</text>
-<text x="380.0" y="384.0" font-size="11.5" font-weight="400" fill="#5d7079" text-anchor="middle">من 10⁻³¹ إلى 10⁻²⁶ كيلوجرام · النيوترون أثقل من البروتون بـ 0.14% فقط</text>
-<text x="380.0" y="406.0" font-size="11.5" font-weight="400" fill="#5d7079" text-anchor="middle">الكواركات تسهم بنحو 1% من كتلة البروتون؛ والباقي طاقة ربط الغلوونات</text>
+<text x="380" y="34" font-size="18" font-weight="700" fill="#1b2a2f" text-anchor="middle">كتلة البروتون على مقياس لوغاريتمي</text>
+<text x="380" y="60" font-size="17" fill="#5d7079" text-anchor="middle">الكتلة بالكيلوجرام — المسافة اللوغاريتمية تساوي نسبة الكتل</text>
+<text x="380" y="84" font-size="17" fill="#5d7079" text-anchor="middle">البروتون أثقل من الإلكترون 1836.15 مرة</text>
+<rect x="230" y="128" width="482" height="234" fill="#ffffff" stroke="#cbd5d9" stroke-width="1"/>
+<text x="216.0" y="170.0" font-size="17" font-weight="400" fill="#1b2a2f" text-anchor="end">إلكترون</text>
+<rect x="230" y="156.0" width="74.1" height="18" fill="#0e7490" fill-opacity="0.65"/>
+<text x="316.1" y="170.0" font-size="17" font-weight="400" fill="#5d7079" text-anchor="start">9.109 ×10⁻³¹</text>
+<text x="216.0" y="224.0" font-size="17" font-weight="400" fill="#1b2a2f" text-anchor="end">بروتون</text>
+<rect x="230" y="210.0" width="326.0" height="18" fill="#c2410c" fill-opacity="0.65"/>
+<text x="568.0" y="224.0" font-size="17" font-weight="400" fill="#5d7079" text-anchor="start">1.673 ×10⁻²⁷</text>
+<text x="216.0" y="278.0" font-size="17" font-weight="400" fill="#1b2a2f" text-anchor="end">نيوترون</text>
+<rect x="230" y="264.0" width="326.1" height="18" fill="#a16207" fill-opacity="0.65"/>
+<text x="568.1" y="278.0" font-size="17" font-weight="400" fill="#5d7079" text-anchor="start">1.675 ×10⁻²⁷</text>
+<text x="216.0" y="332.0" font-size="17" font-weight="400" fill="#1b2a2f" text-anchor="end">نواة الهيليوم</text>
+<rect x="230" y="318.0" width="372.3" height="18" fill="#5d7079" fill-opacity="0.65"/>
+<text x="614.3" y="332.0" font-size="17" font-weight="400" fill="#5d7079" text-anchor="start">6.645 ×10⁻²⁷</text>
+<text x="380.0" y="418.0" font-size="17" font-weight="400" fill="#5d7079" text-anchor="middle">من 10⁻³¹ إلى 10⁻²⁶ كيلوجرام · النيوترون أثقل من البروتون بـ 0.14% فقط</text>
+<text x="380.0" y="444.0" font-size="17" font-weight="400" fill="#5d7079" text-anchor="middle">الكواركات تسهم بنحو 1% من كتلة البروتون؛ والباقي طاقة ربط الغلوونات</text>
 </g></svg>

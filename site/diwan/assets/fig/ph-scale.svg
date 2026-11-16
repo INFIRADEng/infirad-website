@@ -1,51 +1,51 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="760" height="470" viewBox="0 0 760 470" role="img" aria-labelledby="t">
+<svg xmlns="http://www.w3.org/2000/svg" width="760" height="500" viewBox="0 0 760 500" role="img" aria-labelledby="t">
 <title id="t">سلّم الرقم الهيدروجيني</title>
-<rect width="760" height="470" fill="#ffffff"/>
+<rect width="760" height="500" fill="#ffffff"/>
 <g font-family="'Segoe UI', 'Noto Naskh Arabic', system-ui, sans-serif">
-<text x="380" y="32" font-size="17" font-weight="700" fill="#1b2a2f" text-anchor="middle">سلّم الرقم الهيدروجيني</text>
-<text x="380" y="56" font-size="12.5" fill="#5d7079" text-anchor="middle">pH = −log₁₀(a_H⁺)     التركيز بالمول لكل لتر</text>
-<text x="380" y="74" font-size="12" fill="#5d7079" text-anchor="middle">الارتفاع في الرسم يساوي قوة الأس — وليس التركيز نفسه</text>
-<rect x="132" y="124" width="580" height="206" fill="#ffffff" stroke="#cbd5d9" stroke-width="1"/>
-<text x="132.0" y="350.0" font-size="11.5" font-weight="400" fill="#5d7079" text-anchor="middle">0</text>
-<text x="173.4" y="350.0" font-size="11.5" font-weight="400" fill="#5d7079" text-anchor="middle">1</text>
-<text x="214.9" y="350.0" font-size="11.5" font-weight="400" fill="#5d7079" text-anchor="middle">2</text>
-<text x="256.3" y="350.0" font-size="11.5" font-weight="400" fill="#5d7079" text-anchor="middle">3</text>
-<text x="297.7" y="350.0" font-size="11.5" font-weight="400" fill="#5d7079" text-anchor="middle">4</text>
-<text x="339.1" y="350.0" font-size="11.5" font-weight="400" fill="#5d7079" text-anchor="middle">5</text>
-<text x="380.6" y="350.0" font-size="11.5" font-weight="400" fill="#5d7079" text-anchor="middle">6</text>
-<text x="422.0" y="350.0" font-size="11.5" font-weight="400" fill="#5d7079" text-anchor="middle">7</text>
-<text x="463.4" y="350.0" font-size="11.5" font-weight="400" fill="#5d7079" text-anchor="middle">8</text>
-<text x="504.9" y="350.0" font-size="11.5" font-weight="400" fill="#5d7079" text-anchor="middle">9</text>
-<text x="546.3" y="350.0" font-size="11.5" font-weight="400" fill="#5d7079" text-anchor="middle">10</text>
-<text x="587.7" y="350.0" font-size="11.5" font-weight="400" fill="#5d7079" text-anchor="middle">11</text>
-<text x="629.1" y="350.0" font-size="11.5" font-weight="400" fill="#5d7079" text-anchor="middle">12</text>
-<text x="670.6" y="350.0" font-size="11.5" font-weight="400" fill="#5d7079" text-anchor="middle">13</text>
-<text x="712.0" y="350.0" font-size="11.5" font-weight="400" fill="#5d7079" text-anchor="middle">14</text>
-<text x="422.0" y="378.0" font-size="12.5" font-weight="400" fill="#5d7079" text-anchor="middle">الرقم الهيدروجيني</text>
-<rect x="121.0" y="124.0" width="22" height="206.0" fill="#c2410c" fill-opacity="0.55"/>
-<rect x="162.4" y="138.7" width="22" height="191.3" fill="#c2410c" fill-opacity="0.55"/>
-<text x="173.4" y="126.7" font-size="11" font-weight="600" fill="#c2410c" text-anchor="middle">10⁻¹</text>
-<rect x="203.9" y="153.4" width="22" height="176.6" fill="#c2410c" fill-opacity="0.55"/>
-<rect x="245.3" y="168.1" width="22" height="161.9" fill="#c2410c" fill-opacity="0.55"/>
-<text x="256.3" y="156.1" font-size="11" font-weight="600" fill="#c2410c" text-anchor="middle">10⁻³</text>
-<rect x="286.7" y="182.9" width="22" height="147.1" fill="#c2410c" fill-opacity="0.55"/>
-<rect x="328.1" y="197.6" width="22" height="132.4" fill="#c2410c" fill-opacity="0.55"/>
-<text x="339.1" y="185.6" font-size="11" font-weight="600" fill="#c2410c" text-anchor="middle">10⁻⁵</text>
-<rect x="369.6" y="212.3" width="22" height="117.7" fill="#c2410c" fill-opacity="0.55"/>
-<rect x="411.0" y="227.0" width="22" height="103.0" fill="#a16207" fill-opacity="0.85"/>
-<text x="422.0" y="215.0" font-size="11" font-weight="600" fill="#a16207" text-anchor="middle">10⁻⁷</text>
-<rect x="452.4" y="241.7" width="22" height="88.3" fill="#0e7490" fill-opacity="0.55"/>
-<rect x="493.9" y="256.4" width="22" height="73.6" fill="#0e7490" fill-opacity="0.55"/>
-<rect x="535.3" y="271.1" width="22" height="58.9" fill="#0e7490" fill-opacity="0.55"/>
-<text x="546.3" y="259.1" font-size="11" font-weight="600" fill="#0e7490" text-anchor="middle">10⁻¹⁰</text>
-<rect x="576.7" y="285.9" width="22" height="44.1" fill="#0e7490" fill-opacity="0.55"/>
-<rect x="618.1" y="300.6" width="22" height="29.4" fill="#0e7490" fill-opacity="0.55"/>
-<rect x="659.6" y="315.3" width="22" height="14.7" fill="#0e7490" fill-opacity="0.55"/>
-<rect x="701.0" y="330.0" width="22" height="0.0" fill="#0e7490" fill-opacity="0.55"/>
-<text x="712.0" y="318.0" font-size="11" font-weight="600" fill="#0e7490" text-anchor="middle">10⁻¹⁴</text>
-<text x="256.3" y="112.0" font-size="12.5" font-weight="700" fill="#c2410c" text-anchor="middle">حمضي</text>
-<text x="422.0" y="112.0" font-size="12.5" font-weight="700" fill="#a16207" text-anchor="middle">متعادل</text>
-<text x="587.7" y="112.0" font-size="12.5" font-weight="700" fill="#0e7490" text-anchor="middle">قلوي</text>
-<text x="380.0" y="424.0" font-size="11.5" font-weight="400" fill="#5d7079" text-anchor="middle">الأسّ يزداد عشرة أضعاف لكل وحدة pH · Kw = 1.0×10⁻¹⁴ عند 25 °مئوية</text>
-<text x="380.0" y="446.0" font-size="11.5" font-weight="400" fill="#5d7079" text-anchor="middle">عند 100 °مئوية يصير التعادل عند 6.14 لا 7 — Kw يتغيّر مع الحرارة</text>
+<text x="380" y="34" font-size="18" font-weight="700" fill="#1b2a2f" text-anchor="middle">سلّم الرقم الهيدروجيني</text>
+<text x="380" y="60" font-size="17" fill="#5d7079" text-anchor="middle">pH = −log₁₀(a_H⁺)     التركيز بالمول لكل لتر</text>
+<text x="380" y="84" font-size="17" fill="#5d7079" text-anchor="middle">الارتفاع في الرسم يساوي قوة الأس — وليس التركيز نفسه</text>
+<rect x="132" y="148" width="580" height="208" fill="#ffffff" stroke="#cbd5d9" stroke-width="1"/>
+<text x="132.0" y="378.0" font-size="17" font-weight="400" fill="#5d7079" text-anchor="start">0</text>
+<text x="173.4" y="378.0" font-size="17" font-weight="400" fill="#5d7079" text-anchor="middle">1</text>
+<text x="214.9" y="378.0" font-size="17" font-weight="400" fill="#5d7079" text-anchor="middle">2</text>
+<text x="256.3" y="378.0" font-size="17" font-weight="400" fill="#5d7079" text-anchor="middle">3</text>
+<text x="297.7" y="378.0" font-size="17" font-weight="400" fill="#5d7079" text-anchor="middle">4</text>
+<text x="339.1" y="378.0" font-size="17" font-weight="400" fill="#5d7079" text-anchor="middle">5</text>
+<text x="380.6" y="378.0" font-size="17" font-weight="400" fill="#5d7079" text-anchor="middle">6</text>
+<text x="422.0" y="378.0" font-size="17" font-weight="400" fill="#5d7079" text-anchor="middle">7</text>
+<text x="463.4" y="378.0" font-size="17" font-weight="400" fill="#5d7079" text-anchor="middle">8</text>
+<text x="504.9" y="378.0" font-size="17" font-weight="400" fill="#5d7079" text-anchor="middle">9</text>
+<text x="546.3" y="378.0" font-size="17" font-weight="400" fill="#5d7079" text-anchor="middle">10</text>
+<text x="587.7" y="378.0" font-size="17" font-weight="400" fill="#5d7079" text-anchor="middle">11</text>
+<text x="629.1" y="378.0" font-size="17" font-weight="400" fill="#5d7079" text-anchor="middle">12</text>
+<text x="670.6" y="378.0" font-size="17" font-weight="400" fill="#5d7079" text-anchor="middle">13</text>
+<text x="712.0" y="378.0" font-size="17" font-weight="400" fill="#5d7079" text-anchor="end">14</text>
+<text x="422.0" y="404.0" font-size="17" font-weight="400" fill="#5d7079" text-anchor="middle">الرقم الهيدروجيني</text>
+<rect x="121.0" y="148.0" width="22" height="208.0" fill="#c2410c" fill-opacity="0.55"/>
+<rect x="162.4" y="162.9" width="22" height="193.1" fill="#c2410c" fill-opacity="0.55"/>
+<text x="173.4" y="150.9" font-size="17" font-weight="600" fill="#c2410c" text-anchor="middle">10⁻¹</text>
+<rect x="203.9" y="177.7" width="22" height="178.3" fill="#c2410c" fill-opacity="0.55"/>
+<rect x="245.3" y="192.6" width="22" height="163.4" fill="#c2410c" fill-opacity="0.55"/>
+<text x="256.3" y="180.6" font-size="17" font-weight="600" fill="#c2410c" text-anchor="middle">10⁻³</text>
+<rect x="286.7" y="207.4" width="22" height="148.6" fill="#c2410c" fill-opacity="0.55"/>
+<rect x="328.1" y="222.3" width="22" height="133.7" fill="#c2410c" fill-opacity="0.55"/>
+<text x="339.1" y="210.3" font-size="17" font-weight="600" fill="#c2410c" text-anchor="middle">10⁻⁵</text>
+<rect x="369.6" y="237.1" width="22" height="118.9" fill="#c2410c" fill-opacity="0.55"/>
+<rect x="411.0" y="252.0" width="22" height="104.0" fill="#a16207" fill-opacity="0.85"/>
+<text x="422.0" y="240.0" font-size="17" font-weight="600" fill="#a16207" text-anchor="middle">10⁻⁷</text>
+<rect x="452.4" y="266.9" width="22" height="89.1" fill="#0e7490" fill-opacity="0.55"/>
+<rect x="493.9" y="281.7" width="22" height="74.3" fill="#0e7490" fill-opacity="0.55"/>
+<rect x="535.3" y="296.6" width="22" height="59.4" fill="#0e7490" fill-opacity="0.55"/>
+<text x="546.3" y="284.6" font-size="17" font-weight="600" fill="#0e7490" text-anchor="middle">10⁻¹⁰</text>
+<rect x="576.7" y="311.4" width="22" height="44.6" fill="#0e7490" fill-opacity="0.55"/>
+<rect x="618.1" y="326.3" width="22" height="29.7" fill="#0e7490" fill-opacity="0.55"/>
+<rect x="659.6" y="341.1" width="22" height="14.9" fill="#0e7490" fill-opacity="0.55"/>
+<rect x="701.0" y="356.0" width="22" height="0.0" fill="#0e7490" fill-opacity="0.55"/>
+<text x="712.0" y="344.0" font-size="17" font-weight="600" fill="#0e7490" text-anchor="middle">10⁻¹⁴</text>
+<text x="256.3" y="136.0" font-size="17" font-weight="700" fill="#c2410c" text-anchor="middle">حمضي</text>
+<text x="422.0" y="136.0" font-size="17" font-weight="700" fill="#a16207" text-anchor="middle">متعادل</text>
+<text x="587.7" y="136.0" font-size="17" font-weight="700" fill="#0e7490" text-anchor="middle">قلوي</text>
+<text x="380.0" y="448.0" font-size="17" font-weight="400" fill="#5d7079" text-anchor="middle">الأسّ يزداد عشرة أضعاف لكل وحدة pH · Kw = 1.0×10⁻¹⁴ عند 25 °مئوية</text>
+<text x="380.0" y="474.0" font-size="17" font-weight="400" fill="#5d7079" text-anchor="middle">عند 100 °مئوية يصير التعادل عند 6.14 لا 7 — Kw يتغيّر مع الحرارة</text>
 </g></svg>
