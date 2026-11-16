@@ -7,13 +7,13 @@
 <text x="380" y="84" font-size="17" font-weight="400" fill="#5d7079" text-anchor="middle">التبخير يستهلك 72% من الطاقة الكلية</text>
 <text x="740" y="138" font-size="17" font-weight="600" fill="#1b2a2f" text-anchor="start">انصهار الجليد</text>
 <rect x="670.4" y="146" width="69.6" height="14" fill="#c2410c" fill-opacity="0.85" rx="6"/>
-<text x="662.4" y="158" font-size="17" font-weight="700" fill="#c2410c" text-anchor="end">334 كيلوجول</text>
+<text x="660.4" y="158" font-size="17" font-weight="700" fill="#1b2a2f" text-anchor="end" direction="ltr">⁨334 كيلوجول⁩</text>
 <text x="740" y="196" font-size="17" font-weight="600" fill="#1b2a2f" text-anchor="start">تسخين الماء 100 درجة</text>
 <rect x="652.8" y="204" width="87.2" height="14" fill="#0e7490" fill-opacity="0.85" rx="6"/>
-<text x="644.8" y="216" font-size="17" font-weight="700" fill="#0e7490" text-anchor="end">418.6 كيلوجول</text>
+<text x="642.8" y="216" font-size="17" font-weight="700" fill="#1b2a2f" text-anchor="end" direction="ltr">⁨418.6 كيلوجول⁩</text>
 <text x="740" y="254" font-size="17" font-weight="600" fill="#1b2a2f" text-anchor="start">تبخير الماء</text>
 <rect x="270" y="262" width="470" height="14" fill="#a16207" fill-opacity="0.85" rx="6"/>
-<text x="262" y="274" font-size="17" font-weight="700" fill="#a16207" text-anchor="end">2257 كيلوجول</text>
+<text x="260" y="274" font-size="17" font-weight="700" fill="#1b2a2f" text-anchor="end" direction="ltr">⁨2257 كيلوجول⁩</text>
 <line x1="740" y1="308" x2="270" y2="308" stroke="#cbd5d9" stroke-width="1"/>
 <text x="740" y="332" font-size="17" font-weight="400" fill="#5d7079" text-anchor="start">0</text>
 <text x="505" y="332" font-size="17" font-weight="400" fill="#5d7079" text-anchor="middle">1128.5</text>

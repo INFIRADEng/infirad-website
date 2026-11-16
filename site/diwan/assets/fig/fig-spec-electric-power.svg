@@ -43,6 +43,6 @@
 <circle cx="104" cy="176.8" r="5" fill="#1b2a2f"/>
 <text x="104" y="162.8" font-size="17" font-weight="700" fill="#1b2a2f" text-anchor="middle" stroke="#ffffff" stroke-width="4" stroke-linejoin="round" paint-order="stroke">24.8%</text>
 <text x="377" y="454" font-size="17" font-weight="400" fill="#5d7079" text-anchor="middle">جهد النقل (كيلوفولت)</text>
-<text x="90" y="108" font-size="17" font-weight="400" fill="#5d7079" text-anchor="start">الفقد (% من القدرة المنقولة)</text>
+<text x="96" y="108" font-size="17" font-weight="400" fill="#5d7079" text-anchor="start" direction="ltr">الفقد (% من القدرة المنقولة)</text>
 <text x="380" y="488" font-size="17" font-weight="400" fill="#5d7079" text-anchor="middle">المقاومة المفترضة 0.03 أوم لكل كيلومتر، والقدرة المنقولة ثابتة عند 1,000 ميغاواط</text>
 </g></svg>

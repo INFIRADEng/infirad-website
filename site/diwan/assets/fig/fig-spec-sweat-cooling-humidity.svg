@@ -33,6 +33,6 @@
 <circle cx="595.6" cy="394.6" r="5" fill="#1b2a2f"/>
 <text x="595.6" y="380.6" font-size="17" font-weight="700" fill="#1b2a2f" text-anchor="middle" stroke="#ffffff" stroke-width="4" stroke-linejoin="round" paint-order="stroke">جو رطب</text>
 <text x="377" y="454" font-size="17" font-weight="400" fill="#5d7079" text-anchor="middle">الرطوبة النسبية</text>
-<text x="90" y="108" font-size="17" font-weight="400" fill="#5d7079" text-anchor="start">قدرة التبريد النسبية</text>
+<text x="96" y="108" font-size="17" font-weight="400" fill="#5d7079" text-anchor="start" direction="ltr">قدرة التبريد النسبية</text>
 <text x="380" y="488" font-size="17" font-weight="400" fill="#5d7079" text-anchor="middle">نموذج مبسّط: فارق ضغط البخار بين جلد 34 مئوية وهواء 35 مئوية، مقيساً إلى حالة الرطوبة 10٪.</text>
 </g></svg>

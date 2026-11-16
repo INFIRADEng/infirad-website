@@ -33,6 +33,6 @@
 <circle cx="245.9" cy="311.1" r="5" fill="#1b2a2f"/>
 <text x="245.9" y="297.1" font-size="17" font-weight="700" fill="#1b2a2f" text-anchor="middle" stroke="#ffffff" stroke-width="4" stroke-linejoin="round" paint-order="stroke">بلا عزل</text>
 <text x="377" y="454" font-size="17" font-weight="400" fill="#5d7079" text-anchor="middle">المقاومة الحرارية للعزل</text>
-<text x="90" y="108" font-size="17" font-weight="400" fill="#5d7079" text-anchor="start">فقد الجدار</text>
+<text x="96" y="108" font-size="17" font-weight="400" fill="#5d7079" text-anchor="start" direction="ltr">فقد الجدار</text>
 <text x="380" y="488" font-size="17" font-weight="400" fill="#5d7079" text-anchor="middle">U = 1/(0.13 + R + 0.04)؛ الحساب في هذا الملف.</text>
 </g></svg>

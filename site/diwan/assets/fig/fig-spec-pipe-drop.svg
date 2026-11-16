@@ -29,6 +29,6 @@
 <circle cx="371.3" cy="338.7" r="5" fill="#1b2a2f"/>
 <text x="371.3" y="324.7" font-size="17" font-weight="700" fill="#1b2a2f" text-anchor="middle" stroke="#ffffff" stroke-width="4" stroke-linejoin="round" paint-order="stroke">25 ل/ث ← 99 ك.ب</text>
 <text x="377" y="454" font-size="17" font-weight="400" fill="#5d7079" text-anchor="middle">التصريف Q (لتر/ث)</text>
-<text x="90" y="108" font-size="17" font-weight="400" fill="#5d7079" text-anchor="start">هبوط الضغط (ك.ب)</text>
+<text x="96" y="108" font-size="17" font-weight="400" fill="#5d7079" text-anchor="start" direction="ltr">هبوط الضغط (ك.ب)</text>
 <text x="380" y="488" font-size="17" font-weight="400" fill="#5d7079" text-anchor="middle">الهبوط يتناسب مع مربع السرعة: مضاعفة التصريف تضاعف الهبوط أربع مرات.</text>
 </g></svg>

@@ -35,6 +35,6 @@
 <circle cx="256.6" cy="249.5" r="5" fill="#1b2a2f"/>
 <text x="256.6" y="235.5" font-size="17" font-weight="700" fill="#1b2a2f" text-anchor="middle" stroke="#ffffff" stroke-width="4" stroke-linejoin="round" paint-order="stroke">0.30 ← 255 ك (−18 °م)</text>
 <text x="377" y="454" font-size="17" font-weight="400" fill="#5d7079" text-anchor="middle">نسبة الانعكاس (albedo)</text>
-<text x="90" y="108" font-size="17" font-weight="400" fill="#5d7079" text-anchor="start">حرارة التوازن (كلفن)</text>
+<text x="96" y="108" font-size="17" font-weight="400" fill="#5d7079" text-anchor="start" direction="ltr">حرارة التوازن (كلفن)</text>
 <text x="380" y="488" font-size="17" font-weight="400" fill="#5d7079" text-anchor="middle">القيمة 255 ك لا تشمل الغلاف الجوي؛ باحتباسه الفعلي ترتفع إلى 288 ك.</text>
 </g></svg>

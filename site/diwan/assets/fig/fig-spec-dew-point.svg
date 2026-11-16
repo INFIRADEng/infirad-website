@@ -46,6 +46,6 @@
 <circle cx="306.8" cy="275.8" r="5" fill="#1b2a2f"/>
 <text x="306.8" y="261.8" font-size="17" font-weight="700" fill="#1b2a2f" text-anchor="middle" stroke="#ffffff" stroke-width="4" stroke-linejoin="round" paint-order="stroke">50% → 18.4 °م</text>
 <text x="377" y="454" font-size="17" font-weight="400" fill="#5d7079" text-anchor="middle">الرطوبة النسبية (%)</text>
-<text x="90" y="108" font-size="17" font-weight="400" fill="#5d7079" text-anchor="start">نقطة الندى °م</text>
+<text x="96" y="108" font-size="17" font-weight="400" fill="#5d7079" text-anchor="start" direction="ltr">نقطة الندى °م</text>
 <text x="380" y="488" font-size="17" font-weight="400" fill="#5d7079" text-anchor="middle">الفرق بين الحرارة ونقطة الندى يقابل نحو 6% رطوبة لكل درجة</text>
 </g></svg>

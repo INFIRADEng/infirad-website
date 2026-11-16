@@ -7,22 +7,22 @@
 <text x="380" y="84" font-size="17" font-weight="400" fill="#5d7079" text-anchor="middle">الفرق بين الماء والحديد سببه السعة الحرارية النوعية لا الكتلة</text>
 <text x="740" y="138" font-size="17" font-weight="600" fill="#1b2a2f" text-anchor="start">الماء السائل</text>
 <rect x="270" y="146" width="470" height="14" fill="#c2410c" fill-opacity="0.85" rx="6"/>
-<text x="262" y="158" font-size="17" font-weight="700" fill="#c2410c" text-anchor="end">41.86 كيلوجول</text>
+<text x="260" y="158" font-size="17" font-weight="700" fill="#1b2a2f" text-anchor="end" direction="ltr">⁨41.86 كيلوجول⁩</text>
 <text x="740" y="188" font-size="17" font-weight="600" fill="#1b2a2f" text-anchor="start">الإيثانول</text>
 <rect x="466" y="196" width="274" height="14" fill="#0e7490" fill-opacity="0.85" rx="6"/>
-<text x="458" y="208" font-size="17" font-weight="700" fill="#0e7490" text-anchor="end">24.4 كيلوجول</text>
+<text x="456" y="208" font-size="17" font-weight="700" fill="#1b2a2f" text-anchor="end" direction="ltr">⁨24.4 كيلوجول⁩</text>
 <text x="740" y="238" font-size="17" font-weight="600" fill="#1b2a2f" text-anchor="start">الجليد</text>
 <rect x="505.3" y="246" width="234.7" height="14" fill="#a16207" fill-opacity="0.85" rx="6"/>
-<text x="497.3" y="258" font-size="17" font-weight="700" fill="#a16207" text-anchor="end">20.9 كيلوجول</text>
+<text x="495.3" y="258" font-size="17" font-weight="700" fill="#1b2a2f" text-anchor="end" direction="ltr">⁨20.9 كيلوجول⁩</text>
 <text x="740" y="288" font-size="17" font-weight="600" fill="#1b2a2f" text-anchor="start">الألمنيوم</text>
 <rect x="639.3" y="296" width="100.7" height="14" fill="#1e3a5f" fill-opacity="0.85" rx="6"/>
-<text x="631.3" y="308" font-size="17" font-weight="700" fill="#1e3a5f" text-anchor="end">8.97 كيلوجول</text>
+<text x="629.3" y="308" font-size="17" font-weight="700" fill="#1b2a2f" text-anchor="end" direction="ltr">⁨8.97 كيلوجول⁩</text>
 <text x="740" y="338" font-size="17" font-weight="600" fill="#1b2a2f" text-anchor="start">الحديد</text>
 <rect x="689.6" y="346" width="50.4" height="14" fill="#0a7a4a" fill-opacity="0.85" rx="6"/>
-<text x="681.6" y="358" font-size="17" font-weight="700" fill="#0a7a4a" text-anchor="end">4.49 كيلوجول</text>
+<text x="679.6" y="358" font-size="17" font-weight="700" fill="#1b2a2f" text-anchor="end" direction="ltr">⁨4.49 كيلوجول⁩</text>
 <text x="740" y="388" font-size="17" font-weight="600" fill="#1b2a2f" text-anchor="start">النحاس</text>
 <rect x="696.8" y="396" width="43.2" height="14" fill="#7c3aed" fill-opacity="0.85" rx="6"/>
-<text x="688.8" y="408" font-size="17" font-weight="700" fill="#7c3aed" text-anchor="end">3.85 كيلوجول</text>
+<text x="686.8" y="408" font-size="17" font-weight="700" fill="#1b2a2f" text-anchor="end" direction="ltr">⁨3.85 كيلوجول⁩</text>
 <line x1="740" y1="434" x2="270" y2="434" stroke="#cbd5d9" stroke-width="1"/>
 <text x="740" y="458" font-size="17" font-weight="400" fill="#5d7079" text-anchor="start">0</text>
 <text x="505" y="458" font-size="17" font-weight="400" fill="#5d7079" text-anchor="middle">20.93</text>

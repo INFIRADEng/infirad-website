@@ -31,6 +31,6 @@
 <circle cx="377" cy="130" r="5" fill="#1b2a2f"/>
 <text x="377" y="116" font-size="17" font-weight="700" fill="#1b2a2f" text-anchor="middle" stroke="#ffffff" stroke-width="4" stroke-linejoin="round" paint-order="stroke">السرعة العظمى عند المحور</text>
 <text x="377" y="454" font-size="17" font-weight="400" fill="#5d7079" text-anchor="middle">نسبة المسافة من المحور r/R</text>
-<text x="90" y="108" font-size="17" font-weight="400" fill="#5d7079" text-anchor="start">نسبة السرعة u/u_max</text>
+<text x="96" y="108" font-size="17" font-weight="400" fill="#5d7079" text-anchor="start" direction="ltr">نسبة السرعة u/u_max</text>
 <text x="380" y="488" font-size="17" font-weight="400" fill="#5d7079" text-anchor="middle">u = 0 عند r = ±R بشرط لا-انزلاق · ميل المنحنى عند الجدار يحدد إجهاد القصّ</text>
 </g></svg>

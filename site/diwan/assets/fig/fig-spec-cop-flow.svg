@@ -7,16 +7,16 @@
 <text x="380" y="84" font-size="17" font-weight="400" fill="#5d7079" text-anchor="middle">Q_h = Q_c + W</text>
 <rect x="505" y="170" width="190" height="72" rx="8" fill="#c2410c" fill-opacity="0.12" stroke="#c2410c" stroke-width="1.5"/>
 <text x="600" y="200" font-size="17" font-weight="700" fill="#1b2a2f" text-anchor="middle">المبخّر يسحب Q_c</text>
-<text x="600" y="226" font-size="17" font-weight="600" fill="#c2410c" text-anchor="middle">⁨3 كيلوواط⁩</text>
+<text x="600" y="226" font-size="17" font-weight="600" fill="#1b2a2f" text-anchor="middle" direction="ltr">⁨3 كيلوواط⁩</text>
 <line x1="499" y1="206" x2="491" y2="206" stroke="#5d7079" stroke-width="2"/>
 <path d="M479,206 l14,-7 l0,14 z" fill="#5d7079"/>
 <rect x="285" y="170" width="190" height="72" rx="8" fill="#0e7490" fill-opacity="0.12" stroke="#0e7490" stroke-width="1.5"/>
 <text x="380" y="200" font-size="17" font-weight="700" fill="#1b2a2f" text-anchor="middle">الضاغط يضيف W</text>
-<text x="380" y="226" font-size="17" font-weight="600" fill="#0e7490" text-anchor="middle">⁨1 كيلوواط⁩</text>
+<text x="380" y="226" font-size="17" font-weight="600" fill="#1b2a2f" text-anchor="middle" direction="ltr">⁨1 كيلوواط⁩</text>
 <line x1="279" y1="206" x2="271" y2="206" stroke="#5d7079" stroke-width="2"/>
 <path d="M259,206 l14,-7 l0,14 z" fill="#5d7079"/>
 <rect x="65" y="170" width="190" height="72" rx="8" fill="#a16207" fill-opacity="0.12" stroke="#a16207" stroke-width="1.5"/>
 <text x="160" y="200" font-size="17" font-weight="700" fill="#1b2a2f" text-anchor="middle">المكثّف يطرح Q_h</text>
-<text x="160" y="226" font-size="17" font-weight="600" fill="#a16207" text-anchor="middle">⁨4 كيلوواط⁩</text>
+<text x="160" y="226" font-size="17" font-weight="600" fill="#1b2a2f" text-anchor="middle" direction="ltr">⁨4 كيلوواط⁩</text>
 <text x="380" y="284" font-size="17" font-weight="400" fill="#5d7079" text-anchor="middle">الفرق بين المعاملين واحد دائمًا، بحسب القانون الأول</text>
 </g></svg>

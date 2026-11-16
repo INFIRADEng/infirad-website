@@ -47,6 +47,6 @@
 <circle cx="377" cy="388.4" r="5" fill="#1b2a2f"/>
 <text x="377" y="374.4" font-size="17" font-weight="700" fill="#1b2a2f" text-anchor="middle" stroke="#ffffff" stroke-width="4" stroke-linejoin="round" paint-order="stroke">الفجوة الخضراء</text>
 <text x="377" y="454" font-size="17" font-weight="400" fill="#5d7079" text-anchor="middle">طول الموجة (نانومتر)</text>
-<text x="90" y="108" font-size="17" font-weight="400" fill="#5d7079" text-anchor="start">الامتصاص</text>
+<text x="96" y="108" font-size="17" font-weight="400" fill="#5d7079" text-anchor="start" direction="ltr">الامتصاص</text>
 <text x="380" y="488" font-size="17" font-weight="400" fill="#5d7079" text-anchor="middle">القياس في مذيب عضوي · داخل الورقة تزحف ذروة الأحمر إلى 680 نانومتر</text>
 </g></svg>

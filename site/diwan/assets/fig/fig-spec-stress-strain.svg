@@ -6,15 +6,15 @@
 <text x="380" y="60" font-size="17" font-weight="400" fill="#5d7079" text-anchor="middle">E = 200 غيغاباسكال · حدّ الخضوع 250 ميغاباسكال</text>
 <rect x="80" y="140" width="600" height="50" fill="#0e7490" fill-opacity="0.14" stroke="#0e7490" stroke-opacity="0.45"/>
 <text x="664" y="169" font-size="17" font-weight="700" fill="#1b2a2f" text-anchor="start">نهاية المرونة الخطية</text>
-<text x="96" y="169" font-size="17" font-weight="600" fill="#0e7490" text-anchor="end">⁨0.13 % انفعال⁩</text>
+<text x="96" y="169" font-size="17" font-weight="600" fill="#1b2a2f" text-anchor="start" direction="ltr">⁨0.13 % انفعال⁩</text>
 <rect x="80" y="196" width="600" height="50" fill="#0a7a4a" fill-opacity="0.14" stroke="#0a7a4a" stroke-opacity="0.45"/>
 <text x="664" y="225" font-size="17" font-weight="700" fill="#1b2a2f" text-anchor="start">منطقة الخضوع المسطّحة</text>
-<text x="96" y="225" font-size="17" font-weight="600" fill="#0a7a4a" text-anchor="end">⁨0.5 % انفعال⁩</text>
+<text x="96" y="225" font-size="17" font-weight="600" fill="#1b2a2f" text-anchor="start" direction="ltr">⁨0.5 % انفعال⁩</text>
 <rect x="80" y="252" width="600" height="50" fill="#a16207" fill-opacity="0.14" stroke="#a16207" stroke-opacity="0.45"/>
 <text x="664" y="281" font-size="17" font-weight="700" fill="#1b2a2f" text-anchor="start">نهاية التصلد</text>
-<text x="96" y="281" font-size="17" font-weight="600" fill="#a16207" text-anchor="end">⁨15 % انفعال⁩</text>
+<text x="96" y="281" font-size="17" font-weight="600" fill="#1b2a2f" text-anchor="start" direction="ltr">⁨15 % انفعال⁩</text>
 <rect x="80" y="308" width="600" height="50" fill="#c2410c" fill-opacity="0.14" stroke="#c2410c" stroke-opacity="0.45"/>
 <text x="664" y="337" font-size="17" font-weight="700" fill="#1b2a2f" text-anchor="start">العنق والانقطاع</text>
-<text x="96" y="337" font-size="17" font-weight="600" fill="#c2410c" text-anchor="end">⁨25 % انفعال⁩</text>
+<text x="96" y="337" font-size="17" font-weight="600" fill="#1b2a2f" text-anchor="start" direction="ltr">⁨25 % انفعال⁩</text>
 <text x="380" y="408" font-size="17" font-weight="400" fill="#5d7079" text-anchor="middle">المحور ليس زمنًا ولا إجهادًا: القيمة انفعال نهاية كل طور</text>
 </g></svg>

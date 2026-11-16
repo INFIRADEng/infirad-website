@@ -7,18 +7,18 @@
 <text x="380" y="84" font-size="17" font-weight="400" fill="#5d7079" text-anchor="middle">كلما ارتفعت الموصلية كبرت السماكة اللازمة</text>
 <rect x="80" y="140" width="600" height="50" fill="#0e7490" fill-opacity="0.14" stroke="#0e7490" stroke-opacity="0.45"/>
 <text x="664" y="169" font-size="17" font-weight="700" fill="#1b2a2f" text-anchor="start">صوف معدني · k = 0.040</text>
-<text x="96" y="169" font-size="17" font-weight="600" fill="#0e7490" text-anchor="end">⁨2 سم⁩</text>
+<text x="96" y="169" font-size="17" font-weight="600" fill="#1b2a2f" text-anchor="start" direction="ltr">⁨2 سم⁩</text>
 <rect x="80" y="196" width="600" height="50" fill="#a16207" fill-opacity="0.14" stroke="#a16207" stroke-opacity="0.45"/>
 <text x="664" y="225" font-size="17" font-weight="700" fill="#1b2a2f" text-anchor="start">ماء سائل · k = 0.60</text>
-<text x="96" y="225" font-size="17" font-weight="600" fill="#a16207" text-anchor="end">⁨30 سم⁩</text>
+<text x="96" y="225" font-size="17" font-weight="600" fill="#1b2a2f" text-anchor="start" direction="ltr">⁨30 سم⁩</text>
 <rect x="80" y="252" width="600" height="50" fill="#b91c1c" fill-opacity="0.14" stroke="#b91c1c" stroke-opacity="0.45"/>
 <text x="664" y="281" font-size="17" font-weight="700" fill="#1b2a2f" text-anchor="start">طوب مصمت · k = 0.72</text>
-<text x="96" y="281" font-size="17" font-weight="600" fill="#b91c1c" text-anchor="end">⁨36 سم⁩</text>
+<text x="96" y="281" font-size="17" font-weight="600" fill="#1b2a2f" text-anchor="start" direction="ltr">⁨36 سم⁩</text>
 <rect x="80" y="308" width="600" height="50" fill="#c2410c" fill-opacity="0.14" stroke="#c2410c" stroke-opacity="0.45"/>
 <text x="664" y="337" font-size="17" font-weight="700" fill="#1b2a2f" text-anchor="start">خرسانة · k = 1.70</text>
-<text x="96" y="337" font-size="17" font-weight="600" fill="#c2410c" text-anchor="end">⁨85 سم⁩</text>
+<text x="96" y="337" font-size="17" font-weight="600" fill="#1b2a2f" text-anchor="start" direction="ltr">⁨85 سم⁩</text>
 <rect x="80" y="364" width="600" height="50" fill="#5d7079" fill-opacity="0.14" stroke="#5d7079" stroke-opacity="0.45"/>
 <text x="664" y="393" font-size="17" font-weight="700" fill="#1b2a2f" text-anchor="start">فولاذ كربوني · k = 54</text>
-<text x="96" y="393" font-size="17" font-weight="600" fill="#5d7079" text-anchor="end">⁨2700 سم⁩</text>
+<text x="96" y="393" font-size="17" font-weight="600" fill="#1b2a2f" text-anchor="start" direction="ltr">⁨2700 سم⁩</text>
 <text x="380" y="464" font-size="17" font-weight="400" fill="#5d7079" text-anchor="middle">1 سم = 10 مم · الهواء 0.026 W/(m·K) محتجز في المسام لمنع الحمل</text>
 </g></svg>

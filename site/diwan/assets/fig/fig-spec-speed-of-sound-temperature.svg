@@ -27,6 +27,6 @@
 <line x1="96" y1="400" x2="658" y2="400" stroke="#1b2a2f" stroke-width="1.5"/>
 <path d="M96,323.7 L236.5,283.2 L377,243.4 L517.5,204.3 L658,165.8" fill="none" stroke="#c2410c" stroke-width="2.5" stroke-linejoin="round"/>
 <text x="377" y="454" font-size="17" font-weight="400" fill="#5d7079" text-anchor="middle">حرارة الهواء (°م)</text>
-<text x="90" y="108" font-size="17" font-weight="400" fill="#5d7079" text-anchor="start">سرعة الصوت (م/ث)</text>
+<text x="96" y="108" font-size="17" font-weight="400" fill="#5d7079" text-anchor="start" direction="ltr">سرعة الصوت (م/ث)</text>
 <text x="380" y="488" font-size="17" font-weight="400" fill="#5d7079" text-anchor="middle">سطح البحر، هواء جافّ، رطوبة صفرية.</text>
 </g></svg>

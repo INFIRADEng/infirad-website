@@ -5,10 +5,10 @@
 <text x="380" y="34" font-size="18" font-weight="700" fill="#1b2a2f" text-anchor="middle">كثافة الماء والجليد: الفارق الذي يجعل الجليد يطفو</text>
 <text x="740" y="138" font-size="17" font-weight="600" fill="#1b2a2f" text-anchor="start">ماء 20 °م</text>
 <rect x="270" y="146" width="470" height="14" fill="#c2410c" fill-opacity="0.85" rx="6"/>
-<text x="262" y="158" font-size="17" font-weight="700" fill="#c2410c" text-anchor="end">998.2 kg/m³</text>
+<text x="260" y="158" font-size="17" font-weight="700" fill="#1b2a2f" text-anchor="end" direction="ltr">⁨998.2 kg/m³⁩</text>
 <text x="740" y="196" font-size="17" font-weight="600" fill="#1b2a2f" text-anchor="start">جليد 0 °م</text>
 <rect x="308.3" y="204" width="431.7" height="14" fill="#0e7490" fill-opacity="0.85" rx="6"/>
-<text x="300.3" y="216" font-size="17" font-weight="700" fill="#0e7490" text-anchor="end">916.8 kg/m³</text>
+<text x="298.3" y="216" font-size="17" font-weight="700" fill="#1b2a2f" text-anchor="end" direction="ltr">⁨916.8 kg/m³⁩</text>
 <line x1="740" y1="250" x2="270" y2="250" stroke="#cbd5d9" stroke-width="1"/>
 <text x="740" y="274" font-size="17" font-weight="400" fill="#5d7079" text-anchor="start">0</text>
 <text x="505" y="274" font-size="17" font-weight="400" fill="#5d7079" text-anchor="middle">499.1</text>

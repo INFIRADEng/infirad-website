@@ -41,6 +41,6 @@
 <circle cx="555.8" cy="239.7" r="5" fill="#1b2a2f"/>
 <text x="555.8" y="225.7" font-size="17" font-weight="700" fill="#1b2a2f" text-anchor="middle" stroke="#ffffff" stroke-width="4" stroke-linejoin="round" paint-order="stroke">8.31 ميغاواط</text>
 <text x="377" y="454" font-size="17" font-weight="400" fill="#5d7079" text-anchor="middle">سرعة الرياح (متر/ثانية)</text>
-<text x="90" y="108" font-size="17" font-weight="400" fill="#5d7079" text-anchor="start">القدرة (ميغاواط)</text>
+<text x="96" y="108" font-size="17" font-weight="400" fill="#5d7079" text-anchor="start" direction="ltr">القدرة (ميغاواط)</text>
 <text x="380" y="488" font-size="17" font-weight="400" fill="#5d7079" text-anchor="middle">من 10 إلى 12 مترًا في الثانية تزيد السرعة 20% وتزيد القدرة 73%، لأن 1.2³ = 1.728</text>
 </g></svg>

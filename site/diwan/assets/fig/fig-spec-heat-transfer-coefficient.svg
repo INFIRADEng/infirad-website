@@ -41,6 +41,6 @@
 <circle cx="283.3" cy="261.2" r="5" fill="#1b2a2f"/>
 <text x="283.3" y="247.2" font-size="17" font-weight="700" fill="#1b2a2f" text-anchor="middle" stroke="#ffffff" stroke-width="4" stroke-linejoin="round" paint-order="stroke">2 م/ث → 7,200</text>
 <text x="377" y="454" font-size="17" font-weight="400" fill="#5d7079" text-anchor="middle">سرعة الماء (م/ث)</text>
-<text x="90" y="108" font-size="17" font-weight="400" fill="#5d7079" text-anchor="start">معامل انتقال الحرارة (W/m²·K)</text>
+<text x="96" y="108" font-size="17" font-weight="400" fill="#5d7079" text-anchor="start" direction="ltr">معامل انتقال الحرارة (W/m²·K)</text>
 <text x="380" y="488" font-size="17" font-weight="400" fill="#5d7079" text-anchor="middle">الأس 0.8 يجعل مضاعفة السرعة ترفع h نحو 1.74 مرة لا مرتين</text>
 </g></svg>

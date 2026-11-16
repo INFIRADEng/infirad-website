@@ -31,6 +31,6 @@
 <circle cx="365.5" cy="389.1" r="5" fill="#1b2a2f"/>
 <text x="365.5" y="375.1" font-size="17" font-weight="700" fill="#1b2a2f" text-anchor="middle" stroke="#ffffff" stroke-width="4" stroke-linejoin="round" paint-order="stroke">24.5 ل ← 101.3 ك.ب</text>
 <text x="377" y="454" font-size="17" font-weight="400" fill="#5d7079" text-anchor="middle">الحجم V (لتر)</text>
-<text x="90" y="108" font-size="17" font-weight="400" fill="#5d7079" text-anchor="start">الضغط P (كيلوباسكال)</text>
+<text x="96" y="108" font-size="17" font-weight="400" fill="#5d7079" text-anchor="start" direction="ltr">الضغط P (كيلوباسكال)</text>
 <text x="380" y="488" font-size="17" font-weight="400" fill="#5d7079" text-anchor="middle">العلاقة عكسية: تنصيف الحجم يضاعف الضغط عند ثبات الحرارة.</text>
 </g></svg>

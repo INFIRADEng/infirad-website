@@ -33,6 +33,6 @@
 <circle cx="320.8" cy="150.2" r="5" fill="#1b2a2f"/>
 <text x="320.8" y="136.2" font-size="17" font-weight="700" fill="#1b2a2f" text-anchor="middle" stroke="#ffffff" stroke-width="4" stroke-linejoin="round" paint-order="stroke">أعلى كثافة</text>
 <text x="377" y="454" font-size="17" font-weight="400" fill="#5d7079" text-anchor="middle">حرارة الماء</text>
-<text x="90" y="108" font-size="17" font-weight="400" fill="#5d7079" text-anchor="start">الكثافة</text>
+<text x="96" y="108" font-size="17" font-weight="400" fill="#5d7079" text-anchor="start" direction="ltr">الكثافة</text>
 <text x="380" y="488" font-size="17" font-weight="400" fill="#5d7079" text-anchor="middle">قيم جدولية لماء نقي عند ضغط جوي.</text>
 </g></svg>

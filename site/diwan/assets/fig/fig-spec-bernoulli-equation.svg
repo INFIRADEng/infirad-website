@@ -37,6 +37,6 @@
 <circle cx="658" cy="132.7" r="5" fill="#1b2a2f"/>
 <text x="658" y="118.7" font-size="17" font-weight="700" fill="#1b2a2f" text-anchor="middle" stroke="#ffffff" stroke-width="4" stroke-linejoin="round" paint-order="stroke">5 م → 9.90 م/ث</text>
 <text x="377" y="454" font-size="17" font-weight="400" fill="#5d7079" text-anchor="middle">فرق المنسوب h (متر)</text>
-<text x="90" y="108" font-size="17" font-weight="400" fill="#5d7079" text-anchor="start">سرعة الخروج (م/ث)</text>
+<text x="96" y="108" font-size="17" font-weight="400" fill="#5d7079" text-anchor="start" direction="ltr">سرعة الخروج (م/ث)</text>
 <text x="380" y="488" font-size="17" font-weight="400" fill="#5d7079" text-anchor="middle">في الأنبوب الحقيقي تُخصم خسائر الاحتكاك من هذه السرعة</text>
 </g></svg>

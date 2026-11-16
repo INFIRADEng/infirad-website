@@ -39,6 +39,6 @@
 <circle cx="517.5" cy="321.9" r="5" fill="#1b2a2f"/>
 <text x="517.5" y="307.9" font-size="17" font-weight="700" fill="#1b2a2f" text-anchor="middle" stroke="#ffffff" stroke-width="4" stroke-linejoin="round" paint-order="stroke">انخفاض 26%</text>
 <text x="377" y="454" font-size="17" font-weight="400" fill="#5d7079" text-anchor="middle">الارتفاع (متر)</text>
-<text x="90" y="108" font-size="17" font-weight="400" fill="#5d7079" text-anchor="start">كثافة الهواء (كغ/م³)</text>
+<text x="96" y="108" font-size="17" font-weight="400" fill="#5d7079" text-anchor="start" direction="ltr">كثافة الهواء (كغ/م³)</text>
 <text x="380" y="488" font-size="17" font-weight="400" fill="#5d7079" text-anchor="middle">الجو القياسي الدولي: انحدار 6.5 كلفن/كم وضغط 101.325 كيلوباسكال عند البحر.</text>
 </g></svg>

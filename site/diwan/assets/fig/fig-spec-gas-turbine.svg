@@ -7,20 +7,20 @@
 <text x="380" y="84" font-size="17" font-weight="400" fill="#5d7079" text-anchor="middle">الحرارة ترتفع بالانضغاط لا بالوقود أولًا</text>
 <rect x="415" y="170" width="220" height="72" rx="8" fill="#c2410c" fill-opacity="0.12" stroke="#c2410c" stroke-width="1.5"/>
 <text x="525" y="200" font-size="17" font-weight="700" fill="#1b2a2f" text-anchor="middle">سحب الهواء</text>
-<text x="525" y="226" font-size="17" font-weight="600" fill="#c2410c" text-anchor="middle">⁨15 °م⁩</text>
+<text x="525" y="226" font-size="17" font-weight="600" fill="#1b2a2f" text-anchor="middle" direction="ltr">⁨15 °م⁩</text>
 <line x1="409" y1="206" x2="361" y2="206" stroke="#5d7079" stroke-width="2"/>
 <path d="M349,206 l14,-7 l0,14 z" fill="#5d7079"/>
 <rect x="125" y="170" width="220" height="72" rx="8" fill="#0e7490" fill-opacity="0.12" stroke="#0e7490" stroke-width="1.5"/>
 <text x="235" y="200" font-size="17" font-weight="700" fill="#1b2a2f" text-anchor="middle">انضغاط 18:1</text>
-<text x="235" y="226" font-size="17" font-weight="600" fill="#0e7490" text-anchor="middle">⁨385 °م⁩</text>
+<text x="235" y="226" font-size="17" font-weight="600" fill="#1b2a2f" text-anchor="middle" direction="ltr">⁨385 °م⁩</text>
 <rect x="415" y="320" width="220" height="72" rx="8" fill="#a16207" fill-opacity="0.12" stroke="#a16207" stroke-width="1.5"/>
 <text x="525" y="350" font-size="17" font-weight="700" fill="#1b2a2f" text-anchor="middle">احتراق عند ضغط ثابت</text>
-<text x="525" y="376" font-size="17" font-weight="600" fill="#a16207" text-anchor="middle">⁨1450 °م⁩</text>
+<text x="525" y="376" font-size="17" font-weight="600" fill="#1b2a2f" text-anchor="middle" direction="ltr">⁨1450 °م⁩</text>
 <line x1="409" y1="356" x2="361" y2="356" stroke="#5d7079" stroke-width="2"/>
 <path d="M349,356 l14,-7 l0,14 z" fill="#5d7079"/>
 <rect x="125" y="320" width="220" height="72" rx="8" fill="#1e3a5f" fill-opacity="0.12" stroke="#1e3a5f" stroke-width="1.5"/>
 <text x="235" y="350" font-size="17" font-weight="700" fill="#1b2a2f" text-anchor="middle">تمدّد وعادم</text>
-<text x="235" y="376" font-size="17" font-weight="600" fill="#1e3a5f" text-anchor="middle">⁨481 °م⁩</text>
+<text x="235" y="376" font-size="17" font-weight="600" fill="#1b2a2f" text-anchor="middle" direction="ltr">⁨481 °م⁩</text>
 <path d="M235,246 V281 H525 V302" fill="none" stroke="#5d7079" stroke-width="2"/>
 <path d="M525,316 l-7,-13 l14,0 z" fill="#5d7079"/>
 <text x="380" y="434" font-size="17" font-weight="400" fill="#5d7079" text-anchor="middle">الكفاءة المثالية 1 − 1/18^0.286 = 56% قبل فاقد الاحتراق والتبريد</text>

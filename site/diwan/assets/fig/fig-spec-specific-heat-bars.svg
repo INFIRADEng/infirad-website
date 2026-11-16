@@ -7,25 +7,25 @@
 <text x="380" y="84" font-size="17" font-weight="400" fill="#5d7079" text-anchor="middle">الماء 10.9 أضعاف النحاس</text>
 <text x="740" y="138" font-size="17" font-weight="600" fill="#1b2a2f" text-anchor="start">الماء السائل</text>
 <rect x="270" y="146" width="470" height="14" fill="#c2410c" fill-opacity="0.85" rx="6"/>
-<text x="262" y="158" font-size="17" font-weight="700" fill="#c2410c" text-anchor="end">4186 جول/(كغ·كلفن)</text>
+<text x="260" y="158" font-size="17" font-weight="700" fill="#1b2a2f" text-anchor="end" direction="ltr">⁨4186 جول/(كغ·كلفن)⁩</text>
 <text x="740" y="180.9" font-size="17" font-weight="600" fill="#1b2a2f" text-anchor="start">الإيثانول</text>
 <rect x="466" y="188.9" width="274" height="14" fill="#0e7490" fill-opacity="0.85" rx="6"/>
-<text x="458" y="200.9" font-size="17" font-weight="700" fill="#0e7490" text-anchor="end">2440 جول/(كغ·كلفن)</text>
+<text x="456" y="200.9" font-size="17" font-weight="700" fill="#1b2a2f" text-anchor="end" direction="ltr">⁨2440 جول/(كغ·كلفن)⁩</text>
 <text x="740" y="223.7" font-size="17" font-weight="600" fill="#1b2a2f" text-anchor="start">الجليد</text>
 <rect x="505.3" y="231.7" width="234.7" height="14" fill="#a16207" fill-opacity="0.85" rx="6"/>
-<text x="497.3" y="243.7" font-size="17" font-weight="700" fill="#a16207" text-anchor="end">2090 جول/(كغ·كلفن)</text>
+<text x="495.3" y="243.7" font-size="17" font-weight="700" fill="#1b2a2f" text-anchor="end" direction="ltr">⁨2090 جول/(كغ·كلفن)⁩</text>
 <text x="740" y="266.6" font-size="17" font-weight="600" fill="#1b2a2f" text-anchor="start">الهواء الجاف</text>
 <rect x="627.2" y="274.6" width="112.8" height="14" fill="#1e3a5f" fill-opacity="0.85" rx="6"/>
-<text x="619.2" y="286.6" font-size="17" font-weight="700" fill="#1e3a5f" text-anchor="end">1005 جول/(كغ·كلفن)</text>
+<text x="617.2" y="286.6" font-size="17" font-weight="700" fill="#1b2a2f" text-anchor="end" direction="ltr">⁨1005 جول/(كغ·كلفن)⁩</text>
 <text x="740" y="309.4" font-size="17" font-weight="600" fill="#1b2a2f" text-anchor="start">الألمنيوم</text>
 <rect x="639.3" y="317.4" width="100.7" height="14" fill="#0a7a4a" fill-opacity="0.85" rx="6"/>
-<text x="631.3" y="329.4" font-size="17" font-weight="700" fill="#0a7a4a" text-anchor="end">897 جول/(كغ·كلفن)</text>
+<text x="629.3" y="329.4" font-size="17" font-weight="700" fill="#1b2a2f" text-anchor="end" direction="ltr">⁨897 جول/(كغ·كلفن)⁩</text>
 <text x="740" y="352.3" font-size="17" font-weight="600" fill="#1b2a2f" text-anchor="start">الفولاذ</text>
 <rect x="685" y="360.3" width="55" height="14" fill="#7c3aed" fill-opacity="0.85" rx="6"/>
-<text x="677" y="372.3" font-size="17" font-weight="700" fill="#7c3aed" text-anchor="end">490 جول/(كغ·كلفن)</text>
+<text x="675" y="372.3" font-size="17" font-weight="700" fill="#1b2a2f" text-anchor="end" direction="ltr">⁨490 جول/(كغ·كلفن)⁩</text>
 <text x="740" y="395.1" font-size="17" font-weight="600" fill="#1b2a2f" text-anchor="start">النحاس</text>
 <rect x="696.8" y="403.1" width="43.2" height="14" fill="#c2410c" fill-opacity="0.85" rx="6"/>
-<text x="688.8" y="415.1" font-size="17" font-weight="700" fill="#c2410c" text-anchor="end">385 جول/(كغ·كلفن)</text>
+<text x="686.8" y="415.1" font-size="17" font-weight="700" fill="#1b2a2f" text-anchor="end" direction="ltr">⁨385 جول/(كغ·كلفن)⁩</text>
 <line x1="740" y1="434" x2="270" y2="434" stroke="#cbd5d9" stroke-width="1"/>
 <text x="740" y="458" font-size="17" font-weight="400" fill="#5d7079" text-anchor="start">0</text>
 <text x="505" y="458" font-size="17" font-weight="400" fill="#5d7079" text-anchor="middle">2093</text>

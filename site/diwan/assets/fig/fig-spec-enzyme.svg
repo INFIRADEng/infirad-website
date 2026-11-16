@@ -30,6 +30,6 @@
 <circle cx="377" cy="396.8" r="5" fill="#1b2a2f"/>
 <text x="377" y="382.8" font-size="17" font-weight="700" fill="#1b2a2f" text-anchor="middle" stroke="#ffffff" stroke-width="4" stroke-linejoin="round" paint-order="stroke">48 مرة</text>
 <text x="377" y="454" font-size="17" font-weight="400" fill="#5d7079" text-anchor="middle">خفض طاقة التنشيط (كيلوجول/مول)</text>
-<text x="90" y="108" font-size="17" font-weight="400" fill="#5d7079" text-anchor="start">المضاعف</text>
+<text x="96" y="108" font-size="17" font-weight="400" fill="#5d7079" text-anchor="start" direction="ltr">المضاعف</text>
 <text x="380" y="488" font-size="17" font-weight="400" fill="#5d7079" text-anchor="middle">خفض 20 كيلوجول/مول يرفع السرعة 2343 مرة</text>
 </g></svg>

@@ -49,6 +49,6 @@
 <circle cx="517.5" cy="257.2" r="5" fill="#1b2a2f"/>
 <text x="517.5" y="243.2" font-size="17" font-weight="700" fill="#1b2a2f" text-anchor="middle" stroke="#ffffff" stroke-width="4" stroke-linejoin="round" paint-order="stroke">211 J</text>
 <text x="377" y="454" font-size="17" font-weight="400" fill="#5d7079" text-anchor="middle">الجهد بين اللوحين (فولت)</text>
-<text x="90" y="108" font-size="17" font-weight="400" fill="#5d7079" text-anchor="start">الطاقة المخزنة (جول)</text>
+<text x="96" y="108" font-size="17" font-weight="400" fill="#5d7079" text-anchor="start" direction="ltr">الطاقة المخزنة (جول)</text>
 <text x="380" y="488" font-size="17" font-weight="400" fill="#5d7079" text-anchor="middle">النقط محسوبة من E = ½·C·V² عند سعة 4,700 ميكروفراد</text>
 </g></svg>

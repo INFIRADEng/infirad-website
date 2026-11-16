@@ -33,6 +33,6 @@
 <circle cx="377" cy="231.3" r="5" fill="#1b2a2f"/>
 <text x="377" y="217.3" font-size="17" font-weight="700" fill="#1b2a2f" text-anchor="middle" stroke="#ffffff" stroke-width="4" stroke-linejoin="round" paint-order="stroke">800 K → 62.5%</text>
 <text x="377" y="454" font-size="17" font-weight="400" fill="#5d7079" text-anchor="middle">درجة المصدر الساخن (كلفن)</text>
-<text x="90" y="108" font-size="17" font-weight="400" fill="#5d7079" text-anchor="start">الكفاءة (%)</text>
+<text x="96" y="108" font-size="17" font-weight="400" fill="#5d7079" text-anchor="start" direction="ltr">الكفاءة (%)</text>
 <text x="380" y="488" font-size="17" font-weight="400" fill="#5d7079" text-anchor="middle">الكفاءة تقترب من 100% فقط عند اقتراب Tc من الصفر المطلق</text>
 </g></svg>
