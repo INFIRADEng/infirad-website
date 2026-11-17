@@ -3,8 +3,8 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>نضج الخرسانة يُقاس بالزمن مضروبًا في الحرارة — ديوان المعرفة</title>
-  <meta name="description" content="خرسانة في 30 مئوية تكتسب في أسبوع ما تكتسبه أخرى في 20 مئوية في عشرة أيام ونصف. طريقة النضج تحوّل منحنى القوة إلى رقم واحد: (الحرارة − عتبة) × الساعات." />
+  <title>كيف نُقدّر مقاومة الخرسانة من سجل حرارتها؟ — ديوان المعرفة</title>
+  <meta name="description" content="يجمع مؤشر النضج أثر الزمن ودرجة حرارة الخرسانة أثناء المعالجة. وبعد معايرته للخلطة باختبارات مقاومة، يساعد على تقدير تطور مقاومتها في الموقع." />
   <link rel="stylesheet" href="../assets/css/tokens.css" />
   <link rel="stylesheet" href="../assets/css/site.css" />
 
@@ -12,7 +12,7 @@
   <link rel="icon" href="https://infiradev.com/favicon.ico" sizes="48x48" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://infiradev.com/assets/favicon-192.png" />
   <link rel="apple-touch-icon" href="https://infiradev.com/assets/apple-touch-icon.png" />
-  <script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"Organization","@id":"https://infiradev.com/#organization","name":"INFIRAD","alternateName":["انفِراد","انفراد"],"url":"https://infiradev.com/","logo":{"@type":"ImageObject","url":"https://infiradev.com/assets/logo-bilingual.png","width":990,"height":320},"slogan":"من الفكرة إلى اليقين","foundingDate":"2025","email":"info@infiradeng.com","telephone":"+966557748982","address":{"@type":"PostalAddress","addressLocality":"Riyadh","addressCountry":"SA"},"sameAs":["https://www.linkedin.com/company/infirad/"],"knowsAbout":["Engineering services","Engineering Services Provider (ESP)","Process design","Process simulation","Computational fluid dynamics","Thermal analysis","Independent engineering review","Specialized AI agents","Workflow automation","Traffic simulation"]},{"@type":"WebPage","@id":"https://infiradev.com/diwan/articles/concrete-maturity-method.html#webpage","url":"https://infiradev.com/diwan/articles/concrete-maturity-method.html","name":"نضج الخرسانة يُقاس بالزمن مضروبًا في الحرارة — ديوان المعرفة","description":"خرسانة في 30 مئوية تكتسب في أسبوع ما تكتسبه أخرى في 20 مئوية في عشرة أيام ونصف. طريقة النضج تحوّل منحنى القوة إلى رقم واحد: (الحرارة − عتبة) × الساعات.","inLanguage":"ar","isPartOf":{"@id":"https://infiradev.com/#website"},"about":{"@id":"https://infiradev.com/#organization"}},{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"انفراد","item":"https://infiradev.com/"},{"@type":"ListItem","position":2,"name":"ديوان المعرفة","item":"https://infiradev.com/diwan/"},{"@type":"ListItem","position":3,"name":"نضج الخرسانة يُقاس بالزمن مضروبًا في الحرارة — ديوان المعرفة","item":"https://infiradev.com/diwan/articles/concrete-maturity-method.html"}]}]}</script>
+  <script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"Organization","@id":"https://infiradev.com/#organization","name":"INFIRAD","alternateName":["انفِراد","انفراد"],"url":"https://infiradev.com/","logo":{"@type":"ImageObject","url":"https://infiradev.com/assets/logo-bilingual.png","width":990,"height":320},"slogan":"من الفكرة إلى اليقين","foundingDate":"2025","email":"info@infiradeng.com","telephone":"+966557748982","address":{"@type":"PostalAddress","addressLocality":"Riyadh","addressCountry":"SA"},"sameAs":["https://www.linkedin.com/company/infirad/"],"knowsAbout":["Engineering services","Engineering Services Provider (ESP)","Process design","Process simulation","Computational fluid dynamics","Thermal analysis","Independent engineering review","Specialized AI agents","Workflow automation","Traffic simulation"]},{"@type":"WebPage","@id":"https://infiradev.com/diwan/articles/concrete-maturity-method.html#webpage","url":"https://infiradev.com/diwan/articles/concrete-maturity-method.html","name":"كيف نُقدّر مقاومة الخرسانة من سجل حرارتها؟ — ديوان المعرفة","description":"يجمع مؤشر النضج أثر الزمن ودرجة حرارة الخرسانة أثناء المعالجة. وبعد معايرته للخلطة باختبارات مقاومة، يساعد على تقدير تطور مقاومتها في الموقع.","inLanguage":"ar","isPartOf":{"@id":"https://infiradev.com/#website"},"about":{"@id":"https://infiradev.com/#organization"}},{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"انفراد","item":"https://infiradev.com/"},{"@type":"ListItem","position":2,"name":"ديوان المعرفة","item":"https://infiradev.com/diwan/"},{"@type":"ListItem","position":3,"name":"كيف نُقدّر مقاومة الخرسانة من سجل حرارتها؟ — ديوان المعرفة","item":"https://infiradev.com/diwan/articles/concrete-maturity-method.html"}]}]}</script>
 </head>
 <body>
 <a class="skip" href="#main">انتقل إلى المحتوى</a>
@@ -36,25 +36,21 @@
 <article class="wrap article">
   <a class="backlink" href="../articles/" data-back data-label="المقالات"><svg class="backlink-i" viewBox="0 0 24 24" width="18" height="18" aria-hidden="true" focusable="false"><path d="M9 5l7 7-7 7" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg><span>رجوع إلى المقالات</span></a>
   <nav class="crumbs" aria-label="المسار"><a href="../articles/">مقالات</a> · <a href="../domains/engineering.html">الهندسة</a></nav>
-  <h1 class="page-h">نضج الخرسانة يُقاس بالزمن مضروبًا في الحرارة</h1>
+  <h1 class="page-h">كيف نُقدّر مقاومة الخرسانة من سجل حرارتها؟</h1>
   <p class="term-en" dir="ltr">Concrete maturity: time multiplied by temperature</p>
-  <p class="definition">خرسانة في 30 مئوية تكتسب في أسبوع ما تكتسبه أخرى في 20 مئوية في عشرة أيام ونصف. طريقة النضج تحوّل منحنى القوة إلى رقم واحد: (الحرارة − عتبة) × الساعات.</p>
+  <p class="definition">يجمع مؤشر النضج أثر الزمن ودرجة حرارة الخرسانة أثناء المعالجة. وبعد معايرته للخلطة باختبارات مقاومة، يساعد على تقدير تطور مقاومتها في الموقع.</p>
   <div class="prose"><p>قوة الخرسانة لا تنمو بالساعة وحدها بل بالتفاعل الكيميائي، وهو أسرع في الدفء وأبطأ في البرد. تحت عتبة نحو 10 درجات مئوية تحت الصفر يتوقف التفاعل عمليًا، وفوقها يتراكم «نضج» يمكن مقارنته بين صبّتين مختلفتين. بهذا يمكن فكّ الشدّة قبل الموعد التقويمي حين يكون الجو حارًّا، وإبقاؤها أطول حين يبرد.</p></div>
   <div class="depth" aria-label="شرح معمّق"><section class="depth-sec">
-    <h2>الآلية</h2>
-    <p class="depth-hint muted small">كيف يحدث الأمر على مستوى الجسيمات أو المتغيّرات المباشرة</p>
+    <h2>كيف تعمل الظاهرة؟</h2>
     <p>الإماهة تُستهلك فيها المياه مع الأسمنت لتُبنى منتجات تُلصق الحصى. معدّل الإماهة يتبع حرارة الخلطة نفسها لا حرارة الهواء، وحرارة الخلطة تنتج من حرارة الصبّ وحرارة الإماهة المتولّدة داخليًا. المقطع السميك يسخن من داخله فينضج أسرع من سطحه، ولهذا تُؤخذ القراءة من أكثر من نقطة.</p>
   </section><section class="depth-sec">
-    <h2>الأرقام والوحدات</h2>
-    <p class="depth-hint muted small">العلاقات والوحدات والنطاقات العددية التي تسند الشرح</p>
+    <h2>العلاقة بالأرقام</h2>
     <p>النضج = (T − T₀) × Δt عند T₀ = −10 مئوية. أسبوع واحد: عند 10 مئوية يُنتج 3,360 درجة·ساعة، وعند 20 يُنتج 5,040، وعند 30 يُنتج 6,720، وعند 40 يُنتج 8,400. لبلوغ 5,040 درجة·ساعة يكفي 5 أيام عند 30 مئوية، أو 10.5 يوم عند 10 مئوية — فرق يقصّر الجدول الزمني أو يمنع فكّ شدّة مبكرًا.</p>
   </section><section class="depth-sec">
-    <h2>الفرق الدقيق</h2>
-    <p class="depth-hint muted small">المفهوم الملتبس الذي يُخلَط به، وأين ينفصلان</p>
+    <h2>مفاهيم متقاربة</h2>
     <p>النضج مؤشر تقدّم لا شهادة قوة: الرقم يقول إن الخلطة تفاعلت بقدر خلطة مرجعية، ولا يقول إن القوة المطلوبة تحققت إلا بمقارنة مع منحنى معاير لنفس التركيبة. خلطتان بتركيبتين مختلفتين ورقم نضج واحد لا تعنيان القوة نفسها.</p>
   </section><section class="depth-sec">
-    <h2>حدود التعريف</h2>
-    <p class="depth-hint muted small">أين ينكسر التعريف أو النموذج وما الذي لا يفسّره</p>
+    <h2>حدود التطبيق</h2>
     <p>الطريقة لا تصلح للصبّ في البرد الشديد إلا بنموذج أدقّ يأخذ الحرارة الفعّالة، ولا تصلح حين تجفّ الخرسانة أو تتجمّد. وتحتاج سجل حرارة موزّعًا لا متوسطًا: سطح بارد ونواة ساخنة يعطيان رقمًا مضلّلًا لو اكتُفي بمتوسط.</p>
   </section></div>
   <section class="figures" aria-label="الرسوم التوضيحية">
@@ -105,7 +101,7 @@
       <span class="muted small">· اطُّلع عليه 2026-11-16</span></span>
     </li></ol>
 </section>
-  <p class="reviewline muted small">راجعه: مراجعة آلية — ديوان المعرفة (أرقام محسوبة + مصادر متحققة) 2026-11-16 · 2026-11-16 · آخر تحديث 2026-11-16</p>
+  <p class="reviewline muted small">راجعه: مراجعة آلية — ديوان المعرفة (أرقام محسوبة + مصادر متحققة) 2026-11-16 · 2026-11-16 · آخر تحديث 2026-11-17</p>
   <a class="backlink backlink-end" href="../articles/" data-back data-label="المقالات"><svg class="backlink-i" viewBox="0 0 24 24" width="18" height="18" aria-hidden="true" focusable="false"><path d="M9 5l7 7-7 7" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg><span>رجوع إلى المقالات</span></a>
 </article>
 </main>

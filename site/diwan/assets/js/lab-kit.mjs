@@ -28,19 +28,16 @@ function controlHtml(c) {
   const step = c.step ?? 1;
   const value = c.value ?? from;
   const unit = c.unit ? ` <span class="u">${c.unit}</span>` : "";
-  const shown = c.options
-    ? (c.options.find((o) => o.value === value) ?? c.options[0]).label_ar
-    : `${fmt(value, c.decimals ?? (step < 1 ? 2 : 0))}${unit}`;
+  const shown = `${fmt(value, c.decimals ?? (step < 1 ? 2 : 0))}${unit}`;
   if (c.type === "select") {
     const opts = (c.options ?? [])
       .map((o) => `<option value="${o.value}"${o.value === value ? " selected" : ""}>${o.label_ar}</option>`)
       .join("");
-    return `<label for="ctl-${c.id}">${c.label_ar}
+    return `<label for="ctl-${c.id}"><span>${c.label_ar}</span>
       <select id="ctl-${c.id}" data-ctl="${c.id}" dir="rtl">${opts}</select>
-      <output id="out-${c.id}" for="ctl-${c.id}">${shown}</output>
     </label>`;
   }
-  return `<label for="ctl-${c.id}">${c.label_ar} <output id="out-${c.id}" for="ctl-${c.id}" dir="ltr">${shown}</output>
+  return `<label for="ctl-${c.id}"><span>${c.label_ar}</span> <output id="out-${c.id}" for="ctl-${c.id}" dir="ltr">${shown}</output>
     <input id="ctl-${c.id}" data-ctl="${c.id}" type="range" min="${from}" max="${to}" step="${step}" value="${value}" dir="ltr" />
     ${c.hint_ar ? `<span class="ctl-hint">${c.hint_ar}</span>` : ""}
   </label>`;
@@ -48,7 +45,7 @@ function controlHtml(c) {
 
 function outputHtml(o) {
   const unit = o.unit ? ` <span class="u">${o.unit}</span>` : "";
-  return `<div><span>${o.label_ar}</span> <output id="lab-out-${o.id}" dir="ltr"${o.live === false ? "" : ' aria-live="polite"'}>—</output>${unit}</div>`;
+  return `<div><span>${o.label_ar}</span> <span class="lab-measure" dir="ltr"><output id="lab-out-${o.id}"${o.live === false ? "" : ' aria-live="polite"'}>—</output>${unit}</span></div>`;
 }
 
 /**
@@ -85,8 +82,7 @@ export function startLab(compute, { mountId = "lab-root", gaugeId = "lab-gauge" 
       values[c.id] = el.tagName === "SELECT" ? el.value : Number(el.value);
       const shown = document.getElementById(`out-${c.id}`);
       if (shown) {
-        if (c.options) shown.textContent = (c.options.find((o) => String(o.value) === String(el.value)) ?? {}).label_ar ?? "";
-        else shown.textContent = `${fmt(Number(el.value), c.decimals ?? ((c.step ?? 1) < 1 ? 2 : 0))}${c.unit ? ` ${c.unit}` : ""}`;
+        shown.textContent = `${fmt(Number(el.value), c.decimals ?? ((c.step ?? 1) < 1 ? 2 : 0))}${c.unit ? ` ${c.unit}` : ""}`;
       }
     }
     return values;

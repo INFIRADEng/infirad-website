@@ -3,8 +3,8 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>الإنتروبيا ليست «فوضى»: مقياس كمّي للطاقة التي لم تعد صالحة — ديوان المعرفة</title>
-  <meta name="description" content="الإنتروبيا تُقاس بالجول لكل كلفن: صهر كيلوجرام جليد يضيف 1223 جول/كلفن، وتبخير كيلوجرام ماء يضيف 6049 جول/كلفن — أي خمسة أضعاف." />
+  <title>كيف نحسب تغيّر الإنتروبيا عند تسخين الماء وتغيّر حالته؟ — ديوان المعرفة</title>
+  <meta name="description" content="يبين المقال كيف يدخل مقدار الحرارة ودرجة الحرارة المطلقة في حساب تغيّر الإنتروبيا، ويقارن بين تسخين الماء وصهر الجليد وتبخير الماء." />
   <link rel="stylesheet" href="../assets/css/tokens.css" />
   <link rel="stylesheet" href="../assets/css/site.css" />
 
@@ -12,7 +12,7 @@
   <link rel="icon" href="https://infiradev.com/favicon.ico" sizes="48x48" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://infiradev.com/assets/favicon-192.png" />
   <link rel="apple-touch-icon" href="https://infiradev.com/assets/apple-touch-icon.png" />
-  <script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"Organization","@id":"https://infiradev.com/#organization","name":"INFIRAD","alternateName":["انفِراد","انفراد"],"url":"https://infiradev.com/","logo":{"@type":"ImageObject","url":"https://infiradev.com/assets/logo-bilingual.png","width":990,"height":320},"slogan":"من الفكرة إلى اليقين","foundingDate":"2025","email":"info@infiradeng.com","telephone":"+966557748982","address":{"@type":"PostalAddress","addressLocality":"Riyadh","addressCountry":"SA"},"sameAs":["https://www.linkedin.com/company/infirad/"],"knowsAbout":["Engineering services","Engineering Services Provider (ESP)","Process design","Process simulation","Computational fluid dynamics","Thermal analysis","Independent engineering review","Specialized AI agents","Workflow automation","Traffic simulation"]},{"@type":"WebPage","@id":"https://infiradev.com/diwan/articles/entropy-not-disorder.html#webpage","url":"https://infiradev.com/diwan/articles/entropy-not-disorder.html","name":"الإنتروبيا ليست «فوضى»: مقياس كمّي للطاقة التي لم تعد صالحة — ديوان المعرفة","description":"الإنتروبيا تُقاس بالجول لكل كلفن: صهر كيلوجرام جليد يضيف 1223 جول/كلفن، وتبخير كيلوجرام ماء يضيف 6049 جول/كلفن — أي خمسة أضعاف.","inLanguage":"ar","isPartOf":{"@id":"https://infiradev.com/#website"},"about":{"@id":"https://infiradev.com/#organization"}},{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"انفراد","item":"https://infiradev.com/"},{"@type":"ListItem","position":2,"name":"ديوان المعرفة","item":"https://infiradev.com/diwan/"},{"@type":"ListItem","position":3,"name":"الإنتروبيا ليست «فوضى»: مقياس كمّي للطاقة التي لم تعد صالحة — ديوان المعرفة","item":"https://infiradev.com/diwan/articles/entropy-not-disorder.html"}]}]}</script>
+  <script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"Organization","@id":"https://infiradev.com/#organization","name":"INFIRAD","alternateName":["انفِراد","انفراد"],"url":"https://infiradev.com/","logo":{"@type":"ImageObject","url":"https://infiradev.com/assets/logo-bilingual.png","width":990,"height":320},"slogan":"من الفكرة إلى اليقين","foundingDate":"2025","email":"info@infiradeng.com","telephone":"+966557748982","address":{"@type":"PostalAddress","addressLocality":"Riyadh","addressCountry":"SA"},"sameAs":["https://www.linkedin.com/company/infirad/"],"knowsAbout":["Engineering services","Engineering Services Provider (ESP)","Process design","Process simulation","Computational fluid dynamics","Thermal analysis","Independent engineering review","Specialized AI agents","Workflow automation","Traffic simulation"]},{"@type":"WebPage","@id":"https://infiradev.com/diwan/articles/entropy-not-disorder.html#webpage","url":"https://infiradev.com/diwan/articles/entropy-not-disorder.html","name":"كيف نحسب تغيّر الإنتروبيا عند تسخين الماء وتغيّر حالته؟ — ديوان المعرفة","description":"يبين المقال كيف يدخل مقدار الحرارة ودرجة الحرارة المطلقة في حساب تغيّر الإنتروبيا، ويقارن بين تسخين الماء وصهر الجليد وتبخير الماء.","inLanguage":"ar","isPartOf":{"@id":"https://infiradev.com/#website"},"about":{"@id":"https://infiradev.com/#organization"}},{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"انفراد","item":"https://infiradev.com/"},{"@type":"ListItem","position":2,"name":"ديوان المعرفة","item":"https://infiradev.com/diwan/"},{"@type":"ListItem","position":3,"name":"كيف نحسب تغيّر الإنتروبيا عند تسخين الماء وتغيّر حالته؟ — ديوان المعرفة","item":"https://infiradev.com/diwan/articles/entropy-not-disorder.html"}]}]}</script>
 </head>
 <body>
 <a class="skip" href="#main">انتقل إلى المحتوى</a>
@@ -36,31 +36,27 @@
 <article class="wrap article">
   <a class="backlink" href="../articles/" data-back data-label="المقالات"><svg class="backlink-i" viewBox="0 0 24 24" width="18" height="18" aria-hidden="true" focusable="false"><path d="M9 5l7 7-7 7" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg><span>رجوع إلى المقالات</span></a>
   <nav class="crumbs" aria-label="المسار"><a href="../articles/">مقالات</a> · <a href="../domains/physics.html">الفيزياء</a></nav>
-  <h1 class="page-h">الإنتروبيا ليست «فوضى»: مقياس كمّي للطاقة التي لم تعد صالحة</h1>
-  <p class="term-en" dir="ltr">Entropy is not disorder: a quantitative measure</p>
-  <p class="definition">الإنتروبيا تُقاس بالجول لكل كلفن: صهر كيلوجرام جليد يضيف 1223 جول/كلفن، وتبخير كيلوجرام ماء يضيف 6049 جول/كلفن — أي خمسة أضعاف.</p>
-  <div class="prose"><p>يُشرح مفهوم الإنتروبيا عادةً بكلمة «فوضى»، وهي كلمة لا تحسب شيئاً. التعريف القابل للاستخدام: تغيّر الإنتروبيا يساوي الحرارة المتبادلة مقسومة على الحرارة المطلقة التي حدثت عندها، ΔS = Q/T. حين يصهر كيلوجرام جليد عند 273 كلفن، يستقبل 334 كيلوجول، فتكون الزيادة 334000 ÷ 273 = 1223 جول لكل كلفن. وحين يتبخّر كيلوجرام ماء عند 373 كلفن، يستقبل 2257 كيلوجول فتكون الزيادة 6049 جول لكل كلفن. الفارق بين الرقمين ليس ذوقاً لغوياً: التبخير يفتح على المادة عدداً هائلاً من الحالات الممكنة، وثمن ذلك يُدفع بالجول.</p></div>
+  <h1 class="page-h">كيف نحسب تغيّر الإنتروبيا عند تسخين الماء وتغيّر حالته؟</h1>
+  <p class="term-en" dir="ltr">Entropy change during heating and phase transitions</p>
+  <p class="definition">يبين المقال كيف يدخل مقدار الحرارة ودرجة الحرارة المطلقة في حساب تغيّر الإنتروبيا، ويقارن بين تسخين الماء وصهر الجليد وتبخير الماء.</p>
+  <div class="prose"><p>تعتمد إنتروبيا الماء على حالته. ولحساب تغيّرها بين حالتين، نختار مسارًا عكوسًا يصل بينهما، ونحسب مقدار الحرارة المتبادلة عند كل درجة حرارة مطلقة على طول المسار.</p><p>عند الانصهار أو الغليان عند ضغط ثابت، تبقى درجة حرارة الماء النقي ثابتة ما دام الطوران في اتزان. يمكن عندئذ قسمة الحرارة الكامنة على درجة الحرارة المطلقة. أما في تسخين الماء السائل، فتتغيّر درجة الحرارة تدريجيًا، ولذلك نستخدم التكامل.</p></div>
   <div class="depth" aria-label="شرح معمّق"><section class="depth-sec">
-    <h2>الآلية</h2>
-    <p class="depth-hint muted small">كيف يحدث الأمر على مستوى الجسيمات أو المتغيّرات المباشرة</p>
+    <h2>كيف تعمل الظاهرة؟</h2>
     <p>الإنتروبيا عدّاد للحالات الدقيقة المتاحة لمنظومة عند طاقة معيّنة. عند الصهر تنفلت الجزيئات من مواقعها الشبكية إلى مواقع سائلة أكثر حرية، فيزداد العدد. عند التبخّر تنفصل كلياً وتتحرك في حجم أكبر بمراتب، فيقفز العدد قفزة كبيرة — ولهذا رقم التبخير أكبر بخمسة أضعاف.</p>
   </section><section class="depth-sec">
-    <h2>الأرقام والوحدات</h2>
-    <p class="depth-hint muted small">العلاقات والوحدات والنطاقات العددية التي تسند الشرح</p>
-    <p>ΔS = Q/T مع T بالكلفن المطلق. الصهر: 334000/273 = 1223 J/K. التبخير: 2257000/373 = 6049 J/K. وتسخين كيلوجرام ماء من 20 إلى 100 مئوية يضيف 4186 × ln(373/293) = 1010 J/K — أقل من الصهر، لأن الحرارة ترتفع تدريجياً فيتوزّع القسمة على قيم أكبر.</p>
+    <h2>العلاقة بالأرقام</h2>
+    <p>لصهر كيلوغرام من الجليد عند 273.15 كلفن، يعطي قسمة 334,000 جول على درجة الحرارة نحو 1223 جول/كلفن. ولتبخير الكيلوغرام نفسه عند 373.15 كلفن، يعطي قسمة 2,257,000 جول نحو 6049 جول/كلفن. وتسخينه من 20 إلى 100 درجة مئوية يعطي نحو 1010 جول/كلفن بتكامل السعة الحرارية مقسومةً على درجة الحرارة.</p>
   </section><section class="depth-sec">
-    <h2>الفرق الدقيق</h2>
-    <p class="depth-hint muted small">المفهوم الملتبس الذي يُخلَط به، وأين ينفصلان</p>
+    <h2>مفاهيم متقاربة</h2>
     <p>إنتروبيا عالية لا تعني «غير منظّم» بالمعنى اليومي: بلورة منظّمة قد تكون إنتروبيتها أعلى من غاز مضغوط إن كان الغاز بارداً جداً. المقياس يخصّ عدد الحالات المتاحة، لا شكل الترتيب الظاهر. والقول الشائع «الكون يسير إلى الفوضى» ترجمة فضفاضة لزيادة الإنتروبيا الكلية في عملية تلقائية.</p>
   </section><section class="depth-sec">
-    <h2>حدود التعريف</h2>
-    <p class="depth-hint muted small">أين ينكسر التعريف أو النموذج وما الذي لا يفسّره</p>
-    <p>ΔS = Q/T صحيحة للعمليات العكوسة أو عند حرارة ثابتة. إن تغيّرت الحرارة وجب التكامل، وإن كانت العملية غير عكوسة فالعلاقة تعطي حداً أدنى لا قيمة دقيقة. والقيم أعلاه لماء نقي عند ضغط جوي.</p>
+    <h2>حدود التطبيق</h2>
+    <p>تُستعمل العلاقة ΔS = Qrev/T لمسار عكوس متساوي الحرارة. وعندما تتبدّل درجة الحرارة نكامل الحرارة العكوسة مقسومة على درجة الحرارة المطلقة. وفي عملية فعلية غير عكوسة يمكن حساب تغيّر إنتروبيا المنظومة بمسار عكوس بديل بين الحالتين نفسيهما.</p>
   </section></div>
   <section class="figures" aria-label="الرسوم التوضيحية">
   <figure class="fig" id="fig-1">
     <img class="fig-img" src="../assets/fig/fig-spec-entropy-not-disorder.svg" alt="أعمدة أفقية: تسخين 1010 جول/كلفن، صهر 1223، تبخير 6049 — عمود التبخير أطول بخمسة أضعاف." loading="lazy" />
-    <figcaption><b>الشكل 1.</b> ثلاث عمليات على كيلوجرام ماء: التسخين 1010، الصهر 1223، التبخير 6049 جول لكل كلفن. الأرقام محسوبة من ΔS = Q/T بالحرارة المطلقة.
+    <figcaption><b>الشكل 1.</b> التغيّر في إنتروبيا كيلوغرام من الماء عند تسخينه أو تغيير طوره. يعتمد الحساب على القسمة على درجة الحرارة المطلقة عند ثباتها، وعلى التكامل أثناء التسخين.
       <span class="credit muted small">· من عمل انفراد — رسم مولَّد من أرقام المصدر</span>
     </figcaption>
   </figure>
@@ -86,17 +82,17 @@
   <h2 id="src-h">المصادر</h2>
   <ol class="src-list"><li id="src-1">
       <span class="src-num">1</span>
-      <span>NASA Glenn — Entropy of a Gas — NASA.
-      <a href="https://www1.grc.nasa.gov/beginners-guide-to-aeronautics/entropy-of-a-gas-3/" rel="noopener nofollow" target="_blank">www1.grc.nasa.gov/beginners-guide-to-aeronautics/entropy-of-a-gas-3/</a>
-      <span class="muted small">· اطُّلع عليه 2026-11-16</span></span>
+      <span>College Physics 2e — Entropy and the Second Law of Thermodynamics — OpenStax.
+      <a href="https://openstax.org/books/college-physics-2e/pages/15-6-entropy-and-the-second-law-of-thermodynamics-disorder-and-the-unavailability-of-energy" rel="noopener nofollow" target="_blank">openstax.org/books/college-physics-2e/pages/15-6-entropy-and-the-second-law-of-thermodynamics-disorder-and-the-unavailability-of-energy</a>
+      <span class="muted small">· اطُّلع عليه 2026-11-17</span></span>
     </li><li id="src-2">
       <span class="src-num">2</span>
-      <span>OpenStax, College Physics 2e — The First Law of Thermodynamics — OpenStax.
-      <a href="https://openstax.org/books/college-physics-2e/pages/15-1-the-first-law-of-thermodynamics" rel="noopener nofollow" target="_blank">openstax.org/books/college-physics-2e/pages/15-1-the-first-law-of-thermodynamics</a>
-      <span class="muted small">· اطُّلع عليه 2026-11-16</span></span>
+      <span>College Physics 2e — Phase Change and Latent Heat — OpenStax.
+      <a href="https://openstax.org/books/college-physics-2e/pages/14-3-phase-change-and-latent-heat" rel="noopener nofollow" target="_blank">openstax.org/books/college-physics-2e/pages/14-3-phase-change-and-latent-heat</a>
+      <span class="muted small">· اطُّلع عليه 2026-11-17</span></span>
     </li></ol>
 </section>
-  <p class="reviewline muted small">راجعه: مراجعة آلية — ديوان المعرفة (أرقام محسوبة + مصادر متحققة) 2026-11-16 · 2026-11-16 · آخر تحديث 2026-11-16</p>
+  <p class="reviewline muted small">راجعه: مراجعة آلية — ديوان المعرفة (أرقام محسوبة + مصادر متحققة) 2026-11-16 · 2026-11-16 · آخر تحديث 2026-11-17</p>
   <a class="backlink backlink-end" href="../articles/" data-back data-label="المقالات"><svg class="backlink-i" viewBox="0 0 24 24" width="18" height="18" aria-hidden="true" focusable="false"><path d="M9 5l7 7-7 7" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg><span>رجوع إلى المقالات</span></a>
 </article>
 </main>

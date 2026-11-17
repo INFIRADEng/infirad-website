@@ -3,8 +3,8 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>لماذا تكون حرارة الأرض −18 درجة حسابيًّا؟ — ديوان المعرفة</title>
-  <meta name="description" content="الأرض تمتص من الشمس ما يعادل 240 واط لكل متر مربع، وتشعّ المثل بالحرارة؛ الحساب يعطي 255 كلفن، والفارق 33 درجة هو أثر الغلاف الجوي." />
+  <title>كيف نحسب درجة حرارة الأرض الإشعاعية؟ — ديوان المعرفة</title>
+  <meta name="description" content="يعطي اتزان الطاقة نموذجًا مبسّطًا لدرجة الحرارة التي تشع عندها الأرض الطاقة الممتصة من الشمس. قارن الناتج بدرجة الحرارة المتوسطة عند السطح." />
   <link rel="stylesheet" href="../assets/css/tokens.css" />
   <link rel="stylesheet" href="../assets/css/site.css" />
 
@@ -12,7 +12,7 @@
   <link rel="icon" href="https://infiradev.com/favicon.ico" sizes="48x48" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://infiradev.com/assets/favicon-192.png" />
   <link rel="apple-touch-icon" href="https://infiradev.com/assets/apple-touch-icon.png" />
-  <script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"Organization","@id":"https://infiradev.com/#organization","name":"INFIRAD","alternateName":["انفِراد","انفراد"],"url":"https://infiradev.com/","logo":{"@type":"ImageObject","url":"https://infiradev.com/assets/logo-bilingual.png","width":990,"height":320},"slogan":"من الفكرة إلى اليقين","foundingDate":"2025","email":"info@infiradeng.com","telephone":"+966557748982","address":{"@type":"PostalAddress","addressLocality":"Riyadh","addressCountry":"SA"},"sameAs":["https://www.linkedin.com/company/infirad/"],"knowsAbout":["Engineering services","Engineering Services Provider (ESP)","Process design","Process simulation","Computational fluid dynamics","Thermal analysis","Independent engineering review","Specialized AI agents","Workflow automation","Traffic simulation"]},{"@type":"WebPage","@id":"https://infiradev.com/diwan/lab/radiation-equilibrium.html#webpage","url":"https://infiradev.com/diwan/lab/radiation-equilibrium.html","name":"لماذا تكون حرارة الأرض −18 درجة حسابيًّا؟ — ديوان المعرفة","description":"الأرض تمتص من الشمس ما يعادل 240 واط لكل متر مربع، وتشعّ المثل بالحرارة؛ الحساب يعطي 255 كلفن، والفارق 33 درجة هو أثر الغلاف الجوي.","inLanguage":"ar","isPartOf":{"@id":"https://infiradev.com/#website"},"about":{"@id":"https://infiradev.com/#organization"}},{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"انفراد","item":"https://infiradev.com/"},{"@type":"ListItem","position":2,"name":"ديوان المعرفة","item":"https://infiradev.com/diwan/"},{"@type":"ListItem","position":3,"name":"لماذا تكون حرارة الأرض −18 درجة حسابيًّا؟ — ديوان المعرفة","item":"https://infiradev.com/diwan/lab/radiation-equilibrium.html"}]}]}</script>
+  <script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"Organization","@id":"https://infiradev.com/#organization","name":"INFIRAD","alternateName":["انفِراد","انفراد"],"url":"https://infiradev.com/","logo":{"@type":"ImageObject","url":"https://infiradev.com/assets/logo-bilingual.png","width":990,"height":320},"slogan":"من الفكرة إلى اليقين","foundingDate":"2025","email":"info@infiradeng.com","telephone":"+966557748982","address":{"@type":"PostalAddress","addressLocality":"Riyadh","addressCountry":"SA"},"sameAs":["https://www.linkedin.com/company/infirad/"],"knowsAbout":["Engineering services","Engineering Services Provider (ESP)","Process design","Process simulation","Computational fluid dynamics","Thermal analysis","Independent engineering review","Specialized AI agents","Workflow automation","Traffic simulation"]},{"@type":"WebPage","@id":"https://infiradev.com/diwan/lab/radiation-equilibrium.html#webpage","url":"https://infiradev.com/diwan/lab/radiation-equilibrium.html","name":"كيف نحسب درجة حرارة الأرض الإشعاعية؟ — ديوان المعرفة","description":"يعطي اتزان الطاقة نموذجًا مبسّطًا لدرجة الحرارة التي تشع عندها الأرض الطاقة الممتصة من الشمس. قارن الناتج بدرجة الحرارة المتوسطة عند السطح.","inLanguage":"ar","isPartOf":{"@id":"https://infiradev.com/#website"},"about":{"@id":"https://infiradev.com/#organization"}},{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"انفراد","item":"https://infiradev.com/"},{"@type":"ListItem","position":2,"name":"ديوان المعرفة","item":"https://infiradev.com/diwan/"},{"@type":"ListItem","position":3,"name":"كيف نحسب درجة حرارة الأرض الإشعاعية؟ — ديوان المعرفة","item":"https://infiradev.com/diwan/lab/radiation-equilibrium.html"}]}]}</script>
 </head>
 <body>
 <a class="skip" href="#main">انتقل إلى المحتوى</a>
@@ -33,24 +33,25 @@
 </header>
 
 <main id="main">
-<article class="wrap article">
+<article class="wrap article experiment">
   <a class="backlink" href="../lab/" data-back data-label="المعمل"><svg class="backlink-i" viewBox="0 0 24 24" width="18" height="18" aria-hidden="true" focusable="false"><path d="M9 5l7 7-7 7" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg><span>رجوع إلى المعمل</span></a>
   <nav class="crumbs" aria-label="المسار"><a href="../lab/">المعمل</a> · <a href="../domains/physics.html">الفيزياء</a></nav>
-  <h1 class="page-h">لماذا تكون حرارة الأرض −18 درجة حسابيًّا؟</h1>
+  <h1 class="page-h">كيف نحسب درجة حرارة الأرض الإشعاعية؟</h1>
   <section class="lab-panel">
   <p class="lede">غيّر نسبة الانعكاس والانبعاثية، وتابع حرارة التوازن بالكلفن والمئوية.</p>
-  <figure class="lab-scene-fig">
-    <figcaption class="lab-scene-cap"><span class="lab-scene-kind">أين ترى هذا في الحياة؟</span> لوح معدني في الشمس: يسخن حتى يتوازن الوارد مع الصادر.</figcaption>
-    <div id="lab-scene" class="lab-scene" role="group" aria-label="مشهد توضيحي متحرك"></div>
-  </figure>
   <div id="lab-root"></div>
-  <p class="lab-equation" dir="ltr">T = [S(1−a)/(4σε)]^¼</p>
   <div class="lab-readout" id="lab-outputs"></div>
   <div class="lab-gauge" id="lab-gauge"></div>
+  <figure class="lab-scene-fig">
+    <figcaption class="lab-scene-cap">لوح معدني في الشمس: يسخن حتى يتوازن الوارد مع الصادر.</figcaption>
+    <div id="lab-scene" class="lab-scene" role="group" aria-label="مشهد توضيحي متحرك"></div>
+  </figure>
+
   <p><button class="lab-cta" type="button" id="lab-reset">إعادة الضبط</button></p>
   <p class="muted small" id="lab-note">المقياس يبدأ عند حالة الأرض (انعكاس 0.30) = 255 كلفن.</p>
   <details>
     <summary>افتراضات النموذج والمصدر</summary>
+    <p class="lab-equation" dir="ltr">T = [S(1−a)/(4σε)]^¼</p>
     <p>جسم كروي صفري الأبعاد بلا غلاف جوي</p><p>ثابت شمسي 1361 W/m²</p><p>انبعاثية سطحية محلّية</p><p>لا انتقال حرارة بين خطوط العرض</p><p><a href="https://earthobservatory.nasa.gov/features/EnergyBalance">Solar constant and total solar irradiance — NASA</a></p><p><a href="https://openstax.org/books/college-physics/pages/14-7-radiation">Stefan-Boltzmann law and planetary energy balance — OpenStax</a></p>
   </details>
   <noscript>فعّل JavaScript لتحريك المدخلات وحساب النتائج.</noscript>
@@ -59,20 +60,16 @@
 </section>
   <div class="prose"><p>الأرض تكتسب طاقة من الشمس وتفقدها بالإشعاع. التوازن يحدث عند الحرارة التي يتساوى فيها الاثنان. لكن الكسب يُوزّع على سطح الكرة كلها، فيكون ربع القيمة المباشرة — لأن قرص الاستقبال أربعة أمثال مساحة سطح الكرة.</p><p>باختصار: (1361 × 0.70) ÷ 4 ≈ 238 واط لكل متر مربع. والحرارة التي يشعّ بها سطح بهذا المعدل هي 255 كلفن، أي −18 °م. الحرارة المقيسة 15 °م، والفرق 33 درجة يعود إلى أن الغلاف الجوي يعيد إشعاع جزء من الطاقة إلى السطح.</p></div>
   <div class="depth" aria-label="شرح معمّق"><section class="depth-sec">
-    <h2>الآلية</h2>
-    <p class="depth-hint muted small">كيف يحدث الأمر على مستوى الجسيمات أو المتغيّرات المباشرة</p>
+    <h2>كيف تعمل الظاهرة؟</h2>
     <p>الجسم الذي يمتص إشعاعًا يجب أن يشعّ ما يعادله وإلا ارتفعت حرارته بلا حد. انبعاثية الجسم تعتمد على حرارته بالأسّ الرابع: مضاعفة الحرارة المطلقة ترفع الإشعاع 16 مرة. هذا الأسّ الحاد هو الذي يجعل النظام يستقرّ عند حرارة محدودة بدل أن ينفلت.</p>
   </section><section class="depth-sec">
-    <h2>الأرقام والوحدات</h2>
-    <p class="depth-hint muted small">العلاقات والوحدات والنطاقات العددية التي تسند الشرح</p>
+    <h2>العلاقة بالأرقام</h2>
     <p>T = [S(1−a)/(4σε)]^¼. بالقيم S=1361 W/m² وa=0.30 وε=1 يكون T = [1361×0.70/(4×5.67×10⁻⁸)]^0.25 = 255 ك، أي −18 °م. ولو انخفض الانعكاس إلى 0.10 لارتفعت إلى 271 ك، ولو صار 0.80 لهبطت إلى 234 ك.</p>
   </section><section class="depth-sec">
-    <h2>الفرق الدقيق</h2>
-    <p class="depth-hint muted small">المفهوم الملتبس الذي يُخلَط به، وأين ينفصلان</p>
+    <h2>مفاهيم متقاربة</h2>
     <p>يُخلط بين حرارة التوازن الإشعاعي وبين حرارة السطح الفعلية: الأولى حساب بلا غلاف جوي، والثانية تشمل الاحتباس. ويُخلط بين الانعكاس والإشعاع الطويل: الأول يعكس الضوء المرئي القادم، والثاني يشعّ طاقة تحت الحمراء من السطح نفسه.</p>
   </section><section class="depth-sec">
-    <h2>حدود التعريف</h2>
-    <p class="depth-hint muted small">أين ينكسر التعريف أو النموذج وما الذي لا يفسّره</p>
+    <h2>حدود التطبيق</h2>
     <p>النموذج صفري الأبعاد: يفترض سطحًا واحدًا متساوي الحرارة ولا يعرف الفصول ولا الليل ولا المحيطات. كما يفترض انبعاثية مثالية، ويغفل السحب والهباء والجليد وانتقال الحرارة من المناطق الحارة للباردة. لذلك يُستعمل تقديرًا أوليًّا يتبعه نماذج مناخية كاملة.</p>
   </section></div>
   <section class="figures" aria-label="الرسوم التوضيحية">
@@ -114,7 +111,7 @@
       <span class="muted small">· اطُّلع عليه 2026-11-16</span></span>
     </li></ol>
 </section>
-  <p class="reviewline muted small">راجعه: مراجعة آلية — بوابة الديوان (فحص بنيوي وأرقام) 2026-11-16 · 2026-11-16 · آخر تحديث 2026-11-16</p>
+  <p class="reviewline muted small">راجعه: مراجعة آلية — بوابة الديوان (فحص بنيوي وأرقام) 2026-11-16 · 2026-11-16 · آخر تحديث 2026-11-17</p>
   <a class="backlink backlink-end" href="../lab/" data-back data-label="المعمل"><svg class="backlink-i" viewBox="0 0 24 24" width="18" height="18" aria-hidden="true" focusable="false"><path d="M9 5l7 7-7 7" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg><span>رجوع إلى المعمل</span></a>
 </article>
 </main>

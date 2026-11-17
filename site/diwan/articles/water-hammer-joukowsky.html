@@ -3,8 +3,8 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>المطرقة المائية: كيف يُغلق صمام واحد أنبوبًا بقوة انفجار؟ — ديوان المعرفة</title>
-  <meta name="description" content="إغلاق صمام بسرعة يحوّل طاقة حركة الماء إلى ضغط فوري. القاعدة تقول إن الزيادة تساوي كثافة الماء × سرعة الموجة × تغيّر السرعة؛ إيقاف 2.5 م/ث في أنبوب فولاذي يضيف نحو 2.9 ميجاباسكال لحظيًا." />
+  <title>المطرقة المائية عند الإغلاق السريع للصمام — ديوان المعرفة</title>
+  <meta name="description" content="ينشأ عن التغيّر السريع في سرعة الماء موجة ضغط داخل الأنبوب. تحسب معادلة جوكوفسكي مقدار الارتفاع الأولي في الضغط ضمن افتراضات محددة." />
   <link rel="stylesheet" href="../assets/css/tokens.css" />
   <link rel="stylesheet" href="../assets/css/site.css" />
 
@@ -12,7 +12,7 @@
   <link rel="icon" href="https://infiradev.com/favicon.ico" sizes="48x48" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://infiradev.com/assets/favicon-192.png" />
   <link rel="apple-touch-icon" href="https://infiradev.com/assets/apple-touch-icon.png" />
-  <script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"Organization","@id":"https://infiradev.com/#organization","name":"INFIRAD","alternateName":["انفِراد","انفراد"],"url":"https://infiradev.com/","logo":{"@type":"ImageObject","url":"https://infiradev.com/assets/logo-bilingual.png","width":990,"height":320},"slogan":"من الفكرة إلى اليقين","foundingDate":"2025","email":"info@infiradeng.com","telephone":"+966557748982","address":{"@type":"PostalAddress","addressLocality":"Riyadh","addressCountry":"SA"},"sameAs":["https://www.linkedin.com/company/infirad/"],"knowsAbout":["Engineering services","Engineering Services Provider (ESP)","Process design","Process simulation","Computational fluid dynamics","Thermal analysis","Independent engineering review","Specialized AI agents","Workflow automation","Traffic simulation"]},{"@type":"WebPage","@id":"https://infiradev.com/diwan/articles/water-hammer-joukowsky.html#webpage","url":"https://infiradev.com/diwan/articles/water-hammer-joukowsky.html","name":"المطرقة المائية: كيف يُغلق صمام واحد أنبوبًا بقوة انفجار؟ — ديوان المعرفة","description":"إغلاق صمام بسرعة يحوّل طاقة حركة الماء إلى ضغط فوري. القاعدة تقول إن الزيادة تساوي كثافة الماء × سرعة الموجة × تغيّر السرعة؛ إيقاف 2.5 م/ث في أنبوب فولاذي يضيف نحو 2.9 ميجاباسكال لحظيًا.","inLanguage":"ar","isPartOf":{"@id":"https://infiradev.com/#website"},"about":{"@id":"https://infiradev.com/#organization"}},{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"انفراد","item":"https://infiradev.com/"},{"@type":"ListItem","position":2,"name":"ديوان المعرفة","item":"https://infiradev.com/diwan/"},{"@type":"ListItem","position":3,"name":"المطرقة المائية: كيف يُغلق صمام واحد أنبوبًا بقوة انفجار؟ — ديوان المعرفة","item":"https://infiradev.com/diwan/articles/water-hammer-joukowsky.html"}]}]}</script>
+  <script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"Organization","@id":"https://infiradev.com/#organization","name":"INFIRAD","alternateName":["انفِراد","انفراد"],"url":"https://infiradev.com/","logo":{"@type":"ImageObject","url":"https://infiradev.com/assets/logo-bilingual.png","width":990,"height":320},"slogan":"من الفكرة إلى اليقين","foundingDate":"2025","email":"info@infiradeng.com","telephone":"+966557748982","address":{"@type":"PostalAddress","addressLocality":"Riyadh","addressCountry":"SA"},"sameAs":["https://www.linkedin.com/company/infirad/"],"knowsAbout":["Engineering services","Engineering Services Provider (ESP)","Process design","Process simulation","Computational fluid dynamics","Thermal analysis","Independent engineering review","Specialized AI agents","Workflow automation","Traffic simulation"]},{"@type":"WebPage","@id":"https://infiradev.com/diwan/articles/water-hammer-joukowsky.html#webpage","url":"https://infiradev.com/diwan/articles/water-hammer-joukowsky.html","name":"المطرقة المائية عند الإغلاق السريع للصمام — ديوان المعرفة","description":"ينشأ عن التغيّر السريع في سرعة الماء موجة ضغط داخل الأنبوب. تحسب معادلة جوكوفسكي مقدار الارتفاع الأولي في الضغط ضمن افتراضات محددة.","inLanguage":"ar","isPartOf":{"@id":"https://infiradev.com/#website"},"about":{"@id":"https://infiradev.com/#organization"}},{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"انفراد","item":"https://infiradev.com/"},{"@type":"ListItem","position":2,"name":"ديوان المعرفة","item":"https://infiradev.com/diwan/"},{"@type":"ListItem","position":3,"name":"المطرقة المائية عند الإغلاق السريع للصمام — ديوان المعرفة","item":"https://infiradev.com/diwan/articles/water-hammer-joukowsky.html"}]}]}</script>
 </head>
 <body>
 <a class="skip" href="#main">انتقل إلى المحتوى</a>
@@ -36,25 +36,21 @@
 <article class="wrap article">
   <a class="backlink" href="../articles/" data-back data-label="المقالات"><svg class="backlink-i" viewBox="0 0 24 24" width="18" height="18" aria-hidden="true" focusable="false"><path d="M9 5l7 7-7 7" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg><span>رجوع إلى المقالات</span></a>
   <nav class="crumbs" aria-label="المسار"><a href="../articles/">مقالات</a> · <a href="../domains/engineering.html">الهندسة</a></nav>
-  <h1 class="page-h">المطرقة المائية: كيف يُغلق صمام واحد أنبوبًا بقوة انفجار؟</h1>
+  <h1 class="page-h">المطرقة المائية عند الإغلاق السريع للصمام</h1>
   <p class="term-en" dir="ltr">Water hammer: closing a valve can burst a pipe</p>
-  <p class="definition">إغلاق صمام بسرعة يحوّل طاقة حركة الماء إلى ضغط فوري. القاعدة تقول إن الزيادة تساوي كثافة الماء × سرعة الموجة × تغيّر السرعة؛ إيقاف 2.5 م/ث في أنبوب فولاذي يضيف نحو 2.9 ميجاباسكال لحظيًا.</p>
+  <p class="definition">ينشأ عن التغيّر السريع في سرعة الماء موجة ضغط داخل الأنبوب. تحسب معادلة جوكوفسكي مقدار الارتفاع الأولي في الضغط ضمن افتراضات محددة.</p>
   <div class="prose"><p>الماء لا يقبل الانضغاط في حدود العمل العادية، فحين يُمنع من الاستمرار في الحركة يتحوّل زخمه إلى ارتفاع ضغط عند الصمام. الموجة ترتدّ ذهابًا وإيابًا في الأنبوب، ويُسمع طرق متكرر هو أثرها في تثبيتات الأنابيب. الضغط لا ينشأ من المضخة بل من الإيقاف، ولهذا يظهر في الشبكات القديمة عند إغلاق صنبور سريع أو صمام كهربائي.</p></div>
   <div class="depth" aria-label="شرح معمّق"><section class="depth-sec">
-    <h2>الآلية</h2>
-    <p class="depth-hint muted small">كيف يحدث الأمر على مستوى الجسيمات أو المتغيّرات المباشرة</p>
+    <h2>كيف تعمل الظاهرة؟</h2>
     <p>الصدمة تنتشر بسرعة الصوت في الماء المقيّد داخل الأنبوب، وهي أعلى من سرعة الصوت في الماء الحرّ لأن جدار الأنبوب يقيّد التمدد. عند الصمام تُبنى جبهة ضغط، وتنتقل نحو المصدر، وترتدّ عند أي تغيّر في المقطع أو عند خزان. زمن رحلة الموجة يحدّد هل تتشابك الموجات أم تتراكم: الإغلاق الأسرع من رحلة الموجة ينتج الصدمة الكاملة.</p>
   </section><section class="depth-sec">
-    <h2>الأرقام والوحدات</h2>
-    <p class="depth-hint muted small">العلاقات والوحدات والنطاقات العددية التي تسند الشرح</p>
+    <h2>العلاقة بالأرقام</h2>
     <p>قاعدة جوكوفسكي: Δp = ρ·a·Δv. عند كثافة 958 كغ/م³ وسرعة موجة 1200 م/ث: إيقاف 0.5 م/ث يضيف 575 كيلوباسكال، و1 م/ث 1.15 ميجاباسكال، و2.5 م/ث 2.87 ميجاباسكال. الضغط الساكن في شبكة مبانٍ قد يكون 0.4 ميجاباسكال، فالإضافة تعني أن الضغط اللحظي صار سبعة أضعافه.</p>
   </section><section class="depth-sec">
-    <h2>الفرق الدقيق</h2>
-    <p class="depth-hint muted small">المفهوم الملتبس الذي يُخلَط به، وأين ينفصلان</p>
+    <h2>مفاهيم متقاربة</h2>
     <p>هذا ليس ارتفاع الضغط الناتج عن مضخة ولا عن انسداد: الانسداد يرفع الضغط تدريجيًا ويستمر، أما المطرقة فقمّة قصيرة الكسر تحدث في أجزاء من الثانية، ولهذا لا يلتقطها مقياس ضغط عادي بقراءة بطيئة.</p>
   </section><section class="depth-sec">
-    <h2>حدود التعريف</h2>
-    <p class="depth-hint muted small">أين ينكسر التعريف أو النموذج وما الذي لا يفسّره</p>
+    <h2>حدود التطبيق</h2>
     <p>القاعدة تفترض إغلاقًا فوريًا وأنبوبًا صلبًا. الإغلاق التدريجي أبطأ من رحلة الموجة يخفض الزيادة إلى نسبة من القيمة الكاملة، والأنابيب البلاستيكية تخفض سرعة الموجة فتخفض القمة لكنها تسرّع التعب المادي. الحل الهندسي هو التخفيف: خزان هواء أو صمام تخفيف أو إغلاق بطيء.</p>
   </section></div>
   <section class="figures" aria-label="الرسوم التوضيحية">
@@ -105,7 +101,7 @@
       <span class="muted small">· اطُّلع عليه 2026-11-16</span></span>
     </li></ol>
 </section>
-  <p class="reviewline muted small">راجعه: مراجعة آلية — ديوان المعرفة (أرقام محسوبة + مصادر متحققة) 2026-11-16 · 2026-11-16 · آخر تحديث 2026-11-16</p>
+  <p class="reviewline muted small">راجعه: مراجعة آلية — ديوان المعرفة (أرقام محسوبة + مصادر متحققة) 2026-11-16 · 2026-11-16 · آخر تحديث 2026-11-17</p>
   <a class="backlink backlink-end" href="../articles/" data-back data-label="المقالات"><svg class="backlink-i" viewBox="0 0 24 24" width="18" height="18" aria-hidden="true" focusable="false"><path d="M9 5l7 7-7 7" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg><span>رجوع إلى المقالات</span></a>
 </article>
 </main>
