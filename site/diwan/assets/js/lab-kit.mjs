@@ -6,6 +6,7 @@
 // مقياس مرقّم) واحدة للجميع. فأي تجربة جديدة تُقاس بنفس المقاييس وتُصان في ملف واحد.
 
 import { createGauge } from "./gauge.mjs";
+import { mountScene } from "./scene.mjs";
 
 const iso = (s) => `\u2068${s}\u2069`;
 
@@ -97,6 +98,10 @@ export function startLab(compute, { mountId = "lab-root", gaugeId = "lab-gauge" 
     : null;
 
   let started = null;
+  // المشهد التوضيحي: يقرأ نفس قيم الضوابط ونفس أرقام المخرجات المحسوبة،
+  // فلا يظهر في الرسم رقم لا يقوله الجدول.
+  const sceneHost = document.getElementById("lab-scene");
+  const scene = sceneHost && spec.scene && spec.scene.kind ? mountScene(sceneHost, spec.scene.kind) : null;
   const apply = () => {
     const v = read();
     let res;
@@ -124,6 +129,7 @@ export function startLab(compute, { mountId = "lab-root", gaugeId = "lab-gauge" 
       const note = document.getElementById("lab-note");
       if (note && res.note) note.textContent = res.note;
     }
+    if (scene) scene.update(v, outMap);
   };
 
   for (const c of controls) {

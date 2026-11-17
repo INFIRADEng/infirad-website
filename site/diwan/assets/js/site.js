@@ -1,11 +1,21 @@
-// بحث فوري في صفحة المصطلحات — بلا تبعيات، ويعمل بلا JS أيضًا (نموذج GET)
+// زر الرجوع: إن جاء القارئ من صفحة داخل الموقع رجع لتاريخه (يعود حيث كان)،
+// وإن جاء من محرّك بحث أو رابط خارجي بقي الرابط href يعمل فيذهب إلى فهرس القسم.
 (function () {
-  var back = document.querySelector("[data-back]");
-  if (!back || !document.referrer || window.history.length < 2) return;
-  back.addEventListener("click", function (event) {
-    if (event.button !== 0 || event.metaKey || event.ctrlKey || event.shiftKey || event.altKey) return;
-    event.preventDefault();
-    window.history.back();
+  var links = document.querySelectorAll("[data-back]");
+  if (!links.length) return;
+  var ref = "";
+  try { ref = document.referrer || ""; } catch (e) { ref = ""; }
+  var sameSite = false;
+  try {
+    sameSite = !!ref && new URL(ref).origin === location.origin && window.history.length > 1;
+  } catch (e) { sameSite = false; }
+  Array.prototype.forEach.call(links, function (link) {
+    if (!sameSite) return;
+    link.addEventListener("click", function (event) {
+      if (event.button !== 0 || event.metaKey || event.ctrlKey || event.shiftKey || event.altKey) return;
+      event.preventDefault();
+      window.history.back();
+    });
   });
 })();
 

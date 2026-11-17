@@ -34,10 +34,15 @@
 
 <main id="main">
 <article class="wrap article">
+  <a class="backlink" href="../lab/" data-back data-label="المعمل"><svg class="backlink-i" viewBox="0 0 24 24" width="18" height="18" aria-hidden="true" focusable="false"><path d="M9 5l7 7-7 7" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg><span>رجوع إلى المعمل</span></a>
   <nav class="crumbs" aria-label="المسار"><a href="../lab/">المعمل</a> · <a href="../domains/physics.html">الفيزياء</a></nav>
   <h1 class="page-h">لماذا تكون حرارة الأرض −18 درجة حسابيًّا؟</h1>
   <section class="lab-panel">
   <p class="lede">غيّر نسبة الانعكاس والانبعاثية، وتابع حرارة التوازن بالكلفن والمئوية.</p>
+  <figure class="lab-scene-fig">
+    <figcaption class="lab-scene-cap"><span class="lab-scene-kind">أين ترى هذا في الحياة؟</span> لوح معدني في الشمس: يسخن حتى يتوازن الوارد مع الصادر.</figcaption>
+    <div id="lab-scene" class="lab-scene" role="group" aria-label="مشهد توضيحي متحرك"></div>
+  </figure>
   <div id="lab-root"></div>
   <p class="lab-equation" dir="ltr">T = [S(1−a)/(4σε)]^¼</p>
   <div class="lab-readout" id="lab-outputs"></div>
@@ -49,7 +54,7 @@
     <p>جسم كروي صفري الأبعاد بلا غلاف جوي</p><p>ثابت شمسي 1361 W/m²</p><p>انبعاثية سطحية محلّية</p><p>لا انتقال حرارة بين خطوط العرض</p><p><a href="https://earthobservatory.nasa.gov/features/EnergyBalance">Solar constant and total solar irradiance — NASA</a></p><p><a href="https://openstax.org/books/college-physics/pages/14-7-radiation">Stefan-Boltzmann law and planetary energy balance — OpenStax</a></p>
   </details>
   <noscript>فعّل JavaScript لتحريك المدخلات وحساب النتائج.</noscript>
-  <script type="application/json" id="lab-spec">{"controls":[{"id":"albedo","label_ar":"نسبة الانعكاس","step":0.01,"value":0.3,"unit":"","from":0.1,"to":0.8},{"id":"emissivity","label_ar":"الانبعاثية","step":0.01,"value":1,"unit":"","from":0.6,"to":1}],"outputs":[{"id":"kelvin","label_ar":"حرارة التوازن","unit":"ك","decimals":1},{"id":"celsius","label_ar":"بالدرجة المئوية","unit":"°م","decimals":1}],"gauge":{"id":"kelvin","min":180,"max":310,"start":255,"unit":"ك","decimals":1,"bind":"kelvin","label":"حرارة التوازن — المقياس من 180 إلى 310 كلفن"},"note_ar":"المقياس يبدأ عند حالة الأرض (انعكاس 0.30) = 255 كلفن."}</script>
+  <script type="application/json" id="lab-spec">{"controls":[{"id":"albedo","label_ar":"نسبة الانعكاس","step":0.01,"value":0.3,"unit":"","from":0.1,"to":0.8},{"id":"emissivity","label_ar":"الانبعاثية","step":0.01,"value":1,"unit":"","from":0.6,"to":1}],"outputs":[{"id":"kelvin","label_ar":"حرارة التوازن","unit":"ك","decimals":1},{"id":"celsius","label_ar":"بالدرجة المئوية","unit":"°م","decimals":1}],"gauge":{"id":"kelvin","min":180,"max":310,"start":255,"unit":"ك","decimals":1,"bind":"kelvin","label":"حرارة التوازن — المقياس من 180 إلى 310 كلفن"},"scene":{"kind":"plate-sun","caption_ar":"لوح معدني في الشمس: يسخن حتى يتوازن الوارد مع الصادر."},"note_ar":"المقياس يبدأ عند حالة الأرض (انعكاس 0.30) = 255 كلفن."}</script>
   <script type="module" src="../assets/js/labs/radiation-equilibrium.mjs"></script>
 </section>
   <div class="prose"><p>الأرض تكتسب طاقة من الشمس وتفقدها بالإشعاع. التوازن يحدث عند الحرارة التي يتساوى فيها الاثنان. لكن الكسب يُوزّع على سطح الكرة كلها، فيكون ربع القيمة المباشرة — لأن قرص الاستقبال أربعة أمثال مساحة سطح الكرة.</p><p>باختصار: (1361 × 0.70) ÷ 4 ≈ 238 واط لكل متر مربع. والحرارة التي يشعّ بها سطح بهذا المعدل هي 255 كلفن، أي −18 °م. الحرارة المقيسة 15 °م، والفرق 33 درجة يعود إلى أن الغلاف الجوي يعيد إشعاع جزء من الطاقة إلى السطح.</p></div>
@@ -110,6 +115,7 @@
     </li></ol>
 </section>
   <p class="reviewline muted small">راجعه: مراجعة آلية — بوابة الديوان (فحص بنيوي وأرقام) 2026-11-16 · 2026-11-16 · آخر تحديث 2026-11-16</p>
+  <a class="backlink backlink-end" href="../lab/" data-back data-label="المعمل"><svg class="backlink-i" viewBox="0 0 24 24" width="18" height="18" aria-hidden="true" focusable="false"><path d="M9 5l7 7-7 7" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg><span>رجوع إلى المعمل</span></a>
 </article>
 </main>
 <footer class="site-foot">

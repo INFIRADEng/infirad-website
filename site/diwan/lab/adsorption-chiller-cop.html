@@ -34,10 +34,15 @@
 
 <main id="main">
 <article class="wrap article">
+  <a class="backlink" href="../lab/" data-back data-label="المعمل"><svg class="backlink-i" viewBox="0 0 24 24" width="18" height="18" aria-hidden="true" focusable="false"><path d="M9 5l7 7-7 7" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg><span>رجوع إلى المعمل</span></a>
   <nav class="crumbs" aria-label="المسار"><a href="../lab/">المعمل</a> · <a href="../domains/energy.html">الطاقة</a></nav>
   <h1 class="page-h">كيف تنتج حرارة 85 درجة برودةً بلا ضاغط؟</h1>
   <section class="lab-panel">
   <p class="lede">غيّر سعة الامتزاز وحرارة التحرير، وتابع معامل الأداء والبرودة المنتجة.</p>
+  <figure class="lab-scene-fig">
+    <figcaption class="lab-scene-cap"><span class="lab-scene-kind">أين ترى هذا في الحياة؟</span> مكيّف يُدار بحرارة الشمس بدل الكهرباء: دورة امتزاز كاملة.</figcaption>
+    <div id="lab-scene" class="lab-scene" role="group" aria-label="مشهد توضيحي متحرك"></div>
+  </figure>
   <div id="lab-root"></div>
   <p class="lab-equation" dir="ltr">COP = (m·h_fg) / (m·h_ads + C_bed·ΔT)</p>
   <div class="lab-readout" id="lab-outputs"></div>
@@ -49,7 +54,7 @@
     <p>دورة مثالية بلا فقد حراري</p><p>المادة سيليكا جل–ماء بحرارة امتزاز 3200 kJ/kg</p><p>تبخّر عند 5 °م وتكثيف عند 35 °م</p><p>لا استهلاك كهربائي للمضخات</p><p><a href="https://www.engineeringtoolbox.com/water-vapor-saturation-pressure-d_599.html">Latent heat of vaporization of water — Engineering ToolBox</a></p><p><a href="https://www.sciencedirect.com/topics/engineering/adsorption-chiller">Adsorption cooling — silica gel/water working pair — ScienceDirect Topics</a></p><p><a href="https://www.iea-shc.org/">Solar adsorption cooling review — IEA Solar Heating &amp; Cooling Programme</a></p>
   </details>
   <noscript>فعّل JavaScript لتحريك المدخلات وحساب النتائج.</noscript>
-  <script type="application/json" id="lab-spec">{"controls":[{"id":"loading","label_ar":"سعة الامتزاز","step":0.01,"value":0.15,"unit":"كجم/كجم","from":0.05,"to":0.25},{"id":"desorb","label_ar":"حرارة التحرير","step":1,"value":85,"unit":"°م","from":70,"to":95}],"outputs":[{"id":"cop","label_ar":"معامل الأداء الحراري","unit":"","decimals":2},{"id":"cooling","label_ar":"برودة لكل كجم مادة","unit":"kJ/kg","decimals":0}],"gauge":{"id":"cop","min":0.5,"max":0.8,"start":0.71,"unit":"","decimals":3,"bind":"cop","label":"معامل الأداء — المقياس من 0.5 إلى 0.8"},"note_ar":"COP المعروض حدّ أعلى نظري؛ الأداء المقيس في الوحدات الحقيقية أقل منه بنحو 10 إلى 20%."}</script>
+  <script type="application/json" id="lab-spec">{"controls":[{"id":"loading","label_ar":"سعة الامتزاز","step":0.01,"value":0.15,"unit":"كجم/كجم","from":0.05,"to":0.25},{"id":"desorb","label_ar":"حرارة التحرير","step":1,"value":85,"unit":"°م","from":70,"to":95}],"outputs":[{"id":"cop","label_ar":"معامل الأداء الحراري","unit":"","decimals":2},{"id":"cooling","label_ar":"برودة لكل كجم مادة","unit":"kJ/kg","decimals":0}],"gauge":{"id":"cop","min":0.5,"max":0.8,"start":0.71,"unit":"","decimals":3,"bind":"cop","label":"معامل الأداء — المقياس من 0.5 إلى 0.8"},"scene":{"kind":"chiller","caption_ar":"مكيّف يُدار بحرارة الشمس بدل الكهرباء: دورة امتزاز كاملة."},"note_ar":"COP المعروض حدّ أعلى نظري؛ الأداء المقيس في الوحدات الحقيقية أقل منه بنحو 10 إلى 20%."}</script>
   <script type="module" src="../assets/js/labs/adsorption-chiller-cop.mjs"></script>
 </section>
   <div class="prose"><p>في المبرد الكهربائي يرفع الضاغط ضغط البخار. في المبرد الامتزازي يقوم عازل صلب — السيليكا جل — بالمهمة: يلتقط بخار الماء فيخفض الضغط في المبطّخ، فيتبخّر الماء عند 5 °م ويسحب الحرارة من الماء المُبرَّد.</p><p>بعد التشبّع تُسخَّن المادة إلى 85 °م، فيتحرر البخار ويتكاثف خارجًا، وتعود المادة للعمل. كل الطاقة الداخلة حرارة، لا كهرباء إلا لمضخات صغيرة — فيمكن تشغيل الوحدة بحرارة شمسية أو حرارة عادمة من مصنع.</p></div>
@@ -121,6 +126,7 @@
     </li></ol>
 </section>
   <p class="reviewline muted small">راجعه: مراجعة آلية — بوابة الديوان (فحص بنيوي وأرقام) 2026-11-16 · 2026-11-16 · آخر تحديث 2026-11-16</p>
+  <a class="backlink backlink-end" href="../lab/" data-back data-label="المعمل"><svg class="backlink-i" viewBox="0 0 24 24" width="18" height="18" aria-hidden="true" focusable="false"><path d="M9 5l7 7-7 7" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg><span>رجوع إلى المعمل</span></a>
 </article>
 </main>
 <footer class="site-foot">

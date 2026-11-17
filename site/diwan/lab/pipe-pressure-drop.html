@@ -34,10 +34,15 @@
 
 <main id="main">
 <article class="wrap article">
+  <a class="backlink" href="../lab/" data-back data-label="المعمل"><svg class="backlink-i" viewBox="0 0 24 24" width="18" height="18" aria-hidden="true" focusable="false"><path d="M9 5l7 7-7 7" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg><span>رجوع إلى المعمل</span></a>
   <nav class="crumbs" aria-label="المسار"><a href="../lab/">المعمل</a> · <a href="../domains/engineering.html">الهندسة</a></nav>
   <h1 class="page-h">ما كلفة الاحتكاك داخل أنبوب؟</h1>
   <section class="lab-panel">
   <p class="lede">غيّر القطر والتصريف والطول، وتابع هبوط الضغط على المقياس.</p>
+  <figure class="lab-scene-fig">
+    <figcaption class="lab-scene-cap"><span class="lab-scene-kind">أين ترى هذا في الحياة؟</span> خرطوم الماء حين تُضيّق فتحته: يسرع الجريان ويقلّ الضغط.</figcaption>
+    <div id="lab-scene" class="lab-scene" role="group" aria-label="مشهد توضيحي متحرك"></div>
+  </figure>
   <div id="lab-root"></div>
   <p class="lab-equation" dir="ltr">Δp = f · (L/D) · ρv²/2</p>
   <div class="lab-readout" id="lab-outputs"></div>
@@ -49,7 +54,7 @@
     <p>ماء عند 20 °م: كثافة 998 kg/m³ ولزوجة 1.002 mPa·s</p><p>خشونة الفولاذ التجاري 0.045 مم</p><p>أنبوب أفقي مستقيم بلا قطع أو انحناءات</p><p>لا تفاعل كيميائي ولا ترسّب</p><p><a href="https://www.engineeringtoolbox.com/water-dynamic-kinematic-viscosity-d_596.html">Water density and dynamic viscosity — Engineering ToolBox</a></p><p><a href="https://www.engineeringtoolbox.com/darcy-weisbach-equation-d_646.html">Darcy-Weisbach equation and friction factor — Engineering ToolBox</a></p>
   </details>
   <noscript>فعّل JavaScript لتحريك المدخلات وحساب النتائج.</noscript>
-  <script type="application/json" id="lab-spec">{"controls":[{"id":"diameter","label_ar":"القطر الداخلي","step":5,"value":100,"unit":"مم","from":80,"to":300},{"id":"flow","label_ar":"التصريف","step":0.5,"value":25,"unit":"لتر/ث","from":2,"to":25},{"id":"length","label_ar":"طول الأنبوب","step":10,"value":100,"unit":"م","from":20,"to":300}],"outputs":[{"id":"velocity","label_ar":"السرعة","unit":"م/ث","decimals":2},{"id":"reynolds","label_ar":"رقم رينولدز","unit":"","decimals":0},{"id":"drop","label_ar":"هبوط الضغط","unit":"ك.ب","decimals":1}],"gauge":{"id":"drop","min":0,"max":900,"start":90.8,"unit":"ك.ب","decimals":1,"bind":"drop","label":"هبوط الضغط — المقياس من 0 إلى 900 كيلوباسكال"},"note_ar":"المقياس يبدأ عند الحالة الافتراضية (100 مم · 25 لتر/ث · 100 م) = 99 ك.ب."}</script>
+  <script type="application/json" id="lab-spec">{"controls":[{"id":"diameter","label_ar":"القطر الداخلي","step":5,"value":100,"unit":"مم","from":80,"to":300},{"id":"flow","label_ar":"التصريف","step":0.5,"value":25,"unit":"لتر/ث","from":2,"to":25},{"id":"length","label_ar":"طول الأنبوب","step":10,"value":100,"unit":"م","from":20,"to":300}],"outputs":[{"id":"velocity","label_ar":"السرعة","unit":"م/ث","decimals":2},{"id":"reynolds","label_ar":"رقم رينولدز","unit":"","decimals":0},{"id":"drop","label_ar":"هبوط الضغط","unit":"ك.ب","decimals":1}],"gauge":{"id":"drop","min":0,"max":900,"start":90.8,"unit":"ك.ب","decimals":1,"bind":"drop","label":"هبوط الضغط — المقياس من 0 إلى 900 كيلوباسكال"},"scene":{"kind":"pipe","caption_ar":"خرطوم الماء حين تُضيّق فتحته: يسرع الجريان ويقلّ الضغط."},"note_ar":"المقياس يبدأ عند الحالة الافتراضية (100 مم · 25 لتر/ث · 100 م) = 99 ك.ب."}</script>
   <script type="module" src="../assets/js/labs/pipe-pressure-drop.mjs"></script>
 </section>
   <div class="prose"><p>الماء لا يجري في الأنبوب مجانًا: الاحتكاك بجدار الأنبوب يأكل جزءًا من الضغط، والمضخة تعيد ما أكلته. الحساب يجري بمعادلة دارسي–فايسباخ، وفيها ثلاثة عوامل: الطول، ونسبة القطر، ومربع السرعة.</p><p>اللوحة تريك أثر كل عامل. انتبه إلى القطر وحده: مضاعفته تقلّل الهبوط إلى الربع تقريبًا عند التصريف نفسه، لأن السرعة تنزل إلى الربع. ولهذا يقيس المهندس الأنابيب بالسرعة لا بالتصريف.</p></div>
@@ -110,6 +115,7 @@
     </li></ol>
 </section>
   <p class="reviewline muted small">راجعه: مراجعة آلية — بوابة الديوان (فحص بنيوي وأرقام) 2026-11-16 · 2026-11-16 · آخر تحديث 2026-11-16</p>
+  <a class="backlink backlink-end" href="../lab/" data-back data-label="المعمل"><svg class="backlink-i" viewBox="0 0 24 24" width="18" height="18" aria-hidden="true" focusable="false"><path d="M9 5l7 7-7 7" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg><span>رجوع إلى المعمل</span></a>
 </article>
 </main>
 <footer class="site-foot">

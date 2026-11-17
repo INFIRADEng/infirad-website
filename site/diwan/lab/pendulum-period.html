@@ -34,10 +34,15 @@
 
 <main id="main">
 <article class="wrap article">
+  <a class="backlink" href="../lab/" data-back data-label="المعمل"><svg class="backlink-i" viewBox="0 0 24 24" width="18" height="18" aria-hidden="true" focusable="false"><path d="M9 5l7 7-7 7" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg><span>رجوع إلى المعمل</span></a>
   <nav class="crumbs" aria-label="المسار"><a href="../lab/">المعمل</a> · <a href="../domains/physics.html">الفيزياء</a></nav>
   <h1 class="page-h">ما الذي يحدد زمن ذبذبة البندول؟</h1>
   <section class="lab-panel">
   <p class="lede">اسحب الطول وشاهد كيف يتغيّر زمن الذبذبة، ثم قارن مترًا واحدًا بمترين.</p>
+  <figure class="lab-scene-fig">
+    <figcaption class="lab-scene-cap"><span class="lab-scene-kind">أين ترى هذا في الحياة؟</span> ساعة البندول: الطول وحده هو ما يحدّد سرعة الدورة.</figcaption>
+    <div id="lab-scene" class="lab-scene" role="group" aria-label="مشهد توضيحي متحرك"></div>
+  </figure>
   <div id="lab-root"></div>
   <p class="lab-equation" dir="ltr">T = 2π√(L/g)</p>
   <div class="lab-readout" id="lab-outputs"></div>
@@ -49,7 +54,7 @@
     <p>خيط عديم الكتلة وثقل نقطي</p><p>زاوية إزاحة أقل من 15 درجة</p><p>لا مقاومة هواء</p><p>g = 9.81 م/ث²</p><p><a href="https://openstax.org/books/college-physics/pages/16-4-the-simple-pendulum">The Simple Pendulum — College Physics 16.4 — OpenStax</a></p><p><a href="https://www.nist.gov/pml/weights-and-measures/si-units-time">Standard gravity and the SI second — NIST</a></p>
   </details>
   <noscript>فعّل JavaScript لتحريك المدخلات وحساب النتائج.</noscript>
-  <script type="application/json" id="lab-spec">{"controls":[{"id":"length","label_ar":"طول الخيط","step":0.05,"value":1,"unit":"م","from":0.2,"to":3}],"outputs":[{"id":"period","label_ar":"زمن الذبذبة","unit":"ث","decimals":3},{"id":"perMinute","label_ar":"ذبذبات في الدقيقة","unit":"ذبذبة","decimals":1}],"gauge":{"id":"period","min":0,"max":3.6,"start":2.006,"unit":"ث","decimals":3,"bind":"period","label":"زمن الذبذبة — المقياس من 0 إلى 3.6 ثانية"},"note_ar":"المقياس يبدأ عند قيمة الطول الافتراضي (1 م)، فإن غيّرت الطول قارن بالفرق الظاهر أسفله."}</script>
+  <script type="application/json" id="lab-spec">{"controls":[{"id":"length","label_ar":"طول الخيط","step":0.05,"value":1,"unit":"م","from":0.2,"to":3}],"outputs":[{"id":"period","label_ar":"زمن الذبذبة","unit":"ث","decimals":3},{"id":"perMinute","label_ar":"ذبذبات في الدقيقة","unit":"ذبذبة","decimals":1}],"gauge":{"id":"period","min":0,"max":3.6,"start":2.006,"unit":"ث","decimals":3,"bind":"period","label":"زمن الذبذبة — المقياس من 0 إلى 3.6 ثانية"},"scene":{"kind":"pendulum","caption_ar":"ساعة البندول: الطول وحده هو ما يحدّد سرعة الدورة."},"note_ar":"المقياس يبدأ عند قيمة الطول الافتراضي (1 م)، فإن غيّرت الطول قارن بالفرق الظاهر أسفله."}</script>
   <script type="module" src="../assets/js/labs/pendulum-period.mjs"></script>
 </section>
   <div class="prose"><p>البندول كتلة معلّقة بخيط. أزحها عن موضع الاتزان ثم اتركها، فتتأرجح ذهابًا وإيابًا بزمن ثابت لا يتغيّر مع تناقص السعة التدريجي.</p><p>المهم أن الزمن يُقاس بالطول لا بالكتلة: ثقل من الحديد وآخر من الخشب بالطول نفسه يتأرجحان بالزمن نفسه. غيّر الطول في اللوحة وتابعه على المقياس، ثم قارن الزمن عند متر واحد بمترين.</p></div>
@@ -110,6 +115,7 @@
     </li></ol>
 </section>
   <p class="reviewline muted small">راجعه: مراجعة آلية — بوابة الديوان (فحص بنيوي وأرقام) 2026-11-16 · 2026-11-16 · آخر تحديث 2026-11-16</p>
+  <a class="backlink backlink-end" href="../lab/" data-back data-label="المعمل"><svg class="backlink-i" viewBox="0 0 24 24" width="18" height="18" aria-hidden="true" focusable="false"><path d="M9 5l7 7-7 7" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg><span>رجوع إلى المعمل</span></a>
 </article>
 </main>
 <footer class="site-foot">
