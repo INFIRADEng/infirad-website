@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="760" height="360" viewBox="0 0 760 360" role="img" aria-labelledby="t">
+<title id="t">الوميض: كتلة صغيرة وطاقة كبيرة</title>
+<rect width="760" height="360" fill="#ffffff"/>
+<g font-family="'Segoe UI', 'Noto Naskh Arabic', system-ui, sans-serif" direction="rtl">
+<text x="380" y="34" font-size="18" font-weight="700" fill="#1b2a2f" text-anchor="middle">الوميض: كتلة صغيرة وطاقة كبيرة</text>
+<text x="380" y="60" font-size="17" font-weight="400" fill="#5d7079" text-anchor="middle">مكثّف مشبع عند 1150 كيلوباسكال يُصرَّف إلى 101.33 كيلوباسكال</text>
+<text x="380" y="84" font-size="17" font-weight="400" fill="#5d7079" text-anchor="middle">النسبة من كتلة المكثّف 16.4% ومن إنثالبيها 55.7%</text>
+<text x="740" y="138" font-size="17" font-weight="600" fill="#1b2a2f" text-anchor="start">الكتلة المتبخرة</text>
+<rect x="611.5" y="146" width="128.5" height="14" fill="#c2410c" fill-opacity="0.85" rx="6"/>
+<text x="601.5" y="158" font-size="17" font-weight="700" fill="#1b2a2f" text-anchor="end" direction="ltr">⁨16.4 %⁩</text>
+<text x="740" y="196" font-size="17" font-weight="600" fill="#1b2a2f" text-anchor="start">الطاقة التي تحملها</text>
+<rect x="303.7" y="204" width="436.3" height="14" fill="#0e7490" fill-opacity="0.85" rx="6"/>
+<text x="293.7" y="216" font-size="17" font-weight="700" fill="#1b2a2f" text-anchor="end" direction="ltr">⁨55.7 %⁩</text>
+<line x1="740" y1="250" x2="270" y2="250" stroke="#cbd5d9" stroke-width="1"/>
+<text x="740" y="274" font-size="17" font-weight="400" fill="#5d7079" text-anchor="start">0</text>
+<text x="505" y="274" font-size="17" font-weight="400" fill="#5d7079" text-anchor="middle">30</text>
+<text x="270" y="274" font-size="17" font-weight="400" fill="#5d7079" text-anchor="end">60</text>
+<text x="505" y="300" font-size="17" font-weight="400" fill="#5d7079" text-anchor="middle">النسبة من المكثّف الداخل (%)</text>
+<text x="380" y="334" font-size="17" font-weight="400" fill="#5d7079" text-anchor="middle">الطاقة محسوبة بإنثالبي البخار عند 100 °مقابل الماء المتبقي عند 419.1 كيلوجول/كغ.</text>
+</g></svg>
