@@ -281,20 +281,27 @@ code { font-family: ui-monospace, "Cascadia Mono", Consolas, monospace; font-siz
 .lab-gauge { margin: 32px 0 8px; }
 .gauge-head { display: flex; flex-wrap: wrap; gap: 4px 16px; align-items: baseline; }
 .gauge-legend { color: var(--fg-muted); font-size: .9rem; }
-.gauge-track { position: relative; height: 18px; margin-top: 36px; border: 1px solid var(--border); border-radius: 9px; background: #eef1f6; }
+.gauge-track { position: relative; height: 18px; margin-top: 6px; border: 1px solid var(--border); border-radius: 9px; background: #eef1f6; }
 .gauge-fill { position: absolute; inset-block: 0; left: 0; border-radius: 8px 0 0 8px; background: linear-gradient(90deg, var(--infirad-navy-400), #0a7a4a); transition: width .18s ease; }
 .gauge-start { position: absolute; top: -7px; bottom: -7px; width: 0; border-inline-start: 2px dashed var(--fg-muted); }
 .gauge-now { position: absolute; top: -8px; bottom: -8px; width: 0; border-inline-start: 2px solid var(--infirad-navy); transition: left .18s ease; }
-.gauge-bubble { position: absolute; bottom: calc(100% + 12px); left: 50%; transform: translateX(-50%); padding: 3px 9px; border-radius: 4px; background: var(--infirad-navy); color: #fff; font-size: .84rem; font-weight: 700; white-space: nowrap; font-variant-numeric: tabular-nums; }
+/* سطر الفقاعة يحجز ارتفاعه في التدفّق: الفقاعة العائمة كانت تطفو على سطر
+   التعريف أعلى الشريط (الفقاعة تحتاج ~42px والهامش كان 36px). الحجز هنا
+   بنيويّ، فلا يتداخل النصّان مهما طال التعريف أو التفّ في شاشة ضيقة. */
+.gauge-readout { position: relative; height: 28px; margin-top: 14px; }
+.gauge-bubble { position: absolute; bottom: 0; left: 50%; transform: translateX(-50%); padding: 3px 9px; border-radius: 4px; background: var(--infirad-navy); color: #fff; font-size: .84rem; line-height: 1.35; font-weight: 700; white-space: nowrap; font-variant-numeric: tabular-nums; }
 .gauge-bubble::after { content: ""; position: absolute; top: 100%; left: 50%; margin-left: -4px; border: 4px solid transparent; border-top-color: var(--infirad-navy); }
-.gauge-now.is-low .gauge-bubble { left: 0; transform: none; }
-.gauge-now.is-low .gauge-bubble::after { left: 8px; margin-left: 0; }
-.gauge-now.is-high .gauge-bubble { left: auto; right: 0; transform: none; }
-.gauge-now.is-high .gauge-bubble::after { left: auto; right: 8px; margin-left: 0; }
+/* عند طرفَي الشريط تميل الفقاعة لئلا تخرج عن الحاوية */
+.gauge-bubble.is-low { transform: translateX(0); }
+.gauge-bubble.is-low::after { left: 8px; margin-left: 0; }
+.gauge-bubble.is-high { transform: translateX(-100%); }
+.gauge-bubble.is-high::after { left: auto; right: 8px; margin-left: 0; }
 /* قيمة خارج مدى المقياس: الرقم يبقى حقيقيًّا، واللون يعلن أنّ الشريط وصل حده */
-.gauge-now.is-over .gauge-bubble { background: var(--ochre, #a16207); color: #fff; border-color: var(--ochre, #a16207); }
-.gauge-now.is-over .gauge-bubble::after { border-top-color: var(--ochre, #a16207); }
-.gauge-scale { position: relative; height: 26px; margin-top: 6px; }
+.gauge-bubble.is-over { background: var(--ochre, #a16207); color: #fff; border-color: var(--ochre, #a16207); }
+.gauge-bubble.is-over::after { border-top-color: var(--ochre, #a16207); }
+/* ارتفاع التدريج يحجز صندوق الرقم كاملًا (top 8px + صندوق 21px + هامش 4px).
+   القياس 2026-11-20: 26px تركت الرقم يلامس سطر الشرح بـ3px في 21 تجربة من 24. */
+.gauge-scale { position: relative; height: 33px; margin-top: 6px; }
 .gauge-tick { position: absolute; top: 8px; transform: translateX(-50%); color: var(--fg-muted); font-size: .8rem; font-variant-numeric: tabular-nums; }
 .gauge-tick::before { content: ""; position: absolute; top: -8px; left: 50%; height: 5px; border-inline-start: 1px solid var(--border); }
 .gauge-tick[data-edge="low"] { transform: none; }

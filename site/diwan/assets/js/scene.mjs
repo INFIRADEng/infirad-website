@@ -402,7 +402,7 @@ function plateSun(v, out, t) {
   }
   // الصفيحة
   ops.push(rect(430, 150, 26, 130, { fill: P.navy, stroke: P.ink, width: 2, rx: 4 }));
-  ops.push(mid(443, 142, "الصفيحة", { size: 17, fill: P.muted }));
+  ops.push(mid(470, 140, "الصفيحة", { size: 17, fill: P.muted }));
   // إشعاع صادر: أطوال الأسهم ∝ T⁴
   const frac = clamp((Teq - 150) / 750, 0.05, 1);
   for (let i = 0; i < 4; i++) {

@@ -69,10 +69,17 @@ export function createGauge(el, opts) {
 
   const now = document.createElement("div");
   now.className = "gauge-now";
+  track.append(fill, now);
+
+  // سطر الفقاعة سطرٌ محجوز في التدفّق، لا فقاعة عائمة فوق الشريط:
+  // الفقاعة العائمة كانت تطفو على سطر التعريف حين يلتفّ أو يطول
+  // (قياس 2026-11-20: الفقاعة تحتاج 42px فوق الشريط والهامش كان 36px).
+  // هنا يحجز `gauge-readout` ارتفاعه بنفسه، فلا يمكن أن تلمس ما فوقها.
+  const readout = document.createElement("div");
+  readout.className = "gauge-readout";
   const bubble = document.createElement("span");
   bubble.className = "gauge-bubble";
-  now.append(bubble);
-  track.append(fill, now);
+  readout.append(bubble);
 
   const scale = document.createElement("div");
   scale.className = "gauge-scale";
@@ -97,7 +104,7 @@ export function createGauge(el, opts) {
   caption.setAttribute("role", "meter");
   caption.setAttribute("aria-live", "polite");
 
-  el.append(head, track, scale, caption);
+  el.append(head, readout, track, scale, caption);
 
   function set(value, { by } = {}) {
     // الرقم المعروض هو القيمة الحقيقية دائمًا؛ الحدّ يمسّ الهندسة وحدها.
@@ -109,9 +116,10 @@ export function createGauge(el, opts) {
     const over = v > max + 1e-9 || v < min - 1e-9;
     fill.style.width = `${at}%`;
     now.style.left = `${at}%`;
-    now.classList.toggle("is-low", at < 12);
-    now.classList.toggle("is-high", at > 88);
-    now.classList.toggle("is-over", over);
+    bubble.style.left = `${at}%`;
+    bubble.classList.toggle("is-low", at < 12);
+    bubble.classList.toggle("is-high", at > 88);
+    bubble.classList.toggle("is-over", over);
     bubble.textContent = `${fmt(v, decimals)} ${unit}`.trim();
 
     for (const t of ticks) {
