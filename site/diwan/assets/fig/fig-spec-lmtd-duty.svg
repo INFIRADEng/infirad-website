@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="760" height="514" viewBox="0 0 760 514" role="img" aria-labelledby="t">
+<title id="t">حمل المبادل مقابل مساحة التبادل</title>
+<rect width="760" height="514" fill="#ffffff"/>
+<g font-family="'Segoe UI', 'Noto Naskh Arabic', system-ui, sans-serif" direction="rtl">
+<text x="380" y="34" font-size="18" font-weight="700" fill="#1b2a2f" text-anchor="middle">حمل المبادل مقابل مساحة التبادل</text>
+<line x1="96" y1="130" x2="96" y2="400" stroke="#cbd5d9" stroke-width="1" stroke-opacity="0.6"/>
+<text x="96" y="426" font-size="17" font-weight="400" fill="#5d7079" text-anchor="middle">0</text>
+<line x1="236.5" y1="130" x2="236.5" y2="400" stroke="#cbd5d9" stroke-width="1" stroke-opacity="0.6"/>
+<text x="236.5" y="426" font-size="17" font-weight="400" fill="#5d7079" text-anchor="middle">10</text>
+<line x1="377" y1="130" x2="377" y2="400" stroke="#cbd5d9" stroke-width="1" stroke-opacity="0.6"/>
+<text x="377" y="426" font-size="17" font-weight="400" fill="#5d7079" text-anchor="middle">20</text>
+<line x1="517.5" y1="130" x2="517.5" y2="400" stroke="#cbd5d9" stroke-width="1" stroke-opacity="0.6"/>
+<text x="517.5" y="426" font-size="17" font-weight="400" fill="#5d7079" text-anchor="middle">30</text>
+<line x1="658" y1="130" x2="658" y2="400" stroke="#cbd5d9" stroke-width="1" stroke-opacity="0.6"/>
+<text x="658" y="426" font-size="17" font-weight="400" fill="#5d7079" text-anchor="middle">40</text>
+<line x1="96" y1="400" x2="658" y2="400" stroke="#cbd5d9" stroke-width="1" stroke-opacity="0.6"/>
+<text x="670" y="406" font-size="17" font-weight="400" fill="#5d7079" text-anchor="start">0</text>
+<line x1="96" y1="358.5" x2="658" y2="358.5" stroke="#cbd5d9" stroke-width="1" stroke-opacity="0.6"/>
+<text x="670" y="364.5" font-size="17" font-weight="400" fill="#5d7079" text-anchor="start">200</text>
+<line x1="96" y1="316.9" x2="658" y2="316.9" stroke="#cbd5d9" stroke-width="1" stroke-opacity="0.6"/>
+<text x="670" y="322.9" font-size="17" font-weight="400" fill="#5d7079" text-anchor="start">400</text>
+<line x1="96" y1="275.4" x2="658" y2="275.4" stroke="#cbd5d9" stroke-width="1" stroke-opacity="0.6"/>
+<text x="670" y="281.4" font-size="17" font-weight="400" fill="#5d7079" text-anchor="start">600</text>
+<line x1="96" y1="233.8" x2="658" y2="233.8" stroke="#cbd5d9" stroke-width="1" stroke-opacity="0.6"/>
+<text x="670" y="239.8" font-size="17" font-weight="400" fill="#5d7079" text-anchor="start">800</text>
+<line x1="96" y1="192.3" x2="658" y2="192.3" stroke="#cbd5d9" stroke-width="1" stroke-opacity="0.6"/>
+<text x="670" y="198.3" font-size="17" font-weight="400" fill="#5d7079" text-anchor="start">1000</text>
+<line x1="96" y1="150.8" x2="658" y2="150.8" stroke="#cbd5d9" stroke-width="1" stroke-opacity="0.6"/>
+<text x="670" y="156.8" font-size="17" font-weight="400" fill="#5d7079" text-anchor="start">1200</text>
+<line x1="96" y1="130" x2="96" y2="400" stroke="#1b2a2f" stroke-width="1.5"/>
+<line x1="96" y1="400" x2="658" y2="400" stroke="#1b2a2f" stroke-width="1.5"/>
+<path d="M124.1,387.5 L180.3,362.6 L236.5,337.6 L292.7,312.7 L348.9,287.8 L405.1,262.8 L461.3,237.9 L517.5,212.9 L573.7,188 L629.9,163" fill="none" stroke="#c2410c" stroke-width="2.5" stroke-linejoin="round"/>
+<circle cx="264.6" cy="325.2" r="5" fill="#1b2a2f"/>
+<text x="264.6" y="311.2" font-size="17" font-weight="700" fill="#1b2a2f" text-anchor="middle" stroke="#ffffff" stroke-width="4" stroke-linejoin="round" paint-order="stroke">12 م² ← 360 ك.و</text>
+<text x="377" y="454" font-size="17" font-weight="400" fill="#5d7079" text-anchor="middle">المساحة A (م²)</text>
+<text x="96" y="108" font-size="17" font-weight="400" fill="#5d7079" text-anchor="start" direction="ltr">الحمل Q (ك.و)</text>
+<text x="380" y="488" font-size="17" font-weight="400" fill="#5d7079" text-anchor="middle">العلاقة خطية في المساحة: مضاعفة المساحة تضاعف الحمل عند فروق الحرارة نفسها.</text>
+</g></svg>
