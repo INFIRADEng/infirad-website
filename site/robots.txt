@@ -2,3 +2,4 @@ User-agent: *
 Allow: /
 
 Sitemap: https://infiradev.com/sitemap.xml
+Sitemap: https://infiradev.com/diwan/sitemap.xml
