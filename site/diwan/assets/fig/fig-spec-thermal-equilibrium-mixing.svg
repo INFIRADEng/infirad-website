@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="760" height="514" viewBox="0 0 760 514" role="img" aria-labelledby="t">
+<title id="t">حرارة الخليط مقابل كتلة الماء الساخن (250 غ بارد 20 °م)</title>
+<rect width="760" height="514" fill="#ffffff"/>
+<g font-family="'Segoe UI', 'Noto Naskh Arabic', system-ui, sans-serif" direction="rtl">
+<text x="380" y="34" font-size="18" font-weight="700" fill="#1b2a2f" text-anchor="middle">حرارة الخليط مقابل كتلة الماء الساخن (250 غ بارد 20 °م)</text>
+<line x1="96" y1="130" x2="96" y2="400" stroke="#cbd5d9" stroke-width="1" stroke-opacity="0.6"/>
+<text x="96" y="426" font-size="17" font-weight="400" fill="#5d7079" text-anchor="middle">25</text>
+<line x1="166.3" y1="130" x2="166.3" y2="400" stroke="#cbd5d9" stroke-width="1" stroke-opacity="0.6"/>
+<text x="166.3" y="426" font-size="17" font-weight="400" fill="#5d7079" text-anchor="middle">72</text>
+<line x1="236.5" y1="130" x2="236.5" y2="400" stroke="#cbd5d9" stroke-width="1" stroke-opacity="0.6"/>
+<text x="236.5" y="426" font-size="17" font-weight="400" fill="#5d7079" text-anchor="middle">119</text>
+<line x1="306.8" y1="130" x2="306.8" y2="400" stroke="#cbd5d9" stroke-width="1" stroke-opacity="0.6"/>
+<text x="306.8" y="426" font-size="17" font-weight="400" fill="#5d7079" text-anchor="middle">166</text>
+<line x1="377" y1="130" x2="377" y2="400" stroke="#cbd5d9" stroke-width="1" stroke-opacity="0.6"/>
+<text x="377" y="426" font-size="17" font-weight="400" fill="#5d7079" text-anchor="middle">213</text>
+<line x1="447.3" y1="130" x2="447.3" y2="400" stroke="#cbd5d9" stroke-width="1" stroke-opacity="0.6"/>
+<text x="447.3" y="426" font-size="17" font-weight="400" fill="#5d7079" text-anchor="middle">259</text>
+<line x1="517.5" y1="130" x2="517.5" y2="400" stroke="#cbd5d9" stroke-width="1" stroke-opacity="0.6"/>
+<text x="517.5" y="426" font-size="17" font-weight="400" fill="#5d7079" text-anchor="middle">306</text>
+<line x1="587.8" y1="130" x2="587.8" y2="400" stroke="#cbd5d9" stroke-width="1" stroke-opacity="0.6"/>
+<text x="587.8" y="426" font-size="17" font-weight="400" fill="#5d7079" text-anchor="middle">353</text>
+<line x1="96" y1="400" x2="658" y2="400" stroke="#cbd5d9" stroke-width="1" stroke-opacity="0.6"/>
+<text x="670" y="406" font-size="17" font-weight="400" fill="#5d7079" text-anchor="start">20</text>
+<line x1="96" y1="355" x2="658" y2="355" stroke="#cbd5d9" stroke-width="1" stroke-opacity="0.6"/>
+<text x="670" y="361" font-size="17" font-weight="400" fill="#5d7079" text-anchor="start">31.7</text>
+<line x1="96" y1="310" x2="658" y2="310" stroke="#cbd5d9" stroke-width="1" stroke-opacity="0.6"/>
+<text x="670" y="316" font-size="17" font-weight="400" fill="#5d7079" text-anchor="start">43.3</text>
+<line x1="96" y1="265" x2="658" y2="265" stroke="#cbd5d9" stroke-width="1" stroke-opacity="0.6"/>
+<text x="670" y="271" font-size="17" font-weight="400" fill="#5d7079" text-anchor="start">55</text>
+<line x1="96" y1="219.9" x2="658" y2="219.9" stroke="#cbd5d9" stroke-width="1" stroke-opacity="0.6"/>
+<text x="670" y="225.9" font-size="17" font-weight="400" fill="#5d7079" text-anchor="start">66.7</text>
+<line x1="96" y1="174.9" x2="658" y2="174.9" stroke="#cbd5d9" stroke-width="1" stroke-opacity="0.6"/>
+<text x="670" y="180.9" font-size="17" font-weight="400" fill="#5d7079" text-anchor="start">78.4</text>
+<line x1="96" y1="130" x2="96" y2="400" stroke="#1b2a2f" stroke-width="1.5"/>
+<line x1="96" y1="400" x2="658" y2="400" stroke="#1b2a2f" stroke-width="1.5"/>
+<path d="M96,375.5 L166.3,339.7 L236.5,313.1 L306.7,292.4 L377,276 L447.3,262.5 L517.5,251.3 L587.7,241.9 L658,233.8" fill="none" stroke="#c2410c" stroke-width="2.5" stroke-linejoin="round"/>
+<circle cx="208.4" cy="322.9" r="5" fill="#1b2a2f"/>
+<text x="208.4" y="308.9" font-size="17" font-weight="700" fill="#1b2a2f" text-anchor="middle" stroke="#ffffff" stroke-width="4" stroke-linejoin="round" paint-order="stroke">100 غ ← 40.0 °م</text>
+<text x="377" y="454" font-size="17" font-weight="400" fill="#5d7079" text-anchor="middle">الساخن (غ)</text>
+<text x="96" y="108" font-size="17" font-weight="400" fill="#5d7079" text-anchor="start" direction="ltr">حرارة الخليط (°م)</text>
+<text x="380" y="488" font-size="17" font-weight="400" fill="#5d7079" text-anchor="middle">الحرارة النهائية تقع بين الطرفين دائمًا، وتقترب من حرارة الساخن عندما تكبر كتلته — ولا تتجاوزها أبدًا.</text>
+</g></svg>

@@ -1,0 +1,46 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="760" height="514" viewBox="0 0 760 514" role="img" aria-labelledby="t">
+<title id="t">الإشعاع مقابل الانبعاثية (كوب 80 °م)</title>
+<rect width="760" height="514" fill="#ffffff"/>
+<g font-family="'Segoe UI', 'Noto Naskh Arabic', system-ui, sans-serif" direction="rtl">
+<text x="380" y="34" font-size="18" font-weight="700" fill="#1b2a2f" text-anchor="middle">الإشعاع مقابل الانبعاثية (كوب 80 °م)</text>
+<line x1="96" y1="130" x2="96" y2="400" stroke="#cbd5d9" stroke-width="1" stroke-opacity="0.6"/>
+<text x="96" y="426" font-size="17" font-weight="400" fill="#5d7079" text-anchor="middle">0</text>
+<line x1="164.7" y1="130" x2="164.7" y2="400" stroke="#cbd5d9" stroke-width="1" stroke-opacity="0.6"/>
+<text x="164.7" y="426" font-size="17" font-weight="400" fill="#5d7079" text-anchor="middle">0</text>
+<line x1="233.4" y1="130" x2="233.4" y2="400" stroke="#cbd5d9" stroke-width="1" stroke-opacity="0.6"/>
+<text x="233.4" y="426" font-size="17" font-weight="400" fill="#5d7079" text-anchor="middle">0</text>
+<line x1="302.1" y1="130" x2="302.1" y2="400" stroke="#cbd5d9" stroke-width="1" stroke-opacity="0.6"/>
+<text x="302.1" y="426" font-size="17" font-weight="400" fill="#5d7079" text-anchor="middle">0</text>
+<line x1="370.8" y1="130" x2="370.8" y2="400" stroke="#cbd5d9" stroke-width="1" stroke-opacity="0.6"/>
+<text x="370.8" y="426" font-size="17" font-weight="400" fill="#5d7079" text-anchor="middle">0</text>
+<line x1="439.4" y1="130" x2="439.4" y2="400" stroke="#cbd5d9" stroke-width="1" stroke-opacity="0.6"/>
+<text x="439.4" y="426" font-size="17" font-weight="400" fill="#5d7079" text-anchor="middle">1</text>
+<line x1="508.1" y1="130" x2="508.1" y2="400" stroke="#cbd5d9" stroke-width="1" stroke-opacity="0.6"/>
+<text x="508.1" y="426" font-size="17" font-weight="400" fill="#5d7079" text-anchor="middle">1</text>
+<line x1="576.8" y1="130" x2="576.8" y2="400" stroke="#cbd5d9" stroke-width="1" stroke-opacity="0.6"/>
+<text x="576.8" y="426" font-size="17" font-weight="400" fill="#5d7079" text-anchor="middle">1</text>
+<line x1="645.5" y1="130" x2="645.5" y2="400" stroke="#cbd5d9" stroke-width="1" stroke-opacity="0.6"/>
+<text x="645.5" y="426" font-size="17" font-weight="400" fill="#5d7079" text-anchor="middle">1</text>
+<line x1="96" y1="400" x2="658" y2="400" stroke="#cbd5d9" stroke-width="1" stroke-opacity="0.6"/>
+<text x="670" y="406" font-size="17" font-weight="400" fill="#5d7079" text-anchor="start">0</text>
+<line x1="96" y1="355" x2="658" y2="355" stroke="#cbd5d9" stroke-width="1" stroke-opacity="0.6"/>
+<text x="670" y="361" font-size="17" font-weight="400" fill="#5d7079" text-anchor="start">3.3</text>
+<line x1="96" y1="310.1" x2="658" y2="310.1" stroke="#cbd5d9" stroke-width="1" stroke-opacity="0.6"/>
+<text x="670" y="316.1" font-size="17" font-weight="400" fill="#5d7079" text-anchor="start">6.7</text>
+<line x1="96" y1="265.1" x2="658" y2="265.1" stroke="#cbd5d9" stroke-width="1" stroke-opacity="0.6"/>
+<text x="670" y="271.1" font-size="17" font-weight="400" fill="#5d7079" text-anchor="start">10</text>
+<line x1="96" y1="220.2" x2="658" y2="220.2" stroke="#cbd5d9" stroke-width="1" stroke-opacity="0.6"/>
+<text x="670" y="226.2" font-size="17" font-weight="400" fill="#5d7079" text-anchor="start">13.3</text>
+<line x1="96" y1="175.2" x2="658" y2="175.2" stroke="#cbd5d9" stroke-width="1" stroke-opacity="0.6"/>
+<text x="670" y="181.2" font-size="17" font-weight="400" fill="#5d7079" text-anchor="start">16.6</text>
+<line x1="96" y1="130.3" x2="658" y2="130.3" stroke="#cbd5d9" stroke-width="1" stroke-opacity="0.6"/>
+<text x="670" y="136.3" font-size="17" font-weight="400" fill="#5d7079" text-anchor="start">20</text>
+<line x1="96" y1="130" x2="96" y2="400" stroke="#1b2a2f" stroke-width="1.5"/>
+<line x1="96" y1="400" x2="658" y2="400" stroke="#1b2a2f" stroke-width="1.5"/>
+<path d="M96,385.4 L164.7,352.3 L233.4,319.4 L308.3,286.5 L377,253.5 L445.7,220.6 L514.4,187.6 L589.3,154.7 L658,121.8" fill="none" stroke="#c2410c" stroke-width="2.5" stroke-linejoin="round"/>
+<circle cx="96" cy="385.4" r="5" fill="#1b2a2f"/>
+<text x="96" y="371.4" font-size="17" font-weight="700" fill="#1b2a2f" text-anchor="middle" stroke="#ffffff" stroke-width="4" stroke-linejoin="round" paint-order="stroke">0.05 ← 1.08 واط</text>
+<text x="377" y="454" font-size="17" font-weight="400" fill="#5d7079" text-anchor="middle">الانبعاثية</text>
+<text x="96" y="108" font-size="17" font-weight="400" fill="#5d7079" text-anchor="start" direction="ltr">الفقد الإشعاعي (واط)</text>
+<text x="380" y="488" font-size="17" font-weight="400" fill="#5d7079" text-anchor="middle">الانبعاثية تدخل خطيًا: ورق ألمنيوم لامع (0.05) يفقد عشرين ضعف ما يفقد سطح مطفي (0.95) بالإشعاع وحده.</text>
+</g></svg>

@@ -1,0 +1,133 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>البالون في الماء الساخن: كيف يتمدّد الغاز؟ — ديوان المعرفة</title>
+  <meta name="description" content="بالون يُغمر في ماء دافئ يكبر محيطه بمقدار يُقاس بشريط. النموذج يربط المحيط بدرجة الحرارة المطلقة، ويُظهر أن العلاقة جذر تكعيبي لا خط." />
+  <link rel="stylesheet" href="../assets/css/tokens.css" />
+  <link rel="stylesheet" href="../assets/css/site.css" />
+
+  <link rel="canonical" href="https://infiradev.com/diwan/lab/balloon-thermal-expansion.html" />
+  <link rel="icon" href="https://infiradev.com/favicon.ico" sizes="48x48" />
+  <link rel="icon" type="image/png" sizes="192x192" href="https://infiradev.com/assets/favicon-192.png" />
+  <link rel="apple-touch-icon" href="https://infiradev.com/assets/apple-touch-icon.png" />
+  <script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"Organization","@id":"https://infiradev.com/#organization","name":"INFIRAD","alternateName":["انفِراد","انفراد"],"url":"https://infiradev.com/","logo":{"@type":"ImageObject","url":"https://infiradev.com/assets/logo-bilingual.png","width":990,"height":320},"slogan":"من الفكرة إلى اليقين","foundingDate":"2025","email":"info@infiradeng.com","telephone":"+966557748982","address":{"@type":"PostalAddress","addressLocality":"Riyadh","addressCountry":"SA"},"sameAs":["https://www.linkedin.com/company/infirad/"],"knowsAbout":["Engineering services","Engineering Services Provider (ESP)","Process design","Process simulation","Computational fluid dynamics","Thermal analysis","Independent engineering review","Specialized AI agents","Workflow automation","Traffic simulation"]},{"@type":"WebPage","@id":"https://infiradev.com/diwan/lab/balloon-thermal-expansion.html#webpage","url":"https://infiradev.com/diwan/lab/balloon-thermal-expansion.html","name":"البالون في الماء الساخن: كيف يتمدّد الغاز؟ — ديوان المعرفة","description":"بالون يُغمر في ماء دافئ يكبر محيطه بمقدار يُقاس بشريط. النموذج يربط المحيط بدرجة الحرارة المطلقة، ويُظهر أن العلاقة جذر تكعيبي لا خط.","inLanguage":"ar","isPartOf":{"@id":"https://infiradev.com/#website"},"about":{"@id":"https://infiradev.com/#organization"}},{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"انفراد","item":"https://infiradev.com/"},{"@type":"ListItem","position":2,"name":"ديوان المعرفة","item":"https://infiradev.com/diwan/"},{"@type":"ListItem","position":3,"name":"البالون في الماء الساخن: كيف يتمدّد الغاز؟ — ديوان المعرفة","item":"https://infiradev.com/diwan/lab/balloon-thermal-expansion.html"}]}]}</script>
+</head>
+<body>
+<a class="skip" href="#main">انتقل إلى المحتوى</a>
+<header class="site-head">
+  <div class="wrap head-in">
+    <div class="brand-lockup">
+      <a class="brand" href="https://infiradev.com/" aria-label="انفراد، الموقع الرئيسي">
+        <img src="https://infiradev.com/assets/logo-bilingual.png" alt="انفراد · INFIRAD" width="990" height="320" />
+      </a>
+      <a class="diwan-name" href="../">ديوان المعرفة</a>
+    </div>
+    <nav class="nav" aria-label="أقسام ديوان المعرفة"><a href="../terms/">المصطلحات</a><a href="../articles/">مقالات</a><a href="../domains/">المجالات</a><a href="../lab/" aria-current="page">المعمل</a><a href="../about.html">عن الديوان</a></nav>
+    <nav class="head-actions" aria-label="الرجوع والموقع الرئيسي">
+      <a href="../" data-back><span aria-hidden="true">→</span> رجوع</a>
+      <a href="https://infiradev.com/">موقع انفراد الرئيسي</a>
+    </nav>
+  </div>
+</header>
+
+<main id="main">
+<article class="wrap article experiment">
+  <a class="backlink" href="../lab/" data-back data-label="المعمل"><svg class="backlink-i" viewBox="0 0 24 24" width="18" height="18" aria-hidden="true" focusable="false"><path d="M9 5l7 7-7 7" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg><span>رجوع إلى المعمل</span></a>
+  <nav class="crumbs" aria-label="المسار"><a href="../lab/">المعمل</a> · <a href="../domains/physics.html">الفيزياء</a></nav>
+  <h1 class="page-h">البالون في الماء الساخن: كيف يتمدّد الغاز؟</h1>
+  <section class="lab-panel">
+  <p class="lede">حرّك درجة حرارة الماء وشاهد محيط البالون. محاكاة تعليمية لا قياس فيزيائي حقيقي.</p>
+  <div id="lab-root"></div>
+  <div class="lab-readout" id="lab-outputs"></div>
+  <div class="lab-gauge" id="lab-gauge"></div>
+  <figure class="lab-scene-fig">
+    <figcaption class="lab-scene-cap">بالون داخل ماء ساخن: الغاز محبوس ويتمدّد عند التسخين.</figcaption>
+    <div id="lab-scene" class="lab-scene" role="group" aria-label="مشهد توضيحي متحرك"></div>
+  </figure>
+
+  <p><button class="lab-cta" type="button" id="lab-reset">إعادة الضبط</button></p>
+  <p class="muted small" id="lab-note">محاكاة تعليمية لا قياس فيزيائي حقيقي: الأرقام تُحسب من النموذج لحظيًا، ولا تُقاس بأدوات منزلية.</p>
+  <details>
+    <summary>افتراضات النموذج والمصدر</summary>
+    <p class="lab-equation" dir="ltr">V/T = ثابت (ضغط ثابت) ⇒ C = 2π·r₀·(T/T₀)^(1/3)</p>
+    <p>ضغط الغاز ثابت تقريبًا</p><p>الغاز مثالي</p><p>صلابة المطاط مهملة</p><p><a href="https://en.wikipedia.org/wiki/Charles%27s_law">Charles's law — volume and temperature at constant pressure — Wikipedia</a></p><p><a href="https://www.engineeringtoolbox.com/thermal-expansion-air-d_384.html">Thermal expansion of gases — The Engineering ToolBox</a></p>
+  </details>
+  <noscript>فعّل JavaScript لتحريك المدخلات وحساب النتائج.</noscript>
+  <script type="application/json" id="lab-spec">{"controls":[{"id":"temp","label_ar":"درجة حرارة الماء","from":5,"to":60,"step":1.38,"value":20,"unit":"°م"}],"outputs":[{"id":"circ","label_ar":"محيط البالون","unit":"سم","decimals":2},{"id":"kelvin","label_ar":"درجة الحرارة المطلقة","unit":"كلفن","decimals":1},{"id":"vratio","label_ar":"نسبة الحجم إلى الأصل","unit":"×","decimals":3}],"gauge":{"id":"circ","bind":"circ","label":"محيط البالون — من 28 إلى 36 سم","min":28,"max":36,"start":30,"unit":"سم","decimals":2},"scene":{"kind":"piston","caption_ar":"بالون داخل ماء ساخن: الغاز محبوس ويتمدّد عند التسخين."},"note_ar":"محاكاة تعليمية لا قياس فيزيائي حقيقي: الأرقام تُحسب من النموذج لحظيًا، ولا تُقاس بأدوات منزلية."}</script>
+  <script type="module" src="../assets/js/labs/balloon-thermal-expansion.mjs"></script>
+</section>
+  <div class="prose"><p>انفخ بالونا قليلًا واقفل فوهته، وقِس محيطه بشريط قياس مرن. اغمره في ماء دافئ من الصنبور (لا مغلي) لدقيقة، ثم قِس محيطه ثانية. ما يحدث أن الغاز داخل البالون يُسخَّن فيزيد حجمه عند ضغط شبه ثابت، فيدفع المطاط للخارج.</p><p>النموذج المبسّط: الحجم يتناسب مع درجة الحرارة المطلقة (بكلفن)، ونصف القطر يتناسب مع الجذر التكعيبي للحجم، والمحيط يتناسب مع نصف القطر. لذلك مضاعفة درجة الحرارة المطلقة لا تضاعف المحيط بل تضربه في الجذر التكعيبي لـ2 (نحو 1.26).</p><p>حدّ النموذج صريح: مطاط البالون يضيف ضغطًا مرنًا يتغير مع نصف القطر، ودرجة حرارة الغاز ليست درجة حرارة الماء. فالمحاكاة تُظهر الاتجاه والمقدار التقريبي، لا قيمة قياس دقيقة.</p></div>
+  <div class="depth" aria-label="شرح معمّق"><section class="depth-sec">
+    <h2>كيف تعمل الظاهرة؟</h2>
+    <p>تسخين الغاز يزيد متوسط طاقة حركة جزيئاته، فتزيد قوة اصطدامها بجدار المطاط الداخلي. الضغط يرتفع لحظيًا، فيتمدّ البالون حتى يتوازن الضغط الداخلي مع ضغط المطاط الخارجي وضغط الهواء المحيط.</p>
+  </section><section class="depth-sec">
+    <h2>العلاقة بالأرقام</h2>
+    <p>V ∝ T (كلفن) ⇒ r ∝ T^(1/3) ⇒ C = 2πr. من 20 °م (محيط 30.0 سم) إلى 60 °م: النسبة المطلقة 333/293 = 1.137، والجذر التكعيبي 1.044، فيصبح المحيط 31.3 سم — أي +1.3 سم.</p>
+  </section><section class="depth-sec">
+    <h2>مفاهيم متقاربة</h2>
+    <p>يُخلط بين «التمدد الحراري للغاز» و«تمدد المطاط نفسه»: المطاط يتمدد أيضًا بالحرارة، لكن نصيبه في التغير المرئي أقل من نصيب الغاز داخل البالون.</p>
+  </section><section class="depth-sec">
+    <h2>حدود التطبيق</h2>
+    <p>النموذج يفترض ضغطًا ثابتًا وغازًا مثاليًا ومطاطًا مهمل الصلابة. عند النفخ الشديد يقترب المطاط من حدّه المرن فتقلّ استجابته، وعند التبريد الشديد ينكمش البالون بعلاقة غير خطية.</p>
+  </section></div>
+  <section class="figures" aria-label="الرسوم التوضيحية">
+  <figure class="fig" id="fig-1">
+    <img class="fig-img" src="../assets/fig/fig-spec-balloon-thermal-expansion.svg" alt="منحنى صاعد بلطف يبدأ عند محيط 30 سم في 20 درجة مئوية وينتهي عند 31.3 سم في 60 درجة، وعليه علامة عند الحالة الافتراضية." loading="lazy" />
+    <figcaption><b>الشكل 1.</b> محيط البالون مقابل درجة حرارة الماء: من 30.0 سم عند 20 °م إلى 31.3 سم عند 60 °م.
+      <span class="credit muted small">· من عمل انفراد — رسم محسوب من المعادلة نفسها</span>
+    </figcaption>
+  </figure>
+</section>
+  <table class="facts">
+  <caption>أرقام مسنَدة إلى مصادرها</caption>
+  <thead><tr><th scope="col">الكمية</th><th scope="col">القيمة</th><th scope="col">المصدر</th></tr></thead>
+  <tbody><tr>
+      <th scope="row">محيط البالون عند 20 °م</th>
+      <td>30.0 <span class="unit">سم</span></td>
+      <td><a class="ref" href="#src-1">[1]</a></td>
+    </tr><tr>
+      <th scope="row">المحيط عند 60 °م</th>
+      <td>31.3 <span class="unit">سم</span></td>
+      <td><a class="ref" href="#src-1">[1]</a></td>
+    </tr><tr>
+      <th scope="row">نسبة الحجم عند 60 °م</th>
+      <td>1.136 <span class="unit">×</span></td>
+      <td><a class="ref" href="#src-1">[1]</a></td>
+    </tr></tbody>
+</table>
+  <section class="sources" aria-labelledby="src-h">
+  <h2 id="src-h">المصادر</h2>
+  <ol class="src-list"><li id="src-1">
+      <span class="src-num">1</span>
+      <span>Charles's law — volume and temperature at constant pressure — Wikipedia.
+      <a href="https://en.wikipedia.org/wiki/Charles%27s_law" rel="noopener nofollow" target="_blank">en.wikipedia.org/wiki/Charles%27s_law</a>
+      <span class="muted small">· اطُّلع عليه 2026-11-19</span></span>
+    </li><li id="src-2">
+      <span class="src-num">2</span>
+      <span>Thermal expansion of gases — The Engineering ToolBox.
+      <a href="https://www.engineeringtoolbox.com/thermal-expansion-air-d_384.html" rel="noopener nofollow" target="_blank">www.engineeringtoolbox.com/thermal-expansion-air-d_384.html</a>
+      <span class="muted small">· اطُّلع عليه 2026-11-19</span></span>
+    </li></ol>
+</section>
+  <p class="reviewline muted small">راجعه: عبدالله الهويدي — مراجعة في تطبيق انفراد · 2026-11-19 · آخر تحديث 2026-11-19</p>
+  <a class="backlink backlink-end" href="../lab/" data-back data-label="المعمل"><svg class="backlink-i" viewBox="0 0 24 24" width="18" height="18" aria-hidden="true" focusable="false"><path d="M9 5l7 7-7 7" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg><span>رجوع إلى المعمل</span></a>
+</article>
+</main>
+<footer class="site-foot">
+  <div class="wrap foot-in">
+    <div>
+      <b>ديوان المعرفة</b> — من المفهوم إلى التجربة
+      <div class="muted small">قسم علمي داخل انفراد · <a href="https://infiradev.com">infiradev.com</a> · <a href="mailto:info@infiradev.com">info@infiradev.com</a></div>
+    </div>
+    <div class="muted small">
+      <a href="../about.html">سياسة التحرير والمصادر</a> ·
+      <a href="../terms/">المصطلحات</a> ·
+      <a href="../lab/">المعمل الافتراضي</a>
+    </div>
+  </div>
+</footer>
+<script src="../assets/js/site.js" defer></script>
+</body>
+</html>

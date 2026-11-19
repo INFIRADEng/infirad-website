@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="760" height="514" viewBox="0 0 760 514" role="img" aria-labelledby="t">
+<title id="t">قدرة التبريد مقابل معدل التبخر (إيثانول)</title>
+<rect width="760" height="514" fill="#ffffff"/>
+<g font-family="'Segoe UI', 'Noto Naskh Arabic', system-ui, sans-serif" direction="rtl">
+<text x="380" y="34" font-size="18" font-weight="700" fill="#1b2a2f" text-anchor="middle">قدرة التبريد مقابل معدل التبخر (إيثانول)</text>
+<line x1="96" y1="130" x2="96" y2="400" stroke="#cbd5d9" stroke-width="1" stroke-opacity="0.6"/>
+<text x="96" y="426" font-size="17" font-weight="400" fill="#5d7079" text-anchor="middle">0</text>
+<line x1="166.5" y1="130" x2="166.5" y2="400" stroke="#cbd5d9" stroke-width="1" stroke-opacity="0.6"/>
+<text x="166.5" y="426" font-size="17" font-weight="400" fill="#5d7079" text-anchor="middle">1</text>
+<line x1="237.1" y1="130" x2="237.1" y2="400" stroke="#cbd5d9" stroke-width="1" stroke-opacity="0.6"/>
+<text x="237.1" y="426" font-size="17" font-weight="400" fill="#5d7079" text-anchor="middle">3</text>
+<line x1="307.6" y1="130" x2="307.6" y2="400" stroke="#cbd5d9" stroke-width="1" stroke-opacity="0.6"/>
+<text x="307.6" y="426" font-size="17" font-weight="400" fill="#5d7079" text-anchor="middle">4</text>
+<line x1="378.1" y1="130" x2="378.1" y2="400" stroke="#cbd5d9" stroke-width="1" stroke-opacity="0.6"/>
+<text x="378.1" y="426" font-size="17" font-weight="400" fill="#5d7079" text-anchor="middle">5</text>
+<line x1="448.7" y1="130" x2="448.7" y2="400" stroke="#cbd5d9" stroke-width="1" stroke-opacity="0.6"/>
+<text x="448.7" y="426" font-size="17" font-weight="400" fill="#5d7079" text-anchor="middle">6</text>
+<line x1="519.2" y1="130" x2="519.2" y2="400" stroke="#cbd5d9" stroke-width="1" stroke-opacity="0.6"/>
+<text x="519.2" y="426" font-size="17" font-weight="400" fill="#5d7079" text-anchor="middle">8</text>
+<line x1="589.8" y1="130" x2="589.8" y2="400" stroke="#cbd5d9" stroke-width="1" stroke-opacity="0.6"/>
+<text x="589.8" y="426" font-size="17" font-weight="400" fill="#5d7079" text-anchor="middle">9</text>
+<line x1="96" y1="400" x2="658" y2="400" stroke="#cbd5d9" stroke-width="1" stroke-opacity="0.6"/>
+<text x="670" y="406" font-size="17" font-weight="400" fill="#5d7079" text-anchor="start">0</text>
+<line x1="96" y1="355" x2="658" y2="355" stroke="#cbd5d9" stroke-width="1" stroke-opacity="0.6"/>
+<text x="670" y="361" font-size="17" font-weight="400" fill="#5d7079" text-anchor="start">6.7</text>
+<line x1="96" y1="310" x2="658" y2="310" stroke="#cbd5d9" stroke-width="1" stroke-opacity="0.6"/>
+<text x="670" y="316" font-size="17" font-weight="400" fill="#5d7079" text-anchor="start">13.3</text>
+<line x1="96" y1="264.9" x2="658" y2="264.9" stroke="#cbd5d9" stroke-width="1" stroke-opacity="0.6"/>
+<text x="670" y="270.9" font-size="17" font-weight="400" fill="#5d7079" text-anchor="start">20</text>
+<line x1="96" y1="219.9" x2="658" y2="219.9" stroke="#cbd5d9" stroke-width="1" stroke-opacity="0.6"/>
+<text x="670" y="225.9" font-size="17" font-weight="400" fill="#5d7079" text-anchor="start">26.7</text>
+<line x1="96" y1="174.9" x2="658" y2="174.9" stroke="#cbd5d9" stroke-width="1" stroke-opacity="0.6"/>
+<text x="670" y="180.9" font-size="17" font-weight="400" fill="#5d7079" text-anchor="start">33.4</text>
+<line x1="96" y1="130" x2="96" y2="400" stroke="#1b2a2f" stroke-width="1.5"/>
+<line x1="96" y1="400" x2="658" y2="400" stroke="#1b2a2f" stroke-width="1.5"/>
+<path d="M96,381.1 L166.5,265.2 L236.5,149.3 L307,33.4 L377,-82.6 L447.5,-198.5 L517.5,-314.4 L588,-430.2 L658,-546.1" fill="none" stroke="#c2410c" stroke-width="2.5" stroke-linejoin="round"/>
+<circle cx="199.2" cy="210.8" r="5" fill="#1b2a2f"/>
+<text x="199.2" y="196.8" font-size="17" font-weight="700" fill="#1b2a2f" text-anchor="middle" stroke="#ffffff" stroke-width="4" stroke-linejoin="round" paint-order="stroke">2 غ/د ← 28.0 واط</text>
+<text x="377" y="454" font-size="17" font-weight="400" fill="#5d7079" text-anchor="middle">المعدل (غ/دقيقة)</text>
+<text x="96" y="108" font-size="17" font-weight="400" fill="#5d7079" text-anchor="start" direction="ltr">القدرة (واط)</text>
+<text x="380" y="488" font-size="17" font-weight="400" fill="#5d7079" text-anchor="middle">كل غرام يتبخر يحمل معه حرارته الكامنة: مضاعفة المعدل تضاعف القدرة خطيًا، والفارق بين الكحول والماء هو قيمة L وحدها.</text>
+</g></svg>

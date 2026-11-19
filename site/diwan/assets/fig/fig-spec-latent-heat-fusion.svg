@@ -1,0 +1,44 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="760" height="514" viewBox="0 0 760 514" role="img" aria-labelledby="t">
+<title id="t">الطاقة اللازمة لإذابة الجليد وتسخينه إلى 20 °م</title>
+<rect width="760" height="514" fill="#ffffff"/>
+<g font-family="'Segoe UI', 'Noto Naskh Arabic', system-ui, sans-serif" direction="rtl">
+<text x="380" y="34" font-size="18" font-weight="700" fill="#1b2a2f" text-anchor="middle">الطاقة اللازمة لإذابة الجليد وتسخينه إلى 20 °م</text>
+<line x1="96" y1="130" x2="96" y2="400" stroke="#cbd5d9" stroke-width="1" stroke-opacity="0.6"/>
+<text x="96" y="426" font-size="17" font-weight="400" fill="#5d7079" text-anchor="middle">50</text>
+<line x1="166.3" y1="130" x2="166.3" y2="400" stroke="#cbd5d9" stroke-width="1" stroke-opacity="0.6"/>
+<text x="166.3" y="426" font-size="17" font-weight="400" fill="#5d7079" text-anchor="middle">106</text>
+<line x1="236.5" y1="130" x2="236.5" y2="400" stroke="#cbd5d9" stroke-width="1" stroke-opacity="0.6"/>
+<text x="236.5" y="426" font-size="17" font-weight="400" fill="#5d7079" text-anchor="middle">163</text>
+<line x1="306.8" y1="130" x2="306.8" y2="400" stroke="#cbd5d9" stroke-width="1" stroke-opacity="0.6"/>
+<text x="306.8" y="426" font-size="17" font-weight="400" fill="#5d7079" text-anchor="middle">219</text>
+<line x1="377" y1="130" x2="377" y2="400" stroke="#cbd5d9" stroke-width="1" stroke-opacity="0.6"/>
+<text x="377" y="426" font-size="17" font-weight="400" fill="#5d7079" text-anchor="middle">275</text>
+<line x1="447.3" y1="130" x2="447.3" y2="400" stroke="#cbd5d9" stroke-width="1" stroke-opacity="0.6"/>
+<text x="447.3" y="426" font-size="17" font-weight="400" fill="#5d7079" text-anchor="middle">331</text>
+<line x1="517.5" y1="130" x2="517.5" y2="400" stroke="#cbd5d9" stroke-width="1" stroke-opacity="0.6"/>
+<text x="517.5" y="426" font-size="17" font-weight="400" fill="#5d7079" text-anchor="middle">388</text>
+<line x1="587.8" y1="130" x2="587.8" y2="400" stroke="#cbd5d9" stroke-width="1" stroke-opacity="0.6"/>
+<text x="587.8" y="426" font-size="17" font-weight="400" fill="#5d7079" text-anchor="middle">444</text>
+<line x1="658" y1="130" x2="658" y2="400" stroke="#cbd5d9" stroke-width="1" stroke-opacity="0.6"/>
+<text x="658" y="426" font-size="17" font-weight="400" fill="#5d7079" text-anchor="middle">500</text>
+<line x1="96" y1="400" x2="658" y2="400" stroke="#cbd5d9" stroke-width="1" stroke-opacity="0.6"/>
+<text x="670" y="406" font-size="17" font-weight="400" fill="#5d7079" text-anchor="start">0</text>
+<line x1="96" y1="355" x2="658" y2="355" stroke="#cbd5d9" stroke-width="1" stroke-opacity="0.6"/>
+<text x="670" y="361" font-size="17" font-weight="400" fill="#5d7079" text-anchor="start">41.7</text>
+<line x1="96" y1="310" x2="658" y2="310" stroke="#cbd5d9" stroke-width="1" stroke-opacity="0.6"/>
+<text x="670" y="316" font-size="17" font-weight="400" fill="#5d7079" text-anchor="start">83.3</text>
+<line x1="96" y1="265" x2="658" y2="265" stroke="#cbd5d9" stroke-width="1" stroke-opacity="0.6"/>
+<text x="670" y="271" font-size="17" font-weight="400" fill="#5d7079" text-anchor="start">125</text>
+<line x1="96" y1="220" x2="658" y2="220" stroke="#cbd5d9" stroke-width="1" stroke-opacity="0.6"/>
+<text x="670" y="226" font-size="17" font-weight="400" fill="#5d7079" text-anchor="start">166.7</text>
+<line x1="96" y1="175" x2="658" y2="175" stroke="#cbd5d9" stroke-width="1" stroke-opacity="0.6"/>
+<text x="670" y="181" font-size="17" font-weight="400" fill="#5d7079" text-anchor="start">208.4</text>
+<line x1="96" y1="130" x2="96" y2="400" stroke="#1b2a2f" stroke-width="1.5"/>
+<line x1="96" y1="400" x2="658" y2="400" stroke="#1b2a2f" stroke-width="1.5"/>
+<path d="M96,375.8 L166.3,348.5 L236.5,321.3 L306.8,294.1 L377,266.8 L447.3,239.6 L517.5,212.4 L587.8,185.1 L658,157.9" fill="none" stroke="#c2410c" stroke-width="2.5" stroke-linejoin="round"/>
+<circle cx="283.3" cy="303.2" r="5" fill="#1b2a2f"/>
+<text x="283.3" y="289.2" font-size="17" font-weight="700" fill="#1b2a2f" text-anchor="middle" stroke="#ffffff" stroke-width="4" stroke-linejoin="round" paint-order="stroke">200 غ ← 90 ك.ج</text>
+<text x="377" y="454" font-size="17" font-weight="400" fill="#5d7079" text-anchor="middle">كتلة الجليد (غ)</text>
+<text x="96" y="108" font-size="17" font-weight="400" fill="#5d7079" text-anchor="start" direction="ltr">الطاقة (ك.ج)</text>
+<text x="380" y="488" font-size="17" font-weight="400" fill="#5d7079" text-anchor="middle">الانصهار وحده يستهلك نحو 80% من الطاقة: إعطاء الجليد حرارة حتى 0 °م لا يكفي، بل يجب كسر ترتيب الشبكة البلورية.</text>
+</g></svg>
