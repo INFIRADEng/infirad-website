@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="760" height="476" viewBox="0 0 760 476" role="img" aria-labelledby="t">
+<title id="t">الإشعاع يتضاعف مع الأس الرابع</title>
+<rect width="760" height="476" fill="#ffffff"/>
+<g font-family="'Segoe UI', 'Noto Naskh Arabic', system-ui, sans-serif" direction="rtl">
+<text x="380" y="34" font-size="18" font-weight="700" fill="#1b2a2f" text-anchor="middle">الإشعاع يتضاعف مع الأس الرابع</text>
+<text x="380" y="60" font-size="17" font-weight="400" fill="#5d7079" text-anchor="middle">سطح بانبعاثية 0.9 إلى محيط 20 °م</text>
+<text x="380" y="84" font-size="17" font-weight="400" fill="#5d7079" text-anchor="middle">q″ = ε·σ·(Tₛ⁴ − Tₘ⁴)</text>
+<text x="740" y="138" font-size="17" font-weight="600" fill="#1b2a2f" text-anchor="start">سطح 40 °م</text>
+<rect x="737" y="146" width="3" height="14" fill="#c2410c" fill-opacity="0.85" rx="6"/>
+<text x="727" y="158" font-size="17" font-weight="700" fill="#1b2a2f" text-anchor="end" direction="ltr">⁨114 واط/م²⁩</text>
+<text x="740" y="196" font-size="17" font-weight="600" fill="#1b2a2f" text-anchor="start">سطح 100 °م</text>
+<rect x="723.9" y="204" width="16.1" height="14" fill="#0e7490" fill-opacity="0.85" rx="6"/>
+<text x="713.9" y="216" font-size="17" font-weight="700" fill="#1b2a2f" text-anchor="end" direction="ltr">⁨613 واط/م²⁩</text>
+<text x="740" y="254" font-size="17" font-weight="600" fill="#1b2a2f" text-anchor="start">سطح 300 °م</text>
+<rect x="605" y="262" width="135" height="14" fill="#a16207" fill-opacity="0.85" rx="6"/>
+<text x="595" y="274" font-size="17" font-weight="700" fill="#1b2a2f" text-anchor="end" direction="ltr">⁨5130 واط/م²⁩</text>
+<text x="740" y="312" font-size="17" font-weight="600" fill="#1b2a2f" text-anchor="start">سطح 500 °م</text>
+<rect x="270" y="320" width="470" height="14" fill="#1e3a5f" fill-opacity="0.85" rx="6"/>
+<text x="260" y="332" font-size="17" font-weight="700" fill="#1b2a2f" text-anchor="end" direction="ltr">⁨17858 واط/م²⁩</text>
+<line x1="740" y1="366" x2="270" y2="366" stroke="#cbd5d9" stroke-width="1"/>
+<text x="740" y="390" font-size="17" font-weight="400" fill="#5d7079" text-anchor="start">0</text>
+<text x="505" y="390" font-size="17" font-weight="400" fill="#5d7079" text-anchor="middle">8929</text>
+<text x="270" y="390" font-size="17" font-weight="400" fill="#5d7079" text-anchor="end">17858</text>
+<text x="505" y="416" font-size="17" font-weight="400" fill="#5d7079" text-anchor="middle">التدفق الإشعاعي الصافي (واط/م²)</text>
+<text x="380" y="450" font-size="17" font-weight="400" fill="#5d7079" text-anchor="middle">من 100 إلى 300 °م يرتفع التدفق 11 ضعفًا والمصدر لم يزد إلا 2.3 ضعفًا في الحرارة المطلقة</text>
+</g></svg>
