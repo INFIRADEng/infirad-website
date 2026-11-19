@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="760" height="476" viewBox="0 0 760 476" role="img" aria-labelledby="t">
+<title id="t">طاقة رفع 1 كغ ماء درجة واحدة بوحدات مختلفة</title>
+<rect width="760" height="476" fill="#ffffff"/>
+<g font-family="'Segoe UI', 'Noto Naskh Arabic', system-ui, sans-serif" direction="rtl">
+<text x="380" y="34" font-size="18" font-weight="700" fill="#1b2a2f" text-anchor="middle">طاقة رفع 1 كغ ماء درجة واحدة بوحدات مختلفة</text>
+<text x="380" y="60" font-size="17" font-weight="400" fill="#5d7079" text-anchor="middle">الطاقة نفسها = 4.184 كيلوجول</text>
+<text x="740" y="138" font-size="17" font-weight="600" fill="#1b2a2f" text-anchor="start">كالوري كبيرة</text>
+<rect x="270" y="146" width="470" height="14" fill="#c2410c" fill-opacity="0.85" rx="6"/>
+<text x="260" y="158" font-size="17" font-weight="700" fill="#1b2a2f" text-anchor="end" direction="ltr">⁨4.18 ك.ج⁩</text>
+<text x="740" y="196" font-size="17" font-weight="600" fill="#1b2a2f" text-anchor="start">وحدة حرارية بريطانية</text>
+<rect x="621.5" y="204" width="118.5" height="14" fill="#0e7490" fill-opacity="0.85" rx="6"/>
+<text x="611.5" y="216" font-size="17" font-weight="700" fill="#1b2a2f" text-anchor="end" direction="ltr">⁨1.06 ك.ج⁩</text>
+<text x="740" y="254" font-size="17" font-weight="600" fill="#1b2a2f" text-anchor="start">واط·ساعة</text>
+<rect x="335.6" y="262" width="404.4" height="14" fill="#a16207" fill-opacity="0.85" rx="6"/>
+<text x="325.6" y="274" font-size="17" font-weight="700" fill="#1b2a2f" text-anchor="end" direction="ltr">⁨3.6 ك.ج⁩</text>
+<text x="740" y="312" font-size="17" font-weight="600" fill="#1b2a2f" text-anchor="start">كيلوجول</text>
+<rect x="270" y="320" width="470" height="14" fill="#1e3a5f" fill-opacity="0.85" rx="6"/>
+<text x="260" y="332" font-size="17" font-weight="700" fill="#1b2a2f" text-anchor="end" direction="ltr">⁨4.18 ك.ج⁩</text>
+<line x1="740" y1="366" x2="270" y2="366" stroke="#cbd5d9" stroke-width="1"/>
+<text x="740" y="390" font-size="17" font-weight="400" fill="#5d7079" text-anchor="start">0</text>
+<text x="505" y="390" font-size="17" font-weight="400" fill="#5d7079" text-anchor="middle">2.09</text>
+<text x="270" y="390" font-size="17" font-weight="400" fill="#5d7079" text-anchor="end">4.18</text>
+<text x="505" y="416" font-size="17" font-weight="400" fill="#5d7079" text-anchor="middle">الطاقة (كيلوجول)</text>
+<text x="380" y="450" font-size="17" font-weight="400" fill="#5d7079" text-anchor="middle">الوحدة الأصلية هنا الجول؛ الباقي تحويلات لنفس القيمة</text>
+</g></svg>
