@@ -1,0 +1,133 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>كم طاقة تحتاج لإذابة كأس جليد؟ — ديوان المعرفة</title>
+  <meta name="description" content="مكعبات جليد في كأس على موقد تُذاب قبل أن ترتفع حرارتها. النموذج يفصل طاقة التسخين عن طاقة الانصهار ويُظهر أن الأخيرة هي الأكبر." />
+  <link rel="stylesheet" href="../assets/css/tokens.css" />
+  <link rel="stylesheet" href="../assets/css/site.css" />
+
+  <link rel="canonical" href="https://infiradev.com/diwan/lab/latent-heat-fusion.html" />
+  <link rel="icon" href="https://infiradev.com/favicon.ico" sizes="48x48" />
+  <link rel="icon" type="image/png" sizes="192x192" href="https://infiradev.com/assets/favicon-192.png" />
+  <link rel="apple-touch-icon" href="https://infiradev.com/assets/apple-touch-icon.png" />
+  <script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"Organization","@id":"https://infiradev.com/#organization","name":"INFIRAD","alternateName":["انفِراد","انفراد"],"url":"https://infiradev.com/","logo":{"@type":"ImageObject","url":"https://infiradev.com/assets/logo-bilingual.png","width":990,"height":320},"slogan":"من الفكرة إلى اليقين","foundingDate":"2025","email":"info@infiradeng.com","telephone":"+966557748982","address":{"@type":"PostalAddress","addressLocality":"Riyadh","addressCountry":"SA"},"sameAs":["https://www.linkedin.com/company/infirad/"],"knowsAbout":["Engineering services","Engineering Services Provider (ESP)","Process design","Process simulation","Computational fluid dynamics","Thermal analysis","Independent engineering review","Specialized AI agents","Workflow automation","Traffic simulation"]},{"@type":"WebPage","@id":"https://infiradev.com/diwan/lab/latent-heat-fusion.html#webpage","url":"https://infiradev.com/diwan/lab/latent-heat-fusion.html","name":"كم طاقة تحتاج لإذابة كأس جليد؟ — ديوان المعرفة","description":"مكعبات جليد في كأس على موقد تُذاب قبل أن ترتفع حرارتها. النموذج يفصل طاقة التسخين عن طاقة الانصهار ويُظهر أن الأخيرة هي الأكبر.","inLanguage":"ar","isPartOf":{"@id":"https://infiradev.com/#website"},"about":{"@id":"https://infiradev.com/#organization"}},{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"انفراد","item":"https://infiradev.com/"},{"@type":"ListItem","position":2,"name":"ديوان المعرفة","item":"https://infiradev.com/diwan/"},{"@type":"ListItem","position":3,"name":"كم طاقة تحتاج لإذابة كأس جليد؟ — ديوان المعرفة","item":"https://infiradev.com/diwan/lab/latent-heat-fusion.html"}]}]}</script>
+</head>
+<body>
+<a class="skip" href="#main">انتقل إلى المحتوى</a>
+<header class="site-head">
+  <div class="wrap head-in">
+    <div class="brand-lockup">
+      <a class="brand" href="https://infiradev.com/" aria-label="انفراد، الموقع الرئيسي">
+        <img src="https://infiradev.com/assets/logo-bilingual.png" alt="انفراد · INFIRAD" width="990" height="320" />
+      </a>
+      <a class="diwan-name" href="../">ديوان المعرفة</a>
+    </div>
+    <nav class="nav" aria-label="أقسام ديوان المعرفة"><a href="../terms/">المصطلحات</a><a href="../articles/">مقالات</a><a href="../domains/">المجالات</a><a href="../lab/" aria-current="page">المعمل</a><a href="../about.html">عن الديوان</a></nav>
+    <nav class="head-actions" aria-label="الرجوع والموقع الرئيسي">
+      <a href="../" data-back><span aria-hidden="true">→</span> رجوع</a>
+      <a href="https://infiradev.com/">موقع انفراد الرئيسي</a>
+    </nav>
+  </div>
+</header>
+
+<main id="main">
+<article class="wrap article experiment">
+  <a class="backlink" href="../lab/" data-back data-label="المعمل"><svg class="backlink-i" viewBox="0 0 24 24" width="18" height="18" aria-hidden="true" focusable="false"><path d="M9 5l7 7-7 7" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg><span>رجوع إلى المعمل</span></a>
+  <nav class="crumbs" aria-label="المسار"><a href="../lab/">المعمل</a> · <a href="../domains/physics.html">الفيزياء</a></nav>
+  <h1 class="page-h">كم طاقة تحتاج لإذابة كأس جليد؟</h1>
+  <section class="lab-panel">
+  <p class="lede">غيّر كتلة الجليد وشاهد الطاقة اللازمة. محاكاة تعليمية لا قياس فيزيائي حقيقي.</p>
+  <div id="lab-root"></div>
+  <div class="lab-readout" id="lab-outputs"></div>
+  <div class="lab-gauge" id="lab-gauge"></div>
+  <figure class="lab-scene-fig">
+    <figcaption class="lab-scene-cap">جليد في وعاء على نار: الحرارة تُصرف على تغيير الحالة لا على الترمومتر.</figcaption>
+    <div id="lab-scene" class="lab-scene" role="group" aria-label="مشهد توضيحي متحرك"></div>
+  </figure>
+
+  <p><button class="lab-cta" type="button" id="lab-reset">إعادة الضبط</button></p>
+  <p class="muted small" id="lab-note">محاكاة تعليمية لا قياس فيزيائي حقيقي: الأرقام تُحسب من النموذج لحظيًا، ولا تُقاس بأدوات منزلية.</p>
+  <details>
+    <summary>افتراضات النموذج والمصدر</summary>
+    <p class="lab-equation" dir="ltr">Q = m·(c_ice·15 + L_f + c_w·20)</p>
+    <p>جليد نقي عند -15 °م</p><p>لا فقد حراري للجو</p><p>قدرة تسخين ثابتة 2.1 ك.و</p><p><a href="https://en.wikipedia.org/wiki/Latent_heat">Latent heat of fusion of water and ice — Wikipedia</a></p><p><a href="https://www.engineeringtoolbox.com/ice-thermal-properties-d_576.html">Ice — thermal properties — The Engineering ToolBox</a></p>
+  </details>
+  <noscript>فعّل JavaScript لتحريك المدخلات وحساب النتائج.</noscript>
+  <script type="application/json" id="lab-spec">{"controls":[{"id":"mass","label_ar":"كتلة الجليد","from":50,"to":500,"step":11.25,"value":200,"unit":"غ"}],"outputs":[{"id":"total","label_ar":"الطاقة الكلية","unit":"ك.ج","decimals":1},{"id":"fusion","label_ar":"نصيب الانصهار","unit":"ك.ج","decimals":1},{"id":"minutes","label_ar":"الزمن على 2.1 ك.و","unit":"دقيقة","decimals":1}],"gauge":{"id":"total","bind":"total","label":"الطاقة الكلية — من 0 إلى 250 ك.ج","min":0,"max":250,"start":89.67,"unit":"ك.ج","decimals":1},"scene":{"kind":"kettle","caption_ar":"جليد في وعاء على نار: الحرارة تُصرف على تغيير الحالة لا على الترمومتر."},"note_ar":"محاكاة تعليمية لا قياس فيزيائي حقيقي: الأرقام تُحسب من النموذج لحظيًا، ولا تُقاس بأدوات منزلية."}</script>
+  <script type="module" src="../assets/js/labs/latent-heat-fusion.mjs"></script>
+</section>
+  <div class="prose"><p>ضع مكعبات جليد في كأس على موقد صغير وسجّل الزمن حتى تذوب تمامًا، ثم حتى تصل الحرارة 20 °م. ستجد أن معظم الزمن ذهب في الإذابة لا في التسخين: الحرارة تُصرف على تفكيك الشبكة البلورية لا على رفع الترمومتر.</p><p>الحساب على ثلاث مراحل: تسخين الجليد من -15 إلى 0 °م، ثم صهره عند 0 °م بحرارة كامنة 334 kJ/kg، ثم تسخين الماء الناتج إلى 20 °م. لمئتي غرام: 6 ك.ج + 67 ك.ج + 17 ك.ج = 90 ك.ج تقريبًا.</p><p>ما لا يُقاس منزليًا: الحرارة الكامنة نفسها. القياس يحتاج مسعرًا وكفة معزولة وقياس كتلة دقيقة — والتجربة المنزلية تعطي الإحساس بالتوقيت لا الرقم.</p></div>
+  <div class="depth" aria-label="شرح معمّق"><section class="depth-sec">
+    <h2>كيف تعمل الظاهرة؟</h2>
+    <p>في الجليد ترتبط الجزيئات بروابط هيدروجينية في شبكة صلبة. رفع الحرارة يزيد الاهتزاز حتى تنكسر الروابط، فتصبح الجزيئات قادرة على الانزلاق — وهذا الكسر يستهلك طاقة بلا تغيّر في الترمومتر.</p>
+  </section><section class="depth-sec">
+    <h2>العلاقة بالأرقام</h2>
+    <p>Q = m·[c_ice·15 + L_f + c_w·20]. عند 200 غ: 66.8 ك.ج للانصهار و22.9 ك.ج للتسخين، أي 74% من الإجمالي (90 ك.ج). الحرارة الكامنة 334 kJ/kg تعادل تسخين الماء نفسه 80 درجة كاملة — ولهذا يتوقف الترمومتر عند الصفر حتى يذوب كل الجليد.</p>
+  </section><section class="depth-sec">
+    <h2>مفاهيم متقاربة</h2>
+    <p>يُخلط بين «الحرارة المحسوسة» و«الحرارة الكامنة»: الأولى ترفع الترمومتر، والثانية تُغيّر الحالة بلا ارتفاع في الحرارة — لذلك يبقى الخليط عند 0 °م حتى يذوب آخر مكعب.</p>
+  </section><section class="depth-sec">
+    <h2>حدود التطبيق</h2>
+    <p>النموذج يفترض جليدًا نقيًا بلا شوائب وفقدًا حراريًا صفريًا للهواء. في الواقع يُفقد جزء من الحرارة للجو، فتحتاج طاقة أكبر — ولذلك يتأخر الذوبان أكثر في وعاء مكشوف.</p>
+  </section></div>
+  <section class="figures" aria-label="الرسوم التوضيحية">
+  <figure class="fig" id="fig-1">
+    <img class="fig-img" src="../assets/fig/fig-spec-latent-heat-fusion.svg" alt="خط مستقيم يصعد من نحو 22 كيلوجول عند 50 غرامًا إلى نحو 225 عند 500 غرام، وعليه علامة عند 200 غرام." loading="lazy" />
+    <figcaption><b>الشكل 1.</b> طاقة إذابة الجليد مقابل كتلته: 200 غ تحتاج نحو 90 ك.ج، وأكثرها انصهار لا تسخين.
+      <span class="credit muted small">· من عمل انفراد — رسم محسوب من المعادلة نفسها</span>
+    </figcaption>
+  </figure>
+</section>
+  <table class="facts">
+  <caption>أرقام مسنَدة إلى مصادرها</caption>
+  <thead><tr><th scope="col">الكمية</th><th scope="col">القيمة</th><th scope="col">المصدر</th></tr></thead>
+  <tbody><tr>
+      <th scope="row">الحرارة الكامنة لانصهار الجليد</th>
+      <td>334 <span class="unit">kJ/kg</span></td>
+      <td><a class="ref" href="#src-1">[1]</a></td>
+    </tr><tr>
+      <th scope="row">طاقة إذابة 200 غ وتسخينها</th>
+      <td>90 <span class="unit">ك.ج</span></td>
+      <td><a class="ref" href="#src-1">[1]</a></td>
+    </tr><tr>
+      <th scope="row">نصيب الانصهار من الإجمالي</th>
+      <td>74 <span class="unit">%</span></td>
+      <td><a class="ref" href="#src-1">[1]</a></td>
+    </tr></tbody>
+</table>
+  <section class="sources" aria-labelledby="src-h">
+  <h2 id="src-h">المصادر</h2>
+  <ol class="src-list"><li id="src-1">
+      <span class="src-num">1</span>
+      <span>Latent heat of fusion of water and ice — Wikipedia.
+      <a href="https://en.wikipedia.org/wiki/Latent_heat" rel="noopener nofollow" target="_blank">en.wikipedia.org/wiki/Latent_heat</a>
+      <span class="muted small">· اطُّلع عليه 2026-11-19</span></span>
+    </li><li id="src-2">
+      <span class="src-num">2</span>
+      <span>Ice — thermal properties — The Engineering ToolBox.
+      <a href="https://www.engineeringtoolbox.com/ice-thermal-properties-d_576.html" rel="noopener nofollow" target="_blank">www.engineeringtoolbox.com/ice-thermal-properties-d_576.html</a>
+      <span class="muted small">· اطُّلع عليه 2026-11-19</span></span>
+    </li></ol>
+</section>
+  <p class="reviewline muted small">راجعه: عبدالله الهويدي — مراجعة في تطبيق انفراد · 2026-11-19 · آخر تحديث 2026-11-19</p>
+  <a class="backlink backlink-end" href="../lab/" data-back data-label="المعمل"><svg class="backlink-i" viewBox="0 0 24 24" width="18" height="18" aria-hidden="true" focusable="false"><path d="M9 5l7 7-7 7" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg><span>رجوع إلى المعمل</span></a>
+</article>
+</main>
+<footer class="site-foot">
+  <div class="wrap foot-in">
+    <div>
+      <b>ديوان المعرفة</b> — من المفهوم إلى التجربة
+      <div class="muted small">قسم علمي داخل انفراد · <a href="https://infiradev.com">infiradev.com</a> · <a href="mailto:info@infiradev.com">info@infiradev.com</a></div>
+    </div>
+    <div class="muted small">
+      <a href="../about.html">سياسة التحرير والمصادر</a> ·
+      <a href="../terms/">المصطلحات</a> ·
+      <a href="../lab/">المعمل الافتراضي</a>
+    </div>
+  </div>
+</footer>
+<script src="../assets/js/site.js" defer></script>
+</body>
+</html>

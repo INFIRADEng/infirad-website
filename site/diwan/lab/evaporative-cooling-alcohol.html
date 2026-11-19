@@ -1,0 +1,133 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>لماذا يبرّد الكحول الجلد أسرع من الماء؟ — ديوان المعرفة</title>
+  <meta name="description" content="قطنة مبلّلة تُلوَّح في الهواء تسحب حرارة من الجلد. النموذج يحوّل معدل التبخر إلى واط، ويُظهر فرق الكحول عن الماء من فرق الحرارة الكامنة وحده." />
+  <link rel="stylesheet" href="../assets/css/tokens.css" />
+  <link rel="stylesheet" href="../assets/css/site.css" />
+
+  <link rel="canonical" href="https://infiradev.com/diwan/lab/evaporative-cooling-alcohol.html" />
+  <link rel="icon" href="https://infiradev.com/favicon.ico" sizes="48x48" />
+  <link rel="icon" type="image/png" sizes="192x192" href="https://infiradev.com/assets/favicon-192.png" />
+  <link rel="apple-touch-icon" href="https://infiradev.com/assets/apple-touch-icon.png" />
+  <script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"Organization","@id":"https://infiradev.com/#organization","name":"INFIRAD","alternateName":["انفِراد","انفراد"],"url":"https://infiradev.com/","logo":{"@type":"ImageObject","url":"https://infiradev.com/assets/logo-bilingual.png","width":990,"height":320},"slogan":"من الفكرة إلى اليقين","foundingDate":"2025","email":"info@infiradeng.com","telephone":"+966557748982","address":{"@type":"PostalAddress","addressLocality":"Riyadh","addressCountry":"SA"},"sameAs":["https://www.linkedin.com/company/infirad/"],"knowsAbout":["Engineering services","Engineering Services Provider (ESP)","Process design","Process simulation","Computational fluid dynamics","Thermal analysis","Independent engineering review","Specialized AI agents","Workflow automation","Traffic simulation"]},{"@type":"WebPage","@id":"https://infiradev.com/diwan/lab/evaporative-cooling-alcohol.html#webpage","url":"https://infiradev.com/diwan/lab/evaporative-cooling-alcohol.html","name":"لماذا يبرّد الكحول الجلد أسرع من الماء؟ — ديوان المعرفة","description":"قطنة مبلّلة تُلوَّح في الهواء تسحب حرارة من الجلد. النموذج يحوّل معدل التبخر إلى واط، ويُظهر فرق الكحول عن الماء من فرق الحرارة الكامنة وحده.","inLanguage":"ar","isPartOf":{"@id":"https://infiradev.com/#website"},"about":{"@id":"https://infiradev.com/#organization"}},{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"انفراد","item":"https://infiradev.com/"},{"@type":"ListItem","position":2,"name":"ديوان المعرفة","item":"https://infiradev.com/diwan/"},{"@type":"ListItem","position":3,"name":"لماذا يبرّد الكحول الجلد أسرع من الماء؟ — ديوان المعرفة","item":"https://infiradev.com/diwan/lab/evaporative-cooling-alcohol.html"}]}]}</script>
+</head>
+<body>
+<a class="skip" href="#main">انتقل إلى المحتوى</a>
+<header class="site-head">
+  <div class="wrap head-in">
+    <div class="brand-lockup">
+      <a class="brand" href="https://infiradev.com/" aria-label="انفراد، الموقع الرئيسي">
+        <img src="https://infiradev.com/assets/logo-bilingual.png" alt="انفراد · INFIRAD" width="990" height="320" />
+      </a>
+      <a class="diwan-name" href="../">ديوان المعرفة</a>
+    </div>
+    <nav class="nav" aria-label="أقسام ديوان المعرفة"><a href="../terms/">المصطلحات</a><a href="../articles/">مقالات</a><a href="../domains/">المجالات</a><a href="../lab/" aria-current="page">المعمل</a><a href="../about.html">عن الديوان</a></nav>
+    <nav class="head-actions" aria-label="الرجوع والموقع الرئيسي">
+      <a href="../" data-back><span aria-hidden="true">→</span> رجوع</a>
+      <a href="https://infiradev.com/">موقع انفراد الرئيسي</a>
+    </nav>
+  </div>
+</header>
+
+<main id="main">
+<article class="wrap article experiment">
+  <a class="backlink" href="../lab/" data-back data-label="المعمل"><svg class="backlink-i" viewBox="0 0 24 24" width="18" height="18" aria-hidden="true" focusable="false"><path d="M9 5l7 7-7 7" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg><span>رجوع إلى المعمل</span></a>
+  <nav class="crumbs" aria-label="المسار"><a href="../lab/">المعمل</a> · <a href="../domains/physics.html">الفيزياء</a></nav>
+  <h1 class="page-h">لماذا يبرّد الكحول الجلد أسرع من الماء؟</h1>
+  <section class="lab-panel">
+  <p class="lede">حرّك معدل التبخر واختر السائل. محاكاة تعليمية لا قياس فيزيائي حقيقي.</p>
+  <div id="lab-root"></div>
+  <div class="lab-readout" id="lab-outputs"></div>
+  <div class="lab-gauge" id="lab-gauge"></div>
+  <figure class="lab-scene-fig">
+    <figcaption class="lab-scene-cap">سائل على الجلد يتبخر: كل غرام يسحب حرارته من السطح.</figcaption>
+    <div id="lab-scene" class="lab-scene" role="group" aria-label="مشهد توضيحي متحرك"></div>
+  </figure>
+
+  <p><button class="lab-cta" type="button" id="lab-reset">إعادة الضبط</button></p>
+  <p class="muted small" id="lab-note">محاكاة تعليمية لا قياس فيزيائي حقيقي: الأرقام تُحسب من النموذج لحظيًا، ولا تُقاس بأدوات منزلية.</p>
+  <details>
+    <summary>افتراضات النموذج والمصدر</summary>
+    <p class="lab-equation" dir="ltr">Q = ṁ · L_v</p>
+    <p>كل الكتلة المتبخرة تسحب حرارتها من الجسم</p><p>الحرارة الكامنة ثابتة عند الضغط الجوي</p><p><a href="https://www.engineeringtoolbox.com/fluids-evaporation-latent-heat-d_147.html">Latent heat of vaporization of common fluids — The Engineering ToolBox</a></p><p><a href="https://en.wikipedia.org/wiki/Evaporative_cooler">Evaporative cooler — physics — Wikipedia</a></p>
+  </details>
+  <noscript>فعّل JavaScript لتحريك المدخلات وحساب النتائج.</noscript>
+  <script type="application/json" id="lab-spec">{"controls":[{"id":"rate","label_ar":"معدل التبخر","from":0.2,"to":10,"step":0.25,"value":2,"unit":"غ/دقيقة"},{"id":"liquid","label_ar":"السائل (0 إيثانول · 1 ماء · 2 أسيتون · 3 أيزوبروبانول)","from":0,"to":3,"step":1,"value":0,"unit":""}],"outputs":[{"id":"watts","label_ar":"قدرة التبريد","unit":"واط","decimals":1},{"id":"latent","label_ar":"الحرارة الكامنة","unit":"kJ/kg","decimals":0},{"id":"grams_hour","label_ar":"الكتلة في الساعة","unit":"غ/س","decimals":0}],"gauge":{"id":"watts","bind":"watts","label":"قدرة التبريد — من 0 إلى 40 واط","min":0,"max":40,"start":28.03,"unit":"واط","decimals":1},"scene":{"kind":"kettle","caption_ar":"سائل على الجلد يتبخر: كل غرام يسحب حرارته من السطح."},"note_ar":"محاكاة تعليمية لا قياس فيزيائي حقيقي: الأرقام تُحسب من النموذج لحظيًا، ولا تُقاس بأدوات منزلية."}</script>
+  <script type="module" src="../assets/js/labs/evaporative-cooling-alcohol.mjs"></script>
+</section>
+  <div class="prose"><p>بلّل قطنة بالكحول الطبي وامسح بها ظهر يدك، ثم لوّح بالهواء. قارن الإحساس باليد الأخرى الجافة، وكرّر بالماء. البرودة التي تحسّها ليست «كحولًا باردًا» بل حرارة تُسحب من جلدك مع كل جزيء يتبخر.</p><p>التبخر يحتاج طاقة تفصل الجزيئات عن السائل، تُسمى الحرارة الكامنة للتبخر. قدرة التبريد = معدل الكتلة المتبخرة × الحرارة الكامنة. فإذا تبخر غرامان في الدقيقة من الإيثانول (841 kJ/kg) فالقدرة المسحوبة نحو 28 واط — أي مصباح صغير يُسلّط على بشرتك من الداخل.</p><p>ما لا يُقاس منزليًا: الكتلة المتبخرة نفسها، والحرارة الكامنة بوحدة J/kg. المقارنة المنزلية نوعية؛ والمحاكاة تبيّن أن الفرق بين الكحول والماء سببه L لا «قوة التبريد» الغامضة.</p></div>
+  <div class="depth" aria-label="شرح معمّق"><section class="depth-sec">
+    <h2>كيف تعمل الظاهرة؟</h2>
+    <p>جزيئات السائل الأعلى طاقة هي التي تفلت أولًا، فتقلّ متوسط طاقة الباقي فيبرد السائل والجسم الملامس. التهوية تزيل البخار المشبع فوق السطح فتسرّع الفرار.</p>
+  </section><section class="depth-sec">
+    <h2>العلاقة بالأرقام</h2>
+    <p>Q = ṁ·L. الإيثانول L=841 kJ/kg: عند 2 غ/دقيقة ⇒ ṁ=3.33×10⁻⁵ كغ/ث ⇒ Q=28.0 واط. الماء L=2260 kJ/kg بالقدر نفسه يعطي 75.3 واط — أي 2.7 أضعاف. الفرق هو أن كل غرام ماء يحمل طاقة كامنة أكبر، لكن الكحول يتبخر أسرع لضغط بخار أعلى بكثير، فيتعادل الأثر جزئيًا.</p>
+  </section><section class="depth-sec">
+    <h2>مفاهيم متقاربة</h2>
+    <p>يُخلط بين «حرارة التبخر» و«حرارة التكاثف»: هما المقدار نفسه بإشارتين متعاكستين — ما يسحبه التبخر من الجلد هو ما يطلقه التكاثف على سطح بارد. عملية واحدة باتجاهين، والفرق في الاتجاه لا في المقدار.</p>
+  </section><section class="depth-sec">
+    <h2>حدود التطبيق</h2>
+    <p>القدرة المحسوبة تفترض أن كل الكتلة المتبخرة تسحب حرارتها من الجلد؛ في الواقع جزء يأتي من الهواء، وجزء يبرد السائل نفسه قبل أن يلامس الجلد. لذلك تُقرأ القدرة كسقف أعلى للتبريد المتاح، لا كقيمة مقيسة.</p>
+  </section></div>
+  <section class="figures" aria-label="الرسوم التوضيحية">
+  <figure class="fig" id="fig-1">
+    <img class="fig-img" src="../assets/fig/fig-spec-evaporative-cooling-alcohol.svg" alt="خط مستقيم يصعد من قدرة قريبة من 3 واط عند 0.2 غرام في الدقيقة إلى نحو 28 واط عند غرامين." loading="lazy" />
+    <figcaption><b>الشكل 1.</b> قدرة التبريد مقابل معدل التبخر: 2 غ/دقيقة من الإيثانول تسحب 28.0 واط، والعلاقة خطية.
+      <span class="credit muted small">· من عمل انفراد — رسم محسوب من المعادلة نفسها</span>
+    </figcaption>
+  </figure>
+</section>
+  <table class="facts">
+  <caption>أرقام مسنَدة إلى مصادرها</caption>
+  <thead><tr><th scope="col">الكمية</th><th scope="col">القيمة</th><th scope="col">المصدر</th></tr></thead>
+  <tbody><tr>
+      <th scope="row">قدرة التبريد عند 2 غ/دقيقة إيثانول</th>
+      <td>28.0 <span class="unit">واط</span></td>
+      <td><a class="ref" href="#src-1">[1]</a></td>
+    </tr><tr>
+      <th scope="row">الحرارة الكامنة للماء</th>
+      <td>2260 <span class="unit">kJ/kg</span></td>
+      <td><a class="ref" href="#src-2">[2]</a></td>
+    </tr><tr>
+      <th scope="row">الحرارة الكامنة للإيثانول</th>
+      <td>841 <span class="unit">kJ/kg</span></td>
+      <td><a class="ref" href="#src-2">[2]</a></td>
+    </tr></tbody>
+</table>
+  <section class="sources" aria-labelledby="src-h">
+  <h2 id="src-h">المصادر</h2>
+  <ol class="src-list"><li id="src-1">
+      <span class="src-num">1</span>
+      <span>Latent heat of vaporization of common fluids — The Engineering ToolBox.
+      <a href="https://www.engineeringtoolbox.com/fluids-evaporation-latent-heat-d_147.html" rel="noopener nofollow" target="_blank">www.engineeringtoolbox.com/fluids-evaporation-latent-heat-d_147.html</a>
+      <span class="muted small">· اطُّلع عليه 2026-11-19</span></span>
+    </li><li id="src-2">
+      <span class="src-num">2</span>
+      <span>Evaporative cooler — physics — Wikipedia.
+      <a href="https://en.wikipedia.org/wiki/Evaporative_cooler" rel="noopener nofollow" target="_blank">en.wikipedia.org/wiki/Evaporative_cooler</a>
+      <span class="muted small">· اطُّلع عليه 2026-11-19</span></span>
+    </li></ol>
+</section>
+  <p class="reviewline muted small">راجعه: عبدالله الهويدي — مراجعة في تطبيق انفراد · 2026-11-19 · آخر تحديث 2026-11-19</p>
+  <a class="backlink backlink-end" href="../lab/" data-back data-label="المعمل"><svg class="backlink-i" viewBox="0 0 24 24" width="18" height="18" aria-hidden="true" focusable="false"><path d="M9 5l7 7-7 7" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg><span>رجوع إلى المعمل</span></a>
+</article>
+</main>
+<footer class="site-foot">
+  <div class="wrap foot-in">
+    <div>
+      <b>ديوان المعرفة</b> — من المفهوم إلى التجربة
+      <div class="muted small">قسم علمي داخل انفراد · <a href="https://infiradev.com">infiradev.com</a> · <a href="mailto:info@infiradev.com">info@infiradev.com</a></div>
+    </div>
+    <div class="muted small">
+      <a href="../about.html">سياسة التحرير والمصادر</a> ·
+      <a href="../terms/">المصطلحات</a> ·
+      <a href="../lab/">المعمل الافتراضي</a>
+    </div>
+  </div>
+</footer>
+<script src="../assets/js/site.js" defer></script>
+</body>
+</html>
