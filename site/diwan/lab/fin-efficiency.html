@@ -1,0 +1,133 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>كفاءة الزعنفة: طولها الزائد لا يُنقذها — ديوان المعرفة</title>
+  <meta name="description" content="الزعنفة تنقل الحرارة من قاعدتها، لكن حرارتها تهبط بطولها فلا تعمل كلها بكفاءة. أطل الزعنفة ترتفع الكفاءة ببطء ثم تتجمّد، وكل مليمتر إضافي يضيف وزنًا لا مساحة فعّالة." />
+  <link rel="stylesheet" href="../assets/css/tokens.css" />
+  <link rel="stylesheet" href="../assets/css/site.css" />
+
+  <link rel="canonical" href="https://infiradev.com/diwan/lab/fin-efficiency.html" />
+  <link rel="icon" href="https://infiradev.com/favicon.ico" sizes="48x48" />
+  <link rel="icon" type="image/png" sizes="192x192" href="https://infiradev.com/assets/favicon-192.png" />
+  <link rel="apple-touch-icon" href="https://infiradev.com/assets/apple-touch-icon.png" />
+  <script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"Organization","@id":"https://infiradev.com/#organization","name":"INFIRAD","alternateName":["انفِراد","انفراد"],"url":"https://infiradev.com/","logo":{"@type":"ImageObject","url":"https://infiradev.com/assets/logo-bilingual.png","width":990,"height":320},"slogan":"من الفكرة إلى اليقين","foundingDate":"2025","email":"info@infiradeng.com","telephone":"+966557748982","address":{"@type":"PostalAddress","addressLocality":"Riyadh","addressCountry":"SA"},"sameAs":["https://www.linkedin.com/company/infirad/"],"knowsAbout":["Engineering services","Engineering Services Provider (ESP)","Process design","Process simulation","Computational fluid dynamics","Thermal analysis","Independent engineering review","Specialized AI agents","Workflow automation","Traffic simulation"]},{"@type":"WebPage","@id":"https://infiradev.com/diwan/lab/fin-efficiency.html#webpage","url":"https://infiradev.com/diwan/lab/fin-efficiency.html","name":"كفاءة الزعنفة: طولها الزائد لا يُنقذها — ديوان المعرفة","description":"الزعنفة تنقل الحرارة من قاعدتها، لكن حرارتها تهبط بطولها فلا تعمل كلها بكفاءة. أطل الزعنفة ترتفع الكفاءة ببطء ثم تتجمّد، وكل مليمتر إضافي يضيف وزنًا لا مساحة فعّالة.","inLanguage":"ar","isPartOf":{"@id":"https://infiradev.com/#website"},"about":{"@id":"https://infiradev.com/#organization"}},{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"انفراد","item":"https://infiradev.com/"},{"@type":"ListItem","position":2,"name":"ديوان المعرفة","item":"https://infiradev.com/diwan/"},{"@type":"ListItem","position":3,"name":"كفاءة الزعنفة: طولها الزائد لا يُنقذها — ديوان المعرفة","item":"https://infiradev.com/diwan/lab/fin-efficiency.html"}]}]}</script>
+</head>
+<body>
+<a class="skip" href="#main">انتقل إلى المحتوى</a>
+<header class="site-head">
+  <div class="wrap head-in">
+    <div class="brand-lockup">
+      <a class="brand" href="https://infiradev.com/" aria-label="انفراد، الموقع الرئيسي">
+        <img src="https://infiradev.com/assets/logo-bilingual.png" alt="انفراد · INFIRAD" width="990" height="320" />
+      </a>
+      <a class="diwan-name" href="../">ديوان المعرفة</a>
+    </div>
+    <nav class="nav" aria-label="أقسام ديوان المعرفة"><a href="../terms/">المصطلحات</a><a href="../articles/">مقالات</a><a href="../domains/">المجالات</a><a href="../lab/" aria-current="page">المعمل</a><a href="../about.html">عن الديوان</a></nav>
+    <nav class="head-actions" aria-label="الرجوع والموقع الرئيسي">
+      <a href="../" data-back><span aria-hidden="true">→</span> رجوع</a>
+      <a href="https://infiradev.com/">موقع انفراد الرئيسي</a>
+    </nav>
+  </div>
+</header>
+
+<main id="main">
+<article class="wrap article experiment">
+  <a class="backlink" href="../lab/" data-back data-label="المعمل"><svg class="backlink-i" viewBox="0 0 24 24" width="18" height="18" aria-hidden="true" focusable="false"><path d="M9 5l7 7-7 7" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg><span>رجوع إلى المعمل</span></a>
+  <nav class="crumbs" aria-label="المسار"><a href="../lab/">المعمل</a> · <a href="../domains/engineering.html">الهندسة</a></nav>
+  <h1 class="page-h">كفاءة الزعنفة: طولها الزائد لا يُنقذها</h1>
+  <section class="lab-panel">
+  <p class="lede">غيّر الطول والسمك ومعامل الحمل، وتابع mL والكفاءة والحرارة المنقولة على المقياس.</p>
+  <div id="lab-root"></div>
+  <div class="lab-readout" id="lab-outputs"></div>
+  <div class="lab-gauge" id="lab-gauge"></div>
+  <figure class="lab-scene-fig">
+    <figcaption class="lab-scene-cap">جدار ومساحة إضافية: كل سنتيمتر يضيف سطحًا ويضيف مقاومة.</figcaption>
+    <div id="lab-scene" class="lab-scene" role="group" aria-label="مشهد توضيحي متحرك"></div>
+  </figure>
+
+  <p><button class="lab-cta" type="button" id="lab-reset">إعادة الضبط</button></p>
+  <p class="muted small" id="lab-note">المقياس يبدأ عند 25 مم و2 مم و60 واط/م²·ك.</p>
+  <details>
+    <summary>افتراضات النموذج والمصدر</summary>
+    <p class="lab-equation" dir="ltr">η = tanh(mL)/(mL)   حيث   m = √(2h/(k·t))</p>
+    <p>زعنفة مستقيمة ألمنيوم ببوصل 205 واط/م·ك</p><p>فرق حرارة ثابت 50 كلفن بين القاعدة والوسط</p><p>طرف الزعنفة معزول (بلا فقد)</p><p>معامل حمل منتظم على السطح</p><p><a href="https://www.engineeringtoolbox.com/fins-heat-transfer-d_213.html">Fins — efficiency and effectiveness — The Engineering ToolBox</a></p><p><a href="https://www.engineeringtoolbox.com/thermal-conductivity-metals-d_858.html">Thermal conductivity of metals — The Engineering ToolBox</a></p>
+  </details>
+  <noscript>فعّل JavaScript لتحريك المدخلات وحساب النتائج.</noscript>
+  <script type="application/json" id="lab-spec">{"controls":[{"id":"length","label_ar":"طول الزعنفة","from":5,"to":80,"step":1,"value":25,"unit":"مم"},{"id":"thick","label_ar":"سمكها","from":0.5,"to":5,"step":0.5,"value":2,"unit":"مم"},{"id":"hcoef","label_ar":"معامل الحمل على سطحها","from":10,"to":200,"step":5,"value":60,"unit":"واط/م²·ك"}],"outputs":[{"id":"mL","label_ar":"المعامل mL","unit":"","decimals":3},{"id":"eta","label_ar":"كفاءة الزعنفة","unit":"%","decimals":1},{"id":"u","label_ar":"معامل الحمل","unit":"واط/م²·ك","decimals":0},{"id":"q","label_ar":"الحرارة المنقولة","unit":"واط","decimals":1}],"gauge":{"id":"eta","bind":"eta","label":"كفاءة الزعنفة — المقياس من 0 إلى 100%","min":0,"max":100,"start":94.3,"unit":"%","decimals":1},"scene":{"kind":"wall","caption_ar":"جدار ومساحة إضافية: كل سنتيمتر يضيف سطحًا ويضيف مقاومة."},"note_ar":"المقياس يبدأ عند 25 مم و2 مم و60 واط/م²·ك."}</script>
+  <script type="module" src="../assets/js/labs/fin-efficiency.mjs"></script>
+</section>
+  <div class="prose"><p>الزعنفة تُزيد المساحة، لكنها في الوقت نفسه تضيف مقاومة توصيل على طولها. الطرف البعيد أبرد من القاعدة، فمساهمته أقل من مساهمة القاعدة. كفاءة الزعنفة تقيس نسبة ما تنقله فعلًا إلى ما كانت ستنقله لو كانت كلها عند حرارة القاعدة.</p><p>تتحدّد بمعامل واحد: mL، وهو حاصل ضرب جذر (معامل الحمل ÷ (البوصل × السمك)) في الطول. في الحالة الافتراضية (25 مم و2 مم و60 واط/م²·ك) يكون mL=0.428 والكفاءة 94.3% — أي أن الزعنفة تعمل تقريبًا بكاملها. هذا هو الحال في زعانف المبادلات الهوائية: رقيقة وطويلة تعمل بكفاءة عالية لأن h صغير.</p><p>الشكل العملي هو المقايضة: زعنفة رقيقة عالية الكفاءة تنقل قليلًا للحرارة لكل وحدة مساحة، وزعنفة سميكة قصيرة تنقل أكثر لكل متر مربع لكن بمساحة أقل. الاختيار يحكمه الغرض لا الكفاءة وحدها.</p></div>
+  <div class="depth" aria-label="شرح معمّق"><section class="depth-sec">
+    <h2>كيف تعمل الظاهرة؟</h2>
+    <p>الحرارة تسير بالحمل إلى الهواء وبالتوصيل على طول المعدن؛ كلما زادت مقاومة التوصيل على طول الزعنفة هبطت حرارتها وهبط معها الفيض عند أطرافها، فتحمل الأطراف أقل مما تحمله القاعدة عند الفرق الحراري نفسه. مقاومة التوصيل تتناسب عكسيًّا مع البوصل والسمك، ومقاومة الحمل عكسيًّا مع h.</p>
+  </section><section class="depth-sec">
+    <h2>العلاقة بالأرقام</h2>
+    <p>m = √(2h/(k·t)) و η = tanh(mL)/(mL). في الحالة الافتراضية: m=6.82 لكل متر وmL=0.428 وη=94.3%. عند mL=1 تنزل η إلى 76.2%، وعند mL=2 إلى 48.2%. مضاعفة الطول إلى 50 مم ترفع mL إلى 0.86 وتهبط η إلى 82.4% وهي تحمل 1.75 ضعف الحرارة الكلية لا ضعفين.</p>
+  </section><section class="depth-sec">
+    <h2>مفاهيم متقاربة</h2>
+    <p>يُخلط بين «كفاءة الزعنفة» و«فاعلية الزعنفة»: الفاعلية تقارن وجودها بعدمها (q_fin ÷ q_bare) وقد تكون الكفاءة 94% والفاعلية 1.8 فقط. ويُخلط بين طول الزعنفة وطولها الفعّال: القدرة على نقل الحرارة تشبع عند طول يقارب 3/m، وما بعده لا يضيف إلا وزنًا.</p>
+  </section><section class="depth-sec">
+    <h2>حدود التطبيق</h2>
+    <p>المعادلة لزعنفة مستقيمة مقطعها ثابت بمعامل حمل منتظم وطرف معزول. الزعنف ذات الطرف غير المعزول تحتاج تعديلًا بسيطًا (استبدال L بـL+t/2). الزعانف المخروطية أو المغزلية أو المبرّدة بالتبخّر تحتاج حلًّا آخر، ولا تصلح عند وجود إشعاع مؤثر.</p>
+  </section></div>
+  <section class="figures" aria-label="الرسوم التوضيحية">
+  <figure class="fig" id="fig-1">
+    <img class="fig-img" src="../assets/fig/fig-spec-fin-efficiency.svg" alt="منحنى هابط من 98.8% عند 5 مليمترات إلى 58.2% عند 80 مليمترًا، وعليه علامة عند 25 مليمترًا بقيمة 94.3%." loading="lazy" />
+    <figcaption><b>الشكل 1.</b> كفاءة الزعنفة مقابل طولها: منحنى هابط يشبه القطع الزائد، والعلامة عند 25 مم تقرأ 94.3% لأن الزعنفة قصيرة بما يكفي.
+      <span class="credit muted small">· من عمل انفراد — منحنى محسوب من η=tanh(mL)/(mL)</span>
+    </figcaption>
+  </figure>
+</section>
+  <table class="facts">
+  <caption>أرقام مسنَدة إلى مصادرها</caption>
+  <thead><tr><th scope="col">الكمية</th><th scope="col">القيمة</th><th scope="col">المصدر</th></tr></thead>
+  <tbody><tr>
+      <th scope="row">بوصل الألمنيوم</th>
+      <td>205 <span class="unit">W/(m·K)</span></td>
+      <td><a class="ref" href="#src-2">[2]</a></td>
+    </tr><tr>
+      <th scope="row">كفاءة الزعنفة عند mL = 1</th>
+      <td>76.2 <span class="unit">%</span></td>
+      <td><a class="ref" href="#src-1">[1]</a></td>
+    </tr><tr>
+      <th scope="row">الكفاءة عند 25 مم و2 مم و60 واط/م²·ك</th>
+      <td>94.32 <span class="unit">%</span></td>
+      <td><a class="ref" href="#src-1">[1]</a></td>
+    </tr></tbody>
+</table>
+  <section class="sources" aria-labelledby="src-h">
+  <h2 id="src-h">المصادر</h2>
+  <ol class="src-list"><li id="src-1">
+      <span class="src-num">1</span>
+      <span>Fins — efficiency and effectiveness — The Engineering ToolBox.
+      <a href="https://www.engineeringtoolbox.com/fins-heat-transfer-d_213.html" rel="noopener nofollow" target="_blank">www.engineeringtoolbox.com/fins-heat-transfer-d_213.html</a>
+      <span class="muted small">· اطُّلع عليه 2026-11-19</span></span>
+    </li><li id="src-2">
+      <span class="src-num">2</span>
+      <span>Thermal conductivity of metals — The Engineering ToolBox.
+      <a href="https://www.engineeringtoolbox.com/thermal-conductivity-metals-d_858.html" rel="noopener nofollow" target="_blank">www.engineeringtoolbox.com/thermal-conductivity-metals-d_858.html</a>
+      <span class="muted small">· اطُّلع عليه 2026-11-19</span></span>
+    </li></ol>
+</section>
+  <p class="reviewline muted small">راجعه: عبدالله الهويدي — مراجعة في تطبيق انفراد · 2026-11-19 · آخر تحديث 2026-11-19</p>
+  <a class="backlink backlink-end" href="../lab/" data-back data-label="المعمل"><svg class="backlink-i" viewBox="0 0 24 24" width="18" height="18" aria-hidden="true" focusable="false"><path d="M9 5l7 7-7 7" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg><span>رجوع إلى المعمل</span></a>
+</article>
+</main>
+<footer class="site-foot">
+  <div class="wrap foot-in">
+    <div>
+      <b>ديوان المعرفة</b> — من المفهوم إلى التجربة
+      <div class="muted small">قسم علمي داخل انفراد · <a href="https://infiradev.com">infiradev.com</a> · <a href="mailto:info@infiradev.com">info@infiradev.com</a></div>
+    </div>
+    <div class="muted small">
+      <a href="../about.html">سياسة التحرير والمصادر</a> ·
+      <a href="../terms/">المصطلحات</a> ·
+      <a href="../lab/">المعمل الافتراضي</a>
+    </div>
+  </div>
+</footer>
+<script src="../assets/js/site.js" defer></script>
+</body>
+</html>
