@@ -43,19 +43,19 @@
   <div class="lab-readout" id="lab-outputs"></div>
   <div class="lab-gauge" id="lab-gauge"></div>
   <figure class="lab-scene-fig">
-    <figcaption class="lab-scene-cap">أسطوانة الغاز: جزيئات تضرب الجدار، والمكبس يحدّد الحجم.</figcaption>
+    <figcaption class="lab-scene-cap">عند ثبات كمية الغاز والحرارة، تقليل الحجم يزيد تواتر الاصطدام بالجدران ويرفع الضغط. الأبعاد والحركة توضيحية، والقيم من الحساب نفسه.</figcaption>
     <div id="lab-scene" class="lab-scene" role="group" aria-label="مشهد توضيحي متحرك"></div>
   </figure>
 
   <p><button class="lab-cta" type="button" id="lab-reset">إعادة الضبط</button></p>
   <p class="muted small" id="lab-note">في اللوحة يبدأ الحجم عند 24.5 لترًا ليقع الضغط على 101.3 ك.ب — الظروف القياسية.</p>
-  <details>
+  <details open>
     <summary>افتراضات النموذج والمصدر</summary>
     <p class="lab-equation" dir="ltr">P = nRT/V</p>
     <p>غاز مثالي بلا حجم جزيئي ولا قوى بينجزيئية</p><p>R = 8.314 J/(mol·K)</p><p>الحرارة مطلقة بالكلفن</p><p><a href="https://openstax.org/books/college-physics/pages/13-3-the-ideal-gas-law">The Ideal Gas Law — College Physics 13.3 — OpenStax</a></p><p><a href="https://www.nist.gov/pml/weights-and-measures">Molar gas constant and standard conditions — NIST</a></p>
   </details>
   <noscript>فعّل JavaScript لتحريك المدخلات وحساب النتائج.</noscript>
-  <script type="application/json" id="lab-spec">{"controls":[{"id":"moles","label_ar":"عدد المولات","step":0.1,"value":1,"unit":"مول","from":0.5,"to":2},{"id":"celsius","label_ar":"درجة الحرارة","step":1,"value":25,"unit":"°م","from":0,"to":100},{"id":"liters","label_ar":"الحجم","step":0.5,"value":24.5,"unit":"لتر","from":10,"to":50}],"outputs":[{"id":"pressure","label_ar":"الضغط","unit":"ك.ب","decimals":1},{"id":"kelvin","label_ar":"الحرارة المطلقة","unit":"ك","decimals":1}],"gauge":{"id":"pressure","min":0,"max":650,"start":101.3,"unit":"ك.ب","decimals":1,"bind":"pressure","label":"الضغط — المقياس من 20 إلى 650 كيلوباسكال"},"scene":{"kind":"piston","caption_ar":"أسطوانة الغاز: جزيئات تضرب الجدار، والمكبس يحدّد الحجم."},"note_ar":"في اللوحة يبدأ الحجم عند 24.5 لترًا ليقع الضغط على 101.3 ك.ب — الظروف القياسية."}</script>
+  <script type="application/json" id="lab-spec">{"controls":[{"id":"moles","label_ar":"عدد المولات","step":0.1,"value":1,"unit":"مول","min":0.5,"max":2},{"id":"celsius","label_ar":"درجة الحرارة","step":1,"value":25,"unit":"°م","min":0,"max":100},{"id":"liters","label_ar":"الحجم","step":0.5,"value":24.5,"unit":"لتر","min":10,"max":50}],"outputs":[{"id":"pressure","label_ar":"الضغط","unit":"ك.ب","decimals":1},{"id":"kelvin","label_ar":"الحرارة المطلقة","unit":"ك","decimals":1}],"gauge":{"id":"pressure","min":0,"max":650,"unit":"ك.ب","decimals":1,"bind":"pressure","label":"الضغط — المقياس من 20 إلى 650 كيلوباسكال"},"scene":{"kind":"ideal-gas-pressure","caption_ar":"عند ثبات كمية الغاز والحرارة، تقليل الحجم يزيد تواتر الاصطدام بالجدران ويرفع الضغط. الأبعاد والحركة توضيحية، والقيم من الحساب نفسه."},"note_ar":"في اللوحة يبدأ الحجم عند 24.5 لترًا ليقع الضغط على 101.3 ك.ب — الظروف القياسية.","learning":{"question_ar":"كيف تؤثر مساحة الحركة المتاحة للجزيئات في الضغط؟","explanation_ar":"عند ثبات كمية الغاز والحرارة، تقليل الحجم يزيد تواتر الاصطدام بالجدران ويرفع الضغط.","input":"liters","output":"pressure","scenarios":[{"label_ar":"حجم أصغر","values":{"liters":12}},{"label_ar":"حجم أكبر","values":{"liters":40}}]}}</script>
   <script type="module" src="../assets/js/labs/ideal-gas-pressure.mjs"></script>
 </section>
   <div class="prose"><p>كل جزيء في الغاز يرتطم بالجدار وينقل إليه زخمًا. مجموع هذه الضربات في الثانية على وحدة المساحة هو الضغط. فإذا ضاعفت عدد الجزيئات تضاعف الضغط، وإذا ضاعفت المساحة التي تتحرك فيها هبط إلى النصف.</p><p>اللوحة تربط ثلاثة مدخلات بمخرج واحد. ابدأ بالافتراض الافتراضي ثم أنصِف الحجم ولاحظ أن الضغط يقفز إلى الضعف، ثم ارفع الحرارة من 0 إلى 200 °م ولاحظ أن الزيادة خطية في الكلفن لا في الدرجة المئوية.</p></div>
@@ -64,7 +64,7 @@
     <p>الضغط ناتج عن معدّل نقل الزخم إلى الجدار: كل ارتطام ينقل 2mv، وعدد الارتطامات في الثانية يتناسب مع عدد الجزيئات وسرعتها، وسرعتها مع الجذر التربيعي للحرارة المطلقة. حاصل ضرب هذه العوامل يعطي pV=nRT بلا افتراضات إضافية.</p>
   </section><section class="depth-sec">
     <h2>العلاقة بالأرقام</h2>
-    <p>P = nRT/V. عند مول واحد و25 °م (298.15 ك) وحجم 24.5 لترًا يكون الضغط 101.3 كيلوباسكال — وهي الظروف القياسية. وعند الحجم نفسه بحرارة 0 °م يهبط إلى 92.6 كيلوباسكال لأن النسبة 273.15/298.15 = 0.916.</p>
+    <p>المعادلة: P = nRT/V. عند عدد المولات 1.00 مول، درجة الحرارة 25.00 °م، الحجم 24.50 لتر، يعطي الحساب: الضغط = 101.2 ك.ب؛ الحرارة المطلقة = 298.2 ك. حالة «حجم أصغر» (عدد المولات 1.00 مول، درجة الحرارة 25.00 °م، الحجم 12.00 لتر): الضغط = 206.6 ك.ب؛ الحرارة المطلقة = 298.2 ك. حالة «حجم أكبر» (عدد المولات 1.00 مول، درجة الحرارة 25.00 °م، الحجم 40.00 لتر): الضغط = 62.0 ك.ب؛ الحرارة المطلقة = 298.2 ك. هذه أمثلة مولدة من دالة الحساب نفسها؛ وليست قياسات فعلية أو مواصفات لجهاز تجاري.</p>
   </section><section class="depth-sec">
     <h2>مفاهيم متقاربة</h2>
     <p>يُخلط بين الضغط الكلي والضغط الجزئي: في خليط، ضغط كل غاز يُحسب بعدد مولاته وحده (قانون دالتون). ويُخلط بين الدرجة المئوية والمطلقة: الانتقال من 0 إلى 20 °م لا يضاعف الضغط، بل يرفعه بنسبة 293/273 فقط.</p>
@@ -84,17 +84,13 @@
   <caption>أرقام مسنَدة إلى مصادرها</caption>
   <thead><tr><th scope="col">الكمية</th><th scope="col">القيمة</th><th scope="col">المصدر</th></tr></thead>
   <tbody><tr>
-      <th scope="row">ثابت الغازات العام</th>
-      <td>8.314 <span class="unit">J/(mol·K)</span></td>
+      <th scope="row">الضغط — الحالة الافتراضية</th>
+      <td>101.2 <span class="unit">ك.ب</span></td>
       <td><a class="ref" href="#src-1">[1]</a></td>
     </tr><tr>
-      <th scope="row">الضغط القياسي</th>
-      <td>101.325 <span class="unit">ك.ب</span></td>
-      <td><a class="ref" href="#src-2">[2]</a></td>
-    </tr><tr>
-      <th scope="row">حجم مول من الغاز عند 25 °م و1 ضغط جوي</th>
-      <td>24.5 <span class="unit">لتر</span></td>
-      <td><a class="ref" href="#src-2">[2]</a></td>
+      <th scope="row">الحرارة المطلقة — الحالة الافتراضية</th>
+      <td>298.2 <span class="unit">ك</span></td>
+      <td><a class="ref" href="#src-1">[1]</a></td>
     </tr></tbody>
 </table>
   <section class="sources" aria-labelledby="src-h">
@@ -111,7 +107,7 @@
       <span class="muted small">· اطُّلع عليه 2026-11-16</span></span>
     </li></ol>
 </section>
-  <p class="reviewline muted small">راجعه: مراجعة آلية — بوابة الديوان (فحص بنيوي وأرقام) 2026-11-16 · 2026-11-16 · آخر تحديث 2026-11-17</p>
+  <p class="reviewline muted small">راجعه: مراجعة آلية — بوابة الديوان (فحص بنيوي وأرقام) 2026-11-16 · 2026-11-16 · آخر تحديث 2026-11-20</p>
   <a class="backlink backlink-end" href="../lab/" data-back data-label="المعمل"><svg class="backlink-i" viewBox="0 0 24 24" width="18" height="18" aria-hidden="true" focusable="false"><path d="M9 5l7 7-7 7" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg><span>رجوع إلى المعمل</span></a>
 </article>
 </main>

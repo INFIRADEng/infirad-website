@@ -4,7 +4,7 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>عند أي درجة يغلي الماء في الرياض؟ — ديوان المعرفة</title>
-  <meta name="description" content="يغلي الماء عندما يتساوى ضغط بخاره مع الضغط المحيط. غيّر الارتفاع لتقارن درجة الغليان المقدّرة في النموذج عند ضغوط جوية مختلفة." />
+  <meta name="description" content="غيّر الضغط المحيط لتقدير درجة غليان الماء بمعادلة أنطوان. الغليان يتحقق عندما يساوي ضغط البخار المشبع الضغط الخارجي، لذلك يغلي الماء عند حرارة أقل تحت ضغط أقل." />
   <link rel="stylesheet" href="../assets/css/tokens.css" />
   <link rel="stylesheet" href="../assets/css/site.css" />
 
@@ -12,7 +12,7 @@
   <link rel="icon" href="https://infiradev.com/favicon.ico" sizes="48x48" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://infiradev.com/assets/favicon-192.png" />
   <link rel="apple-touch-icon" href="https://infiradev.com/assets/apple-touch-icon.png" />
-  <script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"Organization","@id":"https://infiradev.com/#organization","name":"INFIRAD","alternateName":["انفِراد","انفراد"],"url":"https://infiradev.com/","logo":{"@type":"ImageObject","url":"https://infiradev.com/assets/logo-bilingual.png","width":990,"height":320},"slogan":"من الفكرة إلى اليقين","foundingDate":"2025","email":"info@infiradeng.com","telephone":"+966557748982","address":{"@type":"PostalAddress","addressLocality":"Riyadh","addressCountry":"SA"},"sameAs":["https://www.linkedin.com/company/infirad/"],"knowsAbout":["Engineering services","Engineering Services Provider (ESP)","Process design","Process simulation","Computational fluid dynamics","Thermal analysis","Independent engineering review","Specialized AI agents","Workflow automation","Traffic simulation"]},{"@type":"WebPage","@id":"https://infiradev.com/diwan/lab/boiling-point-pressure.html#webpage","url":"https://infiradev.com/diwan/lab/boiling-point-pressure.html","name":"عند أي درجة يغلي الماء في الرياض؟ — ديوان المعرفة","description":"يغلي الماء عندما يتساوى ضغط بخاره مع الضغط المحيط. غيّر الارتفاع لتقارن درجة الغليان المقدّرة في النموذج عند ضغوط جوية مختلفة.","inLanguage":"ar","isPartOf":{"@id":"https://infiradev.com/#website"},"about":{"@id":"https://infiradev.com/#organization"}},{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"انفراد","item":"https://infiradev.com/"},{"@type":"ListItem","position":2,"name":"ديوان المعرفة","item":"https://infiradev.com/diwan/"},{"@type":"ListItem","position":3,"name":"عند أي درجة يغلي الماء في الرياض؟ — ديوان المعرفة","item":"https://infiradev.com/diwan/lab/boiling-point-pressure.html"}]}]}</script>
+  <script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"Organization","@id":"https://infiradev.com/#organization","name":"INFIRAD","alternateName":["انفِراد","انفراد"],"url":"https://infiradev.com/","logo":{"@type":"ImageObject","url":"https://infiradev.com/assets/logo-bilingual.png","width":990,"height":320},"slogan":"من الفكرة إلى اليقين","foundingDate":"2025","email":"info@infiradeng.com","telephone":"+966557748982","address":{"@type":"PostalAddress","addressLocality":"Riyadh","addressCountry":"SA"},"sameAs":["https://www.linkedin.com/company/infirad/"],"knowsAbout":["Engineering services","Engineering Services Provider (ESP)","Process design","Process simulation","Computational fluid dynamics","Thermal analysis","Independent engineering review","Specialized AI agents","Workflow automation","Traffic simulation"]},{"@type":"WebPage","@id":"https://infiradev.com/diwan/lab/boiling-point-pressure.html#webpage","url":"https://infiradev.com/diwan/lab/boiling-point-pressure.html","name":"عند أي درجة يغلي الماء في الرياض؟ — ديوان المعرفة","description":"غيّر الضغط المحيط لتقدير درجة غليان الماء بمعادلة أنطوان. الغليان يتحقق عندما يساوي ضغط البخار المشبع الضغط الخارجي، لذلك يغلي الماء عند حرارة أقل تحت ضغط أقل.","inLanguage":"ar","isPartOf":{"@id":"https://infiradev.com/#website"},"about":{"@id":"https://infiradev.com/#organization"}},{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"انفراد","item":"https://infiradev.com/"},{"@type":"ListItem","position":2,"name":"ديوان المعرفة","item":"https://infiradev.com/diwan/"},{"@type":"ListItem","position":3,"name":"عند أي درجة يغلي الماء في الرياض؟ — ديوان المعرفة","item":"https://infiradev.com/diwan/lab/boiling-point-pressure.html"}]}]}</script>
 </head>
 <body>
 <a class="skip" href="#main">انتقل إلى المحتوى</a>
@@ -43,19 +43,19 @@
   <div class="lab-readout" id="lab-outputs"></div>
   <div class="lab-gauge" id="lab-gauge"></div>
   <figure class="lab-scene-fig">
-    <figcaption class="lab-scene-cap">قدر على قمة جبل: يغلي قبل 100 °م، فالطعام يحتاج وقتًا أطول.</figcaption>
+    <figcaption class="lab-scene-cap">الغليان يحدث عند تساوي ضغط البخار المشبع مع الضغط المحيط. انخفاض الضغط يخفض درجة الغليان. الأبعاد والحركة توضيحية، والقيم من الحساب نفسه.</figcaption>
     <div id="lab-scene" class="lab-scene" role="group" aria-label="مشهد توضيحي متحرك"></div>
   </figure>
 
   <p><button class="lab-cta" type="button" id="lab-reset">إعادة الضبط</button></p>
   <p class="muted small" id="lab-note">القيمة الافتراضية 90.8 ك.ب = الضغط الجوي التقريبي للرياض على ارتفاع 950 مترًا.</p>
-  <details>
+  <details open>
     <summary>افتراضات النموذج والمصدر</summary>
     <p class="lab-equation" dir="ltr">log₁₀P(mmHg) = 8.07131 − 1730.63/(233.426 + T)</p>
     <p>ماء نقي بلا أملاح</p><p>ضغط بخار الماء من معادلة أنطوان (تبسيط فوق 100 °م)</p><p>لا تبادل حراري مع الوعاء</p><p><a href="https://www.engineeringtoolbox.com/water-properties-d_1573.html">Water — saturated vapour pressure and latent heat — Engineering ToolBox</a></p><p><a href="https://www.nist.gov/pml">Vapor pressure formulation (Antoine equation) — NIST</a></p>
   </details>
   <noscript>فعّل JavaScript لتحريك المدخلات وحساب النتائج.</noscript>
-  <script type="application/json" id="lab-spec">{"controls":[{"id":"pressure","label_ar":"الضغط الجوي","step":0.1,"value":90.8,"unit":"ك.ب","from":50,"to":101.3}],"outputs":[{"id":"boil","label_ar":"درجة الغليان","unit":"°م","decimals":1},{"id":"drop","label_ar":"النقص عن 100 °م","unit":"درجة","decimals":1}],"gauge":{"id":"boil","min":70,"max":102,"start":96.7,"unit":"°م","decimals":1,"bind":"boil","label":"درجة الغليان — المقياس من 70 إلى 102 درجة مئوية"},"scene":{"kind":"pot-altitude","caption_ar":"قدر على قمة جبل: يغلي قبل 100 °م، فالطعام يحتاج وقتًا أطول."},"note_ar":"القيمة الافتراضية 90.8 ك.ب = الضغط الجوي التقريبي للرياض على ارتفاع 950 مترًا."}</script>
+  <script type="application/json" id="lab-spec">{"controls":[{"id":"pressure","label_ar":"الضغط الجوي","step":0.1,"value":90.8,"unit":"ك.ب","min":50,"max":101.3}],"outputs":[{"id":"boil","label_ar":"درجة الغليان","unit":"°م","decimals":1},{"id":"drop","label_ar":"النقص عن 100 °م","unit":"درجة","decimals":1}],"gauge":{"id":"boil","min":70,"max":102,"unit":"°م","decimals":1,"bind":"boil","label":"درجة الغليان — المقياس من 70 إلى 102 درجة مئوية"},"scene":{"kind":"boiling-point-pressure","caption_ar":"الغليان يحدث عند تساوي ضغط البخار المشبع مع الضغط المحيط. انخفاض الضغط يخفض درجة الغليان. الأبعاد والحركة توضيحية، والقيم من الحساب نفسه."},"note_ar":"القيمة الافتراضية 90.8 ك.ب = الضغط الجوي التقريبي للرياض على ارتفاع 950 مترًا.","learning":{"question_ar":"هل يحتاج الماء دائمًا إلى مئة درجة حتى يغلي؟","explanation_ar":"الغليان يحدث عند تساوي ضغط البخار المشبع مع الضغط المحيط. انخفاض الضغط يخفض درجة الغليان.","input":"pressure","output":"boil","scenarios":[{"label_ar":"ضغط منخفض","values":{"pressure":60}},{"label_ar":"قرب مستوى البحر","values":{"pressure":101.3}}]}}</script>
   <script type="module" src="../assets/js/labs/boiling-point-pressure.mjs"></script>
 </section>
   <div class="prose"><p>الغليان ليس «وصول الماء إلى مئة درجة»، بل تساوي ضغط البخار المتولّد داخل الفقاعات مع الضغط المسلّط على سطح الماء. عند ضغط أقل يحتاج بخارًا أقل ضغطًا، أي حرارة أقل.</p><p>في الرياض على ارتفاع نحو 950 مترًا يقع الضغط الجوي قرب 90.8 كيلوباسكال، فيغلي الماء عند 96.7 °م. على جبل إيفرست (نحو 33 ك.ب) يغلي عند 71 °م، ولهذا لا يطهو الطعام جيدًا هناك بلا قدور ضغط.</p></div>
@@ -64,7 +64,7 @@
     <p>جزيئات السائل في حركة دائمة، وبعضها يملك طاقة كافية للهروب من السطح. ضغط البخار المتولّد يزيد مع الحرارة. الغليان يبدأ حين يصبح ضغط البخار مساويًا للضغط الخارجي، فتتكوّن فقاعة بخار داخل السائل تدفعه للصعود بدل أن ينهار.</p>
   </section><section class="depth-sec">
     <h2>العلاقة بالأرقام</h2>
-    <p>يوصف ضغط البخار بمعادلة أنطوان: log₁₀P(mmHg)=8.07131−1730.63/(233.426+T). عند 90.8 ك.ب تعطي T=96.7 °م، وعند 70 ك.ب تعطي 89.9 °م، وعند 33 ك.ب نحو 71 °م. والحرارة الكامنة للتبخّر عند 100 °م 2257 kJ/kg، وهي التي تجعل البخار يحمل طاقة أكبر من الماء الساخن نفسه.</p>
+    <p>المعادلة: log₁₀P(mmHg) = 8.07131 − 1730.63/(233.426 + T). عند الضغط الجوي 90.80 ك.ب، يعطي الحساب: درجة الغليان = 97.0 °م؛ النقص عن 100 °م = 3.0 درجة. حالة «ضغط منخفض» (الضغط الجوي 60.00 ك.ب): درجة الغليان = 86.0 °م؛ النقص عن 100 °م = 14.0 درجة. حالة «قرب مستوى البحر» (الضغط الجوي 101.30 ك.ب): درجة الغليان = 100.0 °م؛ النقص عن 100 °م = 0.0 درجة. هذه أمثلة مولدة من دالة الحساب نفسها؛ وليست قياسات فعلية أو مواصفات لجهاز تجاري.</p>
   </section><section class="depth-sec">
     <h2>مفاهيم متقاربة</h2>
     <p>يُخلط بين الغليان والتبخّر: التبخّر يحدث عند أي حرارة من السطح، والغليان تكوّن فقاعات داخل الكتلة. ويُخلط بين الحرارة والطاقة الكامنة: الماء عند 100 °م لا يغلي إن كان الضغط أعلى، والسائل يغلي تحت 100 °م في وعاء مفرّغ.</p>
@@ -84,16 +84,12 @@
   <caption>أرقام مسنَدة إلى مصادرها</caption>
   <thead><tr><th scope="col">الكمية</th><th scope="col">القيمة</th><th scope="col">المصدر</th></tr></thead>
   <tbody><tr>
-      <th scope="row">درجة غليان الماء عند الضغط القياسي</th>
-      <td>100 <span class="unit">°م</span></td>
+      <th scope="row">درجة الغليان — الحالة الافتراضية</th>
+      <td>97.0 <span class="unit">°م</span></td>
       <td><a class="ref" href="#src-1">[1]</a></td>
     </tr><tr>
-      <th scope="row">درجة الغليان عند ضغط الرياض التقريبي</th>
-      <td>96.7 <span class="unit">°م</span></td>
-      <td><a class="ref" href="#src-2">[2]</a></td>
-    </tr><tr>
-      <th scope="row">الحرارة الكامنة للتبخّر عند 100 °م</th>
-      <td>2257 <span class="unit">kJ/kg</span></td>
+      <th scope="row">النقص عن 100 °م — الحالة الافتراضية</th>
+      <td>3.0 <span class="unit">درجة</span></td>
       <td><a class="ref" href="#src-1">[1]</a></td>
     </tr></tbody>
 </table>
@@ -111,7 +107,7 @@
       <span class="muted small">· اطُّلع عليه 2026-11-16</span></span>
     </li></ol>
 </section>
-  <p class="reviewline muted small">راجعه: مراجعة آلية — بوابة الديوان (فحص بنيوي وأرقام) 2026-11-16 · 2026-11-16 · آخر تحديث 2026-11-17</p>
+  <p class="reviewline muted small">راجعه: مراجعة آلية — بوابة الديوان (فحص بنيوي وأرقام) 2026-11-16 · 2026-11-16 · آخر تحديث 2026-11-20</p>
   <a class="backlink backlink-end" href="../lab/" data-back data-label="المعمل"><svg class="backlink-i" viewBox="0 0 24 24" width="18" height="18" aria-hidden="true" focusable="false"><path d="M9 5l7 7-7 7" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg><span>رجوع إلى المعمل</span></a>
 </article>
 </main>

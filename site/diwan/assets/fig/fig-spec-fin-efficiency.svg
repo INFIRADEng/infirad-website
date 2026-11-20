@@ -1,36 +1,36 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="760" height="514" viewBox="0 0 760 514" role="img" aria-labelledby="t">
-<title id="t">كفاءة الزعنفة مقابل طولها</title>
+<title id="t">كفاءة الزعنفة مقابل طول الزعنفة</title>
 <rect width="760" height="514" fill="#ffffff"/>
 <g font-family="'Segoe UI', 'Noto Naskh Arabic', system-ui, sans-serif" direction="rtl">
-<text x="380" y="34" font-size="18" font-weight="700" fill="#1b2a2f" text-anchor="middle">كفاءة الزعنفة مقابل طولها</text>
+<text x="380" y="34" font-size="18" font-weight="700" fill="#1b2a2f" text-anchor="middle">كفاءة الزعنفة مقابل طول الزعنفة</text>
 <line x1="96" y1="130" x2="96" y2="400" stroke="#cbd5d9" stroke-width="1" stroke-opacity="0.6"/>
-<text x="96" y="426" font-size="17" font-weight="400" fill="#5d7079" text-anchor="middle">0</text>
+<text x="96" y="426" font-size="17" font-weight="400" fill="#5d7079" text-anchor="middle">5</text>
 <line x1="236.5" y1="130" x2="236.5" y2="400" stroke="#cbd5d9" stroke-width="1" stroke-opacity="0.6"/>
-<text x="236.5" y="426" font-size="17" font-weight="400" fill="#5d7079" text-anchor="middle">20</text>
+<text x="236.5" y="426" font-size="17" font-weight="400" fill="#5d7079" text-anchor="middle">23.8</text>
 <line x1="377" y1="130" x2="377" y2="400" stroke="#cbd5d9" stroke-width="1" stroke-opacity="0.6"/>
-<text x="377" y="426" font-size="17" font-weight="400" fill="#5d7079" text-anchor="middle">40</text>
+<text x="377" y="426" font-size="17" font-weight="400" fill="#5d7079" text-anchor="middle">42.5</text>
 <line x1="517.5" y1="130" x2="517.5" y2="400" stroke="#cbd5d9" stroke-width="1" stroke-opacity="0.6"/>
-<text x="517.5" y="426" font-size="17" font-weight="400" fill="#5d7079" text-anchor="middle">60</text>
+<text x="517.5" y="426" font-size="17" font-weight="400" fill="#5d7079" text-anchor="middle">61.3</text>
 <line x1="658" y1="130" x2="658" y2="400" stroke="#cbd5d9" stroke-width="1" stroke-opacity="0.6"/>
 <text x="658" y="426" font-size="17" font-weight="400" fill="#5d7079" text-anchor="middle">80</text>
 <line x1="96" y1="400" x2="658" y2="400" stroke="#cbd5d9" stroke-width="1" stroke-opacity="0.6"/>
-<text x="670" y="406" font-size="17" font-weight="400" fill="#5d7079" text-anchor="start">50</text>
+<text x="670" y="406" font-size="17" font-weight="400" fill="#5d7079" text-anchor="start">0</text>
 <line x1="96" y1="346" x2="658" y2="346" stroke="#cbd5d9" stroke-width="1" stroke-opacity="0.6"/>
-<text x="670" y="352" font-size="17" font-weight="400" fill="#5d7079" text-anchor="start">60</text>
+<text x="670" y="352" font-size="17" font-weight="400" fill="#5d7079" text-anchor="start">20</text>
 <line x1="96" y1="292" x2="658" y2="292" stroke="#cbd5d9" stroke-width="1" stroke-opacity="0.6"/>
-<text x="670" y="298" font-size="17" font-weight="400" fill="#5d7079" text-anchor="start">70</text>
+<text x="670" y="298" font-size="17" font-weight="400" fill="#5d7079" text-anchor="start">40</text>
 <line x1="96" y1="238" x2="658" y2="238" stroke="#cbd5d9" stroke-width="1" stroke-opacity="0.6"/>
-<text x="670" y="244" font-size="17" font-weight="400" fill="#5d7079" text-anchor="start">80</text>
+<text x="670" y="244" font-size="17" font-weight="400" fill="#5d7079" text-anchor="start">60</text>
 <line x1="96" y1="184" x2="658" y2="184" stroke="#cbd5d9" stroke-width="1" stroke-opacity="0.6"/>
-<text x="670" y="190" font-size="17" font-weight="400" fill="#5d7079" text-anchor="start">90</text>
+<text x="670" y="190" font-size="17" font-weight="400" fill="#5d7079" text-anchor="start">80</text>
 <line x1="96" y1="130" x2="658" y2="130" stroke="#cbd5d9" stroke-width="1" stroke-opacity="0.6"/>
 <text x="670" y="136" font-size="17" font-weight="400" fill="#5d7079" text-anchor="start">100</text>
 <line x1="96" y1="130" x2="96" y2="400" stroke="#1b2a2f" stroke-width="1.5"/>
 <line x1="96" y1="400" x2="658" y2="400" stroke="#1b2a2f" stroke-width="1.5"/>
-<path d="M131.1,131.3 L180.3,137.5 L236.5,150.1 L292.7,167.9 L348.9,189.3 L405.1,213.2 L461.3,238.3 L517.5,263.6 L587.8,294.4 L658,323.4" fill="none" stroke="#c2410c" stroke-width="2.5" stroke-linejoin="round"/>
-<circle cx="271.6" cy="160.7" r="5" fill="#1b2a2f"/>
-<text x="271.6" y="146.7" font-size="17" font-weight="700" fill="#1b2a2f" text-anchor="middle" stroke="#ffffff" stroke-width="4" stroke-linejoin="round" paint-order="stroke">25 مم ← 94.3%</text>
-<text x="377" y="454" font-size="17" font-weight="400" fill="#5d7079" text-anchor="middle">الطول (مم)</text>
-<text x="96" y="108" font-size="17" font-weight="400" fill="#5d7079" text-anchor="start" direction="ltr">الكفاءة (%)</text>
+<path d="M96,130.7 L114.7,131.5 L133.5,132.6 L152.2,134 L170.9,135.8 L189.7,137.8 L208.4,140.1 L227.1,142.6 L245.9,145.3 L264.6,148.3 L283.3,151.5 L302.1,154.8 L320.8,158.2 L339.5,161.8 L358.3,165.5 L377,169.3 L395.7,173.1 L414.5,177 L433.2,181 L451.9,184.9 L470.7,188.9 L489.4,192.9 L508.1,196.8 L526.9,200.7 L545.6,204.6 L564.3,208.4 L583.1,212.2 L601.8,215.9 L620.5,219.6 L639.3,223.2 L658,226.7" fill="none" stroke="#c2410c" stroke-width="2.5" stroke-linejoin="round"/>
+<circle cx="245.9" cy="145.3" r="5" fill="#1b2a2f"/>
+<text x="245.9" y="131.3" font-size="17" font-weight="700" fill="#1b2a2f" text-anchor="middle" stroke="#ffffff" stroke-width="4" stroke-linejoin="round" paint-order="stroke">25.00 ← 94.3</text>
+<text x="377" y="454" font-size="17" font-weight="400" fill="#5d7079" text-anchor="middle">طول الزعنفة (مم)</text>
+<text x="96" y="108" font-size="17" font-weight="400" fill="#5d7079" text-anchor="start" direction="ltr">كفاءة الزعنفة (%)</text>
 <text x="380" y="488" font-size="17" font-weight="400" fill="#5d7079" text-anchor="middle">الكفاءة تنخفض مع الطول: الطرف البعيد يعمل عند حرارة أقل فلا يضيف مساحةً فعّالة.</text>
 </g></svg>

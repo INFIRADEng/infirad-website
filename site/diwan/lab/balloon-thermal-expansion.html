@@ -43,19 +43,19 @@
   <div class="lab-readout" id="lab-outputs"></div>
   <div class="lab-gauge" id="lab-gauge"></div>
   <figure class="lab-scene-fig">
-    <figcaption class="lab-scene-cap">بالون داخل ماء ساخن: الغاز محبوس ويتمدّد عند التسخين.</figcaption>
+    <figcaption class="lab-scene-cap">عند الضغط الثابت يتناسب حجم الغاز مع الحرارة المطلقة. محيط الكرة يتغير مع الجذر التكعيبي للحجم. الأبعاد والحركة توضيحية، والقيم من الحساب نفسه.</figcaption>
     <div id="lab-scene" class="lab-scene" role="group" aria-label="مشهد توضيحي متحرك"></div>
   </figure>
 
   <p><button class="lab-cta" type="button" id="lab-reset">إعادة الضبط</button></p>
   <p class="muted small" id="lab-note">محاكاة تعليمية لا قياس فيزيائي حقيقي: الأرقام تُحسب من النموذج لحظيًا، ولا تُقاس بأدوات منزلية.</p>
-  <details>
+  <details open>
     <summary>افتراضات النموذج والمصدر</summary>
     <p class="lab-equation" dir="ltr">V/T = ثابت (ضغط ثابت) ⇒ C = 2π·r₀·(T/T₀)^(1/3)</p>
     <p>ضغط الغاز ثابت تقريبًا</p><p>الغاز مثالي</p><p>صلابة المطاط مهملة</p><p><a href="https://en.wikipedia.org/wiki/Charles%27s_law">Charles's law — volume and temperature at constant pressure — Wikipedia</a></p><p><a href="https://www.engineeringtoolbox.com/thermal-expansion-air-d_384.html">Thermal expansion of gases — The Engineering ToolBox</a></p>
   </details>
   <noscript>فعّل JavaScript لتحريك المدخلات وحساب النتائج.</noscript>
-  <script type="application/json" id="lab-spec">{"controls":[{"id":"temp","label_ar":"درجة حرارة الماء","from":5,"to":60,"step":1.38,"value":20,"unit":"°م"}],"outputs":[{"id":"circ","label_ar":"محيط البالون","unit":"سم","decimals":2},{"id":"kelvin","label_ar":"درجة الحرارة المطلقة","unit":"كلفن","decimals":1},{"id":"vratio","label_ar":"نسبة الحجم إلى الأصل","unit":"×","decimals":3}],"gauge":{"id":"circ","bind":"circ","label":"محيط البالون — من 28 إلى 36 سم","min":28,"max":36,"start":30,"unit":"سم","decimals":2},"scene":{"kind":"piston","caption_ar":"بالون داخل ماء ساخن: الغاز محبوس ويتمدّد عند التسخين."},"note_ar":"محاكاة تعليمية لا قياس فيزيائي حقيقي: الأرقام تُحسب من النموذج لحظيًا، ولا تُقاس بأدوات منزلية."}</script>
+  <script type="application/json" id="lab-spec">{"controls":[{"id":"temp","label_ar":"درجة حرارة الماء","step":1,"value":20,"unit":"°م","min":5,"max":60}],"outputs":[{"id":"circ","label_ar":"محيط البالون","unit":"سم","decimals":2},{"id":"kelvin","label_ar":"درجة الحرارة المطلقة","unit":"كلفن","decimals":1},{"id":"vratio","label_ar":"نسبة الحجم إلى الأصل","unit":"×","decimals":3}],"gauge":{"id":"circ","bind":"circ","label":"محيط البالون — من 28 إلى 36 سم","min":28,"max":36,"unit":"سم","decimals":2},"scene":{"kind":"balloon-thermal-expansion","caption_ar":"عند الضغط الثابت يتناسب حجم الغاز مع الحرارة المطلقة. محيط الكرة يتغير مع الجذر التكعيبي للحجم. الأبعاد والحركة توضيحية، والقيم من الحساب نفسه."},"note_ar":"محاكاة تعليمية لا قياس فيزيائي حقيقي: الأرقام تُحسب من النموذج لحظيًا، ولا تُقاس بأدوات منزلية.","learning":{"question_ar":"هل يتغير محيط البالون بالنسبة نفسها التي يتغير بها حجمه؟","explanation_ar":"عند الضغط الثابت يتناسب حجم الغاز مع الحرارة المطلقة. محيط الكرة يتغير مع الجذر التكعيبي للحجم.","input":"temp","output":"circ","scenarios":[{"label_ar":"غاز أبرد","values":{"temp":5}},{"label_ar":"غاز أدفأ","values":{"temp":60}}]}}</script>
   <script type="module" src="../assets/js/labs/balloon-thermal-expansion.mjs"></script>
 </section>
   <div class="prose"><p>انفخ بالونا قليلًا واقفل فوهته، وقِس محيطه بشريط قياس مرن. اغمره في ماء دافئ من الصنبور (لا مغلي) لدقيقة، ثم قِس محيطه ثانية. ما يحدث أن الغاز داخل البالون يُسخَّن فيزيد حجمه عند ضغط شبه ثابت، فيدفع المطاط للخارج.</p><p>النموذج المبسّط: الحجم يتناسب مع درجة الحرارة المطلقة (بكلفن)، ونصف القطر يتناسب مع الجذر التكعيبي للحجم، والمحيط يتناسب مع نصف القطر. لذلك مضاعفة درجة الحرارة المطلقة لا تضاعف المحيط بل تضربه في الجذر التكعيبي لـ2 (نحو 1.26).</p><p>حدّ النموذج صريح: مطاط البالون يضيف ضغطًا مرنًا يتغير مع نصف القطر، ودرجة حرارة الغاز ليست درجة حرارة الماء. فالمحاكاة تُظهر الاتجاه والمقدار التقريبي، لا قيمة قياس دقيقة.</p></div>
@@ -64,7 +64,7 @@
     <p>تسخين الغاز يزيد متوسط طاقة حركة جزيئاته، فتزيد قوة اصطدامها بجدار المطاط الداخلي. الضغط يرتفع لحظيًا، فيتمدّ البالون حتى يتوازن الضغط الداخلي مع ضغط المطاط الخارجي وضغط الهواء المحيط.</p>
   </section><section class="depth-sec">
     <h2>العلاقة بالأرقام</h2>
-    <p>V ∝ T (كلفن) ⇒ r ∝ T^(1/3) ⇒ C = 2πr. من 20 °م (محيط 30.0 سم) إلى 60 °م: النسبة المطلقة 333/293 = 1.137، والجذر التكعيبي 1.044، فيصبح المحيط 31.3 سم — أي +1.3 سم.</p>
+    <p>المعادلة: V/T = ثابت (ضغط ثابت) ⇒ C = 2π·r₀·(T/T₀)^(1/3). عند درجة حرارة الماء 20.00 °م، يعطي الحساب: محيط البالون = 30.00 سم؛ درجة الحرارة المطلقة = 293.2 كلفن؛ نسبة الحجم إلى الأصل = 1.000 ×. حالة «غاز أبرد» (درجة حرارة الماء 5.00 °م): محيط البالون = 29.48 سم؛ درجة الحرارة المطلقة = 278.2 كلفن؛ نسبة الحجم إلى الأصل = 0.949 ×. حالة «غاز أدفأ» (درجة حرارة الماء 60.00 °م): محيط البالون = 31.31 سم؛ درجة الحرارة المطلقة = 333.2 كلفن؛ نسبة الحجم إلى الأصل = 1.136 ×. هذه أمثلة مولدة من دالة الحساب نفسها؛ وليست قياسات فعلية أو مواصفات لجهاز تجاري.</p>
   </section><section class="depth-sec">
     <h2>مفاهيم متقاربة</h2>
     <p>يُخلط بين «التمدد الحراري للغاز» و«تمدد المطاط نفسه»: المطاط يتمدد أيضًا بالحرارة، لكن نصيبه في التغير المرئي أقل من نصيب الغاز داخل البالون.</p>
@@ -84,16 +84,16 @@
   <caption>أرقام مسنَدة إلى مصادرها</caption>
   <thead><tr><th scope="col">الكمية</th><th scope="col">القيمة</th><th scope="col">المصدر</th></tr></thead>
   <tbody><tr>
-      <th scope="row">محيط البالون عند 20 °م</th>
-      <td>30.0 <span class="unit">سم</span></td>
+      <th scope="row">محيط البالون — الحالة الافتراضية</th>
+      <td>30.00 <span class="unit">سم</span></td>
       <td><a class="ref" href="#src-1">[1]</a></td>
     </tr><tr>
-      <th scope="row">المحيط عند 60 °م</th>
-      <td>31.3 <span class="unit">سم</span></td>
+      <th scope="row">درجة الحرارة المطلقة — الحالة الافتراضية</th>
+      <td>293.2 <span class="unit">كلفن</span></td>
       <td><a class="ref" href="#src-1">[1]</a></td>
     </tr><tr>
-      <th scope="row">نسبة الحجم عند 60 °م</th>
-      <td>1.136 <span class="unit">×</span></td>
+      <th scope="row">نسبة الحجم إلى الأصل — الحالة الافتراضية</th>
+      <td>1.000 <span class="unit">×</span></td>
       <td><a class="ref" href="#src-1">[1]</a></td>
     </tr></tbody>
 </table>
@@ -111,7 +111,7 @@
       <span class="muted small">· اطُّلع عليه 2026-11-19</span></span>
     </li></ol>
 </section>
-  <p class="reviewline muted small">راجعه: عبدالله الهويدي — مراجعة في تطبيق انفراد · 2026-11-19 · آخر تحديث 2026-11-19</p>
+  <p class="reviewline muted small">راجعه: عبدالله الهويدي — مراجعة في تطبيق انفراد · 2026-11-19 · آخر تحديث 2026-11-20</p>
   <a class="backlink backlink-end" href="../lab/" data-back data-label="المعمل"><svg class="backlink-i" viewBox="0 0 24 24" width="18" height="18" aria-hidden="true" focusable="false"><path d="M9 5l7 7-7 7" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg><span>رجوع إلى المعمل</span></a>
 </article>
 </main>

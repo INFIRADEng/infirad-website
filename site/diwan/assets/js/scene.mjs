@@ -12,6 +12,7 @@
 // القواعد الملزِمة: لا نص تحت 17px · لا نص دوّار · الرقم بلون الحبر لا بلون الشكل ·
 // وكل نص يبقى داخل اللوحة (الأرقام تُقصّ إلى حدّ هندسي فقط، وقيمتها الحقيقية في المخرجات).
 
+import { SCIENCE_SCENES } from './scientific-scenes.mjs';
 export const W = 760;
 export const H = 330;
 
@@ -456,7 +457,7 @@ function chiller(v, out, t) {
 
 export const SCENES = {
   kettle, pendulum, piston, "pot-altitude": potAltitude, bridge, pump,
-  pipe: pipeNarrow, wall, "plate-sun": plateSun, chiller,
+  pipe: pipeNarrow, wall, "plate-sun": plateSun, chiller, ...SCIENCE_SCENES,
 };
 
 // ── العارض: ops ⇒ SVG ──────────────────────────────────────────────────
@@ -522,13 +523,16 @@ export function mountScene(host, kind) {
   let outs = {};
   let raf = 0;
   let last = 0;
+  let paused = false;
+  let time = 0;
   const frame = (ts) => {
     raf = requestAnimationFrame(frame);
-    if (document.hidden) return;
+    if (document.hidden || paused) { last = ts; return; }
     if (ts - last < 40) return; // ≈24 إطارًا
+    time += Math.min(100, ts - last);
     last = ts;
     try {
-      host.innerHTML = renderOps(draw(vals, outs, ts));
+      host.innerHTML = renderOps(draw(vals, outs, time));
     } catch (err) {
       console.error("خطأ في رسم المشهد:", err);
       cancelAnimationFrame(raf);
@@ -537,16 +541,18 @@ export function mountScene(host, kind) {
   host.classList.add("lab-scene");
   // احترام تقليل الحركة: مشهد ساكن بلا إطارات (نفس المعلومات، بلا نبض)
   const still = typeof matchMedia === "function" && matchMedia("(prefers-reduced-motion: reduce)").matches;
+  paused = still;
   host.innerHTML = renderOps(draw(vals, outs, 0));
-  if (!still) raf = requestAnimationFrame(frame);
+  raf = requestAnimationFrame(frame);
   return {
     update(values, out) {
       vals = values ?? {};
       outs = out ?? {};
       // ارسم فورًا: الإطار المتكرر يتوقف حين تكون الصفحة غير مرئية،
       // فلا تُترك قيمة قديمة معروضة بعد تغيير المنزلق.
-      host.innerHTML = renderOps(draw(vals, outs, performance.now()));
+      host.innerHTML = renderOps(draw(vals, outs, time));
     },
+    setPaused(value) { paused = Boolean(value); },
     stop() {
       cancelAnimationFrame(raf);
     },

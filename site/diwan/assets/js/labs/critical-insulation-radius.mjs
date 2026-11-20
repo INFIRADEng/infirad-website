@@ -3,7 +3,7 @@ import { startLab } from "../lab-kit.mjs";
 
 const DT = 100;   // كلفن — فرق حرارة الأنبوب والوسط
 
-startLab(({ r1mm, tmm, kc, hcoef }) => {
+export const compute = ({ r1mm, tmm, kc, hcoef }) => {
   const r1 = r1mm / 1000;
   const r2 = (r1mm + tmm) / 1000;
   const rcr = kc / hcoef;                                   // م
@@ -11,4 +11,6 @@ startLab(({ r1mm, tmm, kc, hcoef }) => {
   const rConv = 1 / (2 * Math.PI * r2 * hcoef);              // K·m/W
   const q = DT / (rCond + rConv);                            // واط لكل متر
   return { rcr: rcr * 1000, q, u: hcoef };
-});
+};
+
+if (typeof document !== "undefined") startLab(compute);

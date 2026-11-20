@@ -431,3 +431,40 @@ code { font-family: ui-monospace, "Cascadia Mono", Consolas, monospace; font-siz
 @media (prefers-reduced-motion: reduce) {
   .card, .gauge-fill, .gauge-now { transition: none; }
 }
+
+/* Scientific exploration: the diagram, observation and curve share one model. */
+.lab-question { border-inline-start: 4px solid #008078; background: #eaf5f3; padding: 18px; margin-block-end: 16px; }
+.lab-question p { margin: 6px 0 0; font-size: 1.1rem; }
+.lab-presets, .lab-actions { display: flex; flex-wrap: wrap; gap: 10px; margin-block: 18px; }
+.lab-presets button, .lab-actions button { font: inherit; padding: 10px 14px; min-height: 44px; color: #16324e; border: 1px solid #8ea5b5; border-radius: 6px; background: white; cursor: pointer; }
+.lab-presets button:hover, .lab-actions button:hover { background: #e7f1f6; }
+.lab-actions span { flex-basis: 100%; font-size: .9rem; line-height: 1.8; }
+.lab-control { background: white; border: 1px solid var(--border); border-radius: 8px; padding: 16px; min-width: 0; }
+.lab-control label { display: block; font-size: 1rem; font-weight: 600; margin-block-end: 8px; padding: 0; border: 0; }
+.lab-control input[type="number"], .lab-control select, .curve-selectors select { box-sizing: border-box; width: 100%; font: inherit; min-height: 44px; padding: 8px 12px; border: 1px solid #8ea5b5; border-radius: 5px; background: white; color: #16324e; }
+.lab-control input[type="number"] { font-variant-numeric: tabular-nums; font-size: 1.1rem; }
+.lab-control input[type="range"] { width: 100%; margin-block: 18px 4px; accent-color: #007f79; min-height: 24px; }
+.lab-control input[aria-invalid="true"] { border: 2px solid #b33c24; }
+.control-limits { display: flex; justify-content: space-between; font-size: .9rem; color: #536779; }
+.lab-status { padding: 14px 18px; color: #7f2d16; border: 1px solid #ce9d7b; background: #fff5ed; }
+.lab-status[hidden], [hidden] { display: none !important; }
+.lab-diff { display: block; font-size: .9rem; color: #43606a; line-height: 1.7; margin-block-start: 6px; }
+.lab-observation { padding: 18px; margin-block: 18px; background: #f0f5f9; line-height: 1.9; border-radius: 6px; }
+.lab-scene { overflow-x: auto; }
+.lab-scene svg { min-width: 640px; }
+.lab-scene-cap { font-size: 1rem; line-height: 1.8; }
+.lab-curve { padding-block: 24px; margin-block: 24px; border-block: 1px solid var(--border); }
+.lab-curve h2 { margin-top: 0; }
+.curve-selectors { display: grid; grid-template-columns: repeat(2,minmax(0,1fr)); gap: 16px; }
+.curve-selectors label { line-height: 2; }
+.curve-scroll, .table-scroll { overflow-x: auto; max-width: 100%; }
+.curve-scroll svg { width: 100%; min-width: 640px; display: block; background: white; margin-block: 18px; fill: #16324e; }
+.curve-scroll svg text { direction: ltr; unicode-bidi: embed; }
+.lab-panel details > summary { min-height: 44px; font-size: 1rem; cursor: pointer; }
+.lab-curve caption { text-align: start; font-weight: 600; padding-block: 12px; }
+@media (max-width: 600px) {
+ .curve-selectors { grid-template-columns: 1fr; }
+ .lab-panel { padding: 16px; }
+ .lab-presets button, .lab-actions button { flex-grow: 1; }
+ .lab-controls { grid-template-columns: 1fr; }
+}

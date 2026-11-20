@@ -43,19 +43,19 @@
   <div class="lab-readout" id="lab-outputs"></div>
   <div class="lab-gauge" id="lab-gauge"></div>
   <figure class="lab-scene-fig">
-    <figcaption class="lab-scene-cap">كوب يبرد في غرفة: الفقد يتناسب مع فرق الحرارة لا مع الحرارة.</figcaption>
+    <figcaption class="lab-scene-cap">قدرة التبريد تنخفض مع اقتراب حرارة الجسم من الوسط. الزمن المحدد على المنزلق هو الزمن الفيزيائي للحساب. الأبعاد والحركة توضيحية، والقيم من الحساب نفسه.</figcaption>
     <div id="lab-scene" class="lab-scene" role="group" aria-label="مشهد توضيحي متحرك"></div>
   </figure>
 
   <p><button class="lab-cta" type="button" id="lab-reset">إعادة الضبط</button></p>
   <p class="muted small" id="lab-note">محاكاة تعليمية لا قياس فيزيائي حقيقي: الأرقام تُحسب من النموذج لحظيًا، ولا تُقاس بأدوات منزلية.</p>
-  <details>
+  <details open>
     <summary>افتراضات النموذج والمصدر</summary>
     <p class="lab-equation" dir="ltr">T(t) = T_env + (T₀ − T_env)·e^(−k·t)</p>
     <p>حرارة الغرفة 25 °م ثابتة</p><p>معامل انتقال ثابت</p><p>لا تبخر من السطح</p><p><a href="https://en.wikipedia.org/wiki/Newton%27s_law_of_cooling">Newton's law of cooling — Wikipedia</a></p><p><a href="https://www.engineeringtoolbox.com/thermal-dynamics-d_41.html">Cooling and heating — time constant — The Engineering ToolBox</a></p>
   </details>
   <noscript>فعّل JavaScript لتحريك المدخلات وحساب النتائج.</noscript>
-  <script type="application/json" id="lab-spec">{"controls":[{"id":"k","label_ar":"ثابت التبريد","from":0.01,"to":0.4,"step":0.01,"value":0.08,"unit":"1/د"},{"id":"minutes","label_ar":"الزمن","from":1,"to":30,"step":1,"value":10,"unit":"دقيقة"}],"outputs":[{"id":"temp","label_ar":"حرارة الكوب","unit":"°م","decimals":1},{"id":"tau","label_ar":"ثابت الزمن","unit":"دقيقة","decimals":2},{"id":"drop","label_ar":"مقدار الهبوط","unit":"°م","decimals":1},{"id":"half","label_ar":"عمر النصف الحراري","unit":"دقيقة","decimals":2}],"gauge":{"id":"temp","bind":"temp","label":"حرارة الكوب — من 25 إلى 90 °م","min":25,"max":90,"start":54.21,"unit":"°م","decimals":1},"scene":{"kind":"plate-sun","caption_ar":"كوب يبرد في غرفة: الفقد يتناسب مع فرق الحرارة لا مع الحرارة."},"note_ar":"محاكاة تعليمية لا قياس فيزيائي حقيقي: الأرقام تُحسب من النموذج لحظيًا، ولا تُقاس بأدوات منزلية."}</script>
+  <script type="application/json" id="lab-spec">{"controls":[{"id":"k","label_ar":"ثابت التبريد","step":0.01,"value":0.08,"unit":"1/د","min":0.01,"max":0.4},{"id":"minutes","label_ar":"الزمن","step":1,"value":10,"unit":"دقيقة","min":1,"max":30}],"outputs":[{"id":"temp","label_ar":"حرارة الكوب","unit":"°م","decimals":1},{"id":"tau","label_ar":"ثابت الزمن","unit":"دقيقة","decimals":2},{"id":"drop","label_ar":"مقدار الهبوط","unit":"°م","decimals":1},{"id":"half","label_ar":"عمر النصف الحراري","unit":"دقيقة","decimals":2}],"gauge":{"id":"temp","bind":"temp","label":"حرارة الكوب — من 25 إلى 90 °م","min":25,"max":90,"unit":"°م","decimals":1},"scene":{"kind":"newton-cooling-law","caption_ar":"قدرة التبريد تنخفض مع اقتراب حرارة الجسم من الوسط. الزمن المحدد على المنزلق هو الزمن الفيزيائي للحساب. الأبعاد والحركة توضيحية، والقيم من الحساب نفسه."},"note_ar":"محاكاة تعليمية لا قياس فيزيائي حقيقي: الأرقام تُحسب من النموذج لحظيًا، ولا تُقاس بأدوات منزلية.","learning":{"question_ar":"لماذا يبرد الشاي سريعًا أولًا ثم يتباطأ؟","explanation_ar":"قدرة التبريد تنخفض مع اقتراب حرارة الجسم من الوسط. الزمن المحدد على المنزلق هو الزمن الفيزيائي للحساب.","input":"minutes","output":"temp","scenarios":[{"label_ar":"بعد خمس دقائق","values":{"minutes":5}},{"label_ar":"بعد عشرين دقيقة","values":{"minutes":20}}]}}</script>
   <script type="module" src="../assets/js/labs/newton-cooling-law.mjs"></script>
 </section>
   <div class="prose"><p>املأ كوبًا بماء ساخن، وضع فيه مقياس حرارة، وسجّل الدرجة كل دقيقة لعشر دقائق. الهبوط في الدقيقة الأولى أكبر بكثير من الهبوط في الدقيقة العاشرة — مع أن الغرفة والكوب لم يتغيرا.</p><p>السبب أن معدل الفقد يتناسب مع الفرق بين حرارة الجسم وحرارة المحيط، لا مع حرارة الجسم وحدها. كلما قلّ الفرق قلّ الفقد، فيتباطأ الهبوط ويقترب الكوب من حرارة الغرفة دون أن يصلها إلا بعد زمن طويل. هذا هو قانون نيوتن للتبريد، وحلّه دالة أسّية تنازلية.</p><p>للأسّية عمر نصف: الزمن اللازم لقطع نصف الفرق المتبقي، ويساوي 0.693/k. ثابت الزمن 1/k هو الزمن الذي يقطع فيه 63% من الفرق. القيم في المحاكاة نموذجية لكوب بلا غطاء في غرفة هادئة.</p></div>
@@ -64,7 +64,7 @@
     <p>الفقد الحراري من سطح الكوب يجري بالحمل والتبريد الإشعاعي، وكلاهما يتناسب تقريبًا مع فرق الحرارة بين السطح والجو. مع اقتراب الحرارة من حرارة الغرفة يضعف الدافع فيهدأ التبادل.</p>
   </section><section class="depth-sec">
     <h2>العلاقة بالأرقام</h2>
-    <p>T(t)=25+(90−25)·e^(−0.08t). بعد 10 د: 54.2 °م، وثابت الزمن 12.5 د، وعمر النصف 8.7 د. مضاعفة k تنصّف عمر النصف. المعادلة حلّ لـdT/dt=−k·(T−T_env)، وثابت الزمن 1/k هو الزمن اللازم لقطع 63% من الفرق الابتدائي.</p>
+    <p>المعادلة: T(t) = T_env + (T₀ − T_env)·e^(−k·t). عند ثابت التبريد 0.08 1/د، الزمن 10.00 دقيقة، يعطي الحساب: حرارة الكوب = 54.2 °م؛ ثابت الزمن = 12.50 دقيقة؛ مقدار الهبوط = 35.8 °م؛ عمر النصف الحراري = 8.66 دقيقة. حالة «بعد خمس دقائق» (ثابت التبريد 0.08 1/د، الزمن 5.00 دقيقة): حرارة الكوب = 68.6 °م؛ ثابت الزمن = 12.50 دقيقة؛ مقدار الهبوط = 21.4 °م؛ عمر النصف الحراري = 8.66 دقيقة. حالة «بعد عشرين دقيقة» (ثابت التبريد 0.08 1/د، الزمن 20.00 دقيقة): حرارة الكوب = 38.1 °م؛ ثابت الزمن = 12.50 دقيقة؛ مقدار الهبوط = 51.9 °م؛ عمر النصف الحراري = 8.66 دقيقة. هذه أمثلة مولدة من دالة الحساب نفسها؛ وليست قياسات فعلية أو مواصفات لجهاز تجاري.</p>
   </section><section class="depth-sec">
     <h2>مفاهيم متقاربة</h2>
     <p>يُخلط بين «التبريد الأسّي» و«التبريد الخطي»: الخطي يفقد كمية ثابتة كل دقيقة، أما هنا فالنسبة من الفرق المتبقي هي الثابتة — لذلك لا يمكن أن تنزل الحرارة تحت حرارة الغرفة.</p>
@@ -84,16 +84,20 @@
   <caption>أرقام مسنَدة إلى مصادرها</caption>
   <thead><tr><th scope="col">الكمية</th><th scope="col">القيمة</th><th scope="col">المصدر</th></tr></thead>
   <tbody><tr>
-      <th scope="row">الحرارة بعد 10 دقائق (k=0.08)</th>
+      <th scope="row">حرارة الكوب — الحالة الافتراضية</th>
       <td>54.2 <span class="unit">°م</span></td>
       <td><a class="ref" href="#src-1">[1]</a></td>
     </tr><tr>
-      <th scope="row">ثابت الزمن</th>
-      <td>12.5 <span class="unit">دقيقة</span></td>
+      <th scope="row">ثابت الزمن — الحالة الافتراضية</th>
+      <td>12.50 <span class="unit">دقيقة</span></td>
       <td><a class="ref" href="#src-1">[1]</a></td>
     </tr><tr>
-      <th scope="row">عمر النصف الحراري</th>
-      <td>8.7 <span class="unit">دقيقة</span></td>
+      <th scope="row">مقدار الهبوط — الحالة الافتراضية</th>
+      <td>35.8 <span class="unit">°م</span></td>
+      <td><a class="ref" href="#src-1">[1]</a></td>
+    </tr><tr>
+      <th scope="row">عمر النصف الحراري — الحالة الافتراضية</th>
+      <td>8.66 <span class="unit">دقيقة</span></td>
       <td><a class="ref" href="#src-1">[1]</a></td>
     </tr></tbody>
 </table>
@@ -111,7 +115,7 @@
       <span class="muted small">· اطُّلع عليه 2026-11-19</span></span>
     </li></ol>
 </section>
-  <p class="reviewline muted small">راجعه: عبدالله الهويدي — مراجعة في تطبيق انفراد · 2026-11-19 · آخر تحديث 2026-11-19</p>
+  <p class="reviewline muted small">راجعه: عبدالله الهويدي — مراجعة في تطبيق انفراد · 2026-11-19 · آخر تحديث 2026-11-20</p>
   <a class="backlink backlink-end" href="../lab/" data-back data-label="المعمل"><svg class="backlink-i" viewBox="0 0 24 24" width="18" height="18" aria-hidden="true" focusable="false"><path d="M9 5l7 7-7 7" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg><span>رجوع إلى المعمل</span></a>
 </article>
 </main>

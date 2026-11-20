@@ -43,19 +43,19 @@
   <div class="lab-readout" id="lab-outputs"></div>
   <div class="lab-gauge" id="lab-gauge"></div>
   <figure class="lab-scene-fig">
-    <figcaption class="lab-scene-cap">سطح معرّض للإشعاع: اللمعان يردّ معظمه والخشونة تمتصّه.</figcaption>
+    <figcaption class="lab-scene-cap">الفقد الإشعاعي يتناسب مع الانبعاثية وفرق القوة الرابعة للحرارة المطلقة. الحساب يفصل الإشعاع عن الحمل والتوصيل. الأبعاد والحركة توضيحية، والقيم من الحساب نفسه.</figcaption>
     <div id="lab-scene" class="lab-scene" role="group" aria-label="مشهد توضيحي متحرك"></div>
   </figure>
 
   <p><button class="lab-cta" type="button" id="lab-reset">إعادة الضبط</button></p>
   <p class="muted small" id="lab-note">محاكاة تعليمية لا قياس فيزيائي حقيقي: الأرقام تُحسب من النموذج لحظيًا، ولا تُقاس بأدوات منزلية.</p>
-  <details>
+  <details open>
     <summary>افتراضات النموذج والمصدر</summary>
     <p class="lab-equation" dir="ltr">q = ε · σ · A · (T⁴ − T_s⁴)</p>
-    <p>سطح رمادي بحرارة منتظمة</p><p>محيط كبير عند 25 °م</p><p>الإشعاع مفصول عن الحمل</p><p><a href="https://en.wikipedia.org/wiki/Stefan%E2%80%93Boltzmann_law">Stefan–Boltzmann law — Wikipedia</a></p><p><a href="https://www.engineeringtoolbox.com/emissivity-coefficients-d_447.html">Emissivity of common materials — The Engineering ToolBox</a></p>
+    <p>سطح رمادي بحرارة منتظمة</p><p>محيط كبير عند 25 °م</p><p>الإشعاع مفصول عن الحمل</p><p>مساحة السطح ثابتة 0.05 م² وحرارته 80 °م.</p><p><a href="https://en.wikipedia.org/wiki/Stefan%E2%80%93Boltzmann_law">Stefan–Boltzmann law — Wikipedia</a></p><p><a href="https://www.engineeringtoolbox.com/emissivity-coefficients-d_447.html">Emissivity of common materials — The Engineering ToolBox</a></p>
   </details>
   <noscript>فعّل JavaScript لتحريك المدخلات وحساب النتائج.</noscript>
-  <script type="application/json" id="lab-spec">{"controls":[{"id":"eps","label_ar":"الانبعاثية (0.05 لامع · 0.95 مطفي)","from":0.05,"to":0.95,"step":0.05,"value":0.05,"unit":""}],"outputs":[{"id":"watts","label_ar":"الفقد الإشعاعي","unit":"واط","decimals":2},{"id":"emissivity","label_ar":"الانبعاثية المستخدمة","unit":"","decimals":2},{"id":"kelvin","label_ar":"حرارة السطح","unit":"كلفن","decimals":1}],"gauge":{"id":"watts","bind":"watts","label":"الفقد الإشعاعي — من 0 إلى 20 واط","min":0,"max":20,"start":1.08,"unit":"واط","decimals":2},"scene":{"kind":"plate-sun","caption_ar":"سطح معرّض للإشعاع: اللمعان يردّ معظمه والخشونة تمتصّه."},"note_ar":"محاكاة تعليمية لا قياس فيزيائي حقيقي: الأرقام تُحسب من النموذج لحظيًا، ولا تُقاس بأدوات منزلية."}</script>
+  <script type="application/json" id="lab-spec">{"controls":[{"id":"eps","label_ar":"الانبعاثية (0.05 لامع · 0.95 مطفي)","step":0.05,"value":0.05,"unit":"","min":0.05,"max":0.95}],"outputs":[{"id":"watts","label_ar":"الفقد الإشعاعي","unit":"واط","decimals":2},{"id":"emissivity","label_ar":"الانبعاثية المستخدمة","unit":"","decimals":2},{"id":"kelvin","label_ar":"حرارة السطح","unit":"كلفن","decimals":1}],"gauge":{"id":"watts","bind":"watts","label":"الفقد الإشعاعي — من 0 إلى 20 واط","min":0,"max":20,"unit":"واط","decimals":2},"scene":{"kind":"foil-radiation-shield","caption_ar":"الفقد الإشعاعي يتناسب مع الانبعاثية وفرق القوة الرابعة للحرارة المطلقة. الحساب يفصل الإشعاع عن الحمل والتوصيل. الأبعاد والحركة توضيحية، والقيم من الحساب نفسه."},"note_ar":"محاكاة تعليمية لا قياس فيزيائي حقيقي: الأرقام تُحسب من النموذج لحظيًا، ولا تُقاس بأدوات منزلية.","learning":{"question_ar":"هل اللمعان يغير الفقد الإشعاعي عند نفس حرارة السطح؟","explanation_ar":"الفقد الإشعاعي يتناسب مع الانبعاثية وفرق القوة الرابعة للحرارة المطلقة. الحساب يفصل الإشعاع عن الحمل والتوصيل.","input":"eps","output":"watts","scenarios":[{"label_ar":"سطح لامع","values":{"eps":0.05}},{"label_ar":"سطح عالي الانبعاثية","values":{"eps":0.95}}]}}</script>
   <script type="module" src="../assets/js/labs/foil-radiation-shield.mjs"></script>
 </section>
   <div class="prose"><p>لفّ كوبًا بورق ألمنيوم لامع من الخارج واترك الثاني عاريًا، واملأ الاثنين بماء ساخن متساوٍ. سجّل الدرجة كل دقيقتين لعشر دقائق. الكوب الملفوف يبرد أبطأ، والسبب ليس أن الورق «سميك» بل أن سطحه اللامع يشعّ أقل.</p><p>كل سطح دافئ يشعّ طاقة بمعدل يتناسب مع انبعاثيته ومع الفرق بين حرارة السطح الرابعة وحرارة المحيط الرابعة. الألمنيوم المصقول انبعاثيته منخفضة جدًا (نحو 0.05)، والورق المطفي أو الطلاء نحو 0.95 — فرق عشرين ضعفًا في الفقد الإشعاعي عند الحرارة نفسها.</p><p>ما لا يُقاس منزليًا: الانبعاثية بوحدة مجردة (تحتاج مطيافًا). والنموذج يفصل الإشعاع وحده، بينما الكوب الحقيقي يفقد حرارة بالحمل والتوصيل أيضًا؛ لذلك يبدو أثر الورق في التجربة أصغر من الرقم المحسوب.</p></div>
@@ -64,7 +64,7 @@
     <p>الأجسام الدافئة تُطلق موجات كهرمغنطيسية في نطاق تحت الأحمر. سطح لامع يعكس معظم ما يصله ويعيد إشعاعه بضعف، فيبرّد ببطء؛ سطح خشن داكن يمتص ويشعّ بكفاءة.</p>
   </section><section class="depth-sec">
     <h2>العلاقة بالأرقام</h2>
-    <p>q = ε·σ·A·(T⁴−T_s⁴). عند ε=0.05 و A=0.05 م² و 80 °م مقابل 25 °م: q=1.08 واط. وعند ε=0.95: 20.61 واط. الفرق نحو خمسة عشر ضعفًا من المساحة نفسها والفرق الحراري نفسه، أي أن الانبعاثية وحدها هي المتغير الحاكم.</p>
+    <p>المعادلة: q = ε · σ · A · (T⁴ − T_s⁴). عند الانبعاثية (0.05 لامع · 0.95 مطفي) 0.05 ، يعطي الحساب: الفقد الإشعاعي = 1.08 واط؛ الانبعاثية المستخدمة = 0.05 ؛ حرارة السطح = 353.2 كلفن. حالة «سطح لامع» (الانبعاثية (0.05 لامع · 0.95 مطفي) 0.05 ): الفقد الإشعاعي = 1.08 واط؛ الانبعاثية المستخدمة = 0.05 ؛ حرارة السطح = 353.2 كلفن. حالة «سطح عالي الانبعاثية» (الانبعاثية (0.05 لامع · 0.95 مطفي) 0.95 ): الفقد الإشعاعي = 20.61 واط؛ الانبعاثية المستخدمة = 0.95 ؛ حرارة السطح = 353.2 كلفن. هذه أمثلة مولدة من دالة الحساب نفسها؛ وليست قياسات فعلية أو مواصفات لجهاز تجاري.</p>
   </section><section class="depth-sec">
     <h2>مفاهيم متقاربة</h2>
     <p>يُخلط بين «العزل الحراري» و«العزل الإشعاعي»: الأول يقلّل التوصيل والحمل بمواد رديئة التوصيل، والثاني يقلّل الإشعاع بأسطح عاكسة — وورق الألمنيوم يعمل بالثاني.</p>
@@ -84,17 +84,17 @@
   <caption>أرقام مسنَدة إلى مصادرها</caption>
   <thead><tr><th scope="col">الكمية</th><th scope="col">القيمة</th><th scope="col">المصدر</th></tr></thead>
   <tbody><tr>
-      <th scope="row">الفقد الإشعاعي عند انبعاثية 0.05</th>
+      <th scope="row">الفقد الإشعاعي — الحالة الافتراضية</th>
       <td>1.08 <span class="unit">واط</span></td>
       <td><a class="ref" href="#src-1">[1]</a></td>
     </tr><tr>
-      <th scope="row">الفقد عند انبعاثية 0.95</th>
-      <td>20.61 <span class="unit">واط</span></td>
+      <th scope="row">الانبعاثية المستخدمة — الحالة الافتراضية</th>
+      <td>0.05 <span class="unit">بلا وحدة</span></td>
       <td><a class="ref" href="#src-1">[1]</a></td>
     </tr><tr>
-      <th scope="row">ثابت ستيفان–بولتزمان</th>
-      <td>5.670×10⁻⁸ <span class="unit">W/(m²·K⁴)</span></td>
-      <td><a class="ref" href="#src-2">[2]</a></td>
+      <th scope="row">حرارة السطح — الحالة الافتراضية</th>
+      <td>353.2 <span class="unit">كلفن</span></td>
+      <td><a class="ref" href="#src-1">[1]</a></td>
     </tr></tbody>
 </table>
   <section class="sources" aria-labelledby="src-h">
@@ -111,7 +111,7 @@
       <span class="muted small">· اطُّلع عليه 2026-11-19</span></span>
     </li></ol>
 </section>
-  <p class="reviewline muted small">راجعه: عبدالله الهويدي — مراجعة في تطبيق انفراد · 2026-11-19 · آخر تحديث 2026-11-19</p>
+  <p class="reviewline muted small">راجعه: عبدالله الهويدي — مراجعة في تطبيق انفراد · 2026-11-19 · آخر تحديث 2026-11-20</p>
   <a class="backlink backlink-end" href="../lab/" data-back data-label="المعمل"><svg class="backlink-i" viewBox="0 0 24 24" width="18" height="18" aria-hidden="true" focusable="false"><path d="M9 5l7 7-7 7" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg><span>رجوع إلى المعمل</span></a>
 </article>
 </main>

@@ -13,7 +13,9 @@ function boilingPoint(pressureKpa) {
   return (lo + hi) / 2;
 }
 
-startLab(({ pressure }) => {
+export const compute = ({ pressure }) => {
   const t = boilingPoint(pressure);
   return { boil: t, drop: 100 - t };
-});
+};
+
+if (typeof document !== "undefined") startLab(compute);

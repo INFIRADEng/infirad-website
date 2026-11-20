@@ -43,19 +43,19 @@
   <div class="lab-readout" id="lab-outputs"></div>
   <div class="lab-gauge" id="lab-gauge"></div>
   <figure class="lab-scene-fig">
-    <figcaption class="lab-scene-cap">قماش مبلل في مهب الهواء: التبخر يخفض حرارة الترمومتر المبلل.</figcaption>
+    <figcaption class="lab-scene-cap">كلما اقترب الهواء من التشبع قل تبريد التبخر واقتربت القراءتان. بعض أزواج القراءات غير ممكنة في هذا النموذج. الأبعاد والحركة توضيحية، والقيم من الحساب نفسه.</figcaption>
     <div id="lab-scene" class="lab-scene" role="group" aria-label="مشهد توضيحي متحرك"></div>
   </figure>
 
   <p><button class="lab-cta" type="button" id="lab-reset">إعادة الضبط</button></p>
   <p class="muted small" id="lab-note">محاكاة تعليمية لا قياس فيزيائي حقيقي: الأرقام تُحسب من النموذج لحظيًا، ولا تُقاس بأدوات منزلية.</p>
-  <details>
+  <details open>
     <summary>افتراضات النموذج والمصدر</summary>
     <p class="lab-equation" dir="ltr">e = es(Tw) − 0.00066·(1+0.00115·Tw)·P·(Td−Tw) ، RH = e/es(Td)</p>
-    <p>ضغط جوّي 101.3 ك.ب</p><p>تهوية كافية حول القماش</p><p>صيغة سبرونغ التقريبية</p><p><a href="https://en.wikipedia.org/wiki/Psychrometrics">Psychrometrics — relative humidity and wet bulb — Wikipedia</a></p><p><a href="https://www.engineeringtoolbox.com/relative-humidity-air-d_687.html">Relative humidity — dry and wet bulb calculation — The Engineering ToolBox</a></p>
+    <p>ضغط جوّي 101.3 ك.ب</p><p>تهوية كافية حول القماش</p><p>صيغة سبرونغ التقريبية</p><p>حرارة الجاف ثابتة عند 35 °م.</p><p><a href="https://en.wikipedia.org/wiki/Psychrometrics">Psychrometrics — relative humidity and wet bulb — Wikipedia</a></p><p><a href="https://www.engineeringtoolbox.com/relative-humidity-air-d_687.html">Relative humidity — dry and wet bulb calculation — The Engineering ToolBox</a></p>
   </details>
   <noscript>فعّل JavaScript لتحريك المدخلات وحساب النتائج.</noscript>
-  <script type="application/json" id="lab-spec">{"controls":[{"id":"twet","label_ar":"حرارة الترمومتر المبلل","from":5,"to":34,"step":1,"value":22,"unit":"°م"}],"outputs":[{"id":"rh","label_ar":"الرطوبة النسبية","unit":"%","decimals":1},{"id":"e","label_ar":"الضغط الجزئي للبخار","unit":"ك.ب","decimals":2},{"id":"esat","label_ar":"البخار المشبع عند الجاف","unit":"ك.ب","decimals":2},{"id":"dew","label_ar":"نقطة الندى","unit":"°م","decimals":1}],"gauge":{"id":"rh","bind":"rh","label":"الرطوبة النسبية — من 0 إلى 100%","min":0,"max":100,"start":31.17,"unit":"%","decimals":1},"scene":{"kind":"kettle","caption_ar":"قماش مبلل في مهب الهواء: التبخر يخفض حرارة الترمومتر المبلل."},"note_ar":"محاكاة تعليمية لا قياس فيزيائي حقيقي: الأرقام تُحسب من النموذج لحظيًا، ولا تُقاس بأدوات منزلية."}</script>
+  <script type="application/json" id="lab-spec">{"controls":[{"id":"twet","label_ar":"حرارة الترمومتر المبلل","step":1,"value":22,"unit":"°م","min":5,"max":34}],"outputs":[{"id":"rh","label_ar":"الرطوبة النسبية","unit":"%","decimals":1},{"id":"e","label_ar":"الضغط الجزئي للبخار","unit":"ك.ب","decimals":2},{"id":"esat","label_ar":"البخار المشبع عند الجاف","unit":"ك.ب","decimals":2},{"id":"dew","label_ar":"نقطة الندى","unit":"°م","decimals":1}],"gauge":{"id":"rh","bind":"rh","label":"الرطوبة النسبية — من 0 إلى 100%","min":0,"max":100,"unit":"%","decimals":1},"scene":{"kind":"psychrometric-humidity","caption_ar":"كلما اقترب الهواء من التشبع قل تبريد التبخر واقتربت القراءتان. بعض أزواج القراءات غير ممكنة في هذا النموذج. الأبعاد والحركة توضيحية، والقيم من الحساب نفسه."},"note_ar":"محاكاة تعليمية لا قياس فيزيائي حقيقي: الأرقام تُحسب من النموذج لحظيًا، ولا تُقاس بأدوات منزلية.","learning":{"question_ar":"ماذا يعني اقتراب حرارة المبلل من حرارة الجاف؟","explanation_ar":"كلما اقترب الهواء من التشبع قل تبريد التبخر واقتربت القراءتان. بعض أزواج القراءات غير ممكنة في هذا النموذج.","input":"twet","output":"rh","scenarios":[{"label_ar":"هواء أجف","values":{"twet":18}},{"label_ar":"هواء أرطب","values":{"twet":30}}]}}</script>
   <script type="module" src="../assets/js/labs/psychrometric-humidity.mjs"></script>
 </section>
   <div class="prose"><p>علّق قماشًا قطنيًا مبللًا على بصلة ترمومتر، واتركه في مهب مروحة صغيرة، واقرأ الترمومتر الثاني جافًا. الترمومتر المبلل يقرأ أقل دائمًا، والفرق بين القراءتين هو مقياس جفاف الهواء: فرق كبير يعني هواءً جافًا يسرّع التبخر.</p><p>الحساب يبدأ من ضغط البخار المشبع عند حرارة المبلل، ثم يُخصم منه تبريد التبخر المتناسب مع فرق الحرارة، فنحصل على الضغط الجزئي للبخار في الهواء. نسبة هذا الضغط إلى المشبع عند حرارة الجاف هي الرطوبة النسبية. مثال: جاف 35 °م ومبلل 22 °م يعطيان رطوبة نحو 34% — هواء صحراوي جاف.</p><p>ما لا يُقاس منزليًا: الضغط الجزئي مباشرة. الأجهزة الإلكترونية تقيسه ببوليمر يتغير مقدار مقاومته مع البخار، والميزان المبلل يقيسه بطريقة غير مباشرة — وكلاهما تقدير له خطأ عند الرياح القوية أو الغبار.</p></div>
@@ -64,7 +64,7 @@
     <p>الترمومتر المبلل يفقد حرارة بالتبخر بمعدل يتناسب مع «جفاف» الهواء، فيستقر عند حرارة أقل من الجاف. عندما يكون الهواء مشبعًا (100%) لا يتبخر شيء وتتساوى القراءتان.</p>
   </section><section class="depth-sec">
     <h2>العلاقة بالأرقام</h2>
-    <p>e = es(Tw) − 0.00066·(1+0.00115·Tw)·P·(Td−Tw). جاف 35 ومبلل 22: es(22)=2.64 ك.ب، e=1.75 ك.ب، es(35)=5.62 ك.ب ⇒ RH=31%. الفرق بين 2.64 و1.75 ك.ب هو مقدار تبريد التبخر الذي دفع الحرارة من الجاف إلى المبلل.</p>
+    <p>المعادلة: e = es(Tw) − 0.00066·(1+0.00115·Tw)·P·(Td−Tw) ، RH = e/es(Td). عند حرارة الترمومتر المبلل 22.00 °م، يعطي الحساب: الرطوبة النسبية = 31.2 %؛ الضغط الجزئي للبخار = 1.75 ك.ب؛ البخار المشبع عند الجاف = 5.62 ك.ب؛ نقطة الندى = 15.4 °م. حالة «هواء أجف» (حرارة الترمومتر المبلل 18.00 °م): الرطوبة النسبية = 16.1 %؛ الضغط الجزئي للبخار = 0.90 ك.ب؛ البخار المشبع عند الجاف = 5.62 ك.ب؛ نقطة الندى = 5.5 °م. حالة «هواء أرطب» (حرارة الترمومتر المبلل 30.00 °م): الرطوبة النسبية = 69.3 %؛ الضغط الجزئي للبخار = 3.90 ك.ب؛ البخار المشبع عند الجاف = 5.62 ك.ب؛ نقطة الندى = 28.5 °م. هذه أمثلة مولدة من دالة الحساب نفسها؛ وليست قياسات فعلية أو مواصفات لجهاز تجاري.</p>
   </section><section class="depth-sec">
     <h2>مفاهيم متقاربة</h2>
     <p>يُخلط بين «الرطوبة النسبية» و«الرطوبة المطلقة»: النسبية تعتمد على الحرارة (نفس كمية البخار تعطي رطوبة نسبية مختلفة في يوم بارد وآخر حار)، والمطلقة تقيس الكتلة في الحجم.</p>
@@ -84,17 +84,21 @@
   <caption>أرقام مسنَدة إلى مصادرها</caption>
   <thead><tr><th scope="col">الكمية</th><th scope="col">القيمة</th><th scope="col">المصدر</th></tr></thead>
   <tbody><tr>
-      <th scope="row">الرطوبة عند 35/22 °م</th>
-      <td>31 <span class="unit">%</span></td>
+      <th scope="row">الرطوبة النسبية — الحالة الافتراضية</th>
+      <td>31.2 <span class="unit">%</span></td>
       <td><a class="ref" href="#src-1">[1]</a></td>
     </tr><tr>
-      <th scope="row">البخار المشبع عند 35 °م</th>
+      <th scope="row">الضغط الجزئي للبخار — الحالة الافتراضية</th>
+      <td>1.75 <span class="unit">ك.ب</span></td>
+      <td><a class="ref" href="#src-1">[1]</a></td>
+    </tr><tr>
+      <th scope="row">البخار المشبع عند الجاف — الحالة الافتراضية</th>
       <td>5.62 <span class="unit">ك.ب</span></td>
       <td><a class="ref" href="#src-1">[1]</a></td>
     </tr><tr>
-      <th scope="row">الحرارة الكامنة للتبخر</th>
-      <td>2260 <span class="unit">kJ/kg</span></td>
-      <td><a class="ref" href="#src-2">[2]</a></td>
+      <th scope="row">نقطة الندى — الحالة الافتراضية</th>
+      <td>15.4 <span class="unit">°م</span></td>
+      <td><a class="ref" href="#src-1">[1]</a></td>
     </tr></tbody>
 </table>
   <section class="sources" aria-labelledby="src-h">
@@ -111,7 +115,7 @@
       <span class="muted small">· اطُّلع عليه 2026-11-19</span></span>
     </li></ol>
 </section>
-  <p class="reviewline muted small">راجعه: عبدالله الهويدي — مراجعة في تطبيق انفراد · 2026-11-19 · آخر تحديث 2026-11-19</p>
+  <p class="reviewline muted small">راجعه: عبدالله الهويدي — مراجعة في تطبيق انفراد · 2026-11-19 · آخر تحديث 2026-11-20</p>
   <a class="backlink backlink-end" href="../lab/" data-back data-label="المعمل"><svg class="backlink-i" viewBox="0 0 24 24" width="18" height="18" aria-hidden="true" focusable="false"><path d="M9 5l7 7-7 7" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg><span>رجوع إلى المعمل</span></a>
 </article>
 </main>

@@ -7,7 +7,9 @@ import { startLab } from "../lab-kit.mjs";
 const C_WATER = 4186; // J/(kg·K)
 const T_START = 20; // °C — يطابق gauge.start في مواصفة التجربة
 
-startLab(({ mass, energy }) => {
+export const compute = ({ mass, energy }) => {
   const dT = (energy * 1000) / (mass * C_WATER);
   return { delta: dT, final: T_START + dT };
-});
+};
+
+if (typeof document !== "undefined") startLab(compute);

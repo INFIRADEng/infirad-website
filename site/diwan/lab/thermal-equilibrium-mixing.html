@@ -43,19 +43,19 @@
   <div class="lab-readout" id="lab-outputs"></div>
   <div class="lab-gauge" id="lab-gauge"></div>
   <figure class="lab-scene-fig">
-    <figcaption class="lab-scene-cap">كميّتان من الماء تختلطان: الطاقة تنتقل حتى تتساوى الحرارة.</figcaption>
+    <figcaption class="lab-scene-cap">عند تساوي السعة النوعية تحدد الكتل الوزن النسبي لكل درجة حرارة. النتيجة بين حرارتي الماء الداخلتين. الأبعاد والحركة توضيحية، والقيم من الحساب نفسه.</figcaption>
     <div id="lab-scene" class="lab-scene" role="group" aria-label="مشهد توضيحي متحرك"></div>
   </figure>
 
   <p><button class="lab-cta" type="button" id="lab-reset">إعادة الضبط</button></p>
   <p class="muted small" id="lab-note">محاكاة تعليمية لا قياس فيزيائي حقيقي: الأرقام تُحسب من النموذج لحظيًا، ولا تُقاس بأدوات منزلية.</p>
-  <details>
+  <details open>
     <summary>افتراضات النموذج والمصدر</summary>
     <p class="lab-equation" dir="ltr">T = (m₁·c₁·T₁ + m₂·c₂·T₂)/(m₁·c₁ + m₂·c₂)</p>
-    <p>ماء مع ماء (c متساوية)</p><p>لا فقد حراري</p><p>الوعاء مهمل السعة</p><p><a href="https://en.wikipedia.org/wiki/Thermal_equilibrium">Thermal equilibrium — mixing calorimetry — Wikipedia</a></p><p><a href="https://www.engineeringtoolbox.com/specific-heat-capacity-water-d_660.html">Specific heat capacity of water — The Engineering ToolBox</a></p>
+    <p>ماء مع ماء (c متساوية)</p><p>لا فقد حراري</p><p>الوعاء مهمل السعة</p><p>الماء الساخن عند 90 °م؛ الماء البارد 250 غ عند 20 °م.</p><p><a href="https://en.wikipedia.org/wiki/Thermal_equilibrium">Thermal equilibrium — mixing calorimetry — Wikipedia</a></p><p><a href="https://www.engineeringtoolbox.com/specific-heat-capacity-water-d_660.html">Specific heat capacity of water — The Engineering ToolBox</a></p>
   </details>
   <noscript>فعّل JavaScript لتحريك المدخلات وحساب النتائج.</noscript>
-  <script type="application/json" id="lab-spec">{"controls":[{"id":"m1","label_ar":"كتلة الماء الساخن","from":25,"to":400,"step":25,"value":100,"unit":"غ"}],"outputs":[{"id":"mix","label_ar":"حرارة الخليط","unit":"°م","decimals":1},{"id":"shift","label_ar":"ارتفاع حرارة البارد","unit":"°م","decimals":1},{"id":"m2","label_ar":"كتلة الماء البارد","unit":"غ","decimals":0}],"gauge":{"id":"mix","bind":"mix","label":"حرارة الخليط — من 20 إلى 90 °م","min":20,"max":90,"start":40,"unit":"°م","decimals":1},"scene":{"kind":"chiller","caption_ar":"كميّتان من الماء تختلطان: الطاقة تنتقل حتى تتساوى الحرارة."},"note_ar":"محاكاة تعليمية لا قياس فيزيائي حقيقي: الأرقام تُحسب من النموذج لحظيًا، ولا تُقاس بأدوات منزلية."}</script>
+  <script type="application/json" id="lab-spec">{"controls":[{"id":"m1","label_ar":"كتلة الماء الساخن","step":25,"value":100,"unit":"غ","min":25,"max":400}],"outputs":[{"id":"mix","label_ar":"حرارة الخليط","unit":"°م","decimals":1},{"id":"shift","label_ar":"ارتفاع حرارة البارد","unit":"°م","decimals":1},{"id":"m2","label_ar":"كتلة الماء البارد","unit":"غ","decimals":0}],"gauge":{"id":"mix","bind":"mix","label":"حرارة الخليط — من 20 إلى 90 °م","min":20,"max":90,"unit":"°م","decimals":1},"scene":{"kind":"thermal-equilibrium-mixing","caption_ar":"عند تساوي السعة النوعية تحدد الكتل الوزن النسبي لكل درجة حرارة. النتيجة بين حرارتي الماء الداخلتين. الأبعاد والحركة توضيحية، والقيم من الحساب نفسه."},"note_ar":"محاكاة تعليمية لا قياس فيزيائي حقيقي: الأرقام تُحسب من النموذج لحظيًا، ولا تُقاس بأدوات منزلية.","learning":{"question_ar":"هل حرارة الخليط هي المتوسط الحسابي دائمًا؟","explanation_ar":"عند تساوي السعة النوعية تحدد الكتل الوزن النسبي لكل درجة حرارة. النتيجة بين حرارتي الماء الداخلتين.","input":"m1","output":"mix","scenarios":[{"label_ar":"ساخن أقل كتلة","values":{"m1":100}},{"label_ar":"كتلتان متساويتان","values":{"m1":250}}]}}</script>
   <script type="module" src="../assets/js/labs/thermal-equilibrium-mixing.mjs"></script>
 </section>
   <div class="prose"><p>املأ كأسًا بـ250 غ من الماء البارد عند 20 °م، ثم أضف 100 غ من الماء الساخن عند 90 °م وحرّك. الحرارة النهائية ستكون قريبة من 40 °م، لا في المنتصف الحسابي (55 °م) — لأن الكتلة الباردة أكبر.</p><p>مبدأ حفظ الطاقة: ما يفقده الساخن يساوي ما يكسبه البارد عند تساوي السعة الحرارية النوعية، فتكون الحرارة النهائية متوسطًا مرجَّحًا بالكتلة لا متوسطًا بسيطًا. ولذلك يبرد مشروبك أكثر إذا أضفت ثلاث مكعبات لا مكعبًا واحدًا، ويبرد أقل إذا كان الكأس مملوءًا أصلًا.</p><p>ما لا يُقاس منزليًا: السعة الحرارية ولا الفقد للجو. الكأس الزجاجي نفسه يشارك في التبادل، فالحرارة المقيسة أقل من المحسوبة بدرجة أو درجتين — وهذا فرق حقيقي لا خطأ في الحساب.</p></div>
@@ -64,7 +64,7 @@
     <p>عند المزج تنتقل الطاقة من الجزيئات الأسرع (الساخنة) إلى الأبطأ عبر التصادم حتى يتساوى متوسط الطاقة الحركية، وعندها يتوقف صافي الانتقال وتصل الحرارة إلى قيمة ثابتة.</p>
   </section><section class="depth-sec">
     <h2>العلاقة بالأرقام</h2>
-    <p>T = (m₁c₁T₁ + m₂c₂T₂)/(m₁c₁ + m₂c₂). عند 100 غ بـ90 °م و250 غ بـ20 °م: T=40.0 °م، بينما المتوسط الحسابي البسيط 55.0 °م — فرق 15 درجة يُفسَّر بأن كتلة البارد تبلغ 2.5 ضعف كتلة الساخن.</p>
+    <p>المعادلة: T = (m₁·c₁·T₁ + m₂·c₂·T₂)/(m₁·c₁ + m₂·c₂). عند كتلة الماء الساخن 100.00 غ، يعطي الحساب: حرارة الخليط = 40.0 °م؛ ارتفاع حرارة البارد = 20.0 °م؛ كتلة الماء البارد = 250 غ. حالة «ساخن أقل كتلة» (كتلة الماء الساخن 100.00 غ): حرارة الخليط = 40.0 °م؛ ارتفاع حرارة البارد = 20.0 °م؛ كتلة الماء البارد = 250 غ. حالة «كتلتان متساويتان» (كتلة الماء الساخن 250.00 غ): حرارة الخليط = 55.0 °م؛ ارتفاع حرارة البارد = 35.0 °م؛ كتلة الماء البارد = 250 غ. هذه أمثلة مولدة من دالة الحساب نفسها؛ وليست قياسات فعلية أو مواصفات لجهاز تجاري.</p>
   </section><section class="depth-sec">
     <h2>مفاهيم متقاربة</h2>
     <p>يُخلط بين «التوازن الحراري» و«التوازن الكيميائي»: الأول تساوي الحرارة ولا يعني تساوي المواد، والثاني يتعلق بمعدلات التفاعل ولا يشترط تساوي الحرارة.</p>
@@ -84,17 +84,17 @@
   <caption>أرقام مسنَدة إلى مصادرها</caption>
   <thead><tr><th scope="col">الكمية</th><th scope="col">القيمة</th><th scope="col">المصدر</th></tr></thead>
   <tbody><tr>
-      <th scope="row">حرارة الخليط (100 غ ساخن + 250 غ بارد)</th>
+      <th scope="row">حرارة الخليط — الحالة الافتراضية</th>
       <td>40.0 <span class="unit">°م</span></td>
       <td><a class="ref" href="#src-1">[1]</a></td>
     </tr><tr>
-      <th scope="row">المتوسط الحسابي البسيط (خطأ شائع)</th>
-      <td>55.0 <span class="unit">°م</span></td>
-      <td><a class="ref" href="#src-2">[2]</a></td>
+      <th scope="row">ارتفاع حرارة البارد — الحالة الافتراضية</th>
+      <td>20.0 <span class="unit">°م</span></td>
+      <td><a class="ref" href="#src-1">[1]</a></td>
     </tr><tr>
-      <th scope="row">السعة الحرارية للماء</th>
-      <td>4.18 <span class="unit">kJ/(kg·K)</span></td>
-      <td><a class="ref" href="#src-2">[2]</a></td>
+      <th scope="row">كتلة الماء البارد — الحالة الافتراضية</th>
+      <td>250 <span class="unit">غ</span></td>
+      <td><a class="ref" href="#src-1">[1]</a></td>
     </tr></tbody>
 </table>
   <section class="sources" aria-labelledby="src-h">
@@ -111,7 +111,7 @@
       <span class="muted small">· اطُّلع عليه 2026-11-19</span></span>
     </li></ol>
 </section>
-  <p class="reviewline muted small">راجعه: عبدالله الهويدي — مراجعة في تطبيق انفراد · 2026-11-19 · آخر تحديث 2026-11-19</p>
+  <p class="reviewline muted small">راجعه: عبدالله الهويدي — مراجعة في تطبيق انفراد · 2026-11-19 · آخر تحديث 2026-11-20</p>
   <a class="backlink backlink-end" href="../lab/" data-back data-label="المعمل"><svg class="backlink-i" viewBox="0 0 24 24" width="18" height="18" aria-hidden="true" focusable="false"><path d="M9 5l7 7-7 7" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg><span>رجوع إلى المعمل</span></a>
 </article>
 </main>

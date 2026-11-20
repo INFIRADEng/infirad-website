@@ -43,19 +43,19 @@
   <div class="lab-readout" id="lab-outputs"></div>
   <div class="lab-gauge" id="lab-gauge"></div>
   <figure class="lab-scene-fig">
-    <figcaption class="lab-scene-cap">جدار ساخن وماء يمرّ عليه: الجريان الأسرع يحمل الحرارة أسرع.</figcaption>
+    <figcaption class="lab-scene-cap">الجريان المضطرب يزيد المزج قرب الجدار، فيرفع نوسلت ومعامل الحمل. لا تستخدم علاقة الاضطراب في الجريان الصفحي. الأبعاد والحركة توضيحية، والقيم من الحساب نفسه.</figcaption>
     <div id="lab-scene" class="lab-scene" role="group" aria-label="مشهد توضيحي متحرك"></div>
   </figure>
 
   <p><button class="lab-cta" type="button" id="lab-reset">إعادة الضبط</button></p>
   <p class="muted small" id="lab-note">المقياس يبدأ عند 6 لتر/ث و32 مم.</p>
-  <details>
+  <details open>
     <summary>افتراضات النموذج والمصدر</summary>
     <p class="lab-equation" dir="ltr">Nu = 0.023 · Re^0.8 · Pr^0.4   ثم   h = Nu·k/D</p>
     <p>ماء عند 40 °م: كثافة 992 ولزوجة 0.000653 وبوصل 0.631 وبراندتل 4.32</p><p>أنبوب أملس مستقيم بجريان مضطرب تام</p><p>خصائص ثابتة لا تتغيّر بطول الأنبوب</p><p>لا تبخّر ولا تسخين كافٍ لتغيّر اللزوجة</p><p><a href="https://www.engineeringtoolbox.com/dittus-boelter-equation-turbulent-flow-d_1105.html">Dittus–Boelter equation for turbulent flow in tubes — The Engineering ToolBox</a></p><p><a href="https://www.engineeringtoolbox.com/water-thermal-properties-d_162.html">Water — thermal properties at 40 °C — The Engineering ToolBox</a></p>
   </details>
   <noscript>فعّل JavaScript لتحريك المدخلات وحساب النتائج.</noscript>
-  <script type="application/json" id="lab-spec">{"controls":[{"id":"flow","label_ar":"التصريف","from":1,"to":20,"step":0.5,"value":6,"unit":"لتر/ث"},{"id":"diameter","label_ar":"القطر الداخلي","from":10,"to":100,"step":1,"value":32,"unit":"مم"}],"outputs":[{"id":"velocity","label_ar":"السرعة","unit":"م/ث","decimals":2},{"id":"reynolds","label_ar":"رقم رينولدز","unit":"","decimals":0},{"id":"nusselt","label_ar":"رقم نسلت","unit":"","decimals":1},{"id":"u","label_ar":"معامل الحمل h","unit":"واط/م²·ك","decimals":0},{"id":"q","label_ar":"الفيض عند فرق كلفن واحد","unit":"واط/م²","decimals":0}],"gauge":{"id":"u","bind":"u","label":"معامل الحمل — المقياس من 0 إلى 100,000 واط/م²·ك","min":0,"max":100000,"start":22825,"unit":"واط/م²·ك","decimals":0},"scene":{"kind":"wall","caption_ar":"جدار ساخن وماء يمرّ عليه: الجريان الأسرع يحمل الحرارة أسرع."},"note_ar":"المقياس يبدأ عند 6 لتر/ث و32 مم."}</script>
+  <script type="application/json" id="lab-spec">{"controls":[{"id":"flow","label_ar":"التصريف","step":0.5,"value":6,"unit":"لتر/ث","min":1,"max":20},{"id":"diameter","label_ar":"القطر الداخلي","step":1,"value":32,"unit":"مم","min":10,"max":100}],"outputs":[{"id":"velocity","label_ar":"السرعة","unit":"م/ث","decimals":2},{"id":"reynolds","label_ar":"رقم رينولدز","unit":"","decimals":0},{"id":"nusselt","label_ar":"رقم نسلت","unit":"","decimals":1},{"id":"u","label_ar":"معامل الحمل h","unit":"واط/م²·ك","decimals":0},{"id":"q","label_ar":"الفيض عند فرق كلفن واحد","unit":"واط/م²","decimals":0}],"gauge":{"id":"u","bind":"u","label":"معامل الحمل — المقياس من 0 إلى 100,000 واط/م²·ك","min":0,"max":100000,"unit":"واط/م²·ك","decimals":0},"scene":{"kind":"forced-convection-coefficient","caption_ar":"الجريان المضطرب يزيد المزج قرب الجدار، فيرفع نوسلت ومعامل الحمل. لا تستخدم علاقة الاضطراب في الجريان الصفحي. الأبعاد والحركة توضيحية، والقيم من الحساب نفسه."},"note_ar":"المقياس يبدأ عند 6 لتر/ث و32 مم.","learning":{"question_ar":"كيف يتغير انتقال الحرارة عندما تزداد سرعة الماء؟","explanation_ar":"الجريان المضطرب يزيد المزج قرب الجدار، فيرفع نوسلت ومعامل الحمل. لا تستخدم علاقة الاضطراب في الجريان الصفحي.","input":"flow","output":"u","scenarios":[{"label_ar":"تدفق أقل","values":{"flow":2}},{"label_ar":"تدفق أعلى","values":{"flow":12}}]}}</script>
   <script type="module" src="../assets/js/labs/forced-convection-coefficient.mjs"></script>
 </section>
   <div class="prose"><p>معامل الحمل الحراري h هو ما يحوّل فرق حرارة إلى فيض حراري. في الجريان القسري داخل أنبوب، يحدّده رقم رينولدز (قوّة القصور مقابل اللزوجة) ورقم براندتل (سماكة الطبقة الحرارية). علاقة ديتس–بولتر تجمعها في رقم نسلت، ومنه يُستخرج h.</p><p>في الحالة الافتراضية (6 لتر/ث في أنبوب 32 مم) تكون السرعة 7.46 م/ث ورقم رينولدز 362,669 — مضطرب تام بكثير من الحدّ. ينتج رقم نسلت 1,158 ومعامل حمل 22,825 واط/م²·ك، أي أن فرق كلفن واحد ينقل 22.8 كيلوواط من كل متر مربع.</p><p>الطريق العملي لرفع المعامل ليس الصبر على الجريان بل تقليل القطر: عند التصريف نفسه، تنصيف القطر يضاعف السرعة أربع مرات (المساحة تتبع مربع القطر) فيقفز h بنحو 3.5 أضعاف، وترتفع معه قدرة المضخة بحدة.</p></div>
@@ -64,7 +64,7 @@
     <p>الجريان السريع يرقّق الطبقة الحدّية اللاصقة عند الجدار، فتقلّ مقاومة التوصيل عبرها ويرتفع المعامل. تقليل القطر يزيد السرعة عند التصريف نفسه، فالمكسب مزدوج: سرعة أعلى ومسار حراري أقصر. وكل زيادة في اللزوجة تُثخّن الطبقة فتهبط h، ولهذا يهبط المعامل في الماء البارد أشدّ مما يوحي رقم نسلت وحده.</p>
   </section><section class="depth-sec">
     <h2>العلاقة بالأرقام</h2>
-    <p>Re = ρvD/μ · Nu = 0.023·Re^0.8·Pr^0.4 · h = Nu·k/D. في الحالة الافتراضية: v=7.46 م/ث، Re=362,669، Nu=1,158، h=22,825 واط/م²·ك. مضاعفة التصريف إلى 12 لتر/ث تعطي Re=631,000 وh=39,740 أي 1.74 ضعفًا فقط لأن 2^0.8=1.74. تنصيف القطر إلى 16 مم عند التصريف نفسه يعطي h≈79,500.</p>
+    <p>المعادلة: Nu = 0.023 · Re^0.8 · Pr^0.4   ثم   h = Nu·k/D. عند التصريف 6.00 لتر/ث، القطر الداخلي 32.00 مم، يعطي الحساب: السرعة = 7.46 م/ث؛ رقم رينولدز = 362,669 ؛ رقم نسلت = 1,157.5 ؛ معامل الحمل h = 22,825 واط/م²·ك؛ الفيض عند فرق كلفن واحد = 22,825 واط/م². حالة «تدفق أقل» (التصريف 2.00 لتر/ث، القطر الداخلي 32.00 مم): السرعة = 2.49 م/ث؛ رقم رينولدز = 120,890 ؛ رقم نسلت = 480.7 ؛ معامل الحمل h = 9,478 واط/م²·ك؛ الفيض عند فرق كلفن واحد = 9,478 واط/م². حالة «تدفق أعلى» (التصريف 12.00 لتر/ث، القطر الداخلي 32.00 مم): السرعة = 14.92 م/ث؛ رقم رينولدز = 725,337 ؛ رقم نسلت = 2,015.4 ؛ معامل الحمل h = 39,740 واط/م²·ك؛ الفيض عند فرق كلفن واحد = 39,740 واط/م². هذه أمثلة مولدة من دالة الحساب نفسها؛ وليست قياسات فعلية أو مواصفات لجهاز تجاري.</p>
   </section><section class="depth-sec">
     <h2>مفاهيم متقاربة</h2>
     <p>يُخلط بين رقم نسلت ومعامل الحمل: الأول عدد بلا وحدة يصف شكل الجريان، والثاني واط/م²·ك وهو ما يدخل في Q=h·A·ΔT. ويُخلط بين h المحلي والمتوسط على طول الأنبوب: قيم ديتس–بولتر متوسطات طولية تصلح لأنبوب طويل لا لمقطع عند المدخل حيث الطبقة رقيقة.</p>
@@ -84,16 +84,24 @@
   <caption>أرقام مسنَدة إلى مصادرها</caption>
   <thead><tr><th scope="col">الكمية</th><th scope="col">القيمة</th><th scope="col">المصدر</th></tr></thead>
   <tbody><tr>
-      <th scope="row">لزوجة الماء عند 40 °م</th>
-      <td>0.653 <span class="unit">mPa·s</span></td>
-      <td><a class="ref" href="#src-2">[2]</a></td>
+      <th scope="row">السرعة — الحالة الافتراضية</th>
+      <td>7.46 <span class="unit">م/ث</span></td>
+      <td><a class="ref" href="#src-1">[1]</a></td>
     </tr><tr>
-      <th scope="row">رقم براندتل للماء عند 40 °م</th>
-      <td>4.32</td>
-      <td><a class="ref" href="#src-2">[2]</a></td>
+      <th scope="row">رقم رينولدز — الحالة الافتراضية</th>
+      <td>362,669 <span class="unit">بلا وحدة</span></td>
+      <td><a class="ref" href="#src-1">[1]</a></td>
     </tr><tr>
-      <th scope="row">المعامل عند 6 لتر/ث و32 مم</th>
+      <th scope="row">رقم نسلت — الحالة الافتراضية</th>
+      <td>1,157.5 <span class="unit">بلا وحدة</span></td>
+      <td><a class="ref" href="#src-1">[1]</a></td>
+    </tr><tr>
+      <th scope="row">معامل الحمل h — الحالة الافتراضية</th>
       <td>22,825 <span class="unit">واط/م²·ك</span></td>
+      <td><a class="ref" href="#src-1">[1]</a></td>
+    </tr><tr>
+      <th scope="row">الفيض عند فرق كلفن واحد — الحالة الافتراضية</th>
+      <td>22,825 <span class="unit">واط/م²</span></td>
       <td><a class="ref" href="#src-1">[1]</a></td>
     </tr></tbody>
 </table>
@@ -111,7 +119,7 @@
       <span class="muted small">· اطُّلع عليه 2026-11-19</span></span>
     </li></ol>
 </section>
-  <p class="reviewline muted small">راجعه: عبدالله الهويدي — مراجعة في تطبيق انفراد · 2026-11-19 · آخر تحديث 2026-11-19</p>
+  <p class="reviewline muted small">راجعه: عبدالله الهويدي — مراجعة في تطبيق انفراد · 2026-11-19 · آخر تحديث 2026-11-20</p>
   <a class="backlink backlink-end" href="../lab/" data-back data-label="المعمل"><svg class="backlink-i" viewBox="0 0 24 24" width="18" height="18" aria-hidden="true" focusable="false"><path d="M9 5l7 7-7 7" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg><span>رجوع إلى المعمل</span></a>
 </article>
 </main>

@@ -43,19 +43,19 @@
   <div class="lab-readout" id="lab-outputs"></div>
   <div class="lab-gauge" id="lab-gauge"></div>
   <figure class="lab-scene-fig">
-    <figcaption class="lab-scene-cap">أنبوب عارٍ وعليه طبقة: الطبقة تضيف مساحة كما تضيف مقاومة.</figcaption>
+    <figcaption class="lab-scene-cap">زيادة نصف القطر تضيف مقاومة توصيل وتزيد مساحة الحمل. أكبر فقد يكون قرب نصف القطر الحرج إذا كان أكبر من نصف قطر الأنبوب. الأبعاد والحركة توضيحية، والقيم من الحساب نفسه.</figcaption>
     <div id="lab-scene" class="lab-scene" role="group" aria-label="مشهد توضيحي متحرك"></div>
   </figure>
 
   <p><button class="lab-cta" type="button" id="lab-reset">إعادة الضبط</button></p>
   <p class="muted small" id="lab-note">المقياس يبدأ عند نصف قطر 20 مم وعزل 20 مم وبوصل 0.05 وحمل 10.</p>
-  <details>
+  <details open>
     <summary>افتراضات النموذج والمصدر</summary>
     <p class="lab-equation" dir="ltr">q = ΔT / (ln(r₂/r₁)/(2πk) + 1/(2πr₂h))</p>
     <p>أسطوانة طويلة بحالة مستقرة</p><p>فرق حرارة ثابت 100 كلفن بين السطح الداخلي والوسط</p><p>حمل حراري طبيعي بمعامل ثابت</p><p>لا إشعاع ولا مقاومة تلامس بين الأنبوب والعزل</p><p><a href="https://www.engineeringtoolbox.com/insulation-temperatures-d_922.html">Critical radius of insulation for cylinders — The Engineering ToolBox</a></p><p><a href="https://www.engineeringtoolbox.com/thermal-conductivity-d_429.html">Thermal conductivity of insulation materials — The Engineering ToolBox</a></p>
   </details>
   <noscript>فعّل JavaScript لتحريك المدخلات وحساب النتائج.</noscript>
-  <script type="application/json" id="lab-spec">{"controls":[{"id":"r1mm","label_ar":"نصف قطر الأنبوب","from":5,"to":60,"step":1,"value":20,"unit":"مم"},{"id":"tmm","label_ar":"سمك العزل","from":0,"to":60,"step":1,"value":20,"unit":"مم"},{"id":"kc","label_ar":"بوصل العزل","from":0.02,"to":0.2,"step":0.01,"value":0.05,"unit":"واط/م·ك"},{"id":"hcoef","label_ar":"معامل الحمل الخارجي","from":2,"to":40,"step":1,"value":10,"unit":"واط/م²·ك"}],"outputs":[{"id":"rcr","label_ar":"نصف القطر الحرج","unit":"مم","decimals":1},{"id":"u","label_ar":"معامل الحمل الخارجي","unit":"واط/م²·ك","decimals":0},{"id":"q","label_ar":"الفقد لكل متر طول","unit":"واط/م","decimals":1}],"gauge":{"id":"q","bind":"q","label":"الفقد الحراري — المقياس من 0 إلى 120 واط/م","min":0,"max":120,"start":38.4,"unit":"واط/م","decimals":1},"scene":{"kind":"wall","caption_ar":"أنبوب عارٍ وعليه طبقة: الطبقة تضيف مساحة كما تضيف مقاومة."},"note_ar":"المقياس يبدأ عند نصف قطر 20 مم وعزل 20 مم وبوصل 0.05 وحمل 10."}</script>
+  <script type="application/json" id="lab-spec">{"controls":[{"id":"r1mm","label_ar":"نصف قطر الأنبوب","step":1,"value":20,"unit":"مم","min":5,"max":60},{"id":"tmm","label_ar":"سمك العزل","step":1,"value":20,"unit":"مم","min":0,"max":60},{"id":"kc","label_ar":"بوصل العزل","step":0.01,"value":0.05,"unit":"واط/م·ك","min":0.02,"max":0.2},{"id":"hcoef","label_ar":"معامل الحمل الخارجي","step":1,"value":10,"unit":"واط/م²·ك","min":2,"max":40}],"outputs":[{"id":"rcr","label_ar":"نصف القطر الحرج","unit":"مم","decimals":1},{"id":"u","label_ar":"معامل الحمل الخارجي","unit":"واط/م²·ك","decimals":0},{"id":"q","label_ar":"الفقد لكل متر طول","unit":"واط/م","decimals":1}],"gauge":{"id":"q","bind":"q","label":"الفقد الحراري — المقياس من 0 إلى 120 واط/م","min":0,"max":120,"unit":"واط/م","decimals":1},"scene":{"kind":"critical-insulation-radius","caption_ar":"زيادة نصف القطر تضيف مقاومة توصيل وتزيد مساحة الحمل. أكبر فقد يكون قرب نصف القطر الحرج إذا كان أكبر من نصف قطر الأنبوب. الأبعاد والحركة توضيحية، والقيم من الحساب نفسه."},"note_ar":"المقياس يبدأ عند نصف قطر 20 مم وعزل 20 مم وبوصل 0.05 وحمل 10.","learning":{"question_ar":"هل إضافة العزل تقلل فقد الحرارة في كل الحالات؟","explanation_ar":"زيادة نصف القطر تضيف مقاومة توصيل وتزيد مساحة الحمل. أكبر فقد يكون قرب نصف القطر الحرج إذا كان أكبر من نصف قطر الأنبوب.","input":"tmm","output":"q","scenarios":[{"label_ar":"سلك رفيع بلا عزل","values":{"r1mm":5,"tmm":0,"kc":0.1,"hcoef":5}},{"label_ar":"نفس السلك مع عزل","values":{"r1mm":5,"tmm":15,"kc":0.1,"hcoef":5}}]}}</script>
   <script type="module" src="../assets/js/labs/critical-insulation-radius.mjs"></script>
 </section>
   <div class="prose"><p>قانون الحدس يقول: عزل أكثر = فقد أقل. هذا صحيح للجدران المسطّحة، وخاطئ للأسطوانات الرفيعة. كل طبقة عزل تضيف مقاومة توصيل (جيدة) وتزيد نصف قطر السطح الخارجي وبالتالي مساحة الحمل (سيئة للحفظ).</p><p>فإذا كان نصف القطر الأساسي أصغر من k/h، فإن أول طبقة عزل تزيد الخسارة حتى نصف القطر الحرج، ثم تبدأ الفائدة بعدها. في الحالة الافتراضية (أنبوب 20 مم، عزل بوصل 0.05، حمل 10) يكون نصف القطر الحرج 5 مم فقط — أصغر من نصف قطر الأنبوب، فأي عزل هنا يُنقص الفقد من أول مليمتر.</p><p>لكن جرّب سلكًا قطره 1 مم: نصف القطر الحرج حينها 5 مم، فالعزل حتى 5 مم يزيد الخسارة. ولهذا تُعزل الأسلاك الكهربائية للسلامة لا لتوفير الحرارة — ولأن العزل يخفض حرارة الغلاف فيمنع الحرق، وإن زاد الفقد الحراري.</p></div>
@@ -64,7 +64,7 @@
     <p>المقاومة الكلية = توصيل في العزل + حمل على السطح الخارجي. الأولى تصعد لوغاريتميًّا مع نصف القطر لأن مسار التوصيل يطول، والثانية تنزل عكسيًّا مع نصف القطر لأن مساحة السطح تكبر. مجموعهما دالة لها حد أدنى عند اشتقاق يساوي صفرًا، وهو بالضبط r=k/h.</p>
   </section><section class="depth-sec">
     <h2>العلاقة بالأرقام</h2>
-    <p>r_cr = k/h. في الحالة الافتراضية: 0.05/10 = 5 مم. المعادلة الكاملة: q = ΔT / (ln(r₂/r₁)/(2πk) + 1/(2πr₂h)). عند 20 مم أنبوبًا و20 مم عزلًا: q=38.4 واط/م؛ ولو كان الأنبوب عاريًا (r₂=r₁) لكان q=71.8 واط/م. لاحظ أن العزل هنا نافع من أول مليمتر لأن r₁ أكبر من r_cr.</p>
+    <p>المعادلة: q = ΔT / (ln(r₂/r₁)/(2πk) + 1/(2πr₂h)). عند نصف قطر الأنبوب 20.00 مم، سمك العزل 20.00 مم، بوصل العزل 0.05 واط/م·ك، معامل الحمل الخارجي 10.00 واط/م²·ك، يعطي الحساب: نصف القطر الحرج = 5.0 مم؛ معامل الحمل الخارجي = 10 واط/م²·ك؛ الفقد لكل متر طول = 38.4 واط/م. حالة «سلك رفيع بلا عزل» (نصف قطر الأنبوب 5.00 مم، سمك العزل 0.00 مم، بوصل العزل 0.10 واط/م·ك، معامل الحمل الخارجي 5.00 واط/م²·ك): نصف القطر الحرج = 20.0 مم؛ معامل الحمل الخارجي = 5 واط/م²·ك؛ الفقد لكل متر طول = 15.7 واط/م. حالة «نفس السلك مع عزل» (نصف قطر الأنبوب 5.00 مم، سمك العزل 15.00 مم، بوصل العزل 0.10 واط/م·ك، معامل الحمل الخارجي 5.00 واط/م²·ك): نصف القطر الحرج = 20.0 مم؛ معامل الحمل الخارجي = 5 واط/م²·ك؛ الفقد لكل متر طول = 26.3 واط/م. هذه أمثلة مولدة من دالة الحساب نفسها؛ وليست قياسات فعلية أو مواصفات لجهاز تجاري.</p>
   </section><section class="depth-sec">
     <h2>مفاهيم متقاربة</h2>
     <p>يُخلط بين «نصف القطر الحرج» و«السمك الحرج»: الأول مقياس نصف قطر السطح الخارجي لا سمك الطبقة، ولهذا يعتمد على نصف قطر الأنبوب الأصلي. ويُخلط بين العزل الحراري والكهربائي: الثاني للسلامة وكبح حرارة الغلاف، وقد يزيد الفقد الحراري عن قصد دون أن يكون ذلك خطأً تصميميًّا.</p>
@@ -84,15 +84,15 @@
   <caption>أرقام مسنَدة إلى مصادرها</caption>
   <thead><tr><th scope="col">الكمية</th><th scope="col">القيمة</th><th scope="col">المصدر</th></tr></thead>
   <tbody><tr>
-      <th scope="row">نصف القطر الحرج لعزل بوصل 0.05 وحمل 10</th>
+      <th scope="row">نصف القطر الحرج — الحالة الافتراضية</th>
       <td>5.0 <span class="unit">مم</span></td>
       <td><a class="ref" href="#src-1">[1]</a></td>
     </tr><tr>
-      <th scope="row">بوصل الصوف الصخري النموذجي</th>
-      <td>0.04 <span class="unit">W/(m·K)</span></td>
-      <td><a class="ref" href="#src-2">[2]</a></td>
+      <th scope="row">معامل الحمل الخارجي — الحالة الافتراضية</th>
+      <td>10 <span class="unit">واط/م²·ك</span></td>
+      <td><a class="ref" href="#src-1">[1]</a></td>
     </tr><tr>
-      <th scope="row">الفقد عند 20 مم + 20 مم عزل و0.05 و10</th>
+      <th scope="row">الفقد لكل متر طول — الحالة الافتراضية</th>
       <td>38.4 <span class="unit">واط/م</span></td>
       <td><a class="ref" href="#src-1">[1]</a></td>
     </tr></tbody>
@@ -111,7 +111,7 @@
       <span class="muted small">· اطُّلع عليه 2026-11-19</span></span>
     </li></ol>
 </section>
-  <p class="reviewline muted small">راجعه: عبدالله الهويدي — مراجعة في تطبيق انفراد · 2026-11-19 · آخر تحديث 2026-11-19</p>
+  <p class="reviewline muted small">راجعه: عبدالله الهويدي — مراجعة في تطبيق انفراد · 2026-11-19 · آخر تحديث 2026-11-20</p>
   <a class="backlink backlink-end" href="../lab/" data-back data-label="المعمل"><svg class="backlink-i" viewBox="0 0 24 24" width="18" height="18" aria-hidden="true" focusable="false"><path d="M9 5l7 7-7 7" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg><span>رجوع إلى المعمل</span></a>
 </article>
 </main>

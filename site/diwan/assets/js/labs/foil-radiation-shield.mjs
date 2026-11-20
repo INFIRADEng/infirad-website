@@ -3,8 +3,10 @@ import { startLab } from "../lab-kit.mjs";
 
 const SIGMA = 5.670374419e-8;
 
-startLab(({ eps, area, temp }) => {
+export const compute = ({ eps, area = 500, temp = 80 }) => {
   const T = temp + 273.15, Ts = 25 + 273.15;
   const q = eps * SIGMA * (area / 10000) * (Math.pow(T, 4) - Math.pow(Ts, 4));
   return { watts: q, emissivity: eps, kelvin: T };
-});
+};
+
+if (typeof document !== "undefined") startLab(compute);
