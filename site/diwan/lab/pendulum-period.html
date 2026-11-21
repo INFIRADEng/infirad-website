@@ -38,7 +38,7 @@
   <nav class="crumbs" aria-label="المسار"><a href="../lab/">المعمل</a> · <a href="../domains/physics.html">الفيزياء</a></nav>
   <h1 class="page-h">ما الذي يحدد زمن ذبذبة البندول؟</h1>
   <section class="lab-panel">
-  <p class="lede">اسحب الطول وشاهد كيف يتغيّر زمن الذبذبة، ثم قارن مترًا واحدًا بمترين.</p>
+  <p class="lede">اسحب الطول وشاهد كيف يتغيّر زمن الذبذبة، ثم قارن مترًا واحدًا بمترين. محاكاة تعليمية لا قياس فيزيائي حقيقي.</p>
   <div id="lab-root"></div>
   <div class="lab-readout" id="lab-outputs"></div>
   <div class="lab-gauge" id="lab-gauge"></div>
@@ -48,14 +48,14 @@
   </figure>
 
   <p><button class="lab-cta" type="button" id="lab-reset">إعادة الضبط</button></p>
-  <p class="muted small" id="lab-note">المقياس يبدأ عند قيمة الطول الافتراضي (1 م)، فإن غيّرت الطول قارن بالفرق الظاهر أسفله.</p>
+  <p class="muted small" id="lab-note">المقياس يبدأ عند قيمة الطول الافتراضي (1 م)، فإن غيّرت الطول قارن بالفرق الظاهر أسفله. محاكاة تعليمية لا قياس فيزيائي حقيقي: الأرقام تُحسب من النموذج لحظيًا، ولا تُقاس بأدوات منزلية.</p>
   <details open>
     <summary>افتراضات النموذج والمصدر</summary>
     <p class="lab-equation" dir="ltr">T = 2π√(L/g)</p>
     <p>خيط عديم الكتلة وثقل نقطي</p><p>زاوية إزاحة أقل من 15 درجة</p><p>لا مقاومة هواء</p><p>g = 9.81 م/ث²</p><p><a href="https://openstax.org/books/college-physics/pages/16-4-the-simple-pendulum">The Simple Pendulum — College Physics 16.4 — OpenStax</a></p><p><a href="https://www.nist.gov/pml/weights-and-measures/si-units-time">Standard gravity and the SI second — NIST</a></p>
   </details>
   <noscript>فعّل JavaScript لتحريك المدخلات وحساب النتائج.</noscript>
-  <script type="application/json" id="lab-spec">{"controls":[{"id":"length","label_ar":"طول الخيط","step":0.05,"value":1,"unit":"م","min":0.2,"max":3}],"outputs":[{"id":"period","label_ar":"زمن الذبذبة","unit":"ث","decimals":3},{"id":"perMinute","label_ar":"ذبذبات في الدقيقة","unit":"ذبذبة","decimals":1}],"gauge":{"id":"period","min":0,"max":3.6,"unit":"ث","decimals":3,"bind":"period","label":"زمن الذبذبة — المقياس من 0 إلى 3.6 ثانية"},"scene":{"kind":"pendulum-period","caption_ar":"الزمن يتناسب مع الجذر التربيعي للطول عند الزوايا الصغيرة؛ الرسم يتحرك بالزمن الدوري المحسوب. الأبعاد والحركة توضيحية، والقيم من الحساب نفسه."},"note_ar":"المقياس يبدأ عند قيمة الطول الافتراضي (1 م)، فإن غيّرت الطول قارن بالفرق الظاهر أسفله.","learning":{"question_ar":"هل مضاعفة طول الخيط تضاعف زمن الدورة؟","explanation_ar":"الزمن يتناسب مع الجذر التربيعي للطول عند الزوايا الصغيرة؛ الرسم يتحرك بالزمن الدوري المحسوب.","input":"length","output":"period","scenarios":[{"label_ar":"خيط نصف متر","values":{"length":0.5}},{"label_ar":"خيط متران","values":{"length":2}}]}}</script>
+  <script type="application/json" id="lab-spec">{"controls":[{"id":"length","label_ar":"طول الخيط","step":0.05,"value":1,"unit":"م","min":0.2,"max":3}],"outputs":[{"id":"period","label_ar":"زمن الذبذبة","unit":"ث","decimals":3},{"id":"perMinute","label_ar":"ذبذبات في الدقيقة","unit":"ذبذبة","decimals":1}],"gauge":{"id":"period","min":0,"max":3.6,"unit":"ث","decimals":3,"bind":"period","label":"زمن الذبذبة — المقياس من 0 إلى 3.6 ثانية"},"scene":{"kind":"pendulum-period","caption_ar":"الزمن يتناسب مع الجذر التربيعي للطول عند الزوايا الصغيرة؛ الرسم يتحرك بالزمن الدوري المحسوب. الأبعاد والحركة توضيحية، والقيم من الحساب نفسه."},"note_ar":"المقياس يبدأ عند قيمة الطول الافتراضي (1 م)، فإن غيّرت الطول قارن بالفرق الظاهر أسفله. محاكاة تعليمية لا قياس فيزيائي حقيقي: الأرقام تُحسب من النموذج لحظيًا، ولا تُقاس بأدوات منزلية.","learning":{"question_ar":"هل مضاعفة طول الخيط تضاعف زمن الدورة؟","explanation_ar":"الزمن يتناسب مع الجذر التربيعي للطول عند الزوايا الصغيرة؛ الرسم يتحرك بالزمن الدوري المحسوب.","input":"length","output":"period","scenarios":[{"label_ar":"خيط نصف متر","values":{"length":0.5}},{"label_ar":"خيط متران","values":{"length":2}}]}}</script>
   <script type="module" src="../assets/js/labs/pendulum-period.mjs"></script>
 </section>
   <div class="prose"><p>البندول كتلة معلّقة بخيط. أزحها عن موضع الاتزان ثم اتركها، فتتأرجح ذهابًا وإيابًا بزمن ثابت لا يتغيّر مع تناقص السعة التدريجي.</p><p>المهم أن الزمن يُقاس بالطول لا بالكتلة: ثقل من الحديد وآخر من الخشب بالطول نفسه يتأرجحان بالزمن نفسه. غيّر الطول في اللوحة وتابعه على المقياس، ثم قارن الزمن عند متر واحد بمترين.</p></div>

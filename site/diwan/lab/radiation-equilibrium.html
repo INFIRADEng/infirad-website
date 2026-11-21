@@ -38,7 +38,7 @@
   <nav class="crumbs" aria-label="المسار"><a href="../lab/">المعمل</a> · <a href="../domains/physics.html">الفيزياء</a></nav>
   <h1 class="page-h">كيف نحسب درجة حرارة الأرض الإشعاعية؟</h1>
   <section class="lab-panel">
-  <p class="lede">غيّر نسبة الانعكاس والانبعاثية، وتابع حرارة التوازن بالكلفن والمئوية.</p>
+  <p class="lede">غيّر نسبة الانعكاس والانبعاثية، وتابع حرارة التوازن بالكلفن والمئوية. محاكاة تعليمية لا قياس فيزيائي حقيقي.</p>
   <div id="lab-root"></div>
   <div class="lab-readout" id="lab-outputs"></div>
   <div class="lab-gauge" id="lab-gauge"></div>
@@ -48,14 +48,14 @@
   </figure>
 
   <p><button class="lab-cta" type="button" id="lab-reset">إعادة الضبط</button></p>
-  <p class="muted small" id="lab-note">المقياس يبدأ عند حالة الأرض (انعكاس 0.30) = 255 كلفن.</p>
+  <p class="muted small" id="lab-note">المقياس يبدأ عند حالة الأرض (انعكاس 0.30) = 255 كلفن. محاكاة تعليمية لا قياس فيزيائي حقيقي: الأرقام تُحسب من النموذج لحظيًا، ولا تُقاس بأدوات منزلية.</p>
   <details open>
     <summary>افتراضات النموذج والمصدر</summary>
     <p class="lab-equation" dir="ltr">T = [S(1−a)/(4σε)]^¼</p>
     <p>جسم كروي صفري الأبعاد بلا غلاف جوي</p><p>ثابت شمسي 1361 W/m²</p><p>انبعاثية سطحية محلّية</p><p>لا انتقال حرارة بين خطوط العرض</p><p><a href="https://earthobservatory.nasa.gov/features/EnergyBalance">Solar constant and total solar irradiance — NASA</a></p><p><a href="https://openstax.org/books/college-physics/pages/14-7-radiation">Stefan-Boltzmann law and planetary energy balance — OpenStax</a></p>
   </details>
   <noscript>فعّل JavaScript لتحريك المدخلات وحساب النتائج.</noscript>
-  <script type="application/json" id="lab-spec">{"controls":[{"id":"albedo","label_ar":"نسبة الانعكاس","step":0.01,"value":0.3,"unit":"","min":0.1,"max":0.8},{"id":"emissivity","label_ar":"الانبعاثية","step":0.01,"value":1,"unit":"","min":0.6,"max":1}],"outputs":[{"id":"kelvin","label_ar":"حرارة التوازن","unit":"ك","decimals":1},{"id":"celsius","label_ar":"بالدرجة المئوية","unit":"°م","decimals":1}],"gauge":{"id":"kelvin","min":180,"max":310,"unit":"ك","decimals":1,"bind":"kelvin","label":"حرارة التوازن — المقياس من 180 إلى 310 كلفن"},"scene":{"kind":"radiation-equilibrium","caption_ar":"الكوكب يمتص الطاقة على مساحة قرص ويشع على مساحة كرة. الناتج حرارة إشعاعية فعالة وليست توقعًا لحرارة السطح. الأبعاد والحركة توضيحية، والقيم من الحساب نفسه."},"note_ar":"المقياس يبدأ عند حالة الأرض (انعكاس 0.30) = 255 كلفن.","learning":{"question_ar":"كيف يؤثر انعكاس ضوء الشمس في درجة حرارة الاتزان؟","explanation_ar":"الكوكب يمتص الطاقة على مساحة قرص ويشع على مساحة كرة. الناتج حرارة إشعاعية فعالة وليست توقعًا لحرارة السطح.","input":"albedo","output":"kelvin","scenarios":[{"label_ar":"امتصاص أكبر","values":{"albedo":0.1}},{"label_ar":"انعكاس أكبر","values":{"albedo":0.7}}]}}</script>
+  <script type="application/json" id="lab-spec">{"controls":[{"id":"albedo","label_ar":"نسبة الانعكاس","step":0.01,"value":0.3,"unit":"","min":0.1,"max":0.8},{"id":"emissivity","label_ar":"الانبعاثية","step":0.01,"value":1,"unit":"","min":0.6,"max":1}],"outputs":[{"id":"kelvin","label_ar":"حرارة التوازن","unit":"ك","decimals":1},{"id":"celsius","label_ar":"بالدرجة المئوية","unit":"°م","decimals":1}],"gauge":{"id":"kelvin","min":180,"max":310,"unit":"ك","decimals":1,"bind":"kelvin","label":"حرارة التوازن — المقياس من 180 إلى 310 كلفن"},"scene":{"kind":"radiation-equilibrium","caption_ar":"الكوكب يمتص الطاقة على مساحة قرص ويشع على مساحة كرة. الناتج حرارة إشعاعية فعالة وليست توقعًا لحرارة السطح. الأبعاد والحركة توضيحية، والقيم من الحساب نفسه."},"note_ar":"المقياس يبدأ عند حالة الأرض (انعكاس 0.30) = 255 كلفن. محاكاة تعليمية لا قياس فيزيائي حقيقي: الأرقام تُحسب من النموذج لحظيًا، ولا تُقاس بأدوات منزلية.","learning":{"question_ar":"كيف يؤثر انعكاس ضوء الشمس في درجة حرارة الاتزان؟","explanation_ar":"الكوكب يمتص الطاقة على مساحة قرص ويشع على مساحة كرة. الناتج حرارة إشعاعية فعالة وليست توقعًا لحرارة السطح.","input":"albedo","output":"kelvin","scenarios":[{"label_ar":"امتصاص أكبر","values":{"albedo":0.1}},{"label_ar":"انعكاس أكبر","values":{"albedo":0.7}}]}}</script>
   <script type="module" src="../assets/js/labs/radiation-equilibrium.mjs"></script>
 </section>
   <div class="prose"><p>الأرض تكتسب طاقة من الشمس وتفقدها بالإشعاع. التوازن يحدث عند الحرارة التي يتساوى فيها الاثنان. لكن الكسب يُوزّع على سطح الكرة كلها، فيكون ربع القيمة المباشرة — لأن قرص الاستقبال أربعة أمثال مساحة سطح الكرة.</p><p>باختصار: (1361 × 0.70) ÷ 4 ≈ 238 واط لكل متر مربع. والحرارة التي يشعّ بها سطح بهذا المعدل هي 255 كلفن، أي −18 °م. الحرارة المقيسة 15 °م، والفرق 33 درجة يعود إلى أن الغلاف الجوي يعيد إشعاع جزء من الطاقة إلى السطح.</p></div>

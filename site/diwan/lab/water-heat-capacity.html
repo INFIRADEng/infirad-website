@@ -38,7 +38,7 @@
   <nav class="crumbs" aria-label="المسار"><a href="../lab/">المعمل</a> · <a href="../domains/physics.html">الفيزياء</a></nav>
   <h1 class="page-h">كيف تؤثر كتلة الماء في تسخينه؟</h1>
   <section class="lab-panel">
-  <p class="lede">أضف كمية حرارة معلومة إلى كتلة ماء متغيّرة، وتابع درجة الحرارة على المقياس: نفس الطاقة ترفع الحرارة أكثر كلما قلّت الكتلة.</p>
+  <p class="lede">أضف كمية حرارة معلومة إلى كتلة ماء متغيّرة، وتابع درجة الحرارة على المقياس: نفس الطاقة ترفع الحرارة أكثر كلما قلّت الكتلة. محاكاة تعليمية لا قياس فيزيائي حقيقي.</p>
   <div id="lab-root"></div>
   <div class="lab-readout" id="lab-outputs"></div>
   <div class="lab-gauge" id="lab-gauge"></div>
@@ -48,14 +48,14 @@
   </figure>
 
   <p><button class="lab-cta" type="button" id="lab-reset">إعادة الضبط</button></p>
-  
+  <p class="muted small" id="lab-note">محاكاة تعليمية لا قياس فيزيائي حقيقي: الأرقام تُحسب من النموذج لحظيًا، ولا تُقاس بأدوات منزلية.</p>
   <details open>
     <summary>افتراضات النموذج والمصدر</summary>
     <p class="lab-equation" dir="ltr">ΔT = Q / (m · c)</p>
     <p>الماء يبدأ عند 20 °C، ونحسب حرارة الماء فقط بسعة نوعية ثابتة 4,186 J/(kg·K).</p><p>لا فقد حراري إلى الوسط أو الوعاء، ولا تغيّر في الطور خلال مدى المقياس.</p><p><a href="https://openstax.org/books/college-physics/pages/14-2-temperature-change-and-heat-capacity">ميزان الطاقة في الماء — حساب ΔT = Q/(m·c) — حساب انفراد من المعادلة المعيارية</a></p><p><a href="https://openstax.org/books/college-physics/pages/14-2-temperature-change-and-heat-capacity">Temperature Change and Heat Capacity — College Physics, §14.2 — OpenStax</a></p><p><a href="https://www.engineeringtoolbox.com/specific-heat-capacity-water-d_660.html">Specific Heat Capacity of Water — Engineering ToolBox</a></p>
   </details>
   <noscript>فعّل JavaScript لتحريك المدخلات وحساب النتائج.</noscript>
-  <script type="application/json" id="lab-spec">{"controls":[{"id":"mass","label_ar":"كتلة الماء","min":0.5,"max":3,"step":0.1,"value":1,"unit":"kg","decimals":1},{"id":"energy","label_ar":"الحرارة المضافة","min":5,"max":60,"step":1,"value":20,"unit":"kJ","decimals":0}],"outputs":[{"id":"delta","label_ar":"ارتفاع الحرارة","unit":"°C","decimals":2},{"id":"final","label_ar":"درجة الحرارة النهائية","unit":"°C","decimals":2}],"gauge":{"min":20,"max":50,"unit":"°C","decimals":2,"bind":"final","label":"درجة حرارة الماء — المقياس من 20 إلى 50 °C"},"scene":{"kind":"water-heat-capacity","caption_ar":"الطاقة تتوزع على كتلة أكبر، فيقل ارتفاع الحرارة. درجة الحرارة ليست كمية الطاقة المخزنة. الأبعاد والحركة توضيحية، والقيم من الحساب نفسه."},"note_ar":"","learning":{"question_ar":"هل تعطي الطاقة نفسها ارتفاع الحرارة نفسه لكتلتين مختلفتين؟","explanation_ar":"الطاقة تتوزع على كتلة أكبر، فيقل ارتفاع الحرارة. درجة الحرارة ليست كمية الطاقة المخزنة.","input":"mass","output":"final","scenarios":[{"label_ar":"نصف كتلة الماء","values":{"mass":0.5}},{"label_ar":"نفس الطاقة، كتلة مضاعفة","values":{"mass":2}}]}}</script>
+  <script type="application/json" id="lab-spec">{"controls":[{"id":"mass","label_ar":"كتلة الماء","min":0.5,"max":3,"step":0.1,"value":1,"unit":"kg","decimals":1},{"id":"energy","label_ar":"الحرارة المضافة","min":5,"max":60,"step":1,"value":20,"unit":"kJ","decimals":0}],"outputs":[{"id":"delta","label_ar":"ارتفاع الحرارة","unit":"°C","decimals":2},{"id":"final","label_ar":"درجة الحرارة النهائية","unit":"°C","decimals":2}],"gauge":{"min":20,"max":50,"unit":"°C","decimals":2,"bind":"final","label":"درجة حرارة الماء — المقياس من 20 إلى 50 °C"},"scene":{"kind":"water-heat-capacity","caption_ar":"الطاقة تتوزع على كتلة أكبر، فيقل ارتفاع الحرارة. درجة الحرارة ليست كمية الطاقة المخزنة. الأبعاد والحركة توضيحية، والقيم من الحساب نفسه."},"note_ar":"محاكاة تعليمية لا قياس فيزيائي حقيقي: الأرقام تُحسب من النموذج لحظيًا، ولا تُقاس بأدوات منزلية.","learning":{"question_ar":"هل تعطي الطاقة نفسها ارتفاع الحرارة نفسه لكتلتين مختلفتين؟","explanation_ar":"الطاقة تتوزع على كتلة أكبر، فيقل ارتفاع الحرارة. درجة الحرارة ليست كمية الطاقة المخزنة.","input":"mass","output":"final","scenarios":[{"label_ar":"نصف كتلة الماء","values":{"mass":0.5}},{"label_ar":"نفس الطاقة، كتلة مضاعفة","values":{"mass":2}}]}}</script>
   <script type="module" src="../assets/js/labs/water-heat-capacity.mjs"></script>
 </section>
   <div class="prose"><p>توزّع الطاقة المضافة على كتلة الماء، فترفع حرارته بحسب سعته الحرارية النوعية. إذا قلّت الكتلة وبقيت الطاقة نفسها، زاد ارتفاع الحرارة لأن الطاقة المتاحة لكل وحدة كتلة أصبحت أكبر.</p><p>جرّب حالتين بالطاقة نفسها: ثبّت الحالة الأولى للمقارنة، ثم قلّل الكتلة واقرأ فرق ارتفاع الحرارة. ويمكنك اختيار الطاقة على المحور الأفقي لترى علاقة خطية، أو الكتلة لترى العلاقة العكسية مع ثبات الطاقة.</p><p>نفترض ماءً سائلًا يبدأ عند عشرين درجة وسعة نوعية ثابتة، ولا يستهلك الوعاء جزءًا من الطاقة ولا نفقد حرارة إلى الوسط. لا توجد فقاعات غليان في هذا المدى؛ المشهد يوضح كمية الماء وانتقال الطاقة فقط.</p></div>

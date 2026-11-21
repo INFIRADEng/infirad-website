@@ -38,7 +38,7 @@
   <nav class="crumbs" aria-label="المسار"><a href="../lab/">المعمل</a> · <a href="../domains/chemistry.html">الكيمياء</a></nav>
   <h1 class="page-h">كيف يتحول عدد الجزيئات والحرارة إلى ضغط؟</h1>
   <section class="lab-panel">
-  <p class="lede">غيّر عدد المولات والحرارة والحجم، وتابع الضغط على المقياس.</p>
+  <p class="lede">غيّر عدد المولات والحرارة والحجم، وتابع الضغط على المقياس. محاكاة تعليمية لا قياس فيزيائي حقيقي.</p>
   <div id="lab-root"></div>
   <div class="lab-readout" id="lab-outputs"></div>
   <div class="lab-gauge" id="lab-gauge"></div>
@@ -48,14 +48,14 @@
   </figure>
 
   <p><button class="lab-cta" type="button" id="lab-reset">إعادة الضبط</button></p>
-  <p class="muted small" id="lab-note">في اللوحة يبدأ الحجم عند 24.5 لترًا ليقع الضغط على 101.3 ك.ب — الظروف القياسية.</p>
+  <p class="muted small" id="lab-note">في اللوحة يبدأ الحجم عند 24.5 لترًا ليقع الضغط على 101.3 ك.ب — الظروف القياسية. محاكاة تعليمية لا قياس فيزيائي حقيقي: الأرقام تُحسب من النموذج لحظيًا، ولا تُقاس بأدوات منزلية.</p>
   <details open>
     <summary>افتراضات النموذج والمصدر</summary>
     <p class="lab-equation" dir="ltr">P = nRT/V</p>
     <p>غاز مثالي بلا حجم جزيئي ولا قوى بينجزيئية</p><p>R = 8.314 J/(mol·K)</p><p>الحرارة مطلقة بالكلفن</p><p><a href="https://openstax.org/books/college-physics/pages/13-3-the-ideal-gas-law">The Ideal Gas Law — College Physics 13.3 — OpenStax</a></p><p><a href="https://www.nist.gov/pml/weights-and-measures">Molar gas constant and standard conditions — NIST</a></p>
   </details>
   <noscript>فعّل JavaScript لتحريك المدخلات وحساب النتائج.</noscript>
-  <script type="application/json" id="lab-spec">{"controls":[{"id":"moles","label_ar":"عدد المولات","step":0.1,"value":1,"unit":"مول","min":0.5,"max":2},{"id":"celsius","label_ar":"درجة الحرارة","step":1,"value":25,"unit":"°م","min":0,"max":100},{"id":"liters","label_ar":"الحجم","step":0.5,"value":24.5,"unit":"لتر","min":10,"max":50}],"outputs":[{"id":"pressure","label_ar":"الضغط","unit":"ك.ب","decimals":1},{"id":"kelvin","label_ar":"الحرارة المطلقة","unit":"ك","decimals":1}],"gauge":{"id":"pressure","min":0,"max":650,"unit":"ك.ب","decimals":1,"bind":"pressure","label":"الضغط — المقياس من 20 إلى 650 كيلوباسكال"},"scene":{"kind":"ideal-gas-pressure","caption_ar":"عند ثبات كمية الغاز والحرارة، تقليل الحجم يزيد تواتر الاصطدام بالجدران ويرفع الضغط. الأبعاد والحركة توضيحية، والقيم من الحساب نفسه."},"note_ar":"في اللوحة يبدأ الحجم عند 24.5 لترًا ليقع الضغط على 101.3 ك.ب — الظروف القياسية.","learning":{"question_ar":"كيف تؤثر مساحة الحركة المتاحة للجزيئات في الضغط؟","explanation_ar":"عند ثبات كمية الغاز والحرارة، تقليل الحجم يزيد تواتر الاصطدام بالجدران ويرفع الضغط.","input":"liters","output":"pressure","scenarios":[{"label_ar":"حجم أصغر","values":{"liters":12}},{"label_ar":"حجم أكبر","values":{"liters":40}}]}}</script>
+  <script type="application/json" id="lab-spec">{"controls":[{"id":"moles","label_ar":"عدد المولات","step":0.1,"value":1,"unit":"مول","min":0.5,"max":2},{"id":"celsius","label_ar":"درجة الحرارة","step":1,"value":25,"unit":"°م","min":0,"max":100},{"id":"liters","label_ar":"الحجم","step":0.5,"value":24.5,"unit":"لتر","min":10,"max":50}],"outputs":[{"id":"pressure","label_ar":"الضغط","unit":"ك.ب","decimals":1},{"id":"kelvin","label_ar":"الحرارة المطلقة","unit":"ك","decimals":1}],"gauge":{"id":"pressure","min":0,"max":650,"unit":"ك.ب","decimals":1,"bind":"pressure","label":"الضغط — المقياس من 20 إلى 650 كيلوباسكال"},"scene":{"kind":"ideal-gas-pressure","caption_ar":"عند ثبات كمية الغاز والحرارة، تقليل الحجم يزيد تواتر الاصطدام بالجدران ويرفع الضغط. الأبعاد والحركة توضيحية، والقيم من الحساب نفسه."},"note_ar":"في اللوحة يبدأ الحجم عند 24.5 لترًا ليقع الضغط على 101.3 ك.ب — الظروف القياسية. محاكاة تعليمية لا قياس فيزيائي حقيقي: الأرقام تُحسب من النموذج لحظيًا، ولا تُقاس بأدوات منزلية.","learning":{"question_ar":"كيف تؤثر مساحة الحركة المتاحة للجزيئات في الضغط؟","explanation_ar":"عند ثبات كمية الغاز والحرارة، تقليل الحجم يزيد تواتر الاصطدام بالجدران ويرفع الضغط.","input":"liters","output":"pressure","scenarios":[{"label_ar":"حجم أصغر","values":{"liters":12}},{"label_ar":"حجم أكبر","values":{"liters":40}}]}}</script>
   <script type="module" src="../assets/js/labs/ideal-gas-pressure.mjs"></script>
 </section>
   <div class="prose"><p>كل جزيء في الغاز يرتطم بالجدار وينقل إليه زخمًا. مجموع هذه الضربات في الثانية على وحدة المساحة هو الضغط. فإذا ضاعفت عدد الجزيئات تضاعف الضغط، وإذا ضاعفت المساحة التي تتحرك فيها هبط إلى النصف.</p><p>اللوحة تربط ثلاثة مدخلات بمخرج واحد. ابدأ بالافتراض الافتراضي ثم أنصِف الحجم ولاحظ أن الضغط يقفز إلى الضعف، ثم ارفع الحرارة من 0 إلى 200 °م ولاحظ أن الزيادة خطية في الكلفن لا في الدرجة المئوية.</p></div>
