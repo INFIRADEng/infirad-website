@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="760" height="534" viewBox="0 0 760 534" role="img" aria-labelledby="t">
+<title id="t">عمل الضغط النوعي — هواء من 300 كلفن إلى 9 بار</title>
+<rect width="760" height="534" fill="#ffffff"/>
+<g font-family="'Segoe UI', 'Noto Naskh Arabic', system-ui, sans-serif" direction="rtl">
+<text x="380" y="34" font-size="18" font-weight="700" fill="#1b2a2f" text-anchor="middle">عمل الضغط النوعي — هواء من 300 كلفن إلى 9 بار</text>
+<text x="380" y="60" font-size="17" font-weight="400" fill="#5d7079" text-anchor="middle">w = cp·T1·((p2/p1)^0.2856 − 1)</text>
+<text x="380" y="84" font-size="17" font-weight="400" fill="#5d7079" text-anchor="middle">كل مرحلة تبدأ من 300 كلفن</text>
+<text x="740" y="138" font-size="17" font-weight="600" fill="#1b2a2f" text-anchor="start">مرحلة واحدة</text>
+<rect x="270" y="146" width="470" height="14" fill="#c2410c" fill-opacity="0.85" rx="6"/>
+<text x="260" y="158" font-size="17" font-weight="700" fill="#1b2a2f" text-anchor="end" direction="ltr">⁨263.2 كيلوجول/كغ⁩</text>
+<text x="740" y="196" font-size="17" font-weight="600" fill="#1b2a2f" text-anchor="start">مرحلتان</text>
+<rect x="343.2" y="204" width="396.8" height="14" fill="#0e7490" fill-opacity="0.85" rx="6"/>
+<text x="333.2" y="216" font-size="17" font-weight="700" fill="#1b2a2f" text-anchor="end" direction="ltr">⁨222.2 كيلوجول/كغ⁩</text>
+<text x="740" y="254" font-size="17" font-weight="600" fill="#1b2a2f" text-anchor="start">ثلاث مراحل</text>
+<rect x="364.3" y="262" width="375.7" height="14" fill="#a16207" fill-opacity="0.85" rx="6"/>
+<text x="354.3" y="274" font-size="17" font-weight="700" fill="#1b2a2f" text-anchor="end" direction="ltr">⁨210.4 كيلوجول/كغ⁩</text>
+<text x="740" y="312" font-size="17" font-weight="600" fill="#1b2a2f" text-anchor="start">أربع مراحل</text>
+<rect x="374.3" y="320" width="365.7" height="14" fill="#1e3a5f" fill-opacity="0.85" rx="6"/>
+<text x="364.3" y="332" font-size="17" font-weight="700" fill="#1b2a2f" text-anchor="end" direction="ltr">⁨204.8 كيلوجول/كغ⁩</text>
+<text x="740" y="370" font-size="17" font-weight="600" fill="#1b2a2f" text-anchor="start">حد التبريد التام</text>
+<rect x="402.1" y="378" width="337.9" height="14" fill="#0a7a4a" fill-opacity="0.85" rx="6"/>
+<text x="392.1" y="390" font-size="17" font-weight="700" fill="#1b2a2f" text-anchor="end" direction="ltr">⁨189.2 كيلوجول/كغ⁩</text>
+<line x1="740" y1="424" x2="270" y2="424" stroke="#cbd5d9" stroke-width="1"/>
+<text x="740" y="448" font-size="17" font-weight="400" fill="#5d7079" text-anchor="start">0</text>
+<text x="505" y="448" font-size="17" font-weight="400" fill="#5d7079" text-anchor="middle">131.6</text>
+<text x="270" y="448" font-size="17" font-weight="400" fill="#5d7079" text-anchor="end">263.2</text>
+<text x="505" y="474" font-size="17" font-weight="400" fill="#5d7079" text-anchor="middle">العمل النوعي (كيلوجول/كغ)</text>
+<text x="380" y="508" font-size="17" font-weight="400" fill="#5d7079" text-anchor="middle">القيم محسوبة للهواء نفسه عند تدفق واحد؛ تبريد تام يعني إخراج كل حرارة الانضغاط بين المراحل</text>
+</g></svg>
