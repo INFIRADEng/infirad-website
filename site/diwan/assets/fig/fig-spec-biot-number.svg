@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="760" height="446" viewBox="0 0 760 446" role="img" aria-labelledby="t">
+<title id="t">عدد بيوت: أين يقع تبريد الصفيحة الحقيقي</title>
+<rect width="760" height="446" fill="#ffffff"/>
+<g font-family="'Segoe UI', 'Noto Naskh Arabic', system-ui, sans-serif" direction="rtl">
+<text x="380" y="34" font-size="18" font-weight="700" fill="#1b2a2f" text-anchor="middle">عدد بيوت: أين يقع تبريد الصفيحة الحقيقي</text>
+<text x="380" y="60" font-size="17" font-weight="400" fill="#5d7079" text-anchor="middle">Bi = h·L/k — نسبة مقاومة التوصيل داخل الجسم إلى مقاومة الحمل على سطحه</text>
+<text x="380" y="84" font-size="17" font-weight="400" fill="#5d7079" text-anchor="middle">صفيحة فولاذية 20 مم · k = 43 واط/(م·كلفن) · h بالواط/(م²·كلفن)</text>
+<rect x="120" y="212" width="116" height="118" fill="#2f7d6e" fill-opacity="0.16"/>
+<line x1="120" y1="212" x2="120" y2="330" stroke="#2f7d6e" stroke-width="1" stroke-opacity="0.5"/>
+<text x="178" y="242" font-size="17" font-weight="700" fill="#2f7d6e" text-anchor="middle">مجموعة متجانسة</text>
+<rect x="236" y="212" width="464" height="118" fill="#c2571f" fill-opacity="0.16"/>
+<line x1="236" y1="212" x2="236" y2="330" stroke="#c2571f" stroke-width="1" stroke-opacity="0.5"/>
+<text x="468" y="242" font-size="17" font-weight="700" fill="#c2571f" text-anchor="middle">تدرّج داخلي لا يُهمل</text>
+<line x1="120" y1="330" x2="700" y2="330" stroke="#1b2a2f" stroke-width="2"/>
+<line x1="120" y1="330" x2="120" y2="338" stroke="#1b2a2f" stroke-width="1.5"/>
+<text x="120" y="360" font-size="17" font-weight="400" fill="#5d7079" text-anchor="end">0</text>
+<line x1="236" y1="330" x2="236" y2="338" stroke="#1b2a2f" stroke-width="1.5"/>
+<text x="236" y="360" font-size="17" font-weight="400" fill="#5d7079" text-anchor="middle">0.1</text>
+<line x1="352" y1="330" x2="352" y2="338" stroke="#1b2a2f" stroke-width="1.5"/>
+<text x="352" y="360" font-size="17" font-weight="400" fill="#5d7079" text-anchor="middle">0.2</text>
+<line x1="468" y1="330" x2="468" y2="338" stroke="#1b2a2f" stroke-width="1.5"/>
+<text x="468" y="360" font-size="17" font-weight="400" fill="#5d7079" text-anchor="middle">0.3</text>
+<line x1="584" y1="330" x2="584" y2="338" stroke="#1b2a2f" stroke-width="1.5"/>
+<text x="584" y="360" font-size="17" font-weight="400" fill="#5d7079" text-anchor="middle">0.4</text>
+<line x1="700" y1="330" x2="700" y2="338" stroke="#1b2a2f" stroke-width="1.5"/>
+<text x="700" y="360" font-size="17" font-weight="400" fill="#5d7079" text-anchor="middle">0.5</text>
+<text x="410" y="386" font-size="17" font-weight="400" fill="#5d7079" text-anchor="middle">عدد بيوت Bi</text>
+<line x1="122.7" y1="210" x2="122.7" y2="330" stroke="#1b2a2f" stroke-width="2" stroke-dasharray="4 3"/>
+<text x="122.7" y="202" font-size="17" font-weight="700" fill="#1b2a2f" text-anchor="middle">هواء ساكن · 0.0023</text>
+<line x1="659.5" y1="210" x2="659.5" y2="330" stroke="#1b2a2f" stroke-width="2" stroke-dasharray="4 3"/>
+<text x="659.5" y="202" font-size="17" font-weight="700" fill="#1b2a2f" text-anchor="middle">ماء متحرك · 0.47</text>
+<text x="380" y="420" font-size="17" font-weight="400" fill="#5d7079" text-anchor="middle">عند Bi = 0.1 يكون فرق الحرارة بين القلب والسطح 5% من فرق السطح والمائع</text>
+</g></svg>
