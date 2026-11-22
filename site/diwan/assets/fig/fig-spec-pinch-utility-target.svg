@@ -1,6 +1,6 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="760" height="568" viewBox="0 0 760 568" role="img" aria-labelledby="t">
+<svg xmlns="http://www.w3.org/2000/svg" width="760" height="664" viewBox="0 0 760 664" role="img" aria-labelledby="t">
 <title id="t">الحد الأدنى لبخار التسخين مقابل فرق الحرارة الأدنى</title>
-<rect width="760" height="568" fill="#ffffff"/>
+<rect width="760" height="664" fill="#ffffff"/>
 <g font-family="'Segoe UI', 'Noto Naskh Arabic', system-ui, sans-serif" direction="rtl">
 <text x="380" y="34" font-size="18" font-weight="700" fill="#1b2a2f" text-anchor="middle">الحد الأدنى لبخار التسخين مقابل فرق الحرارة الأدنى</text>
 <text x="740" y="138" font-size="17" font-weight="600" fill="#1b2a2f" text-anchor="start">10 كلفن</text>
@@ -25,7 +25,11 @@
 <text x="740" y="458" font-size="17" font-weight="400" fill="#5d7079" text-anchor="start">0</text>
 <text x="505" y="458" font-size="17" font-weight="400" fill="#5d7079" text-anchor="middle">110</text>
 <text x="270" y="458" font-size="17" font-weight="400" fill="#5d7079" text-anchor="end">220</text>
-<text x="505" y="484" font-size="17" font-weight="400" fill="#5d7079" text-anchor="middle">فرق الحرارة الأدنى بين التيارين المتلامسين (كلفن) — والقيمة هي البخار الأدنى بالكيلوواط</text>
-<text x="380" y="518" font-size="17" font-weight="400" fill="#5d7079" text-anchor="middle">شبكة المثال: H1 180←80 وH2 130←50 وC1 40→150 وC2 70→140 بمعدلات 2.0 و4.0 و2.5 و3.0 كيلوواط/كلفن</text>
-<text x="380" y="542" font-size="17" font-weight="400" fill="#5d7079" text-anchor="middle">المحسوب بجدول المشكلة: البخار = 5.5 × الفرق الأدنى − 20 لهذه التيارات، والعلاقة تنكسر إذا تغيرت نقطة التقارب</text>
+<text x="380" y="484" font-size="17" font-weight="400" fill="#5d7079" text-anchor="middle">البخار الأدنى للتسخين (كيلوواط)</text>
+<text x="380" y="508" font-size="17" font-weight="400" fill="#5d7079" text-anchor="middle">القيم بجانب الأعمدة: فرق الحرارة الأدنى (كلفن)</text>
+<text x="380" y="542" font-size="17" font-weight="400" fill="#5d7079" text-anchor="middle">شبكة المثال:</text>
+<text x="380" y="566" font-size="17" font-weight="400" fill="#5d7079" text-anchor="middle">H1 180←80 وH2 130←50 وC1 40→150 وC2 70→140</text>
+<text x="380" y="590" font-size="17" font-weight="400" fill="#5d7079" text-anchor="middle">بمعدلات 2.0 و4.0 و2.5 و3.0 كيلوواط/كلفن</text>
+<text x="380" y="614" font-size="17" font-weight="400" fill="#5d7079" text-anchor="middle">المحسوب بجدول المشكلة: البخار = 5.5 × الفرق الأدنى − 20 لهذه التيارات،</text>
+<text x="380" y="638" font-size="17" font-weight="400" fill="#5d7079" text-anchor="middle">والعلاقة تنكسر إذا تغيرت نقطة التقارب</text>
 </g></svg>
