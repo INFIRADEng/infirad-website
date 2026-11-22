@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="760" height="514" viewBox="0 0 760 514" role="img" aria-labelledby="t">
+<title id="t">تافل: الميل يحوّل زيادة التيار إلى جهد</title>
+<rect width="760" height="514" fill="#ffffff"/>
+<g font-family="'Segoe UI', 'Noto Naskh Arabic', system-ui, sans-serif" direction="rtl">
+<text x="380" y="34" font-size="18" font-weight="700" fill="#1b2a2f" text-anchor="middle">تافل: الميل يحوّل زيادة التيار إلى جهد</text>
+<text x="380" y="60" font-size="17" font-weight="400" fill="#5d7079" text-anchor="middle">η = b·log₁₀(i/i₀) بـ b = 2.303RT/(αnF) = 118.3 mV/عقد عند α = 0.5 وn = 1</text>
+<text x="380" y="84" font-size="17" font-weight="400" fill="#5d7079" text-anchor="middle">الزيادة 100 ضعف في التيار = عقدان</text>
+<line x1="96" y1="130" x2="96" y2="400" stroke="#cbd5d9" stroke-width="1" stroke-opacity="0.6"/>
+<text x="96" y="426" font-size="17" font-weight="400" fill="#5d7079" text-anchor="middle">0</text>
+<line x1="189.7" y1="130" x2="189.7" y2="400" stroke="#cbd5d9" stroke-width="1" stroke-opacity="0.6"/>
+<text x="189.7" y="426" font-size="17" font-weight="400" fill="#5d7079" text-anchor="middle">0.5</text>
+<line x1="283.3" y1="130" x2="283.3" y2="400" stroke="#cbd5d9" stroke-width="1" stroke-opacity="0.6"/>
+<text x="283.3" y="426" font-size="17" font-weight="400" fill="#5d7079" text-anchor="middle">1</text>
+<line x1="377" y1="130" x2="377" y2="400" stroke="#cbd5d9" stroke-width="1" stroke-opacity="0.6"/>
+<text x="377" y="426" font-size="17" font-weight="400" fill="#5d7079" text-anchor="middle">1.5</text>
+<line x1="470.7" y1="130" x2="470.7" y2="400" stroke="#cbd5d9" stroke-width="1" stroke-opacity="0.6"/>
+<text x="470.7" y="426" font-size="17" font-weight="400" fill="#5d7079" text-anchor="middle">2</text>
+<line x1="564.3" y1="130" x2="564.3" y2="400" stroke="#cbd5d9" stroke-width="1" stroke-opacity="0.6"/>
+<text x="564.3" y="426" font-size="17" font-weight="400" fill="#5d7079" text-anchor="middle">2.5</text>
+<line x1="658" y1="130" x2="658" y2="400" stroke="#cbd5d9" stroke-width="1" stroke-opacity="0.6"/>
+<text x="658" y="426" font-size="17" font-weight="400" fill="#5d7079" text-anchor="middle">3</text>
+<line x1="96" y1="400" x2="658" y2="400" stroke="#cbd5d9" stroke-width="1" stroke-opacity="0.6"/>
+<text x="670" y="406" font-size="17" font-weight="400" fill="#5d7079" text-anchor="start">0</text>
+<line x1="96" y1="332.5" x2="658" y2="332.5" stroke="#cbd5d9" stroke-width="1" stroke-opacity="0.6"/>
+<text x="670" y="338.5" font-size="17" font-weight="400" fill="#5d7079" text-anchor="start">100</text>
+<line x1="96" y1="265" x2="658" y2="265" stroke="#cbd5d9" stroke-width="1" stroke-opacity="0.6"/>
+<text x="670" y="271" font-size="17" font-weight="400" fill="#5d7079" text-anchor="start">200</text>
+<line x1="96" y1="197.5" x2="658" y2="197.5" stroke="#cbd5d9" stroke-width="1" stroke-opacity="0.6"/>
+<text x="670" y="203.5" font-size="17" font-weight="400" fill="#5d7079" text-anchor="start">300</text>
+<line x1="96" y1="130" x2="658" y2="130" stroke="#cbd5d9" stroke-width="1" stroke-opacity="0.6"/>
+<text x="670" y="136" font-size="17" font-weight="400" fill="#5d7079" text-anchor="start">400</text>
+<line x1="96" y1="130" x2="96" y2="400" stroke="#1b2a2f" stroke-width="1.5"/>
+<line x1="96" y1="400" x2="658" y2="400" stroke="#1b2a2f" stroke-width="1.5"/>
+<path d="M96,400 L114.7,392 L133.5,384 L152.2,376 L170.9,368.1 L189.7,360 L208.4,352.1 L227.1,344.1 L245.9,336.1 L264.6,328.1 L283.3,320.1 L302.1,312.1 L320.8,304.2 L339.5,296.2 L358.3,288.2 L377,280.2 L395.7,272.2 L414.5,264.2 L433.2,256.2 L451.9,248.3 L470.7,240.2 L489.4,232.3 L508.1,224.3 L526.9,216.3 L545.6,208.3 L564.3,200.3 L583.1,192.3 L601.8,184.3 L620.5,176.3 L639.3,168.3 L658,160.4" fill="none" stroke="#c2410c" stroke-width="2.5" stroke-linejoin="round"/>
+<circle cx="470.7" cy="240.2" r="5" fill="#1b2a2f"/>
+<text x="470.7" y="226.2" font-size="17" font-weight="700" fill="#1b2a2f" text-anchor="middle" stroke="#ffffff" stroke-width="4" stroke-linejoin="round" paint-order="stroke">عقدان · 236.7 mV</text>
+<text x="377" y="454" font-size="17" font-weight="400" fill="#5d7079" text-anchor="middle">log₁₀(i/i₀) — عقد</text>
+<text x="96" y="108" font-size="17" font-weight="400" fill="#5d7079" text-anchor="start" direction="ltr">فرط الجهد η — mV</text>
+<text x="380" y="488" font-size="17" font-weight="400" fill="#5d7079" text-anchor="middle">كل عقد إضافي في التيار يكلّف 118.0 mV — لهذا تُقاس الكفاءة عند تيار منخفض</text>
+</g></svg>

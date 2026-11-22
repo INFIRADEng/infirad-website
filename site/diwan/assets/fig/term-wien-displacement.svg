@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="760" height="514" viewBox="0 0 760 514" role="img" aria-labelledby="t">
+<title id="t">قانون فين: كل جسم يعلن حرارته بطول موجته</title>
+<rect width="760" height="514" fill="#ffffff"/>
+<g font-family="'Segoe UI', 'Noto Naskh Arabic', system-ui, sans-serif" direction="rtl">
+<text x="380" y="34" font-size="18" font-weight="700" fill="#1b2a2f" text-anchor="middle">قانون فين: كل جسم يعلن حرارته بطول موجته</text>
+<text x="380" y="60" font-size="17" font-weight="400" fill="#5d7079" text-anchor="middle">λ_max = b/T بـ b = 2.897 771 955×10⁻³ m·K</text>
+<text x="380" y="84" font-size="17" font-weight="400" fill="#5d7079" text-anchor="middle">الشمس (5778 K) في الضوء المرئي · جسم 300 K في تحت الأحمر البعيد</text>
+<line x1="96" y1="130" x2="96" y2="400" stroke="#cbd5d9" stroke-width="1" stroke-opacity="0.6"/>
+<text x="96" y="426" font-size="17" font-weight="400" fill="#5d7079" text-anchor="middle">300</text>
+<line x1="194.6" y1="130" x2="194.6" y2="400" stroke="#cbd5d9" stroke-width="1" stroke-opacity="0.6"/>
+<text x="194.6" y="426" font-size="17" font-weight="400" fill="#5d7079" text-anchor="middle">1300</text>
+<line x1="293.2" y1="130" x2="293.2" y2="400" stroke="#cbd5d9" stroke-width="1" stroke-opacity="0.6"/>
+<text x="293.2" y="426" font-size="17" font-weight="400" fill="#5d7079" text-anchor="middle">2300</text>
+<line x1="391.8" y1="130" x2="391.8" y2="400" stroke="#cbd5d9" stroke-width="1" stroke-opacity="0.6"/>
+<text x="391.8" y="426" font-size="17" font-weight="400" fill="#5d7079" text-anchor="middle">3300</text>
+<line x1="490.4" y1="130" x2="490.4" y2="400" stroke="#cbd5d9" stroke-width="1" stroke-opacity="0.6"/>
+<text x="490.4" y="426" font-size="17" font-weight="400" fill="#5d7079" text-anchor="middle">4300</text>
+<line x1="589" y1="130" x2="589" y2="400" stroke="#cbd5d9" stroke-width="1" stroke-opacity="0.6"/>
+<text x="589" y="426" font-size="17" font-weight="400" fill="#5d7079" text-anchor="middle">5300</text>
+<line x1="96" y1="400" x2="658" y2="400" stroke="#cbd5d9" stroke-width="1" stroke-opacity="0.6"/>
+<text x="670" y="406" font-size="17" font-weight="400" fill="#5d7079" text-anchor="start">0</text>
+<line x1="96" y1="346" x2="658" y2="346" stroke="#cbd5d9" stroke-width="1" stroke-opacity="0.6"/>
+<text x="670" y="352" font-size="17" font-weight="400" fill="#5d7079" text-anchor="start">2</text>
+<line x1="96" y1="292" x2="658" y2="292" stroke="#cbd5d9" stroke-width="1" stroke-opacity="0.6"/>
+<text x="670" y="298" font-size="17" font-weight="400" fill="#5d7079" text-anchor="start">4</text>
+<line x1="96" y1="238" x2="658" y2="238" stroke="#cbd5d9" stroke-width="1" stroke-opacity="0.6"/>
+<text x="670" y="244" font-size="17" font-weight="400" fill="#5d7079" text-anchor="start">6</text>
+<line x1="96" y1="184" x2="658" y2="184" stroke="#cbd5d9" stroke-width="1" stroke-opacity="0.6"/>
+<text x="670" y="190" font-size="17" font-weight="400" fill="#5d7079" text-anchor="start">8</text>
+<line x1="96" y1="130" x2="658" y2="130" stroke="#cbd5d9" stroke-width="1" stroke-opacity="0.6"/>
+<text x="670" y="136" font-size="17" font-weight="400" fill="#5d7079" text-anchor="start">10</text>
+<line x1="96" y1="130" x2="96" y2="400" stroke="#1b2a2f" stroke-width="1.5"/>
+<line x1="96" y1="400" x2="658" y2="400" stroke="#1b2a2f" stroke-width="1.5"/>
+<path d="M96,139.2 L125.6,269.6 L155.2,313.1 L184.7,334.8 L214.3,347.8 L243.9,356.5 L273.5,362.7 L303.1,367.4 L332.6,371 L362.2,373.9 L391.8,376.3 L421.4,378.3 L450.9,379.9 L480.5,381.4 L510.1,382.6 L539.7,383.7 L569.3,384.7 L598.8,385.5 L628.4,386.3 L658,387" fill="none" stroke="#7c3aed" stroke-width="2.5" stroke-linejoin="round"/>
+<circle cx="96" cy="139.2" r="5" fill="#1b2a2f"/>
+<text x="96" y="125.2" font-size="17" font-weight="700" fill="#1b2a2f" text-anchor="middle" stroke="#ffffff" stroke-width="4" stroke-linejoin="round" paint-order="stroke">300 K · 9.66 μm</text>
+<circle cx="636.1" cy="386.4" r="5" fill="#1b2a2f"/>
+<text x="636.1" y="372.4" font-size="17" font-weight="700" fill="#1b2a2f" text-anchor="middle" stroke="#ffffff" stroke-width="4" stroke-linejoin="round" paint-order="stroke">5778 K · 0.502 μm</text>
+<text x="377" y="454" font-size="17" font-weight="400" fill="#5d7079" text-anchor="middle">الحرارة المطلقة T — K</text>
+<text x="96" y="108" font-size="17" font-weight="400" fill="#5d7079" text-anchor="start" direction="ltr">λ_max — μm</text>
+<text x="380" y="488" font-size="17" font-weight="400" fill="#5d7079" text-anchor="middle">أجهزة التصوير الحراري ترى 8–14 μm: أي الأجسام قرب 300 K، لا الأبرد منها</text>
+</g></svg>

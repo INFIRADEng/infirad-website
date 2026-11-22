@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="760" height="514" viewBox="0 0 760 514" role="img" aria-labelledby="t">
+<title id="t">الإشعاع ينمو بالأُس الرابع لحرارة الكلفن</title>
+<rect width="760" height="514" fill="#ffffff"/>
+<g font-family="'Segoe UI', 'Noto Naskh Arabic', system-ui, sans-serif" direction="rtl">
+<text x="380" y="34" font-size="18" font-weight="700" fill="#1b2a2f" text-anchor="middle">الإشعاع ينمو بالأُس الرابع لحرارة الكلفن</text>
+<text x="380" y="60" font-size="17" font-weight="400" fill="#5d7079" text-anchor="middle">E = σ·T⁴ بـ σ = 5.670 374 419×10⁻⁸ W/(م²·K⁴)</text>
+<text x="380" y="84" font-size="17" font-weight="400" fill="#5d7079" text-anchor="middle">مضاعفة الحرارة المطلقة (300 ← 600 K) تضاعف الإشعاع 16 ضعفًا</text>
+<line x1="96" y1="130" x2="96" y2="400" stroke="#cbd5d9" stroke-width="1" stroke-opacity="0.6"/>
+<text x="96" y="426" font-size="17" font-weight="400" fill="#5d7079" text-anchor="middle">200</text>
+<line x1="208.4" y1="130" x2="208.4" y2="400" stroke="#cbd5d9" stroke-width="1" stroke-opacity="0.6"/>
+<text x="208.4" y="426" font-size="17" font-weight="400" fill="#5d7079" text-anchor="middle">300</text>
+<line x1="320.8" y1="130" x2="320.8" y2="400" stroke="#cbd5d9" stroke-width="1" stroke-opacity="0.6"/>
+<text x="320.8" y="426" font-size="17" font-weight="400" fill="#5d7079" text-anchor="middle">400</text>
+<line x1="433.2" y1="130" x2="433.2" y2="400" stroke="#cbd5d9" stroke-width="1" stroke-opacity="0.6"/>
+<text x="433.2" y="426" font-size="17" font-weight="400" fill="#5d7079" text-anchor="middle">500</text>
+<line x1="545.6" y1="130" x2="545.6" y2="400" stroke="#cbd5d9" stroke-width="1" stroke-opacity="0.6"/>
+<text x="545.6" y="426" font-size="17" font-weight="400" fill="#5d7079" text-anchor="middle">600</text>
+<line x1="658" y1="130" x2="658" y2="400" stroke="#cbd5d9" stroke-width="1" stroke-opacity="0.6"/>
+<text x="658" y="426" font-size="17" font-weight="400" fill="#5d7079" text-anchor="middle">700</text>
+<line x1="96" y1="400" x2="658" y2="400" stroke="#cbd5d9" stroke-width="1" stroke-opacity="0.6"/>
+<text x="670" y="406" font-size="17" font-weight="400" fill="#5d7079" text-anchor="start">0</text>
+<line x1="96" y1="346" x2="658" y2="346" stroke="#cbd5d9" stroke-width="1" stroke-opacity="0.6"/>
+<text x="670" y="352" font-size="17" font-weight="400" fill="#5d7079" text-anchor="start">3000</text>
+<line x1="96" y1="292" x2="658" y2="292" stroke="#cbd5d9" stroke-width="1" stroke-opacity="0.6"/>
+<text x="670" y="298" font-size="17" font-weight="400" fill="#5d7079" text-anchor="start">6000</text>
+<line x1="96" y1="238" x2="658" y2="238" stroke="#cbd5d9" stroke-width="1" stroke-opacity="0.6"/>
+<text x="670" y="244" font-size="17" font-weight="400" fill="#5d7079" text-anchor="start">9000</text>
+<line x1="96" y1="184" x2="658" y2="184" stroke="#cbd5d9" stroke-width="1" stroke-opacity="0.6"/>
+<text x="670" y="190" font-size="17" font-weight="400" fill="#5d7079" text-anchor="start">12000</text>
+<line x1="96" y1="130" x2="658" y2="130" stroke="#cbd5d9" stroke-width="1" stroke-opacity="0.6"/>
+<text x="670" y="136" font-size="17" font-weight="400" fill="#5d7079" text-anchor="start">15000</text>
+<line x1="96" y1="130" x2="96" y2="400" stroke="#1b2a2f" stroke-width="1.5"/>
+<line x1="96" y1="400" x2="658" y2="400" stroke="#1b2a2f" stroke-width="1.5"/>
+<path d="M96,398.4 L124.1,397.4 L152.2,396 L180.3,394.2 L208.4,391.7 L236.5,388.6 L264.6,384.7 L292.7,379.8 L320.8,373.9 L348.9,366.7 L377,358.2 L405.1,348 L433.2,336.2 L461.3,322.5 L489.4,306.6 L517.5,288.4 L545.6,267.7 L573.7,244.3 L601.8,217.8 L629.9,188.1 L658,154.9" fill="none" stroke="#9a3412" stroke-width="2.5" stroke-linejoin="round"/>
+<circle cx="208.4" cy="391.7" r="5" fill="#1b2a2f"/>
+<text x="208.4" y="377.7" font-size="17" font-weight="700" fill="#1b2a2f" text-anchor="middle" stroke="#ffffff" stroke-width="4" stroke-linejoin="round" paint-order="stroke">300 K · 459 W/م²</text>
+<circle cx="545.6" cy="267.7" r="5" fill="#1b2a2f"/>
+<text x="545.6" y="253.7" font-size="17" font-weight="700" fill="#1b2a2f" text-anchor="middle" stroke="#ffffff" stroke-width="4" stroke-linejoin="round" paint-order="stroke">600 K · 7349 W/م²</text>
+<text x="377" y="454" font-size="17" font-weight="400" fill="#5d7079" text-anchor="middle">الحرارة المطلقة T — K</text>
+<text x="380" y="488" font-size="17" font-weight="400" fill="#5d7079" text-anchor="middle">النسبة (600/300)⁴ = 16: الإشعاع لا يتبع الحرارة خطًّا</text>
+</g></svg>

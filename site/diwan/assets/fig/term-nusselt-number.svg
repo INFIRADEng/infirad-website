@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="760" height="460" viewBox="0 0 760 460" role="img" aria-labelledby="t">
+<title id="t">عدد نسلت: من معامل الحمل إلى العدد المجرد</title>
+<rect width="760" height="460" fill="#ffffff"/>
+<g font-family="'Segoe UI', 'Noto Naskh Arabic', system-ui, sans-serif" direction="rtl">
+<text x="380" y="34" font-size="18" font-weight="700" fill="#1b2a2f" text-anchor="middle">عدد نسلت: من معامل الحمل إلى العدد المجرد</text>
+<text x="380" y="60" font-size="17" font-weight="400" fill="#5d7079" text-anchor="middle">Nu = h·L/k — العدد الذي يخبرك كم يضاعف الحملُ التوصيلَ الساكن</text>
+<text x="380" y="84" font-size="17" font-weight="400" fill="#5d7079" text-anchor="middle">مثال أنبوب ماء: L = 50.0 مم</text>
+<rect x="415" y="170" width="220" height="72" rx="8" fill="#c2410c" fill-opacity="0.12" stroke="#c2410c" stroke-width="1.5"/>
+<text x="525" y="200" font-size="17" font-weight="700" fill="#1b2a2f" text-anchor="middle">معامل الحمل h</text>
+<text x="525" y="226" font-size="17" font-weight="600" fill="#1b2a2f" text-anchor="middle" direction="ltr">⁨1360.9 W/(m²·K)⁩</text>
+<line x1="409" y1="206" x2="361" y2="206" stroke="#5d7079" stroke-width="2"/>
+<path d="M349,206 l14,-7 l0,14 z" fill="#5d7079"/>
+<rect x="125" y="170" width="220" height="72" rx="8" fill="#0e7490" fill-opacity="0.12" stroke="#0e7490" stroke-width="1.5"/>
+<text x="235" y="200" font-size="17" font-weight="700" fill="#1b2a2f" text-anchor="middle">البعد المميز L</text>
+<text x="235" y="226" font-size="17" font-weight="600" fill="#1b2a2f" text-anchor="middle" direction="ltr">⁨0.05 m⁩</text>
+<rect x="415" y="320" width="220" height="72" rx="8" fill="#a16207" fill-opacity="0.12" stroke="#a16207" stroke-width="1.5"/>
+<text x="525" y="350" font-size="17" font-weight="700" fill="#1b2a2f" text-anchor="middle">توصيلية الماء k</text>
+<text x="525" y="376" font-size="17" font-weight="600" fill="#1b2a2f" text-anchor="middle" direction="ltr">⁨0.6 W/(m·K)⁩</text>
+<line x1="409" y1="356" x2="361" y2="356" stroke="#5d7079" stroke-width="2"/>
+<path d="M349,356 l14,-7 l0,14 z" fill="#5d7079"/>
+<rect x="125" y="320" width="220" height="72" rx="8" fill="#1e3a5f" fill-opacity="0.12" stroke="#1e3a5f" stroke-width="1.5"/>
+<text x="235" y="350" font-size="17" font-weight="700" fill="#1b2a2f" text-anchor="middle">النتيجة Nu = h·L/k</text>
+<text x="235" y="376" font-size="17" font-weight="600" fill="#1b2a2f" text-anchor="middle" direction="ltr">⁨113.78⁩</text>
+<path d="M235,246 V281 H525 V302" fill="none" stroke="#5d7079" stroke-width="2"/>
+<path d="M525,316 l-7,-13 l14,0 z" fill="#5d7079"/>
+<text x="380" y="434" font-size="17" font-weight="400" fill="#5d7079" text-anchor="middle">Nu = 113.78 يعني أن الحمل ينقل حرارة أكثر 113.8 مرة من التوصيل الساكن عبر الطبقة نفسها</text>
+</g></svg>

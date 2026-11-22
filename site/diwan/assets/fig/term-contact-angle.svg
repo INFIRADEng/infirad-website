@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="760" height="446" viewBox="0 0 760 446" role="img" aria-labelledby="t">
+<title id="t">زاوية التلامس: أين يقع سطحك على سلّم التبلل</title>
+<rect width="760" height="446" fill="#ffffff"/>
+<g font-family="'Segoe UI', 'Noto Naskh Arabic', system-ui, sans-serif" direction="rtl">
+<text x="380" y="34" font-size="18" font-weight="700" fill="#1b2a2f" text-anchor="middle">زاوية التلامس: أين يقع سطحك على سلّم التبلل</text>
+<text x="380" y="60" font-size="17" font-weight="400" fill="#5d7079" text-anchor="middle">cos θ = (γ_sg − γ_sl)/γ_lg — الزاوية تُقاس داخل السائل</text>
+<text x="380" y="84" font-size="17" font-weight="400" fill="#5d7079" text-anchor="middle">θ &lt; 90° تبلل جزئي · θ &gt; 90° عدم تبلل · θ = 0 تبلل تام</text>
+<rect x="120" y="212" width="290" height="118" fill="#0a7a4a" fill-opacity="0.16"/>
+<line x1="120" y1="212" x2="120" y2="330" stroke="#0a7a4a" stroke-width="1" stroke-opacity="0.5"/>
+<text x="265" y="242" font-size="17" font-weight="700" fill="#0a7a4a" text-anchor="middle">تبلل جزئي</text>
+<rect x="410" y="212" width="290" height="118" fill="#c2410c" fill-opacity="0.16"/>
+<line x1="410" y1="212" x2="410" y2="330" stroke="#c2410c" stroke-width="1" stroke-opacity="0.5"/>
+<text x="555" y="242" font-size="17" font-weight="700" fill="#c2410c" text-anchor="middle">عدم تبلل</text>
+<line x1="120" y1="330" x2="700" y2="330" stroke="#1b2a2f" stroke-width="2"/>
+<line x1="120" y1="330" x2="120" y2="338" stroke="#1b2a2f" stroke-width="1.5"/>
+<text x="120" y="360" font-size="17" font-weight="400" fill="#5d7079" text-anchor="end">0</text>
+<line x1="216.7" y1="330" x2="216.7" y2="338" stroke="#1b2a2f" stroke-width="1.5"/>
+<text x="216.7" y="360" font-size="17" font-weight="400" fill="#5d7079" text-anchor="middle">30</text>
+<line x1="313.3" y1="330" x2="313.3" y2="338" stroke="#1b2a2f" stroke-width="1.5"/>
+<text x="313.3" y="360" font-size="17" font-weight="400" fill="#5d7079" text-anchor="middle">60</text>
+<line x1="410" y1="330" x2="410" y2="338" stroke="#1b2a2f" stroke-width="1.5"/>
+<text x="410" y="360" font-size="17" font-weight="400" fill="#5d7079" text-anchor="middle">90</text>
+<line x1="506.7" y1="330" x2="506.7" y2="338" stroke="#1b2a2f" stroke-width="1.5"/>
+<text x="506.7" y="360" font-size="17" font-weight="400" fill="#5d7079" text-anchor="middle">120</text>
+<line x1="603.3" y1="330" x2="603.3" y2="338" stroke="#1b2a2f" stroke-width="1.5"/>
+<text x="603.3" y="360" font-size="17" font-weight="400" fill="#5d7079" text-anchor="middle">150</text>
+<line x1="700" y1="330" x2="700" y2="338" stroke="#1b2a2f" stroke-width="1.5"/>
+<text x="700" y="360" font-size="17" font-weight="400" fill="#5d7079" text-anchor="middle">180</text>
+<text x="410" y="386" font-size="17" font-weight="400" fill="#5d7079" text-anchor="middle">زاوية التلامس θ — درجة</text>
+<line x1="184.4" y1="210" x2="184.4" y2="330" stroke="#1e3a5f" stroke-width="2" stroke-dasharray="4 3"/>
+<text x="184.4" y="202" font-size="17" font-weight="700" fill="#1e3a5f" text-anchor="middle">زجاج نظيف · 20°</text>
+<line x1="474.4" y1="210" x2="474.4" y2="330" stroke="#a16207" stroke-width="2" stroke-dasharray="4 3"/>
+<text x="474.4" y="202" font-size="17" font-weight="700" fill="#a16207" text-anchor="middle">سطح مشمّع · 110°</text>
+<text x="380" y="420" font-size="17" font-weight="400" fill="#5d7079" text-anchor="middle">cos θ يمرّ بالصفر عند 90°: إشارته — لا الرقم وحده — هي التي تقلب سلوك التبلل</text>
+</g></svg>

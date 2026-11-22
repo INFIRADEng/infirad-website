@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="760" height="434" viewBox="0 0 760 434" role="img" aria-labelledby="t">
+<title id="t">الحرارة الكامنة تُخزّن ما يعجز عنه الماء المحسوس</title>
+<rect width="760" height="434" fill="#ffffff"/>
+<g font-family="'Segoe UI', 'Noto Naskh Arabic', system-ui, sans-serif" direction="rtl">
+<text x="380" y="34" font-size="18" font-weight="700" fill="#1b2a2f" text-anchor="middle">الحرارة الكامنة تُخزّن ما يعجز عنه الماء المحسوس</text>
+<text x="380" y="60" font-size="17" font-weight="400" fill="#5d7079" text-anchor="middle">السعة = m·c_p·ΔT + m·ΔH_fusion</text>
+<text x="380" y="84" font-size="17" font-weight="400" fill="#5d7079" text-anchor="middle">المقارنة لكل 1 kg: ماء بفارق 20 K مقابل انصهار مادة</text>
+<rect x="80" y="140" width="600" height="50" fill="#c2410c" fill-opacity="0.14" stroke="#c2410c" stroke-opacity="0.45"/>
+<text x="664" y="169" font-size="17" font-weight="700" fill="#1b2a2f" text-anchor="start">ماء محسوس · 20 K</text>
+<text x="96" y="169" font-size="17" font-weight="600" fill="#1b2a2f" text-anchor="start" direction="ltr">⁨83.6 kJ⁩</text>
+<rect x="80" y="196" width="600" height="50" fill="#0e7490" fill-opacity="0.14" stroke="#0e7490" stroke-opacity="0.45"/>
+<text x="664" y="225" font-size="17" font-weight="700" fill="#1b2a2f" text-anchor="start">بارافين · طرف أدنى</text>
+<text x="96" y="225" font-size="17" font-weight="600" fill="#1b2a2f" text-anchor="start" direction="ltr">⁨150 kJ⁩</text>
+<rect x="80" y="252" width="600" height="50" fill="#a16207" fill-opacity="0.14" stroke="#a16207" stroke-opacity="0.45"/>
+<text x="664" y="281" font-size="17" font-weight="700" fill="#1b2a2f" text-anchor="start">بارافين · طرف أعلى</text>
+<text x="96" y="281" font-size="17" font-weight="600" fill="#1b2a2f" text-anchor="start" direction="ltr">⁨250 kJ⁩</text>
+<rect x="80" y="308" width="600" height="50" fill="#1e3a5f" fill-opacity="0.14" stroke="#1e3a5f" stroke-opacity="0.45"/>
+<text x="664" y="337" font-size="17" font-weight="700" fill="#1b2a2f" text-anchor="start">ملح مائي · طرف أعلى</text>
+<text x="96" y="337" font-size="17" font-weight="600" fill="#1b2a2f" text-anchor="start" direction="ltr">⁨300 kJ⁩</text>
+<text x="380" y="408" font-size="17" font-weight="400" fill="#5d7079" text-anchor="middle">الكامن يعمل عند حرارة شبه ثابتة: البارافين 20–70 °م، والملح المائي أعلى</text>
+</g></svg>

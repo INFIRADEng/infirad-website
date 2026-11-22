@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="760" height="514" viewBox="0 0 760 514" role="img" aria-labelledby="t">
+<title id="t">توصيلية الهواء الحرارية تتبع k ∝ T^0.81</title>
+<rect width="760" height="514" fill="#ffffff"/>
+<g font-family="'Segoe UI', 'Noto Naskh Arabic', system-ui, sans-serif" direction="rtl">
+<text x="380" y="34" font-size="18" font-weight="700" fill="#1b2a2f" text-anchor="middle">توصيلية الهواء الحرارية تتبع k ∝ T^0.81</text>
+<text x="380" y="60" font-size="17" font-weight="400" fill="#5d7079" text-anchor="middle">k(25 °م) = 0.0262 واط/(م·كلفن) · الأُس الظاهر 0.81</text>
+<text x="380" y="84" font-size="17" font-weight="400" fill="#5d7079" text-anchor="middle">المنحنى محسوب من الثابت والأُس، والنقاط هي القيم الجدولية المعلنة</text>
+<line x1="96" y1="130" x2="96" y2="400" stroke="#cbd5d9" stroke-width="1" stroke-opacity="0.6"/>
+<text x="96" y="426" font-size="17" font-weight="400" fill="#5d7079" text-anchor="middle">0</text>
+<line x1="208.4" y1="130" x2="208.4" y2="400" stroke="#cbd5d9" stroke-width="1" stroke-opacity="0.6"/>
+<text x="208.4" y="426" font-size="17" font-weight="400" fill="#5d7079" text-anchor="middle">50</text>
+<line x1="320.8" y1="130" x2="320.8" y2="400" stroke="#cbd5d9" stroke-width="1" stroke-opacity="0.6"/>
+<text x="320.8" y="426" font-size="17" font-weight="400" fill="#5d7079" text-anchor="middle">100</text>
+<line x1="433.2" y1="130" x2="433.2" y2="400" stroke="#cbd5d9" stroke-width="1" stroke-opacity="0.6"/>
+<text x="433.2" y="426" font-size="17" font-weight="400" fill="#5d7079" text-anchor="middle">150</text>
+<line x1="545.6" y1="130" x2="545.6" y2="400" stroke="#cbd5d9" stroke-width="1" stroke-opacity="0.6"/>
+<text x="545.6" y="426" font-size="17" font-weight="400" fill="#5d7079" text-anchor="middle">200</text>
+<line x1="658" y1="130" x2="658" y2="400" stroke="#cbd5d9" stroke-width="1" stroke-opacity="0.6"/>
+<text x="658" y="426" font-size="17" font-weight="400" fill="#5d7079" text-anchor="middle">250</text>
+<line x1="96" y1="400" x2="658" y2="400" stroke="#cbd5d9" stroke-width="1" stroke-opacity="0.6"/>
+<text x="670" y="406" font-size="17" font-weight="400" fill="#5d7079" text-anchor="start">0.02</text>
+<line x1="96" y1="346" x2="658" y2="346" stroke="#cbd5d9" stroke-width="1" stroke-opacity="0.6"/>
+<text x="670" y="352" font-size="17" font-weight="400" fill="#5d7079" text-anchor="start">0.025</text>
+<line x1="96" y1="292" x2="658" y2="292" stroke="#cbd5d9" stroke-width="1" stroke-opacity="0.6"/>
+<text x="670" y="298" font-size="17" font-weight="400" fill="#5d7079" text-anchor="start">0.03</text>
+<line x1="96" y1="238" x2="658" y2="238" stroke="#cbd5d9" stroke-width="1" stroke-opacity="0.6"/>
+<text x="670" y="244" font-size="17" font-weight="400" fill="#5d7079" text-anchor="start">0.035</text>
+<line x1="96" y1="184" x2="658" y2="184" stroke="#cbd5d9" stroke-width="1" stroke-opacity="0.6"/>
+<text x="670" y="190" font-size="17" font-weight="400" fill="#5d7079" text-anchor="start">0.04</text>
+<line x1="96" y1="130" x2="658" y2="130" stroke="#cbd5d9" stroke-width="1" stroke-opacity="0.6"/>
+<text x="670" y="136" font-size="17" font-weight="400" fill="#5d7079" text-anchor="start">0.045</text>
+<line x1="96" y1="130" x2="96" y2="400" stroke="#1b2a2f" stroke-width="1.5"/>
+<line x1="96" y1="400" x2="658" y2="400" stroke="#1b2a2f" stroke-width="1.5"/>
+<path d="M96,352.5 L152.2,333 L208.4,313.6 L264.6,295.2 L320.8,276.9 L377,258.5 L433.2,240.2 L489.4,222.9 L545.6,204.5 L601.8,187.2 L658,170" fill="none" stroke="#0e7490" stroke-width="2.5" stroke-linejoin="round"/>
+<circle cx="152.2" cy="333" r="5" fill="#1b2a2f"/>
+<text x="152.2" y="319" font-size="17" font-weight="700" fill="#1b2a2f" text-anchor="middle" stroke="#ffffff" stroke-width="4" stroke-linejoin="round" paint-order="stroke">25 °م · 0.0262</text>
+<circle cx="601.8" cy="187.2" r="5" fill="#1b2a2f"/>
+<text x="601.8" y="173.2" font-size="17" font-weight="700" fill="#1b2a2f" text-anchor="middle" stroke="#ffffff" stroke-width="4" stroke-linejoin="round" paint-order="stroke">225 °م · 0.0397</text>
+<text x="377" y="454" font-size="17" font-weight="400" fill="#5d7079" text-anchor="middle">الحرارة °م</text>
+<text x="380" y="488" font-size="17" font-weight="400" fill="#5d7079" text-anchor="middle">من 25 إلى 225 °م ترتفع التوصيلية 52% — لا تُهمل اعتمادها على الحرارة</text>
+</g></svg>
