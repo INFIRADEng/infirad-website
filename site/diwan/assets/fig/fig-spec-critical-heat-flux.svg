@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="760" height="476" viewBox="0 0 760 476" role="img" aria-labelledby="t">
+<title id="t">سقف الغليان ينخفض مع الجاذبية: الماء عند 1 بار</title>
+<rect width="760" height="476" fill="#ffffff"/>
+<g font-family="'Segoe UI', 'Noto Naskh Arabic', system-ui, sans-serif" direction="rtl">
+<text x="380" y="34" font-size="18" font-weight="700" fill="#1b2a2f" text-anchor="middle">سقف الغليان ينخفض مع الجاذبية: الماء عند 1 بار</text>
+<text x="740" y="138" font-size="17" font-weight="600" fill="#1b2a2f" text-anchor="start">الأرض — 1 g</text>
+<rect x="270" y="146" width="470" height="14" fill="#c2410c" fill-opacity="0.85" rx="6"/>
+<text x="260" y="158" font-size="17" font-weight="700" fill="#1b2a2f" text-anchor="end" direction="ltr">⁨1.1 MW/m²⁩</text>
+<text x="740" y="196" font-size="17" font-weight="600" fill="#1b2a2f" text-anchor="start">0.23 من جاذبية الأرض</text>
+<rect x="415.3" y="204" width="324.7" height="14" fill="#0e7490" fill-opacity="0.85" rx="6"/>
+<text x="405.3" y="216" font-size="17" font-weight="700" fill="#1b2a2f" text-anchor="end" direction="ltr">⁨0.76 MW/m²⁩</text>
+<text x="740" y="254" font-size="17" font-weight="600" fill="#1b2a2f" text-anchor="start">0.061 من جاذبية الأرض</text>
+<rect x="505" y="262" width="235" height="14" fill="#a16207" fill-opacity="0.85" rx="6"/>
+<text x="495" y="274" font-size="17" font-weight="700" fill="#1b2a2f" text-anchor="end" direction="ltr">⁨0.55 MW/m²⁩</text>
+<text x="740" y="312" font-size="17" font-weight="600" fill="#1b2a2f" text-anchor="start">0.015 من جاذبية الأرض</text>
+<rect x="573.4" y="320" width="166.6" height="14" fill="#1e3a5f" fill-opacity="0.85" rx="6"/>
+<text x="563.4" y="332" font-size="17" font-weight="700" fill="#1b2a2f" text-anchor="end" direction="ltr">⁨0.39 MW/m²⁩</text>
+<line x1="740" y1="366" x2="270" y2="366" stroke="#cbd5d9" stroke-width="1"/>
+<text x="740" y="390" font-size="17" font-weight="400" fill="#5d7079" text-anchor="start">0</text>
+<text x="505" y="390" font-size="17" font-weight="400" fill="#5d7079" text-anchor="middle">0.55</text>
+<text x="270" y="390" font-size="17" font-weight="400" fill="#5d7079" text-anchor="end">1.1</text>
+<text x="505" y="416" font-size="17" font-weight="400" fill="#5d7079" text-anchor="middle">التدفّق الحراري الحرج المحسوب بمعادلة زوبر</text>
+<text x="380" y="450" font-size="17" font-weight="400" fill="#5d7079" text-anchor="middle">خصائص التشبّع عند 1 بار من جداول البخار؛ ومستويات الجاذبية من تجربة برج السقوط في تقرير ناسا.</text>
+</g></svg>
