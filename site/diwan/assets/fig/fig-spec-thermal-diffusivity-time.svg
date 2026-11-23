@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="760" height="500" viewBox="0 0 760 500" role="img" aria-labelledby="t">
+<title id="t">زمن انتشار الحرارة سماكة 1 سم — t ≈ L²/α</title>
+<rect width="760" height="500" fill="#ffffff"/>
+<g font-family="'Segoe UI', 'Noto Naskh Arabic', system-ui, sans-serif" direction="rtl">
+<text x="380" y="34" font-size="18" font-weight="700" fill="#1b2a2f" text-anchor="middle">زمن انتشار الحرارة سماكة 1 سم — t ≈ L²/α</text>
+<text x="380" y="60" font-size="17" font-weight="400" fill="#5d7079" text-anchor="middle">نفس السماكة: النحاس 0.86 ثانية والخشب 794 ثانية (13 دقيقة) — 923 ضعفًا</text>
+<text x="380" y="84" font-size="17" font-weight="400" fill="#5d7079" text-anchor="middle">الهواء أسرع من الخشب 174 مرة مع أنه أسوأ ناقل حرارة — الفارق من السعة الحرارية الحجمية</text>
+<text x="740" y="138" font-size="17" font-weight="600" fill="#1b2a2f" text-anchor="start">نحاس · α = 1.16×10⁻⁴</text>
+<rect x="738" y="146" width="2" height="14" fill="#c2410c" fill-opacity="0.85" rx="6"/>
+<text x="728" y="158" font-size="17" font-weight="700" fill="#1b2a2f" text-anchor="end" direction="ltr">⁨0.86 ث⁩</text>
+<text x="740" y="196" font-size="17" font-weight="600" fill="#1b2a2f" text-anchor="start">هواء ساكن · α = 2.19×10⁻⁵</text>
+<rect x="737.3" y="204" width="2.7" height="14" fill="#0e7490" fill-opacity="0.85" rx="6"/>
+<text x="727.3" y="216" font-size="17" font-weight="700" fill="#1b2a2f" text-anchor="end" direction="ltr">⁨4.57 ث⁩</text>
+<text x="740" y="254" font-size="17" font-weight="600" fill="#1b2a2f" text-anchor="start">ماء سائل · α = 1.44×10⁻⁷</text>
+<rect x="332.3" y="262" width="407.7" height="14" fill="#a16207" fill-opacity="0.85" rx="6"/>
+<text x="322.3" y="274" font-size="17" font-weight="700" fill="#1b2a2f" text-anchor="end" direction="ltr">⁨694 ث⁩</text>
+<text x="740" y="312" font-size="17" font-weight="600" fill="#1b2a2f" text-anchor="start">خشب · α = 1.26×10⁻⁷</text>
+<rect x="273.5" y="320" width="466.5" height="14" fill="#1e3a5f" fill-opacity="0.85" rx="6"/>
+<text x="263.5" y="332" font-size="17" font-weight="700" fill="#1b2a2f" text-anchor="end" direction="ltr">⁨794 ث⁩</text>
+<line x1="740" y1="366" x2="270" y2="366" stroke="#cbd5d9" stroke-width="1"/>
+<text x="740" y="390" font-size="17" font-weight="400" fill="#5d7079" text-anchor="start">0</text>
+<text x="505" y="390" font-size="17" font-weight="400" fill="#5d7079" text-anchor="middle">400</text>
+<text x="270" y="390" font-size="17" font-weight="400" fill="#5d7079" text-anchor="end">800</text>
+<text x="505" y="416" font-size="17" font-weight="400" fill="#5d7079" text-anchor="middle">الزمن بالثانية لقطع 10 مم (رتبة t ≈ L²/α) — α من أرقام الصفحة</text>
+<text x="380" y="450" font-size="17" font-weight="400" fill="#5d7079" text-anchor="middle">الانتشارية = التوصيل مقسومًا على السعة الحرارية الحجمية: المادة التي تخزّن كثيرًا تتأخر حرارتها</text>
+<text x="380" y="474" font-size="17" font-weight="400" fill="#5d7079" text-anchor="middle">عمودا النحاس والهواء أقصر من 5 بكسل على مقياس 800 ث — الرقم مكتوب بجانب كل عمود</text>
+</g></svg>
