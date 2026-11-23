@@ -1,0 +1,174 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>نموذج السعة المجمّعة — ديوان المعرفة</title>
+  <meta name="description" content="تبسيط يعامل الجسم ككتلة واحدة بحرارة موحّدة، فيصير تبريده أُسّيًّا بثابت زمن τ = ρ·V·c_p/(h·A). يصلح حين يكون عدد بيو أقل من 0.1، ويخطئ خطأً كبيرًا فوقه." />
+  <link rel="stylesheet" href="../assets/css/tokens.css" />
+  <link rel="stylesheet" href="../assets/css/site.css" />
+
+  <link rel="canonical" href="https://infiradev.com/diwan/terms/lumped-capacitance.html" />
+  <link rel="icon" href="https://infiradev.com/favicon.ico" sizes="48x48" />
+  <link rel="icon" type="image/png" sizes="192x192" href="https://infiradev.com/assets/favicon-192.png" />
+  <link rel="apple-touch-icon" href="https://infiradev.com/assets/apple-touch-icon.png" />
+  <script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"Organization","@id":"https://infiradev.com/#organization","name":"INFIRAD","alternateName":["انفِراد","انفراد"],"url":"https://infiradev.com/","logo":{"@type":"ImageObject","url":"https://infiradev.com/assets/logo-bilingual.png","width":990,"height":320},"slogan":"من الفكرة إلى اليقين","foundingDate":"2025","email":"info@infiradeng.com","telephone":"+966557748982","address":{"@type":"PostalAddress","addressLocality":"Riyadh","addressCountry":"SA"},"sameAs":["https://www.linkedin.com/company/infirad/"],"knowsAbout":["Engineering services","Engineering Services Provider (ESP)","Process design","Process simulation","Computational fluid dynamics","Thermal analysis","Independent engineering review","Specialized AI agents","Workflow automation","Traffic simulation"]},{"@type":"WebPage","@id":"https://infiradev.com/diwan/terms/lumped-capacitance.html#webpage","url":"https://infiradev.com/diwan/terms/lumped-capacitance.html","name":"نموذج السعة المجمّعة — ديوان المعرفة","description":"تبسيط يعامل الجسم ككتلة واحدة بحرارة موحّدة، فيصير تبريده أُسّيًّا بثابت زمن τ = ρ·V·c_p/(h·A). يصلح حين يكون عدد بيو أقل من 0.1، ويخطئ خطأً كبيرًا فوقه.","inLanguage":"ar","isPartOf":{"@id":"https://infiradev.com/#website"},"about":{"@id":"https://infiradev.com/#organization"}},{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"انفراد","item":"https://infiradev.com/"},{"@type":"ListItem","position":2,"name":"ديوان المعرفة","item":"https://infiradev.com/diwan/"},{"@type":"ListItem","position":3,"name":"نموذج السعة المجمّعة — ديوان المعرفة","item":"https://infiradev.com/diwan/terms/lumped-capacitance.html"}]}]}</script>
+</head>
+<body>
+<a class="skip" href="#main">انتقل إلى المحتوى</a>
+<header class="site-head">
+  <div class="wrap head-in">
+    <div class="brand-lockup">
+      <a class="brand" href="https://infiradev.com/" aria-label="انفراد، الموقع الرئيسي">
+        <img src="https://infiradev.com/assets/logo-bilingual.png" alt="انفراد · INFIRAD" width="990" height="320" />
+      </a>
+      <a class="diwan-name" href="../">ديوان المعرفة</a>
+    </div>
+    <nav class="nav" aria-label="أقسام ديوان المعرفة"><a href="../terms/" aria-current="page">المصطلحات</a><a href="../articles/">مقالات</a><a href="../domains/">المجالات</a><a href="../lab/">المعمل</a><a href="../about.html">عن الديوان</a></nav>
+    <nav class="head-actions" aria-label="الرجوع والموقع الرئيسي">
+      <a href="../" data-back><span aria-hidden="true">→</span> رجوع</a>
+      <a href="https://infiradev.com/">موقع انفراد الرئيسي</a>
+    </nav>
+  </div>
+</header>
+
+<main id="main">
+<article class="wrap article">
+  <a class="backlink" href="../terms/" data-back data-label="المصطلحات"><svg class="backlink-i" viewBox="0 0 24 24" width="18" height="18" aria-hidden="true" focusable="false"><path d="M9 5l7 7-7 7" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg><span>رجوع إلى المصطلحات</span></a>
+  <nav class="crumbs" aria-label="المسار">
+    <a href="../terms/">المصطلحات</a> · <a href="../domains/engineering.html">الهندسة</a>
+  </nav>
+  <h1 class="page-h">نموذج السعة المجمّعة</h1>
+  <p class="term-en" dir="ltr">Lumped Capacitance Model</p>
+  <p class="definition">تبسيط يعامل الجسم ككتلة واحدة بحرارة موحّدة، فيصير تبريده أُسّيًّا بثابت زمن τ = ρ·V·c_p/(h·A). يصلح حين يكون عدد بيو أقل من 0.1، ويخطئ خطأً كبيرًا فوقه.</p>
+  <div class="prose"><p>نموذج السعة المجمّعة يفترض أن التوصيل داخل الجسم أسرع بكثير من انتقال الحرارة عند سطحه، فتتوزع الحرارة داخله بانتظام وتتغير كلها مع الزمن بالوتيرة نفسها. عندئذٍ تصير موازنة الطاقة بسيطة: معدل فقد الحرارة يساوي معدل نقص الطاقة الداخلية، −ρ·V·c_p·dT/dt = h·A·(T − T∞)، ومنها الحل الأُسّي T(t) − T∞ = (T₀ − T∞)·exp(−t/τ) بثابت زمن τ = ρ·V·c_p/(h·A).</p><p>قيمة النموذج أنه يحوّل مسألة انتقال حرارة كاملة إلى رقم واحد: ثابت الزمن. فبعد τ واحدة يقطع الجسم 63% من فرق الحرارة، وبعد ثلاث τ يقطع 95%. ولهذا يُستعمل في تقدير زمن استجابة الحساسات وفي تبريد المشروبات وفي تحليل الأجسام الصغيرة عالية التوصيل. وحدّه هو عدد بيو: فوق 0.1 يصير التدرّج الداخلي مؤثرًا، ويُخطئ النموذج في تقدير الزمن تقديرًا متحفظًا أو متساهلًا بحسب الاتجاه.</p></div>
+  <div class="depth" aria-label="شرح معمّق"><section class="depth-sec">
+    <h2>كيف تعمل الظاهرة؟</h2>
+    <p>افتراض النموذج أن كل نقطة في الجسم ترى الحرارة نفسها في اللحظة نفسها. هذا ممكن فقط إذا كانت الحرارة تنتقل داخل الجسم أسرع من قدرة السطح على تسليمها أو سحبها. عمليًّا: مقاومة السطح 1/h تُبطئ العبور، ومقاومة الداخل L/k تُبطئ الانتشار؛ فإذا كانت الأولى هي الغالبة صار السطح هو العنق، وانتظر الداخلُ السطحَ لا العكس. ولهذا يصلح النموذج للأجسام الصغيرة عالية التوصيل في وسط بطيء، ويفشل للأجسام الكبيرة أو العازلة أو في وسط شديد التبريد.</p>
+  </section><section class="depth-sec">
+    <h2>العلاقة بالأرقام</h2>
+    <p>لكوب ماء 0.25 كغ في هواء h = 10 واط/(م²·كلفن) ومساحة سطح 0.02 م²: τ = 0.25×4,182/(10×0.02) = 5,228 ثانية، أي نحو 87 دقيقة. وبعد 30 دقيقة يبقى 71% من فرق الحرارة الأصلي. ولو كان الكوب في ماء جارٍ بـh = 500: τ = 105 ثانية فقط. ولنفس الكوب في فرن هواء مروحي h = 50: τ = 1,046 ثانية. الفارق كله من h لا من كتلة الماء، وهذا ما يجعل «انتظر حتى يبرد» بلا تحديد h عبارة بلا معنى كمّي.</p>
+  </section><section class="depth-sec">
+    <h2>مفاهيم متقاربة</h2>
+    <p>الخلط الأول: الظن أن النموذج «قانون تبريد نيوتن». نيوتن يعطي معدل الفقد عند لحظة q = h·A·(T − T∞)، والنموذج المجمّع يدمج هذه المعادلة على الزمن ليخرج بالحل الأُسّي؛ فالأول قانون محلي والثاني نتيجة تكاملية مشروطة. الخلط الثاني: استخدام النموذج لكل جسم صغير؛ الصغر وحده لا يكفي، بل نسبة h·L_c إلى k. والخلط الثالث: قراءة τ كزمن اكتمال التبريد؛ هي زمن الوصول إلى 37% من الفرق، لا إلى الصفر.</p>
+  </section><section class="depth-sec">
+    <h2>حدود التطبيق</h2>
+    <p>لا يصلح النموذج إذا تجاوز عدد بيو 0.1، ولا في الأجسام ذات التوليد الداخلي للحرارة إلا بصيغة معدّلة، ولا حين يتغير معامل الحمل h مع الزمن تغيرًا سريعًا. وفي الأجسام ذات الأبعاد المتباينة جدًّا يُحسب عدد بيو على الطول المميّز الأصغر، وقد يصلح في اتجاه ويفشل في آخر. وأخيرًا لا يعطي توزيع الحرارة داخل الجسم أصلًا؛ يعطي متوسطًا فقط، فمن احتاج حرارة القلب لم يستعمله.</p>
+  </section></div>
+  <section class="figures" aria-label="الرسوم التوضيحية">
+  <figure class="fig" id="fig-1">
+    <img class="fig-img" src="../assets/fig/fig-newton-cooling-coefficients.svg" alt="أعمدة أفقية تمثل معامل الحمل بوحدة واط لكل متر مربع وكلفن: هواء ساكن خمسة، هواء مروحي خمسة وعشرون، ماء ساكن مئة، ماء جارٍ ألف." loading="lazy" />
+    <figcaption><b>الشكل 1.</b> معاملات انتقال حراري بالحمل في الهواء والماء: من 5 واط/(م²·كلفن) للهواء الساكن إلى 1,000 للماء الجاري — الفارق 200 ضعف في ثابت الزمن.
+      <span class="credit muted small">· من عمل انفراد — رسم مولَّد من أرقام المصدر</span>
+    </figcaption>
+  </figure>
+</section>
+  <table class="facts">
+  <caption>أرقام مسنَدة إلى مصادرها</caption>
+  <thead><tr><th scope="col">الكمية</th><th scope="col">القيمة</th><th scope="col">المصدر</th></tr></thead>
+  <tbody><tr>
+      <th scope="row">ثابت الزمن لكوب ماء 0.25 كغ في هواء h = 10</th>
+      <td>5,228 <span class="unit">ثانية</span></td>
+      <td><a class="ref" href="#src-1">[1]</a></td>
+    </tr><tr>
+      <th scope="row">ثابت الزمن للكوب نفسه في ماء جارٍ h = 500</th>
+      <td>105 <span class="unit">ثانية</span></td>
+      <td><a class="ref" href="#src-1">[1]</a></td>
+    </tr><tr>
+      <th scope="row">السعة الحرارية النوعية للماء</th>
+      <td>4,182 <span class="unit">جول/(كغ·كلفن)</span></td>
+      <td><a class="ref" href="#src-2">[2]</a></td>
+    </tr><tr>
+      <th scope="row">معامل الانتقال الحراري للهواء الساكن</th>
+      <td>10 <span class="unit">واط/(م²·كلفن)</span></td>
+      <td><a class="ref" href="#src-1">[1]</a></td>
+    </tr></tbody>
+</table>
+  <section class="sources" aria-labelledby="src-h">
+  <h2 id="src-h">المصادر</h2>
+  <ol class="src-list"><li id="src-1">
+      <span class="src-num">1</span>
+      <span>Convective Heat Transfer Coefficients — The Engineering ToolBox.
+      <a href="https://www.engineeringtoolbox.com/convective-heat-transfer-d_430.html" rel="noopener nofollow" target="_blank">www.engineeringtoolbox.com/convective-heat-transfer-d_430.html</a>
+      <span class="muted small">· اطُّلع عليه 2026-11-21</span></span>
+    </li><li id="src-2">
+      <span class="src-num">2</span>
+      <span>Thermal Conductivity of Common Materials and Gases — The Engineering ToolBox.
+      <a href="https://www.engineeringtoolbox.com/thermal-conductivity-d_429.html" rel="noopener nofollow" target="_blank">www.engineeringtoolbox.com/thermal-conductivity-d_429.html</a>
+      <span class="muted small">· اطُّلع عليه 2026-11-21</span></span>
+    </li></ol>
+</section>
+  <section class="cite-block" aria-labelledby="cite-h">
+  <h2 id="cite-h">استشهد بهذا المصطلح</h2>
+  <p class="muted small">الصيغتان مبنيتان من بيانات الصفحة نفسها: العنوان والتاريخ ورابط النسخة المنشورة.</p>
+  <div class="cite-row">
+    <span class="cite-label">APA</span>
+    <pre class="cite-text" id="cite-apa" dir="ltr">نموذج السعة المجمّعة — Lumped Capacitance Model. (2026). ديوان المعرفة — انفراد. https://infiradev.com/diwan/terms/lumped-capacitance.html</pre>
+    <button type="button" class="cite-copy" data-copy="cite-apa">نسخ</button>
+  </div>
+  <div class="cite-row">
+    <span class="cite-label">BibTeX</span>
+    <pre class="cite-text" id="cite-bib" dir="ltr">@misc{lumped-capacitance2026,
+  title        = {نموذج السعة المجمّعة},
+  titleaddon   = {Lumped Capacitance Model},
+  howpublished = {{ديوان المعرفة — انفراد} — مرجع علمي عربي},
+  year         = {2026},
+  url          = {https://infiradev.com/diwan/terms/lumped-capacitance.html},
+  urldate      = {2026-11-23},
+  note         = {مراجعة علمية: عبدالله الهويدي — مراجعة في تطبيق انفراد}
+}</pre>
+    <button type="button" class="cite-copy" data-copy="cite-bib">نسخ</button>
+  </div>
+</section>
+  <section class="related">
+    <h2 class="section-h">مصطلحات في المجال نفسه</h2>
+    <div class="grid"><article class="card">
+  <a class="card-link" href="../terms/critical-heat-flux.html">
+    <h3>التدفّق الحراري الحرج: السقف الذي ينقلب عنده الغليان إلى جفاف</h3>
+    <p class="clamp">أعلى تدفّق حراري يستطيع سطح مغمور في ماء مشبّع عند 1 بار أن ينقله بالغليان النووي هو نحو 1.1 ميجاوات/م². تجاوز هذا الحدّ يغطّي السطح ببخار عازل فتقفز حرارته قبل أن ينصهر المعدن.</p>
+  </a>
+  <div class="card-meta">
+    <span class="chip">الهندسة</span>
+    <span class="src-count" title="عدد المصادر">المصادر: 5</span>
+  </div>
+</article>
+    <article class="card">
+  <a class="card-link" href="../terms/biot-number.html">
+    <h3>متى يجوز اعتبار الجسم الصلب كله بحرارة واحدة؟ عدد بيوت</h3>
+    <p class="clamp">عدد بيوت هو نسبة مقاومة التوصيل داخل الجسم إلى مقاومة الحمل على سطحه (Bi = h·L/k)، وهو ما يحدد إن كانت درجة الحرارة داخل الجسم متجانسة. صفيحة فولاذية بسماكة 20 مم في هواء ساكن لها 0.0023 فتُعالج ككتلة واحدة، وفي ماء متحرك تصير 0.47 فيسقط هذا الافتراض.</p>
+  </a>
+  <div class="card-meta">
+    <span class="chip">الهندسة</span>
+    <span class="src-count" title="عدد المصادر">المصادر: 5</span>
+  </div>
+</article>
+    <article class="card">
+  <a class="card-link" href="../terms/pinch-analysis.html">
+    <h3>نقطة التقارب الحراري: 90 كيلوواط بخار بدل 485 في شبكة أربعة تيارات</h3>
+    <p class="clamp">تحليل التقارب الحراري يحسب أقل بخار تسخين وأقل ماء تبريد تحتاجهما شبكة تيارات قبل تصميم أي مبادل. في شبكة من أربعة تيارات وفرق حرارة أدنى 20 كلفن، الحد الأدنى 90 كيلوواط بخارًا و125 ماءَ تبريد، بدل 485 و520 بلا تكامل.</p>
+  </a>
+  <div class="card-meta">
+    <span class="chip">الهندسة</span>
+    <span class="src-count" title="عدد المصادر">المصادر: 3</span>
+  </div>
+</article></div>
+  </section>
+  <p class="reviewline muted small">راجعه: عبدالله الهويدي — مراجعة في تطبيق انفراد · 2026-11-23 · آخر تحديث 2026-11-23</p>
+</article>
+</main>
+<footer class="site-foot">
+  <div class="wrap foot-in">
+    <div>
+      <b>ديوان المعرفة</b> — من المفهوم إلى التجربة
+      <div class="muted small">قسم علمي داخل انفراد · <a href="https://infiradev.com">infiradev.com</a> · <a href="mailto:info@infiradev.com">info@infiradev.com</a></div>
+    </div>
+    <div class="muted small">
+      <a href="../about.html">سياسة التحرير والمصادر</a> ·
+      <a href="../terms/">المصطلحات</a> ·
+      <a href="../lab/">المعمل الافتراضي</a>
+    </div>
+  </div>
+</footer>
+<script src="../assets/js/site.js" defer></script>
+</body>
+</html>
