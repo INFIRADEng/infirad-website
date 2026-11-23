@@ -1,6 +1,6 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="760" height="514" viewBox="0 0 760 514" role="img" aria-labelledby="t">
+<svg xmlns="http://www.w3.org/2000/svg" width="760" height="538" viewBox="0 0 760 538" role="img" aria-labelledby="t">
 <title id="t">الطاقة اللازمة لإذابة الجليد وتسخينه إلى 20 °م</title>
-<rect width="760" height="514" fill="#ffffff"/>
+<rect width="760" height="538" fill="#ffffff"/>
 <g font-family="'Segoe UI', 'Noto Naskh Arabic', system-ui, sans-serif" direction="rtl">
 <text x="380" y="34" font-size="18" font-weight="700" fill="#1b2a2f" text-anchor="middle">الطاقة اللازمة لإذابة الجليد وتسخينه إلى 20 °م</text>
 <line x1="96" y1="130" x2="96" y2="400" stroke="#cbd5d9" stroke-width="1" stroke-opacity="0.6"/>
@@ -40,5 +40,6 @@
 <text x="283.3" y="289.2" font-size="17" font-weight="700" fill="#1b2a2f" text-anchor="middle" stroke="#ffffff" stroke-width="4" stroke-linejoin="round" paint-order="stroke">200 غ ← 90 ك.ج</text>
 <text x="377" y="454" font-size="17" font-weight="400" fill="#5d7079" text-anchor="middle">كتلة الجليد (غ)</text>
 <text x="96" y="108" font-size="17" font-weight="400" fill="#5d7079" text-anchor="start" direction="ltr">الطاقة (ك.ج)</text>
-<text x="380" y="488" font-size="17" font-weight="400" fill="#5d7079" text-anchor="middle">الانصهار وحده يستهلك نحو 80% من الطاقة: إعطاء الجليد حرارة حتى 0 °م لا يكفي، بل يجب كسر ترتيب الشبكة البلورية.</text>
+<text x="380" y="488" font-size="17" font-weight="400" fill="#5d7079" text-anchor="middle">الانصهار وحده يستهلك نحو 80% من الطاقة: إعطاء الجليد حرارة حتى 0 °م لا يكفي،</text>
+<text x="380" y="512" font-size="17" font-weight="400" fill="#5d7079" text-anchor="middle">بل يجب كسر ترتيب الشبكة البلورية.</text>
 </g></svg>

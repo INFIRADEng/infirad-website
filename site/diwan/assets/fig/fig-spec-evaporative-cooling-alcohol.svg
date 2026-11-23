@@ -1,6 +1,6 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="760" height="514" viewBox="0 0 760 514" role="img" aria-labelledby="t">
+<svg xmlns="http://www.w3.org/2000/svg" width="760" height="538" viewBox="0 0 760 538" role="img" aria-labelledby="t">
 <title id="t">قدرة التبريد مقابل معدل التبخر (إيثانول)</title>
-<rect width="760" height="514" fill="#ffffff"/>
+<rect width="760" height="538" fill="#ffffff"/>
 <g font-family="'Segoe UI', 'Noto Naskh Arabic', system-ui, sans-serif" direction="rtl">
 <text x="380" y="34" font-size="18" font-weight="700" fill="#1b2a2f" text-anchor="middle">قدرة التبريد مقابل معدل التبخر (إيثانول)</text>
 <line x1="96" y1="130" x2="96" y2="400" stroke="#cbd5d9" stroke-width="1" stroke-opacity="0.6"/>
@@ -38,5 +38,6 @@
 <text x="199.2" y="196.8" font-size="17" font-weight="700" fill="#1b2a2f" text-anchor="middle" stroke="#ffffff" stroke-width="4" stroke-linejoin="round" paint-order="stroke">2 غ/د ← 28.0 واط</text>
 <text x="377" y="454" font-size="17" font-weight="400" fill="#5d7079" text-anchor="middle">المعدل (غ/دقيقة)</text>
 <text x="96" y="108" font-size="17" font-weight="400" fill="#5d7079" text-anchor="start" direction="ltr">القدرة (واط)</text>
-<text x="380" y="488" font-size="17" font-weight="400" fill="#5d7079" text-anchor="middle">كل غرام يتبخر يحمل معه حرارته الكامنة: مضاعفة المعدل تضاعف القدرة خطيًا، والفارق بين الكحول والماء هو قيمة L وحدها.</text>
+<text x="380" y="488" font-size="17" font-weight="400" fill="#5d7079" text-anchor="middle">كل غرام يتبخر يحمل معه حرارته الكامنة: مضاعفة المعدل تضاعف القدرة خطيًا،</text>
+<text x="380" y="512" font-size="17" font-weight="400" fill="#5d7079" text-anchor="middle">والفارق بين الكحول والماء هو قيمة L وحدها.</text>
 </g></svg>
