@@ -342,11 +342,17 @@ function pipeNarrow(v, out, t) {
 // ── 8) جدار بطبقات: فقد الحرارة ────────────────────────────────────────
 function wall(v, out, t) {
   const ops = [];
-  const u = clamp(out.u ?? 1, 0, 20);          // W/m²·K
-  const q = clamp(out.q ?? 300, 0, 1e6);       // واط كلي
+  // مفاتيح النموذج الفعلية (sim-1d-conduction): المخرجات q/flux/resistance،
+  // والمدخلات k/length/deltaT/area. لا تُقرأ هنا مفاتيح لا ينتجها النموذج،
+  // وإلا رسم المشهد أرقامًا من افتراضاته الداخلية تخالف جدول المخرجات.
+  const q = clamp(out.q ?? 0, 0, 1e6);              // واط كلي
+  const flux = clamp(out.flux ?? 0, 0, 1e6);        // W/m²
+  const resistance = clamp(out.resistance ?? 0, 0, 1e3); // K/W
   const dT = clamp(v.deltaT ?? 15, 1, 40);
-  const ins = clamp(v.insulation ?? 50, 20, 150); // مم
-  const tin = 24;                              // افتراض النموذج: الداخل 24 °م
+  const len = clamp(v.length ?? 200, 10, 500);      // مم سماكة الجدار
+  const k = clamp(v.k ?? 0.8, 0.02, 400);           // W/(m·K)
+  const ins = len;                                  // السماكة المرسومة = سماكة النموذج
+  const tin = 24;                                   // افتراض النموذج: الداخل 24 °م
   const tout = tin - dT;
   ops.push(rect(0, 0, W, H, { fill: "#fbfcfd" }));
   const wallY = 66, wallH = 186;
@@ -365,30 +371,35 @@ function wall(v, out, t) {
     lx += l.w;
   }
   const wallX = W / 2 - total / 2;
-  // أسهم حرارة: عددها وكثافتها ∝ الفيض المحسوب
-  const nArrows = clamp(Math.round(u * 1.6), 1, 7);
+  // أسهم حرارة: عددها وكثافتها ∝ الفيض المحسوب (flux) لا معامل غير موجود
+  const nArrows = clamp(Math.round(flux / 400), 1, 7);
   for (let i = 0; i < nArrows; i++) {
     const yy = wallY + 24 + (i * (wallH - 46)) / Math.max(1, nArrows - 1);
     const ph = Math.sin(t / 420 + i) * 6;
-    ops.push(...arrow(wallX - 96, yy + ph, wallX - 12, yy + ph, { stroke: P.warm, width: 3 + clamp01(u / 4) * 4 }));
-    ops.push(...arrow(wallX + total + 12, yy + ph, wallX + total + 96, yy + ph, { stroke: P.warm, width: 3 + clamp01(u / 4) * 4 }));
+    ops.push(...arrow(wallX - 96, yy + ph, wallX - 12, yy + ph, { stroke: P.warm, width: 3 + clamp01(flux / 2000) * 4 }));
+    ops.push(...arrow(wallX + total + 12, yy + ph, wallX + total + 96, yy + ph, { stroke: P.warm, width: 3 + clamp01(flux / 2000) * 4 }));
   }
   // أرقام الغرفتين
   ops.push(mid(wallX - 70, wallY + wallH + 30, iso(`${num(tin, 1)} °م`), { size: 22, weight: 700, fill: P.ink }));
   ops.push(arRight(wallX - 96, wallY + wallH + 2, "داخل", { size: 17, fill: P.muted }));
   ops.push(mid(wallX + total + 70, wallY + wallH + 30, iso(`${num(tout, 1)} °م`), { size: 22, weight: 700, fill: P.ink }));
   ops.push(arLeft(wallX + total + 44, wallY + wallH + 2, "خارج", { size: 17, fill: P.muted }));
-  ops.push(mid(W / 2, 36, iso(`U = ${num(u, 2)} و/م²·ك · الفقد = ${num(q, 0)} واط`), { size: 22, weight: 700, fill: P.ink }));
-  ops.push(mid(W / 2, wallY - 6, iso(`سماكة العزل ${num(ins, 0)} مم`), { size: 18, fill: P.muted }));
-  ops.push(arRight(W - 24, 306, "العزل الأسمك يقلّل U فتقلّ الأسهم — هذا معنى مقاومة الجدار", { size: 17, fill: P.muted }));
+  ops.push(mid(W / 2, 36, iso(`R = ${num(resistance, 4)} ك/واط · الفقد = ${num(q, 0)} واط`), { size: 22, weight: 700, fill: P.ink }));
+  ops.push(mid(W / 2, wallY - 6, iso(`سماكة الجدار ${num(ins, 0)} مم · k = ${num(k, 2)} و/م·ك`), { size: 18, fill: P.muted }));
+  ops.push(arRight(W - 24, 306, "السماكة الأكبر ترفع المقاومة فيقل الفيض — هذا معنى مقاومة الجدار", { size: 17, fill: P.muted }));
   return ops;
 }
 
 // ── 9) صفيحة تحت الشمس: توازن الإشعاع ──────────────────────────────────
 function plateSun(v, out, t) {
   const ops = [];
-  const Teq = clamp(out.kelvin ?? 300, 150, 900); // كلفن
-  const Tcel = clamp(out.celsius ?? Teq - 273.15, -130, 650);
+  // مفاتيح النموذج الفعلية (sim-blackbody): المخرجات q/qemit/qabs.
+  // لا تُقرأ kelvin/celsius — النموذج لا ينتجهما، فكان المشهد يعرض 300 كلفن ثابتة.
+  const q = clamp(out.q ?? 0, 0, 1e7);          // واط صافي
+  const qemit = clamp(out.qemit ?? 0, 0, 1e7);  // واط صادر
+  const qabs = clamp(out.qabs ?? 0, 0, 1e7);    // واط وارد
+  const area = clamp(v.area ?? 1, 0.01, 100);   // م²
+  const emissivity = clamp(v.emissivity ?? 0.9, 0.01, 1);
   const sunX = 110, sunY = 110;
   ops.push(circle(sunX, sunY, 44, { fill: "#f6c04a", stroke: P.ochre, width: 3 }));
   for (let i = 0; i < 10; i++) {
@@ -404,16 +415,17 @@ function plateSun(v, out, t) {
   // الصفيحة
   ops.push(rect(430, 150, 26, 130, { fill: P.navy, stroke: P.ink, width: 2, rx: 4 }));
   ops.push(mid(470, 140, "الصفيحة", { size: 17, fill: P.muted }));
-  // إشعاع صادر: أطوال الأسهم ∝ T⁴
-  const frac = clamp((Teq - 150) / 750, 0.05, 1);
+  // إشعاع صادر: أطوال الأسهم ∝ qemit/qabs المحسوبين
+  const frac = clamp(qemit / Math.max(1, qabs), 0.05, 1);
   for (let i = 0; i < 4; i++) {
     const yy = 170 + i * 28;
     ops.push(...arrow(470, yy, 470 + 40 + frac * 150, yy - 22, { stroke: P.warm, width: 4 }));
   }
-  ops.push(mid(600, 92, iso(`${num(Teq, 0)} كلفن`), { size: 26, weight: 700, fill: P.ink }));
-  ops.push(mid(600, 118, iso(`${num(Tcel, 1)} °م`), { size: 20, weight: 700, fill: P.ink }));
+  ops.push(mid(600, 92, iso(`صادر = ${num(qemit, 0)} واط`), { size: 26, weight: 700, fill: P.ink }));
+  ops.push(mid(600, 118, iso(`وارد = ${num(qabs, 0)} واط`), { size: 20, weight: 700, fill: P.ink }));
+  ops.push(mid(600, 142, iso(`صافٍ = ${num(q, 0)} واط`), { size: 20, weight: 700, fill: P.ink }));
   ops.push(arRight(W - 24, 300, "الوارد من الشمس = الصادر من الصفيحة عند التوازن", { size: 17, fill: P.muted }));
-  ops.push(arRight(W - 24, 44, "صفيحة في الفضاء: تسخن حتى تتوازن", { size: 17, fill: P.muted }));
+  ops.push(arRight(W - 24, 44, `صفيحة ${num(area, 2)} م² بانبعاثية ${num(emissivity, 2)}: تسخن حتى تتوازن`, { size: 17, fill: P.muted }));
   return ops;
 }
 
