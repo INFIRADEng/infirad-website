@@ -1,0 +1,45 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="760" height="538" viewBox="0 0 760 538" role="img" aria-labelledby="t">
+<title id="t">معامل التكثيف الغشائي ينقص مع طول السطح</title>
+<rect width="760" height="538" fill="#ffffff"/>
+<g font-family="'Segoe UI', 'Noto Naskh Arabic', system-ui, sans-serif" direction="rtl">
+<text x="380" y="34" font-size="18" font-weight="700" fill="#1b2a2f" text-anchor="middle">معامل التكثيف الغشائي ينقص مع طول السطح</text>
+<text x="380" y="60" font-size="17" font-weight="400" fill="#5d7079" text-anchor="middle">بخار ماء مشبع عند 100 °س · سطح عند 90 °س · نظرية نوسلت</text>
+<text x="380" y="84" font-size="17" font-weight="400" fill="#5d7079" text-anchor="middle">المضاعفة الواحدة في الطول تضرب المعامل في 0.84</text>
+<line x1="96" y1="130" x2="96" y2="400" stroke="#cbd5d9" stroke-width="1" stroke-opacity="0.6"/>
+<text x="96" y="426" font-size="17" font-weight="400" fill="#5d7079" text-anchor="middle">0.25</text>
+<line x1="208.4" y1="130" x2="208.4" y2="400" stroke="#cbd5d9" stroke-width="1" stroke-opacity="0.6"/>
+<text x="208.4" y="426" font-size="17" font-weight="400" fill="#5d7079" text-anchor="middle">1</text>
+<line x1="320.8" y1="130" x2="320.8" y2="400" stroke="#cbd5d9" stroke-width="1" stroke-opacity="0.6"/>
+<text x="320.8" y="426" font-size="17" font-weight="400" fill="#5d7079" text-anchor="middle">1.75</text>
+<line x1="433.2" y1="130" x2="433.2" y2="400" stroke="#cbd5d9" stroke-width="1" stroke-opacity="0.6"/>
+<text x="433.2" y="426" font-size="17" font-weight="400" fill="#5d7079" text-anchor="middle">2.5</text>
+<line x1="545.6" y1="130" x2="545.6" y2="400" stroke="#cbd5d9" stroke-width="1" stroke-opacity="0.6"/>
+<text x="545.6" y="426" font-size="17" font-weight="400" fill="#5d7079" text-anchor="middle">3.25</text>
+<line x1="658" y1="130" x2="658" y2="400" stroke="#cbd5d9" stroke-width="1" stroke-opacity="0.6"/>
+<text x="658" y="426" font-size="17" font-weight="400" fill="#5d7079" text-anchor="middle">4</text>
+<line x1="96" y1="400" x2="658" y2="400" stroke="#cbd5d9" stroke-width="1" stroke-opacity="0.6"/>
+<text x="670" y="406" font-size="17" font-weight="400" fill="#5d7079" text-anchor="start">4000</text>
+<line x1="96" y1="355" x2="658" y2="355" stroke="#cbd5d9" stroke-width="1" stroke-opacity="0.6"/>
+<text x="670" y="361" font-size="17" font-weight="400" fill="#5d7079" text-anchor="start">5000</text>
+<line x1="96" y1="310" x2="658" y2="310" stroke="#cbd5d9" stroke-width="1" stroke-opacity="0.6"/>
+<text x="670" y="316" font-size="17" font-weight="400" fill="#5d7079" text-anchor="start">6000</text>
+<line x1="96" y1="265" x2="658" y2="265" stroke="#cbd5d9" stroke-width="1" stroke-opacity="0.6"/>
+<text x="670" y="271" font-size="17" font-weight="400" fill="#5d7079" text-anchor="start">7000</text>
+<line x1="96" y1="220" x2="658" y2="220" stroke="#cbd5d9" stroke-width="1" stroke-opacity="0.6"/>
+<text x="670" y="226" font-size="17" font-weight="400" fill="#5d7079" text-anchor="start">8000</text>
+<line x1="96" y1="175" x2="658" y2="175" stroke="#cbd5d9" stroke-width="1" stroke-opacity="0.6"/>
+<text x="670" y="181" font-size="17" font-weight="400" fill="#5d7079" text-anchor="start">9000</text>
+<line x1="96" y1="130" x2="658" y2="130" stroke="#cbd5d9" stroke-width="1" stroke-opacity="0.6"/>
+<text x="670" y="136" font-size="17" font-weight="400" fill="#5d7079" text-anchor="start">10000</text>
+<line x1="96" y1="130" x2="96" y2="400" stroke="#1b2a2f" stroke-width="1.5"/>
+<line x1="96" y1="400" x2="658" y2="400" stroke="#1b2a2f" stroke-width="1.5"/>
+<path d="M96,167.4 L133.5,233 L170.9,266.4 L208.4,288.2 L283.3,316.3 L358.3,334.6 L508.1,358.3 L658,373.7" fill="none" stroke="#c2410c" stroke-width="2.5" stroke-linejoin="round"/>
+<circle cx="208.4" cy="288.2" r="5" fill="#1b2a2f"/>
+<text x="208.4" y="274.2" font-size="17" font-weight="700" fill="#1b2a2f" text-anchor="middle" stroke="#ffffff" stroke-width="4" stroke-linejoin="round" paint-order="stroke">1 م: 6,484</text>
+<circle cx="658" cy="373.7" r="5" fill="#1b2a2f"/>
+<text x="658" y="359.7" font-size="17" font-weight="700" fill="#1b2a2f" text-anchor="middle" stroke="#ffffff" stroke-width="4" stroke-linejoin="round" paint-order="stroke">4 م: 4,585</text>
+<text x="377" y="454" font-size="17" font-weight="400" fill="#5d7079" text-anchor="middle">طول اللوح الرأسي L (متر)</text>
+<text x="96" y="108" font-size="17" font-weight="400" fill="#5d7079" text-anchor="start" direction="ltr">h — W/(m²·K)</text>
+<text x="380" y="488" font-size="17" font-weight="400" fill="#5d7079" text-anchor="middle">المصدر: معادلة نوسلت بخواص NIST عند 100 °س</text>
+<text x="380" y="512" font-size="17" font-weight="400" fill="#5d7079" text-anchor="middle">السماكة عند أسفل لوح المتر 0.104 مم</text>
+</g></svg>
