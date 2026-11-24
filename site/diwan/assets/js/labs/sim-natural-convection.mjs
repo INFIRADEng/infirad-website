@@ -15,7 +15,14 @@ export const compute = ({ dT, length }) => {
   const nusselt = 0.59 * Math.pow(Math.max(ra, 1), 0.25);
   const h = (nusselt * K_AIR) / L;               // W/(m²·K)
   const flux = h * dT;                           // W/m²
-  return { ra, nusselt, h, flux };
+  // حدود الارتباط: لا يمثّل النموذج جريانًا مضطربًا ولا هواءً ساكنًا، ولا يُعرض رقم خارج مداه كأنه قياس.
+  const warning =
+    ra < 1e4
+      ? "رقم رايلي أقل من 10⁴: الهواء حول السطح شبه ساكن، والارتباط الصفحي خارج مداه — الرقم استقراء لا قياس."
+      : ra > 1e9
+        ? "رقم رايلي فوق 10⁹: الجريان صار مضطربًا، والارتباط الصفحي يقلّل معامل الحمل — الرقم استقراء لا قياس."
+        : "";
+  return warning ? { ra, nusselt, h, flux, _warning: warning } : { ra, nusselt, h, flux };
 };
 
 if (typeof document !== "undefined") startLab(compute);

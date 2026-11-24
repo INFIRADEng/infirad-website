@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="760" height="538" viewBox="0 0 760 538" role="img" aria-labelledby="t">
+<title id="t">الطاقة اللازمة مقابل الكتلة</title>
+<rect width="760" height="538" fill="#ffffff"/>
+<g font-family="'Segoe UI', 'Noto Naskh Arabic', system-ui, sans-serif" direction="rtl">
+<text x="380" y="34" font-size="18" font-weight="700" fill="#1b2a2f" text-anchor="middle">الطاقة اللازمة مقابل الكتلة</text>
+<line x1="96" y1="130" x2="96" y2="400" stroke="#cbd5d9" stroke-width="1" stroke-opacity="0.6"/>
+<text x="96" y="426" font-size="17" font-weight="400" fill="#5d7079" text-anchor="middle">0.1</text>
+<line x1="325.4" y1="130" x2="325.4" y2="400" stroke="#cbd5d9" stroke-width="1" stroke-opacity="0.6"/>
+<text x="325.4" y="426" font-size="17" font-weight="400" fill="#5d7079" text-anchor="middle">2.1</text>
+<line x1="554.8" y1="130" x2="554.8" y2="400" stroke="#cbd5d9" stroke-width="1" stroke-opacity="0.6"/>
+<text x="554.8" y="426" font-size="17" font-weight="400" fill="#5d7079" text-anchor="middle">4.1</text>
+<line x1="96" y1="400" x2="658" y2="400" stroke="#cbd5d9" stroke-width="1" stroke-opacity="0.6"/>
+<text x="670" y="406" font-size="17" font-weight="400" fill="#5d7079" text-anchor="start">0</text>
+<line x1="96" y1="332.5" x2="658" y2="332.5" stroke="#cbd5d9" stroke-width="1" stroke-opacity="0.6"/>
+<text x="670" y="338.5" font-size="17" font-weight="400" fill="#5d7079" text-anchor="start">500</text>
+<line x1="96" y1="265" x2="658" y2="265" stroke="#cbd5d9" stroke-width="1" stroke-opacity="0.6"/>
+<text x="670" y="271" font-size="17" font-weight="400" fill="#5d7079" text-anchor="start">1000</text>
+<line x1="96" y1="197.5" x2="658" y2="197.5" stroke="#cbd5d9" stroke-width="1" stroke-opacity="0.6"/>
+<text x="670" y="203.5" font-size="17" font-weight="400" fill="#5d7079" text-anchor="start">1500</text>
+<line x1="96" y1="130" x2="658" y2="130" stroke="#cbd5d9" stroke-width="1" stroke-opacity="0.6"/>
+<text x="670" y="136" font-size="17" font-weight="400" fill="#5d7079" text-anchor="start">2000</text>
+<line x1="96" y1="130" x2="96" y2="400" stroke="#1b2a2f" stroke-width="1.5"/>
+<line x1="96" y1="400" x2="658" y2="400" stroke="#1b2a2f" stroke-width="1.5"/>
+<path d="M96,395.5 L114.7,388.1 L133.5,380.8 L152.2,373.4 L170.9,366 L189.7,358.7 L208.4,351.3 L227.1,343.9 L245.9,336.6 L264.6,329.2 L283.3,321.8 L302.1,314.5 L320.8,307.1 L339.5,299.8 L358.3,292.4 L377,285 L395.7,277.7 L414.5,270.3 L433.2,262.9 L451.9,255.6 L470.7,248.2 L489.4,240.8 L508.1,233.5 L526.9,226.1 L545.6,218.7 L564.3,211.4 L583.1,204 L601.8,196.6 L620.5,189.3 L639.3,181.9 L658,174.6" fill="none" stroke="#c2410c" stroke-width="2.5" stroke-linejoin="round"/>
+<circle cx="199.2" cy="354.9" r="5" fill="#1b2a2f"/>
+<text x="199.2" y="340.9" font-size="17" font-weight="700" fill="#1b2a2f" text-anchor="middle" stroke="#ffffff" stroke-width="4" stroke-linejoin="round" paint-order="stroke">1.00 كجم ← 334.0 ك.جول</text>
+<text x="377" y="454" font-size="17" font-weight="400" fill="#5d7079" text-anchor="middle">الكتلة (كجم)</text>
+<text x="96" y="108" font-size="17" font-weight="400" fill="#5d7079" text-anchor="start" direction="ltr">الطاقة اللازمة (ك.جول)</text>
+<text x="380" y="488" font-size="17" font-weight="400" fill="#5d7079" text-anchor="middle">محسوب من Q = m · L</text>
+<text x="380" y="512" font-size="17" font-weight="400" fill="#5d7079" text-anchor="middle">بقية المدخلات عند الحالة الافتراضية؛ كل نقطة من دالة الحساب نفسها.</text>
+</g></svg>
