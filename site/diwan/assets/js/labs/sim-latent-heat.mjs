@@ -1,6 +1,7 @@
 // تجربة: الحرارة الكامنة — Q = m · L
 // الطاقة اللازمة لتغيير الطور لا ترفع الحرارة: تُستهلك في كسر الروابط بين الجزيئات.
 import { startLab } from "../lab-kit.mjs";
+import { readInputs } from "./input-guard.mjs";
 
 // الحرارة الكامنة النوعية لكل مادة (kJ/kg) — قيم مرجعية معيارية
 const LATENT = {
@@ -9,8 +10,19 @@ const LATENT = {
   nitrogen: { fusion: 25.7, vaporization: 199, label: "نيتروجين" },
 };
 
-export const compute = ({ mass, substance, phase }) => {
-  const mat = LATENT[substance] ?? LATENT.water;
+// المادة والطور يُفحصان كخيارين مغلقين: مادة مجهولة لا تصير ماءً بصمت،
+// والطور المكتوب خطأً لا يُحسب انصهارًا بصمت.
+const INPUTS = [
+  { id: "mass", label: "الكتلة", unit: "كجم", min: 0.1, max: 5 },
+  { id: "substance", label: "المادة", choices: Object.keys(LATENT) },
+  { id: "phase", label: "الطور", choices: ["fusion", "vaporization"] },
+];
+
+export const compute = (values) => {
+  const input = readInputs(values, INPUTS);
+  if (input._error) return input;
+  const { mass, substance, phase } = input;
+  const mat = LATENT[substance];
   const L = phase === "vaporization" ? mat.vaporization : mat.fusion;
   const q = mass * L;                 // kJ
   const qJ = q * 1000;                // جول
