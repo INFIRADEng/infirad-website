@@ -1,0 +1,133 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>كم طاقة يلزم لتغيير طور المادة؟ — ديوان المعرفة</title>
+  <meta name="description" content="تغيير الطور يستهلك طاقة بلا أن ترتفع الحرارة: الحرارة الكامنة تفصل الجزيئات ولا تزيد حركتها. غيّر الكتلة والمادة والطور وقارن الطاقة والزمن اللازم." />
+  <link rel="stylesheet" href="../assets/css/tokens.css" />
+  <link rel="stylesheet" href="../assets/css/site.css" />
+
+  <link rel="canonical" href="https://infiradev.com/diwan/lab/sim-latent-heat.html" />
+  <link rel="icon" href="https://infiradev.com/favicon.ico" sizes="48x48" />
+  <link rel="icon" type="image/png" sizes="192x192" href="https://infiradev.com/assets/favicon-192.png" />
+  <link rel="apple-touch-icon" href="https://infiradev.com/assets/apple-touch-icon.png" />
+  <script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"Organization","@id":"https://infiradev.com/#organization","name":"INFIRAD","alternateName":["انفِراد","انفراد"],"url":"https://infiradev.com/","logo":{"@type":"ImageObject","url":"https://infiradev.com/assets/logo-bilingual.png","width":990,"height":320},"slogan":"من الفكرة إلى اليقين","foundingDate":"2025","email":"info@infiradeng.com","telephone":"+966557748982","address":{"@type":"PostalAddress","addressLocality":"Riyadh","addressCountry":"SA"},"sameAs":["https://www.linkedin.com/company/infirad/"],"knowsAbout":["Engineering services","Engineering Services Provider (ESP)","Process design","Process simulation","Computational fluid dynamics","Thermal analysis","Independent engineering review","Specialized AI agents","Workflow automation","Traffic simulation"]},{"@type":"WebPage","@id":"https://infiradev.com/diwan/lab/sim-latent-heat.html#webpage","url":"https://infiradev.com/diwan/lab/sim-latent-heat.html","name":"كم طاقة يلزم لتغيير طور المادة؟ — ديوان المعرفة","description":"تغيير الطور يستهلك طاقة بلا أن ترتفع الحرارة: الحرارة الكامنة تفصل الجزيئات ولا تزيد حركتها. غيّر الكتلة والمادة والطور وقارن الطاقة والزمن اللازم.","inLanguage":"ar","isPartOf":{"@id":"https://infiradev.com/#website"},"about":{"@id":"https://infiradev.com/#organization"}},{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"انفراد","item":"https://infiradev.com/"},{"@type":"ListItem","position":2,"name":"ديوان المعرفة","item":"https://infiradev.com/diwan/"},{"@type":"ListItem","position":3,"name":"كم طاقة يلزم لتغيير طور المادة؟ — ديوان المعرفة","item":"https://infiradev.com/diwan/lab/sim-latent-heat.html"}]}]}</script>
+</head>
+<body>
+<a class="skip" href="#main">انتقل إلى المحتوى</a>
+<header class="site-head">
+  <div class="wrap head-in">
+    <div class="brand-lockup">
+      <a class="brand" href="https://infiradev.com/" aria-label="انفراد، الموقع الرئيسي">
+        <img src="https://infiradev.com/assets/logo-bilingual.png" alt="انفراد · INFIRAD" width="990" height="320" />
+      </a>
+      <a class="diwan-name" href="../">ديوان المعرفة</a>
+    </div>
+    <nav class="nav" aria-label="أقسام ديوان المعرفة"><a href="../terms/">المصطلحات</a><a href="../articles/">مقالات</a><a href="../domains/">المجالات</a><a href="../lab/" aria-current="page">المعمل</a><a href="../about.html">عن الديوان</a></nav>
+    <nav class="head-actions" aria-label="الرجوع والموقع الرئيسي">
+      <a href="../" data-back><span aria-hidden="true">→</span> رجوع</a>
+      <a href="https://infiradev.com/">موقع انفراد الرئيسي</a>
+    </nav>
+  </div>
+</header>
+
+<main id="main">
+<article class="wrap article experiment">
+  <a class="backlink" href="../lab/" data-back data-label="المعمل"><svg class="backlink-i" viewBox="0 0 24 24" width="18" height="18" aria-hidden="true" focusable="false"><path d="M9 5l7 7-7 7" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg><span>رجوع إلى المعمل</span></a>
+  <nav class="crumbs" aria-label="المسار"><a href="../lab/">المعمل</a> · <a href="../domains/energy.html">الطاقة</a></nav>
+  <h1 class="page-h">كم طاقة يلزم لتغيير طور المادة؟</h1>
+  <section class="lab-panel">
+  <p class="lede">غيّر الكتلة والمادة والطور، وتابع الطاقة اللازمة والزمن عند قدرة تسخين 1000 واط.</p>
+  <div id="lab-root"></div>
+  <div class="lab-readout" id="lab-outputs"></div>
+  <div class="lab-gauge" id="lab-gauge"></div>
+  <figure class="lab-scene-fig">
+    <figcaption class="lab-scene-cap">الطاقة الداخلة أثناء تغيّر الطور لا ترفع الحرارة بل تكسر الروابط بين الجزيئات. الأبعاد والحركة توضيحية، والقيم من الحساب نفسه.</figcaption>
+    <div id="lab-scene" class="lab-scene" role="group" aria-label="مشهد توضيحي متحرك"></div>
+  </figure>
+
+  <p><button class="lab-cta" type="button" id="lab-reset">إعادة الضبط</button></p>
+  <p class="muted small" id="lab-note">بداية المقياس على الحالة المرجعية: الكتلة 1.00 كجم، المادة ماء، الطور انصهار  = 334.0 ك.جول. محاكاة تعليمية لا قياس فيزيائي حقيقي: الأرقام تُحسب من النموذج لحظيًا.</p>
+  <details open>
+    <summary>افتراضات النموذج والمصدر</summary>
+    <p class="lab-equation" dir="ltr">Q = m · L</p>
+    <p>مادة نقية عند ضغط ثابت</p><p>الحرارة الكامنة ثابتة على مدى الطور</p><p>قدرة التسخين 1000 واط بلا فقد</p><p>لا شوائب تخفض نقطة الطور</p><p><a href="https://webbook.nist.gov/cgi/cbook.cgi?ID=C7732185">Water — enthalpy of fusion/vaporization (SRD 69) — NIST Chemistry WebBook</a></p><p><a href="https://www.mheducation.com/highered/product/thermodynamics-engineering-approach-cengel-boles/M9781259822674.html">Thermodynamics: An Engineering Approach — تغيّر الطور — Cengel &amp; Boles</a></p>
+  </details>
+  <noscript>فعّل JavaScript لتحريك المدخلات وحساب النتائج.</noscript>
+  <script type="application/json" id="lab-spec">{"controls":[{"id":"mass","label_ar":"الكتلة","step":0.1,"value":1,"unit":"كجم","min":0.1,"max":5},{"id":"substance","label_ar":"المادة","type":"select","value":"water","unit":"","options":[{"value":"water","label_ar":"ماء"},{"value":"ethanol","label_ar":"إيثانول"},{"value":"nitrogen","label_ar":"نيتروجين"}]},{"id":"phase","label_ar":"الطور","type":"select","value":"fusion","unit":"","options":[{"value":"fusion","label_ar":"انصهار"},{"value":"vaporization","label_ar":"تبخّر"}]}],"outputs":[{"id":"q","label_ar":"الطاقة اللازمة","unit":"ك.جول","decimals":1},{"id":"qJ","label_ar":"الطاقة بالجول","unit":"جول","decimals":0},{"id":"seconds","label_ar":"الزمن عند 1000 واط","unit":"ثانية","decimals":0}],"gauge":{"id":"q","min":0,"max":11300,"unit":"ك.جول","decimals":0,"bind":"q","label":"الطاقة اللازمة — المقياس من 0 إلى 11300 كيلوجول"},"scene":{"kind":"sim-latent-heat","caption_ar":"الطاقة الداخلة أثناء تغيّر الطور لا ترفع الحرارة بل تكسر الروابط بين الجزيئات. الأبعاد والحركة توضيحية، والقيم من الحساب نفسه."},"note_ar":"بداية المقياس على الحالة المرجعية: الكتلة 1.00 كجم، المادة ماء، الطور انصهار  = 334.0 ك.جول. محاكاة تعليمية لا قياس فيزيائي حقيقي: الأرقام تُحسب من النموذج لحظيًا.","learning":{"question_ar":"كيف تتغير الطاقة اللازمة حين تنتقل من الانصهار إلى التبخّر؟","explanation_ar":"التبخّر يفصل الجزيئات كليًّا عن بعضها، والانصهار يرخي ترتيبها فقط؛ فطاقة التبخّر أكبر بمرات عند المادة نفسها.","input":"mass","output":"q","scenarios":[{"label_ar":"كيلوجرام ماء ينصهر","values":{"mass":1,"substance":"water","phase":"fusion"}},{"label_ar":"كيلوجرام ماء يتبخّر","values":{"mass":1,"substance":"water","phase":"vaporization"}}]}}</script>
+  <script type="module" src="../assets/js/labs/sim-latent-heat.mjs"></script>
+</section>
+  <div class="prose"><p>حين يذوب الجليد أو يغلي الماء تبقى الحرارة ثابتة ما دام الطور يتغيّر. الطاقة الداخلة لا ترفع الحرارة بل تُستهلك في كسر الروابط التي تُمسك الجزيئات في موضعها. مقدارها لكل كيلوجرام خاصية للمادة تُسمّى الحرارة الكامنة النوعية: 334 كيلوجول لكل كيلوجرام لانصهار الجليد، و2260 للتبخّر. الفارق بين الرقمين كبير لأن التبخّر يفصل الجزيئات تمامًا، والانصهار يرخي الروابط فقط.</p></div>
+  <div class="depth" aria-label="شرح معمّق"><section class="depth-sec">
+    <h2>كيف تعمل الظاهرة؟</h2>
+    <p>في الحالة الصلبة تُثبّت الجزيئات روابطُ بين جزيئية في مواضع منتظمة. تسخين المادة يزيد اهتزازها حول موضعها، وحين تبلغ طاقة الاهتزاز حدًّا يكسر الترتيب يبدأ الانصهار. الطاقة المستهلكة في كسر الترتيب لا تظهر في مقياس الحرارة، لأن الحرارة تقيس متوسط الطاقة الحركية لا الطاقة الكامنة في الروابط.</p>
+  </section><section class="depth-sec">
+    <h2>العلاقة بالأرقام</h2>
+    <p>المعادلة: Q = m · L. عند الكتلة 1.00 كجم، المادة ماء، الطور انصهار ، يعطي الحساب: الطاقة اللازمة = 334.0 ك.جول؛ الطاقة بالجول = 334,000 جول؛ الزمن عند 1000 واط = 334 ثانية. حالة «كيلوجرام ماء ينصهر» (الكتلة 1.00 كجم، المادة ماء، الطور انصهار ): الطاقة اللازمة = 334.0 ك.جول؛ الطاقة بالجول = 334,000 جول؛ الزمن عند 1000 واط = 334 ثانية. حالة «كيلوجرام ماء يتبخّر» (الكتلة 1.00 كجم، المادة ماء، الطور تبخّر ): الطاقة اللازمة = 2,260.0 ك.جول؛ الطاقة بالجول = 2.26e+6 جول؛ الزمن عند 1000 واط = 2,260 ثانية. هذه أمثلة مولدة من دالة الحساب نفسها؛ وليست قياسات فعلية أو مواصفات لجهاز تجاري.</p>
+  </section><section class="depth-sec">
+    <h2>مفاهيم متقاربة</h2>
+    <p>يُخلط بين الحرارة النوعية والحرارة الكامنة: الأولى ترفع الحرارة لكل كيلوجرام لكل كلفن، والثانية تغيّر الطور بلا تغيّر حرارة. ويُخلط بين الانصهار والتبخّر: كلاهما تغيّر طور، لكن التبخّر يفصل الجزيئات كليًّا فتبلغ طاقته نحو سبعة أضعاف.</p>
+  </section><section class="depth-sec">
+    <h2>حدود التطبيق</h2>
+    <p>الحساب يفترض مادة نقية عند ضغط ثابت، ويتجاهل الشوائب التي تخفض نقطة الانصهار وتمدّد المدى. ولا يمثّل منحنى التسخين الكامل: الطاقة اللازمة لرفع الحرارة قبل الطور وبعده تُحسب بالحرارة النوعية لا بهذه المعادلة.</p>
+  </section></div>
+  <section class="figures" aria-label="الرسوم التوضيحية">
+  <figure class="fig" id="fig-1">
+    <img class="fig-img" src="../assets/fig/fig-spec-sim-latent-heat.svg" alt="منحنى محسوب يبدأ عند 0.10 كجم بقيمة 33.4 ك.جول وينتهي عند 5.00 كجم بقيمة 1,670.0 ك.جول." loading="lazy" />
+    <figcaption><b>الشكل 1.</b> الطاقة اللازمة مقابل الكتلة مع ثبات بقية المدخلات عند الحالة الافتراضية. عند 1.00 كجم: 334.0 ك.جول.
+      <span class="credit muted small">· من عمل انفراد — رسم محسوب من المعادلة نفسها</span>
+    </figcaption>
+  </figure>
+</section>
+  <table class="facts">
+  <caption>أرقام مسنَدة إلى مصادرها</caption>
+  <thead><tr><th scope="col">الكمية</th><th scope="col">القيمة</th><th scope="col">المصدر</th></tr></thead>
+  <tbody><tr>
+      <th scope="row">الطاقة اللازمة — الحالة الافتراضية</th>
+      <td>334.0 <span class="unit">ك.جول</span></td>
+      <td><a class="ref" href="#src-1">[1]</a></td>
+    </tr><tr>
+      <th scope="row">الطاقة بالجول — الحالة الافتراضية</th>
+      <td>334,000 <span class="unit">جول</span></td>
+      <td><a class="ref" href="#src-1">[1]</a></td>
+    </tr><tr>
+      <th scope="row">الزمن عند 1000 واط — الحالة الافتراضية</th>
+      <td>334 <span class="unit">ثانية</span></td>
+      <td><a class="ref" href="#src-1">[1]</a></td>
+    </tr></tbody>
+</table>
+  <section class="sources" aria-labelledby="src-h">
+  <h2 id="src-h">المصادر</h2>
+  <ol class="src-list"><li id="src-1">
+      <span class="src-num">1</span>
+      <span>Water — enthalpy of fusion/vaporization (SRD 69) — NIST Chemistry WebBook.
+      <a href="https://webbook.nist.gov/cgi/cbook.cgi?ID=C7732185" rel="noopener nofollow" target="_blank">webbook.nist.gov/cgi/cbook.cgi?ID=C7732185</a>
+      <span class="muted small">· اطُّلع عليه 2026-11-25</span></span>
+    </li><li id="src-2">
+      <span class="src-num">2</span>
+      <span>Thermodynamics: An Engineering Approach — تغيّر الطور — Cengel &amp; Boles.
+      <a href="https://www.mheducation.com/highered/product/thermodynamics-engineering-approach-cengel-boles/M9781259822674.html" rel="noopener nofollow" target="_blank">www.mheducation.com/highered/product/thermodynamics-engineering-approach-cengel-boles/M9781259822674.html</a>
+      <span class="muted small">· اطُّلع عليه 2026-11-25</span></span>
+    </li></ol>
+</section>
+  <p class="reviewline muted small">راجعه: hermes (مراجعة معتمدة 2026-11-26) · 2026-11-26 · آخر تحديث 2026-11-24</p>
+  <a class="backlink backlink-end" href="../lab/" data-back data-label="المعمل"><svg class="backlink-i" viewBox="0 0 24 24" width="18" height="18" aria-hidden="true" focusable="false"><path d="M9 5l7 7-7 7" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg><span>رجوع إلى المعمل</span></a>
+</article>
+</main>
+<footer class="site-foot">
+  <div class="wrap foot-in">
+    <div>
+      <b>ديوان المعرفة</b> — من المفهوم إلى التجربة
+      <div class="muted small">قسم علمي داخل انفراد · <a href="https://infiradev.com">infiradev.com</a> · <a href="mailto:info@infiradev.com">info@infiradev.com</a></div>
+    </div>
+    <div class="muted small">
+      <a href="../about.html">سياسة التحرير والمصادر</a> ·
+      <a href="../terms/">المصطلحات</a> ·
+      <a href="../lab/">المعمل الافتراضي</a>
+    </div>
+  </div>
+</footer>
+<script src="../assets/js/site.js" defer></script>
+</body>
+</html>
