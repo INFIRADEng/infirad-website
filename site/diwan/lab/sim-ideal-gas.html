@@ -1,0 +1,133 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>كيف يرتبط ضغط الغاز بحجمه وحرارته؟ — ديوان المعرفة</title>
+  <meta name="description" content="الضغط والحجم والحرارة المطلقة مرتبطة بمعادلة واحدة: لا يبقى منها شيء حرًّا. غيّر عدد المولات والحجم والحرارة وقارن الضغط الناتج." />
+  <link rel="stylesheet" href="../assets/css/tokens.css" />
+  <link rel="stylesheet" href="../assets/css/site.css" />
+
+  <link rel="canonical" href="https://infiradev.com/diwan/lab/sim-ideal-gas.html" />
+  <link rel="icon" href="https://infiradev.com/favicon.ico" sizes="48x48" />
+  <link rel="icon" type="image/png" sizes="192x192" href="https://infiradev.com/assets/favicon-192.png" />
+  <link rel="apple-touch-icon" href="https://infiradev.com/assets/apple-touch-icon.png" />
+  <script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"Organization","@id":"https://infiradev.com/#organization","name":"INFIRAD","alternateName":["انفِراد","انفراد"],"url":"https://infiradev.com/","logo":{"@type":"ImageObject","url":"https://infiradev.com/assets/logo-bilingual.png","width":990,"height":320},"slogan":"من الفكرة إلى اليقين","foundingDate":"2025","email":"info@infiradeng.com","telephone":"+966557748982","address":{"@type":"PostalAddress","addressLocality":"Riyadh","addressCountry":"SA"},"sameAs":["https://www.linkedin.com/company/infirad/"],"knowsAbout":["Engineering services","Engineering Services Provider (ESP)","Process design","Process simulation","Computational fluid dynamics","Thermal analysis","Independent engineering review","Specialized AI agents","Workflow automation","Traffic simulation"]},{"@type":"WebPage","@id":"https://infiradev.com/diwan/lab/sim-ideal-gas.html#webpage","url":"https://infiradev.com/diwan/lab/sim-ideal-gas.html","name":"كيف يرتبط ضغط الغاز بحجمه وحرارته؟ — ديوان المعرفة","description":"الضغط والحجم والحرارة المطلقة مرتبطة بمعادلة واحدة: لا يبقى منها شيء حرًّا. غيّر عدد المولات والحجم والحرارة وقارن الضغط الناتج.","inLanguage":"ar","isPartOf":{"@id":"https://infiradev.com/#website"},"about":{"@id":"https://infiradev.com/#organization"}},{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"انفراد","item":"https://infiradev.com/"},{"@type":"ListItem","position":2,"name":"ديوان المعرفة","item":"https://infiradev.com/diwan/"},{"@type":"ListItem","position":3,"name":"كيف يرتبط ضغط الغاز بحجمه وحرارته؟ — ديوان المعرفة","item":"https://infiradev.com/diwan/lab/sim-ideal-gas.html"}]}]}</script>
+</head>
+<body>
+<a class="skip" href="#main">انتقل إلى المحتوى</a>
+<header class="site-head">
+  <div class="wrap head-in">
+    <div class="brand-lockup">
+      <a class="brand" href="https://infiradev.com/" aria-label="انفراد، الموقع الرئيسي">
+        <img src="https://infiradev.com/assets/logo-bilingual.png" alt="انفراد · INFIRAD" width="990" height="320" />
+      </a>
+      <a class="diwan-name" href="../">ديوان المعرفة</a>
+    </div>
+    <nav class="nav" aria-label="أقسام ديوان المعرفة"><a href="../terms/">المصطلحات</a><a href="../articles/">مقالات</a><a href="../domains/">المجالات</a><a href="../lab/" aria-current="page">المعمل</a><a href="../about.html">عن الديوان</a></nav>
+    <nav class="head-actions" aria-label="الرجوع والموقع الرئيسي">
+      <a href="../" data-back><span aria-hidden="true">→</span> رجوع</a>
+      <a href="https://infiradev.com/">موقع انفراد الرئيسي</a>
+    </nav>
+  </div>
+</header>
+
+<main id="main">
+<article class="wrap article experiment">
+  <a class="backlink" href="../lab/" data-back data-label="المعمل"><svg class="backlink-i" viewBox="0 0 24 24" width="18" height="18" aria-hidden="true" focusable="false"><path d="M9 5l7 7-7 7" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg><span>رجوع إلى المعمل</span></a>
+  <nav class="crumbs" aria-label="المسار"><a href="../lab/">المعمل</a> · <a href="../domains/energy.html">الطاقة</a></nav>
+  <h1 class="page-h">كيف يرتبط ضغط الغاز بحجمه وحرارته؟</h1>
+  <section class="lab-panel">
+  <p class="lede">غيّر عدد المولات والحجم والحرارة، وتابع الضغط والحرارة المطلقة.</p>
+  <div id="lab-root"></div>
+  <div class="lab-readout" id="lab-outputs"></div>
+  <div class="lab-gauge" id="lab-gauge"></div>
+  <figure class="lab-scene-fig">
+    <figcaption class="lab-scene-cap">مكبس يضيّق الحجم فتقترب الجزيئات من الجدار ويرتفع الضغط عند حرارة ثابتة. القيم من الحساب نفسه.</figcaption>
+    <div id="lab-scene" class="lab-scene" role="group" aria-label="مشهد توضيحي متحرك"></div>
+  </figure>
+
+  <p><button class="lab-cta" type="button" id="lab-reset">إعادة الضبط</button></p>
+  <p class="muted small" id="lab-note">بداية المقياس على الحالة المرجعية: عدد المولات 1.00 مول، الحجم 24.00 لتر، الحرارة 25.00 °م = 103.3 كيلوباسكال. محاكاة تعليمية لا قياس فيزيائي حقيقي: الأرقام تُحسب من النموذج لحظيًا.</p>
+  <details open>
+    <summary>افتراضات النموذج والمصدر</summary>
+    <p class="lab-equation" dir="ltr">P·V = n·R·T</p>
+    <p>غاز مثالي بلا حجم جزيئي</p><p>لا قوى تجاذب بين الجزيئات</p><p>حرارة مطلقة بالكلفن</p><p>بعيد عن نقطة التكاثف</p><p><a href="https://physics.nist.gov/cgi-bin/cuu/Value?r">Molar gas constant R = 8.314462618 J/(mol·K) — NIST CODATA 2022</a></p><p><a href="https://www.mheducation.com/highered/product/thermodynamics-engineering-approach-cengel-boles/M9781259822674.html">Thermodynamics: An Engineering Approach — الغاز المثالي — Cengel &amp; Boles</a></p>
+  </details>
+  <noscript>فعّل JavaScript لتحريك المدخلات وحساب النتائج.</noscript>
+  <script type="application/json" id="lab-spec">{"controls":[{"id":"moles","label_ar":"عدد المولات","step":0.1,"value":1,"unit":"مول","min":0.1,"max":5},{"id":"liters","label_ar":"الحجم","step":1,"value":24,"unit":"لتر","min":5,"max":100},{"id":"tempC","label_ar":"الحرارة","step":5,"value":25,"unit":"°م","min":-50,"max":300}],"outputs":[{"id":"pressure","label_ar":"الضغط","unit":"كيلوباسكال","decimals":1},{"id":"kelvin","label_ar":"الحرارة المطلقة","unit":"كلفن","decimals":2},{"id":"volume","label_ar":"الحجم بالمتر المكعب","unit":"م³","decimals":4}],"gauge":{"id":"pressure","min":0,"max":2500,"unit":"كيلوباسكال","decimals":0,"bind":"pressure","label":"الضغط — المقياس من 0 إلى 2500 كيلوباسكال"},"scene":{"kind":"sim-ideal-gas","caption_ar":"مكبس يضيّق الحجم فتقترب الجزيئات من الجدار ويرتفع الضغط عند حرارة ثابتة. القيم من الحساب نفسه."},"note_ar":"بداية المقياس على الحالة المرجعية: عدد المولات 1.00 مول، الحجم 24.00 لتر، الحرارة 25.00 °م = 103.3 كيلوباسكال. محاكاة تعليمية لا قياس فيزيائي حقيقي: الأرقام تُحسب من النموذج لحظيًا.","learning":{"question_ar":"كيف يتغير الضغط حين يضيق الحجم عند حرارة ثابتة؟","explanation_ar":"الضغط يتناسب عكسيًّا مع الحجم عند ثبات الحرارة وعدد المولات؛ تنصيف الحجم يضاعف الضغط.","input":"liters","output":"pressure","scenarios":[{"label_ar":"حجم كبير","values":{"liters":100,"moles":1,"tempC":25}},{"label_ar":"حجم صغير","values":{"liters":5,"moles":1,"tempC":25}}]}}</script>
+  <script type="module" src="../assets/js/labs/sim-ideal-gas.mjs"></script>
+</section>
+  <div class="prose"><p>الغاز المثالي نموذج يتجاهل حجم الجزيئات نفسها وقوى التجاذب بينها، فيبقى التفاعل بين الضغط والحجم والحرارة بسيطًا. المعادلة تقول إن حاصل ضرب الضغط في الحجم يتناسب مع عدد المولات والحرارة المطلقة. عمليًّا: تسخين غاز في حجم ثابت يرفع ضغطه، وتضييق حجمه عند حرارة ثابتة يرفع ضغطه أيضًا. النموذج يصلح للغازات الحقيقية عند ضغط منخفض وحرارة بعيدة عن التكاثف.</p></div>
+  <div class="depth" aria-label="شرح معمّق"><section class="depth-sec">
+    <h2>كيف تعمل الظاهرة؟</h2>
+    <p>ضغط الغاز ناتج عن تصادم الجزيئات بالجدار. تسخين الغاز يزيد سرعتها المتوسطة فتزداد قوة كل تصادم وعددها، فيرتفع الضغط. وتضييق الحجم يقرّب الجزيئات من الجدار فترتفع وتيرة التصادم بلا تغيّر في سرعتها. المعادلة تجمع الأثرين في علاقة واحدة.</p>
+  </section><section class="depth-sec">
+    <h2>العلاقة بالأرقام</h2>
+    <p>المعادلة: P·V = n·R·T. عند عدد المولات 1.00 مول، الحجم 24.00 لتر، الحرارة 25.00 °م، يعطي الحساب: الضغط = 103.3 كيلوباسكال؛ الحرارة المطلقة = 298.15 كلفن؛ الحجم بالمتر المكعب = 0.0240 م³. حالة «حجم كبير» (عدد المولات 1.00 مول، الحجم 100.00 لتر، الحرارة 25.00 °م): الضغط = 24.8 كيلوباسكال؛ الحرارة المطلقة = 298.15 كلفن؛ الحجم بالمتر المكعب = 0.1000 م³. حالة «حجم صغير» (عدد المولات 1.00 مول، الحجم 5.00 لتر، الحرارة 25.00 °م): الضغط = 495.8 كيلوباسكال؛ الحرارة المطلقة = 298.15 كلفن؛ الحجم بالمتر المكعب = 0.0050 م³. هذه أمثلة مولدة من دالة الحساب نفسها؛ وليست قياسات فعلية أو مواصفات لجهاز تجاري.</p>
+  </section><section class="depth-sec">
+    <h2>مفاهيم متقاربة</h2>
+    <p>يُخلط بين الغاز المثالي والحقيقي: الحقيقي ينحرف عند الضغط العالي والحرارة القريبة من التكاثف، حيث يصير حجم الجزيئات وقوى التجاذب مؤثرة. ويُخلط بين الحرارة المئوية والمطلقة: المعادلة تحتاج الكلفن، فالصفر المئوي ليس صفر طاقة.</p>
+  </section><section class="depth-sec">
+    <h2>حدود التطبيق</h2>
+    <p>النموذج يفترض جزيئات بلا حجم وقوى بينها معدومة، فلا يصلح قرب نقطة التكاثف ولا عند ضغوط عالية. ولا يصف الغازات القطبية بقوة عند الحرارة العادية، حيث تظهر انحرافات ملموسة عن السلوك المثالي.</p>
+  </section></div>
+  <section class="figures" aria-label="الرسوم التوضيحية">
+  <figure class="fig" id="fig-1">
+    <img class="fig-img" src="../assets/fig/fig-spec-sim-ideal-gas.svg" alt="منحنى محسوب يبدأ عند 5.00 لتر بقيمة 495.8 كيلوباسكال وينتهي عند 100.00 لتر بقيمة 24.8 كيلوباسكال." loading="lazy" />
+    <figcaption><b>الشكل 1.</b> الضغط مقابل الحجم مع ثبات بقية المدخلات عند الحالة الافتراضية. عند 24.00 لتر: 103.3 كيلوباسكال.
+      <span class="credit muted small">· من عمل انفراد — رسم محسوب من المعادلة نفسها</span>
+    </figcaption>
+  </figure>
+</section>
+  <table class="facts">
+  <caption>أرقام مسنَدة إلى مصادرها</caption>
+  <thead><tr><th scope="col">الكمية</th><th scope="col">القيمة</th><th scope="col">المصدر</th></tr></thead>
+  <tbody><tr>
+      <th scope="row">الضغط — الحالة الافتراضية</th>
+      <td>103.3 <span class="unit">كيلوباسكال</span></td>
+      <td><a class="ref" href="#src-1">[1]</a></td>
+    </tr><tr>
+      <th scope="row">الحرارة المطلقة — الحالة الافتراضية</th>
+      <td>298.15 <span class="unit">كلفن</span></td>
+      <td><a class="ref" href="#src-1">[1]</a></td>
+    </tr><tr>
+      <th scope="row">الحجم بالمتر المكعب — الحالة الافتراضية</th>
+      <td>0.0240 <span class="unit">م³</span></td>
+      <td><a class="ref" href="#src-1">[1]</a></td>
+    </tr></tbody>
+</table>
+  <section class="sources" aria-labelledby="src-h">
+  <h2 id="src-h">المصادر</h2>
+  <ol class="src-list"><li id="src-1">
+      <span class="src-num">1</span>
+      <span>Molar gas constant R = 8.314462618 J/(mol·K) — NIST CODATA 2022.
+      <a href="https://physics.nist.gov/cgi-bin/cuu/Value?r" rel="noopener nofollow" target="_blank">physics.nist.gov/cgi-bin/cuu/Value?r</a>
+      <span class="muted small">· اطُّلع عليه 2026-11-25</span></span>
+    </li><li id="src-2">
+      <span class="src-num">2</span>
+      <span>Thermodynamics: An Engineering Approach — الغاز المثالي — Cengel &amp; Boles.
+      <a href="https://www.mheducation.com/highered/product/thermodynamics-engineering-approach-cengel-boles/M9781259822674.html" rel="noopener nofollow" target="_blank">www.mheducation.com/highered/product/thermodynamics-engineering-approach-cengel-boles/M9781259822674.html</a>
+      <span class="muted small">· اطُّلع عليه 2026-11-25</span></span>
+    </li></ol>
+</section>
+  <p class="reviewline muted small">راجعه: عبدالله الهويدي · 2026-11-26 · آخر تحديث 2026-11-24</p>
+  <a class="backlink backlink-end" href="../lab/" data-back data-label="المعمل"><svg class="backlink-i" viewBox="0 0 24 24" width="18" height="18" aria-hidden="true" focusable="false"><path d="M9 5l7 7-7 7" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg><span>رجوع إلى المعمل</span></a>
+</article>
+</main>
+<footer class="site-foot">
+  <div class="wrap foot-in">
+    <div>
+      <b>ديوان المعرفة</b> — من المفهوم إلى التجربة
+      <div class="muted small">قسم علمي داخل انفراد · <a href="https://infiradev.com">infiradev.com</a> · <a href="mailto:info@infiradev.com">info@infiradev.com</a></div>
+    </div>
+    <div class="muted small">
+      <a href="../about.html">سياسة التحرير والمصادر</a> ·
+      <a href="../terms/">المصطلحات</a> ·
+      <a href="../lab/">المعمل الافتراضي</a>
+    </div>
+  </div>
+</footer>
+<script src="../assets/js/site.js" defer></script>
+</body>
+</html>
