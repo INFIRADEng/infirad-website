@@ -1,23 +1,29 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="760" height="452" viewBox="0 0 760 452" role="img" aria-labelledby="t">
+<svg xmlns="http://www.w3.org/2000/svg" width="760" height="520" viewBox="0 0 760 520" role="img" aria-labelledby="t">
 <title id="t">الوحدة الحرارية البريطانية</title>
-<rect width="760" height="452" fill="#ffffff"/>
+<rect width="760" height="520" fill="#ffffff"/>
 <g font-family="'Segoe UI', 'Noto Naskh Arabic', system-ui, sans-serif" direction="rtl">
 <text x="380" y="34" font-size="18" font-weight="700" fill="#1b2a2f" text-anchor="middle">الوحدة الحرارية البريطانية</text>
-<text x="740" y="138" font-size="17" font-weight="600" fill="#1b2a2f" text-anchor="start">الوحدة الحرارية البريطانية — التع…</text>
-<rect x="272.4" y="146" width="467.6" height="14" fill="#c2410c" fill-opacity="0.85" rx="6"/>
-<text x="262.4" y="158" font-size="17" font-weight="700" fill="#1b2a2f" text-anchor="end" direction="ltr">⁨1.05⁩</text>
-<text x="740" y="196" font-size="17" font-weight="600" fill="#1b2a2f" text-anchor="start">الوحدة الحرارية البريطانية عند 39…</text>
-<rect x="270" y="204" width="470" height="14" fill="#0e7490" fill-opacity="0.85" rx="6"/>
-<text x="260" y="216" font-size="17" font-weight="700" fill="#1b2a2f" text-anchor="end" direction="ltr">⁨1.06⁩</text>
-<text x="740" y="254" font-size="17" font-weight="600" fill="#1b2a2f" text-anchor="start">الوحدة الحرارية البريطانية عند 60…</text>
-<rect x="272.2" y="262" width="467.8" height="14" fill="#a16207" fill-opacity="0.85" rx="6"/>
-<text x="262.2" y="274" font-size="17" font-weight="700" fill="#1b2a2f" text-anchor="end" direction="ltr">⁨1.05⁩</text>
-<text x="740" y="312" font-size="17" font-weight="600" fill="#1b2a2f" text-anchor="start">الوحدة الحرارية البريطانية — القي…</text>
-<rect x="271.7" y="320" width="468.3" height="14" fill="#1e3a5f" fill-opacity="0.85" rx="6"/>
-<text x="261.7" y="332" font-size="17" font-weight="700" fill="#1b2a2f" text-anchor="end" direction="ltr">⁨1.06⁩</text>
-<line x1="740" y1="366" x2="270" y2="366" stroke="#cbd5d9" stroke-width="1"/>
-<text x="740" y="390" font-size="17" font-weight="400" fill="#5d7079" text-anchor="start">0</text>
-<text x="505" y="390" font-size="17" font-weight="400" fill="#5d7079" text-anchor="middle">0.53</text>
-<text x="270" y="390" font-size="17" font-weight="400" fill="#5d7079" text-anchor="end">1.06</text>
-<text x="505" y="416" font-size="17" font-weight="400" fill="#5d7079" text-anchor="middle">القيم المرجعية بوحدة kJ — مأخوذة من النص</text>
+<text x="740" y="138" font-size="17" font-weight="600" fill="#1b2a2f" text-anchor="start">الوحدة الحرارية البريطانية — تعري…</text>
+<rect x="272" y="146" width="468" height="14" fill="#c2410c" fill-opacity="0.85" rx="6"/>
+<text x="262" y="158" font-size="17" font-weight="700" fill="#1b2a2f" text-anchor="end" direction="ltr">⁨1055.06⁩</text>
+<text x="740" y="188" font-size="17" font-weight="600" fill="#1b2a2f" text-anchor="start">الوحدة الحرارية البريطانية — التع…</text>
+<rect x="272.4" y="196" width="467.6" height="14" fill="#0e7490" fill-opacity="0.85" rx="6"/>
+<text x="262.4" y="208" font-size="17" font-weight="700" fill="#1b2a2f" text-anchor="end" direction="ltr">⁨1054.35⁩</text>
+<text x="740" y="238" font-size="17" font-weight="600" fill="#1b2a2f" text-anchor="start">الوحدة الحرارية البريطانية عند 39…</text>
+<rect x="270" y="246" width="470" height="14" fill="#a16207" fill-opacity="0.85" rx="6"/>
+<text x="260" y="258" font-size="17" font-weight="700" fill="#1b2a2f" text-anchor="end" direction="ltr">⁨1059.67⁩</text>
+<text x="740" y="288" font-size="17" font-weight="600" fill="#1b2a2f" text-anchor="start">الوحدة الحرارية البريطانية عند 60…</text>
+<rect x="272.2" y="296" width="467.8" height="14" fill="#1e3a5f" fill-opacity="0.85" rx="6"/>
+<text x="262.2" y="308" font-size="17" font-weight="700" fill="#1b2a2f" text-anchor="end" direction="ltr">⁨1054.68⁩</text>
+<text x="740" y="338" font-size="17" font-weight="600" fill="#1b2a2f" text-anchor="start">الوحدة الحرارية البريطانية — القي…</text>
+<rect x="271.7" y="346" width="468.3" height="14" fill="#0a7a4a" fill-opacity="0.85" rx="6"/>
+<text x="261.7" y="358" font-size="17" font-weight="700" fill="#1b2a2f" text-anchor="end" direction="ltr">⁨1055.87⁩</text>
+<text x="740" y="388" font-size="17" font-weight="600" fill="#1b2a2f" text-anchor="start">السعر الحراري القانوني في الولايا…</text>
+<rect x="738" y="396" width="2" height="14" fill="#7c3aed" fill-opacity="0.85" rx="6"/>
+<text x="728" y="408" font-size="17" font-weight="700" fill="#1b2a2f" text-anchor="end" direction="ltr">⁨1.05⁩</text>
+<line x1="740" y1="434" x2="270" y2="434" stroke="#cbd5d9" stroke-width="1"/>
+<text x="740" y="458" font-size="17" font-weight="400" fill="#5d7079" text-anchor="start">0</text>
+<text x="505" y="458" font-size="17" font-weight="400" fill="#5d7079" text-anchor="middle">529.835</text>
+<text x="270" y="458" font-size="17" font-weight="400" fill="#5d7079" text-anchor="end">1059.67</text>
+<text x="505" y="484" font-size="17" font-weight="400" fill="#5d7079" text-anchor="middle">القيم المرجعية بوحدة J — مأخوذة من النص</text>
 </g></svg>

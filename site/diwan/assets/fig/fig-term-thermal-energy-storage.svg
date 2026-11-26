@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="760" height="394" viewBox="0 0 760 394" role="img" aria-labelledby="t">
+<title id="t">التخزين الحراري</title>
+<rect width="760" height="394" fill="#ffffff"/>
+<g font-family="'Segoe UI', 'Noto Naskh Arabic', system-ui, sans-serif" direction="rtl">
+<text x="380" y="34" font-size="18" font-weight="700" fill="#1b2a2f" text-anchor="middle">التخزين الحراري</text>
+<text x="740" y="138" font-size="17" font-weight="600" fill="#1b2a2f" text-anchor="start">كثافة الطاقة الحجمية للماء عند ΔT…</text>
+<rect x="631.1" y="146" width="108.9" height="14" fill="#c2410c" fill-opacity="0.85" rx="6"/>
+<text x="621.1" y="158" font-size="17" font-weight="700" fill="#1b2a2f" text-anchor="end" direction="ltr">⁨11.58⁩</text>
+<text x="740" y="196" font-size="17" font-weight="600" fill="#1b2a2f" text-anchor="start">الكثافة الحجمية لمادة تغيير طور ب…</text>
+<rect x="270" y="204" width="470" height="14" fill="#0e7490" fill-opacity="0.85" rx="6"/>
+<text x="260" y="216" font-size="17" font-weight="700" fill="#1b2a2f" text-anchor="end" direction="ltr">⁨50⁩</text>
+<text x="740" y="254" font-size="17" font-weight="600" fill="#1b2a2f" text-anchor="start">الكثافة الحجمية للخرسانة عند ΔT =…</text>
+<rect x="689.4" y="262" width="50.6" height="14" fill="#a16207" fill-opacity="0.85" rx="6"/>
+<text x="679.4" y="274" font-size="17" font-weight="700" fill="#1b2a2f" text-anchor="end" direction="ltr">⁨5.38⁩</text>
+<line x1="740" y1="308" x2="270" y2="308" stroke="#cbd5d9" stroke-width="1"/>
+<text x="740" y="332" font-size="17" font-weight="400" fill="#5d7079" text-anchor="start">0</text>
+<text x="505" y="332" font-size="17" font-weight="400" fill="#5d7079" text-anchor="middle">25</text>
+<text x="270" y="332" font-size="17" font-weight="400" fill="#5d7079" text-anchor="end">50</text>
+<text x="505" y="358" font-size="17" font-weight="400" fill="#5d7079" text-anchor="middle">القيم المرجعية بوحدة kWh/m³ — مأخوذة من النص</text>
+</g></svg>

@@ -1,20 +1,17 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="760" height="422" viewBox="0 0 760 422" role="img" aria-labelledby="t">
+<svg xmlns="http://www.w3.org/2000/svg" width="760" height="336" viewBox="0 0 760 336" role="img" aria-labelledby="t">
 <title id="t">الطاقة الحرة لهلمهولتز</title>
-<rect width="760" height="422" fill="#ffffff"/>
+<rect width="760" height="336" fill="#ffffff"/>
 <g font-family="'Segoe UI', 'Noto Naskh Arabic', system-ui, sans-serif" direction="rtl">
 <text x="380" y="34" font-size="18" font-weight="700" fill="#1b2a2f" text-anchor="middle">الطاقة الحرة لهلمهولتز</text>
-<line x1="120" y1="330" x2="700" y2="330" stroke="#1b2a2f" stroke-width="2"/>
-<line x1="120" y1="330" x2="120" y2="338" stroke="#1b2a2f" stroke-width="1.5"/>
-<text x="120" y="360" font-size="17" font-weight="400" fill="#5d7079" text-anchor="end">0</text>
-<line x1="265" y1="330" x2="265" y2="338" stroke="#1b2a2f" stroke-width="1.5"/>
-<text x="265" y="360" font-size="17" font-weight="400" fill="#5d7079" text-anchor="middle">0.5</text>
-<line x1="410" y1="330" x2="410" y2="338" stroke="#1b2a2f" stroke-width="1.5"/>
-<text x="410" y="360" font-size="17" font-weight="400" fill="#5d7079" text-anchor="middle">1</text>
-<line x1="555" y1="330" x2="555" y2="338" stroke="#1b2a2f" stroke-width="1.5"/>
-<text x="555" y="360" font-size="17" font-weight="400" fill="#5d7079" text-anchor="middle">1.5</text>
-<line x1="700" y1="330" x2="700" y2="338" stroke="#1b2a2f" stroke-width="1.5"/>
-<text x="700" y="360" font-size="17" font-weight="400" fill="#5d7079" text-anchor="middle">2</text>
-<text x="410" y="386" font-size="17" font-weight="400" fill="#5d7079" text-anchor="middle">حدّ معيار التلقائية dA ≤ 0 عند ثبات T وV (—) — من الصفر إلى 2</text>
-<line x1="120" y1="210" x2="120" y2="330" stroke="#1b2a2f" stroke-width="2" stroke-dasharray="4 3"/>
-<text x="120" y="202" font-size="17" font-weight="700" fill="#1b2a2f" text-anchor="middle">0 —</text>
+<text x="740" y="138" font-size="17" font-weight="600" fill="#1b2a2f" text-anchor="start">حاصل nRT للمول عند 298.15 K</text>
+<rect x="270" y="146" width="470" height="14" fill="#c2410c" fill-opacity="0.85" rx="6"/>
+<text x="260" y="158" font-size="17" font-weight="700" fill="#1b2a2f" text-anchor="end" direction="ltr">⁨2478.96⁩</text>
+<text x="740" y="196" font-size="17" font-weight="600" fill="#1b2a2f" text-anchor="start">فرق G − A للمول عند الحالة نفسها</text>
+<rect x="270" y="204" width="470" height="14" fill="#0e7490" fill-opacity="0.85" rx="6"/>
+<text x="260" y="216" font-size="17" font-weight="700" fill="#1b2a2f" text-anchor="end" direction="ltr">⁨2478.96⁩</text>
+<line x1="740" y1="250" x2="270" y2="250" stroke="#cbd5d9" stroke-width="1"/>
+<text x="740" y="274" font-size="17" font-weight="400" fill="#5d7079" text-anchor="start">0</text>
+<text x="505" y="274" font-size="17" font-weight="400" fill="#5d7079" text-anchor="middle">1239.48</text>
+<text x="270" y="274" font-size="17" font-weight="400" fill="#5d7079" text-anchor="end">2478.96</text>
+<text x="505" y="300" font-size="17" font-weight="400" fill="#5d7079" text-anchor="middle">القيم المرجعية بوحدة J — مأخوذة من النص</text>
 </g></svg>

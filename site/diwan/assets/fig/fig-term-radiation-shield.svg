@@ -1,23 +1,26 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="760" height="452" viewBox="0 0 760 452" role="img" aria-labelledby="t">
+<svg xmlns="http://www.w3.org/2000/svg" width="760" height="510" viewBox="0 0 760 510" role="img" aria-labelledby="t">
 <title id="t">الدرع الإشعاعي</title>
-<rect width="760" height="452" fill="#ffffff"/>
+<rect width="760" height="510" fill="#ffffff"/>
 <g font-family="'Segoe UI', 'Noto Naskh Arabic', system-ui, sans-serif" direction="rtl">
 <text x="380" y="34" font-size="18" font-weight="700" fill="#1b2a2f" text-anchor="middle">الدرع الإشعاعي</text>
-<text x="740" y="138" font-size="17" font-weight="600" fill="#1b2a2f" text-anchor="start">معامل التخفيض لعدد n من الدروع عن…</text>
+<text x="740" y="138" font-size="17" font-weight="600" fill="#1b2a2f" text-anchor="start">معامل التخفيض لعدد n من الدروع ال…</text>
 <rect x="270" y="146" width="470" height="14" fill="#c2410c" fill-opacity="0.85" rx="6"/>
 <text x="260" y="158" font-size="17" font-weight="700" fill="#1b2a2f" text-anchor="end" direction="ltr">⁨1⁩</text>
-<text x="740" y="196" font-size="17" font-weight="600" fill="#1b2a2f" text-anchor="start">انبعاثية اللوح الأول في مثال 8-10</text>
+<text x="740" y="196" font-size="17" font-weight="600" fill="#1b2a2f" text-anchor="start">انبعاثية اللوح الأول في المثال</text>
 <rect x="599" y="204" width="141" height="14" fill="#0e7490" fill-opacity="0.85" rx="6"/>
 <text x="589" y="216" font-size="17" font-weight="700" fill="#1b2a2f" text-anchor="end" direction="ltr">⁨0.3⁩</text>
-<text x="740" y="254" font-size="17" font-weight="600" fill="#1b2a2f" text-anchor="start">انبعاثية اللوح الثاني في مثال 8-10</text>
+<text x="740" y="254" font-size="17" font-weight="600" fill="#1b2a2f" text-anchor="start">انبعاثية اللوح الثاني في المثال</text>
 <rect x="364" y="262" width="376" height="14" fill="#a16207" fill-opacity="0.85" rx="6"/>
 <text x="354" y="274" font-size="17" font-weight="700" fill="#1b2a2f" text-anchor="end" direction="ltr">⁨0.8⁩</text>
-<text x="740" y="312" font-size="17" font-weight="600" fill="#1b2a2f" text-anchor="start">انبعاثية درع الألمنيوم المصقول في…</text>
+<text x="740" y="312" font-size="17" font-weight="600" fill="#1b2a2f" text-anchor="start">انبعاثية درع الألمنيوم المصقول</text>
 <rect x="721.2" y="320" width="18.8" height="14" fill="#1e3a5f" fill-opacity="0.85" rx="6"/>
 <text x="711.2" y="332" font-size="17" font-weight="700" fill="#1b2a2f" text-anchor="end" direction="ltr">⁨0.04⁩</text>
-<line x1="740" y1="366" x2="270" y2="366" stroke="#cbd5d9" stroke-width="1"/>
-<text x="740" y="390" font-size="17" font-weight="400" fill="#5d7079" text-anchor="start">0</text>
-<text x="505" y="390" font-size="17" font-weight="400" fill="#5d7079" text-anchor="middle">0.5</text>
-<text x="270" y="390" font-size="17" font-weight="400" fill="#5d7079" text-anchor="end">1</text>
-<text x="505" y="416" font-size="17" font-weight="400" fill="#5d7079" text-anchor="middle">القيم المرجعية بوحدة — — مأخوذة من النص</text>
+<text x="740" y="370" font-size="17" font-weight="600" fill="#1b2a2f" text-anchor="start">نسبة التدفق مع درع واحد إلى التدف…</text>
+<rect x="708" y="378" width="32" height="14" fill="#0a7a4a" fill-opacity="0.85" rx="6"/>
+<text x="698" y="390" font-size="17" font-weight="700" fill="#1b2a2f" text-anchor="end" direction="ltr">⁨0.07⁩</text>
+<line x1="740" y1="424" x2="270" y2="424" stroke="#cbd5d9" stroke-width="1"/>
+<text x="740" y="448" font-size="17" font-weight="400" fill="#5d7079" text-anchor="start">0</text>
+<text x="505" y="448" font-size="17" font-weight="400" fill="#5d7079" text-anchor="middle">0.5</text>
+<text x="270" y="448" font-size="17" font-weight="400" fill="#5d7079" text-anchor="end">1</text>
+<text x="505" y="474" font-size="17" font-weight="400" fill="#5d7079" text-anchor="middle">القيم المرجعية بوحدة بلا وحدة — مأخوذة من النص</text>
 </g></svg>
