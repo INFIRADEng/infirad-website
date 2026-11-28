@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="760" height="452" viewBox="0 0 760 452" role="img" aria-labelledby="t">
+<title id="t">عدد شميت</title>
+<rect width="760" height="452" fill="#ffffff"/>
+<g font-family="'Segoe UI', 'Noto Naskh Arabic', system-ui, sans-serif" direction="rtl">
+<text x="380" y="34" font-size="18" font-weight="700" fill="#1b2a2f" text-anchor="middle">عدد شميت</text>
+<text x="740" y="138" font-size="17" font-weight="600" fill="#1b2a2f" text-anchor="start">قيمة عدد شميت المتوقعة من النظرية…</text>
+<rect x="646" y="146" width="94" height="14" fill="#c2410c" fill-opacity="0.85" rx="6"/>
+<text x="636" y="158" font-size="17" font-weight="700" fill="#1b2a2f" text-anchor="end" direction="ltr">⁨1⁩</text>
+<text x="740" y="196" font-size="17" font-weight="600" fill="#1b2a2f" text-anchor="start">الحد الأدنى لمدى عدد شميت من النظ…</text>
+<rect x="677" y="204" width="63" height="14" fill="#0e7490" fill-opacity="0.85" rx="6"/>
+<text x="667" y="216" font-size="17" font-weight="700" fill="#1b2a2f" text-anchor="end" direction="ltr">⁨0.67⁩</text>
+<text x="740" y="254" font-size="17" font-weight="600" fill="#1b2a2f" text-anchor="start">الحد الأعلى لمدى عدد شميت من النظ…</text>
+<rect x="662" y="262" width="78" height="14" fill="#a16207" fill-opacity="0.85" rx="6"/>
+<text x="652" y="274" font-size="17" font-weight="700" fill="#1b2a2f" text-anchor="end" direction="ltr">⁨0.83⁩</text>
+<text x="740" y="312" font-size="17" font-weight="600" fill="#1b2a2f" text-anchor="start">أقصى قيمة يبلغها عدد شميت في مخال…</text>
+<rect x="270" y="320" width="470" height="14" fill="#1e3a5f" fill-opacity="0.85" rx="6"/>
+<text x="260" y="332" font-size="17" font-weight="700" fill="#1b2a2f" text-anchor="end" direction="ltr">⁨5⁩</text>
+<line x1="740" y1="366" x2="270" y2="366" stroke="#cbd5d9" stroke-width="1"/>
+<text x="740" y="390" font-size="17" font-weight="400" fill="#5d7079" text-anchor="start">0</text>
+<text x="505" y="390" font-size="17" font-weight="400" fill="#5d7079" text-anchor="middle">2.5</text>
+<text x="270" y="390" font-size="17" font-weight="400" fill="#5d7079" text-anchor="end">5</text>
+<text x="505" y="416" font-size="17" font-weight="400" fill="#5d7079" text-anchor="middle">القيم المرجعية مجرّدة (أعداد بلا وحدة) — مأخوذة من النص</text>
+</g></svg>
