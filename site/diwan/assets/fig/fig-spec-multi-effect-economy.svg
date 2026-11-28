@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="760" height="442" viewBox="0 0 760 442" role="img" aria-labelledby="t">
+<title id="t">الاقتصاد البخاري مقابل عدد الأثار</title>
+<rect width="760" height="442" fill="#ffffff"/>
+<g font-family="'Segoe UI', 'Noto Naskh Arabic', system-ui, sans-serif" direction="rtl">
+<text x="380" y="34" font-size="18" font-weight="700" fill="#1b2a2f" text-anchor="middle">الاقتصاد البخاري مقابل عدد الأثار</text>
+<text x="740" y="138" font-size="17" font-weight="600" fill="#1b2a2f" text-anchor="start">أثر واحد</text>
+<rect x="579.2" y="146" width="160.8" height="14" fill="#c2410c" fill-opacity="0.85" rx="6"/>
+<text x="569.2" y="158" font-size="17" font-weight="700" fill="#1b2a2f" text-anchor="end" direction="ltr">⁨0.99 kg/kg⁩</text>
+<text x="740" y="196" font-size="17" font-weight="600" fill="#1b2a2f" text-anchor="start">أثران</text>
+<rect x="424" y="204" width="316" height="14" fill="#0e7490" fill-opacity="0.85" rx="6"/>
+<text x="414" y="216" font-size="17" font-weight="700" fill="#1b2a2f" text-anchor="end" direction="ltr">⁨1.95 kg/kg⁩</text>
+<text x="740" y="254" font-size="17" font-weight="600" fill="#1b2a2f" text-anchor="start">ثلاثة أثار</text>
+<rect x="270" y="262" width="470" height="14" fill="#a16207" fill-opacity="0.85" rx="6"/>
+<text x="260" y="274" font-size="17" font-weight="700" fill="#1b2a2f" text-anchor="end" direction="ltr">⁨2.9 kg/kg⁩</text>
+<line x1="740" y1="308" x2="270" y2="308" stroke="#cbd5d9" stroke-width="1"/>
+<text x="740" y="332" font-size="17" font-weight="400" fill="#5d7079" text-anchor="start">0</text>
+<text x="505" y="332" font-size="17" font-weight="400" fill="#5d7079" text-anchor="middle">1.45</text>
+<text x="270" y="332" font-size="17" font-weight="400" fill="#5d7079" text-anchor="end">2.9</text>
+<text x="505" y="358" font-size="17" font-weight="400" fill="#5d7079" text-anchor="middle">كيلوغرام ماء مقطّر لكل كيلوغرام بخار حي</text>
+<text x="380" y="392" font-size="17" font-weight="400" fill="#5d7079" text-anchor="middle">محسوب من جدول البخار المشبع: 2,238 و2,279 و2,312 و2,358 كيلوجول/كغ</text>
+<text x="380" y="416" font-size="17" font-weight="400" fill="#5d7079" text-anchor="middle">الافتراض: بخار مشبع، تغذية عند الغليان، وإهمال ارتفاع نقطة الغليان</text>
+</g></svg>
