@@ -1,17 +1,23 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="760" height="336" viewBox="0 0 760 336" role="img" aria-labelledby="t">
+<svg xmlns="http://www.w3.org/2000/svg" width="760" height="452" viewBox="0 0 760 452" role="img" aria-labelledby="t">
 <title id="t">السرعة النوعية للمضخة</title>
-<rect width="760" height="336" fill="#ffffff"/>
+<rect width="760" height="452" fill="#ffffff"/>
 <g font-family="'Segoe UI', 'Noto Naskh Arabic', system-ui, sans-serif" direction="rtl">
 <text x="380" y="34" font-size="18" font-weight="700" fill="#1b2a2f" text-anchor="middle">السرعة النوعية للمضخة</text>
-<text x="740" y="138" font-size="17" font-weight="600" fill="#1b2a2f" text-anchor="start">السرعة النوعية للمثال الأول</text>
-<rect x="701.2" y="146" width="38.8" height="14" fill="#c2410c" fill-opacity="0.85" rx="6"/>
-<text x="691.2" y="158" font-size="17" font-weight="700" fill="#1b2a2f" text-anchor="end" direction="ltr">⁨25.3⁩</text>
-<text x="740" y="196" font-size="17" font-weight="600" fill="#1b2a2f" text-anchor="start">السرعة النوعية لمضخة محورية</text>
-<rect x="270" y="204" width="470" height="14" fill="#0e7490" fill-opacity="0.85" rx="6"/>
-<text x="260" y="216" font-size="17" font-weight="700" fill="#1b2a2f" text-anchor="end" direction="ltr">⁨306.6⁩</text>
-<line x1="740" y1="250" x2="270" y2="250" stroke="#cbd5d9" stroke-width="1"/>
-<text x="740" y="274" font-size="17" font-weight="400" fill="#5d7079" text-anchor="start">0</text>
-<text x="505" y="274" font-size="17" font-weight="400" fill="#5d7079" text-anchor="middle">153.3</text>
-<text x="270" y="274" font-size="17" font-weight="400" fill="#5d7079" text-anchor="end">306.6</text>
-<text x="505" y="300" font-size="17" font-weight="400" fill="#5d7079" text-anchor="middle">القيم المرجعية بوحدة بلا وحدة (rpm·m³/s·m) — مأخوذة من النص</text>
+<text x="740" y="138" font-size="17" font-weight="600" fill="#1b2a2f" text-anchor="start">النطاق الأعلى لنهاية الرفّاص القط…</text>
+<rect x="471.4" y="146" width="268.6" height="14" fill="#c2410c" fill-opacity="0.85" rx="6"/>
+<text x="461.4" y="158" font-size="17" font-weight="700" fill="#1b2a2f" text-anchor="end" direction="ltr">⁨4000⁩</text>
+<text x="740" y="196" font-size="17" font-weight="600" fill="#1b2a2f" text-anchor="start">بداية نطاق الرفّاص المختلط في الس…</text>
+<rect x="605.7" y="204" width="134.3" height="14" fill="#0e7490" fill-opacity="0.85" rx="6"/>
+<text x="595.7" y="216" font-size="17" font-weight="700" fill="#1b2a2f" text-anchor="end" direction="ltr">⁨2000⁩</text>
+<text x="740" y="254" font-size="17" font-weight="600" fill="#1b2a2f" text-anchor="start">بداية نطاق الرفّاص المحوري (المرا…</text>
+<rect x="270" y="262" width="470" height="14" fill="#a16207" fill-opacity="0.85" rx="6"/>
+<text x="260" y="274" font-size="17" font-weight="700" fill="#1b2a2f" text-anchor="end" direction="ltr">⁨7000⁩</text>
+<text x="740" y="312" font-size="17" font-weight="600" fill="#1b2a2f" text-anchor="start">قيمة Ns في المثال المنشور بوحدات …</text>
+<rect x="572.1" y="320" width="167.9" height="14" fill="#1e3a5f" fill-opacity="0.85" rx="6"/>
+<text x="562.1" y="332" font-size="17" font-weight="700" fill="#1b2a2f" text-anchor="end" direction="ltr">⁨2500⁩</text>
+<line x1="740" y1="366" x2="270" y2="366" stroke="#cbd5d9" stroke-width="1"/>
+<text x="740" y="390" font-size="17" font-weight="400" fill="#5d7079" text-anchor="start">0</text>
+<text x="505" y="390" font-size="17" font-weight="400" fill="#5d7079" text-anchor="middle">3500</text>
+<text x="270" y="390" font-size="17" font-weight="400" fill="#5d7079" text-anchor="end">7000</text>
+<text x="505" y="416" font-size="17" font-weight="400" fill="#5d7079" text-anchor="middle">القيم المرجعية مجرّدة (أعداد بلا وحدة) — مأخوذة من النص</text>
 </g></svg>
