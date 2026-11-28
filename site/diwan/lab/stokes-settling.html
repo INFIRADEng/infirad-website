@@ -1,0 +1,137 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>ترسيب ستوكس: كم تستغرق حبة رمل لتهبط القاع؟ — ديوان المعرفة</title>
+  <meta name="description" content="حبة تتحرك في سائل لزج تبلغ سرعة حدّية تتناسب مع مربع قطرها؛ وحين يتجاوز رقم رينولدز 0.1 ينكسر نموذج ستوكس ولا يعود التقدير دقيقًا." />
+  <link rel="stylesheet" href="../assets/css/tokens.css" />
+  <link rel="stylesheet" href="../assets/css/site.css" />
+
+  <link rel="canonical" href="https://infiradev.com/diwan/lab/stokes-settling.html" />
+  <link rel="icon" href="https://infiradev.com/favicon.ico" sizes="48x48" />
+  <link rel="icon" type="image/png" sizes="192x192" href="https://infiradev.com/assets/favicon-192.png" />
+  <link rel="apple-touch-icon" href="https://infiradev.com/assets/apple-touch-icon.png" />
+  <script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"Organization","@id":"https://infiradev.com/#organization","name":"INFIRAD","alternateName":["انفِراد","انفراد"],"url":"https://infiradev.com/","logo":{"@type":"ImageObject","url":"https://infiradev.com/assets/logo-bilingual.png","width":990,"height":320},"slogan":"من الفكرة إلى اليقين","foundingDate":"2025","email":"info@infiradeng.com","telephone":"+966557748982","address":{"@type":"PostalAddress","addressLocality":"Riyadh","addressCountry":"SA"},"sameAs":["https://www.linkedin.com/company/infirad/"],"knowsAbout":["Engineering services","Engineering Services Provider (ESP)","Process design","Process simulation","Computational fluid dynamics","Thermal analysis","Independent engineering review","Specialized AI agents","Workflow automation","Traffic simulation"]},{"@type":"WebPage","@id":"https://infiradev.com/diwan/lab/stokes-settling.html#webpage","url":"https://infiradev.com/diwan/lab/stokes-settling.html","name":"ترسيب ستوكس: كم تستغرق حبة رمل لتهبط القاع؟ — ديوان المعرفة","description":"حبة تتحرك في سائل لزج تبلغ سرعة حدّية تتناسب مع مربع قطرها؛ وحين يتجاوز رقم رينولدز 0.1 ينكسر نموذج ستوكس ولا يعود التقدير دقيقًا.","inLanguage":"ar","isPartOf":{"@id":"https://infiradev.com/#website"},"about":{"@id":"https://infiradev.com/#organization"}},{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"انفراد","item":"https://infiradev.com/"},{"@type":"ListItem","position":2,"name":"ديوان المعرفة","item":"https://infiradev.com/diwan/"},{"@type":"ListItem","position":3,"name":"ترسيب ستوكس: كم تستغرق حبة رمل لتهبط القاع؟ — ديوان المعرفة","item":"https://infiradev.com/diwan/lab/stokes-settling.html"}]}]}</script>
+</head>
+<body>
+<a class="skip" href="#main">انتقل إلى المحتوى</a>
+<header class="site-head">
+  <div class="wrap head-in">
+    <div class="brand-lockup">
+      <a class="brand" href="https://infiradev.com/" aria-label="انفراد، الموقع الرئيسي">
+        <img src="https://infiradev.com/assets/logo-bilingual.png" alt="انفراد · INFIRAD" width="990" height="320" />
+      </a>
+      <a class="diwan-name" href="../">ديوان المعرفة</a>
+    </div>
+    <nav class="nav" aria-label="أقسام ديوان المعرفة"><a href="../terms/">المصطلحات</a><a href="../articles/">مقالات</a><a href="../domains/">المجالات</a><a href="../lab/" aria-current="page">المعمل</a><a href="../about.html">عن الديوان</a></nav>
+    <nav class="head-actions" aria-label="الرجوع والموقع الرئيسي">
+      <a href="../" data-back><span aria-hidden="true">→</span> رجوع</a>
+      <a href="https://infiradev.com/">موقع انفراد الرئيسي</a>
+    </nav>
+  </div>
+</header>
+
+<main id="main">
+<article class="wrap article experiment">
+  <a class="backlink" href="../lab/" data-back data-label="المعمل"><svg class="backlink-i" viewBox="0 0 24 24" width="18" height="18" aria-hidden="true" focusable="false"><path d="M9 5l7 7-7 7" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg><span>رجوع إلى المعمل</span></a>
+  <nav class="crumbs" aria-label="المسار"><a href="../lab/">المعمل</a> · <a href="../domains/physics.html">الفيزياء</a></nav>
+  <h1 class="page-h">ترسيب ستوكس: كم تستغرق حبة رمل لتهبط القاع؟</h1>
+  <section class="lab-panel">
+  <p class="lede">حرّك قطر الحبة وفرق الكثافة ولزوجة السائل، وتابع سرعة الترسيب ورقم رينولدز وزمن نزول 10 سم؛ سترى السرعة تقفز مع مربع القطر وينكسر النموذج عند Re ≥ 0.1. محاكاة تعليمية لا قياس فيزيائي حقيقي.</p>
+  <div id="lab-root"></div>
+  <div class="lab-readout" id="lab-outputs"></div>
+  <div class="lab-gauge" id="lab-gauge"></div>
+  <figure class="lab-scene-fig">
+    <figcaption class="lab-scene-cap">الحبة تهبط بسرعة حدّية تتناسب مع مربع القطر؛ وعند Re ≥ 0.1 ينكسر نموذج ستوكس.</figcaption>
+    <div id="lab-scene" class="lab-scene" role="group" aria-label="مشهد توضيحي متحرك"></div>
+  </figure>
+
+  <p><button class="lab-cta" type="button" id="lab-reset">إعادة الضبط</button></p>
+  <p class="muted small" id="lab-note">محاكاة تعليمية لا قياس فيزيائي حقيقي: الأرقام تُحسب من النموذج لحظيًا، ولا تُقاس بمخبار في المختبر.</p>
+  <details open>
+    <summary>افتراضات النموذج والمصدر</summary>
+    <p class="lab-equation" dir="ltr">v_t = Δρ · g · d² / (18 · μ)</p>
+    <p>حبة كروية صلبة تهبط في وسط ساكن لا نهائي بلا جدران ولا جسيمات مجاورة.</p><p>اللزوجة والكثافة ثابتتان أثناء الهبوط، ولا تؤخذ قوة قصورية في الحسبان (جريان زحفي).</p><p>السرعة المطبوعة هي السرعة الحدّية، ويُفترض بلوغها لحظيًا لإهمال مرحلة التسارع.</p><p><a href="https://openstax.org/books/college-physics/pages/12-6-motion-of-an-object-in-a-viscous-fluid">Motion of an Object in a Viscous Fluid — College Physics, §12.6 — OpenStax</a></p><p><a href="https://en.wikipedia.org/wiki/Stokes%27_law">Stokes' law — Wikipedia</a></p>
+  </details>
+  <noscript>فعّل JavaScript لتحريك المدخلات وحساب النتائج.</noscript>
+  <script type="application/json" id="lab-spec">{"controls":[{"id":"particle_d","label_ar":"قطر الحبة","min":0.02,"max":2,"step":0.01,"value":0.05,"unit":"mm","decimals":2},{"id":"density_gap","label_ar":"فرق الكثافة (حبة − سائل)","min":100,"max":2000,"step":10,"value":1000,"unit":"kg/m³","decimals":0},{"id":"viscosity","label_ar":"لزوجة السائل","min":0.5,"max":100,"step":0.5,"value":1,"unit":"mPa·s","decimals":1}],"outputs":[{"id":"terminal_velocity","label_ar":"سرعة الترسيب الحدّية","unit":"mm/s","decimals":3},{"id":"reynolds","label_ar":"رقم رينولدز للجسيم","unit":"بلا وحدة","decimals":3},{"id":"settling_time","label_ar":"زمن نزول 10 سم","unit":"s","decimals":2},{"id":"stokes_valid","label_ar":"صلاحية نموذج ستوكس (1 صالح · 0 خارج الحد)","unit":"","decimals":0}],"gauge":{"min":0,"max":5,"unit":"mm/s","decimals":2,"bind":"terminal_velocity","label":"سرعة الترسيب — المقياس من 0 إلى 5 مم/ث"},"scene":{"kind":"stokes-settling","caption_ar":"الحبة تهبط بسرعة حدّية تتناسب مع مربع القطر؛ وعند Re ≥ 0.1 ينكسر نموذج ستوكس."},"note_ar":"محاكاة تعليمية لا قياس فيزيائي حقيقي: الأرقام تُحسب من النموذج لحظيًا، ولا تُقاس بمخبار في المختبر.","learning":{"question_ar":"لماذا تهبط الحبة الكبيرة أسرع بكثير من الحبة الصغيرة في السائل نفسه؟","explanation_ar":"السرعة الحدّية تتناسب مع مربع القطر لا مع القطر، فمضاعفة القطر تضاعف سرعة الهبوط أربع مرات؛ لكن عند تجاوز Re حدّه تنكسر العلاقة فيبطؤ الهبوط الفعلي عن التقدير.","input":"particle_d","output":"terminal_velocity","scenarios":[{"label_ar":"حبة رمل خشنة (1 مم) في الماء","values":{"particle_d":1,"viscosity":1}},{"label_ar":"حبة ناعمة (0.05 مم) في الجلسرين","values":{"particle_d":0.05,"viscosity":90}}]}}</script>
+  <script type="module" src="../assets/js/labs/stokes-settling.mjs"></script>
+</section>
+  <div class="prose"><p>عندما تُترك حبة رمل في سائل ساكن تهبط أولًا متسارعةً ثم تبلغ سرعة حدّية ثابتة حين تتوازن قوة الجاذبية الصافية (الوزن مطروحًا منه قوة الطفو) مع قوة السحب اللزوجة التي يبذلها السائل. يصف قانون ستوكس هذه السرعة الحدّية بأنها تتناسب مع مربع قطر الحبة وفرق الكثافة بينها وبين السائل، وعكسيًا مع لزوجة السائل.</p><p>في هذه التجربة تتحكم في قطر الحبة وفرق الكثافة ولزوجة السائل، فيحسب الموديول السرعة الحدّية ورقم رينولدز للجسيم والزمن اللازم للهبوط عشر سنتيمترات. تُقارن النتيجة بحدّ رينولدز 0.1: فإذا بقي الرقم تحته اعتُبر نموذج ستوكس صالحًا، وإذا تجاوزه انهار الافتراض الخلفي للنموذج.</p><p>الرسالة المحورية أن مضاعفة القطر تضاعف سرعة الترسيب أربع مرات لا مرتين؛ وتلك العلاقة التربيعية تفسّر لماذا تغوص الحصاة الكبيرة فورًا بينما تبقى ذرّة الطمي معلقة ساعات في الماء.</p></div>
+  <div class="depth" aria-label="شرح معمّق"><section class="depth-sec">
+    <h2>كيف تعمل الظاهرة؟</h2>
+    <p>تبدأ الحبة بهبوط متسارع تحت الوزن الصافي بعد طرح قوة الطفو (أرخميدس). وكلما زادت سرعتها ازدادت قوة السحب اللزوجة التي تتناسب طرديًا مع السرعة ومع قطر الحبة ومع لزوجة السائل. تتعادل القوتان عند سرعة حدّية يثبت عندها الهبوط، فيبقى الجسم هابطًا بسرعة منتظمة حتى القاع. هذه السرعة هي ما يعطيها قانون ستوكس من موازنة مباشرة بين الوزن الصافي وقوة السحب.</p>
+  </section><section class="depth-sec">
+    <h2>العلاقة بالأرقام</h2>
+    <p>المعادلة: v_t = Δρ · g · d² / (18 · μ). عند قطر الحبة 0.05 mm، فرق الكثافة (حبة − سائل) 1,000 kg/m³، لزوجة السائل 1.0 mPa·s، يعطي الحساب: سرعة الترسيب الحدّية = 1.363 mm/s؛ رقم رينولدز للجسيم = 0.068 بلا وحدة؛ زمن نزول 10 سم = 73.39 s؛ صلاحية نموذج ستوكس (1 صالح · 0 خارج الحد) = 1 . حالة «حبة رمل خشنة (1 مم) في الماء» (قطر الحبة 1.00 mm، فرق الكثافة (حبة − سائل) 1,000 kg/m³، لزوجة السائل 1.0 mPa·s): سرعة الترسيب الحدّية = 545.000 mm/s؛ رقم رينولدز للجسيم = 545.000 بلا وحدة؛ زمن نزول 10 سم = 0.18 s؛ صلاحية نموذج ستوكس (1 صالح · 0 خارج الحد) = 0 . حالة «حبة ناعمة (0.05 مم) في الجلسرين» (قطر الحبة 0.05 mm، فرق الكثافة (حبة − سائل) 1,000 kg/m³، لزوجة السائل 90.0 mPa·s): سرعة الترسيب الحدّية = 0.015 mm/s؛ رقم رينولدز للجسيم = 8.41e-6 بلا وحدة؛ زمن نزول 10 سم = 6,605.50 s؛ صلاحية نموذج ستوكس (1 صالح · 0 خارج الحد) = 1 . هذه أمثلة مولدة من دالة الحساب نفسها؛ وليست قياسات فعلية أو مواصفات لجهاز تجاري.</p>
+  </section><section class="depth-sec">
+    <h2>مفاهيم متقاربة</h2>
+    <p>يختلف ترسيب ستوكس عن السقوط الحر في الفراغ: ففي الفراغ تتسارع كل الأجسام بالتعجيل نفسه، أما في السائل اللزج فتبلغ كل حبة سرعة حدّية مستقلة حسب حجمها وكثافتها. ويختلف عن جريان الأنبوب حيث تصف اللزوجة فقدان الضغط على طول مجرى، فهنا اللزوجة هي التي تحدّ سرعة الهبوط عبر قوة السحب. كما أنه ليس قياسًا لسرعة جسيم بعينه، بل تقدير نموذجي لسرعة حدّية.</p>
+  </section><section class="depth-sec">
+    <h2>حدود التطبيق</h2>
+    <p>يصحّ قانون ستوكس فقط عندما يكون الجريان حول الحبة زحفيًا، أي حين يبقى رقم رينولدز للجسيم أصغر من 0.1. عند تجاوز الحد تنفصل الدوامات خلف الحبة وتتولى قوة سحب قصورية أكبر، فيبطؤ الهبوط الفعلي عن تقدير ستوكس. كما يفترض النموذج حبة كروية صلبة ووسطًا لا نهائيًا بلا جدران وبلا جسيمات متجاورة، ولا يصف التشكّلات غير الكروية ولا الحركة المضطربة. ويُحسب رقم رينولدز هنا بكثافة الماء (1000 كجم/م³) وليس بفرق الكثافة، لأن الشرط معيار جريان السائل حول الحبة.</p>
+  </section></div>
+  <section class="figures" aria-label="الرسوم التوضيحية">
+  <figure class="fig" id="fig-1">
+    <img class="fig-img" src="../assets/fig/fig-term-terminal-velocity.svg" alt="رسم يبيّن المعامل 18 في مقام صيغة ستوكس وموقع حد رقم رينولدز لصلاحية النموذج." loading="lazy" />
+    <figcaption><b>الشكل 1.</b> رسم مرجعي يوضح المعامل 18 في مقام صيغة ستوكس وحدّ رقم رينولدز لصلاحيتها؛ وتعتمد هذه التجربة الحدّ الأشد Re &lt; 0.1.
+      <span class="credit muted small">· من عمل انفراد — رسم مرجعي لصيغة ستوكس وحدّ رينولدز</span>
+    </figcaption>
+  </figure>
+</section>
+  <table class="facts">
+  <caption>أرقام مسنَدة إلى مصادرها</caption>
+  <thead><tr><th scope="col">الكمية</th><th scope="col">القيمة</th><th scope="col">المصدر</th></tr></thead>
+  <tbody><tr>
+      <th scope="row">سرعة الترسيب الحدّية — الحالة الافتراضية</th>
+      <td>1.363 <span class="unit">mm/s</span></td>
+      <td><a class="ref" href="#src-1">[1]</a></td>
+    </tr><tr>
+      <th scope="row">رقم رينولدز للجسيم — الحالة الافتراضية</th>
+      <td>0.068 <span class="unit">بلا وحدة</span></td>
+      <td><a class="ref" href="#src-1">[1]</a></td>
+    </tr><tr>
+      <th scope="row">زمن نزول 10 سم — الحالة الافتراضية</th>
+      <td>73.39 <span class="unit">s</span></td>
+      <td><a class="ref" href="#src-1">[1]</a></td>
+    </tr><tr>
+      <th scope="row">صلاحية نموذج ستوكس (1 صالح · 0 خارج الحد) — الحالة الافتراضية</th>
+      <td>1 <span class="unit">بلا وحدة</span></td>
+      <td><a class="ref" href="#src-1">[1]</a></td>
+    </tr></tbody>
+</table>
+  <section class="sources" aria-labelledby="src-h">
+  <h2 id="src-h">المصادر</h2>
+  <ol class="src-list"><li id="src-1">
+      <span class="src-num">1</span>
+      <span>Motion of an Object in a Viscous Fluid — College Physics, §12.6 — OpenStax.
+      <a href="https://openstax.org/books/college-physics/pages/12-6-motion-of-an-object-in-a-viscous-fluid" rel="noopener nofollow" target="_blank">openstax.org/books/college-physics/pages/12-6-motion-of-an-object-in-a-viscous-fluid</a>
+      <span class="muted small">· اطُّلع عليه 2026-11-28</span></span>
+    </li><li id="src-2">
+      <span class="src-num">2</span>
+      <span>Stokes' law — Wikipedia.
+      <a href="https://en.wikipedia.org/wiki/Stokes%27_law" rel="noopener nofollow" target="_blank">en.wikipedia.org/wiki/Stokes%27_law</a>
+      <span class="muted small">· اطُّلع عليه 2026-11-28</span></span>
+    </li></ol>
+</section>
+  <p class="reviewline muted small">راجعه: مراجعة آلية (هيرمز) · 2026-11-28 · آخر تحديث 2026-11-28</p>
+  <a class="backlink backlink-end" href="../lab/" data-back data-label="المعمل"><svg class="backlink-i" viewBox="0 0 24 24" width="18" height="18" aria-hidden="true" focusable="false"><path d="M9 5l7 7-7 7" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg><span>رجوع إلى المعمل</span></a>
+</article>
+</main>
+<footer class="site-foot">
+  <div class="wrap foot-in">
+    <div>
+      <b>ديوان المعرفة</b> — من المفهوم إلى التجربة
+      <div class="muted small">قسم علمي داخل انفراد · <a href="https://infiradev.com">infiradev.com</a> · <a href="mailto:info@infiradev.com">info@infiradev.com</a></div>
+    </div>
+    <div class="muted small">
+      <a href="../about.html">سياسة التحرير والمصادر</a> ·
+      <a href="../terms/">المصطلحات</a> ·
+      <a href="../lab/">المعمل الافتراضي</a>
+    </div>
+  </div>
+</footer>
+<script src="../assets/js/site.js" defer></script>
+</body>
+</html>
