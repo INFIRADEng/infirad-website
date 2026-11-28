@@ -10,11 +10,11 @@
 <rect x="270" y="204" width="470" height="14" fill="#0e7490" fill-opacity="0.85" rx="6"/>
 <text x="260" y="216" font-size="17" font-weight="700" fill="#1b2a2f" text-anchor="end" direction="ltr">⁨18000⁩</text>
 <text x="740" y="254" font-size="17" font-weight="600" fill="#1b2a2f" text-anchor="start">مدى معامل الفصل للأغشية البوليمري…</text>
-<rect x="738" y="262" width="2" height="14" fill="#a16207" fill-opacity="0.85" rx="6"/>
-<text x="728" y="274" font-size="17" font-weight="700" fill="#1b2a2f" text-anchor="end" direction="ltr">⁨3⁩</text>
+<rect x="687.8" y="262" width="52.2" height="14" fill="#a16207" fill-opacity="0.85" rx="6"/>
+<text x="677.8" y="274" font-size="17" font-weight="700" fill="#1b2a2f" text-anchor="end" direction="ltr">⁨2000⁩</text>
 <line x1="740" y1="308" x2="270" y2="308" stroke="#cbd5d9" stroke-width="1"/>
 <text x="740" y="332" font-size="17" font-weight="400" fill="#5d7079" text-anchor="start">0</text>
 <text x="505" y="332" font-size="17" font-weight="400" fill="#5d7079" text-anchor="middle">9000</text>
 <text x="270" y="332" font-size="17" font-weight="400" fill="#5d7079" text-anchor="end">18000</text>
-<text x="505" y="358" font-size="17" font-weight="400" fill="#5d7079" text-anchor="middle">القيم المرجعية بوحدة — — مأخوذة من النص</text>
+<text x="505" y="358" font-size="17" font-weight="400" fill="#5d7079" text-anchor="middle">القيم المرجعية مجرّدة (أعداد بلا وحدة) — مأخوذة من النص</text>
 </g></svg>

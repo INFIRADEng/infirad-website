@@ -19,5 +19,5 @@
 <text x="740" y="390" font-size="17" font-weight="400" fill="#5d7079" text-anchor="start">0</text>
 <text x="505" y="390" font-size="17" font-weight="400" fill="#5d7079" text-anchor="middle">0.485</text>
 <text x="270" y="390" font-size="17" font-weight="400" fill="#5d7079" text-anchor="end">0.97</text>
-<text x="505" y="416" font-size="17" font-weight="400" fill="#5d7079" text-anchor="middle">القيم المرجعية بوحدة — — مأخوذة من النص</text>
+<text x="505" y="416" font-size="17" font-weight="400" fill="#5d7079" text-anchor="middle">القيم المرجعية مجرّدة (أعداد بلا وحدة) — مأخوذة من النص</text>
 </g></svg>
